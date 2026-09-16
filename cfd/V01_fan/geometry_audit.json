@@ -1,0 +1,161 @@
+{
+  "source": "cad\\parametric\\AQI_Tower_ConceptA_V00.FCStd",
+  "source_sha256": "1bac8a8a7f5bd57b1aa2770b1b02a1653f8fbd21281d9bb256868cf0712424ce",
+  "freecad_version": [
+    "1",
+    "1",
+    "3",
+    "20260725 (Git shallow)",
+    "Unknown",
+    "2026/07/25 04:52:02",
+    "grafted,grafted",
+    "145529fe741292ff0b3977a01195bf0247425794"
+  ],
+  "units": "CAD mm; mesh metres",
+  "regions": {
+    "AIR_INLET": {
+      "object": "Inlet",
+      "bounds_mm": [
+        0.0,
+        10.0,
+        100.0,
+        700.0,
+        150.0,
+        850.0
+      ],
+      "volume_m3": 0.004200000000000001
+    },
+    "DIRTY_PLENUM": {
+      "object": "DirtyAirPlenum",
+      "bounds_mm": [
+        10.0,
+        150.0,
+        100.0,
+        700.0,
+        150.0,
+        850.0
+      ],
+      "volume_m3": 0.058800000000000005
+    },
+    "STAGE_01": {
+      "object": "TreatmentStage_01",
+      "bounds_mm": [
+        150.0,
+        180.0,
+        100.0,
+        700.0,
+        150.0,
+        850.0
+      ],
+      "volume_m3": 0.0126
+    },
+    "INTERSTAGE_01": {
+      "object": "InterstageGap_01",
+      "bounds_mm": [
+        180.0,
+        220.0,
+        100.0,
+        700.0,
+        150.0,
+        850.0
+      ],
+      "volume_m3": 0.016800000000000002
+    },
+    "STAGE_02": {
+      "object": "TreatmentStage_02",
+      "bounds_mm": [
+        220.0,
+        250.0,
+        100.0,
+        700.0,
+        150.0,
+        850.0
+      ],
+      "volume_m3": 0.0126
+    },
+    "INTERSTAGE_02": {
+      "object": "InterstageGap_02",
+      "bounds_mm": [
+        250.0,
+        290.0,
+        100.0,
+        700.0,
+        150.0,
+        850.0
+      ],
+      "volume_m3": 0.016800000000000002
+    },
+    "STAGE_03": {
+      "object": "TreatmentStage_03",
+      "bounds_mm": [
+        290.0,
+        320.0,
+        100.0,
+        700.0,
+        150.0,
+        850.0
+      ],
+      "volume_m3": 0.0126
+    },
+    "CLEAN_PLENUM": {
+      "object": "CleanAirPlenum",
+      "bounds_mm": [
+        320.0,
+        500.0,
+        100.0,
+        700.0,
+        150.0,
+        850.0
+      ],
+      "volume_m3": 0.0756
+    },
+    "CLEAN_RISER": {
+      "object": "CleanAirRiser",
+      "bounds_mm": [
+        320.0,
+        690.0,
+        150.0,
+        650.0,
+        850.0,
+        2000.0
+      ],
+      "volume_m3": 0.21274999999999997
+    },
+    "AIR_OUTLET": {
+      "object": "Outlet",
+      "bounds_mm": [
+        690.0,
+        700.0,
+        150.0,
+        650.0,
+        1600.0,
+        1850.0
+      ],
+      "volume_m3": 0.0012499999999999998
+    }
+  },
+  "fused_solid_count": 1,
+  "fluid_volume_m3": 0.42400000000000004,
+  "boundary_area_m2": {
+    "AIR_INLET": 0.41999999999999993,
+    "AIR_OUTLET": 0.125,
+    "WALLS": 3.801
+  },
+  "block_count": 31,
+  "max_cell_edge_mm": 20.0,
+  "cell_counts": {
+    "AIR_INLET": 1085,
+    "DIRTY_PLENUM": 7595,
+    "STAGE_01": 2170,
+    "INTERSTAGE_01": 2170,
+    "STAGE_02": 2170,
+    "INTERSTAGE_02": 2170,
+    "STAGE_03": 2170,
+    "CLEAN_PLENUM": 9765,
+    "CLEAN_RISER": 28025,
+    "AIR_OUTLET": 325
+  },
+  "total_cells": 57645,
+  "excluded_object": "TowerEnvelope",
+  "stage_treatment": "EMPTY FLUID; no resistance"
+}

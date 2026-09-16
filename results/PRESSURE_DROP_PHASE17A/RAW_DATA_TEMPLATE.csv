@@ -1,0 +1,1 @@
+timestamp_utc,run_id,stage,replicate,media_lot,media_name,bed_depth_mm,media_mass_g,column_id_mm,flow_lpm,superficial_velocity_ms,temperature_C,RH_pct,dp_total_Pa,dp_empty_Pa,dp_bed_Pa,dp_secondary_Pa,dp_sdp810_status,operator,notes

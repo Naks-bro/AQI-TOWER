@@ -1,0 +1,21 @@
+FoamFile { version 2.0; format ascii; class volScalarField; object p; }
+dimensions [0 2 -2 0 0 0 0];
+internalField uniform 0;
+boundaryField
+{
+    // PLACEHOLDER FAN REPRESENTATION:
+    // The fan total pressure rise is imposed at AIR_INLET as a totalPressure BC.
+    // The value p0 = 250 m^2/s^2 corresponds to a PLACEHOLDER ΔP of 300 Pa
+    // (kinematic 300 / 1.20 = 250 m^2/s^2). This is NOT a real fan specification.
+    // The resulting flow rate Q is determined by the intersection of this imposed
+    // total pressure with the empty-tower system resistance. With real filter ΔP
+    // included, Q would be lower.
+    // See constant/fanProperties for the placeholder justification.
+    AIR_INLET
+    {
+        type            totalPressure;
+        p0              uniform 250.0;  // PLACEHOLDER: 300 Pa / 1.20 kg/m3
+    }
+    AIR_OUTLET { type fixedValue; value uniform 0; }
+    WALLS { type zeroGradient; }
+}

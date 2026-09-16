@@ -1,0 +1,33 @@
+{
+  "manufacturer": "ebm-papst",
+  "model": "G2E140-AI28-A5",
+  "series": "G2E140",
+  "type": "centrifugal, forward-curved, single inlet, AC",
+  "impeller_blade_type": "forward-curved",
+  "voltage_vac": 230,
+  "frequency_hz": 50,
+  "phase": 1,
+  "power_w": null,
+  "current_a": null,
+  "rpm": null,
+  "max_airflow_m3h": 500,
+  "max_airflow_condition": "free delivery — SOURCE: RS Online UK export listing (https://export.rsdelivers.com/product/ebm-papst/g2e140-ai28-a5/...)",
+  "max_static_pressure_pa": null,
+  "max_back_pressure_pa": "UNKNOWN — same series as G2E140-AE77-01; likely similar 50 Pa thermal limit. UNCONFIRMED — requires manufacturer datasheet verification.",
+  "fan_curve": "NOT EXTRACTED",
+  "noise_dba": null,
+  "ip_rating": null,
+  "dimensions_mm": "247 x 226 x 130 (width x height x depth approx — from RS Online UK listing)",
+  "weight_kg": null,
+  "motor_protection": "thermal overload protector (TOP) assumed — same series",
+  "india_availability": "Likely via ebm-papst India PVT LTD or MS Enterprises (same distributor as G2E140-AE77-01). Not specifically confirmed for this variant.",
+  "source_urls": [
+    "https://export.rsdelivers.com/product/ebm-papst/g2e140-ai28-a5/ebm-papst-g2e-140-series-centrifugal-centrifugal-m/h-ac-operation-247-mm-x-226mm-x-130-mm/3324113"
+  ],
+  "source_document": "RS Online UK export product listing — distributor data only, no manufacturer datasheet retrieved",
+  "evidence_level": "D",
+  "evidence_notes": "Only a single distributor listing found. No fan curve. No power, RPM, or pressure data confirmed. Evidence level D.",
+  "suitability_assessment": "LIKELY UNSUITABLE for same reasons as G2E140-AE77-01. Forward-curved blades with presumed low maximum back pressure. Confirm from manufacturer PDF before any decision.",
+  "recommended_action": "Obtain manufacturer operating instructions PDF from ebmpapst.com. If forward-curved thermal limit is confirmed similar to G2E140-AE77-01, reject this candidate.",
+  "date_researched": "2026-09-05"
+}

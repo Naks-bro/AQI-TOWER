@@ -1,0 +1,26 @@
+* text=auto
+
+# Keep engineering source files usable in Ubuntu/WSL and CI.
+*.sh text eol=lf
+*.py text eol=lf
+*.md text eol=lf
+*.json text eol=lf
+*.js text eol=lf
+*.html text eol=lf
+*.css text eol=lf
+*.csv text eol=lf
+*.yml text eol=lf
+*.yaml text eol=lf
+*.pvsm text eol=lf
+cfd/** text eol=lf
+
+# Binary engineering and report assets.
+*.FCStd binary
+*.pdf binary
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.gif binary
+*.mp4 binary
+*.zip binary
+

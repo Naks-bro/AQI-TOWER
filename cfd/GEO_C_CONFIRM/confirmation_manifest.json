@@ -1,0 +1,9 @@
+{
+  "case": "GEO_C_CONFIRM",
+  "confirmation_of": "GEO_C",
+  "source_cad_sha256": "baec2027a16a7ab14a02662b8a39bbd5b7168770d9405e7382b93da9babd2a7b",
+  "fluid_volume_m3": 0.45424999999999993,
+  "total_cells": 63780,
+  "max_cell_edge_mm": 20.0,
+  "fan_json_sha256": "847274a70e6d1a56d4707186c6eb37792f96358bb481bad46a704c554de15c73"
+}

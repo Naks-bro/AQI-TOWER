@@ -1,0 +1,21 @@
+{
+  "checks": {
+    "source_curve_unchanged": true,
+    "source_points_unchanged": true,
+    "mesh_identical_to_V00": true,
+    "CAD_unchanged": true,
+    "connected_valid_mesh": true,
+    "correct_volume_cell_count": true,
+    "ten_empty_zones": true,
+    "inlet_not_fixed_velocity": true,
+    "positive_flow_inside_curve": true,
+    "mass_balance_within_0p1_percent": true,
+    "fan_pressure_mapping_within_0p1_Pa": true,
+    "logged_curve_matches_source": true,
+    "final_log_clean_end": true,
+    "residual_targets_met": false
+  },
+  "max_logged_curve_error_Pa": 1.2676233041020168e-07,
+  "numerical_convergence": "PARTIAL \u2014 NON-CONVERGED",
+  "note": "Residual failure is reported, not concealed by mass conservation. Startup/exit errors retained."
+}

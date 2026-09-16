@@ -1,0 +1,85 @@
+{
+  "manufacturer": "Freudenberg Filtration Technologies",
+  "article_number": "SF13-B-0593x0593x292/V12x25-N10N-J27-ACA",
+  "series": "SF13-B (HEPA High Volume Flow Filter)",
+  "filter_class_EN1822": "H13",
+  "efficiency_MPPS": ">=99.95%",
+  "frame_material": "galvanized steel",
+  "media_type": "MiniPleat, V-shaped configuration (glass fibre)",
+  "dimensions_mm": {
+    "width": 593,
+    "height": 593,
+    "depth": 292,
+    "face_area_m2": 0.3516,
+    "face_area_note": "593mm x 593mm = 0.3516 m² (gross face area; net open area may be slightly less due to media frame/septa)"
+  },
+  "rated_conditions": {
+    "airflow_m3h": 3600,
+    "airflow_m3s": 1.0,
+    "face_velocity_m_s": 2.84,
+    "face_velocity_calculation": "3600 m³/h / 3600 s/h / 0.3516 m² = 2.845 m/s — consistent with manufacturer stated 2.84 m/s",
+    "initial_delta_P_Pa": 300,
+    "condition": "clean filter (initial), manufacturer nominal rating"
+  },
+  "delta_P_curve_points": [
+    {
+      "face_velocity_m_s": 2.84,
+      "airflow_m3h": 3600,
+      "delta_P_Pa": 300,
+      "confidence": "CONFIRMED — manufacturer product page nominal data"
+    }
+  ],
+  "delta_P_curve_note": "ONE POINT ONLY — this is the manufacturer nominal rating condition. No multi-point ΔP curve was available from the source retrieved. Single-point linear extrapolation to other face velocities is possible but carries high uncertainty and must be labeled as an approximation.",
+  "terminal_delta_P_Pa": null,
+  "terminal_delta_P_note": "NOT STATED in source retrieved. Typical terminal ΔP for H13 filters is 375-500 Pa (literature value, not product-specific).",
+  "filter_class_ISO29463": "ISO 35 H",
+  "filter_class_ISO29463_note": "ISO 29463 equivalent to EN 1822 H13. Confirmed from Freudenberg US product page (products.freudenberg-filter.com/en_US/detail/10893), Phase 12A.",
+  "efficiency_local_EN1822_H13": ">=99.75%",
+  "efficiency_local_note": "EN 1822-1:2019 H13 minimum local efficiency (scan test). Generic standard threshold, not product-specific measured value.",
+  "MPPS_diameter_um": null,
+  "MPPS_diameter_note": "Product-specific MPPS not published. Generic glass fibre HEPA range: 0.1–0.2 µm (Camfil, 2026-09-06) or 0.12–0.25 µm (CIBSE). EN 1822 test certificate shipped with each unit contains the actual MPPS for that production lot.",
+  "test_certificate_status": "EXISTS — included with each filter unit per manufacturer product page. Not publicly accessible online. Must be obtained with physical purchase.",
+  "evidence_level": "B",
+  "evidence_level_rationale": "Official Freudenberg Filtration Technologies manufacturer product page. Airflow, face velocity, and initial ΔP confirmed from manufacturer data table. Single rated point only — no multi-point ΔP curve. ISO 29463 class confirmed from US product page. Phase 12A web search found no publicly accessible fractional efficiency curve, MPPS value, or multi-point ΔP data. Evidence B.",
+  "extrapolation_to_AQI_tower": {
+    "tower_placeholder_flow_m3h": 1512,
+    "filter_face_velocity_at_placeholder_flow_m_s": 1.19,
+    "face_velocity_calculation": "1512 / 3600 / 0.3516 = 1.197 m/s",
+    "tower_geometry_note": "Assumes single 593x593mm filter installed with full face area open to flow. Actual tower cross-section from Phase 4 CAD model must be checked to confirm this filter fits and achieves this face area.",
+    "delta_P_linear_estimate_Pa": 126,
+    "delta_P_linear_calculation": "300 Pa × (1.197 / 2.84) = 300 × 0.421 = 126 Pa — LINEAR extrapolation from single rated point",
+    "delta_P_uncertainty": "HIGH. Single-point linear scaling is an approximation. Real filter ΔP at 1.19 m/s could be 80-150 Pa depending on actual ΔP-v relationship. Clean filter only — loaded filter will be higher.",
+    "do_not_cite_as_design_value": true
+  },
+  "india_contact": {
+    "company": "Freudenberg Filtration Technologies India Pvt. Ltd.",
+    "HQ_address": "9th Floor, Fountainhead Tower 3B Wing, Phoenix Market City, Nagar Road, Viman Nagar, Pune 411014, Maharashtra, India",
+    "HQ_phone": "+91 20 67633600",
+    "production_address": "Gat No. 837/2, Pune-Nagar Road, Village Sanaswadi, Taluka Shirur, Pune 412208, Maharashtra, India",
+    "production_phone": "+91 21 37615322",
+    "general_email": "info@freudenberg-filter.com",
+    "global_HQ_phone": "+49 6201 7107 264",
+    "note": "Contact data confirmed Phase 12A (2026-09-06) from in.freudenberg-filter.com and freudenberg-filter.com/en/company/locations/. Use for fractional efficiency data request — see docs/FREUDENBERG_DATA_REQUEST.md."
+  },
+  "data_gaps_phase12A": {
+    "fractional_efficiency_curve": "NOT AVAILABLE — no publicly accessible η(d_p) curve found for this product",
+    "MPPS_diameter_um": "NOT AVAILABLE — generic glass fibre range 0.1–0.25 µm only",
+    "efficiency_at_AQI_tower_velocity": "NOT AVAILABLE — AQI Tower operates at 1.053 m/s vs EN 1822 test at 2.84 m/s",
+    "multi_point_delta_P": "NOT AVAILABLE — single rated point only (300 Pa at 2.84 m/s)",
+    "terminal_delta_P": "NOT AVAILABLE — typical range 375–500 Pa (literature) but not product-specific",
+    "sources_searched": ["products.freudenberg-filter.com/en/detail/136582", "products.freudenberg-filter.com/en/detail/8621", "products.freudenberg-filter.com/en_US/detail/10893", "freudenberg-filter.com/en/downloads/", "freudenberg-filter.com/en/markets/industrial/standards-and-certifications/classification-of-air-filters/", "web search: SF13-B datasheet PDF", "web search: Freudenberg HEPA fractional efficiency"],
+    "phase_searched": "12A",
+    "date_searched": "2026-09-06"
+  },
+  "source_urls": [
+    "https://products.freudenberg-filter.com/en/detail/136582/hepa-high-volume-flow-filter/galvanized-steel-frame-h13/",
+    "https://products.freudenberg-filter.com/en/detail/8621/hepa-filters/high-volume-flow-filters-h13/",
+    "https://products.freudenberg-filter.com/en_US/detail/10893/hepa-filters/high-volume-flow-filters-h13-/"
+  ],
+  "source_document": "Freudenberg Filtration Technologies online product catalog — HEPA High Volume Flow Filters, galvanized steel frame, H13. Phase 6C: initial data fetched 2026-09-05. Phase 12A: additional pages checked 2026-09-06; no fractional efficiency or multi-point ΔP found.",
+  "date_researched": "2026-09-05",
+  "date_last_updated": "2026-09-06",
+  "phase_added": "6C",
+  "phase_last_updated": "12A",
+  "notes": "Phase 6C: First real manufacturer filter data point obtained for the AQI Tower project. Phase 12A: Additional searches found no publicly accessible fractional efficiency curve, MPPS particle diameter, or multi-point ΔP data. ISO 29463 equivalent class (ISO 35 H) confirmed. EN 1822 test certificate confirmed to accompany each unit — this is the definitive source of fractional efficiency data and must be obtained on purchase. Contact details for Freudenberg India added. See docs/FREUDENBERG_DATA_REQUEST.md for draft inquiry and docs/FREUDENBERG_DATA_GAPS.md for impact analysis."
+}

@@ -1,0 +1,305 @@
+{
+  "label": "SIMULATION \u2014 V01 | SYSTEMAIR KVO 250 | EMPTY TOWER | GRAPH-DIGITIZED FAN CURVE \u2014 UNCERTAINTY APPLIES",
+  "case": "/mnt/d/DUDE/AQI-TOWER/cfd/V01_fan",
+  "final_iteration": 4000.0,
+  "solved_iterations": 4000,
+  "solver_reported_converged": false,
+  "last_residuals": {
+    "iteration": 4000.0,
+    "Ux_initial": 2.713372882e-06,
+    "Ux_linear_final": 4.269926598e-11,
+    "Uy_initial": 5.136790777e-06,
+    "Uy_linear_final": 3.223779313e-11,
+    "Uz_initial": 3.181149224e-06,
+    "Uz_linear_final": 8.265321145e-11,
+    "p_initial": 2.836754273e-05,
+    "p_linear_final": 8.709183016e-11,
+    "epsilon_initial": 1.87779146e-07,
+    "epsilon_linear_final": 1.175932429e-11,
+    "k_initial": 6.42039142e-07,
+    "k_linear_final": 9.232526146e-11,
+    "continuity_local": 2.05535253e-09,
+    "continuity_global": -6.557318642e-10,
+    "continuity_cumulative": -1.680281714e-08
+  },
+  "fluid_volume_m3": 0.4239999850541353,
+  "cell_count": 57645,
+  "flow_m3_s": {
+    "inlet_outward_signed": -0.40992708392669996,
+    "outlet_outward_signed": 0.4099270836462421,
+    "wall_signed": 0.0,
+    "outlet_backflow": 0.002634619686306
+  },
+  "mass_imbalance_percent": 6.841652824110755e-08,
+  "mass_in_kg_s": 0.49191250071203996,
+  "mass_out_kg_s": 0.4919125003754905,
+  "pressure_Pa": {
+    "cell_min": -34.51446533203125,
+    "cell_max": -0.05159374698996544,
+    "volume_mean": -11.475678051571244,
+    "inlet_area_mean": -0.6331026993533241,
+    "outlet_area_mean": -33.09454883999998,
+    "inlet_flux_weighted_total": -4.806464996412538e-08,
+    "outlet_flux_weighted_total": -17.3256501865947,
+    "tower_static_difference": 32.46144614064666,
+    "tower_flux_weighted_total_loss": 17.32565013853005
+  },
+  "speed_m_s": {
+    "cell_min": 0.007482619024813175,
+    "cell_max": 6.531343460083008,
+    "volume_mean": 1.7434652007439309,
+    "wall_boundary": 0,
+    "max_cell_center_m": [
+      0.48999999463558197,
+      0.5799999833106995,
+      0.9585526287555695
+    ]
+  },
+  "slow_volume_fraction_below_0p1_m_s": 0.02037731980160407,
+  "wall_yplus": {
+    "min": 8.920737445,
+    "max": 792.0945165,
+    "face_mean": 150.70791138600953,
+    "face_fraction_below_30": 0.2877526753864447,
+    "face_fraction_above_300": 0.1458581054300436
+  },
+  "regions": {
+    "AIR_INLET": {
+      "cells": 1085,
+      "volume_m3": 0.004199999919533726,
+      "speed_volume_mean_m_s": 0.9761360804634281,
+      "reverse_volume_fraction": 0.0,
+      "reverse_definition": "Ux < -0.05 m/s; indicator, not a closed-vortex proof"
+    },
+    "DIRTY_PLENUM": {
+      "cells": 7595,
+      "volume_m3": 0.058800002785027,
+      "speed_volume_mean_m_s": 0.9856866425986125,
+      "reverse_volume_fraction": 0.0,
+      "reverse_definition": "Ux < -0.05 m/s; indicator, not a closed-vortex proof"
+    },
+    "STAGE_01": {
+      "cells": 2170,
+      "volume_m3": 0.012600000540912145,
+      "speed_volume_mean_m_s": 1.01248104569027,
+      "reverse_volume_fraction": 0.0,
+      "reverse_definition": "Ux < -0.05 m/s; indicator, not a closed-vortex proof"
+    },
+    "INTERSTAGE_01": {
+      "cells": 2170,
+      "volume_m3": 0.016799996548891045,
+      "speed_volume_mean_m_s": 1.0352476852594052,
+      "reverse_volume_fraction": 0.0,
+      "reverse_definition": "Ux < -0.05 m/s; indicator, not a closed-vortex proof"
+    },
+    "STAGE_02": {
+      "cells": 2170,
+      "volume_m3": 0.012600000540912145,
+      "speed_volume_mean_m_s": 1.067218830110159,
+      "reverse_volume_fraction": 0.0,
+      "reverse_definition": "Ux < -0.05 m/s; indicator, not a closed-vortex proof"
+    },
+    "INTERSTAGE_02": {
+      "cells": 2170,
+      "volume_m3": 0.016799996548891048,
+      "speed_volume_mean_m_s": 1.1156821220340742,
+      "reverse_volume_fraction": 0.0007936496321377662,
+      "reverse_definition": "Ux < -0.05 m/s; indicator, not a closed-vortex proof"
+    },
+    "STAGE_03": {
+      "cells": 2170,
+      "volume_m3": 0.012600000540912145,
+      "speed_volume_mean_m_s": 1.1933119155802072,
+      "reverse_volume_fraction": 0.006349199875706502,
+      "reverse_definition": "Ux < -0.05 m/s; indicator, not a closed-vortex proof"
+    },
+    "CLEAN_PLENUM": {
+      "cells": 9765,
+      "volume_m3": 0.07560000324547288,
+      "speed_volume_mean_m_s": 1.2599481268392212,
+      "reverse_volume_fraction": 0.059470875124829896,
+      "reverse_definition": "Ux < -0.05 m/s; indicator, not a closed-vortex proof"
+    },
+    "CLEAN_RISER": {
+      "cells": 28025,
+      "volume_m3": 0.2127499856501818,
+      "speed_volume_mean_m_s": 2.343505271602999,
+      "reverse_volume_fraction": 0.23116031628733075,
+      "reverse_definition": "Uz < -0.05 m/s; indicator, not a closed-vortex proof"
+    },
+    "AIR_OUTLET": {
+      "cells": 325,
+      "volume_m3": 0.0012499987334013696,
+      "speed_volume_mean_m_s": 4.7701737970267875,
+      "reverse_volume_fraction": 0.0,
+      "reverse_definition": "Ux < -0.05 m/s; indicator, not a closed-vortex proof"
+    }
+  },
+  "sections": {
+    "STAGE_01_mid": {
+      "origin_m": [
+        0.165,
+        0.4,
+        0.5
+      ],
+      "normal": [
+        1,
+        0,
+        0
+      ],
+      "area_m2": 0.42000000134110427,
+      "speed_area_mean_m_s": 1.0084760374420527,
+      "normal_velocity_area_mean_m_s": 0.9760144166365011,
+      "normal_velocity_min_m_s": 0.2667056918144226,
+      "normal_velocity_max_m_s": 1.760029673576355,
+      "normal_velocity_CoV": 0.420727266751484,
+      "pressure_area_mean_Pa": -0.7150349183613481,
+      "reverse_area_fraction": 0.0,
+      "sampled_volume_flow_m3_s": 0.40992605629626755,
+      "method": "Piecewise cell values on VTK cut; not conservative face phi"
+    },
+    "STAGE_02_mid": {
+      "origin_m": [
+        0.235,
+        0.4,
+        0.5
+      ],
+      "normal": [
+        1,
+        0,
+        0
+      ],
+      "area_m2": 0.42000000134110427,
+      "speed_area_mean_m_s": 1.0755410675924357,
+      "normal_velocity_area_mean_m_s": 0.9761934139672411,
+      "normal_velocity_min_m_s": -0.020508790388703346,
+      "normal_velocity_max_m_s": 2.3284614086151123,
+      "normal_velocity_CoV": 0.5803776026745894,
+      "pressure_area_mean_Pa": -0.8960928929609656,
+      "reverse_area_fraction": 0.0015873004469067703,
+      "sampled_volume_flow_m3_s": 0.4100012351754184,
+      "method": "Piecewise cell values on VTK cut; not conservative face phi"
+    },
+    "STAGE_03_mid": {
+      "origin_m": [
+        0.305,
+        0.4,
+        0.5
+      ],
+      "normal": [
+        1,
+        0,
+        0
+      ],
+      "area_m2": 0.42000000134110427,
+      "speed_area_mean_m_s": 1.169890609464371,
+      "normal_velocity_area_mean_m_s": 0.9755721525759291,
+      "normal_velocity_min_m_s": -0.061423711478710175,
+      "normal_velocity_max_m_s": 3.3978915214538574,
+      "normal_velocity_CoV": 0.772433226604066,
+      "pressure_area_mean_Pa": -1.1898094071610668,
+      "reverse_area_fraction": 0.020634916808261804,
+      "sampled_volume_flow_m3_s": 0.4097403053902342,
+      "method": "Piecewise cell values on VTK cut; not conservative face phi"
+    },
+    "riser_entry_above_turn": {
+      "origin_m": [
+        0.4,
+        0.4,
+        0.86
+      ],
+      "normal": [
+        0,
+        0,
+        1
+      ],
+      "area_m2": 0.18499999135732637,
+      "speed_area_mean_m_s": 3.158924834919773,
+      "normal_velocity_area_mean_m_s": 2.2700825538171863,
+      "normal_velocity_min_m_s": -0.8174458742141724,
+      "normal_velocity_max_m_s": 5.84222412109375,
+      "normal_velocity_CoV": 1.0867637997583406,
+      "pressure_area_mean_Pa": -23.82647383437689,
+      "reverse_area_fraction": 0.31221622264429044,
+      "sampled_volume_flow_m3_s": 0.41996525283659686,
+      "method": "Piecewise cell values on VTK cut; not conservative face phi"
+    },
+    "riser_mid": {
+      "origin_m": [
+        0.4,
+        0.4,
+        1.2
+      ],
+      "normal": [
+        0,
+        0,
+        1
+      ],
+      "area_m2": 0.18499999135732637,
+      "speed_area_mean_m_s": 2.7276472955207334,
+      "normal_velocity_area_mean_m_s": 2.2156218235155016,
+      "normal_velocity_min_m_s": -2.470402717590332,
+      "normal_velocity_max_m_s": 5.1613874435424805,
+      "normal_velocity_CoV": 0.9240923765138052,
+      "pressure_area_mean_Pa": -21.77809607729996,
+      "reverse_area_fraction": 0.15827024352524846,
+      "sampled_volume_flow_m3_s": 0.4098900182014715,
+      "method": "Piecewise cell values on VTK cut; not conservative face phi"
+    },
+    "outlet_mid": {
+      "origin_m": [
+        0.695,
+        0.4,
+        1.7
+      ],
+      "normal": [
+        1,
+        0,
+        0
+      ],
+      "area_m2": 0.1249999925494194,
+      "speed_area_mean_m_s": 4.770173797026787,
+      "normal_velocity_area_mean_m_s": 3.336182111442234,
+      "normal_velocity_min_m_s": 0.29303979873657227,
+      "normal_velocity_max_m_s": 4.876427173614502,
+      "normal_velocity_CoV": 0.3925188099000754,
+      "pressure_area_mean_Pa": -31.71244327321322,
+      "reverse_area_fraction": 0.0,
+      "sampled_volume_flow_m3_s": 0.41702273907378556,
+      "method": "Piecewise cell values on VTK cut; not conservative face phi"
+    }
+  },
+  "source_cad_sha256": "1bac8a8a7f5bd57b1aa2770b1b02a1653f8fbd21281d9bb256868cf0712424ce",
+  "log_sha256": "7a964575710b4034d73672c3e0097a0ded9e4868075c1ffebd49c91c9bf9cfdf",
+  "fan": {
+    "Q_m3_s": 0.4099270836462421,
+    "Q_m3_h": 1475.7375011264714,
+    "curve_static_Pa": 17.32315235986104,
+    "measured_static_equivalent_Pa": 17.3256501865947,
+    "curve_closure_error_Pa": 0.0024978267336592808,
+    "inside_source_curve": true,
+    "source_json_sha256": "847274a70e6d1a56d4707186c6eb37792f96358bb481bad46a704c554de15c73"
+  },
+  "inletPressure_late100": {
+    "min": -0.6331032498,
+    "max": -0.6331026694440001,
+    "range_percent_of_mean": 9.166850699397086e-05
+  },
+  "outletFlow_late100": {
+    "min": 0.40992441673,
+    "max": 0.40992708398,
+    "range_percent_of_mean": 0.0006506661181228661
+  },
+  "criteria": {
+    "residuals": false,
+    "mass": true,
+    "flow_stability": true,
+    "fan_closure": true
+  },
+  "V00_comparison": {
+    "reference_iteration": 6000.0,
+    "flow_change_percent": -2.398313417561404,
+    "max_speed_change_percent": -1.8319158902885935,
+    "V00_status": "PARTIAL \u2014 NON-CONVERGED; imposed flow"
+  }
+}

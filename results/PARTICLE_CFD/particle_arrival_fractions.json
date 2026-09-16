@@ -1,0 +1,118 @@
+{
+  "description": "Phase 12B conservative particle tracking results. PARTICLE ARRIVAL FRACTIONS — NOT FILTER EFFICIENCIES. Particles tracked through frozen CASE_M_SEALED velocity field (Phase 10B, timestep 5000, steady RANS SIMPLEC). Nearest-neighbour velocity interpolation. Euler integration dt=0.0040 s.",
+  "flow_field": {
+    "case": "CASE_M_SEALED",
+    "timestep": 5000,
+    "phase": "10B",
+    "status": "PARTIAL NON-CONVERGED (same RANS limit as all GEO_C cases)",
+    "Q_m3_h": 1332.2,
+    "filter_face_velocity_mean_m_s": 1.053,
+    "bypass_fraction": 9.997e-10,
+    "filter_delta_P_Pa": 111.2
+  },
+  "particle_model": {
+    "type": "one-way coupled, non-reacting, dilute equilibrium-slip particle paths",
+    "density_kg_m3": 1200.0,
+    "density_note": "single assumed representative aerosol density; composition-specific density is not modelled",
+    "drag_model": "Equilibrium-slip approximation: particle velocity equals local frozen-air velocity plus Cunningham-corrected Stokes terminal settling; no time-resolved particle-momentum equation",
+    "gravity_m_s2": 9.81,
+    "gravity_direction": "-z (downward in GEO_C coordinates)",
+    "injection_plane_x_m": 0.01,
+    "injection_method": "uniform grid at x=0.010 m in active flow region",
+    "n_seeds": 224,
+    "integration_method": "Euler, dt=0.0040 s, max_time=6.0 s",
+    "velocity_interpolation": "nearest-neighbour (KDTree on cell centres)",
+    "filter_face_model": "Particles reaching x>0.290 m within active filter face area are classified as FILTER_ARRIVAL. No capture probability is applied. FILTER ARRIVAL != FILTER CAPTURE."
+  },
+  "stokes_number_note": "For all four tracked particle sizes, Stokes number St = tau_p * U_char / L_char << 1. Particles follow airflow streamlines with only gravity drift as a size-dependent effect. Settling velocities are 0.00513–3.694 mm/s. The maximum is 0.123% of the stated 3.0 m/s characteristic velocity (and 0.739% of 0.5 m/s). Size-dependent differences are unresolved at the present seed-grid and timestep resolution.",
+  "results": {
+    "0p3um": {
+      "label": "0.3 µm",
+      "dp_um": 0.3,
+      "cunningham_cc": 1.567526959757806,
+      "tau_p_us": 0.5225089865859354,
+      "v_settle_mm_s": 0.005125813158408025,
+      "stokes_number": 5.225089865859353e-06,
+      "n_total": 224,
+      "n_filter_arrival": 139,
+      "n_frame_deposit": 14,
+      "n_wall_deposit": 71,
+      "n_recirculation": 0,
+      "filter_arrival_fraction": 0.6205357142857143,
+      "frame_deposit_fraction": 0.0625,
+      "wall_deposit_fraction": 0.3169642857142857,
+      "recirculation_fraction": 0.0,
+      "interpretation": "62.1% of particles seeded at the inlet reached the active filter face. This is the PARTICLE ARRIVAL FRACTION at FILTER_UPSTREAM, not the filter capture/removal efficiency. Actual removal efficiency requires the product-specific fractional efficiency curve eta(d_p) which is not yet available (Phase 12A finding)."
+    },
+    "1um": {
+      "label": "1 µm",
+      "dp_um": 1.0,
+      "cunningham_cc": 1.1659366915083549,
+      "tau_p_us": 4.318284042623536,
+      "v_settle_mm_s": 0.042362366458136895,
+      "stokes_number": 4.318284042623536e-05,
+      "n_total": 224,
+      "n_filter_arrival": 139,
+      "n_frame_deposit": 14,
+      "n_wall_deposit": 71,
+      "n_recirculation": 0,
+      "filter_arrival_fraction": 0.6205357142857143,
+      "frame_deposit_fraction": 0.0625,
+      "wall_deposit_fraction": 0.3169642857142857,
+      "recirculation_fraction": 0.0,
+      "interpretation": "62.1% of particles seeded at the inlet reached the active filter face. This is the PARTICLE ARRIVAL FRACTION at FILTER_UPSTREAM, not the filter capture/removal efficiency. Actual removal efficiency requires the product-specific fractional efficiency curve eta(d_p) which is not yet available (Phase 12A finding)."
+    },
+    "2p5um": {
+      "label": "2.5 µm",
+      "dp_um": 2.5,
+      "cunningham_cc": 1.0663696000189187,
+      "tau_p_us": 24.684481481919416,
+      "v_settle_mm_s": 0.2421547633376295,
+      "stokes_number": 0.0002468448148191942,
+      "n_total": 224,
+      "n_filter_arrival": 139,
+      "n_frame_deposit": 14,
+      "n_wall_deposit": 71,
+      "n_recirculation": 0,
+      "filter_arrival_fraction": 0.6205357142857143,
+      "frame_deposit_fraction": 0.0625,
+      "wall_deposit_fraction": 0.3169642857142857,
+      "recirculation_fraction": 0.0,
+      "interpretation": "62.1% of particles seeded at the inlet reached the active filter face. This is the PARTICLE ARRIVAL FRACTION at FILTER_UPSTREAM, not the filter capture/removal efficiency. Actual removal efficiency requires the product-specific fractional efficiency curve eta(d_p) which is not yet available (Phase 12A finding)."
+    },
+    "10um": {
+      "label": "10 µm",
+      "dp_um": 10.0,
+      "cunningham_cc": 1.0165924,
+      "tau_p_us": 376.51570370370365,
+      "v_settle_mm_s": 3.693619053333333,
+      "stokes_number": 0.003765157037037037,
+      "n_total": 224,
+      "n_filter_arrival": 137,
+      "n_frame_deposit": 17,
+      "n_wall_deposit": 70,
+      "n_recirculation": 0,
+      "filter_arrival_fraction": 0.6116071428571429,
+      "frame_deposit_fraction": 0.07589285714285714,
+      "wall_deposit_fraction": 0.3125,
+      "recirculation_fraction": 0.0,
+      "interpretation": "61.2% of particles seeded at the inlet reached the active filter face. This is the PARTICLE ARRIVAL FRACTION at FILTER_UPSTREAM, not the filter capture/removal efficiency. Actual removal efficiency requires the product-specific fractional efficiency curve eta(d_p) which is not yet available (Phase 12A finding)."
+    }
+  },
+  "summary": {
+    "n_seeds": 224,
+    "filter_arrival_fractions": {
+      "0.3 µm": 0.6205357142857143,
+      "1 µm": 0.6205357142857143,
+      "2.5 µm": 0.6205357142857143,
+      "10 µm": 0.6116071428571429
+    },
+    "wall_deposit_fractions": {
+      "0.3 µm": 0.3169642857142857,
+      "1 µm": 0.3169642857142857,
+      "2.5 µm": 0.3169642857142857,
+      "10 µm": 0.3125
+    },
+    "most_important_finding": "Nearly identical particle arrival fractions occur across all four size classes for this seed grid and numerical model. This is consistent with the very low Stokes numbers (St << 1); the result is dominated by mean-flow topology and the injection/wall-classification method."
+  }
+}

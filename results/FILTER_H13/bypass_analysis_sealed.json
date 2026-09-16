@@ -1,0 +1,38 @@
+{
+  "CASE_M_SEALED": {
+    "final_iteration": 5000,
+    "total_flow_m3_s": 0.37005701192666,
+    "total_flow_m3_h": 1332.205242935976,
+    "filter_flow_m3_s": 0.3700570115567,
+    "filter_flow_m3_h": 1332.2052416041201,
+    "bypass_flow_m3_s": 3.6996000707389953e-10,
+    "bypass_flow_m3_h": 1.3318560254660383e-06,
+    "bypass_fraction": 9.997378480619545e-10,
+    "effective_filtered_fraction": 0.9999999990002622,
+    "filter_face_velocity_m_s": {
+      "mean": 1.0524943445867463,
+      "min": 0.813450330212173,
+      "max": 1.1724754064604663,
+      "p10": 0.8397581936385097,
+      "p90": 1.1600535707517066,
+      "CoV": 0.10028334378174394,
+      "reverse_area_fraction": 0.0
+    },
+    "filter_delta_P_area_mean_Pa": 111.18113437173315,
+    "resistance_multiplier": 1.0,
+    "scenario_classification": "SINGLE-POINT CALIBRATED APPROXIMATION",
+    "bypass_seal": "applied — bypassSeal plate baffle at z=0.850 m, x=0.260–0.305 m"
+  },
+  "comparison": {
+    "CASE_M_bypass_fraction": 0.45050347267409063,
+    "CASE_M_SEALED_bypass_fraction": 9.997378480619545e-10,
+    "bypass_reduction_pct_points": 45.05034716743528,
+    "CASE_M_Q_filter_m3_h": 775.7176889019601,
+    "CASE_M_SEALED_Q_filter_m3_h": 1332.2052416041201,
+    "filter_flow_increase_fraction": 0.7173841213932822,
+    "CASE_M_delta_P_Pa": 64.72371963635774,
+    "CASE_M_SEALED_delta_P_Pa": 111.18113437173315
+  },
+  "method": "FILTER_UPSTREAM phi sum vs AIR_OUTLET phi sum",
+  "note": "bypass_fraction = 1 - Q_FILTER_UPSTREAM / Q_AIR_OUTLET. bypassSeal plate baffle added at z=0.850 m, x=0.260-0.305 m, y=0.150-0.650 m to block the open dirty-to-clean connection at the dirty-plenum/clean-riser junction."
+}

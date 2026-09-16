@@ -1,0 +1,17 @@
+FoamFile { version 2.0; format ascii; class volVectorField; object U; }
+dimensions [0 1 -1 0 0 0 0];
+internalField uniform (0 0 0);
+boundaryField
+{
+    // With totalPressure at AIR_INLET, velocity is derived from the pressure field.
+    // pressureInletOutletVelocity extrapolates from interior; inletValue provides
+    // the inlet-flow direction constraint when flow enters the domain.
+    AIR_INLET
+    {
+        type            pressureInletOutletVelocity;
+        inletValue      uniform (1 0 0);   // direction only; magnitude set by pressure
+        value           uniform (0 0 0);
+    }
+    AIR_OUTLET { type pressureInletOutletVelocity; value uniform (0 0 0); }
+    WALLS { type noSlip; }
+}

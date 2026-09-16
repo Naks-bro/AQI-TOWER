@@ -1,0 +1,30 @@
+{
+  "notice": "DESIGN EXPERIMENT PARAMETER \u2014 NOT PRODUCT REQUIREMENT",
+  "fan_json": "data\\fans\\systemair_KVO_250.json",
+  "fan_json_sha256": "847274a70e6d1a56d4707186c6eb37792f96358bb481bad46a704c554de15c73",
+  "fan_boundary_source_sha256": "435d348b0b2e6ee56f8ef8896a462f0d9288be8ab9d6e5fa727b36dc3fb9901b",
+  "fvSchemes_source_sha256": "b4cbb6198555fc3c06f7b70f693a77a008da6dac06c79394642bfcd753de90b8",
+  "cases": {
+    "GEO_A": {
+      "source_cad_sha256": "25d528509c02d3886087d2acbc5074b2c1a755ac753ebf8b5828610ca8503c49",
+      "fluid_volume_m3": 0.452,
+      "total_cells": 61395,
+      "block_count": 85,
+      "outlet_area_m2": 0.125
+    },
+    "GEO_B": {
+      "source_cad_sha256": "4f810feab8ba035f242f3c3e41be95ec2b84331f709023a518c3bbaa5734d2b3",
+      "fluid_volume_m3": 0.4585000000000001,
+      "total_cells": 64630,
+      "block_count": 40,
+      "outlet_area_m2": 0.125
+    },
+    "GEO_C": {
+      "source_cad_sha256": "baec2027a16a7ab14a02662b8a39bbd5b7168770d9405e7382b93da9babd2a7b",
+      "fluid_volume_m3": 0.45424999999999993,
+      "total_cells": 63780,
+      "block_count": 95,
+      "outlet_area_m2": 0.125
+    }
+  }
+}

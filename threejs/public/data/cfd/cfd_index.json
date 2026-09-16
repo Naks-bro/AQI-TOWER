@@ -1,0 +1,101 @@
+{
+  "schema_version": 1,
+  "exports": [
+    {
+      "case_id": "GEO_C",
+      "field": "U_MAGNITUDE",
+      "plane": "longitudinal",
+      "convergence_status": "CONVERGED",
+      "source_timestep": "926",
+      "file": "GEO_C_U_MAGNITUDE_longitudinal.json"
+    },
+    {
+      "case_id": "GEO_C",
+      "field": "P_STATIC",
+      "plane": "longitudinal",
+      "convergence_status": "CONVERGED",
+      "source_timestep": "926",
+      "file": "GEO_C_P_STATIC_longitudinal.json"
+    },
+    {
+      "case_id": "GEO_C",
+      "field": "U_MAGNITUDE",
+      "plane": "filter_xsec",
+      "convergence_status": "CONVERGED",
+      "source_timestep": "926",
+      "file": "GEO_C_U_MAGNITUDE_filter_xsec.json"
+    },
+    {
+      "case_id": "GEO_C",
+      "field": "P_STATIC",
+      "plane": "filter_xsec",
+      "convergence_status": "CONVERGED",
+      "source_timestep": "926",
+      "file": "GEO_C_P_STATIC_filter_xsec.json"
+    },
+    {
+      "case_id": "GEO_C_CONFIRM",
+      "field": "U_MAGNITUDE",
+      "plane": "longitudinal",
+      "convergence_status": "CONVERGED",
+      "source_timestep": "926",
+      "file": "GEO_C_CONFIRM_U_MAGNITUDE_longitudinal.json"
+    },
+    {
+      "case_id": "GEO_C_CONFIRM",
+      "field": "P_STATIC",
+      "plane": "longitudinal",
+      "convergence_status": "CONVERGED",
+      "source_timestep": "926",
+      "file": "GEO_C_CONFIRM_P_STATIC_longitudinal.json"
+    },
+    {
+      "case_id": "GEO_C_CONFIRM",
+      "field": "U_MAGNITUDE",
+      "plane": "filter_xsec",
+      "convergence_status": "CONVERGED",
+      "source_timestep": "926",
+      "file": "GEO_C_CONFIRM_U_MAGNITUDE_filter_xsec.json"
+    },
+    {
+      "case_id": "GEO_C_CONFIRM",
+      "field": "P_STATIC",
+      "plane": "filter_xsec",
+      "convergence_status": "CONVERGED",
+      "source_timestep": "926",
+      "file": "GEO_C_CONFIRM_P_STATIC_filter_xsec.json"
+    },
+    {
+      "case_id": "CASE_M_SEALED",
+      "field": "U_MAGNITUDE",
+      "plane": "longitudinal",
+      "convergence_status": "PARTIALLY_CONVERGED",
+      "source_timestep": "5000",
+      "file": "CASE_M_SEALED_U_MAGNITUDE_longitudinal.json"
+    },
+    {
+      "case_id": "CASE_M_SEALED",
+      "field": "P_STATIC",
+      "plane": "longitudinal",
+      "convergence_status": "PARTIALLY_CONVERGED",
+      "source_timestep": "5000",
+      "file": "CASE_M_SEALED_P_STATIC_longitudinal.json"
+    },
+    {
+      "case_id": "CASE_M_SEALED",
+      "field": "U_MAGNITUDE",
+      "plane": "filter_xsec",
+      "convergence_status": "PARTIALLY_CONVERGED",
+      "source_timestep": "5000",
+      "file": "CASE_M_SEALED_U_MAGNITUDE_filter_xsec.json"
+    },
+    {
+      "case_id": "CASE_M_SEALED",
+      "field": "P_STATIC",
+      "plane": "filter_xsec",
+      "convergence_status": "PARTIALLY_CONVERGED",
+      "source_timestep": "5000",
+      "file": "CASE_M_SEALED_P_STATIC_filter_xsec.json"
+    }
+  ]
+}

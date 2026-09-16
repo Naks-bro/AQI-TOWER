@@ -1,0 +1,4 @@
+FoamFile { version 2.0; format ascii; class dictionary; object physicalProperties; }
+viscosityModel constant;
+nu 1.5e-5;
+// Reference density 1.20 kg/m3 is used only in reporting pressure/mass flow.

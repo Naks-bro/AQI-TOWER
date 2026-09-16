@@ -1,0 +1,142 @@
+{
+  "phase": 8,
+  "notice": "DESIGN EXPERIMENT PARAMETER \u2014 NOT PRODUCT REQUIREMENT",
+  "variants": {
+    "GEO_A": {
+      "file": "cad\\parametric\\AQI_Tower_ConceptA_GEO_A.FCStd",
+      "sha256": "25d528509c02d3886087d2acbc5074b2c1a755ac753ebf8b5828610ca8503c49",
+      "intent": "Two-step outer turning chamber; original riser width and blind cap retained.",
+      "parameters": {
+        "riser_inner_x_mm": 320.0,
+        "riser_top_z_mm": 2000.0,
+        "turn_steps": true,
+        "turn_step_01": {
+          "x_mm": [
+            500,
+            590
+          ],
+          "z_mm": [
+            450,
+            850
+          ],
+          "y_mm": [
+            150,
+            650
+          ]
+        },
+        "turn_step_02": {
+          "x_mm": [
+            590,
+            690
+          ],
+          "z_mm": [
+            650,
+            850
+          ],
+          "y_mm": [
+            150,
+            650
+          ]
+        }
+      },
+      "build_validation": {
+        "fluid_region_count": 12,
+        "fused_solid_count": 1,
+        "fluid_volume_m3": 0.452,
+        "parameter_regeneration": "PASS",
+        "validity": "PASS",
+        "notice": "DESIGN EXPERIMENT PARAMETER \u2014 NOT PRODUCT REQUIREMENT"
+      },
+      "reopen_validation": {
+        "fluid_region_count": 12,
+        "fused_solid_count": 1,
+        "fluid_volume_m3": 0.452,
+        "parameter_regeneration": "PASS",
+        "validity": "PASS",
+        "notice": "DESIGN EXPERIMENT PARAMETER \u2014 NOT PRODUCT REQUIREMENT"
+      }
+    },
+    "GEO_B": {
+      "file": "cad\\parametric\\AQI_Tower_ConceptA_GEO_B.FCStd",
+      "sha256": "4f810feab8ba035f242f3c3e41be95ec2b84331f709023a518c3bbaa5734d2b3",
+      "intent": "Riser inner wall shifted upstream by 60 mm; no outer turning chamber.",
+      "parameters": {
+        "riser_inner_x_mm": 260.0,
+        "riser_top_z_mm": 2000.0,
+        "turn_steps": false,
+        "turn_step_01": null,
+        "turn_step_02": null
+      },
+      "build_validation": {
+        "fluid_region_count": 10,
+        "fused_solid_count": 1,
+        "fluid_volume_m3": 0.4585000000000001,
+        "parameter_regeneration": "PASS",
+        "validity": "PASS",
+        "notice": "DESIGN EXPERIMENT PARAMETER \u2014 NOT PRODUCT REQUIREMENT"
+      },
+      "reopen_validation": {
+        "fluid_region_count": 10,
+        "fused_solid_count": 1,
+        "fluid_volume_m3": 0.4585000000000001,
+        "parameter_regeneration": "PASS",
+        "validity": "PASS",
+        "notice": "DESIGN EXPERIMENT PARAMETER \u2014 NOT PRODUCT REQUIREMENT"
+      }
+    },
+    "GEO_C": {
+      "file": "cad\\parametric\\AQI_Tower_ConceptA_GEO_C.FCStd",
+      "sha256": "baec2027a16a7ab14a02662b8a39bbd5b7168770d9405e7382b93da9babd2a7b",
+      "intent": "Combined enlarged entry and two-step turn; blind cap above outlet removed.",
+      "parameters": {
+        "riser_inner_x_mm": 260.0,
+        "riser_top_z_mm": 1850.0,
+        "turn_steps": true,
+        "turn_step_01": {
+          "x_mm": [
+            500,
+            590
+          ],
+          "z_mm": [
+            450,
+            850
+          ],
+          "y_mm": [
+            150,
+            650
+          ]
+        },
+        "turn_step_02": {
+          "x_mm": [
+            590,
+            690
+          ],
+          "z_mm": [
+            650,
+            850
+          ],
+          "y_mm": [
+            150,
+            650
+          ]
+        }
+      },
+      "build_validation": {
+        "fluid_region_count": 12,
+        "fused_solid_count": 1,
+        "fluid_volume_m3": 0.45424999999999993,
+        "parameter_regeneration": "PASS",
+        "validity": "PASS",
+        "notice": "DESIGN EXPERIMENT PARAMETER \u2014 NOT PRODUCT REQUIREMENT"
+      },
+      "reopen_validation": {
+        "fluid_region_count": 12,
+        "fused_solid_count": 1,
+        "fluid_volume_m3": 0.45424999999999993,
+        "parameter_regeneration": "PASS",
+        "validity": "PASS",
+        "notice": "DESIGN EXPERIMENT PARAMETER \u2014 NOT PRODUCT REQUIREMENT"
+      }
+    }
+  }
+}

@@ -1,0 +1,128 @@
+{
+  "_comment": "This is a template only. All null values will be replaced by the analysis script once RAW_DATA.csv is populated with experimental data. Do not fill in values manually.",
+  "metadata": {
+    "analysis_date": null,
+    "source_csv": "results/PRESSURE_DROP_PHASE17A/RAW_DATA.csv",
+    "script": "scripts/analysis/phase17a_analysis.py",
+    "phase": "17A",
+    "status": "BLOCKED — HARDWARE NOT YET AVAILABLE",
+    "column_id_mm": 75.0,
+    "column_area_m2": 0.00441786,
+    "mu_air_Pa_s": 1.849e-05,
+    "rho_air_kg_m3": 1.184,
+    "media_name": "OVC4x8",
+    "media_lot": null
+  },
+  "row_counts": {
+    "total": 0,
+    "valid": 0,
+    "valid_flagged": 0,
+    "invalid": 0
+  },
+  "stage_A_fixture": {
+    "dp_fixture_by_velocity_Pa": {
+      "0.13": null,
+      "0.26": null,
+      "0.52": null,
+      "0.80": null,
+      "1.05": null
+    }
+  },
+  "stage_results": {
+    "B": {"status": "BLOCKED"},
+    "C": {"status": "BLOCKED"},
+    "D": {"status": "BLOCKED"}
+  },
+  "darcy_forchheimer_fits": {
+    "B": {
+      "status": "BLOCKED",
+      "label": "Stage B — 26 mm bed",
+      "a_Pa_s_m2": null,
+      "a_95CI_Pa_s_m2": null,
+      "b_Pa_s2_m3": null,
+      "b_95CI_Pa_s2_m3": null,
+      "R2": null,
+      "n_observations": 0,
+      "residuals_pct": [],
+      "velocity_range_ms": [0.13, 1.05],
+      "fit_valid": false,
+      "openfoam": {
+        "d_m2": null,
+        "f_m1": null,
+        "mu_air_Pa_s": 1.849e-05,
+        "rho_air_kg_m3": 1.184,
+        "note": "Will be computed from measured a and b once data are available."
+      }
+    },
+    "C": {
+      "status": "BLOCKED",
+      "label": "Stage C — 52 mm bed",
+      "a_Pa_s_m2": null,
+      "a_95CI_Pa_s_m2": null,
+      "b_Pa_s2_m3": null,
+      "b_95CI_Pa_s2_m3": null,
+      "R2": null,
+      "n_observations": 0,
+      "residuals_pct": [],
+      "velocity_range_ms": [0.13, 1.05],
+      "fit_valid": false,
+      "openfoam": {
+        "d_m2": null,
+        "f_m1": null,
+        "mu_air_Pa_s": 1.849e-05,
+        "rho_air_kg_m3": 1.184,
+        "note": "Will be computed from measured a and b once data are available."
+      }
+    },
+    "D": {
+      "status": "BLOCKED",
+      "label": "Stage D — 104 mm bed",
+      "a_Pa_s_m2": null,
+      "a_95CI_Pa_s_m2": null,
+      "b_Pa_s2_m3": null,
+      "b_95CI_Pa_s2_m3": null,
+      "R2": null,
+      "n_observations": 0,
+      "residuals_pct": [],
+      "velocity_range_ms": [0.13, 1.05],
+      "fit_valid": false,
+      "openfoam": {
+        "d_m2": null,
+        "f_m1": null,
+        "mu_air_Pa_s": 1.849e-05,
+        "rho_air_kg_m3": 1.184,
+        "note": "Will be computed from measured a and b once data are available."
+      }
+    },
+    "combined": {
+      "status": "BLOCKED",
+      "label": "Combined (all depths)",
+      "a_Pa_s_m2": null,
+      "a_95CI_Pa_s_m2": null,
+      "b_Pa_s2_m3": null,
+      "b_95CI_Pa_s2_m3": null,
+      "R2": null,
+      "n_observations": 0,
+      "residuals_pct": [],
+      "fit_valid": false,
+      "openfoam": {
+        "d_m2": null,
+        "f_m1": null,
+        "mu_air_Pa_s": 1.849e-05,
+        "rho_air_kg_m3": 1.184,
+        "note": "Will be computed from measured a and b once data are available."
+      }
+    }
+  },
+  "ergun_comparison": {
+    "status": "BLOCKED — REQUIRED INPUT NOT AVAILABLE",
+    "required_inputs": [
+      "Mean particle diameter d_p from sieve analysis or traceable lot certificate",
+      "Bed void fraction epsilon from measured bulk density and known particle density"
+    ]
+  },
+  "validity_summary": {
+    "invalid_run_ids": [],
+    "flagged_run_ids": []
+  }
+}

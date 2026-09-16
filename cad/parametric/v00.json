@@ -1,0 +1,11 @@
+{
+  "design_version": "V00",
+  "classification": "ASSUMPTION",
+  "warning": "ASSUMPTION — NOT YET VALIDATED. Workflow example, not product dimensions.",
+  "tower_height": {"value": 1.0, "unit": "m", "status": "ASSUMPTION", "source": "A01"},
+  "tower_width": {"value": 0.4, "unit": "m", "status": "ASSUMPTION", "source": "A01"},
+  "tower_depth": {"value": 0.4, "unit": "m", "status": "ASSUMPTION", "source": "A01"},
+  "inlet": {"value": "entire bottom face, z=0", "status": "ASSUMPTION", "source": "A02"},
+  "outlet": {"value": "entire top face, z=height", "status": "ASSUMPTION", "source": "A02"},
+  "mesh_cells": {"value": [16, 16, 40], "unit": "cells in x,y,z", "status": "ASSUMPTION", "source": "A03"}
+}

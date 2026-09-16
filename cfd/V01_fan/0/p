@@ -1,0 +1,69 @@
+FoamFile { version 2.0; format ascii; class volScalarField; object p; }
+dimensions [0 2 -2 0 0 0 0];
+internalField uniform -15;
+boundaryField
+{
+    AIR_INLET { type totalPressure; p0 uniform 0; value uniform 0; }
+    AIR_OUTLET
+    {
+        type codedFixedValue;
+        name kvo250TerminalSuction;
+        value uniform -25;
+        codeInclude
+        #{
+            #include "volFields.H"
+            #include "surfaceFields.H"
+            #include "Time.H"
+        #};
+        codeOptions
+        #{
+            -I$(LIB_SRC)/finiteVolume/lnInclude -I$(LIB_SRC)/meshTools/lnInclude
+        #};
+        codeLibs
+        #{
+            -lfiniteVolume -lmeshTools
+        #};
+        code
+        #{
+
+        const auto& phi = patch().lookupPatchField<surfaceScalarField, scalar>("phi");
+        const auto& U = patch().lookupPatchField<volVectorField, vector>("U");
+        const scalar Q = gSum(phi);
+        const scalar qs[] = {0, 0.1042, 0.2083, 0.254, 0.3333, 0.417};
+        const scalar ps[] = {688, 640, 480, 388, 205, 0};
+        const scalar x = max(min(Q, qs[5]), scalar(0));
+        scalar Ps = ps[5];
+        for (label j=0; j<5; ++j)
+        {
+            if (x <= qs[j+1])
+            {
+                Ps = ps[j] + (ps[j+1]-ps[j])*(x-qs[j])/(qs[j+1]-qs[j]);
+                break;
+            }
+        }
+        // p is kinematic. Fan static Ps = downstream static - upstream total.
+        // Downstream ambient static is zero. Upstream patch is uniform static;
+        // its net flux-weighted total is p + K. Thus p = -Ps/rho - K.
+        const scalar K = Q > 1e-6 ? gSum(phi*0.5*magSqr(U))/Q : 0;
+        const scalar target = Ps/1.20 + K;
+        static label previousIndex = -1;
+        static scalar applied = 0;
+        const label index = this->db().time().timeIndex();
+        if (previousIndex < 0)
+            applied = -gSum(patch().magSf()*scalarField(*this))/gSum(patch().magSf());
+        if (index != previousIndex)
+        {
+            applied = 0.9*applied + 0.1*target;
+            previousIndex = index;
+            if (index % 10 == 0)
+                Info<< "KVO250 Q=" << Q << " Ps_Pa=" << Ps
+                    << " K_m2s2=" << K << " applied_Pa=" << 1.20*applied
+                    << " closure_Pa=" << 1.20*(applied-target)
+                    << " outsideCurve=" << (Q < 0 || Q > qs[5]) << nl;
+        }
+        operator==(-applied);
+
+        #};
+    }
+    WALLS { type zeroGradient; }
+}

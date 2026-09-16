@@ -1,0 +1,370 @@
+{
+  "label": "SIMULATION \u2014 PHASE 8 GEO_A | KVO 250 | EMPTY TOWER | PARTIAL STATUS UNTIL CRITERIA CHECKED",
+  "case": "GEO_A",
+  "final_iteration": 4000.0,
+  "solved_iterations": 4000,
+  "solver_reported_converged": false,
+  "last_residuals": {
+    "iteration": 4000.0,
+    "Ux_initial": 5.160094512e-05,
+    "Ux_linear_final": 6.067440633e-11,
+    "Uy_initial": 0.0003580337335,
+    "Uy_linear_final": 3.455312924e-11,
+    "Uz_initial": 4.185332953e-05,
+    "Uz_linear_final": 7.058164552e-11,
+    "p_initial": 0.0004539921884,
+    "p_linear_final": 8.362592187e-11,
+    "epsilon_initial": 4.076205269e-05,
+    "epsilon_linear_final": 5.965686326e-11,
+    "k_initial": 4.149943292e-05,
+    "k_linear_final": 1.100760419e-11,
+    "continuity_local": 1.081526959e-09,
+    "continuity_global": 3.792404915e-10,
+    "continuity_cumulative": -2.70168133e-09
+  },
+  "fluid_volume_m3": 0.4519999845176935,
+  "cell_count": 61395,
+  "flow_m3_s": {
+    "inlet_outward_signed": -0.41451790362209995,
+    "outlet_outward_signed": 0.41451790380545994,
+    "wall_signed": 0.0,
+    "outlet_backflow": 0.00245916531754
+  },
+  "mass_imbalance_percent": 4.423451731584424e-08,
+  "mass_in_kg_s": 0.4974214843465199,
+  "mass_out_kg_s": 0.4974214845665519,
+  "pressure_Pa": {
+    "cell_min": -22.11866569519043,
+    "cell_max": -0.06442739814519882,
+    "volume_mean": -4.394026372917438,
+    "inlet_area_mean": -0.6259026976794889,
+    "outlet_area_mean": -21.047491992,
+    "inlet_flux_weighted_total": -1.631725940513887e-07,
+    "outlet_flux_weighted_total": -6.079173412495927,
+    "tower_static_difference": 20.421589294320512,
+    "tower_flux_weighted_total_loss": 6.0791732493233335
+  },
+  "speed_m_s": {
+    "cell_min": 0.008458892814815044,
+    "cell_max": 5.775997161865234,
+    "volume_mean": 1.5906393751923702,
+    "wall_boundary": 0,
+    "max_cell_center_m": [
+      0.6949999928474426,
+      0.17999999970197678,
+      1.7057692408561707
+    ]
+  },
+  "slow_volume_fraction_below_0p1_m_s": 0.015365524891446786,
+  "wall_yplus": {
+    "min": 9.794274137,
+    "max": 669.0233615,
+    "face_mean": 94.92928187392167,
+    "face_fraction_below_30": 0.27559661277906083,
+    "face_fraction_above_300": 0.009045419553502694
+  },
+  "regions": {
+    "AIR_INLET": {
+      "cells": 1085,
+      "volume_m3": 0.004199999919533726,
+      "speed_volume_mean_m_s": 0.987044913110527,
+      "reverse_volume_fraction": 0.0,
+      "reverse_definition": "Ux < -0.05 m/s; V01 indicator"
+    },
+    "DIRTY_PLENUM": {
+      "cells": 7595,
+      "volume_m3": 0.058800002785027,
+      "speed_volume_mean_m_s": 0.9933170202305747,
+      "reverse_volume_fraction": 0.0,
+      "reverse_definition": "Ux < -0.05 m/s; V01 indicator"
+    },
+    "STAGE_01": {
+      "cells": 2170,
+      "volume_m3": 0.012600000540912145,
+      "speed_volume_mean_m_s": 1.0107693352753273,
+      "reverse_volume_fraction": 0.0,
+      "reverse_definition": "Ux < -0.05 m/s; V01 indicator"
+    },
+    "INTERSTAGE_01": {
+      "cells": 2170,
+      "volume_m3": 0.016799996548891045,
+      "speed_volume_mean_m_s": 1.025347108886536,
+      "reverse_volume_fraction": 0.0,
+      "reverse_definition": "Ux < -0.05 m/s; V01 indicator"
+    },
+    "STAGE_02": {
+      "cells": 2170,
+      "volume_m3": 0.012600000540912145,
+      "speed_volume_mean_m_s": 1.045289196220004,
+      "reverse_volume_fraction": 0.0,
+      "reverse_definition": "Ux < -0.05 m/s; V01 indicator"
+    },
+    "INTERSTAGE_02": {
+      "cells": 2170,
+      "volume_m3": 0.016799996548891048,
+      "speed_volume_mean_m_s": 1.0738213417963436,
+      "reverse_volume_fraction": 0.0007936496321377662,
+      "reverse_definition": "Ux < -0.05 m/s; V01 indicator"
+    },
+    "STAGE_03": {
+      "cells": 2170,
+      "volume_m3": 0.012600000540912145,
+      "speed_volume_mean_m_s": 1.114734236420495,
+      "reverse_volume_fraction": 0.0031745994943668445,
+      "reverse_definition": "Ux < -0.05 m/s; V01 indicator"
+    },
+    "CLEAN_PLENUM": {
+      "cells": 9765,
+      "volume_m3": 0.07560000324547288,
+      "speed_volume_mean_m_s": 1.1541283951889354,
+      "reverse_volume_fraction": 0.048253948111309605,
+      "reverse_definition": "Ux < -0.05 m/s; V01 indicator"
+    },
+    "CLEAN_RISER": {
+      "cells": 28025,
+      "volume_m3": 0.21274998565018183,
+      "speed_volume_mean_m_s": 2.0955204661063567,
+      "reverse_volume_fraction": 0.17294301727999353,
+      "reverse_definition": "Uz < -0.05 m/s; V01 indicator"
+    },
+    "AIR_OUTLET": {
+      "cells": 325,
+      "volume_m3": 0.0012499987334013696,
+      "speed_volume_mean_m_s": 4.6368679170536735,
+      "reverse_volume_fraction": 0.0,
+      "reverse_definition": "Ux < -0.05 m/s; V01 indicator"
+    },
+    "TURN_STEP_01": {
+      "cells": 2500,
+      "volume_m3": 0.017999995291232807,
+      "speed_volume_mean_m_s": 1.6597200996309565,
+      "reverse_volume_fraction": 0.0680000185767726,
+      "reverse_definition": "Ux < -0.05 m/s; V01 indicator"
+    },
+    "TURN_STEP_02": {
+      "cells": 1250,
+      "volume_m3": 0.010000004172325418,
+      "speed_volume_mean_m_s": 1.2453229817652387,
+      "reverse_volume_fraction": 0.19919997818467897,
+      "reverse_definition": "Ux < -0.05 m/s; V01 indicator"
+    }
+  },
+  "sections": {
+    "STAGE_01_mid": {
+      "origin_m": [
+        0.165,
+        0.4,
+        0.5
+      ],
+      "normal": [
+        1,
+        0,
+        0
+      ],
+      "area_m2": 0.42000000134110427,
+      "speed_area_mean_m_s": 1.008179244774577,
+      "normal_velocity_area_mean_m_s": 0.9869481139026991,
+      "normal_velocity_min_m_s": 0.33374741673469543,
+      "normal_velocity_max_m_s": 1.5727224349975586,
+      "normal_velocity_CoV": 0.338419586812871,
+      "pressure_area_mean_Pa": -0.6796420707927155,
+      "reverse_area_fraction": 0.0,
+      "sampled_volume_flow_m3_s": 0.41451820916273396,
+      "method": "Piecewise cell values on VTK cut; not conservative face phi",
+      "selection_bounds_m": [
+        null,
+        null,
+        0.1,
+        0.7,
+        0.15,
+        0.85
+      ]
+    },
+    "STAGE_02_mid": {
+      "origin_m": [
+        0.235,
+        0.4,
+        0.5
+      ],
+      "normal": [
+        1,
+        0,
+        0
+      ],
+      "area_m2": 0.42000000134110427,
+      "speed_area_mean_m_s": 1.050394822070442,
+      "normal_velocity_area_mean_m_s": 0.9870242066679186,
+      "normal_velocity_min_m_s": -0.0278786513954401,
+      "normal_velocity_max_m_s": 1.9304529428482056,
+      "normal_velocity_CoV": 0.4564580461449272,
+      "pressure_area_mean_Pa": -0.7900870723936734,
+      "reverse_area_fraction": 0.0015873004469067703,
+      "sampled_volume_flow_m3_s": 0.4145501681242282,
+      "method": "Piecewise cell values on VTK cut; not conservative face phi",
+      "selection_bounds_m": [
+        null,
+        null,
+        0.1,
+        0.7,
+        0.15,
+        0.85
+      ]
+    },
+    "STAGE_03_mid": {
+      "origin_m": [
+        0.305,
+        0.4,
+        0.5
+      ],
+      "normal": [
+        1,
+        0,
+        0
+      ],
+      "area_m2": 0.42000000134110427,
+      "speed_area_mean_m_s": 1.1035732680262667,
+      "normal_velocity_area_mean_m_s": 0.9867944838548353,
+      "normal_velocity_min_m_s": -0.06211942061781883,
+      "normal_velocity_max_m_s": 2.5507874488830566,
+      "normal_velocity_CoV": 0.5832062239059943,
+      "pressure_area_mean_Pa": -0.9434318175265335,
+      "reverse_area_fraction": 0.01682539318120132,
+      "sampled_volume_flow_m3_s": 0.4144536845424251,
+      "method": "Piecewise cell values on VTK cut; not conservative face phi",
+      "selection_bounds_m": [
+        null,
+        null,
+        0.1,
+        0.7,
+        0.15,
+        0.85
+      ]
+    },
+    "riser_entry_above_turn": {
+      "origin_m": [
+        0.4,
+        0.4,
+        0.86
+      ],
+      "normal": [
+        0,
+        0,
+        1
+      ],
+      "area_m2": 0.18499999135732637,
+      "speed_area_mean_m_s": 2.751750821715401,
+      "normal_velocity_area_mean_m_s": 2.2980618974148688,
+      "normal_velocity_min_m_s": 0.7777520418167114,
+      "normal_velocity_max_m_s": 2.932264566421509,
+      "normal_velocity_CoV": 0.22185355646642319,
+      "pressure_area_mean_Pa": -5.942875499632733,
+      "reverse_area_fraction": 0.0,
+      "sampled_volume_flow_m3_s": 0.42514143116035175,
+      "method": "Piecewise cell values on VTK cut; not conservative face phi",
+      "selection_bounds_m": [
+        0.32,
+        0.69,
+        0.15,
+        0.65,
+        null,
+        null
+      ]
+    },
+    "riser_mid": {
+      "origin_m": [
+        0.4,
+        0.4,
+        1.2
+      ],
+      "normal": [
+        0,
+        0,
+        1
+      ],
+      "area_m2": 0.18499999135732637,
+      "speed_area_mean_m_s": 2.435549484542304,
+      "normal_velocity_area_mean_m_s": 2.2407297606827608,
+      "normal_velocity_min_m_s": -1.0032525062561035,
+      "normal_velocity_max_m_s": 3.6846001148223877,
+      "normal_velocity_CoV": 0.7132464578908962,
+      "pressure_area_mean_Pa": -8.6159050127654,
+      "reverse_area_fraction": 0.16432436009582213,
+      "sampled_volume_flow_m3_s": 0.4145349863604147,
+      "method": "Piecewise cell values on VTK cut; not conservative face phi",
+      "selection_bounds_m": [
+        0.32,
+        0.69,
+        0.15,
+        0.65,
+        null,
+        null
+      ]
+    },
+    "outlet_mid": {
+      "origin_m": [
+        0.695,
+        0.4,
+        1.7
+      ],
+      "normal": [
+        1,
+        0,
+        0
+      ],
+      "area_m2": 0.1249999925494194,
+      "speed_area_mean_m_s": 4.6368679170536735,
+      "normal_velocity_area_mean_m_s": 3.3753938146493465,
+      "normal_velocity_min_m_s": 0.3606065511703491,
+      "normal_velocity_max_m_s": 5.1536760330200195,
+      "normal_velocity_CoV": 0.3898614839944488,
+      "pressure_area_mean_Pa": -19.594709785766977,
+      "reverse_area_fraction": 0.0,
+      "sampled_volume_flow_m3_s": 0.42192420168252465,
+      "method": "Piecewise cell values on VTK cut; not conservative face phi",
+      "selection_bounds_m": [
+        null,
+        null,
+        0.15,
+        0.65,
+        1.6,
+        1.85
+      ]
+    }
+  },
+  "source_cad_sha256": "25d528509c02d3886087d2acbc5074b2c1a755ac753ebf8b5828610ca8503c49",
+  "log_sha256": "ddff05b05e178519fb46353cddb8266a5d769886321a63ad384c94da43e7f6de",
+  "common_riser_window": {
+    "bounds_z_m": [
+      0.85,
+      1.85
+    ],
+    "reverse_volume_fraction_Uz_below_minus_0p05": 0.12536014636672715,
+    "speed_volume_mean_m_s": 2.286347698011647
+  },
+  "fan": {
+    "Q_m3_s": 0.41451790380545994,
+    "Q_m3_h": 1492.2644536996559,
+    "curve_static_Pa": 6.0792081228280495,
+    "measured_static_equivalent_Pa": 6.079173412495927,
+    "curve_closure_error_Pa": -3.4710332122322995e-05,
+    "inside_source_curve": true,
+    "source_json_sha256": "847274a70e6d1a56d4707186c6eb37792f96358bb481bad46a704c554de15c73"
+  },
+  "inletPressure_late100": {
+    "min": -0.625903886496,
+    "max": -0.6259013947559999,
+    "range_percent_of_mean": 0.0003981034628159373
+  },
+  "outletFlow_late100": {
+    "min": 0.41451753458,
+    "max": 0.41451840268,
+    "range_percent_of_mean": 0.0002094239790784921
+  },
+  "criteria": {
+    "residuals": false,
+    "mass": true,
+    "flow_stability": true,
+    "fan_closure": true
+  },
+  "classification_boundary": "No automatic design classification; compare all cases and limitations together."
+}

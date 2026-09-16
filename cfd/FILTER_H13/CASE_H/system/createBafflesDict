@@ -1,0 +1,227 @@
+FoamFile { version 2.0; format ascii; class dictionary; object createBafflesDict; }
+
+internalFacesOnly true;
+fields true;
+baffles
+{
+
+    filterActiveFace
+    {
+        type surface;
+        surface plate;
+        origin (0.305 0.1035 0.2035);
+        span (0.0 0.593 0.593);
+        owner
+        {
+            name FILTER_UPSTREAM;
+            type cyclic;
+            neighbourPatch FILTER_DOWNSTREAM;
+            patchFields
+            {
+
+                p
+                {
+                    type porousBafflePressure;
+                    patchType cyclic;
+                    D 23925899.3841;
+                    I 0;
+                    length 0.292;
+                    relaxation 0.2;
+                    jump uniform 0;
+                    value uniform -50;
+                }
+                U { type cyclic; }
+                k { type cyclic; }
+                epsilon { type cyclic; }
+                nut { type cyclic; }
+
+            }
+        }
+        neighbour
+        {
+            name FILTER_DOWNSTREAM;
+            type cyclic;
+            neighbourPatch FILTER_UPSTREAM;
+            patchFields
+            {
+
+                p
+                {
+                    type porousBafflePressure;
+                    patchType cyclic;
+                    D 23925899.3841;
+                    I 0;
+                    length 0.292;
+                    relaxation 0.2;
+                    jump uniform 0;
+                    value uniform -50;
+                }
+                U { type cyclic; }
+                k { type cyclic; }
+                epsilon { type cyclic; }
+                nut { type cyclic; }
+
+            }
+        }
+    }
+
+    frameLeft
+    {
+        type surface;
+        surface plate;
+        origin (0.305 0.1 0.15);
+        span (0.0 0.0034999999999999892 0.7);
+        owner
+        {
+            name FILTER_FRAME_UPSTREAM;
+            type wall;
+            
+            patchFields
+            {
+
+                p { type zeroGradient; }
+                U { type noSlip; }
+                k { type kqRWallFunction; value uniform 0.00375; }
+                epsilon { type epsilonWallFunction; value uniform 0.000834; }
+                nut { type nutkWallFunction; value uniform 0; }
+
+            }
+        }
+        neighbour
+        {
+            name FILTER_FRAME_DOWNSTREAM;
+            type wall;
+            
+            patchFields
+            {
+
+                p { type zeroGradient; }
+                U { type noSlip; }
+                k { type kqRWallFunction; value uniform 0.00375; }
+                epsilon { type epsilonWallFunction; value uniform 0.000834; }
+                nut { type nutkWallFunction; value uniform 0; }
+
+            }
+        }
+    }
+
+    frameRight
+    {
+        type surface;
+        surface plate;
+        origin (0.305 0.6965 0.15);
+        span (0.0 0.0034999999999999476 0.7);
+        owner
+        {
+            name FILTER_FRAME_UPSTREAM;
+            type wall;
+            
+            patchFields
+            {
+
+                p { type zeroGradient; }
+                U { type noSlip; }
+                k { type kqRWallFunction; value uniform 0.00375; }
+                epsilon { type epsilonWallFunction; value uniform 0.000834; }
+                nut { type nutkWallFunction; value uniform 0; }
+
+            }
+        }
+        neighbour
+        {
+            name FILTER_FRAME_DOWNSTREAM;
+            type wall;
+            
+            patchFields
+            {
+
+                p { type zeroGradient; }
+                U { type noSlip; }
+                k { type kqRWallFunction; value uniform 0.00375; }
+                epsilon { type epsilonWallFunction; value uniform 0.000834; }
+                nut { type nutkWallFunction; value uniform 0; }
+
+            }
+        }
+    }
+
+    frameBottom
+    {
+        type surface;
+        surface plate;
+        origin (0.305 0.1035 0.15);
+        span (0.0 0.593 0.05349999999999999);
+        owner
+        {
+            name FILTER_FRAME_UPSTREAM;
+            type wall;
+            
+            patchFields
+            {
+
+                p { type zeroGradient; }
+                U { type noSlip; }
+                k { type kqRWallFunction; value uniform 0.00375; }
+                epsilon { type epsilonWallFunction; value uniform 0.000834; }
+                nut { type nutkWallFunction; value uniform 0; }
+
+            }
+        }
+        neighbour
+        {
+            name FILTER_FRAME_DOWNSTREAM;
+            type wall;
+            
+            patchFields
+            {
+
+                p { type zeroGradient; }
+                U { type noSlip; }
+                k { type kqRWallFunction; value uniform 0.00375; }
+                epsilon { type epsilonWallFunction; value uniform 0.000834; }
+                nut { type nutkWallFunction; value uniform 0; }
+
+            }
+        }
+    }
+
+    frameTop
+    {
+        type surface;
+        surface plate;
+        origin (0.305 0.1035 0.7965);
+        span (0.0 0.593 0.05349999999999999);
+        owner
+        {
+            name FILTER_FRAME_UPSTREAM;
+            type wall;
+            
+            patchFields
+            {
+
+                p { type zeroGradient; }
+                U { type noSlip; }
+                k { type kqRWallFunction; value uniform 0.00375; }
+                epsilon { type epsilonWallFunction; value uniform 0.000834; }
+                nut { type nutkWallFunction; value uniform 0; }
+
+            }
+        }
+        neighbour
+        {
+            name FILTER_FRAME_DOWNSTREAM;
+            type wall;
+            
+            patchFields
+            {
+
+                p { type zeroGradient; }
+                U { type noSlip; }
+                k { type kqRWallFunction; value uniform 0.00375; }
+                epsilon { type epsilonWallFunction; value uniform 0.000834; }
+                nut { type nutkWallFunction; value uniform 0; }
+
+            }
+        }
+    }
+}

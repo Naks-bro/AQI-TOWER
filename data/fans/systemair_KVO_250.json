@@ -1,0 +1,109 @@
+{
+  "manufacturer": "Systemair",
+  "model": "KVO 250",
+  "article_number": "2027",
+  "series": "KVO (Circular Duct Fan)",
+  "type": "centrifugal circular duct fan, backward-curved impeller, single inlet, AC external rotor motor",
+  "impeller_blade_type": "backward-curved (confirmed: backward-curved for KVO sizes 200-315; forward-curved for sizes 100-160)",
+  "housing": "integral circular duct housing with flanged duct connections (250mm duct diameter)",
+  "voltage_vac": 230,
+  "frequency_hz": 50,
+  "phase": 1,
+  "power_w": 301,
+  "current_a": 1.33,
+  "rpm": 2480,
+  "capacitor_uf": 7,
+  "insulation_class_motor": "F",
+  "ip_rating": "IP44",
+  "motor_protection": "integral thermal contacts",
+  "speed_control": "Thyristor REE 2 (stepless)",
+  "max_airflow_m3s": 0.417,
+  "max_airflow_m3h": 1501,
+  "max_airflow_condition": "free delivery (0 Pa static pressure) — CONFIRMED from Systemair KVO catalog",
+  "operating_temp_max_c": 70,
+  "operating_temp_note": "Maximum temperature of transported air",
+  "noise_dba": 52,
+  "noise_condition": "sound pressure level at 3 m distance",
+  "duct_connection_diameter_mm": 250,
+  "weight_kg": 20,
+  "dimensions_mm": {
+    "A_duct_diameter": 250,
+    "B": 527.5,
+    "C": 568,
+    "D": 151,
+    "E": 133,
+    "F": 558,
+    "G": 270,
+    "H": 270,
+    "note": "A = duct connection diameter; B-H are overall envelope dimensions in mm. Source: Systemair KVO catalog dimensional drawing."
+  },
+  "fan_curve_points": [
+    {
+      "Q_m3s": 0,
+      "Q_m3h": 0,
+      "delta_P_static_Pa": 688,
+      "delta_P_uncertainty_Pa": 20,
+      "confidence": "GRAPH-DIGITIZED",
+      "source": "Phase 6D PyMuPDF vector extraction from Systemair KVO catalog PDF (page 1 of PDF, catalog page 34) — cubic Bezier path KVO 250L, calibrated to acoustic measurement point. CORRECTION: previous Phase 6C estimate of ~850 Pa was a rough graphical read without the actual PDF; vector extraction yields 688 Pa."
+    },
+    {
+      "Q_m3s": 0.1042,
+      "Q_m3h": 375,
+      "delta_P_static_Pa": 640,
+      "delta_P_uncertainty_Pa": 20,
+      "confidence": "GRAPH-DIGITIZED",
+      "source": "Phase 6D PyMuPDF vector extraction — Bezier evaluation at Q≈375 m³/h. Uncertainty reflects pixel-level graph resolution and calibration residuals."
+    },
+    {
+      "Q_m3s": 0.2083,
+      "Q_m3h": 750,
+      "delta_P_static_Pa": 480,
+      "delta_P_uncertainty_Pa": 15,
+      "confidence": "GRAPH-DIGITIZED",
+      "source": "Phase 6D PyMuPDF vector extraction — Bezier evaluation at Q≈750 m³/h."
+    },
+    {
+      "Q_m3s": 0.254,
+      "Q_m3h": 914,
+      "delta_P_static_Pa": 388,
+      "confidence": "CONFIRMED",
+      "source": "Systemair KVO catalog — acoustic measurement data table, page 4 of PDF (catalog page 37): KVO 250 with LDC 250-900. Exact values: Q=0.254 m³/s, ΔPs=388 Pa at 230V/50Hz. Used as primary calibration anchor for graph digitization."
+    },
+    {
+      "Q_m3s": 0.3333,
+      "Q_m3h": 1200,
+      "delta_P_static_Pa": 205,
+      "delta_P_uncertainty_Pa": 15,
+      "confidence": "GRAPH-DIGITIZED",
+      "source": "Phase 6D PyMuPDF vector extraction — Bezier evaluation at Q≈1200 m³/h."
+    },
+    {
+      "Q_m3s": 0.417,
+      "Q_m3h": 1501,
+      "delta_P_static_Pa": 0,
+      "confidence": "CONFIRMED",
+      "source": "Systemair KVO catalog — technical data table, page 1 of PDF (catalog page 34): max airflow at free delivery (zero static pressure). Manufacturer stated value 0.417 m³/s = 1501 m³/h."
+    }
+  ],
+  "fan_curve_note": "Six points available (2 confirmed numeric source + 4 graph-digitized via PyMuPDF vector extraction). This MEETS the minimum of 5 points for the OpenFOAM 'fan' boundary condition. The curve is monotonically decreasing; zero-crossing verified at Q≈1494 m³/h (0.5% error from confirmed 1501 m³/h). SHUTOFF HEAD CORRECTION: Phase 6C estimated ~850 Pa ±100 Pa from a rough graphical read. Phase 6D vector extraction yields 688 Pa — outside the previous uncertainty range. All documents must use 688 Pa as the current best estimate. Graph-digitized points carry ±15-20 Pa uncertainty (~3-5% of point value), acceptable for a simplified OpenFOAM fan model. CFD STATUS: CFD READY WITH GRAPH-DIGITIZATION UNCERTAINTY. The V02_fan case may now implement the 'fan' boundary condition using this 6-point table, but results must be reported with acknowledgment of the digitization uncertainty in the 4 non-confirmed points.",
+  "preliminary_operating_point_one_hepa": {
+    "system_description": "KVO 250 + empty tower (V00, 33 Pa at 1512 m3/h) + one Freudenberg SF13-B 593x593x292 H13 HEPA filter (clean, 300 Pa at 2.84 m/s, single-point linear scaling)",
+    "estimated_Q_m3h": 1300,
+    "estimated_delta_P_Pa": 133,
+    "basis": "Fan curve linear interpolation between (915, 388) and (1501, 0) intersected with system curve ΔP_sys = 33×(Q/1512)² + 300×(Q/3600)",
+    "confidence": "VERY LOW — multiple compounded uncertainties: 3-point fan curve, single-point HEPA ΔP extrapolation, non-converged V00 result, no prefilter or other stages included",
+    "do_not_cite_as_design_value": true
+  },
+  "india_availability": "Systemair has India operations (Systemair India). KVO 250 availability and pricing in India not confirmed — requires direct inquiry to Systemair India.",
+  "integration_note": "Complete circular duct fan — easiest mechanical integration of all candidates. Connects to 250mm circular duct. Transition to tower geometry required. 20 kg — structural support must be designed.",
+  "source_urls": [
+    "https://planetaklimata.com.ua/instr/Systemair/Systemair_Fans_KVO_Data_sheet_Eng.pdf"
+  ],
+  "source_document_primary": "Systemair KVO Circular Duct Fan product catalog — pages covering KVO 250 (Art no. 2027). Technical data table and fan performance curve. Read directly in Phase 6C.",
+  "evidence_level": "A",
+  "evidence_level_rationale": "Upgraded from B to A in Phase 6C. Official Systemair product catalog PDF read directly. All electrical specs (voltage, current, power, RPM, capacitor, IP, insulation class, weight) confirmed from manufacturer table. Fan curve with two confirmed operating points obtained from catalog. Shutoff head estimated from graphical curve. Evidence A: official manufacturer document with fan curve data.",
+  "suitability_assessment": "TIER 1 CANDIDATE — BEST CURRENT DATA — CFD READY. Backward-curved (non-overloading), 230V/50Hz, 1501 m³/h free delivery, shutoff head ~688 Pa (CORRECTED: previous 850 Pa estimate was wrong — see fan_curve_note). Preliminary operating estimate with one clean HEPA filter: Q≈1300 m³/h at ~133 Pa system resistance. With additional filter stages (prefilter, biochar), operating Q will decrease and ΔP will increase — likely scenario M (200-400 Pa) as long as stages are not excessively loaded. Fan curve now has 6 points (CFD-ready with digitization uncertainty). 20 kg weight and 250mm duct connection are integration constraints.",
+  "date_researched": "2026-09-05",
+  "phase_6c_update": "2026-09-05 — Evidence upgraded from B to A. All confirmed specs added. Fan curve points extracted from catalog. Preliminary operating point estimated. Tier classification upgraded.",
+  "phase_6d_update": "2026-09-05 — Fan curve expanded from 3 to 6 points via PyMuPDF vector path extraction of the KVO 250L Bezier curve from the catalog PDF. Shutoff head CORRECTED from ~850 Pa (rough Phase 6C graphical estimate) to ~688 Pa (calibrated vector extraction). CFD status upgraded from INSUFFICIENT to CFD READY WITH GRAPH-DIGITIZATION UNCERTAINTY. Extraction method: page.get_drawings() on PDF page 1; KVO 250L curve identified by color (RGB 0, 0.328, 0.591); calibrated to acoustic measurement point (Q=0.254 m³/s, ΔP=388 Pa); Q_scale=0.9941, DP_scale=1.0041."
+}

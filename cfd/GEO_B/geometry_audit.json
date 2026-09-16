@@ -1,0 +1,202 @@
+{
+  "case": "GEO_B",
+  "source": "cad\\parametric\\AQI_Tower_ConceptA_GEO_B.FCStd",
+  "source_sha256": "4f810feab8ba035f242f3c3e41be95ec2b84331f709023a518c3bbaa5734d2b3",
+  "freecad_version": [
+    "1",
+    "1",
+    "3",
+    "20260725 (Git shallow)",
+    "Unknown",
+    "2026/07/25 04:52:02",
+    "grafted,grafted",
+    "145529fe741292ff0b3977a01195bf0247425794"
+  ],
+  "units": "CAD millimetres; mesh metres",
+  "parameter_notice": "DESIGN EXPERIMENT PARAMETER \u2014 NOT PRODUCT REQUIREMENT",
+  "regions": {
+    "AIR_INLET": {
+      "object": "Inlet",
+      "bounds_mm": [
+        0.0,
+        10.0,
+        100.0,
+        700.0,
+        150.0,
+        850.0
+      ],
+      "volume_m3": 0.004200000000000001,
+      "parameter_status": "DESIGN EXPERIMENT PARAMETER \u2014 NOT PRODUCT REQUIREMENT"
+    },
+    "DIRTY_PLENUM": {
+      "object": "DirtyAirPlenum",
+      "bounds_mm": [
+        10.0,
+        150.0,
+        100.0,
+        700.0,
+        150.0,
+        850.0
+      ],
+      "volume_m3": 0.058800000000000005,
+      "parameter_status": "DESIGN EXPERIMENT PARAMETER \u2014 NOT PRODUCT REQUIREMENT"
+    },
+    "STAGE_01": {
+      "object": "TreatmentStage_01",
+      "bounds_mm": [
+        150.0,
+        180.0,
+        100.0,
+        700.0,
+        150.0,
+        850.0
+      ],
+      "volume_m3": 0.0126,
+      "parameter_status": "DESIGN EXPERIMENT PARAMETER \u2014 NOT PRODUCT REQUIREMENT"
+    },
+    "INTERSTAGE_01": {
+      "object": "InterstageGap_01",
+      "bounds_mm": [
+        180.0,
+        220.0,
+        100.0,
+        700.0,
+        150.0,
+        850.0
+      ],
+      "volume_m3": 0.016800000000000002,
+      "parameter_status": "DESIGN EXPERIMENT PARAMETER \u2014 NOT PRODUCT REQUIREMENT"
+    },
+    "STAGE_02": {
+      "object": "TreatmentStage_02",
+      "bounds_mm": [
+        220.0,
+        250.0,
+        100.0,
+        700.0,
+        150.0,
+        850.0
+      ],
+      "volume_m3": 0.0126,
+      "parameter_status": "DESIGN EXPERIMENT PARAMETER \u2014 NOT PRODUCT REQUIREMENT"
+    },
+    "INTERSTAGE_02": {
+      "object": "InterstageGap_02",
+      "bounds_mm": [
+        250.0,
+        290.0,
+        100.0,
+        700.0,
+        150.0,
+        850.0
+      ],
+      "volume_m3": 0.016800000000000002,
+      "parameter_status": "DESIGN EXPERIMENT PARAMETER \u2014 NOT PRODUCT REQUIREMENT"
+    },
+    "STAGE_03": {
+      "object": "TreatmentStage_03",
+      "bounds_mm": [
+        290.0,
+        320.0,
+        100.0,
+        700.0,
+        150.0,
+        850.0
+      ],
+      "volume_m3": 0.0126,
+      "parameter_status": "DESIGN EXPERIMENT PARAMETER \u2014 NOT PRODUCT REQUIREMENT"
+    },
+    "CLEAN_PLENUM": {
+      "object": "CleanAirPlenum",
+      "bounds_mm": [
+        320.0,
+        500.0,
+        100.0,
+        700.0,
+        150.0,
+        850.0
+      ],
+      "volume_m3": 0.0756,
+      "parameter_status": "DESIGN EXPERIMENT PARAMETER \u2014 NOT PRODUCT REQUIREMENT"
+    },
+    "CLEAN_RISER": {
+      "object": "CleanAirRiser",
+      "bounds_mm": [
+        260.0,
+        690.0,
+        150.0,
+        650.0,
+        850.0,
+        2000.0
+      ],
+      "volume_m3": 0.24724999999999994,
+      "parameter_status": "DESIGN EXPERIMENT PARAMETER \u2014 NOT PRODUCT REQUIREMENT"
+    },
+    "AIR_OUTLET": {
+      "object": "Outlet",
+      "bounds_mm": [
+        690.0,
+        700.0,
+        150.0,
+        650.0,
+        1600.0,
+        1850.0
+      ],
+      "volume_m3": 0.0012499999999999998,
+      "parameter_status": "DESIGN EXPERIMENT PARAMETER \u2014 NOT PRODUCT REQUIREMENT"
+    }
+  },
+  "fluid_volume_m3": 0.4585000000000001,
+  "stage_treatment": "EMPTY FLUID; NO RESISTANCE",
+  "fan_model": "Unchanged KVO 250 terminal suction, same orientation and six-point curve",
+  "comparison_physics": "Copied from V01; initial run uses identical fvSolution and fvSchemes",
+  "axes_mm": [
+    [
+      0.0,
+      10.0,
+      150.0,
+      180.0,
+      220.0,
+      250.0,
+      260.0,
+      290.0,
+      320.0,
+      500.0,
+      690.0,
+      700.0
+    ],
+    [
+      100.0,
+      150.0,
+      650.0,
+      700.0
+    ],
+    [
+      150.0,
+      850.0,
+      1600.0,
+      1850.0,
+      2000.0
+    ]
+  ],
+  "block_count": 40,
+  "cell_counts": {
+    "AIR_INLET": 1085,
+    "DIRTY_PLENUM": 7595,
+    "STAGE_01": 2170,
+    "INTERSTAGE_01": 2170,
+    "STAGE_02": 2170,
+    "INTERSTAGE_02": 3255,
+    "STAGE_03": 2170,
+    "CLEAN_PLENUM": 9765,
+    "CLEAN_RISER": 33925,
+    "AIR_OUTLET": 325
+  },
+  "total_cells": 64630,
+  "boundary_area_m2": {
+    "AIR_INLET": 0.41999999999999993,
+    "AIR_OUTLET": 0.125,
+    "WALLS": 3.938999999999999
+  },
+  "max_cell_edge_mm": 20.0
+}

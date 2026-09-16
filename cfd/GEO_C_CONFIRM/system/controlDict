@@ -1,0 +1,77 @@
+FoamFile { version 2.0; format ascii; class dictionary; object controlDict; }
+application foamRun;
+// Retain the compiled boundary library through solver destruction.
+libs ("$FOAM_CASE/dynamicCode/platforms/linux64GccDPInt32Opt/lib/libkvo250TerminalSuction_69288ba6138aa0e6b03100f329de6d70c031e030.so");
+solver incompressibleFluid;
+startFrom startTime;
+startTime 0;
+stopAt endTime;
+endTime 3000;
+deltaT 1;
+writeControl timeStep;
+writeInterval 250;
+purgeWrite 0;
+writeFormat ascii;
+writePrecision 10;
+writeCompression off;
+timeFormat general;
+timePrecision 8;
+runTimeModifiable true;
+functions
+{
+    inletFlow
+    {
+        type surfaceFieldValue;
+        libs ("libfieldFunctionObjects.so");
+        patch AIR_INLET;
+        operation orientedSum;
+        fields (phi);
+        writeFields false;
+        writeControl timeStep;
+        writeInterval 10;
+        log true;
+    }
+    outletFlow
+    {
+        type surfaceFieldValue;
+        libs ("libfieldFunctionObjects.so");
+        patch AIR_OUTLET;
+        operation orientedSum;
+        fields (phi);
+        writeFields false;
+        writeControl timeStep;
+        writeInterval 10;
+        log true;
+    }
+    inletPressure
+    {
+        type surfaceFieldValue;
+        libs ("libfieldFunctionObjects.so");
+        patch AIR_INLET;
+        operation areaAverage;
+        fields (p);
+        writeFields false;
+        writeControl timeStep;
+        writeInterval 10;
+        log true;
+    }
+    inletVelocity
+    {
+        type surfaceFieldValue;
+        libs ("libfieldFunctionObjects.so");
+        patch AIR_INLET;
+        operation areaAverage;
+        fields (U);
+        writeFields false;
+        writeControl timeStep;
+        writeInterval 10;
+        log true;
+    }
+    yPlus
+    {
+        type yPlus;
+        libs ("libfieldFunctionObjects.so");
+        executeControl writeTime;
+        writeControl writeTime;
+    }
+}

@@ -1,0 +1,37 @@
+"""Open this macro in FreeCAD, then run it. Uses the same JSON as blockMesh."""
+import json
+from pathlib import Path
+import FreeCAD as App
+import Part
+
+# FreeCAD macro execution does not consistently set __file__.
+root = Path(App.getUserAppDataDir())  # replaced by the macro's own path below
+try:
+    root = Path(__file__).resolve().parents[2]
+except NameError:
+    from PySide import QtWidgets
+    selected = QtWidgets.QFileDialog.getOpenFileName(None, 'Select cad/parametric/v00.json', '', '*.json')[0]
+    if not selected:
+        raise RuntimeError('No configuration selected')
+    root = Path(selected).resolve().parents[2]
+c = json.loads((root / 'cad/parametric/v00.json').read_text())
+w, d, h = [1000 * c[k]['value'] for k in ('tower_width', 'tower_depth', 'tower_height')]
+if not all(0 < v < float('inf') for v in (w, d, h)):
+    raise ValueError('Dimensions must be finite and positive')
+doc = App.newDocument('V00_Conceptual_Air_Domain')
+domain = doc.addObject('Part::Box', 'AirDomain')
+domain.Label = 'CONCEPTUAL air domain (not enclosure material)'
+domain.Length, domain.Width, domain.Height = w, d, h
+for label, z in [('Inlet', 0), ('Outlet', h)]:
+    face = doc.addObject('Part::Feature', label)
+    face.Shape = Part.makePlane(w, d, App.Vector(0, 0, z))
+    face.Label = label + ' — full-face opening assumption'
+doc.recompute()
+export = root / 'cad/exports'
+export.mkdir(parents=True, exist_ok=True)
+doc.saveAs(str(export / 'v00.FCStd'))
+Part.export([domain], str(export / 'v00_air_domain.step'))
+if App.GuiUp:
+    domain.ViewObject.Transparency = 75
+    Gui.activeDocument().activeView().viewAxonometric()
+    Gui.activeDocument().activeView().fitAll()

@@ -1,0 +1,169 @@
+{
+  "records": [
+    {
+      "case": "V01",
+      "flow_m3_h": 1475.7375011264714,
+      "fan_static_Pa": 17.3256501865947,
+      "tower_static_difference_Pa": 32.46144614064666,
+      "tower_total_pressure_loss_Pa": 17.32565013853005,
+      "peak_speed_m_s": 6.531343460083008,
+      "mean_speed_m_s": 1.7434652007439309,
+      "riser_reverse_percent": 23.116031628733076,
+      "common_riser_reverse_percent": 19.174247430496074,
+      "clean_plenum_reverse_percent": 5.947087512482989,
+      "low_speed_percent": 2.037731980160407,
+      "riser_entry_CoV": 1.0867637997583406,
+      "riser_entry_reverse_area_percent": 31.221622264429044,
+      "stage03_CoV": 0.772433226604066,
+      "mass_imbalance_percent": 6.841652824110755e-08,
+      "final_residuals": {
+        "p": 2.836754273e-05,
+        "Ux": 2.713372882e-06,
+        "Uy": 5.136790777e-06,
+        "Uz": 3.181149224e-06,
+        "k": 6.42039142e-07,
+        "epsilon": 1.87779146e-07
+      },
+      "criteria": {
+        "residuals": false,
+        "mass": true,
+        "flow_stability": true,
+        "fan_closure": true
+      },
+      "cell_count": 57645,
+      "final_iteration": 4000.0
+    },
+    {
+      "case": "GEO_A",
+      "flow_m3_h": 1492.2644536996559,
+      "fan_static_Pa": 6.079173412495927,
+      "tower_static_difference_Pa": 20.421589294320512,
+      "tower_total_pressure_loss_Pa": 6.0791732493233335,
+      "peak_speed_m_s": 5.775997161865234,
+      "mean_speed_m_s": 1.5906393751923702,
+      "riser_reverse_percent": 17.294301727999354,
+      "common_riser_reverse_percent": 12.536014636672716,
+      "clean_plenum_reverse_percent": 4.825394811130961,
+      "low_speed_percent": 1.5365524891446787,
+      "riser_entry_CoV": 0.22185355646642319,
+      "riser_entry_reverse_area_percent": 0.0,
+      "stage03_CoV": 0.5832062239059943,
+      "mass_imbalance_percent": 4.423451731584424e-08,
+      "final_residuals": {
+        "p": 0.0004539921884,
+        "Ux": 5.160094512e-05,
+        "Uy": 0.0003580337335,
+        "Uz": 4.185332953e-05,
+        "k": 4.149943292e-05,
+        "epsilon": 4.076205269e-05
+      },
+      "criteria": {
+        "residuals": false,
+        "mass": true,
+        "flow_stability": true,
+        "fan_closure": true
+      },
+      "cell_count": 61395,
+      "final_iteration": 4000.0
+    },
+    {
+      "case": "GEO_B",
+      "flow_m3_h": 1486.018878227406,
+      "fan_static_Pa": 10.32829979002746,
+      "tower_static_difference_Pa": 25.12815526879019,
+      "tower_total_pressure_loss_Pa": 10.328299837565707,
+      "peak_speed_m_s": 5.735273838043213,
+      "mean_speed_m_s": 1.5842896593205862,
+      "riser_reverse_percent": 25.2649685848618,
+      "common_riser_reverse_percent": 21.428958021624247,
+      "clean_plenum_reverse_percent": 6.151673179014542,
+      "low_speed_percent": 2.3785460187015444,
+      "riser_entry_CoV": 0.9513821877478046,
+      "riser_entry_reverse_area_percent": 26.158138831135968,
+      "stage03_CoV": 0.7402608011819929,
+      "mass_imbalance_percent": 1.0850315471501374e-05,
+      "final_residuals": {
+        "p": 9.850322691e-06,
+        "Ux": 5.404863565e-07,
+        "Uy": 9.330964149e-07,
+        "Uz": 3.241294614e-07,
+        "k": 7.405997699e-07,
+        "epsilon": 5.22709405e-07
+      },
+      "criteria": {
+        "residuals": true,
+        "mass": true,
+        "flow_stability": true,
+        "fan_closure": true
+      },
+      "cell_count": 64630,
+      "final_iteration": 1505.0
+    },
+    {
+      "case": "GEO_C",
+      "flow_m3_h": 1496.0549912644801,
+      "fan_static_Pa": 3.500308699874432,
+      "tower_static_difference_Pa": 18.810048818090422,
+      "tower_total_pressure_loss_Pa": 3.500308708407014,
+      "peak_speed_m_s": 5.619945049285889,
+      "mean_speed_m_s": 1.5437583723550312,
+      "riser_reverse_percent": 15.881727631610348,
+      "common_riser_reverse_percent": 15.881727631610348,
+      "clean_plenum_reverse_percent": 4.874777570368215,
+      "low_speed_percent": 1.629898834112011,
+      "riser_entry_CoV": 0.23440535597556758,
+      "riser_entry_reverse_area_percent": 0.0,
+      "stage03_CoV": 0.5914849906202582,
+      "mass_imbalance_percent": 7.397751584759326e-06,
+      "final_residuals": {
+        "p": 8.794926576e-06,
+        "Ux": 2.517696964e-07,
+        "Uy": 9.570700214e-07,
+        "Uz": 2.257805654e-07,
+        "k": 6.851722333e-07,
+        "epsilon": 3.746260179e-07
+      },
+      "criteria": {
+        "residuals": true,
+        "mass": true,
+        "flow_stability": true,
+        "fan_closure": true
+      },
+      "cell_count": 63780,
+      "final_iteration": 926.0
+    },
+    {
+      "case": "GEO_C_CONFIRM",
+      "flow_m3_h": 1496.0549912644801,
+      "fan_static_Pa": 3.500308699874432,
+      "tower_static_difference_Pa": 18.810048818090422,
+      "tower_total_pressure_loss_Pa": 3.500308708407014,
+      "peak_speed_m_s": 5.619945049285889,
+      "mean_speed_m_s": 1.5437583723550312,
+      "riser_reverse_percent": 15.881727631610348,
+      "common_riser_reverse_percent": 15.881727631610348,
+      "clean_plenum_reverse_percent": 4.874777570368215,
+      "low_speed_percent": 1.629898834112011,
+      "riser_entry_CoV": 0.23440535597556758,
+      "riser_entry_reverse_area_percent": 0.0,
+      "stage03_CoV": 0.5914849906202582,
+      "mass_imbalance_percent": 7.397751584759326e-06,
+      "final_residuals": {
+        "p": 8.794926576e-06,
+        "Ux": 2.517696964e-07,
+        "Uy": 9.570700214e-07,
+        "Uz": 2.257805654e-07,
+        "k": 6.851722333e-07,
+        "epsilon": 3.746260179e-07
+      },
+      "criteria": {
+        "residuals": true,
+        "mass": true,
+        "flow_stability": true,
+        "fan_closure": true
+      },
+      "cell_count": 63780,
+      "final_iteration": 926.0
+    }
+  ]
+}

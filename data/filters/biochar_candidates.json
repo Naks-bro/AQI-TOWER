@@ -1,0 +1,312 @@
+{
+  "project": "AQI Tower",
+  "phase": "13",
+  "date_researched": "2026-09-06",
+  "target_gas_status": "TARGET GAS — NOT YET DEFINED",
+  "biochar_data_status": "PARTIALLY READY",
+  "selection_scope": "Research candidates only; no final system material selected and no adsorption performance claimed.",
+  "evidence_scale": {
+    "A": "Manufacturer or measured technical datasheet",
+    "B": "Peer-reviewed experimental study",
+    "C": "Authoritative technical source or manufacturer family page without grade-specific measured data",
+    "D": "Secondary source; not used as engineering-grade product data"
+  },
+  "candidates": [
+    {
+      "id": "calgon_ovc_4x8",
+      "material": "Calgon Carbon OVC 4x8",
+      "media_type": "C. granulated activated carbon",
+      "precursor": "coconut shell",
+      "activation": "high-temperature steam activation; not chemically impregnated",
+      "particle_size": "4x8 US mesh; manufacturer specification allows maximum 5 wt% on 4 mesh (4.75 mm) and maximum 5 wt% through 8 mesh (2.36 mm)",
+      "bulk_density_kg_m3": null,
+      "surface_area_m2_g": null,
+      "pore_structure": "high surface area and fine pore structure stated by manufacturer; product-specific pore-size distribution not published in the retrieved datasheet",
+      "adsorption_mechanism": "physical adsorption of organic vapors in activated-carbon pores; compound-specific mechanism not supplied",
+      "moisture_sensitivity": "as-packaged moisture <=5 wt%; performance versus relative humidity not published",
+      "target_pollutants": [
+        "VOCs — compounds not specified in datasheet",
+        "odors — compounds not specified in datasheet"
+      ],
+      "adsorption_data": [
+        {
+          "pollutant": "carbon tetrachloride test vapor",
+          "result": ">=60 wt% activity",
+          "conditions": "test details not stated in retrieved datasheet",
+          "interpretation": "activity index only; not an AQI Tower removal percentage and not transferable to another gas"
+        }
+      ],
+      "pressure_drop_data": [
+        {
+          "status": "AVAILABLE AS OFFICIAL MANUFACTURER GRAPH — NOT TABULATED OR DIGITIZED",
+          "medium": "4x8 granular activated carbon",
+          "conditions": "70 °F and 15 psia; loose-packed and dense-packed behavior discussed; manufacturer directs designers to use dense-packed pressure drop",
+          "graph_range": "approximately 0–110 ft/min superficial velocity and 0–7 in H2O per ft bed",
+          "tower_relevance": "existing HEPA-face velocity 1.053 m/s is outside the graph range ending near 0.56 m/s; extrapolation is not authorized"
+        }
+      ],
+      "regeneration_disposal": "manufacturer states thermal reactivation is possible; actual feasibility and disposal route depend on adsorbate and local service availability",
+      "source": "https://www.calgoncarbon.com/app/uploads/DS-OVC4x815-EIN-E2.pdf",
+      "evidence_level": "A",
+      "india_availability": "Calgon Carbon India LLP and Kuraray India activated-carbon channels are officially listed, but OVC 4x8 stock, lead time, minimum order, and local reactivation service are NOT CONFIRMED",
+      "cost": null,
+      "notes": "PRIMARY RESEARCH CANDIDATE. Best current pressure-loss evidence, but product-specific VOC capacity and breakthrough data for the selected target gas are unavailable."
+    },
+    {
+      "id": "calgon_formasorb",
+      "material": "Calgon Carbon FORMASORB",
+      "media_type": "E. impregnated adsorption media",
+      "precursor": "coconut shell activated carbon",
+      "activation": "high-temperature steam activation followed by proprietary impregnation",
+      "particle_size": "4x8 or 6x12 US mesh",
+      "bulk_density_kg_m3": 600,
+      "surface_area_m2_g": 1150,
+      "pore_structure": "not quantitatively published beyond surface area in retrieved datasheet",
+      "adsorption_mechanism": "physical adsorption plus proprietary impregnation intended for aldehydes",
+      "moisture_sensitivity": "as-packaged moisture <=20 wt%; performance versus relative humidity not published",
+      "target_pollutants": [
+        "formaldehyde",
+        "other aldehydes"
+      ],
+      "adsorption_data": [
+        {
+          "pollutant": "standard test gas under ASTM D3467",
+          "result": ">=55 wt% gas capacity",
+          "conditions": "manufacturer datasheet; this is not a formaldehyde breakthrough capacity",
+          "interpretation": "do not use as a formaldehyde removal percentage"
+        },
+        {
+          "pollutant": "formaldehyde and other aldehydes",
+          "result": "manufacturer application claim; no quantitative capacity or breakthrough curve in retrieved datasheet",
+          "conditions": "NOT AVAILABLE"
+        }
+      ],
+      "pressure_drop_data": [
+        {
+          "status": "NOT AVAILABLE — REQUIRES EXPERIMENT"
+        }
+      ],
+      "regeneration_disposal": "NOT AVAILABLE for this impregnated grade; do not assume the OVC thermal-reactivation statement applies",
+      "source": "https://www.calgoncarbon.com/app/uploads/FORMASORB.pdf",
+      "evidence_level": "A",
+      "india_availability": "Calgon Carbon India LLP is officially listed; exact FORMASORB availability is NOT CONFIRMED",
+      "cost": null,
+      "notes": "CONDITIONAL SPECIALIST CANDIDATE only if formaldehyde or another supported aldehyde becomes the target gas."
+    },
+    {
+      "id": "jacobi_ecosorb_gx_series",
+      "material": "Jacobi EcoSorb GX Series",
+      "media_type": "C. pelletized activated carbon",
+      "precursor": "NOT AVAILABLE for the retrieved product-family page",
+      "activation": "NOT AVAILABLE for the retrieved product-family page",
+      "particle_size": "extruded pellet; exact diameter NOT AVAILABLE",
+      "bulk_density_kg_m3": null,
+      "surface_area_m2_g": null,
+      "pore_structure": "NOT AVAILABLE for an exact grade",
+      "adsorption_mechanism": "activated-carbon adsorption; grade-specific chemistry NOT AVAILABLE",
+      "moisture_sensitivity": "NOT AVAILABLE",
+      "target_pollutants": [
+        "general air-treatment contaminants",
+        "VOCs — exact compounds NOT AVAILABLE",
+        "odors — exact compounds NOT AVAILABLE"
+      ],
+      "adsorption_data": [],
+      "pressure_drop_data": [
+        {
+          "status": "NOT AVAILABLE — REQUIRES MANUFACTURER DATA OR EXPERIMENT"
+        }
+      ],
+      "regeneration_disposal": "Jacobi offers reactivation services generally; grade- and India-specific route NOT CONFIRMED",
+      "source": "https://www.jacobi.net/products/",
+      "evidence_level": "C",
+      "india_availability": "Jacobi Carbons India operates a coconut-shell activated-carbon manufacturing plant and Coimbatore office; exact EcoSorb GX grade availability is NOT CONFIRMED",
+      "cost": null,
+      "notes": "SECONDARY RESEARCH ALTERNATIVE after an exact grade, datasheet, sample, and safety data are obtained from Jacobi India."
+    },
+    {
+      "id": "swp700_standard_biochar",
+      "material": "SWP700 standard softwood-pellet biochar",
+      "media_type": "BIOCHAR — activation not reported; final engineered bed form NOT AVAILABLE",
+      "precursor": "softwood pellets",
+      "activation": "pyrolysis at 700 °C; no post-activation reported in accessible record",
+      "particle_size": "NOT AVAILABLE",
+      "bulk_density_kg_m3": null,
+      "surface_area_m2_g": null,
+      "pore_structure": "product-specific pore data NOT AVAILABLE in accessible record",
+      "adsorption_mechanism": "benzene uptake correlated with surface area in the study; result is material- and compound-specific",
+      "moisture_sensitivity": "NOT AVAILABLE",
+      "target_pollutants": [
+        "benzene — laboratory evidence only"
+      ],
+      "adsorption_data": [
+        {
+          "pollutant": "benzene",
+          "initial_concentration": "1 Pa partial pressure",
+          "temperature": "NOT AVAILABLE in accessible record",
+          "humidity": "NOT AVAILABLE",
+          "contact_time_EBCT": "NOT AVAILABLE",
+          "media_mass": "NOT AVAILABLE",
+          "adsorption_capacity": "2.9 mg/g, highest benzene value among the 12 standard biochars tested",
+          "breakthrough": "10% breakthrough volume reported by study; exact SWP700 value NOT AVAILABLE in accessible record",
+          "test_duration": "NOT AVAILABLE"
+        }
+      ],
+      "pressure_drop_data": [
+        {
+          "status": "NOT AVAILABLE — REQUIRES EXPERIMENT"
+        }
+      ],
+      "regeneration_disposal": "NOT AVAILABLE for an engineered product",
+      "source": "https://doi.org/10.1016/j.cej.2019.123943",
+      "evidence_level": "B",
+      "india_availability": "NOT VERIFIED as a consistent, air-treatment-grade commercial product",
+      "cost": null,
+      "notes": "Research evidence does not define a purchasable or CFD-ready packed-bed medium."
+    },
+    {
+      "id": "rh550_standard_biochar",
+      "material": "RH550 standard rice-husk biochar",
+      "media_type": "A. loose raw biochar or research biochar; final physical form NOT AVAILABLE",
+      "precursor": "rice husk",
+      "activation": "pyrolysis at 550 °C; no post-activation reported",
+      "particle_size": "NOT AVAILABLE",
+      "bulk_density_kg_m3": null,
+      "surface_area_m2_g": null,
+      "pore_structure": "NOT AVAILABLE in accessible record",
+      "adsorption_mechanism": "MEK uptake linked to material surface features and composition in the study",
+      "moisture_sensitivity": "NOT AVAILABLE",
+      "target_pollutants": [
+        "methyl ethyl ketone — laboratory evidence only"
+      ],
+      "adsorption_data": [
+        {
+          "pollutant": "methyl ethyl ketone (MEK)",
+          "initial_concentration": "1 Pa partial pressure",
+          "temperature": "NOT AVAILABLE in accessible record",
+          "humidity": "NOT AVAILABLE",
+          "contact_time_EBCT": "NOT AVAILABLE",
+          "media_mass": "NOT AVAILABLE",
+          "adsorption_capacity": "43 mg/g, highest MEK value among the 12 standard biochars tested",
+          "breakthrough": "10% breakthrough volume reported by study; exact RH550 value NOT AVAILABLE in accessible record",
+          "test_duration": "NOT AVAILABLE"
+        }
+      ],
+      "pressure_drop_data": [
+        {
+          "status": "NOT AVAILABLE — REQUIRES EXPERIMENT"
+        }
+      ],
+      "regeneration_disposal": "NOT AVAILABLE",
+      "source": "https://doi.org/10.1016/j.cej.2019.123943",
+      "evidence_level": "B",
+      "india_availability": "NOT VERIFIED as a consistent, air-treatment-grade commercial product",
+      "cost": null,
+      "notes": "Laboratory result is specific to MEK at 1 Pa and cannot be generalized to other VOCs."
+    },
+    {
+      "id": "rice_husk_r850_activated_carbon",
+      "material": "R850 rice-husk-derived activated carbon",
+      "media_type": "D. activated biochar / biomass-derived activated carbon",
+      "precursor": "waste rice husk",
+      "activation": "carbonization followed by CO2 activation at 1123 K (850 °C)",
+      "particle_size": "NOT AVAILABLE in accessible record",
+      "bulk_density_kg_m3": null,
+      "surface_area_m2_g": null,
+      "pore_structure": "largest surface and micropore area among the three study samples; exact values NOT AVAILABLE in accessible record",
+      "adsorption_mechanism": "gas-solid partitioning and surface interactions, including oxygen-containing functional groups",
+      "moisture_sensitivity": "measured adsorption coefficients decreased when relative humidity increased from approximately 55% to 90%",
+      "target_pollutants": [
+        "16 tested VOC vapors — research material only"
+      ],
+      "adsorption_data": [
+        {
+          "pollutant": "16 VOCs",
+          "initial_concentration": "inverse gas chromatography conditions; compound-specific values in paper",
+          "temperature": "NOT AVAILABLE in accessible record",
+          "humidity": "approximately 55% and 90% RH",
+          "contact_time_EBCT": "NOT AVAILABLE",
+          "media_mass": "NOT AVAILABLE",
+          "adsorption_capacity": "log Kd range 4.0–6.1 (reported units) at approximately 55% RH; values decreased at 90% RH",
+          "breakthrough": "NOT AVAILABLE",
+          "test_duration": "NOT AVAILABLE"
+        }
+      ],
+      "pressure_drop_data": [
+        {
+          "status": "NOT AVAILABLE — REQUIRES EXPERIMENT"
+        }
+      ],
+      "regeneration_disposal": "NOT AVAILABLE",
+      "source": "https://doi.org/10.1016/j.seppur.2016.06.029",
+      "evidence_level": "B",
+      "india_availability": "NOT VERIFIED as a commercial, quality-controlled air-treatment medium",
+      "cost": null,
+      "notes": "Useful humidity evidence; not a purchasable product specification."
+    },
+    {
+      "id": "bamboo_bpgc",
+      "material": "Bamboo-derived hydrophobic porous graphitized carbon (BPGC)",
+      "media_type": "D. activated/modified biochar research material",
+      "precursor": "bamboo",
+      "activation": "KOH-promoted catalytic graphitization using a nickel catalyst system; laboratory synthesis",
+      "particle_size": "NOT AVAILABLE in accessible record",
+      "bulk_density_kg_m3": null,
+      "surface_area_m2_g": 2181,
+      "pore_structure": "micro-mesoporous; low O/C ratio 0.038",
+      "adsorption_mechanism": "pi-pi interactions and dispersion forces favor non-polar organics; hydrophobic graphitized surface reduces water competition",
+      "moisture_sensitivity": "at 80% RH, capacity retention was 82% for toluene and 66% for cyclohexane relative to dry conditions; ethanol uptake increased by 33%",
+      "target_pollutants": [
+        "toluene",
+        "cyclohexane",
+        "ethanol"
+      ],
+      "adsorption_data": [
+        {
+          "pollutant": "toluene",
+          "humidity": "dry; 80% RH retention also reported",
+          "adsorption_capacity": "6.7 mmol/g dry; 82% retained at 80% RH",
+          "test_conditions": "other flow, concentration, media-mass, EBCT, and duration details NOT AVAILABLE in accessible record"
+        },
+        {
+          "pollutant": "cyclohexane",
+          "humidity": "dry; 80% RH retention also reported",
+          "adsorption_capacity": "3.8 mmol/g dry; 66% retained at 80% RH",
+          "test_conditions": "other details NOT AVAILABLE in accessible record"
+        },
+        {
+          "pollutant": "ethanol",
+          "humidity": "dry and 80% RH",
+          "adsorption_capacity": "2.4 mmol/g dry; uptake increased 33% at 80% RH",
+          "test_conditions": "other details NOT AVAILABLE in accessible record"
+        }
+      ],
+      "pressure_drop_data": [
+        {
+          "status": "NOT AVAILABLE — REQUIRES EXPERIMENT"
+        }
+      ],
+      "regeneration_disposal": ">90% of adsorbed toluene desorbed at 90 °C in the laboratory study; scale-up and safety not established",
+      "source": "https://doi.org/10.1016/j.cej.2023.141979",
+      "evidence_level": "B",
+      "india_availability": "NOT VERIFIED as a commercial engineered medium",
+      "cost": null,
+      "notes": "Promising humidity-resistant research material, but manufacturing complexity, nickel handling, pressure loss, and supply are unresolved."
+    }
+  ],
+  "primary_research_candidate": {
+    "id": "calgon_ovc_4x8",
+    "reason": "Exact vapor-phase product, controlled granule size, official pressure-drop graph, non-impregnated composition, and manufacturer reactivation statement provide the strongest current engineering starting point.",
+    "not_final_because": "target gas, product-specific breakthrough capacity, tower-range pressure loss, local lot availability, cost, bed depth, and physical validation remain unresolved"
+  },
+  "secondary_alternative": {
+    "id": "jacobi_ecosorb_gx_series",
+    "reason": "India manufacturing/contact channel and pelletized air-treatment form are attractive for a locally supported comparison.",
+    "condition": "Do not purchase or model until Jacobi India identifies an exact grade and supplies technical and pressure-loss data."
+  },
+  "conditional_specialist_candidate": {
+    "id": "calgon_formasorb",
+    "condition": "Consider only if formaldehyde or another manufacturer-supported aldehyde is selected as the target gas."
+  },
+  "cost_status": "NO RELIABLE CURRENT PRODUCT PRICE FOUND — MANUFACTURER QUOTES REQUIRED",
+  "cfd_readiness": "PARTIALLY READY — OVC 4x8 has a manufacturer pressure-drop graph, but the target gas and required tower-range measured pressure/adsorption data are incomplete"
+}

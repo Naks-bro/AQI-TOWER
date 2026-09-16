@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AQI Tower — Engineering Viewer T3</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { background: #0a0e14; color: #c8d0dc; font-family: 'Courier New', monospace; overflow: hidden; }
+    #canvas-container { position: fixed; inset: 0; }
+    canvas { display: block; }
+
+    /* ── Header ─────────────────────────────────────────────────── */
+    #header {
+      position: fixed; top: 0; left: 0; right: 0;
+      background: rgba(10,14,20,0.95); border-bottom: 1px solid #1e3a5f;
+      padding: 0 14px; display: flex; align-items: center; gap: 12px;
+      z-index: 100; height: 38px;
+    }
+    #header .title  { font-size: 13px; color: #4a9eff; letter-spacing: 0.12em; font-weight: bold; }
+    #header .sub    { font-size: 10px; color: #334455; }
+    .badge          { font-size: 9px; background: #0d1a2a; border: 1px solid #1e3a5f; padding: 2px 7px; border-radius: 2px; color: #5a8aaa; }
+    .badge-warn     { border-color: #503010; color: #c07030; background: #1a1008; }
+
+    /* ── Mode selector ──────────────────────────────────────────── */
+    #mode-selector {
+      position: fixed; top: 38px; left: 0; right: 0;
+      background: rgba(10,14,20,0.92); border-bottom: 1px solid #1e3a5f;
+      display: flex; z-index: 100; height: 30px;
+    }
+    .mode-btn {
+      flex: 1; background: none; border: none; border-right: 1px solid #1e3a5f;
+      color: #445566; font-family: inherit; font-size: 10px; letter-spacing: 0.08em;
+      cursor: pointer; transition: background 0.15s, color 0.15s;
+    }
+    .mode-btn:hover  { background: #0d1a2a; color: #8ab0d0; }
+    .mode-btn.active { background: #0d1a2a; color: #4a9eff; border-bottom: 2px solid #4a9eff; }
+
+    /* ── Source legend ──────────────────────────────────────────── */
+    #source-legend {
+      position: fixed; top: 68px; left: 0; display: flex; z-index: 100;
+    }
+    .leg { padding: 3px 9px; font-size: 9px; letter-spacing: 0.06em;
+           border-right: 1px solid #1e3a5f; border-bottom: 1px solid #1e3a5f;
+           background: rgba(10,14,20,0.85); }
+    .leg-eng { color: #4a9eff; }
+    .leg-cfd { color: #2ad4a0; }
+    .leg-sch { color: #c07830; }
+    .leg-con { color: #a050c0; }
+
+    /* ── Layer panel ────────────────────────────────────────────── */
+    #layer-panel {
+      position: fixed; top: 68px; left: 0;
+      background: rgba(10,14,20,0.94); border-right: 1px solid #1e3a5f; border-bottom: 1px solid #1e3a5f;
+      padding: 8px 11px; min-width: 180px; z-index: 100;
+    }
+    #layer-panel h3 { font-size: 9px; color: #4a9eff; letter-spacing: 0.14em; margin-bottom: 7px; }
+    .layer-row { display: flex; align-items: center; gap: 6px; padding: 3px 0; cursor: pointer; font-size: 10px; color: #6a7a8a; user-select: none; }
+    .layer-row:hover { color: #c8d0dc; }
+    .layer-toggle { width: 11px; height: 11px; border: 1px solid #2a4a6f; background: #0d1a2a; flex-shrink: 0; }
+    .layer-toggle.active { background: #4a9eff; border-color: #4a9eff; }
+    .layer-dot { width: 7px; height: 7px; border-radius: 50%; flex-shrink: 0; }
+
+    /* ── Particle panel ─────────────────────────────────────────── */
+    #particle-panel {
+      position: fixed; top: 68px; left: 0;
+      background: rgba(10,14,20,0.96); border-right: 1px solid #1e3a5f; border-bottom: 1px solid #1e3a5f;
+      padding: 8px 11px; min-width: 230px; max-width: 270px; z-index: 100;
+      display: none; max-height: calc(100vh - 100px); overflow-y: auto;
+    }
+    .p-heading { font-size: 9px; color: #4a9eff; letter-spacing: 0.12em; margin: 7px 0 4px; }
+    .p-badge { font-size: 9px; padding: 3px 8px; border-radius: 2px; margin-bottom: 5px; }
+    .p-badge-real     { background: #0a2010; border: 1px solid #204020; color: #4ac870; }
+    .p-badge-schematic{ background: #201808; border: 1px solid #503010; color: #c87820; }
+    .p-warn { font-size: 9px; color: #c07030; border: 1px solid #503010; padding: 3px 6px; margin-bottom: 4px; line-height: 1.4; }
+    .p-size-row { display: flex; flex-wrap: wrap; gap: 3px; margin-bottom: 4px; }
+    .p-size-btn { background: #0d1a2a; border: 1px solid #1e3a5f; color: #5a8aaa; font-family: inherit; font-size: 9px; padding: 2px 7px; cursor: pointer; }
+    .p-size-btn.active, .p-size-btn:hover { background: #1a3a5f; color: #4a9eff; border-color: #4a9eff; }
+    .p-outcome-row { display: flex; align-items: center; gap: 6px; padding: 3px 0; cursor: pointer; font-size: 10px; color: #6a7a8a; user-select: none; }
+    .p-outcome-row:hover { color: #c8d0dc; }
+    .p-outcome-toggle { width: 11px; height: 11px; border: 1px solid #333; background: #0d1a2a; flex-shrink: 0; }
+    .p-outcome-toggle.active { }
+    .p-stats-tbl { width: 100%; border-collapse: collapse; font-size: 9px; margin-top: 4px; }
+    .p-stats-tbl th { color: #4a9eff; text-align: left; padding: 2px 4px; border-bottom: 1px solid #1e3a5f; }
+    .p-stats-tbl td { color: #8a9ab0; padding: 2px 4px; border-bottom: 1px solid #0d1a2a; }
+
+    /* ── Info panel ─────────────────────────────────────────────── */
+    #info-panel {
+      position: fixed; top: 68px; right: 0;
+      background: rgba(10,14,20,0.96); border-left: 1px solid #1e3a5f; border-bottom: 1px solid #1e3a5f;
+      padding: 12px 13px 10px; min-width: 255px; max-width: 310px; z-index: 100; display: none;
+    }
+    #info-panel.visible { display: block; }
+    #info-panel .comp-name { font-size: 12px; color: #e0e8f4; margin-bottom: 9px; font-weight: bold; }
+    .irow { display: flex; justify-content: space-between; padding: 2px 0; font-size: 10px; border-bottom: 1px solid #0f1a28; }
+    .ilabel { color: #445566; flex-shrink: 0; padding-right: 6px; }
+    .ivalue { color: #b0c0d0; text-align: right; word-break: break-word; max-width: 170px; }
+    .sbadge { display: inline-block; margin-top: 7px; padding: 2px 7px; border-radius: 2px; font-size: 9px; letter-spacing: 0.07em; }
+    .s-sim  { background: #0a2040; border: 1px solid #1a5090; color: #4a9eff; }
+    .s-sel  { background: #0d2010; border: 1px solid #1a5020; color: #4ac870; }
+    .s-prov { background: #201808; border: 1px solid #503010; color: #c87820; }
+    .s-con  { background: #1a0820; border: 1px solid #401840; color: #a050c0; }
+    .s-pend { background: #181808; border: 1px solid #404010; color: #a0a030; }
+    .info-warn { margin-top: 7px; font-size: 9px; color: #c07030; border-top: 1px solid #201808; padding-top: 5px; }
+    .info-desc { margin-top: 5px; font-size: 10px; color: #5a6a7a; }
+    .info-src  { margin-top: 4px; font-size: 9px; color: #2a3a4a; }
+    #info-close { position: absolute; top: 9px; right: 11px; cursor: pointer; color: #334455; font-size: 12px; }
+    #info-close:hover { color: #c8d0dc; }
+
+    /* ── CFD summary overlay ────────────────────────────────────── */
+    #cfd-overlay {
+      position: fixed; top: 68px; left: 50%; transform: translateX(-50%);
+      background: rgba(10,14,20,0.97); border: 1px solid #1e3a5f;
+      padding: 14px 18px; z-index: 200; display: none;
+      min-width: 580px; max-width: 90vw; max-height: calc(100vh - 120px); overflow-y: auto;
+    }
+    #cfd-overlay.visible { display: block; }
+    #cfd-overlay h2 { font-size: 12px; color: #4a9eff; letter-spacing: 0.12em; margin-bottom: 10px; }
+    #cfd-overlay h3 { font-size: 10px; color: #2ad4a0; letter-spacing: 0.10em; margin: 10px 0 5px; }
+    .cov-tbl { width: 100%; border-collapse: collapse; font-size: 10px; margin-bottom: 8px; }
+    .cov-tbl th { color: #4a9eff; text-align: left; padding: 3px 8px; border-bottom: 1px solid #1e3a5f; font-weight: normal; letter-spacing: 0.06em; }
+    .cov-tbl td { padding: 3px 8px; border-bottom: 1px solid #0d1a2a; color: #8a9ab0; }
+    .cov-tbl tr.active td { color: #c8d0dc; background: #0d1a28; }
+    .cov-tbl .conv-yes { color: #4ac870; }
+    .cov-tbl .conv-no  { color: #c07030; }
+    .cov-warn { font-size: 9px; color: #c07030; border: 1px solid #503010; padding: 4px 8px; margin-top: 6px; line-height: 1.5; }
+
+    /* ── CFD mini panel (always visible) ──────────────────────────── */
+    #cfd-panel {
+      position: fixed; bottom: 30px; left: 0;
+      background: rgba(10,14,20,0.94); border-top: 1px solid #1e3a5f; border-right: 1px solid #1e3a5f;
+      padding: 7px 11px; min-width: 260px; z-index: 100;
+    }
+    #cfd-panel h3 { font-size: 9px; color: #2ad4a0; letter-spacing: 0.12em; margin-bottom: 5px; }
+    .crow  { display: flex; justify-content: space-between; padding: 2px 0; font-size: 10px; }
+    .clabel{ color: #445566; }
+    .cvalue{ color: #b0d0c0; }
+    .csrc  { font-size: 8px; color: #2a3a4a; margin-top: 4px; line-height: 1.4; }
+
+    /* ── Provenance panel ──────────────────────────────────────── */
+    #prov-panel {
+      position: fixed; bottom: 30px; right: 0;
+      background: rgba(10,14,20,0.94); border-top: 1px solid #1e3a5f; border-left: 1px solid #1e3a5f;
+      z-index: 100;
+    }
+    #prov-btn {
+      display: block; padding: 6px 12px; font-size: 9px; color: #4a9eff; letter-spacing: 0.1em;
+      cursor: pointer; background: none; border: none; font-family: inherit; width: 100%;
+      text-align: left;
+    }
+    #prov-body { display: none; padding: 6px 10px 8px; min-width: 260px; max-width: 360px; max-height: 260px; overflow-y: auto; }
+    #prov-body.visible { display: block; }
+    .prov-row { display: flex; gap: 8px; padding: 2px 0; font-size: 9px; border-bottom: 1px solid #0d1a28; }
+    .prov-label { color: #4a9eff; min-width: 70px; flex-shrink: 0; }
+    .prov-value { color: #7a8a9a; word-break: break-word; }
+
+    /* ── Bottom bar ─────────────────────────────────────────────── */
+    #bottom-bar {
+      position: fixed; bottom: 0; left: 0; right: 0; height: 30px;
+      background: rgba(10,14,20,0.90); border-top: 1px solid #1e3a5f;
+      display: flex; align-items: center; padding: 0 12px; gap: 14px; z-index: 100;
+    }
+    .explode-label { color: #4a9eff; font-size: 9px; letter-spacing: 0.08em; }
+    #explode-slider{ width: 110px; accent-color: #4a9eff; }
+    #explode-pct   { color: #4a9eff; font-size: 10px; min-width: 26px; }
+    .hint          { font-size: 9px; color: #2a3a4a; margin-left: auto; }
+    .hint span     { margin-left: 9px; }
+
+    /* ── Explode wrap (disabled hint in CFD_FIELD) ─────────────── */
+    #explode-wrap { display: flex; align-items: center; gap: 6px; }
+
+    /* ── CFD Field panel ────────────────────────────────────────── */
+    #cfd-field-panel {
+      position: fixed; top: 68px; left: 0;
+      background: rgba(10,14,20,0.96); border-right: 1px solid #1e3a5f; border-bottom: 1px solid #1e3a5f;
+      padding: 8px 11px; min-width: 260px; max-width: 290px; z-index: 100;
+      display: none; max-height: calc(100vh - 120px); overflow-y: auto;
+    }
+    .cf-heading  { font-size: 9px; color: #2ad4a0; letter-spacing: 0.14em; margin-bottom: 7px; }
+    .cf-sublabel { font-size: 9px; color: #4a9eff; letter-spacing: 0.10em; margin: 7px 0 3px; }
+    .cf-btn-group{ display: flex; flex-wrap: wrap; gap: 3px; margin-bottom: 2px; }
+    .cf-btn {
+      background: #0d1a2a; border: 1px solid #1e3a5f; color: #5a8aaa;
+      font-family: inherit; font-size: 9px; padding: 2px 7px; cursor: pointer;
+      transition: background 0.12s, color 0.12s;
+    }
+    .cf-btn:hover  { background: #142030; color: #8ab0d0; }
+    .cf-btn.active { background: #0d2040; color: #2ad4a0; border-color: #2ad4a0; }
+    .cf-range-row  { display: flex; align-items: center; gap: 3px; margin-bottom: 6px; flex-wrap: wrap; }
+    .cf-range-input{ width: 56px; background: #0a1420; border: 1px solid #1e3a5f; color: #8a9ab0; font-family: inherit; font-size: 9px; padding: 2px 4px; }
+    .cf-legend-wrap { margin: 5px 0 0; }
+    .cf-legend-canvas { width: 100%; height: 14px; display: block; }
+    .cf-legend-labels { display: flex; justify-content: space-between; font-size: 8px; color: #5a7a9a; margin-top: 1px; }
+    .cf-status { font-size: 9px; color: #6a8a6a; margin: 6px 0 3px; line-height: 1.4; border-top: 1px solid #0f1a28; padding-top: 5px; }
+    .cf-warn   { font-size: 9px; color: #c07030; border: 1px solid #503010; padding: 3px 6px; margin: 5px 0 4px; line-height: 1.4; }
+    .cf-provenance { font-size: 8px; margin-top: 4px; max-height: 240px; overflow-y: auto; }
+    .cf-prov-row  { display: flex; gap: 4px; padding: 1px 0; border-bottom: 1px solid #0a1420; }
+    .cf-prov-key  { color: #2a4a6a; min-width: 80px; flex-shrink: 0; }
+    .cf-prov-val  { color: #5a6a7a; word-break: break-all; }
+  </style>
+</head>
+<body>
+  <div id="canvas-container">
+    <canvas id="viewer-canvas"></canvas>
+  </div>
+
+  <!-- Header -->
+  <div id="header">
+    <span class="title">AQI TOWER</span>
+    <span class="sub">GEO_C — Engineering Viewer T3</span>
+    <span class="badge">CAD: GEO_C</span>
+    <span class="badge">CFD: CASE_M_SEALED</span>
+    <span class="badge">Particle: Phase 12B</span>
+    <span class="badge badge-warn">NOT PHYSICALLY VALIDATED</span>
+  </div>
+
+  <!-- Mode selector -->
+  <div id="mode-selector"></div>
+
+  <!-- Source legend (architecture mode) -->
+  <div id="source-legend">
+    <span class="leg leg-eng">■ ENGINEERING/CAD</span>
+    <span class="leg leg-cfd">■ CFD SIMULATED</span>
+    <span class="leg leg-sch">■ SCHEMATIC/PROVISIONAL</span>
+    <span class="leg leg-con">■ CONCEPT</span>
+  </div>
+
+  <!-- Layer panel (architecture mode) -->
+  <div id="layer-panel"></div>
+
+  <!-- Particle panel (particle mode) -->
+  <div id="particle-panel"></div>
+
+  <!-- CFD field panel (cfd_field mode) -->
+  <div id="cfd-field-panel"></div>
+
+  <!-- Component info panel -->
+  <div id="info-panel">
+    <div id="info-close">✕</div>
+    <div id="info-content"></div>
+  </div>
+
+  <!-- CFD summary overlay (cfd mode) -->
+  <div id="cfd-overlay">
+    <h2>CFD CASE REGISTRY — SIMULATION RESULTS ONLY</h2>
+
+    <h3>GEOMETRY OPTIMISATION CASES</h3>
+    <table class="cov-tbl">
+      <thead><tr>
+        <th>Case</th><th>Status</th><th>Q (m³/h)</th>
+        <th>Fan ΔP (Pa)</th><th>Riser rev%</th><th>Riser CoV</th>
+      </tr></thead>
+      <tbody>
+        <tr><td>V01</td><td class="conv-no">PARTIAL</td><td>1475.7</td><td>17.3</td><td>23.1%</td><td>1.087</td></tr>
+        <tr><td>GEO_A</td><td class="conv-no">PARTIAL</td><td>1492.3</td><td>6.1</td><td>17.3%</td><td>0.222</td></tr>
+        <tr><td>GEO_B</td><td class="conv-yes">CONV</td><td>1486.0</td><td>10.3</td><td>25.3%</td><td>0.951</td></tr>
+        <tr class="active"><td>GEO_C ★</td><td class="conv-yes">CONV</td><td>1496.1</td><td>3.5</td><td>15.9%</td><td>0.234</td></tr>
+        <tr><td>GEO_C_CONFIRM</td><td class="conv-yes">CONV</td><td>1496.1</td><td>3.5</td><td>15.9%</td><td>0.234</td></tr>
+      </tbody>
+    </table>
+    <div class="cov-warn">★ GEO_C selected. All cases: empty tower (no filter). RANS SIMPLEC, k-ε, KVO 250 fan curve BC. DESIGN EXPERIMENT PARAMETER — NOT PRODUCT REQUIREMENT.</div>
+
+    <h3>FILTER CASE — CASE_M_SEALED</h3>
+    <table class="cov-tbl">
+      <thead><tr><th>Parameter</th><th>Value</th><th>Source</th></tr></thead>
+      <tbody>
+        <tr class="active"><td>Airflow Q</td><td>1332.205242935976 m³/h</td><td>bypass_analysis_sealed.json</td></tr>
+        <tr class="active"><td>Filter ΔP</td><td>111.18113437173315 Pa</td><td>bypass_analysis_sealed.json</td></tr>
+        <tr class="active"><td>Face velocity (mean)</td><td>1.0524943445867463 m/s</td><td>bypass_analysis_sealed.json</td></tr>
+        <tr class="active"><td>Bypass fraction</td><td>9.997×10⁻¹⁰ (~0%)</td><td>bypass_analysis_sealed.json</td></tr>
+        <tr class="active"><td>Convergence</td><td class="conv-no">5000 iter RANS plateau</td><td>Phase 10B</td></tr>
+        <tr class="active"><td>Filter resistance</td><td>Single-point calibration, multiplier=1.0</td><td>Phase 10B</td></tr>
+      </tbody>
+    </table>
+
+    <h3>PARTICLE TRACKING — PHASE 12B</h3>
+    <table class="cov-tbl">
+      <thead><tr><th>Size</th><th>Filter arrival</th><th>Frame deposit</th><th>Wall deposit</th></tr></thead>
+      <tbody>
+        <tr><td>0.3 µm</td><td>139/224 (62.1%)</td><td>14/224 (6.3%)</td><td>71/224 (31.7%)</td></tr>
+        <tr><td>1 µm</td><td>139/224 (62.1%)</td><td>14/224 (6.3%)</td><td>71/224 (31.7%)</td></tr>
+        <tr><td>2.5 µm</td><td>139/224 (62.1%)</td><td>14/224 (6.3%)</td><td>71/224 (31.7%)</td></tr>
+        <tr><td>10 µm</td><td>137/224 (61.2%)</td><td>17/224 (7.6%)</td><td>70/224 (31.3%)</td></tr>
+      </tbody>
+    </table>
+    <div class="cov-warn">FILTER ARRIVAL ≠ FILTER CAPTURE. η(d_p) not available. Frozen RANS field. OUTLET=0 does not prove downstream capture. Source: results/PARTICLE_CFD/particle_arrival_fractions.json</div>
+  </div>
+
+  <!-- CFD mini panel -->
+  <div id="cfd-panel">
+    <h3>CFD — CASE_M_SEALED (SIMULATED)</h3>
+    <div class="crow"><span class="clabel">Airflow</span><span class="cvalue">1332.2 m³/h</span></div>
+    <div class="crow"><span class="clabel">Filter ΔP (model)</span><span class="cvalue">111.2 Pa</span></div>
+    <div class="crow"><span class="clabel">HEPA face velocity (mean)</span><span class="cvalue">1.053 m/s</span></div>
+    <div class="crow"><span class="clabel">Bypass (sealed)</span><span class="cvalue">~0%</span></div>
+    <div class="crow"><span class="clabel">Particle 0.3–2.5 µm — filter arrival</span><span class="cvalue">62.1%</span></div>
+    <div class="crow"><span class="clabel">Particle 10 µm — filter arrival</span><span class="cvalue">61.2%</span></div>
+    <div class="csrc">FILTER ARRIVAL ≠ CAPTURE. Phase 10B / 12B. PARTIAL NON-CONVERGED RANS.</div>
+  </div>
+
+  <!-- Provenance panel -->
+  <div id="prov-panel">
+    <button id="prov-btn">▲ DATA PROVENANCE</button>
+    <div id="prov-body"></div>
+  </div>
+
+  <!-- Bottom bar -->
+  <div id="bottom-bar">
+    <div id="explode-wrap">
+      <span class="explode-label">EXPLODE</span>
+      <input type="range" id="explode-slider" min="0" max="100" value="0" />
+      <span id="explode-pct">0%</span>
+    </div>
+    <div class="hint">
+      <span>ROTATE: drag</span><span>PAN: right-drag</span><span>ZOOM: scroll</span><span>SELECT: click</span>
+    </div>
+    <span id="explode-cfd-note" style="display:none;font-size:9px;color:#c07030;">Exploded view disabled for spatial CFD data</span>
+  </div>
+
+  <script type="module" src="/src/main.js"></script>
+</body>
+</html>

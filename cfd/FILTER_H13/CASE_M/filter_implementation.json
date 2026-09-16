@@ -1,0 +1,83 @@
+{
+  "case": "CASE_M",
+  "scenario_classification": "SINGLE-POINT CALIBRATED APPROXIMATION",
+  "basis": "APPROXIMATION FROM SINGLE MANUFACTURER DATA POINT: linear clean-filter relation through 300 Pa at 2.84 m/s",
+  "resistance_multiplier": 1.0,
+  "linear_slope_Pa_per_m_s": 105.63380281690141,
+  "darcy_D_per_m2": 20097755.482667696,
+  "inertial_I_per_m": 0.0,
+  "porous_length_m": 0.292,
+  "filter_active_face_bounds_m": [
+    0.305,
+    0.1035,
+    0.6965,
+    0.2035,
+    0.7965
+  ],
+  "filter_reported_gross_area_m2": 0.3516,
+  "mesh_aperture_area_m2": 0.351649,
+  "source_filter_sha256": "47ae10a150dab276d6f158fb9397925b51e168b85bcafa90de8fe495aa42aec6",
+  "source_fan_sha256": "847274a70e6d1a56d4707186c6eb37792f96358bb481bad46a704c554de15c73",
+  "source_cad_sha256": "baec2027a16a7ab14a02662b8a39bbd5b7168770d9405e7382b93da9babd2a7b",
+  "mesh": {
+    "axes_mm": [
+      [
+        0.0,
+        10.0,
+        150.0,
+        180.0,
+        220.0,
+        250.0,
+        260.0,
+        290.0,
+        305.0,
+        320.0,
+        500.0,
+        590.0,
+        690.0,
+        700.0
+      ],
+      [
+        100.0,
+        103.5,
+        150.0,
+        650.0,
+        696.5,
+        700.0
+      ],
+      [
+        150.0,
+        203.5,
+        450.0,
+        650.0,
+        796.5,
+        850.0,
+        1600.0,
+        1850.0
+      ]
+    ],
+    "block_count": 268,
+    "cell_counts": {
+      "AIR_INLET": 1221,
+      "DIRTY_PLENUM": 8547,
+      "STAGE_01": 2442,
+      "INTERSTAGE_01": 2442,
+      "STAGE_02": 2442,
+      "INTERSTAGE_02": 3663,
+      "STAGE_03": 2442,
+      "CLEAN_PLENUM": 10989,
+      "CLEAN_RISER": 29325,
+      "AIR_OUTLET": 325,
+      "TURN_STEP_01": 2625,
+      "TURN_STEP_02": 1375
+    },
+    "total_cells": 67838,
+    "boundary_area_m2": {
+      "AIR_INLET": 0.42000000000000004,
+      "AIR_OUTLET": 0.125,
+      "WALLS": 3.771999999999999
+    },
+    "max_cell_edge_mm": 20.0
+  },
+  "fluid_volume_m3": 0.45424999999999993
+}

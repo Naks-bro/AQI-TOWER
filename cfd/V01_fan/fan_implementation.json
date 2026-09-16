@@ -1,0 +1,66 @@
+{
+  "source_json_sha256": "847274a70e6d1a56d4707186c6eb37792f96358bb481bad46a704c554de15c73",
+  "source_points_unchanged": [
+    {
+      "Q_m3s": 0,
+      "Q_m3h": 0,
+      "delta_P_static_Pa": 688,
+      "delta_P_uncertainty_Pa": 20,
+      "confidence": "GRAPH-DIGITIZED",
+      "source": "Phase 6D PyMuPDF vector extraction from Systemair KVO catalog PDF (page 1 of PDF, catalog page 34) \u2014 cubic Bezier path KVO 250L, calibrated to acoustic measurement point. CORRECTION: previous Phase 6C estimate of ~850 Pa was a rough graphical read without the actual PDF; vector extraction yields 688 Pa."
+    },
+    {
+      "Q_m3s": 0.1042,
+      "Q_m3h": 375,
+      "delta_P_static_Pa": 640,
+      "delta_P_uncertainty_Pa": 20,
+      "confidence": "GRAPH-DIGITIZED",
+      "source": "Phase 6D PyMuPDF vector extraction \u2014 Bezier evaluation at Q\u2248375 m\u00b3/h. Uncertainty reflects pixel-level graph resolution and calibration residuals."
+    },
+    {
+      "Q_m3s": 0.2083,
+      "Q_m3h": 750,
+      "delta_P_static_Pa": 480,
+      "delta_P_uncertainty_Pa": 15,
+      "confidence": "GRAPH-DIGITIZED",
+      "source": "Phase 6D PyMuPDF vector extraction \u2014 Bezier evaluation at Q\u2248750 m\u00b3/h."
+    },
+    {
+      "Q_m3s": 0.254,
+      "Q_m3h": 914,
+      "delta_P_static_Pa": 388,
+      "confidence": "CONFIRMED",
+      "source": "Systemair KVO catalog \u2014 acoustic measurement data table, page 4 of PDF (catalog page 37): KVO 250 with LDC 250-900. Exact values: Q=0.254 m\u00b3/s, \u0394Ps=388 Pa at 230V/50Hz. Used as primary calibration anchor for graph digitization."
+    },
+    {
+      "Q_m3s": 0.3333,
+      "Q_m3h": 1200,
+      "delta_P_static_Pa": 205,
+      "delta_P_uncertainty_Pa": 15,
+      "confidence": "GRAPH-DIGITIZED",
+      "source": "Phase 6D PyMuPDF vector extraction \u2014 Bezier evaluation at Q\u22481200 m\u00b3/h."
+    },
+    {
+      "Q_m3s": 0.417,
+      "Q_m3h": 1501,
+      "delta_P_static_Pa": 0,
+      "confidence": "CONFIRMED",
+      "source": "Systemair KVO catalog \u2014 technical data table, page 1 of PDF (catalog page 34): max airflow at free delivery (zero static pressure). Manufacturer stated value 0.417 m\u00b3/s = 1501 m\u00b3/h."
+    }
+  ],
+  "mesh_file_sha256": {
+    "boundary": "4eb0f2bde230469822bd1d97306f77adcda9a6470d2c7c6b17d778d7c4188733",
+    "cellZones": "c6268cf5a5c098871cdc607681455f5e4cf05d98f3fb7ba38e109d9a0e60d8e9",
+    "faces": "602fe894ebb540f3e7e32c9f5a76a0410c30fd7b994ce0d1e88fb5840dee80e4",
+    "neighbour": "aa32f5910ad66a6900f6c9ddb5525442f3f960cef8835f17769b31bf65538d4d",
+    "owner": "fd6aedded7e44030778b9ceac4a56155ab3a4e4c28602202b08d36c79e2f93e7",
+    "points": "2ea28242bc5dcb422f6488b689c59ee9e669fe0682c256e0be2d7ffb925ab970"
+  },
+  "mesh_change": "NONE; copied V00 mesh exactly",
+  "fan_patch": "AIR_OUTLET; upstream suction plane at X=0.700 m",
+  "fan_pressure_definition": "Ps = p_static_discharge - p_total_suction",
+  "boundary_law": "uniform p/1.2 = -Ps(Q)/1.2 - sum(phi*|U|^2/2)/sum(phi)",
+  "boundary_head_relaxation": 0.1,
+  "interpolation": "piecewise linear in Q_m3s; endpoint clamp flagged",
+  "limits": "Ideal zero-total-loss adapter, uniform static suction; no physical 250mm duct modeled"
+}

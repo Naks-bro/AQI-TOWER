@@ -1,0 +1,6 @@
+FoamFile { version 2.0; format ascii; class dictionary; object fanProperties; }
+// Historical 300 Pa model superseded. This file is descriptive, not solver input.
+fanModel KVO250;
+curveSource "data/fans/systemair_KVO_250.json";
+implementation "0/p AIR_OUTLET codedFixedValue";
+rhoReference 1.20;

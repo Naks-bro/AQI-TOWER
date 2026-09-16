@@ -1,0 +1,51 @@
+FoamFile { version 2.0; format ascii; class dictionary; object fanProperties; }
+
+// =============================================================================
+// PLACEHOLDER — NOT REAL FAN DATA
+// =============================================================================
+// This file documents the fan pressure-jump value used in V01_fan boundary
+// conditions. The value is a PLACEHOLDER derived from the indicative system
+// resistance screening range (250-700 Pa, see docs/PRESSURE_DROP_BUDGET.md).
+// It does NOT correspond to any real fan product.
+//
+// When a real fan datasheet with a complete performance curve is obtained:
+// 1. Replace fanDeltaP_Pa and fanDeltaP_kinematic below.
+// 2. Update 0/p totalPressure p0 value to match.
+// 3. Optionally switch to the internal-baffle fan BC approach (see fanCurve
+//    section below) once a multi-point curve is available.
+// 4. Document the source (manufacturer, part number, datasheet version, date).
+// =============================================================================
+
+// Placeholder total pressure rise imposed by the fan system.
+// Units: Pa (physical) and m^2/s^2 (kinematic for OpenFOAM p field).
+fanDeltaP_Pa        300;         // PLACEHOLDER — midpoint of screening range
+fanDeltaP_kinematic 250.0;       // = 300 Pa / 1.20 kg/m3
+
+// Number of fan units (four-fan concept — architecture NOT finalised).
+nFans               4;
+
+// Source of placeholder value:
+// Indicative system resistance range 250-700 Pa from docs/PRESSURE_DROP_BUDGET.md.
+// Real fan performance data UNKNOWN as of 2026-09-05.
+// See docs/FAN_SELECTION.md and data/fans/README.md.
+
+// -----------------------------------------------------------------------------
+// Fan curve (for future baffle / fan BC implementation)
+// -----------------------------------------------------------------------------
+// When a real fan curve is available, populate this table with (Q [m3/s], dP [Pa])
+// pairs for ONE fan unit at the design speed. The total four-fan system curve is
+// obtained by multiplying Q by nFans at each ΔP point (parallel arrangement).
+//
+// Format expected by OpenFOAM fan BC (type fan on a coupled baffle pair):
+//   fanCurve
+//   (
+//       (Q_0    dP_0)
+//       (Q_1    dP_1)
+//       ...
+//       (Q_max  0   )
+//   );
+//
+// PLACEHOLDER — all values must be replaced with real manufacturer data.
+// DO NOT extrapolate, interpolate from other products, or invent these values.
+//
+fanCurve_STATUS     "NOT YET AVAILABLE — replace with real datasheet curve";

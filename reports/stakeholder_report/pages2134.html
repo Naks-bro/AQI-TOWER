@@ -1,0 +1,620 @@
+
+<!-- ═══════════════════════════════════════════════════════════════
+     PAGE 21 — WHY PAUSED
+═══════════════════════════════════════════════════════════════ -->
+<section class="page page-white pad">
+  <div class="section-label">Why the Experiment Is Paused</div>
+  <div class="rule rule-amber"></div>
+  <div class="row" style="flex:1;gap:14mm;align-items:center">
+    <div class="col f2 v-center">
+      <div class="h1" style="margin-bottom:5mm;font-size:21pt">Ready in method.<br>Waiting for physical execution.</div>
+      <div class="body" style="margin-bottom:4mm">Hardware procurement has been intentionally deferred. The institutional safety approval required for HCHO generation has not yet been obtained. These are gating conditions, not design failures.</div>
+      <div class="body" style="margin-bottom:4mm">All analysis templates, Python pipelines, data schemas, procurement lists, and validation procedures exist and are fully specified. The experiment can begin as soon as hardware is in hand and safety approval is granted.</div>
+      <div class="body">No experimental values have been fabricated. All pressure-drop fields, Darcy–Forchheimer coefficients, and breakthrough metrics are explicitly recorded as null or NOT MEASURED until measurements are performed.</div>
+    </div>
+    <div class="col f1" style="gap:4mm">
+      <div class="card" style="border-left:4px solid var(--green)">
+        <div class="h3" style="color:var(--green);margin-bottom:2mm">✓ Complete and ready</div>
+        <div class="body" style="font-size:8pt">Phase 15–17 experiment protocol</div>
+        <div class="body" style="font-size:8pt">Column geometry and BOM</div>
+        <div class="body" style="font-size:8pt">Python analysis pipeline</div>
+        <div class="body" style="font-size:8pt">Data schema (14 mandatory fields)</div>
+        <div class="body" style="font-size:8pt">India vendor procurement plan</div>
+        <div class="body" style="font-size:8pt">RFQ letters for OVC 4×8 / FORMASORB</div>
+        <div class="body" style="font-size:8pt">CSV template (headers only — no data)</div>
+      </div>
+      <div class="card" style="border-left:4px solid var(--amber)">
+        <div class="h3" style="color:var(--amber);margin-bottom:2mm">⏸ Blocked pending</div>
+        <div class="body" style="font-size:8pt">OVC 4×8 availability and price quote</div>
+        <div class="body" style="font-size:8pt">Acrylic column fabrication (75 mm ID)</div>
+        <div class="body" style="font-size:8pt">Institutional safety approval (HCHO)</div>
+        <div class="body" style="font-size:8pt">External HPLC laboratory agreement</div>
+      </div>
+    </div>
+  </div>
+  <div class="pn">21</div>
+</section>
+
+
+<!-- ═══════════════════════════════════════════════════════════════
+     PAGE 22 — WATER SPRAY PHASE 18
+═══════════════════════════════════════════════════════════════ -->
+<section class="page page-cream pad">
+  <div class="section-label">Water-Spray Stage — Phase 18 Decision</div>
+  <div class="rule rule-amber"></div>
+  <div class="row" style="flex:1;gap:12mm">
+    <div class="col f2 v-center">
+      <div class="h1" style="margin-bottom:5mm;font-size:20pt">The original concept included a water-spray stage. Phase 18 reviewed it rigorously. The result was NO-GO.</div>
+      <div class="body" style="margin-bottom:4mm">Phase 18 was a research-only engineering feasibility assessment — no CFD, no physical experiment. The analysis reviewed aerosol physics, pressure-drop impact, biological risk standards, water handling complexity, and alternatives.</div>
+      <div class="body" style="margin-bottom:4mm">The core physics problem: simple low-energy spray towers are ineffective for PM2.5 (0.1–2 µm). This is the "Greenfield gap" — the particle size range where neither inertial impaction nor diffusion produces useful collection in a compact chamber.</div>
+    </div>
+    <div class="col f2" style="gap:4mm">
+      <div class="card-warn">
+        <div class="h3" style="color:var(--red);margin-bottom:2mm">Why the water stage was rejected</div>
+        <div class="steps">
+          <div class="step"><div style="width:6px;height:6px;border-radius:50%;background:var(--red);flex-shrink:0"></div><div class="body" style="font-size:8.5pt"><strong>PM2.5 irrelevant:</strong> Greenfield gap — simple spray cannot capture 0.3–2.5 µm particles at this scale</div></div>
+          <div class="step"><div style="width:6px;height:6px;border-radius:50%;background:var(--red);flex-shrink:0"></div><div class="body" style="font-size:8.5pt"><strong>Coarse dust better served</strong> by dry G4/M5 pre-filter — same function, no water, no risk</div></div>
+          <div class="step"><div style="width:6px;height:6px;border-radius:50%;background:var(--red);flex-shrink:0"></div><div class="body" style="font-size:8.5pt"><strong>Hygiene risk is disqualifying:</strong> Legionella and biofilm in recirculating warm-water spray (ASHRAE 188, CIBSE TM13)</div></div>
+          <div class="step"><div style="width:6px;height:6px;border-radius:50%;background:var(--red);flex-shrink:0"></div><div class="body" style="font-size:8.5pt"><strong>Carryover threatens HEPA:</strong> droplets reaching filter face cause wetting and microbial loading</div></div>
+          <div class="step"><div style="width:6px;height:6px;border-radius:50%;background:var(--red);flex-shrink:0"></div><div class="body" style="font-size:8.5pt"><strong>35–125 Pa added ΔP</strong> — reduces airflow 7–23% from an already-constrained operating point</div></div>
+          <div class="step"><div style="width:6px;height:6px;border-radius:50%;background:var(--red);flex-shrink:0"></div><div class="body" style="font-size:8.5pt"><strong>12+ extra components</strong> — pump, tank, nozzles, demister — for no unique benefit</div></div>
+        </div>
+      </div>
+      <div class="card-green">
+        <div class="h3" style="color:var(--green);margin-bottom:2mm">Replacement: G4/M5 washable pre-filter</div>
+        <div class="body" style="font-size:8.5pt">Achieves coarse pre-collection upstream of HEPA. No water, no pump, no Legionella risk. One component. ~25–50 Pa clean ΔP. Washable monthly. Widely available in India at low cost.</div>
+      </div>
+    </div>
+  </div>
+  <div style="background:var(--charcoal);border-radius:6px;padding:3mm 5mm;margin-top:4mm">
+    <div class="body" style="color:var(--white);font-size:8.5pt"><strong>New treatment sequence:</strong> Inlet → [G4/M5 washable pre-filter] → [Activated carbon bed] → [H13 HEPA] → Clean riser → KVO 250 fan → Outlet</div>
+  </div>
+  <div class="pn">22</div>
+</section>
+
+
+<!-- ═══════════════════════════════════════════════════════════════
+     PAGE 23 — DIGITAL TWIN
+═══════════════════════════════════════════════════════════════ -->
+<section class="page page-navy pad">
+  <div class="section-label-w">The Digital Engineering Viewer</div>
+  <div class="rule rule-white"></div>
+  <div class="h1" style="color:var(--white);font-size:20pt;margin-bottom:5mm">The visualisation does not create engineering truth. It makes existing information easier to understand.</div>
+  <div class="row" style="flex:1;gap:10mm">
+    <div class="col f2" style="gap:4mm">
+      <div class="card-dark">
+        <div class="h3" style="color:rgba(255,255,255,0.9);margin-bottom:3mm">Three.js Engineering Viewer — T1, T2, T3</div>
+        <div class="body-w" style="margin-bottom:3mm">A browser-based interactive 3D viewer built with Vite + Three.js. Displays geometry, particles, and real CFD scalar fields in any modern web browser — no software installation required.</div>
+        <div class="grid2" style="gap:3mm">
+          <div style="background:rgba(255,255,255,0.05);border-radius:5px;padding:3mm">
+            <div class="label-w" style="margin-bottom:1mm">T1 — Architecture</div>
+            <div class="body-w" style="font-size:7.5pt">Interactive 3D tower geometry. Click any component for engineering details. Layer toggles. Exploded view. Engineering vs schematic vs provisional status labels.</div>
+          </div>
+          <div style="background:rgba(255,255,255,0.05);border-radius:5px;padding:3mm">
+            <div class="label-w" style="margin-bottom:1mm">T2 — Particle Mode</div>
+            <div class="body-w" style="font-size:7.5pt">Phase 12B particle tracking results. Filter by size (0.3/1/2.5/10 µm) and outcome. Always shows "FILTER ARRIVAL ≠ FILTER CAPTURE".</div>
+          </div>
+          <div style="background:rgba(255,255,255,0.05);border-radius:5px;padding:3mm">
+            <div class="label-w" style="margin-bottom:1mm">T3 — CFD Field Mode</div>
+            <div class="body-w" style="font-size:7.5pt">Real velocity magnitude and pressure fields from OpenFOAM. Turbo colourmap. Case/field/plane selectors. Convergence badges. All labelled SIMULATION ONLY.</div>
+          </div>
+          <div style="background:rgba(255,255,255,0.05);border-radius:5px;padding:3mm">
+            <div class="label-w" style="margin-bottom:1mm">CFD Summary</div>
+            <div class="body-w" style="font-size:7.5pt">Exact values from solved JSON files — 1,332.205 m³/h, 111.181 Pa. Labelled PARTIAL NON-CONVERGED. Provenance panel with case/timestep/derivation.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col f1 v-center">
+      <div style="background:rgba(255,255,255,0.04);border-radius:8px;padding:5mm;margin-bottom:4mm">
+        <div class="label-w" style="margin-bottom:3mm">What the viewer enforces</div>
+        <div class="steps" style="gap:3mm">
+          <div class="step"><div class="step-dot"></div><div class="body-w" style="font-size:8pt">Every claim labelled by source: ENGINEERING / SIMULATED / SCHEMATIC / PROVISIONAL</div></div>
+          <div class="step"><div class="step-dot"></div><div class="body-w" style="font-size:8pt">FILTER ARRIVAL ≠ CAPTURE always visible in particle mode</div></div>
+          <div class="step"><div class="step-dot"></div><div class="body-w" style="font-size:8pt">CFD convergence status shown per case</div></div>
+          <div class="step"><div class="step-dot"></div><div class="body-w" style="font-size:8pt">Exploded view disabled in CFD field mode</div></div>
+          <div class="step"><div class="step-dot"></div><div class="body-w" style="font-size:8pt">Expandable provenance: case, path, timestep, derivation</div></div>
+        </div>
+      </div>
+      <div class="card-dark" style="text-align:center">
+        <div class="label-w" style="margin-bottom:2mm">Viewer technology</div>
+        <div class="body-w">Vite + Three.js + ES modules</div>
+        <div class="body-w">npm install &amp;&amp; npm run dev</div>
+        <div class="body-w" style="font-size:7.5pt;margin-top:2mm;opacity:0.6">localhost:5173</div>
+      </div>
+    </div>
+  </div>
+  <div class="pn-w">23</div>
+</section>
+
+
+<!-- ═══════════════════════════════════════════════════════════════
+     PAGE 24 — STATUS DASHBOARD
+═══════════════════════════════════════════════════════════════ -->
+<section class="page page-cream pad-sm">
+  <div class="section-label">Project Status Dashboard</div>
+  <div class="rule rule-green"></div>
+  <div class="h2" style="margin-bottom:5mm">What exists today — and what does not</div>
+  <div class="row" style="flex:1;gap:8mm">
+    <div class="col f1">
+      <div style="background:rgba(42,110,78,0.08);border-radius:8px;padding:5mm;height:100%">
+        <div class="h3" style="color:var(--green);margin-bottom:3mm">Developed and documented</div>
+        <div class="steps" style="gap:2.5mm">
+          <div class="step"><div class="step-dot"></div><div class="body" style="font-size:8pt">Project requirements framework and architecture concepts</div></div>
+          <div class="step"><div class="step-dot"></div><div class="body" style="font-size:8pt">Parametric FreeCAD tower model (GEO_C)</div></div>
+          <div class="step"><div class="step-dot"></div><div class="body" style="font-size:8pt">Real fan data — KVO 250, 6-point curve, 688 Pa shutoff</div></div>
+          <div class="step"><div class="step-dot"></div><div class="body" style="font-size:8pt">HEPA filter research — Freudenberg H13, evidence gaps identified</div></div>
+          <div class="step"><div class="step-dot"></div><div class="body" style="font-size:8pt">Airflow CFD — 10 cases from V00 to CASE_M_SEALED</div></div>
+          <div class="step"><div class="step-dot"></div><div class="body" style="font-size:8pt">Geometry optimisation — GEO_C: 5× pressure reduction vs V01</div></div>
+          <div class="step"><div class="step-dot"></div><div class="body" style="font-size:8pt">Bypass discovery and fix — bypassSeal baffle in simulation</div></div>
+          <div class="step"><div class="step-dot"></div><div class="body" style="font-size:8pt">Phase 12B particle tracking — 4 sizes, 224 seeds, arrival fractions</div></div>
+          <div class="step"><div class="step-dot"></div><div class="body" style="font-size:8pt">Formaldehyde research target confirmed (Phase 14)</div></div>
+          <div class="step"><div class="step-dot"></div><div class="body" style="font-size:8pt">Carbon media selection — OVC 4×8 as research control</div></div>
+          <div class="step"><div class="step-dot"></div><div class="body" style="font-size:8pt">Bench-test rig engineering (Phases 15–17): protocol, BOM, scripts</div></div>
+          <div class="step"><div class="step-dot"></div><div class="body" style="font-size:8pt">Water spray reviewed and rejected (Phase 18) — G4/M5 recommended</div></div>
+          <div class="step"><div class="step-dot"></div><div class="body" style="font-size:8pt">Interactive 3D engineering viewer (Three.js T1–T3)</div></div>
+          <div class="step"><div class="step-dot"></div><div class="body" style="font-size:8pt">Procurement research — India vendor routes, confirmed prices</div></div>
+        </div>
+      </div>
+    </div>
+    <div class="col f1">
+      <div style="background:rgba(196,124,32,0.08);border-radius:8px;padding:5mm;height:100%">
+        <div class="h3" style="color:var(--amber);margin-bottom:3mm">Not yet performed or validated</div>
+        <div class="steps" style="gap:2.5mm">
+          <div class="step"><div style="width:8px;height:8px;border-radius:50%;background:var(--amber);flex-shrink:0"></div><div class="body" style="font-size:8pt">Physical airflow measurement in any tower geometry</div></div>
+          <div class="step"><div style="width:8px;height:8px;border-radius:50%;background:var(--amber);flex-shrink:0"></div><div class="body" style="font-size:8pt">Physical pressure drop across any real component</div></div>
+          <div class="step"><div style="width:8px;height:8px;border-radius:50%;background:var(--amber);flex-shrink:0"></div><div class="body" style="font-size:8pt">Clean Air Delivery Rate (CADR) — not established at any level</div></div>
+          <div class="step"><div style="width:8px;height:8px;border-radius:50%;background:var(--amber);flex-shrink:0"></div><div class="body" style="font-size:8pt">PM removal efficiency — at any particle size</div></div>
+          <div class="step"><div style="width:8px;height:8px;border-radius:50%;background:var(--amber);flex-shrink:0"></div><div class="body" style="font-size:8pt">Carbon packed-bed pressure drop measurements</div></div>
+          <div class="step"><div style="width:8px;height:8px;border-radius:50%;background:var(--amber);flex-shrink:0"></div><div class="body" style="font-size:8pt">HCHO breakthrough curve for OVC 4×8</div></div>
+          <div class="step"><div style="width:8px;height:8px;border-radius:50%;background:var(--amber);flex-shrink:0"></div><div class="body" style="font-size:8pt">Filter fractional efficiency η(d_p) for Freudenberg product</div></div>
+          <div class="step"><div style="width:8px;height:8px;border-radius:50%;background:var(--amber);flex-shrink:0"></div><div class="body" style="font-size:8pt">Physical enclosure sealing performance</div></div>
+          <div class="step"><div style="width:8px;height:8px;border-radius:50%;background:var(--amber);flex-shrink:0"></div><div class="body" style="font-size:8pt">Energy consumption / power budget</div></div>
+          <div class="step"><div style="width:8px;height:8px;border-radius:50%;background:var(--amber);flex-shrink:0"></div><div class="body" style="font-size:8pt">Gas-phase CFD (blocked — no measured inputs)</div></div>
+          <div class="step"><div style="width:8px;height:8px;border-radius:50%;background:var(--amber);flex-shrink:0"></div><div class="body" style="font-size:8pt">Solar-assisted power (CONCEPT status only)</div></div>
+          <div class="step"><div style="width:8px;height:8px;border-radius:50%;background:var(--amber);flex-shrink:0"></div><div class="body" style="font-size:8pt">Any physical prototype or manufactured unit</div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="pn">24</div>
+</section>
+
+
+<!-- ═══════════════════════════════════════════════════════════════
+     PAGE 25 — EIGHT LESSONS
+═══════════════════════════════════════════════════════════════ -->
+<section class="page page-white pad-sm">
+  <div class="section-label">Eight Lessons from the Engineering Process</div>
+  <div class="rule rule-green"></div>
+  <div class="grid2" style="flex:1;align-content:start;gap:4mm">
+    <div class="lesson">
+      <div class="lesson-num">01</div>
+      <div class="h3" style="margin-bottom:1.5mm">A good-looking airflow path is not necessarily a good airflow path.</div>
+      <div class="body" style="font-size:8.5pt">V00 had plausible visual flow but significant recirculation and pressure losses. Three geometry iterations were needed to reach a well-behaved field.</div>
+    </div>
+    <div class="lesson">
+      <div class="lesson-num">02</div>
+      <div class="h3" style="margin-bottom:1.5mm">A fan must be evaluated with system resistance.</div>
+      <div class="body" style="font-size:8.5pt">Adding real fan curve data (V01) fundamentally changed the simulation. A fan delivers the flow at which system resistance equals fan output — not a fixed number.</div>
+    </div>
+    <div class="lesson">
+      <div class="lesson-num">03</div>
+      <div class="h3" style="margin-bottom:1.5mm">Filters create large pressure penalties that shift the operating point.</div>
+      <div class="body" style="font-size:8.5pt">The H13 HEPA added ~111 Pa — reducing airflow from ~1,496 to ~1,332 m³/h. Every treatment stage competes for the same fan headroom.</div>
+    </div>
+    <div class="lesson">
+      <div class="lesson-num">04</div>
+      <div class="h3" style="margin-bottom:1.5mm">Bypass paths matter as much as filter efficiency.</div>
+      <div class="body" style="font-size:8.5pt">45% bypass — discovered in simulation — showed that a highly rated filter can be functionally irrelevant if air routes around it. Finding this early was the value of the simulation.</div>
+    </div>
+    <div class="lesson">
+      <div class="lesson-num">05</div>
+      <div class="h3" style="margin-bottom:1.5mm">Particle trajectories are not filtration efficiency.</div>
+      <div class="body" style="font-size:8.5pt">62% of simulated particles reaching the filter face is a geometry-routing result, not a removal efficiency. No capture probability was applied because it is not yet available.</div>
+    </div>
+    <div class="lesson">
+      <div class="lesson-num">06</div>
+      <div class="h3" style="margin-bottom:1.5mm">Gas removal is pollutant-specific and requires pollutant-specific evidence.</div>
+      <div class="body" style="font-size:8.5pt">A documented comparison of six gas species was needed before HCHO could be selected. Generic "carbon removes VOCs" is not an engineering claim.</div>
+    </div>
+    <div class="lesson">
+      <div class="lesson-num">07</div>
+      <div class="h3" style="margin-bottom:1.5mm">Missing data should lead to an experiment — not an invented coefficient.</div>
+      <div class="body" style="font-size:8.5pt">Gas-phase CFD was blocked, correctly. The packed-bed experiment exists specifically to generate the inputs that will make CFD meaningful.</div>
+    </div>
+    <div class="lesson">
+      <div class="lesson-num">08</div>
+      <div class="h3" style="margin-bottom:1.5mm">A stage that looks useful can be eliminated by physics.</div>
+      <div class="body" style="font-size:8.5pt">The water-spray stage was part of the original concept. Phase 18 showed that basic aerosol physics makes it ineffective for PM2.5 while introducing serious hygiene risks. Removing it was correct.</div>
+    </div>
+  </div>
+  <div class="pn">25</div>
+</section>
+
+
+<!-- ═══════════════════════════════════════════════════════════════
+     PAGE 26 — WHERE EXPERTISE ENTERS
+═══════════════════════════════════════════════════════════════ -->
+<section class="page page-green pad">
+  <div class="section-label-w">The Next Stage</div>
+  <div class="rule rule-white"></div>
+  <div class="h1" style="color:var(--white);font-size:26pt;margin-bottom:6mm">From exploration to professional engineering.</div>
+  <div class="row" style="flex:1;gap:10mm">
+    <div class="col f2 v-center">
+      <div class="body-w" style="font-size:11pt;margin-bottom:5mm;line-height:1.7">The project has produced a structured engineering foundation: real simulation results, real component data, identified failure modes, and explicit documentation of every uncertainty. The next maturity level requires experienced people.</div>
+      <div class="body-w" style="margin-bottom:5mm">The existing project gives domain professionals something concrete to review — not a blank sheet. Questions can be answered within a defined context rather than starting from nothing.</div>
+      <div class="card-dark" style="background:rgba(0,0,0,0.2)">
+        <div class="body-w">The result of this project is not a finished purifier.<br><strong>The result is a better-defined engineering problem.</strong></div>
+      </div>
+    </div>
+    <div class="col f2" style="gap:3mm">
+      <div class="label-w" style="margin-bottom:1mm">Domain expertise needed at next stage</div>
+      <div class="grid2" style="gap:3mm">
+        <div class="card-dark"><div class="body-w" style="font-size:8pt;font-weight:600">HVAC &amp; Airflow</div><div class="body-w" style="font-size:7.5pt;opacity:0.75">Architecture, fan selection, duct design, real pressure drop</div></div>
+        <div class="card-dark"><div class="body-w" style="font-size:8pt;font-weight:600">Filtration Engineering</div><div class="body-w" style="font-size:7.5pt;opacity:0.75">Filter mounting, sealing, bypass prevention in manufactured enclosure</div></div>
+        <div class="card-dark"><div class="body-w" style="font-size:8pt;font-weight:600">Mechanical Design</div><div class="body-w" style="font-size:7.5pt;opacity:0.75">Tolerances, assembly, materials, structural loads, maintenance access</div></div>
+        <div class="card-dark"><div class="body-w" style="font-size:8pt;font-weight:600">Adsorption / Chemistry</div><div class="body-w" style="font-size:7.5pt;opacity:0.75">Carbon sizing, humidity effects, bed life, HCHO specifics</div></div>
+        <div class="card-dark"><div class="body-w" style="font-size:8pt;font-weight:600">Laboratory Testing</div><div class="body-w" style="font-size:7.5pt;opacity:0.75">Protocol design, DNPH reference method, measurement chain</div></div>
+        <div class="card-dark"><div class="body-w" style="font-size:8pt;font-weight:600">Electrical &amp; Controls</div><div class="body-w" style="font-size:7.5pt;opacity:0.75">Power budget, motor control, sensor integration</div></div>
+        <div class="card-dark"><div class="body-w" style="font-size:8pt;font-weight:600">Safety &amp; Regulatory</div><div class="body-w" style="font-size:7.5pt;opacity:0.75">Chemical safety, IP ratings, certification path in India</div></div>
+        <div class="card-dark"><div class="body-w" style="font-size:8pt;font-weight:600">Manufacturing</div><div class="body-w" style="font-size:7.5pt;opacity:0.75">Material sourcing, tolerances, cost estimation, supply chain</div></div>
+      </div>
+    </div>
+  </div>
+  <div class="pn-w">26</div>
+</section>
+
+
+<!-- ═══════════════════════════════════════════════════════════════
+     PAGE 27 — MENTOR QUESTIONS
+═══════════════════════════════════════════════════════════════ -->
+<section class="page page-cream pad">
+  <div class="section-label">Questions We Would Ask an Industry Mentor</div>
+  <div class="rule rule-blue"></div>
+  <div class="h2" style="margin-bottom:5mm">The ten questions we most want answered by experienced engineering reviewers.</div>
+  <div class="grid2" style="flex:1;gap:0">
+    <div class="col" style="padding-right:6mm;border-right:1px solid var(--light)">
+      <div class="q-item"><div class="q-num">01</div><div class="body">Is the cross-flow tower architecture sensible for the intended deployment, or does the turning geometry impose fundamental disadvantages?</div></div>
+      <div class="q-item"><div class="q-num">02</div><div class="body">Is the Systemair KVO 250 the appropriate fan class? What would a professional fan selection look like for this system resistance?</div></div>
+      <div class="q-item"><div class="q-num">03</div><div class="body">How should the HEPA filter be mounted and sealed in a manufacturable enclosure to prevent real-world bypass?</div></div>
+      <div class="q-item"><div class="q-num">04</div><div class="body">What is a realistic pressure-drop budget across all treatment stages, and how much fan headroom is genuinely available?</div></div>
+      <div class="q-item"><div class="q-num">05</div><div class="body">How should the carbon media bed be sized — area, depth, packing — and where should it sit in the treatment sequence?</div></div>
+    </div>
+    <div class="col" style="padding-left:6mm">
+      <div class="q-item"><div class="q-num">06</div><div class="body">What test standards are relevant for validating this class of air-treatment device in India? What is the certification path?</div></div>
+      <div class="q-item"><div class="q-num">07</div><div class="body">What materials and safety requirements have been overlooked in the current component selections?</div></div>
+      <div class="q-item"><div class="q-num">08</div><div class="body">What should be simplified, removed, or deferred before a first physical prototype is attempted?</div></div>
+      <div class="q-item"><div class="q-num">09</div><div class="body">Are the RANS CFD simulations useful as a starting point, or do specific aspects — turbulence model, wall treatment, boundary conditions — need to be revisited?</div></div>
+      <div class="q-item"><div class="q-num">10</div><div class="body">What would make this system maintainable in real operation — filter replacement intervals, carbon bed life, cleaning indicators, serviceable access points?</div></div>
+    </div>
+  </div>
+  <div class="pn">27</div>
+</section>
+
+
+<!-- ═══════════════════════════════════════════════════════════════
+     PAGE 28 — ROADMAP
+═══════════════════════════════════════════════════════════════ -->
+<section class="page page-navy pad">
+  <div class="section-label-w">Development Roadmap</div>
+  <div class="rule rule-white"></div>
+  <div class="h1" style="color:var(--white);font-size:20pt;margin-bottom:6mm">Where this project is, and where it could go.</div>
+  <div style="display:flex;flex-direction:column;gap:3mm;flex:1">
+    <div style="display:flex;gap:2mm;flex:1">
+      <div style="flex:1;background:rgba(42,110,78,0.25);border-radius:6px;padding:4mm;border:1px solid rgba(42,110,78,0.4)">
+        <div class="label-w" style="color:rgba(42,110,78,0.8);margin-bottom:2mm">COMPLETE</div>
+        <div class="body-w" style="font-size:8pt;font-weight:600">Digital engineering foundation</div>
+        <div class="body-w" style="font-size:7pt;opacity:0.7">CAD, CFD, particle study, gas research, digital viewer, Phase 18</div>
+      </div>
+      <div style="flex:1;background:rgba(196,124,32,0.2);border-radius:6px;padding:4mm;border:1px solid rgba(196,124,32,0.35)">
+        <div class="label-w" style="color:rgba(196,124,32,0.9);margin-bottom:2mm">CURRENT</div>
+        <div class="body-w" style="font-size:8pt;font-weight:600">Procurement unblock</div>
+        <div class="body-w" style="font-size:7pt;opacity:0.7">Phase 17B — RFQ letters ready; orders pending</div>
+      </div>
+      <div style="flex:1;background:rgba(255,255,255,0.04);border-radius:6px;padding:4mm;border:1px solid rgba(255,255,255,0.1)">
+        <div class="label-w" style="margin-bottom:2mm">NEXT</div>
+        <div class="body-w" style="font-size:8pt;font-weight:600">Expert review</div>
+        <div class="body-w" style="font-size:7pt;opacity:0.6">HVAC, filtration, mechanical design review of existing work</div>
+      </div>
+      <div style="flex:1;background:rgba(255,255,255,0.04);border-radius:6px;padding:4mm;border:1px solid rgba(255,255,255,0.08)">
+        <div class="label-w" style="margin-bottom:2mm">FUTURE</div>
+        <div class="body-w" style="font-size:8pt;font-weight:600">Physical component testing</div>
+        <div class="body-w" style="font-size:7pt;opacity:0.6">Carbon ΔP + HCHO breakthrough (Phase 17A)</div>
+      </div>
+      <div style="flex:1;background:rgba(255,255,255,0.04);border-radius:6px;padding:4mm;border:1px solid rgba(255,255,255,0.08)">
+        <div class="label-w" style="margin-bottom:2mm">FUTURE</div>
+        <div class="body-w" style="font-size:8pt;font-weight:600">CFD with measured data</div>
+        <div class="body-w" style="font-size:7pt;opacity:0.6">Gas-stage CFD using real Darcy–Forchheimer coefficients</div>
+      </div>
+      <div style="flex:1;background:rgba(255,255,255,0.04);border-radius:6px;padding:4mm;border:1px solid rgba(255,255,255,0.08)">
+        <div class="label-w" style="margin-bottom:2mm">FUTURE</div>
+        <div class="body-w" style="font-size:8pt;font-weight:600">Integrated prototype</div>
+        <div class="body-w" style="font-size:7pt;opacity:0.6">First physical build — after expert review and requirement freeze</div>
+      </div>
+      <div style="flex:1;background:rgba(255,255,255,0.04);border-radius:6px;padding:4mm;border:1px solid rgba(255,255,255,0.08)">
+        <div class="label-w" style="margin-bottom:2mm">FUTURE</div>
+        <div class="body-w" style="font-size:8pt;font-weight:600">Lab validation → field pilot</div>
+        <div class="body-w" style="font-size:7pt;opacity:0.6">CADR, PM removal, HCHO under controlled conditions</div>
+      </div>
+      <div style="flex:1;background:rgba(255,255,255,0.03);border-radius:6px;padding:4mm;border:1px solid rgba(255,255,255,0.06)">
+        <div class="label-w" style="margin-bottom:2mm">IF JUSTIFIED</div>
+        <div class="body-w" style="font-size:8pt;font-weight:600">Certification</div>
+        <div class="body-w" style="font-size:7pt;opacity:0.5">Only if field results and expert review support it</div>
+      </div>
+    </div>
+    <div class="caption-w" style="margin-top:2mm">Roadmap is indicative — not a committed timeline. Progress in each stage depends on resources, expertise, and results of prior stages.</div>
+  </div>
+  <div class="pn-w">28</div>
+</section>
+
+
+<!-- ═══════════════════════════════════════════════════════════════
+     PAGE 29 — MATURITY ASSESSMENT
+═══════════════════════════════════════════════════════════════ -->
+<section class="page page-cream pad">
+  <div class="section-label">Honest Maturity Assessment</div>
+  <div class="rule rule-blue"></div>
+  <div class="h2" style="margin-bottom:5mm">Digital engineering is much further developed than physical validation — intentionally.</div>
+  <div class="row" style="flex:1;gap:12mm">
+    <div class="col f3">
+      <div class="matbar"><div class="matbar-label">Requirements &amp; architecture</div><div class="matbar-track"><div class="matbar-fill fill-high" style="width:85%"></div></div><div class="matbar-tag" style="color:var(--green)">HIGH</div></div>
+      <div class="matbar"><div class="matbar-label">CAD parametric model</div><div class="matbar-track"><div class="matbar-fill fill-high" style="width:80%"></div></div><div class="matbar-tag" style="color:var(--green)">HIGH</div></div>
+      <div class="matbar"><div class="matbar-label">Airflow CFD</div><div class="matbar-track"><div class="matbar-fill fill-mid" style="width:65%"></div></div><div class="matbar-tag" style="color:var(--blue)">MEDIUM</div></div>
+      <div class="matbar"><div class="matbar-label">Fan data research</div><div class="matbar-track"><div class="matbar-fill fill-high" style="width:75%"></div></div><div class="matbar-tag" style="color:var(--green)">HIGH</div></div>
+      <div class="matbar"><div class="matbar-label">HEPA filter research</div><div class="matbar-track"><div class="matbar-fill fill-mid" style="width:60%"></div></div><div class="matbar-tag" style="color:var(--blue)">MEDIUM</div></div>
+      <div class="matbar"><div class="matbar-label">Particle tracking study</div><div class="matbar-track"><div class="matbar-fill fill-mid" style="width:55%"></div></div><div class="matbar-tag" style="color:var(--blue)">MEDIUM</div></div>
+      <div class="matbar"><div class="matbar-label">Gas / HCHO research</div><div class="matbar-track"><div class="matbar-fill fill-mid" style="width:60%"></div></div><div class="matbar-tag" style="color:var(--blue)">MEDIUM</div></div>
+      <div class="matbar"><div class="matbar-label">Experiment design</div><div class="matbar-track"><div class="matbar-fill fill-high" style="width:80%"></div></div><div class="matbar-tag" style="color:var(--green)">HIGH</div></div>
+      <div class="matbar"><div class="matbar-label">Digital 3D viewer</div><div class="matbar-track"><div class="matbar-fill fill-high" style="width:90%"></div></div><div class="matbar-tag" style="color:var(--green)">HIGH</div></div>
+      <div style="height:3mm;border-top:1px dashed var(--light);margin:3mm 0"></div>
+      <div class="matbar"><div class="matbar-label">Physical airflow test</div><div class="matbar-track"><div class="matbar-fill fill-none"></div></div><div class="matbar-tag" style="color:var(--amber)">NOT DONE</div></div>
+      <div class="matbar"><div class="matbar-label">Carbon ΔP measurement</div><div class="matbar-track"><div class="matbar-fill fill-none"></div></div><div class="matbar-tag" style="color:var(--amber)">NOT DONE</div></div>
+      <div class="matbar"><div class="matbar-label">HCHO breakthrough test</div><div class="matbar-track"><div class="matbar-fill fill-none"></div></div><div class="matbar-tag" style="color:var(--amber)">NOT DONE</div></div>
+      <div class="matbar"><div class="matbar-label">Physical prototype</div><div class="matbar-track"><div class="matbar-fill fill-none"></div></div><div class="matbar-tag" style="color:var(--amber)">NOT DONE</div></div>
+      <div class="matbar"><div class="matbar-label">CADR validation</div><div class="matbar-track"><div class="matbar-fill fill-none"></div></div><div class="matbar-tag" style="color:var(--amber)">NOT DONE</div></div>
+    </div>
+    <div class="col f1 v-center">
+      <div class="card" style="border-top:4px solid var(--amber);margin-bottom:4mm">
+        <div class="h3" style="margin-bottom:2mm">No fake overall percentage</div>
+        <div class="body">Digital and physical maturity are fundamentally different — one can be high while the other is zero. The honest position: digital engineering foundation is strong; physical evidence is zero.</div>
+      </div>
+      <div class="card" style="border-top:4px solid var(--green)">
+        <div class="h3" style="margin-bottom:2mm">This is the expected sequence</div>
+        <div class="body">A simulation-first approach deliberately produces this maturity profile. Physical validation comes after design decisions are well enough informed to make testing purposeful.</div>
+      </div>
+    </div>
+  </div>
+  <div class="pn">29</div>
+</section>
+
+
+<!-- ═══════════════════════════════════════════════════════════════
+     PAGE 30 — VALUE OF THE WORK
+═══════════════════════════════════════════════════════════════ -->
+<section class="page page-white pad">
+  <div class="section-label">The Value of the Work So Far</div>
+  <div class="rule rule-green"></div>
+  <div class="row" style="flex:1;gap:14mm;align-items:center">
+    <div class="col f2">
+      <div class="h1" style="margin-bottom:6mm;font-size:22pt">The result is not a finished purifier.<br>The result is a better-defined engineering problem.</div>
+      <div class="body" style="margin-bottom:4mm">Before this work, the AQI Tower was a visual concept — a plausible shape with no engineering basis for any of its parameters, filter choices, fan selection, treatment stages, or performance claims.</div>
+      <div class="body" style="margin-bottom:4mm">After this work, the team knows: why a particular geometry produces less pressure loss; where bypass was hiding; what the fan curve looks like; what particle trajectory data can and cannot tell you; which gas is the right research target; and what experiment is needed before gas-stage CFD can be trusted.</div>
+      <div class="body">None of these answers existed before the work began. All of them reduce the cost and risk of physical development.</div>
+    </div>
+    <div class="col f2" style="gap:4mm">
+      <div class="card-green">
+        <div class="h3" style="color:var(--green);margin-bottom:2mm">Quantified improvements from simulation</div>
+        <div class="row" style="gap:4mm">
+          <div style="text-align:center;flex:1"><div style="font-size:20pt;font-weight:700;color:var(--green)">5×</div><div class="caption">pressure loss reduction<br>V01 → GEO_C</div></div>
+          <div style="text-align:center;flex:1"><div style="font-size:20pt;font-weight:700;color:var(--green)">45%</div><div class="caption">bypass discovered<br>and sealed in model</div></div>
+          <div style="text-align:center;flex:1"><div style="font-size:20pt;font-weight:700;color:var(--green)">4.7×</div><div class="caption">riser entry CoV<br>improvement</div></div>
+        </div>
+      </div>
+      <div class="card" style="border-left:3px solid var(--blue)">
+        <div class="h3" style="margin-bottom:2mm">Decisions that saved future effort</div>
+        <div class="body" style="font-size:8.5pt"><strong>Water spray removed:</strong> Eliminated 12+ components, Legionella risk, pump energy, and 35–125 Pa ΔP before any hardware was purchased.</div>
+        <div class="body" style="font-size:8.5pt;margin-top:2mm"><strong>Gas CFD blocked:</strong> Prevented a simulation with invented coefficients that would have looked credible but been meaningless.</div>
+      </div>
+      <div class="card" style="border-left:3px solid var(--amber)">
+        <div class="h3" style="margin-bottom:2mm">Questions now precisely defined</div>
+        <div class="body" style="font-size:8.5pt">Every remaining uncertainty is now an answerable question with a known experimental method. That is not the same as having the answer — but it is far more useful than not knowing what to ask.</div>
+      </div>
+    </div>
+  </div>
+  <div class="pn">30</div>
+</section>
+
+
+<!-- ═══════════════════════════════════════════════════════════════
+     PAGE 31 — CLAIMS WE DO NOT MAKE
+═══════════════════════════════════════════════════════════════ -->
+<section class="page page-navy pad">
+  <div class="section-label-w">Claims We Do Not Make</div>
+  <div class="rule rule-white"></div>
+  <div class="h1" style="color:var(--white);font-size:20pt;margin-bottom:6mm">Responsible engineering means being equally clear about what you do not know.</div>
+  <div class="grid2" style="flex:1;gap:4mm;align-content:start">
+    <div class="card-dark" style="border-left:3px solid var(--red)">
+      <div class="h3" style="color:rgba(255,255,255,0.9);margin-bottom:2mm">No validated CADR</div>
+      <div class="body-w" style="font-size:8pt">Clean Air Delivery Rate requires physical measurement under standard conditions. No CADR value has been established for the AQI Tower at any stage of development.</div>
+    </div>
+    <div class="card-dark" style="border-left:3px solid var(--red)">
+      <div class="h3" style="color:rgba(255,255,255,0.9);margin-bottom:2mm">No PM2.5 removal efficiency</div>
+      <div class="body-w" style="font-size:8pt">The H13 classification is a component rating at test conditions. Without η(d_p) at operating velocity, no system-level PM2.5 efficiency can be calculated from available data.</div>
+    </div>
+    <div class="card-dark" style="border-left:3px solid var(--red)">
+      <div class="h3" style="color:rgba(255,255,255,0.9);margin-bottom:2mm">No HCHO removal efficiency</div>
+      <div class="body-w" style="font-size:8pt">No breakthrough experiment has been performed. The carbon stage has no measured capacity, no breakthrough time, and no gas-phase CADR.</div>
+    </div>
+    <div class="card-dark" style="border-left:3px solid var(--red)">
+      <div class="h3" style="color:rgba(255,255,255,0.9);margin-bottom:2mm">No claim of physical bypass = 0%</div>
+      <div class="body-w" style="font-size:8pt">CFD bypass ≈ 0% is a modelled result. Whether a fabricated tower is physically airtight depends entirely on manufacturing quality — not CFD.</div>
+    </div>
+    <div class="card-dark" style="border-left:3px solid var(--amber)">
+      <div class="h3" style="color:rgba(255,255,255,0.9);margin-bottom:2mm">62% is not particle removal</div>
+      <div class="body-w" style="font-size:8pt">62% is a simulated particle arrival fraction at the filter plane. Filter capture efficiency η(d_p) has not been applied — it is not available for this product.</div>
+    </div>
+    <div class="card-dark" style="border-left:3px solid var(--amber)">
+      <div class="h3" style="color:rgba(255,255,255,0.9);margin-bottom:2mm">1,332 m³/h is not measured airflow</div>
+      <div class="body-w" style="font-size:8pt">1,332 m³/h is a RANS CFD result from a partially converged case. It is a useful screening estimate. Real tower airflow has never been measured.</div>
+    </div>
+  </div>
+  <div class="pn-w">31</div>
+</section>
+
+
+<!-- ═══════════════════════════════════════════════════════════════
+     PAGE 32 — KEY NUMBERS
+═══════════════════════════════════════════════════════════════ -->
+<section class="page page-cream pad-sm">
+  <div class="section-label">Key Simulation Results at a Glance</div>
+  <div class="rule rule-green"></div>
+  <div class="caption" style="margin-bottom:4mm;color:var(--amber);font-weight:600">ALL VALUES BELOW ARE SIMULATION ONLY — NOT PHYSICALLY VALIDATED — PARTIALLY CONVERGED RANS</div>
+  <div class="grid4" style="flex:1;align-content:start;gap:4mm">
+    <div class="card" style="text-align:center;border-top:3px solid var(--green)">
+      <div style="font-size:26pt;font-weight:700;color:var(--green)">1,496</div>
+      <div class="label" style="margin-top:1mm">m³/h</div>
+      <div class="caption">GEO_C empty tower airflow</div>
+      <div style="margin-top:2mm"><span class="badge badge-sim">SIMULATED</span></div>
+    </div>
+    <div class="card" style="text-align:center;border-top:3px solid var(--blue)">
+      <div style="font-size:26pt;font-weight:700;color:var(--blue)">3.5 Pa</div>
+      <div class="label" style="margin-top:1mm">fan head</div>
+      <div class="caption">GEO_C empty (no filters)</div>
+      <div style="margin-top:2mm"><span class="badge badge-sim">SIMULATED</span></div>
+    </div>
+    <div class="card" style="text-align:center;border-top:3px solid var(--charcoal)">
+      <div style="font-size:26pt;font-weight:700;color:var(--charcoal)">1,332</div>
+      <div class="label" style="margin-top:1mm">m³/h</div>
+      <div class="caption">with H13 HEPA (CASE_M_SEALED)</div>
+      <div style="margin-top:2mm"><span class="badge badge-sim">SIMULATED</span></div>
+    </div>
+    <div class="card" style="text-align:center;border-top:3px solid var(--charcoal)">
+      <div style="font-size:26pt;font-weight:700;color:var(--charcoal)">111 Pa</div>
+      <div class="label" style="margin-top:1mm">filter ΔP</div>
+      <div class="caption">CASE_M_SEALED</div>
+      <div style="margin-top:2mm"><span class="badge badge-sim">SIMULATED</span></div>
+    </div>
+    <div class="card" style="text-align:center;border-top:3px solid var(--amber)">
+      <div style="font-size:26pt;font-weight:700;color:var(--amber)">45%</div>
+      <div class="label" style="margin-top:1mm">bypass (before fix)</div>
+      <div class="caption">Discovered Phase 10A</div>
+      <div style="margin-top:2mm"><span class="badge badge-sim">SIMULATED</span></div>
+    </div>
+    <div class="card" style="text-align:center;border-top:3px solid var(--green)">
+      <div style="font-size:26pt;font-weight:700;color:var(--green)">~0%</div>
+      <div class="label" style="margin-top:1mm">bypass (after fix)</div>
+      <div class="caption">bypassSeal — modelled only</div>
+      <div style="margin-top:2mm"><span class="badge badge-sim">SIMULATED</span></div>
+    </div>
+    <div class="card" style="text-align:center;border-top:3px solid var(--blue)">
+      <div style="font-size:26pt;font-weight:700;color:var(--blue)">62.1%</div>
+      <div class="label" style="margin-top:1mm">particle arrival</div>
+      <div class="caption">0.3–2.5 µm at filter plane</div>
+      <div style="margin-top:2mm"><span class="badge badge-warn">≠ CAPTURE</span></div>
+    </div>
+    <div class="card" style="text-align:center;border-top:3px solid var(--gray)">
+      <div style="font-size:26pt;font-weight:700;color:var(--gray)">688 Pa</div>
+      <div class="label" style="margin-top:1mm">fan shutoff head</div>
+      <div class="caption">KVO 250 ±20 Pa (catalogue)</div>
+      <div style="margin-top:2mm"><span class="badge badge-mfr">MFR DATA</span></div>
+    </div>
+    <div class="card" style="text-align:center;border-top:3px solid var(--blue)">
+      <div style="font-size:26pt;font-weight:700;color:var(--blue)">≥99.95%</div>
+      <div class="label" style="margin-top:1mm">filter efficiency</div>
+      <div class="caption">H13 EN 1822 at MPPS only</div>
+      <div style="margin-top:2mm"><span class="badge badge-mfr">MFR CLASS.</span></div>
+    </div>
+    <div class="card" style="text-align:center;border-top:3px solid var(--green)">
+      <div style="font-size:26pt;font-weight:700;color:var(--green)">63,780</div>
+      <div class="label" style="margin-top:1mm">CFD cells</div>
+      <div class="caption">GEO_C mesh</div>
+      <div style="margin-top:2mm"><span class="badge badge-sim">SIMULATED</span></div>
+    </div>
+    <div class="card" style="text-align:center;border-top:3px solid var(--charcoal)">
+      <div style="font-size:26pt;font-weight:700;color:var(--charcoal)">100 µg/m³</div>
+      <div class="label" style="margin-top:1mm">HCHO baseline</div>
+      <div class="caption">Planned challenge concentration</div>
+      <div style="margin-top:2mm"><span class="badge badge-no">NOT TESTED</span></div>
+    </div>
+    <div class="card" style="text-align:center;border-top:3px solid var(--amber)">
+      <div style="font-size:26pt;font-weight:700;color:var(--amber)">0</div>
+      <div class="label" style="margin-top:1mm">physical prototypes</div>
+      <div class="caption">No hardware built or tested</div>
+      <div style="margin-top:2mm"><span class="badge badge-fut">FUTURE WORK</span></div>
+    </div>
+  </div>
+  <div class="pn">32</div>
+</section>
+
+
+<!-- ═══════════════════════════════════════════════════════════════
+     PAGE 33 — CLOSING VISION
+═══════════════════════════════════════════════════════════════ -->
+<section class="page page-dark pad" style="justify-content:center;text-align:center">
+  <div style="max-width:200mm;margin:0 auto">
+    <div class="section-label-w" style="justify-content:center;display:flex;margin-bottom:6mm">Closing</div>
+    <div style="font-size:32pt;font-weight:700;color:var(--white);line-height:1.2;letter-spacing:-1px;margin-bottom:5mm">
+      An idea became a model.<br>The model became questions.<br>The questions became engineering.
+    </div>
+    <div class="rule rule-green" style="margin:0 auto 6mm"></div>
+    <div class="body-w" style="font-size:11.5pt;max-width:160mm;margin:0 auto 6mm;line-height:1.7">
+      The next stage is to bring experienced people, real hardware, and physical evidence into the loop — to test what simulation suggested, verify what literature predicted, and correct what both got wrong.
+    </div>
+    <div class="body-w" style="font-size:9.5pt;opacity:0.65;max-width:140mm;margin:0 auto">
+      The AQI Tower team does not claim to have designed a finished product. They claim to have done honest exploratory engineering on a difficult problem — and to have built a foundation that makes the next stage of work more purposeful than it would have been without it.
+    </div>
+    <div style="margin-top:10mm;display:flex;justify-content:center;gap:12mm">
+      <div><div style="font-size:30pt;font-weight:700;color:var(--green)">18+</div><div class="caption-w">documented phases</div></div>
+      <div><div style="font-size:30pt;font-weight:700;color:var(--green)">10</div><div class="caption-w">CFD simulation cases</div></div>
+      <div><div style="font-size:30pt;font-weight:700;color:var(--green)">0</div><div class="caption-w">fabricated results</div></div>
+      <div><div style="font-size:30pt;font-weight:700;color:var(--green)">∞</div><div class="caption-w">questions answered honestly</div></div>
+    </div>
+  </div>
+  <div class="pn-w">33</div>
+</section>
+
+
+<!-- ═══════════════════════════════════════════════════════════════
+     PAGE 34 — TECHNICAL APPENDIX
+═══════════════════════════════════════════════════════════════ -->
+<section class="page page-cream pad-sm">
+  <div class="section-label">Technical Appendix — Claim Traceability</div>
+  <div class="rule rule-blue"></div>
+  <div class="h3" style="margin-bottom:3mm">Selected key values and their direct repository sources</div>
+  <div style="font-size:7.5pt;line-height:1.9;columns:2;gap:10mm">
+    <div style="font-weight:700;margin-bottom:1mm">Airflow CFD</div>
+    <div>GEO_C airflow 1,496.055 m³/h — <em>results/GEOMETRY_OPTIMIZATION/GEO_C/metrics.json: fan.Q_m3_h</em></div>
+    <div>GEO_C fan head 3.500 Pa — <em>metrics.json: fan.curve_static_Pa</em></div>
+    <div>V01 pressure loss 17.326 Pa — <em>results/GEOMETRY_OPTIMIZATION/comparison_metrics.json: V01.tower_total_pressure_loss_Pa</em></div>
+    <div>V01 riser reverse 23.12% — <em>comparison_metrics.json: V01.riser_reverse_percent</em></div>
+    <div>GEO_C cells 63,780 — <em>GEO_C/metrics.json: cell_count</em></div>
+    <div>GEO_C riser entry CoV 0.234 — <em>metrics.json: sections.riser_entry_above_turn.normal_velocity_CoV</em></div>
+    <div style="font-weight:700;margin-top:2mm;margin-bottom:1mm">Filter and sealed case</div>
+    <div>CASE_M_SEALED airflow 1,332.205 m³/h — <em>results/FILTER_H13/bypass_analysis_sealed.json: CASE_M_SEALED.total_flow_m3_h</em></div>
+    <div>Filter ΔP 111.181 Pa — <em>bypass_analysis_sealed.json: CASE_M_SEALED.filter_delta_P_area_mean_Pa</em></div>
+    <div>HEPA face velocity 1.0525 m/s — <em>bypass_analysis_sealed.json: filter_face_velocity_m_s.mean</em></div>
+    <div>Bypass before 45.05% — <em>bypass_analysis_sealed.json: comparison.CASE_M_bypass_fraction</em></div>
+    <div>Bypass after 9.997×10⁻¹⁰ — <em>bypass_analysis_sealed.json: CASE_M_SEALED.bypass_fraction</em></div>
+    <div style="font-weight:700;margin-top:2mm;margin-bottom:1mm">Particle tracking</div>
+    <div>0.3 µm arrival 62.1% (139/224) — <em>results/PARTICLE_CFD/particle_arrival_fractions.json: results.0p3um</em></div>
+    <div>10 µm arrival 61.2% (137/224) — <em>particle_arrival_fractions.json: results.10um</em></div>
+    <div>Wall deposit ~37.9% — <em>particle_arrival_fractions.json: results.0p3um.wall_deposit_fraction</em></div>
+    <div style="font-weight:700;margin-top:2mm;margin-bottom:1mm">Fan and filter (manufacturer data)</div>
+    <div>KVO 250 shutoff ~688 Pa ±20 Pa — <em>docs/FAN_CURVE_AUDIT.md, Phase 6D PyMuPDF extraction, Systemair catalogue</em></div>
+    <div>Freudenberg SF13-B H13 — <em>Manufacturer product page, Phase 6C confirmation</em></div>
+    <div>HEPA rated ΔP 300 Pa at 2.84 m/s — <em>Freudenberg manufacturer page (single point)</em></div>
+    <div style="font-weight:700;margin-top:2mm;margin-bottom:1mm">Phase 18</div>
+    <div>NO-GO decision — <em>docs/PHASE18_WATER_SPRAY_FEASIBILITY.md, Section 15</em></div>
+    <div>Greenfield gap — <em>Hinds (1999) Aerosol Technology 2nd ed.; Seinfeld &amp; Pandis (2016)</em></div>
+    <div>Legionella risk standard — <em>ASHRAE 188-2021; CIBSE TM13 (2000)</em></div>
+    <div style="font-weight:700;margin-top:2mm;margin-bottom:1mm">Procurement (confirmed India prices, 2026-09-07)</div>
+    <div>SDP810 ₹4,748 — <em>Tanotis India, confirmed online listing</em></div>
+    <div>Rotameter A ₹1,950 — <em>Shree Aashapura Mumbai, IndiaMART listing</em></div>
+  </div>
+  <div class="caption" style="margin-top:3mm;color:var(--amber)">All CFD results: SIMULATION ONLY — PARTIALLY CONVERGED RANS — NOT PHYSICALLY VALIDATED. Report date: September 2026. Repository: D:/DUDE/AQI-TOWER</div>
+  <div class="pn">34</div>
+</section>
+
+</body>
+</html>

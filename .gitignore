@@ -1,0 +1,65 @@
+# Operating-system and editor files
+.DS_Store
+Thumbs.db
+Desktop.ini
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Credentials and local environment files
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+
+# Python generated files
+__pycache__/
+*.py[cod]
+*.pyo
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+.venv/
+venv/
+
+# Node / Three.js generated files
+node_modules/
+threejs/dist/
+threejs/.vite/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Temporary and exported scratch work
+tmp/
+*.tmp
+*.temp
+*.bak
+*.FCBak
+
+# Large local media and redundant archives
+GIF/
+*.mp4
+cad.zip
+
+# OpenFOAM generated content
+cfd/**/[1-9]*/
+cfd/**/constant/polyMesh/
+cfd/**/postProcessing/
+cfd/**/processor*/
+cfd/**/logs/
+cfd/**/dynamicCode/
+cfd/**/*.foam
+cfd/**/0/yPlus
+cfd/**/core
+cfd/**/VTK/
+
+# Build and package output
+dist/
+build/
+*.egg-info/

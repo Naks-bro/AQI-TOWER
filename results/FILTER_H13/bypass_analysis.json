@@ -1,0 +1,75 @@
+{
+  "cases": {
+    "CASE_L": {
+      "final_iteration": 4750,
+      "total_flow_m3_s": 0.3984688085067157,
+      "total_flow_m3_h": 1434.4877106241765,
+      "filter_flow_m3_s": 0.2469832152521,
+      "filter_flow_m3_h": 889.13957490756,
+      "bypass_flow_m3_s": 0.15148559325461566,
+      "bypass_flow_m3_h": 545.3481357166164,
+      "bypass_fraction": 0.3801692629902864,
+      "effective_filtered_fraction": 0.6198307370097136,
+      "filter_face_velocity_m_s": {
+        "mean": 0.7024551059502274,
+        "min": 0.5471841261860069,
+        "max": 0.781054741697099,
+        "p10": 0.5566274473503982,
+        "p90": 0.7759145125904436,
+        "CoV": 0.10041551147444958,
+        "reverse_area_fraction": 0.0
+      },
+      "filter_delta_P_area_mean_Pa": 47.104733204404496,
+      "resistance_multiplier": 0.6349206349206349,
+      "scenario_classification": "ENGINEERING SENSITIVITY \u2014 NOT MEASURED"
+    },
+    "CASE_M": {
+      "final_iteration": 5000,
+      "total_flow_m3_s": 0.39213557336696203,
+      "total_flow_m3_h": 1411.6880641210632,
+      "filter_flow_m3_s": 0.2154771358061,
+      "filter_flow_m3_h": 775.7176889019601,
+      "bypass_flow_m3_s": 0.17665843756086202,
+      "bypass_flow_m3_h": 635.9703752191033,
+      "bypass_fraction": 0.4505034726740906,
+      "effective_filtered_fraction": 0.5494965273259094,
+      "filter_face_velocity_m_s": {
+        "mean": 0.6128473714621729,
+        "min": 0.4742945395651308,
+        "max": 0.6760745301808874,
+        "p10": 0.48978779878441403,
+        "p90": 0.6747192083205347,
+        "CoV": 0.10005129612866659,
+        "reverse_area_fraction": 0.0
+      },
+      "filter_delta_P_area_mean_Pa": 64.72371963635774,
+      "resistance_multiplier": 1.0,
+      "scenario_classification": "SINGLE-POINT CALIBRATED APPROXIMATION"
+    },
+    "CASE_H": {
+      "final_iteration": 4750,
+      "total_flow_m3_s": 0.38936155772086634,
+      "total_flow_m3_h": 1401.701607795119,
+      "filter_flow_m3_s": 0.20262464334629998,
+      "filter_flow_m3_h": 729.4487160466799,
+      "bypass_flow_m3_s": 0.18673691437456635,
+      "bypass_flow_m3_h": 672.2528917484389,
+      "bypass_fraction": 0.4795977175241276,
+      "effective_filtered_fraction": 0.5204022824758724,
+      "filter_face_velocity_m_s": {
+        "mean": 0.5762930698131399,
+        "min": 0.445349660706769,
+        "max": 0.6345134746828782,
+        "p10": 0.4616127189178043,
+        "p90": 0.633910840766496,
+        "CoV": 0.10008506451788035,
+        "reverse_area_fraction": 0.0
+      },
+      "filter_delta_P_area_mean_Pa": 72.45619122577898,
+      "resistance_multiplier": 1.1904761904761905,
+      "scenario_classification": "ENGINEERING SENSITIVITY \u2014 NOT MEASURED"
+    }
+  },
+  "method": "FILTER_UPSTREAM phi sum vs AIR_OUTLET phi sum",
+  "note": "bypass_fraction = 1 - Q_FILTER_UPSTREAM / Q_AIR_OUTLET. Same definition as Phase 9 FILTER_H13_COMPARISON.md. Bypass increases with filter resistance (L < M < H), indicating a real flow path around the filter that is not an artefact."
+}
