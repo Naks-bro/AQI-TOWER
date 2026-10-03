@@ -1,0 +1,39 @@
+{
+  "gasket_outer_mm": 495.3,
+  "gasket_inner_mm": 475.3,
+  "seat_opening_mm": 470,
+  "gasket_inner_offset_from_seat_edge_mm": 2.6500000000000057,
+  "comparisons": [
+    {
+      "name": "IKEA STARKVIND",
+      "dimension_basis": "OEM published envelope",
+      "width_mm": 370,
+      "height_mm": 290,
+      "centred_uncovered_aperture_each_side_mm": [
+        50.0,
+        90.0
+      ],
+      "two_filter_gross_area_m2": 0.2146,
+      "gross_face_speed_at_total300_m3h": 0.38831935383659516
+    },
+    {
+      "name": "Smart Air Sqair",
+      "dimension_basis": "OEM published envelope",
+      "width_mm": 264,
+      "height_mm": 264,
+      "centred_uncovered_aperture_each_side_mm": [
+        103.0,
+        103.0
+      ],
+      "two_filter_gross_area_m2": 0.139392,
+      "gross_face_speed_at_total300_m3h": 0.5978344046525865
+    }
+  ],
+  "tests": {
+    "gasket_inner475_3": true,
+    "seat470": true,
+    "starkvind_not_dropin": true,
+    "sqair_not_dropin": true,
+    "two_parallel_faces": true
+  }
+}

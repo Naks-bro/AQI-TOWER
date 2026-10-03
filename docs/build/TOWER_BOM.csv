@@ -1,0 +1,21 @@
+ID,Item,Quantity,Selection status,Required before ordering,Cost status
+T01,Fan assembly,1,Historical KVO 250 candidate only,Exact SKU current loaded-duty curve envelope wiring warranty noise,RFQ REQUIRED
+T02,Coarse prefilter,1 plus spare,592x592x48 candidate,Supplier curve classification washable instructions tolerances,RFQ REQUIRED
+T03,HEPA element,1,593x593x292 H13 candidate,Unit certificate dimensions mass gasket and terminal pressure,RFQ REQUIRED
+T04,HEPA cassette and clamps,1,Custom metal assembly,Seal section compression tolerance leak-test plan,RFQ REQUIRED
+T05,Prefilter cassette,1,Custom assembly,Fit and replacement access,RFQ REQUIRED
+T06,Frame base and enclosure,1,Local fabricated metal,Released drawings stability material and coating,RFQ REQUIRED
+T07,Fan support and isolators,1 set,Custom support with rated mounts,Fan mass vibration and load review,RFQ REQUIRED
+T08,Transitions guards and duct fittings,1 set,Standard where practical,Dimensions guard safety pressure-loss budget,RFQ REQUIRED
+T09,Gaskets sealant and retained latches,1 set,Compatible low-emission materials,OEM gasket requirements durability and seal inspection,RFQ REQUIRED
+T10,Electrical compartment and glands,1 set,Certified/rated components preferred,Environment ingress heat and segregation review,RFQ REQUIRED
+T11,Protection isolation and motor control,1 set,Electrical engineer selection,OEM thermal circuit inrush and supply coordination,RFQ REQUIRED
+T12,Cables terminals earth bonding,1 set,Electrical engineer selection,Cable route ratings and approved schedule,RFQ REQUIRED
+T13,Isolated low-voltage supply,1,Off-the-shelf,Sensor/controller load and protection,RFQ REQUIRED
+T14,Logger controller,1 acquisition arrangement,Existing laptop and exports first; bridge/controller unselected,Actual instrument interfaces duplicate addresses safe low-voltage supply and no safety dependency,USE EXISTING OR RFQ
+T15,Filter pressure measurement,2 simultaneous channels recommended,Buy calibrated instrument or rent; SDP8xx candidate only,Actual loaded/fault range accuracy tubing address routing and reference check,PURCHASE OR RENT RFQ
+T16,Particle sensors,2 matched room monitors recommended,Buy supported complete instruments/kits; SEK-SPS30 candidate only,Exact kit contents exports co-location usable floor reference comparison humidity and protocol,RFQ REQUIRED
+T17,Temperature humidity sensor,1,Logging accessory,Accuracy compatibility,RFQ REQUIRED
+T18,Airflow power and sound instruments,1 service package,Hire equipped testing service or rent with competent operator,Range method calibration raw data and tower suitability,SERVICE OR RENT RFQ
+T19,Future carbon module,0 for first particulate test,Research optional,Measured resistance adsorption dust containment and supplier data,DEFER
+T20,Solar battery inverter,0 for first indoor test,Future option,Measured power site irradiation safety and outdoor design,DEFER

@@ -1,0 +1,153 @@
+{
+  "date": "2026-10-03",
+  "status": "REVIEW ONLY - ASSUMED FILTERS AND INSTALLED LOSSES",
+  "geometry": "D01 R01 unchanged",
+  "source_url": "https://support.arctic.de/products/p14-max/techdocs/P14%20Max%20-%20PQ%20Curve%20for%20CFD.XLSX",
+  "source_sha256": "bad2a6338415b61e7669d7bb49b3723125c223ee794015ab52dde77863bcf432",
+  "workbook_header_note": "Flow rate (ft^3/min) \nC=0.95",
+  "workbook_note": "C=0.95 is retained as an unexplained OEM header annotation; no extra 0.95 correction applied.",
+  "numeric_points_count": 14,
+  "rpm": 2800,
+  "numeric_endpoints": {
+    "CFM": 109.8478463517346,
+    "mmH2O": 4.486751337102884
+  },
+  "brochure_endpoints": {
+    "CFM": 95,
+    "mmH2O": 4.18
+  },
+  "disposition": "Do not average curves or treat either as guaranteed installed performance. OEM revision/test-basis explanation pending.",
+  "scenarios": [
+    {
+      "curve": "historical_brochure_digitization",
+      "assumed_filter_Pa_at_total400": 5,
+      "total_flow_m3h": 359.17392481787465,
+      "each_filter_flow_m3h": 179.58696240893732,
+      "fan_static_Pa": 22.979191133976443,
+      "loss_breakdown_Pa": {
+        "filter_path": 4.489674060223433,
+        "intake_and_plenum": 2.798577253699054,
+        "inner_guard": 6.912610825460615,
+        "outer_guard": 6.912610825460615,
+        "installation_reserve": 1.8657181691327027
+      },
+      "closure_error_Pa": 2.1316282072803006e-14
+    },
+    {
+      "curve": "historical_brochure_digitization",
+      "assumed_filter_Pa_at_total400": 10,
+      "total_flow_m3h": 337.0864322602373,
+      "each_filter_flow_m3h": 168.54321613011865,
+      "fan_static_Pa": 24.712563886340583,
+      "loss_breakdown_Pa": {
+        "filter_path": 8.427160806505933,
+        "intake_and_plenum": 2.4649620887742723,
+        "inner_guard": 6.088566465938759,
+        "outer_guard": 6.088566465938759,
+        "installation_reserve": 1.6433080591828482
+      },
+      "closure_error_Pa": 1.0658141036401503e-14
+    },
+    {
+      "curve": "historical_brochure_digitization",
+      "assumed_filter_Pa_at_total400": 20,
+      "total_flow_m3h": 297.5420845042528,
+      "each_filter_flow_m3h": 148.7710422521264,
+      "fan_static_Pa": 27.565676848775706,
+      "loss_breakdown_Pa": {
+        "filter_path": 14.877104225212639,
+        "intake_and_plenum": 1.9205450626193317,
+        "inner_guard": 4.743832092932091,
+        "outer_guard": 4.743832092932091,
+        "installation_reserve": 1.2803633750795544
+      },
+      "closure_error_Pa": 0.0
+    },
+    {
+      "curve": "OEM_numeric_2800rpm",
+      "assumed_filter_Pa_at_total400": 5,
+      "total_flow_m3h": 370.5290295575271,
+      "each_filter_flow_m3h": 185.26451477876356,
+      "fan_static_Pa": 24.30868353178532,
+      "loss_breakdown_Pa": {
+        "filter_path": 4.631612869469089,
+        "intake_and_plenum": 2.9783256185289613,
+        "inner_guard": 7.356597315717313,
+        "outer_guard": 7.356597315717313,
+        "installation_reserve": 1.985550412352641
+      },
+      "closure_error_Pa": 3.552713678800501e-15
+    },
+    {
+      "curve": "OEM_numeric_2800rpm",
+      "assumed_filter_Pa_at_total400": 10,
+      "total_flow_m3h": 343.92812395951887,
+      "each_filter_flow_m3h": 171.96406197975944,
+      "fan_static_Pa": 25.551389952591588,
+      "loss_breakdown_Pa": {
+        "filter_path": 8.598203098987971,
+        "intake_and_plenum": 2.5660379834125426,
+        "inner_guard": 6.338228440624688,
+        "outer_guard": 6.338228440624688,
+        "installation_reserve": 1.7106919889416952
+      },
+      "closure_error_Pa": 3.552713678800501e-15
+    },
+    {
+      "curve": "OEM_numeric_2800rpm",
+      "assumed_filter_Pa_at_total400": 20,
+      "total_flow_m3h": 298.5276554245356,
+      "each_filter_flow_m3h": 149.2638277122678,
+      "fan_static_Pa": 27.6991532295325,
+      "loss_breakdown_Pa": {
+        "filter_path": 14.92638277122678,
+        "intake_and_plenum": 1.9332892648708855,
+        "inner_guard": 4.775310841760452,
+        "outer_guard": 4.775310841760452,
+        "installation_reserve": 1.2888595099139237
+      },
+      "closure_error_Pa": 7.105427357601002e-15
+    }
+  ],
+  "filter_headroom": [
+    {
+      "total_flow_m3h": 250,
+      "each_filter_flow_m3h": 125.0,
+      "assumed_nonfilter_loss_Pa": 8.957689090481503,
+      "brochure_filter_headroom_Pa": 21.880547640567585,
+      "numeric_filter_headroom_Pa": 21.136221188030213
+    },
+    {
+      "total_flow_m3h": 300,
+      "each_filter_flow_m3h": 150.0,
+      "assumed_nonfilter_loss_Pa": 12.899072290293361,
+      "brochure_filter_headroom_Pa": 14.489266684438757,
+      "numeric_filter_headroom_Pa": 14.727423244986777
+    },
+    {
+      "total_flow_m3h": 350,
+      "each_filter_flow_m3h": 175.0,
+      "assumed_nonfilter_loss_Pa": 17.557070617343747,
+      "brochure_filter_headroom_Pa": 6.150206066895805,
+      "numeric_filter_headroom_Pa": 7.710661347964486
+    },
+    {
+      "total_flow_m3h": 400,
+      "each_filter_flow_m3h": 200.0,
+      "assumed_nonfilter_loss_Pa": 22.931684071632645,
+      "brochure_filter_headroom_Pa": -3.1926410753588677,
+      "numeric_filter_headroom_Pa": -0.09782398702676076
+    }
+  ],
+  "tests": {
+    "four_fans_add_flow_not_pressure": true,
+    "two_filter_drops_not_added": true,
+    "guard_area_R01": true,
+    "all_intersections_close": true,
+    "numeric_nodes_recovered": true,
+    "loaded_flow_lower_both_curves": true,
+    "historical_R01_reproduced": true,
+    "zero_losses_at_zero": true,
+    "numeric_endpoints": true
+  }
+}

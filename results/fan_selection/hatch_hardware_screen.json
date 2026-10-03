@@ -1,0 +1,38 @@
+{
+  "status": "ILLUSTRATIVE SCREENING ONLY; NO HARDWARE SELECTED",
+  "geometry_basis": "M05 assumed rectangular full-contact gasket ring",
+  "gasket_area_m2": 0.0195,
+  "assumed_door_pressure_Pa": 500,
+  "door_pressure_force_N": 99.975,
+  "gasket_example": {
+    "source": "Rogers 17-007, 0724-PDF, PORON 4701-40, 240 kg/m3 grade",
+    "test_strain": 0.25,
+    "test_speed_cm_min": 0.51,
+    "force_range_N": [
+      526.5,
+      1482.0
+    ],
+    "typical_force_N": 799.5,
+    "nominal_free_mm": 3.18,
+    "thickness_tolerance_fraction": 0.1,
+    "existing_assumed_gap_mm": 3,
+    "nominal_compression_existing_gap": 0.05660377358490571,
+    "thinnest_example_has_contact_at_3mm": false,
+    "nominal_25pct_gap_mm": 2.3850000000000002,
+    "fixed_gap_tolerance_compression_range": [
+      0.1666666666666666,
+      0.31818181818181823
+    ],
+    "limitations": "Uniform coupon-stress extrapolation, not actual installed preload; no stress extrapolation outside 25%. No material selection."
+  },
+  "cutout_screen": {
+    "assumed_land_mm": 15,
+    "C5_90_min_short_cutout_mm": 34,
+    "C5_71_min_short_cutout_mm": 24,
+    "either_cutout_fits_wholly_in_15mm_land": false,
+    "scope": "Rim-only placement, not a whole-panel or full operating-sweep assessment"
+  },
+  "required_latch_count": null,
+  "closing_force_rating": null,
+  "physical_tests": 0
+}

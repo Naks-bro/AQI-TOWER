@@ -1,0 +1,151 @@
+{
+  "status": "SEGMENTED CAPPED POST FIT STUDY \u2014 NOT STRUCTURAL OR LEAKAGE APPROVAL",
+  "valid_route_solids": 28,
+  "STEP_reimport": "PASS",
+  "native_reopen": "PASS",
+  "checked_reference_objects": [
+    "Shell",
+    "HEPAServiceDoor",
+    "PrefilterServiceDoor",
+    "HEPAEnvelope",
+    "PrefilterEnvelope",
+    "HEPABulkhead",
+    "PrefilterBulkhead",
+    "HEPAGasketEnvelope",
+    "HEPARetainerEnvelope",
+    "FanAllowance",
+    "Transition",
+    "InletNeck",
+    "StraightOutlet"
+  ],
+  "nominal_positive_volume_conflicts": [],
+  "assumed_HEPA_sweep_conflicts": [],
+  "route_internal_positive_volume_conflicts": [],
+  "route_volume_mm3": 6127752.000000002,
+  "assumed_steel_density_kg_m3": 7850,
+  "partial_route_steel_mass_kg": 48.10285320000001,
+  "xy_envelope_mm": [
+    735,
+    435
+  ],
+  "minimum_filter_side_to_post_clearance_mm": 36.0,
+  "source_sha256_unchanged": {
+    "cad/packaging/AQI_Cylindrical_Packaging_R02.FCStd": "5977058d385267a60b9b54e6c7ffdc6d7c9b6c5e6649195c45999c88bd0c4db2",
+    "cad/packaging/AQI_M04_Airpath_STUDY.FCStd": "25d39edc9d2f32d1128eebc669a9da464fefda6a16668f441d3e7812d4e8f320"
+  },
+  "notes": [
+    "ASSUMED segmented support route; existing filter bulkheads remain unperforated",
+    "Post end closures are ideal CAD geometry, not approved welded cap details",
+    "Loads transfer through bulkheads; bearing, bending, local buckling and joints NOT checked",
+    "Rail ends and real tube joints still require sealing review",
+    "No approved material/profile, base/feet/anchors, fan cradle or actual gasket design"
+  ],
+  "nominal_post_cap_plate_contacts": [
+    {
+      "post": "Post1Segment1",
+      "plate": "PrefilterBulkhead",
+      "z_mm": 445.0,
+      "nominal_face_contact_mm2": 1225.0
+    },
+    {
+      "post": "Post1Segment2",
+      "plate": "PrefilterBulkhead",
+      "z_mm": 450.0,
+      "nominal_face_contact_mm2": 1225.0
+    },
+    {
+      "post": "Post1Segment2",
+      "plate": "HEPABulkhead",
+      "z_mm": 640.0,
+      "nominal_face_contact_mm2": 1225.0
+    },
+    {
+      "post": "Post1Segment3",
+      "plate": "HEPABulkhead",
+      "z_mm": 645.0,
+      "nominal_face_contact_mm2": 1225.0
+    },
+    {
+      "post": "Post2Segment1",
+      "plate": "PrefilterBulkhead",
+      "z_mm": 445.0,
+      "nominal_face_contact_mm2": 1225.0
+    },
+    {
+      "post": "Post2Segment2",
+      "plate": "PrefilterBulkhead",
+      "z_mm": 450.0,
+      "nominal_face_contact_mm2": 1225.0
+    },
+    {
+      "post": "Post2Segment2",
+      "plate": "HEPABulkhead",
+      "z_mm": 640.0,
+      "nominal_face_contact_mm2": 1225.0
+    },
+    {
+      "post": "Post2Segment3",
+      "plate": "HEPABulkhead",
+      "z_mm": 645.0,
+      "nominal_face_contact_mm2": 1225.0
+    },
+    {
+      "post": "Post3Segment1",
+      "plate": "PrefilterBulkhead",
+      "z_mm": 445.0,
+      "nominal_face_contact_mm2": 1225.0
+    },
+    {
+      "post": "Post3Segment2",
+      "plate": "PrefilterBulkhead",
+      "z_mm": 450.0,
+      "nominal_face_contact_mm2": 1225.0
+    },
+    {
+      "post": "Post3Segment2",
+      "plate": "HEPABulkhead",
+      "z_mm": 640.0,
+      "nominal_face_contact_mm2": 1225.0
+    },
+    {
+      "post": "Post3Segment3",
+      "plate": "HEPABulkhead",
+      "z_mm": 645.0,
+      "nominal_face_contact_mm2": 1225.0
+    },
+    {
+      "post": "Post4Segment1",
+      "plate": "PrefilterBulkhead",
+      "z_mm": 445.0,
+      "nominal_face_contact_mm2": 1225.0
+    },
+    {
+      "post": "Post4Segment2",
+      "plate": "PrefilterBulkhead",
+      "z_mm": 450.0,
+      "nominal_face_contact_mm2": 1225.0
+    },
+    {
+      "post": "Post4Segment2",
+      "plate": "HEPABulkhead",
+      "z_mm": 640.0,
+      "nominal_face_contact_mm2": 1225.0
+    },
+    {
+      "post": "Post4Segment3",
+      "plate": "HEPABulkhead",
+      "z_mm": 645.0,
+      "nominal_face_contact_mm2": 1225.0
+    }
+  ],
+  "assembly_check": "NO GEOMETRIC CLASH DOES NOT PROVE STRUCTURE OR SEALS",
+  "integrated_snapshot_solids": 41,
+  "integrated_native_reopen_and_STEP_reimport": "PASS",
+  "integrated_exclusions": [
+    "base/electrical allowances",
+    "guards",
+    "exact OEM mounts",
+    "real joints/fasteners",
+    "actual gasket compression"
+  ]
+}

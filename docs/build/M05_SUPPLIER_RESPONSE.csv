@@ -1,0 +1,13 @@
+id,owner,required_answer,answer,evidence_reference,reviewer_and_date,review_outcome
+H01,Closure supplier,Exact closure and catch part numbers with revisioned dimensioned drawing or CAD,UNKNOWN,UNKNOWN,UNKNOWN,OPEN
+H02,Closure supplier,Usable closing force versus travel or adjustment and separate working/static load limits,UNKNOWN,UNKNOWN,UNKNOWN,OPEN
+H03,Closure supplier,Panel thickness grip definition cutout mounting and sealed penetration requirements,UNKNOWN,UNKNOWN,UNKNOWN,OPEN
+H04,Closure supplier,Closed and open envelope catch engagement and tools or hand clearance,UNKNOWN,UNKNOWN,UNKNOWN,OPEN
+H05,Gasket supplier,Exact door gasket profile material free thickness and dimensional tolerances,UNKNOWN,UNKNOWN,UNKNOWN,OPEN
+H06,Gasket supplier,Full force versus compression data allowed compression range and test conditions,UNKNOWN,UNKNOWN,UNKNOWN,OPEN
+H07,Gasket supplier,Corner and joint method adhesive compatibility aging/environment limits and replacement instructions,UNKNOWN,UNKNOWN,UNKNOWN,OPEN
+H08,Filter supplier,Exact HEPA seating gasket clamp requirements mass and permitted handling/orientation,UNKNOWN,UNKNOWN,UNKNOWN,OPEN
+H09,Mechanical reviewer,Actual pressure/load cases panel and flange deflection joints mounts and compression-stop review,UNKNOWN,UNKNOWN,UNKNOWN,OPEN
+H10,Mechanical reviewer,Supported cover removal drop retention service sequence and complete tolerance stack,UNKNOWN,UNKNOWN,UNKNOWN,OPEN
+H11,Mechanical and electrical reviewers,Removable panel bonding needs isolation and coordinated safe access arrangement,UNKNOWN,UNKNOWN,UNKNOWN,OPEN
+H12,Reviewer and test provider,Installed sealing test method acceptance criteria and recorded review of revised assembly drawings,UNKNOWN,UNKNOWN,UNKNOWN,OPEN

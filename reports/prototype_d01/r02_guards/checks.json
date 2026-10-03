@@ -1,0 +1,118 @@
+{
+  "source_sha256": "ddfcb0a5c8121e266d716b4ba1eea5da8cf2c38c981bb17c8581635f1b10d549",
+  "source_unchanged": true,
+  "objects": 245,
+  "changed_objects": 39,
+  "removed_shared_hardware": [
+    "H03_Guard_bolt_L_40",
+    "H04_Guard_washer_L_40_567",
+    "H04_Guard_washer_L_40_582",
+    "H05_Guard_nut_L_40",
+    "H03_Guard_bolt_L_280",
+    "H04_Guard_washer_L_280_567",
+    "H04_Guard_washer_L_280_582",
+    "H05_Guard_nut_L_280",
+    "H03_Guard_bolt_R_40",
+    "H04_Guard_washer_R_40_567",
+    "H04_Guard_washer_R_40_582",
+    "H05_Guard_nut_R_40",
+    "H03_Guard_bolt_R_280",
+    "H04_Guard_washer_R_280_567",
+    "H04_Guard_washer_R_280_582",
+    "H05_Guard_nut_R_280"
+  ],
+  "pair_checks": 8641,
+  "clashes_mm3": [],
+  "tool_checks": [
+    {
+      "mount": "J01_Outer_105_120",
+      "tool": "driver",
+      "clashes_mm3": []
+    },
+    {
+      "mount": "J01_Outer_105_120",
+      "tool": "nut_socket",
+      "clashes_mm3": []
+    },
+    {
+      "mount": "J01_Outer_105_240",
+      "tool": "driver",
+      "clashes_mm3": []
+    },
+    {
+      "mount": "J01_Outer_105_240",
+      "tool": "nut_socket",
+      "clashes_mm3": []
+    },
+    {
+      "mount": "J01_Outer_445_120",
+      "tool": "driver",
+      "clashes_mm3": []
+    },
+    {
+      "mount": "J01_Outer_445_120",
+      "tool": "nut_socket",
+      "clashes_mm3": []
+    },
+    {
+      "mount": "J01_Outer_445_240",
+      "tool": "driver",
+      "clashes_mm3": []
+    },
+    {
+      "mount": "J01_Outer_445_240",
+      "tool": "nut_socket",
+      "clashes_mm3": []
+    },
+    {
+      "mount": "J01_Inner_105_60",
+      "tool": "driver",
+      "clashes_mm3": []
+    },
+    {
+      "mount": "J01_Inner_105_60",
+      "tool": "nut_socket",
+      "clashes_mm3": []
+    },
+    {
+      "mount": "J01_Inner_105_300",
+      "tool": "driver",
+      "clashes_mm3": []
+    },
+    {
+      "mount": "J01_Inner_105_300",
+      "tool": "nut_socket",
+      "clashes_mm3": []
+    },
+    {
+      "mount": "J01_Inner_445_60",
+      "tool": "driver",
+      "clashes_mm3": []
+    },
+    {
+      "mount": "J01_Inner_445_60",
+      "tool": "nut_socket",
+      "clashes_mm3": []
+    },
+    {
+      "mount": "J01_Inner_445_300",
+      "tool": "driver",
+      "clashes_mm3": []
+    },
+    {
+      "mount": "J01_Inner_445_300",
+      "tool": "nut_socket",
+      "clashes_mm3": []
+    }
+  ],
+  "valid": true,
+  "thread_projection_mm": 2,
+  "independent_mounts": {
+    "inner": 4,
+    "outer": 4
+  },
+  "exclusions": "Unchanged pairs; reservations; inherited guard seams. Tool envelopes exclude hands, handles, insertion manoeuvres and tolerances. Rivets, corner seams, strength, reach protection, captive retention, cable entry and isolation/restart unresolved. No safety release.",
+  "STEP_valid": true,
+  "STEP_volume_matches": true,
+  "native_reopen_objects": 245
+}

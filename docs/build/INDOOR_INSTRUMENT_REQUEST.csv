@@ -1,0 +1,9 @@
+id,measurement,proposed_quantity,preferred_route,actual_model,usable_range_and_units,calibration_or_reference,export_or_connection,availability,owner,status
+I01,Room PM2.5,2 matched logging units,Borrow first; SPS30 candidate if necessary,UNKNOWN,UNKNOWN,UNKNOWN,UNKNOWN,UNKNOWN,College lab,OPEN
+I02,Filter differential pressure,2 simultaneous channels,Borrow logger/manometer; SDP8xx candidate pending range,UNKNOWN,UNKNOWN,UNKNOWN,UNKNOWN,UNKNOWN,College lab,OPEN
+I03,Whole-device airflow,1 measurement system,Borrow or rent with qualified operator,UNKNOWN,UNKNOWN,UNKNOWN,UNKNOWN,UNKNOWN,HVAC lab or test service,OPEN
+I04,Electrical input power,1 suitable analyzer,Borrow; electrical reviewer-approved use,UNKNOWN,UNKNOWN,UNKNOWN,UNKNOWN,UNKNOWN,Electrical lab,OPEN
+I05,Sound level,1 instrument plus check equipment,Borrow,UNKNOWN,UNKNOWN,UNKNOWN,UNKNOWN,UNKNOWN,College lab,OPEN
+I06,Room temperature and humidity,1 or more logging units based on positions,Borrow first,UNKNOWN,UNKNOWN,UNKNOWN,UNKNOWN,UNKNOWN,College lab,OPEN
+I07,Room dimensions,1 tape or distance instrument,Use existing or borrow,UNKNOWN,UNKNOWN,UNKNOWN,Not required,UNKNOWN,Team,OPEN
+I08,Data acquisition interface,As required by actual instruments,Existing laptop; compatible bridge only if needed,UNKNOWN,Not applicable,Not applicable,UNKNOWN,UNKNOWN,Team,OPEN

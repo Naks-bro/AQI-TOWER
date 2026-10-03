@@ -1,0 +1,11 @@
+id,work_package,route,deliverable,before_commitment,quote_amount_INR,provider,lead_time,status
+W01,Exact fan and filter supply,OEM supplier,Revisioned data and itemized supply quote,Matched duty curves dimensions masses orientation and warranty,UNKNOWN,UNKNOWN,UNKNOWN,RFQ_NOT_SENT
+W02,Mechanical design review,Paid qualified reviewer,Documented comments and approved scope/drawings if acceptable,Relevant competence load paths seals supports base and service review,UNKNOWN,UNKNOWN,UNKNOWN,RFQ_NOT_SENT
+W03,Core frame housing duct and guard fabrication,Local workshop,Inspected assembly and as-built record,Released mechanical drawings and authorized order,UNKNOWN,UNKNOWN,UNKNOWN,RFQ_NOT_SENT
+W04,Electrical design review assembly and commissioning,Qualified electrical service,Reviewed E01-E06 pack and on-site check records,Exact fan/controller actual site and approved protection design,UNKNOWN,UNKNOWN,UNKNOWN,RFQ_NOT_SENT
+W05,Two-position PM monitoring,Purchase supported complete kits or logging monitors,Identified devices exports and co-location/reference check,Kit revision simultaneous host support export and uncertainty plan,UNKNOWN,UNKNOWN,UNKNOWN,RFQ_NOT_SENT
+W06,Pressure and room-condition instrumentation,Purchase or rent,Traceable readings with recorded methods,Actual ranges calibration tubing and sensor setup reviewed,UNKNOWN,UNKNOWN,UNKNOWN,RFQ_NOT_SENT
+W07,Airflow power and sound testing,Paid equipped testing service,Raw readings methods uncertainty and report,Actual tower suitability calibration and electrical clearance,UNKNOWN,UNKNOWN,UNKNOWN,RFQ_NOT_SENT
+W08,Installed filter integrity testing,Paid suitable specialist,Defined test method acceptance criteria and documented result,Filter/housing suitability safe procedure and required scope,UNKNOWN,UNKNOWN,UNKNOWN,RFQ_NOT_SENT
+W09,Cylindrical cladding and final configuration recheck,Fabricator and relevant reviewers,Finished casing and configuration verification,Core evidence approved access guards supports and airflow impact review,UNKNOWN,UNKNOWN,UNKNOWN,DEFER_UNTIL_CORE_REVIEW
+W10,Outdoor pilot and protection redesign,Separate later service package,Site-specific reviewed design and pilot plan,Indoor evidence actual outdoor site weather public access and permission,UNKNOWN,UNKNOWN,UNKNOWN,DEFER_UNTIL_INDOOR_EVIDENCE

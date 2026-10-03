@@ -1,0 +1,152 @@
+[
+  {
+    "path": "reports/prototype_d01/component_validation/OEM_P14_Max_points.csv",
+    "bytes": 1029,
+    "sha256": "8128ab737169908c1bd89832b1eb680471ff6f4b1e3ec5dbaf88f91d6d9920f6"
+  },
+  {
+    "path": "reports/prototype_d01/current_handoff/AQI_D01_CURRENT_REVIEW_PACKAGE.pdf",
+    "bytes": 119744,
+    "sha256": "c629df6ec7bf28c3d2469f22d47806a86a3a7c1ff3731e78f51b5a75fd474c0d"
+  },
+  {
+    "path": "reports/prototype_d01/current_handoff/assembly_audit.json",
+    "bytes": 651,
+    "sha256": "8b0fe31b1cc6597da86e714323360b087abd84a8201f82af2c04416283a768cf"
+  },
+  {
+    "path": "reports/prototype_d01/current_handoff/BUILD_GATES.csv",
+    "bytes": 796,
+    "sha256": "ac94e94db4707d72c9f772863ac565e013675beae467362c631d09e8a2d22e27"
+  },
+  {
+    "path": "reports/prototype_d01/current_handoff/CAD_PART_INVENTORY.csv",
+    "bytes": 38824,
+    "sha256": "c0ac355acb3f8dab5c5e7ad26b89f4df9a1c6ddedc48f7b1c3b091abb5ef8df2"
+  },
+  {
+    "path": "reports/prototype_d01/current_handoff/COMPONENT_AND_MISSING_ITEMS.csv",
+    "bytes": 1621,
+    "sha256": "0e217c329459c828a26ecd23dee846f2fd61f2f1b0a4d0920b5a2e22b457503f"
+  },
+  {
+    "path": "reports/prototype_d01/current_handoff/current_panels.json",
+    "bytes": 32516,
+    "sha256": "9179cff4b0052dd687587e9b6bb8e6ca25bbbff52d8e61500b34e70382c2416d"
+  },
+  {
+    "path": "reports/prototype_d01/current_handoff/CURRENT_PRESSURE_BUDGET.csv",
+    "bytes": 2649,
+    "sha256": "1da14c39e9ca2c16be9f12ec0e877f903253ee0fd70c9137c4a90d2651ad31b6"
+  },
+  {
+    "path": "reports/prototype_d01/current_handoff/CURRENT_PRESSURE_BUDGET.json",
+    "bytes": 8315,
+    "sha256": "f4a5ba9bb8e98978378d52171354e175e79c8977cc10241062349a711f18e5d0"
+  },
+  {
+    "path": "reports/prototype_d01/current_handoff/panel_DXF_REVIEW_ONLY/A01_Reducer_Front.dxf",
+    "bytes": 2089,
+    "sha256": "687cf5123bad0ebbbb7d964dc36965182b36c0776608ff698004bf2e3153dff5"
+  },
+  {
+    "path": "reports/prototype_d01/current_handoff/panel_DXF_REVIEW_ONLY/A01_Reducer_Rear.dxf",
+    "bytes": 2089,
+    "sha256": "687cf5123bad0ebbbb7d964dc36965182b36c0776608ff698004bf2e3153dff5"
+  },
+  {
+    "path": "reports/prototype_d01/current_handoff/panel_DXF_REVIEW_ONLY/A04_Retainer_Front.dxf",
+    "bytes": 963,
+    "sha256": "9dde6321601b09f3b6cf6dd3b74fb121cefcff92cfaeb87f39f1b4f4c6367683"
+  },
+  {
+    "path": "reports/prototype_d01/current_handoff/panel_DXF_REVIEW_ONLY/A04_Retainer_Rear.dxf",
+    "bytes": 963,
+    "sha256": "9dde6321601b09f3b6cf6dd3b74fb121cefcff92cfaeb87f39f1b4f4c6367683"
+  },
+  {
+    "path": "reports/prototype_d01/current_handoff/panel_DXF_REVIEW_ONLY/M01_Base.dxf",
+    "bytes": 651,
+    "sha256": "fa28b4bfdcf22a10a514d0ac4a7fa83e0ea4fe6aaf69badb381969f6410a0929"
+  },
+  {
+    "path": "reports/prototype_d01/current_handoff/panel_DXF_REVIEW_ONLY/M02_Left.dxf",
+    "bytes": 901,
+    "sha256": "9ec58e720dfad6887deb6337b0da03aa7e9befce1c52c21bd773e3928bbfc5f8"
+  },
+  {
+    "path": "reports/prototype_d01/current_handoff/panel_DXF_REVIEW_ONLY/M02_Right.dxf",
+    "bytes": 901,
+    "sha256": "9ec58e720dfad6887deb6337b0da03aa7e9befce1c52c21bd773e3928bbfc5f8"
+  },
+  {
+    "path": "reports/prototype_d01/current_handoff/panel_DXF_REVIEW_ONLY/M03_Seat_Front.dxf",
+    "bytes": 1956,
+    "sha256": "db08b9fb9b7072d20b46408779d635bdb098828c5dd7c2c134f7745093b972d7"
+  },
+  {
+    "path": "reports/prototype_d01/current_handoff/panel_DXF_REVIEW_ONLY/M03_Seat_Rear.dxf",
+    "bytes": 1956,
+    "sha256": "db08b9fb9b7072d20b46408779d635bdb098828c5dd7c2c134f7745093b972d7"
+  },
+  {
+    "path": "reports/prototype_d01/current_handoff/panel_DXF_REVIEW_ONLY/M06_Fan_plate.dxf",
+    "bytes": 2409,
+    "sha256": "6758b19e48ac48a9bc089f251ff218fc85737742405e322391d0206eb4dc8778"
+  },
+  {
+    "path": "reports/prototype_d01/current_handoff/README.md",
+    "bytes": 7746,
+    "sha256": "60931fd2b192aef92c4176e57ddfd6ab847d914a04723d84a621e20fc3c75073"
+  },
+  {
+    "path": "reports/prototype_d01/r02_guards/cad_mesh.json",
+    "bytes": 9466920,
+    "sha256": "b1008ed98b4152dc152434ff01923f40b101183e94f415281768bcb20d31801d"
+  },
+  {
+    "path": "reports/prototype_d01/r02_guards/checks.json",
+    "bytes": 2919,
+    "sha256": "edfecb48b84df2f0e5471787db3ad1913e2b960b5f3e889908d1fc4ca1f82f43"
+  },
+  {
+    "path": "reports/prototype_d01/r02_guards/D01_R02G_ASSEMBLY.FCStd",
+    "bytes": 417835,
+    "sha256": "7aae1544b405abbcf0d99f92f47b76f0f4c929cc1997d129a073691e137a343b"
+  },
+  {
+    "path": "reports/prototype_d01/r02_guards/D01_R02G_ASSEMBLY.step",
+    "bytes": 1987482,
+    "sha256": "11b418bc15da1df3c4c8d3bf999c011cd81f672cce5d0287963fdf4550c6028c"
+  },
+  {
+    "path": "reports/prototype_d01/r02_guards/D01_R02G_GUARD_MOUNTINGS.pdf",
+    "bytes": 90944,
+    "sha256": "0a582aa924e376c0657c9e96363737323caee1cb4ce51b58c0d35d16d11ed969"
+  },
+  {
+    "path": "reports/prototype_d01/r02_guards/README.md",
+    "bytes": 5352,
+    "sha256": "153a0d07eb776686f79e9984636e33914cb5c7b834f1d6730e30fa47b2d5d0ed"
+  },
+  {
+    "path": "scripts/analysis/d01_current_pressure_budget.py",
+    "bytes": 3341,
+    "sha256": "ff16d9796c6b22656445a2db5ae44e661158e51c1ddb828fefe9575d1f3f96c7"
+  },
+  {
+    "path": "scripts/geometry/audit_d01_current.py",
+    "bytes": 4439,
+    "sha256": "9bd2a7e1e9739503511b5193581f34b8075de3ccc9678e4f9d09ab09d592be8b"
+  },
+  {
+    "path": "scripts/reports/build_d01_current_handoff.py",
+    "bytes": 12278,
+    "sha256": "3452f5c124cf718c5c53f6f37e378c502a7bcfa1be0d6e045ed8e0921d9b96f2"
+  },
+  {
+    "path": "scripts/reports/package_d01_current.py",
+    "bytes": 1529,
+    "sha256": "0f0d404d2797c8bb179c6569f647ae7d510fe7a333fced052366d25c47d8748f"
+  }
+]

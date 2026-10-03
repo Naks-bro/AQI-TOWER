@@ -1,0 +1,35 @@
+{
+  "status": "M05 REMOVABLE HATCH OPTION \u2014 NO LATCH/GASKET/STRUCTURAL RELEASE",
+  "valid_solids": 48,
+  "positive_volume_clashes": [],
+  "assumed_filter_service_sweep_clashes": {
+    "HEPA_lifted": [],
+    "retainer_clamps_already_removed": []
+  },
+  "assumed_cover_forward_removal_clashes": [],
+  "casing_inner_diameter_mm_ASSUMED": 980,
+  "outer_access_width_mm_ASSUMED": 700,
+  "inner_opening_mm_ASSUMED": [
+    645,
+    310
+  ],
+  "retainer_nominal_side_margin_mm": 6.0,
+  "gasket_installed_envelope_mm_NOT_COMPRESSION": 3,
+  "latch_location_count_NOT_SELECTED_HARDWARE": 8,
+  "cover_steel_mass_kg_ASSUMED": 3.6031500000000003,
+  "door_pressure_force_N_at_ASSUMED_500Pa": 99.975,
+  "pressure_note": "Assumed LOCAL door differential, not known HEPA pressure or latch preload",
+  "source_sha256_unchanged": {
+    "cad/packaging/AQI_M03_Independent_Housing_STUDY.FCStd": "42a6283bbc3ab8b85a9a9f1857455b86e2f85d4dc7a44148634cdafd66d93a02",
+    "cad/packaging/AQI_Cylindrical_Packaging_R02.FCStd": "5977058d385267a60b9b54e6c7ffdc6d7c9b6c5e6649195c45999c88bd0c4db2"
+  },
+  "notes": [
+    "All dimensions are assumptions for a new comparison branch, not approved tolerances",
+    "Eight small latch location blocks are generic envelopes, NOT OEM latch CAD or working mechanisms",
+    "3 mm gasket envelope is NOT a compression setting or selected material",
+    "Cover needs reviewed stiffness, handling retention and sealing force",
+    "Outer decorative access piece also removed during service; its attachment not designed",
+    "Prefilter inner hatch remains earlier preliminary geometry; this branch develops HEPA access only"
+  ],
+  "native_reopen_and_STEP_reimport": "PASS"
+}

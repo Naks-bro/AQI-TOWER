@@ -1,0 +1,18 @@
+{
+  "status": "SPATIAL ROUTING STUDY ONLY — NOT STRUCTURAL SIZING OR FABRICATION",
+  "units": "mm",
+  "post_x": 350,
+  "post_y": 200,
+  "post_start_z": 150,
+  "post_end_z": 2050,
+  "profile_outer": 35,
+  "profile_wall": 3,
+  "rail_top_z": [185, 445, 640, 1190],
+  "notes": [
+    "All frame dimensions are assumptions for fit checks, not selected sections",
+    "Continuous posts intersect existing filter bulkheads; unresolved interface",
+    "Do not cut post holes through HEPA pressure boundary without reviewed bypass seals",
+    "Rails are preliminary support routes, not actual fan cradle or filter tray",
+    "No base/feet, anchors, gussets, joints or fasteners sized"
+  ]
+}

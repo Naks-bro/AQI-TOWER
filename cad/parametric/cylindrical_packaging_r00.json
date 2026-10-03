@@ -1,0 +1,25 @@
+{
+  "revision": "R00",
+  "status": "PRELIMINARY PACKAGING STUDY — NOT FOR FABRICATION",
+  "units": "mm",
+  "parameters": {
+    "InnerDiameter": {"value": 950, "status": "ASSUMPTION"},
+    "WallThickness": {"value": 2, "status": "GEOMETRY ASSUMPTION, NOT STRUCTURALLY SIZED"},
+    "TowerHeight": {"value": 1990, "status": "ASSUMPTION"},
+    "PrefilterSide": {"value": 592, "status": "HISTORICAL CANDIDATE, EXACT SUPPLIER DRAWING REQUIRED"},
+    "PrefilterDepth": {"value": 48, "status": "HISTORICAL CANDIDATE"},
+    "PrefilterZ": {"value": 450, "status": "ASSUMPTION"},
+    "HEPASide": {"value": 593, "status": "HISTORICAL CANDIDATE, EXACT SUPPLIER DRAWING REQUIRED"},
+    "HEPADepth": {"value": 292, "status": "HISTORICAL CANDIDATE"},
+    "HEPAZ": {"value": 648, "status": "ASSUMPTION"},
+    "BulkheadThickness": {"value": 5, "status": "GEOMETRY ASSUMPTION, NOT STRUCTURALLY SIZED"},
+    "FanSide": {"value": 550, "status": "PLACEHOLDER, NOT KVO OR OEM ENVELOPE"},
+    "FanHeight": {"value": 600, "status": "PLACEHOLDER, NOT OEM DIMENSION"},
+    "FanZ": {"value": 1190, "status": "ASSUMPTION"},
+    "ServiceWidth": {"value": 650, "status": "ASSUMPTION, DOOR HARDWARE UNKNOWN"},
+    "ElectricalWidth": {"value": 300, "status": "PLACEHOLDER"},
+    "ElectricalDepth": {"value": 200, "status": "PLACEHOLDER"},
+    "ElectricalHeight": {"value": 400, "status": "PLACEHOLDER"}
+  },
+  "excluded": ["filter media/pleats", "rated support frame", "gasket compression/clamps", "guard mesh", "fan blades and OEM mounts", "electrical internals", "weather protection", "CFD air volume", "carbon module"]
+}

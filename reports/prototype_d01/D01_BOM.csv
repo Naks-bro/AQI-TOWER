@@ -1,0 +1,19 @@
+﻿ID,quantity,product_or_item,basis,status
+F01,2,S&P MERV13 990303 reference,495.3x495.3x44.45mm OEM,Dimensions verified; India availability and resistance curve UNKNOWN; not HEPA
+F02,4,ARCTIC P14 Max,140x140x27;125mm pitch;12V0.35A,OEM verified; SKU/color revision conflict. Checked India listings out of stock
+E01,1,Noctua NV-PS1 + included NA-AC10,12V2A24W external supply,"OEM verified; India stock, plug compatibility and price UNKNOWN"
+E02,1,Noctua NA-FC1,"Manual PWM,3A maximum total",OEM verified; third-party fan behavior / current / availability to confirm
+E03,1,Noctua NA-FH1,24W via4-pin input,OEM verified; use4 outputs only; included input cable
+M01-06,12,Cut9mm plywood panels,"Base1,end2,seat2,retainer2,shelf4,top1","Proposed; drawings/DXF supplied; material, joints and clamp strength unreleased"
+M07,4,"20x20 cleats,542mm long",Corner joinery support,Proposed; screw schedule and load review outstanding
+S01,~4m,10mm wide closed-cell foam,4mm free /3mm installed proposal,"Exact product, force-compression, frame landing and leakage unknown"
+S02,4,140mm fan gaskets,1mm installed proposal,Exact material / apertures / compression unknown
+H01,16 sets,12 M5x100 +4 M5x80 studs/nuts/washers,6 long side /2 short centre studs per face,Proposed; short centre studs avoid inner guard. Thread engagement / retention review needed
+H02,16 sets,M4x50 bolts/washers/locknuts,Fan mounting,Proposed; actual stack and rotor clearance to verify
+G01-02,2 cages,Perforated guards + solid skirts,320x320 faces; outer50 / inner41 high,4mm holes6mm triangular pitch proposal; attachment and reach review open
+M08,4,Non-slip feet,30x30x20 envelopes,Exact product / attachment / tip and slide checks unknown
+E04,1 set,Control enclosure/cable fittings,Reserved140x100x40 external space,Unselected; actual components and wiring layout not detailed
+H03,1 lot,"Cleat screws, guard brackets, seam sealant, top gasket",Shop detail pending,NOT omitted from cost; quantities and products unresolved
+T01,1 service,Airflow / pressure / watt / sound measurement,Rent or hire equipped operator,No college lab assumed; quote and instrument suitability needed
+T02,2,Logging particle monitors + temp/RH,Co-locate before trials,Exact kit / calibration or comparison plan / quote pending
+R01,1 service,Mechanical + electrical review / commissioning,Defined in final page,Scope-specific paid service; no named engineer assumed

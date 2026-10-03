@@ -1,0 +1,4 @@
+id,gate,status,required_work
+M,Mechanical closure,OPEN,"Our remaining design: complete guard seams/rivets, cabinet/fan/M5 fastening stacks, seal compression and cable enclosure detail; review loads, tipping and access. Actual material/part fit and assembly inspection must follow."
+E,Electrical closure,OPEN,Our remaining design: selected protective isolation/restart arrangement and exact connector/cable layout. Qualified review and physical commissioning required. Present Noctua speed-control chain is NOT restart protection.
+P,Performance evidence,OPEN,Exact filter pressure/seal evidence is missing. Determine clean/loaded resistance and assembled flow; then run controlled indoor trials. Internet research or further CAD cannot substitute for measurements when public data are absent.

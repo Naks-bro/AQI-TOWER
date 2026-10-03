@@ -1,0 +1,32 @@
+{
+  "revision": "R01",
+  "status": "PRELIMINARY CASSETTE/INTAKE STUDY — NOT FOR FABRICATION",
+  "units": "mm",
+  "parameters": {
+    "InnerDiameter": {"value": 950, "status": "ASSUMPTION"},
+    "WallThickness": {"value": 2, "status": "GEOMETRY ONLY, NOT STRUCTURALLY SIZED"},
+    "TowerHeight": {"value": 1990, "status": "ASSUMPTION"},
+    "PrefilterSide": {"value": 592, "status": "HISTORICAL CANDIDATE"},
+    "PrefilterDepth": {"value": 48, "status": "HISTORICAL CANDIDATE"},
+    "PrefilterZ": {"value": 450, "status": "ASSUMPTION"},
+    "HEPASide": {"value": 593, "status": "HISTORICAL CANDIDATE"},
+    "HEPADepth": {"value": 292, "status": "HISTORICAL CANDIDATE"},
+    "HEPAZ": {"value": 648, "status": "ASSUMPTION"},
+    "BulkheadThickness": {"value": 5, "status": "GEOMETRY ONLY, NOT STRUCTURALLY SIZED"},
+    "FanSide": {"value": 550, "status": "PLACEHOLDER, NOT OEM ENVELOPE"},
+    "FanHeight": {"value": 600, "status": "PLACEHOLDER, NOT OEM ENVELOPE"},
+    "FanZ": {"value": 1190, "status": "ASSUMPTION"},
+    "ServiceWidth": {"value": 650, "status": "ASSUMPTION"},
+    "ElectricalWidth": {"value": 300, "status": "PLACEHOLDER"},
+    "ElectricalDepth": {"value": 200, "status": "PLACEHOLDER"},
+    "ElectricalHeight": {"value": 400, "status": "PLACEHOLDER"},
+    "HEPASeatOpening": {"value": 563, "status": "ASSUMED FRAME INTERFACE, NOT OEM CLEAR OPENING"},
+    "GasketOuter": {"value": 583, "status": "ILLUSTRATIVE, OEM GASKET PROFILE UNKNOWN"},
+    "GasketThickness": {"value": 3, "status": "INSTALLED ENVELOPE ONLY, NOT A COMPRESSION SPECIFICATION"},
+    "RetainerOuter": {"value": 633, "status": "ILLUSTRATIVE REMOVABLE HOLD-DOWN ENVELOPE, NO FASTENERS SIZED"},
+    "ServiceLift": {"value": 5, "status": "ASSUMED LIFT TO CLEAR GASKET, HANDLING HARDWARE UNKNOWN"},
+    "IntakeWidth": {"value": 160, "status": "ASSUMPTION, 8 APERTURES"},
+    "IntakeHeight": {"value": 140, "status": "ASSUMPTION"}
+  },
+  "excluded": ["certified gasket/installed leak performance", "gasket compression and clamp forces", "rated filter/fan support", "fasteners hinges and tray", "guard mesh and weather louvres", "exact OEM fan geometry", "electrical internals", "weather protection", "CFD air volume", "carbon module"]
+}

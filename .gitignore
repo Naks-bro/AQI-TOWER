@@ -62,4 +62,12 @@ cfd/**/VTK/
 # Build and package output
 dist/
 build/
+# Engineering build-planning documents are source, not generated build output.
+!docs/build/
+!docs/build/*.md
+!docs/build/*.csv
+!docs/build/*.html
 *.egg-info/
+
+# Zipped review packages duplicate folders that are already tracked
+reports/**/*.zip

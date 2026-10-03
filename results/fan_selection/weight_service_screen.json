@@ -1,0 +1,91 @@
+{
+  "status": "DENSITY AND ASSUMED SERVICE ENVELOPE COMPARISON; NO MATERIAL OR DIMENSION RELEASE",
+  "source": "cad/packaging/AQI_M03_Independent_Housing_STUDY.FCStd",
+  "sha256_unchanged": "42a6283bbc3ab8b85a9a9f1857455b86e2f85d4dc7a44148634cdafd66d93a02",
+  "densities_ASSUMED_kg_m3": {
+    "steel": 7850,
+    "aluminium": 2700
+  },
+  "same_geometry_material_scenarios": {
+    "all_steel_baseline": {
+      "groups_kg": {
+        "cosmetic_casing": 94.13625208380283,
+        "seats_and_retainer": 12.371796250000013,
+        "airpath": 8.733787970274282,
+        "frame": 39.72979200000002,
+        "inner_housing_panels": 36.30237209999952
+      },
+      "partial_material_mass_kg": 191.27400040407667,
+      "complete_machine_mass_kg": null
+    },
+    "aluminium_cosmetic_casing_only": {
+      "groups_kg": {
+        "cosmetic_casing": 32.37807396512964,
+        "seats_and_retainer": 12.371796250000013,
+        "airpath": 8.733787970274282,
+        "frame": 39.72979200000002,
+        "inner_housing_panels": 36.30237209999952
+      },
+      "partial_material_mass_kg": 129.5158222854035,
+      "complete_machine_mass_kg": null
+    },
+    "aluminium_casing_and_inner_panels": {
+      "groups_kg": {
+        "cosmetic_casing": 32.37807396512964,
+        "seats_and_retainer": 12.371796250000013,
+        "airpath": 8.733787970274282,
+        "frame": 39.72979200000002,
+        "inner_housing_panels": 12.486166199999838
+      },
+      "partial_material_mass_kg": 105.69961638540379,
+      "complete_machine_mass_kg": null
+    }
+  },
+  "service_opening_examples": [
+    {
+      "opening_mm_ASSUMED": 635,
+      "part_width_mm_ASSUMED": 633,
+      "nominal_side_gap_mm": 1.0,
+      "sensitivity_side_gap_mm": -1.4
+    },
+    {
+      "opening_mm_ASSUMED": 645,
+      "part_width_mm_ASSUMED": 633,
+      "nominal_side_gap_mm": 6.0,
+      "sensitivity_side_gap_mm": 3.6
+    }
+  ],
+  "tolerance_sensitivity_ASSUMED": {
+    "opening_total_shortfall_mm": 1,
+    "part_total_oversize_mm": 1,
+    "lateral_offset_mm": 1,
+    "coating_each_contact_face_mm": 0.2
+  },
+  "flat_service_panel_corner_examples": [
+    {
+      "shell_inner_diameter_mm_ASSUMED": 950,
+      "opening_mm_ASSUMED": 645,
+      "seal_land_each_side_mm_ASSUMED": 15,
+      "forward_projection_mm_ASSUMED": 10,
+      "nominal_corner_clearance_mm": -1.5904950793710668
+    },
+    {
+      "shell_inner_diameter_mm_ASSUMED": 980,
+      "opening_mm_ASSUMED": 645,
+      "seal_land_each_side_mm_ASSUMED": 15,
+      "forward_projection_mm_ASSUMED": 10,
+      "nominal_corner_clearance_mm": 13.409504920628933
+    }
+  ],
+  "limitations": [
+    "All material scenarios preserve existing geometry; no modulus/strength/corrosion approval",
+    "Frame, seats/retainer and M04 airpath remain steel in both hybrid scenarios",
+    "Dissimilar-metal joints, coating/bonding and stiffness need review",
+    "No gauges reduced; no filter/fan/base/hardware mass assigned",
+    "Wider opening/panel/larger shell examples are NOT edited CAD or OEM tolerances",
+    "Corner calculation assumes a centred flat rectangular panel at the stated forward plane",
+    "No latch, bolt, hinge, gasket compression, hands/tools or complete service envelope modeled",
+    "A positive nominal clearance is not a manufacturing approval",
+    "Lighter casing requires new whole-device stability assessment"
+  ]
+}

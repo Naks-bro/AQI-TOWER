@@ -1,0 +1,125 @@
+{
+  "status": "PRELIMINARY SCREENING; all losses unmeasured; no certified duty or selection",
+  "rows": [
+    {
+      "fan": "historical_KVO250_variant_unresolved",
+      "scenario": "clean_moderate_hardware",
+      "flow_m3h": 1246.4,
+      "operating_static_pressure_Pa": 173.4,
+      "pressure_required_at1300_Pa": 182.9,
+      "fan_pressure_at1300_Pa": 136.9,
+      "margin_at1300_Pa": -46.0
+    },
+    {
+      "fan": "historical_KVO250_variant_unresolved",
+      "scenario": "clean_restrictive_hardware",
+      "flow_m3h": 1176.7,
+      "operating_static_pressure_Pa": 219.9,
+      "pressure_required_at1300_Pa": 252.4,
+      "fan_pressure_at1300_Pa": 136.9,
+      "margin_at1300_Pa": -115.6
+    },
+    {
+      "fan": "historical_KVO250_variant_unresolved",
+      "scenario": "HEPA_2x_clean_prefilter",
+      "flow_m3h": 1132.4,
+      "operating_static_pressure_Pa": 248.3,
+      "pressure_required_at1300_Pa": 291.5,
+      "fan_pressure_at1300_Pa": 136.9,
+      "margin_at1300_Pa": -154.6
+    },
+    {
+      "fan": "historical_KVO250_variant_unresolved",
+      "scenario": "HEPA_2x_prefilter80_restrictive",
+      "flow_m3h": 1047.3,
+      "operating_static_pressure_Pa": 302.7,
+      "pressure_required_at1300_Pa": 395.1,
+      "fan_pressure_at1300_Pa": 136.9,
+      "margin_at1300_Pa": -258.2
+    },
+    {
+      "fan": "SP_TD2000_315_SILENT_digitized_10V",
+      "scenario": "clean_moderate_hardware",
+      "flow_m3h": 1364.4,
+      "operating_static_pressure_Pa": 194.6,
+      "pressure_required_at1300_Pa": 182.9,
+      "fan_pressure_at1300_Pa": 230.0,
+      "margin_at1300_Pa": 47.1
+    },
+    {
+      "fan": "SP_TD2000_315_SILENT_digitized_10V",
+      "scenario": "clean_restrictive_hardware",
+      "flow_m3h": 1274.2,
+      "operating_static_pressure_Pa": 245.5,
+      "pressure_required_at1300_Pa": 252.4,
+      "fan_pressure_at1300_Pa": 230.0,
+      "margin_at1300_Pa": -22.4
+    },
+    {
+      "fan": "SP_TD2000_315_SILENT_digitized_10V",
+      "scenario": "HEPA_2x_clean_prefilter",
+      "flow_m3h": 1228.6,
+      "operating_static_pressure_Pa": 272.8,
+      "pressure_required_at1300_Pa": 291.5,
+      "fan_pressure_at1300_Pa": 230.0,
+      "margin_at1300_Pa": -61.5
+    },
+    {
+      "fan": "SP_TD2000_315_SILENT_digitized_10V",
+      "scenario": "HEPA_2x_prefilter80_restrictive",
+      "flow_m3h": 1111.4,
+      "operating_static_pressure_Pa": 325.4,
+      "pressure_required_at1300_Pa": 395.1,
+      "fan_pressure_at1300_Pa": 230.0,
+      "margin_at1300_Pa": -165.1
+    }
+  ],
+  "SP_digitization_only_flow_range_m3h": {
+    "clean_moderate_hardware": [
+      1330.2,
+      1398.4
+    ],
+    "clean_restrictive_hardware": [
+      1245.3,
+      1303.1
+    ],
+    "HEPA_2x_clean_prefilter": [
+      1199.3,
+      1257.7
+    ],
+    "HEPA_2x_prefilter80_restrictive": [
+      1078.4,
+      1144.3
+    ]
+  },
+  "scenario_inputs": {
+    "clean_moderate_hardware": {
+      "HEPA_clean111_2Pa_at1332_multiplier": 1,
+      "prefilter_Pa_at1332": 25,
+      "all_hardware_Pa_at1300": 50
+    },
+    "clean_restrictive_hardware": {
+      "HEPA_clean111_2Pa_at1332_multiplier": 1,
+      "prefilter_Pa_at1332": 45,
+      "all_hardware_Pa_at1300": 100
+    },
+    "HEPA_2x_clean_prefilter": {
+      "HEPA_clean111_2Pa_at1332_multiplier": 2,
+      "prefilter_Pa_at1332": 25,
+      "all_hardware_Pa_at1300": 50
+    },
+    "HEPA_2x_prefilter80_restrictive": {
+      "HEPA_clean111_2Pa_at1332_multiplier": 2,
+      "prefilter_Pa_at1332": 80,
+      "all_hardware_Pa_at1300": 100
+    }
+  },
+  "limitations": [
+    "Historical HEPA extrapolation transferred only for sensitivity; new cassette not validated",
+    "Hardware allowance includes guards duct transitions and outlet; no 3.8Pa historic residual added",
+    "Loaded multiplier and prefilter80 are scenarios not OEM terminal settings",
+    "SP digitization range excludes installation filter source and density uncertainty",
+    "Static/total pressure and outlet velocity effects must be reconciled at final selection",
+    "No outdoor radius, room CADR, or power prediction derived"
+  ]
+}

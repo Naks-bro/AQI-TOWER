@@ -1,0 +1,222 @@
+[
+  {
+    "path": "reports/prototype_d01/mechanical_package/AQI_D01_MECHANICAL_PACKAGE.pdf",
+    "bytes": 381822,
+    "sha256": "c09b11c62e5924d37422043436ff7baf3f99cddf4c205144ef7fdf56bf8fa41c"
+  },
+  {
+    "path": "reports/prototype_d01/mechanical_package/assembly_audit.json",
+    "bytes": 663,
+    "sha256": "5b8c6ff21437da23c19d0a0d66d0a122352387743ed15794685345388657a187"
+  },
+  {
+    "path": "reports/prototype_d01/mechanical_package/ASSUMED_PARTIAL_MASS.csv",
+    "bytes": 41924,
+    "sha256": "2c65d9f800344c78016a437a744c6ad546a3daf5a5252cbf50097bd6cf5245cb"
+  },
+  {
+    "path": "reports/prototype_d01/mechanical_package/cad_mesh.json",
+    "bytes": 17721146,
+    "sha256": "118f26142c8f80aaccf5ab6aea0c930cb91ac520c8ccdb531e47f49d504a8bb2"
+  },
+  {
+    "path": "reports/prototype_d01/mechanical_package/CAD_PART_INVENTORY.csv",
+    "bytes": 83819,
+    "sha256": "e102a6d8e04d19079438597be90d898129b28f1c72750daf6bada01e0033d870"
+  },
+  {
+    "path": "reports/prototype_d01/mechanical_package/checks.json",
+    "bytes": 565,
+    "sha256": "7521dfbd17278e8b1c29abd70072ee6efd126b93aa3cc7357194a6aee90a8305"
+  },
+  {
+    "path": "reports/prototype_d01/mechanical_package/current_panels.json",
+    "bytes": 33064,
+    "sha256": "6b0aa65c28ac182d40c65410ef1baee966345e0450ae8e4b2836108eb62ba921"
+  },
+  {
+    "path": "reports/prototype_d01/mechanical_package/D01_ASSEMBLY.png",
+    "bytes": 68655,
+    "sha256": "46b7bfdff8e229c420cc89979768af7621f8de57c99f07ab789d081690cf2c24"
+  },
+  {
+    "path": "reports/prototype_d01/mechanical_package/D01_EXPLODED.png",
+    "bytes": 95860,
+    "sha256": "340156ef3e4d51bade1db3afde966e48b491d33726715c4ebaf9703dce2edd6a"
+  },
+  {
+    "path": "reports/prototype_d01/mechanical_package/D01_R03M_ASSEMBLY.FCStd",
+    "bytes": 723490,
+    "sha256": "fb28a31315968509dcdbbb2caac8c6d69c84ecb94a35ccd75937a5d9ecaa33a6"
+  },
+  {
+    "path": "reports/prototype_d01/mechanical_package/D01_R03M_ASSEMBLY.step",
+    "bytes": 3622419,
+    "sha256": "47ca19b4524ce389008fd849e7c83cfe63d5b044e06eabd712dc07d0869e78cb"
+  },
+  {
+    "path": "reports/prototype_d01/mechanical_package/D01_R03M_EXPLODED.FCStd",
+    "bytes": 836492,
+    "sha256": "64a85499192191ed05b496d858a495c52881701e86116cb49db4aa205a3e73a3"
+  },
+  {
+    "path": "reports/prototype_d01/mechanical_package/FASTENER_SCHEDULE.csv",
+    "bytes": 1224,
+    "sha256": "4ff3e9906981979d7cf54757693a459ebe82acbf4055904d3c62d98da66fbdd8"
+  },
+  {
+    "path": "reports/prototype_d01/mechanical_package/fasteners.json",
+    "bytes": 1381,
+    "sha256": "8d86caf756037c10aab5d199c544f54188b6a59cd242db59cefd4f9cfb61b229"
+  },
+  {
+    "path": "reports/prototype_d01/mechanical_package/GUARD_BLANKS.csv",
+    "bytes": 425,
+    "sha256": "3b224e0f6cc73c08b15618294a8cf6095f05ca60fe8da56c379b4238103f2f73"
+  },
+  {
+    "path": "reports/prototype_d01/mechanical_package/guard_pattern.json",
+    "bytes": 540,
+    "sha256": "604046f17640844a0b8f78ec4d90460956b15bd3b3d4e1a2ad7bbb4aafe5bfde"
+  },
+  {
+    "path": "reports/prototype_d01/mechanical_package/mechanical_screen.json",
+    "bytes": 3573,
+    "sha256": "061c53f314faed11370df14c436a9c28d6157b53ab9cb5eede86cd5e0b61ed36"
+  },
+  {
+    "path": "reports/prototype_d01/mechanical_package/panel_DXF_REVIEW_ONLY/A01_Reducer_Front.dxf",
+    "bytes": 2089,
+    "sha256": "687cf5123bad0ebbbb7d964dc36965182b36c0776608ff698004bf2e3153dff5"
+  },
+  {
+    "path": "reports/prototype_d01/mechanical_package/panel_DXF_REVIEW_ONLY/A01_Reducer_Rear.dxf",
+    "bytes": 2089,
+    "sha256": "687cf5123bad0ebbbb7d964dc36965182b36c0776608ff698004bf2e3153dff5"
+  },
+  {
+    "path": "reports/prototype_d01/mechanical_package/panel_DXF_REVIEW_ONLY/A04_Retainer_Front.dxf",
+    "bytes": 963,
+    "sha256": "9dde6321601b09f3b6cf6dd3b74fb121cefcff92cfaeb87f39f1b4f4c6367683"
+  },
+  {
+    "path": "reports/prototype_d01/mechanical_package/panel_DXF_REVIEW_ONLY/A04_Retainer_Rear.dxf",
+    "bytes": 963,
+    "sha256": "9dde6321601b09f3b6cf6dd3b74fb121cefcff92cfaeb87f39f1b4f4c6367683"
+  },
+  {
+    "path": "reports/prototype_d01/mechanical_package/panel_DXF_REVIEW_ONLY/G_FACE.dxf",
+    "bytes": 189521,
+    "sha256": "e11ff9523d40fac9f01c03d86d1353bae223e7db039d9f8180a999f7da27148e"
+  },
+  {
+    "path": "reports/prototype_d01/mechanical_package/panel_DXF_REVIEW_ONLY/G_INNER_END.dxf",
+    "bytes": 363,
+    "sha256": "26e1bcf8402602463c79a4b7ac34aa9f29914cd4978c9509f84cabca663cb7b4"
+  },
+  {
+    "path": "reports/prototype_d01/mechanical_package/panel_DXF_REVIEW_ONLY/G_INNER_SIDE.dxf",
+    "bytes": 363,
+    "sha256": "23b0848b0874bc2241150bc237ffc7a8ef71a0a000dd0720c475900a04867497"
+  },
+  {
+    "path": "reports/prototype_d01/mechanical_package/panel_DXF_REVIEW_ONLY/G_OUTER_END.dxf",
+    "bytes": 363,
+    "sha256": "74592d53d5c1a569352774ad8df2043f757c0d3ed0784f672e4c47a303ea0990"
+  },
+  {
+    "path": "reports/prototype_d01/mechanical_package/panel_DXF_REVIEW_ONLY/G_OUTER_SIDE.dxf",
+    "bytes": 363,
+    "sha256": "b880615a24f0f52c3ee81e5f66fc29d2482139bedc4c69de0347c5363336b6db"
+  },
+  {
+    "path": "reports/prototype_d01/mechanical_package/panel_DXF_REVIEW_ONLY/M01_Base.dxf",
+    "bytes": 899,
+    "sha256": "d1ffbb72d2c52c1a80fecab72d2a81627c5a86763aa4d6089d0a98b4427fd296"
+  },
+  {
+    "path": "reports/prototype_d01/mechanical_package/panel_DXF_REVIEW_ONLY/M02_Left.dxf",
+    "bytes": 901,
+    "sha256": "9ec58e720dfad6887deb6337b0da03aa7e9befce1c52c21bd773e3928bbfc5f8"
+  },
+  {
+    "path": "reports/prototype_d01/mechanical_package/panel_DXF_REVIEW_ONLY/M02_Right.dxf",
+    "bytes": 901,
+    "sha256": "9ec58e720dfad6887deb6337b0da03aa7e9befce1c52c21bd773e3928bbfc5f8"
+  },
+  {
+    "path": "reports/prototype_d01/mechanical_package/panel_DXF_REVIEW_ONLY/M03_Seat_Front.dxf",
+    "bytes": 1956,
+    "sha256": "db08b9fb9b7072d20b46408779d635bdb098828c5dd7c2c134f7745093b972d7"
+  },
+  {
+    "path": "reports/prototype_d01/mechanical_package/panel_DXF_REVIEW_ONLY/M03_Seat_Rear.dxf",
+    "bytes": 1956,
+    "sha256": "db08b9fb9b7072d20b46408779d635bdb098828c5dd7c2c134f7745093b972d7"
+  },
+  {
+    "path": "reports/prototype_d01/mechanical_package/panel_DXF_REVIEW_ONLY/M06_Fan_plate.dxf",
+    "bytes": 2409,
+    "sha256": "6758b19e48ac48a9bc089f251ff218fc85737742405e322391d0206eb4dc8778"
+  },
+  {
+    "path": "reports/prototype_d01/mechanical_package/part_inventory.json",
+    "bytes": 180314,
+    "sha256": "386389dc7c4529d0612f211d87b49bb03c31da5708b6fac16c0a7541e5e9eab4"
+  },
+  {
+    "path": "reports/prototype_d01/mechanical_package/README.md",
+    "bytes": 10574,
+    "sha256": "b7c1b19a62f41f3c3eb442b3a44e3516ec4b8067fa528fdec896a52a375741e6"
+  },
+  {
+    "path": "reports/prototype_d01/mechanical_package/service_checks.json",
+    "bytes": 553,
+    "sha256": "9c37f9e5662e512572999397730184b686ff35fbb8834bd768bf401c697967f2"
+  },
+  {
+    "path": "reports/prototype_d01/r02_guards/cad_mesh.json",
+    "bytes": 9466920,
+    "sha256": "b1008ed98b4152dc152434ff01923f40b101183e94f415281768bcb20d31801d"
+  },
+  {
+    "path": "reports/prototype_d01/r02_guards/D01_R02G_ASSEMBLY.FCStd",
+    "bytes": 417835,
+    "sha256": "7aae1544b405abbcf0d99f92f47b76f0f4c929cc1997d129a073691e137a343b"
+  },
+  {
+    "path": "scripts/analysis/d01_mechanical_screen.py",
+    "bytes": 2875,
+    "sha256": "f886ec83381fc1ce52c4371e55fe1f6415daf9654959987ab4e6e0f5a4af5499"
+  },
+  {
+    "path": "scripts/geometry/audit_d01_current.py",
+    "bytes": 4684,
+    "sha256": "b271ada8a29ad6c18d6b68550a4350c0066973b29f7eec938986b70f7d927da5"
+  },
+  {
+    "path": "scripts/geometry/build_d01_mechanical_package.py",
+    "bytes": 13191,
+    "sha256": "3398a09a27c0a9c2836ee3182f2a462538e6dc51ea7628910f1ecc6d8a0a7e28"
+  },
+  {
+    "path": "scripts/geometry/check_d01_mechanical_service.py",
+    "bytes": 1492,
+    "sha256": "a312c1cbcb31672a84572c5443401abb296e0b0b676360a4c5143bdcfcd4f278"
+  },
+  {
+    "path": "scripts/reports/build_d01_delivery.py",
+    "bytes": 32620,
+    "sha256": "86595b7c12a7e0b98058a3d5863db383720196ee79b91fe4126a92c9f80c3d38"
+  },
+  {
+    "path": "scripts/reports/build_d01_mechanical_report.py",
+    "bytes": 15105,
+    "sha256": "4e251732792f312bf8bc0c124e12d6b9d457bc40d6be977bfa582ac02d194d42"
+  },
+  {
+    "path": "scripts/reports/package_d01_mechanical.py",
+    "bytes": 1879,
+    "sha256": "ad90da2906850dfeed44bcb36b5b839cbdf6d88070564ea317b5d777770efb68"
+  }
+]

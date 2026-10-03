@@ -1,0 +1,65 @@
+{
+  "status": "ASSUMPTIONS / REVIEW ONLY / NOT SAFETY OR PERFORMANCE VALIDATION",
+  "recorded_D01_envelope_mm": [
+    590,
+    490,
+    631
+  ],
+  "rectangular_envelope_diagonal_mm": 766.9419795525604,
+  "sleeve_ID_with_assumed_25mm_radial_clearance_mm": 816.9419795525604,
+  "sleeve_note": "Geometric packaging screen only; no wall, rain hood, airflow clearance or service space included.",
+  "temperature": {
+    "fan_OEM_max_C": 40,
+    "IMD_Hyderabad_record_C": 45.5,
+    "ambient_exceeds_fan_limit_C": 5.5,
+    "proposed_indoor_test_inlet_ceiling_C": 35,
+    "margin_to_fan_limit_C": 5,
+    "caveat": "35C is a proposed test-screening limit, not a validated thermal trip. All other component limits still apply."
+  },
+  "extra_weather_guard_loss_sensitivity": [
+    {
+      "assumed_extra_Pa_at300": 0,
+      "calculated_flow_m3h": 337.0864322602373
+    },
+    {
+      "assumed_extra_Pa_at300": 5,
+      "calculated_flow_m3h": 309.1129859538024
+    },
+    {
+      "assumed_extra_Pa_at300": 10,
+      "calculated_flow_m3h": 287.79622731015377
+    },
+    {
+      "assumed_extra_Pa_at300": 20,
+      "calculated_flow_m3h": 256.33279150905844
+    }
+  ],
+  "tipping_illustrations": [
+    {
+      "assumed_mass_kg": 10,
+      "assumed_CG_to_edge_m": 0.15,
+      "assumed_push_height_m": 0.631,
+      "incipient_static_tip_force_N": 23.32012678288431
+    },
+    {
+      "assumed_mass_kg": 20,
+      "assumed_CG_to_edge_m": 0.15,
+      "assumed_push_height_m": 0.631,
+      "incipient_static_tip_force_N": 46.64025356576862
+    },
+    {
+      "assumed_mass_kg": 30,
+      "assumed_CG_to_edge_m": 0.15,
+      "assumed_push_height_m": 0.631,
+      "incipient_static_tip_force_N": 69.96038034865293
+    }
+  ],
+  "tipping_caveat": "Mass, centre of gravity, support polygon, friction, impact and anchor strength are unverified. No safety factor, wind or dynamic load included; not test loads or an anchor design.",
+  "tests": {
+    "baseline_R01_reproduced": true,
+    "extra_loss_reduces_flow": true,
+    "cylinder_contains_rectangle": true,
+    "doubled_mass_doubles_static_moment": true,
+    "OEM_limit_exceeded": true
+  }
+}

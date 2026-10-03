@@ -1,0 +1,135 @@
+{
+  "status": "PARTIAL MASS AND ILLUSTRATIVE MOMENTS ONLY; NOT STRUCTURAL RELEASE",
+  "densities_kg_m3_ASSUMED": {
+    "steel_assumed": 7850,
+    "aluminium_assumed": 2700
+  },
+  "source_sha256": {
+    "cad/packaging/AQI_Cylindrical_Packaging_R02.FCStd": "5977058d385267a60b9b54e6c7ffdc6d7c9b6c5e6649195c45999c88bd0c4db2",
+    "cad/packaging/AQI_M04_Airpath_STUDY.FCStd": "25d39edc9d2f32d1128eebc669a9da464fefda6a16668f441d3e7812d4e8f320"
+  },
+  "parts": [
+    {
+      "part": "Shell",
+      "volume_mm3": 11376568.561427355,
+      "steel_assumed_kg": 89.30606320720474,
+      "aluminium_assumed_kg": 30.71673511585386
+    },
+    {
+      "part": "HEPAServiceDoor",
+      "volume_mm3": 486524.72760875337,
+      "steel_assumed_kg": 3.819219111728714,
+      "aluminium_assumed_kg": 1.3136167645436343
+    },
+    {
+      "part": "PrefilterServiceDoor",
+      "volume_mm3": 128785.95730819972,
+      "steel_assumed_kg": 1.0109697648693678,
+      "aluminium_assumed_kg": 0.3477220847321392
+    },
+    {
+      "part": "PrefilterBulkhead",
+      "volume_mm3": 1791789.212330985,
+      "steel_assumed_kg": 14.065545316798234,
+      "aluminium_assumed_kg": 4.83783087329366
+    },
+    {
+      "part": "HEPABulkhead",
+      "volume_mm3": 1959264.2123309858,
+      "steel_assumed_kg": 15.380224066798238,
+      "aluminium_assumed_kg": 5.290013373293662
+    },
+    {
+      "part": "HEPARetainerEnvelope",
+      "volume_mm3": 418600.00000000047,
+      "steel_assumed_kg": 3.2860100000000037,
+      "aluminium_assumed_kg": 1.1302200000000013
+    },
+    {
+      "part": "Transition",
+      "volume_mm3": 694312.8089130651,
+      "steel_assumed_kg": 5.450355549967562,
+      "aluminium_assumed_kg": 1.8746445840652761
+    },
+    {
+      "part": "InletNeck",
+      "volume_mm3": 19917.69742375944,
+      "steel_assumed_kg": 0.1563539247765116,
+      "aluminium_assumed_kg": 0.05377778304415049
+    },
+    {
+      "part": "StraightOutlet",
+      "volume_mm3": 398353.9484751858,
+      "steel_assumed_kg": 3.1270784955302084,
+      "aluminium_assumed_kg": 1.0755556608830017
+    }
+  ],
+  "material_scenarios_same_geometry": {
+    "steel_assumed": {
+      "partial_material_mass_kg": 135.60181943767358,
+      "partial_material_centroid_mm": [
+        -9.060191555203718e-11,
+        2.85649746431657e-12,
+        1074.116227000189
+      ],
+      "whole_device_mass_kg": null,
+      "whole_device_centre_of_gravity_mm": null
+    },
+    "aluminium_assumed": {
+      "partial_material_mass_kg": 46.640116239709386,
+      "partial_material_centroid_mm": [
+        -9.060191555203718e-11,
+        2.8565323971190312e-12,
+        1074.116227000189
+      ],
+      "whole_device_mass_kg": null,
+      "whole_device_centre_of_gravity_mm": null
+    }
+  },
+  "fan_candidate_catalogue_mass_kg": 14,
+  "fan_note": "S&P TD2000/315 candidate, not selected; actual mass centre unknown",
+  "missing_mass_items": [
+    "structural frame/base",
+    "actual filters",
+    "guards and louvres",
+    "mounts, hinges, fasteners, seals",
+    "electrical equipment and cables"
+  ],
+  "actual_tipping_assessment": "UNKNOWN: support polygon, complete masses/CG, loads and factors missing",
+  "example_only_mass_100kg_edge_distance_0_4m_push_200N_at_1_5m": {
+    "restoring_Nm": 392.40000000000003,
+    "overturning_Nm": 300.0
+  },
+  "wind_examples_NOT_SITE_DESIGN": [
+    {
+      "speed_m_s_ASSUMED": 10,
+      "force_N": 152.14392,
+      "overturning_Nm": 168.4993914
+    },
+    {
+      "speed_m_s_ASSUMED": 20,
+      "force_N": 608.57568,
+      "overturning_Nm": 673.9975656
+    },
+    {
+      "speed_m_s_ASSUMED": 30,
+      "force_N": 1369.2952799999998,
+      "overturning_Nm": 1516.4945225999998
+    }
+  ],
+  "wind_inputs_ASSUMED": {
+    "diameter_m": 0.954,
+    "height_m": 2.215,
+    "rho_kg_m3": 1.2,
+    "Cd": 1.2,
+    "load_height_m": 1.1075
+  },
+  "limitations": [
+    "Mass scenarios do not approve alloy, gauge, plate spans or joints",
+    "No full-solid component allowance is assigned metal density",
+    "No actual tipping PASS/FAIL or anchor, weld, bolt or member sizing",
+    "Uniform wind toy omits site gust, terrain, dynamics and applicable code factors",
+    "Lighter material also reduces unanchored restoring weight; reassess support",
+    "Independent M04 study is not an assembled OEM installation"
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "source_sha256": "72dbd3003fc2bb3e4d4191a5c64182e323c4f0d418d97faa5d7322a402fa779c",
+  "source_unchanged": true,
+  "objects": 229,
+  "changed_or_added_objects": 72,
+  "pair_checks": 13644,
+  "clashes_mm3": [],
+  "valid": true,
+  "filter_service": [
+    {
+      "side": "Front",
+      "travel_mm": 200,
+      "clashes_mm3": []
+    },
+    {
+      "side": "Rear",
+      "travel_mm": 200,
+      "clashes_mm3": []
+    }
+  ],
+  "nominal_thread_projection_mm": {
+    "service": 2,
+    "inner_stud": 5,
+    "ledge": 6
+  },
+  "minimum_assumed_two_pitch_mm": 1.4,
+  "exclusions": "Unchanged R02 pairs, reservations, actual threads/socket, tool approach, hand access, tolerances, strength, seal compression, inherited M5 hardware and electrical safety. No release.",
+  "native_reopen_objects": 229,
+  "STEP_valid": true,
+  "STEP_volume_matches": true
+}

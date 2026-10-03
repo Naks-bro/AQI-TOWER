@@ -1,0 +1,246 @@
+id,kind,qty,x_mm,y_mm,z_mm,volume_mm3,status,note
+M01_Base,panel,1,550.0,360.0,9.0,1781427.444738883,REVIEW ONLY,PROPOSED GEOMETRY; review required
+M02_Left,panel,1,9.0,360.0,542.0,1754934.8894777661,REVIEW ONLY,PROPOSED GEOMETRY; review required
+M02_Right,panel,1,9.0,360.0,542.0,1754934.8894777661,REVIEW ONLY,PROPOSED GEOMETRY; review required
+M03_Seat_Front,panel,1,532.0,9.0,542.0,603567.7370167692,REVIEW ONLY,PROPOSED GEOMETRY; review required
+S01_Filter_seal_Front,seal,1,495.29999999999995,3.0,495.29999999999995,58235.99999999991,REVIEW ONLY,ASSUMED 4mm free foam to3mm installed; compression force and frame landing unverified
+H01_Stud_Front1,hardware,1,5.0,100.0,5.0,1963.495408493621,REVIEW ONLY,M5x100 proposed; washers/nuts and retained service hardware required; not strength-rated
+H01_Stud_Front2,hardware,1,5.0,100.0,5.0,1963.4954084936235,REVIEW ONLY,M5x100 proposed; washers/nuts and retained service hardware required; not strength-rated
+H01_Stud_Front3,hardware,1,5.0,100.0,5.0,1963.4954084936207,REVIEW ONLY,M5x100 proposed; washers/nuts and retained service hardware required; not strength-rated
+H01_Stud_Front4,hardware,1,5.0,100.0,5.0,1963.495408493614,REVIEW ONLY,M5x100 proposed; washers/nuts and retained service hardware required; not strength-rated
+H01_Stud_Front5,hardware,1,5.0,100.0,5.0,1963.4954084936164,REVIEW ONLY,M5x100 proposed; washers/nuts and retained service hardware required; not strength-rated
+H01_Stud_Front6,hardware,1,5.0,100.0,5.0,1963.4954084936135,REVIEW ONLY,M5x100 proposed; washers/nuts and retained service hardware required; not strength-rated
+H01_Stud_Front7,hardware,1,5.0,80.0,5.0,1570.7963267948996,REVIEW ONLY,M5x80 proposed; washers/nuts and retained service hardware required; not strength-rated
+H01_Stud_Front8,hardware,1,5.0,80.0,5.0,1570.7963267948992,REVIEW ONLY,M5x80 proposed; washers/nuts and retained service hardware required; not strength-rated
+M03_Seat_Rear,panel,1,532.0,9.0,542.0,603567.7370167692,REVIEW ONLY,PROPOSED GEOMETRY; review required
+S01_Filter_seal_Rear,seal,1,495.29999999999995,3.0,495.29999999999995,58235.99999999991,REVIEW ONLY,ASSUMED 4mm free foam to3mm installed; compression force and frame landing unverified
+H01_Stud_Rear1,hardware,1,5.0,100.0,5.0,1963.495408493621,REVIEW ONLY,M5x100 proposed; washers/nuts and retained service hardware required; not strength-rated
+H01_Stud_Rear2,hardware,1,5.0,100.0,5.0,1963.4954084936235,REVIEW ONLY,M5x100 proposed; washers/nuts and retained service hardware required; not strength-rated
+H01_Stud_Rear3,hardware,1,5.0,100.0,5.0,1963.4954084936207,REVIEW ONLY,M5x100 proposed; washers/nuts and retained service hardware required; not strength-rated
+H01_Stud_Rear4,hardware,1,5.0,100.0,5.0,1963.495408493614,REVIEW ONLY,M5x100 proposed; washers/nuts and retained service hardware required; not strength-rated
+H01_Stud_Rear5,hardware,1,5.0,100.0,5.0,1963.4954084936164,REVIEW ONLY,M5x100 proposed; washers/nuts and retained service hardware required; not strength-rated
+H01_Stud_Rear6,hardware,1,5.0,100.0,5.0,1963.4954084936135,REVIEW ONLY,M5x100 proposed; washers/nuts and retained service hardware required; not strength-rated
+H01_Stud_Rear7,hardware,1,5.0,80.0,5.0,1570.7963267948996,REVIEW ONLY,M5x80 proposed; washers/nuts and retained service hardware required; not strength-rated
+H01_Stud_Rear8,hardware,1,5.0,80.0,5.0,1570.7963267948992,REVIEW ONLY,M5x80 proposed; washers/nuts and retained service hardware required; not strength-rated
+S02_Fan_seal_1,seal,1,140.0,140.0,1.0,5391.644569315585,REVIEW ONLY,PROPOSED GEOMETRY; review required
+F02_P14_Max_1,fan,1,140.0,140.0,27.0,194585.88243233695,REVIEW ONLY,"OEM140x140x27,125pitch; simplified rotor, no claimed rotor clearance"
+H02_Fan_bolt_1_1,hardware,1,4.0,4.0,50.0,628.3185307179593,REVIEW ONLY,"M4x50 proposed envelope; actual washers, nuts, seal stack and protrusion to be checked"
+H02_Fan_bolt_1_2,hardware,1,4.0,4.0,50.0,628.318530717959,REVIEW ONLY,"M4x50 proposed envelope; actual washers, nuts, seal stack and protrusion to be checked"
+H02_Fan_bolt_1_3,hardware,1,4.0,4.0,50.0,628.3185307179596,REVIEW ONLY,"M4x50 proposed envelope; actual washers, nuts, seal stack and protrusion to be checked"
+H02_Fan_bolt_1_4,hardware,1,4.0,4.0,50.0,628.3185307179592,REVIEW ONLY,"M4x50 proposed envelope; actual washers, nuts, seal stack and protrusion to be checked"
+S02_Fan_seal_2,seal,1,140.0,140.0,1.0,5391.644569315585,REVIEW ONLY,PROPOSED GEOMETRY; review required
+F02_P14_Max_2,fan,1,140.0,140.0,27.0,194585.8824323369,REVIEW ONLY,"OEM140x140x27,125pitch; simplified rotor, no claimed rotor clearance"
+H02_Fan_bolt_2_1,hardware,1,4.0,4.0,50.0,628.3185307179596,REVIEW ONLY,"M4x50 proposed envelope; actual washers, nuts, seal stack and protrusion to be checked"
+H02_Fan_bolt_2_2,hardware,1,4.0,4.0,50.0,628.3185307179592,REVIEW ONLY,"M4x50 proposed envelope; actual washers, nuts, seal stack and protrusion to be checked"
+H02_Fan_bolt_2_3,hardware,1,4.0,4.0,50.0,628.3185307179596,REVIEW ONLY,"M4x50 proposed envelope; actual washers, nuts, seal stack and protrusion to be checked"
+H02_Fan_bolt_2_4,hardware,1,4.0,4.0,50.0,628.3185307179592,REVIEW ONLY,"M4x50 proposed envelope; actual washers, nuts, seal stack and protrusion to be checked"
+S02_Fan_seal_3,seal,1,140.0,140.0,1.0,5391.644569315585,REVIEW ONLY,PROPOSED GEOMETRY; review required
+F02_P14_Max_3,fan,1,140.0,140.0,27.0,194585.88243233692,REVIEW ONLY,"OEM140x140x27,125pitch; simplified rotor, no claimed rotor clearance"
+H02_Fan_bolt_3_1,hardware,1,4.0,4.0,50.0,628.318530717959,REVIEW ONLY,"M4x50 proposed envelope; actual washers, nuts, seal stack and protrusion to be checked"
+H02_Fan_bolt_3_2,hardware,1,4.0,4.0,50.0,628.3185307179607,REVIEW ONLY,"M4x50 proposed envelope; actual washers, nuts, seal stack and protrusion to be checked"
+H02_Fan_bolt_3_3,hardware,1,4.0,4.0,50.0,628.3185307179592,REVIEW ONLY,"M4x50 proposed envelope; actual washers, nuts, seal stack and protrusion to be checked"
+H02_Fan_bolt_3_4,hardware,1,4.0,4.0,50.0,628.318530717961,REVIEW ONLY,"M4x50 proposed envelope; actual washers, nuts, seal stack and protrusion to be checked"
+S02_Fan_seal_4,seal,1,140.0,140.0,1.0,5391.6445693155865,REVIEW ONLY,PROPOSED GEOMETRY; review required
+F02_P14_Max_4,fan,1,140.0,140.0,27.0,194585.88243233692,REVIEW ONLY,"OEM140x140x27,125pitch; simplified rotor, no claimed rotor clearance"
+H02_Fan_bolt_4_1,hardware,1,4.0,4.0,50.0,628.3185307179592,REVIEW ONLY,"M4x50 proposed envelope; actual washers, nuts, seal stack and protrusion to be checked"
+H02_Fan_bolt_4_2,hardware,1,4.0,4.0,50.0,628.318530717961,REVIEW ONLY,"M4x50 proposed envelope; actual washers, nuts, seal stack and protrusion to be checked"
+H02_Fan_bolt_4_3,hardware,1,4.0,4.0,50.0,628.3185307179592,REVIEW ONLY,"M4x50 proposed envelope; actual washers, nuts, seal stack and protrusion to be checked"
+H02_Fan_bolt_4_4,hardware,1,4.0,4.0,50.0,628.318530717961,REVIEW ONLY,"M4x50 proposed envelope; actual washers, nuts, seal stack and protrusion to be checked"
+M06_Fan_plate,panel,1,550.0,360.0,9.0,1268781.5387120093,REVIEW ONLY,"R02G guard holes x105/445, y60/120/240/300. Separate inner/outer fixings. Other R01 holes retained."
+M07_Cleat_9_9,support,1,20.0,20.0,542.0,212697.27634395263,REVIEW ONLY,PROPOSED GEOMETRY; review required
+M07_Cleat_9_331,support,1,20.0,20.0,542.0,212697.27634395263,REVIEW ONLY,PROPOSED GEOMETRY; review required
+M07_Cleat_521_9,support,1,20.0,20.0,542.0,212697.27634395263,REVIEW ONLY,PROPOSED GEOMETRY; review required
+M07_Cleat_521_331,support,1,20.0,20.0,542.0,212697.27634395263,REVIEW ONLY,PROPOSED GEOMETRY; review required
+M08_Foot_25_15,support,1,30.0,30.0,20.0,18000.0,REVIEW ONLY,Non-slip feet proposed; actual material/attachment and tip test required
+M08_Foot_25_315,support,1,30.0,30.0,20.0,18000.0,REVIEW ONLY,Non-slip feet proposed; actual material/attachment and tip test required
+M08_Foot_495_15,support,1,30.0,30.0,20.0,18000.0,REVIEW ONLY,Non-slip feet proposed; actual material/attachment and tip test required
+M08_Foot_495_315,support,1,30.0,30.0,20.0,18000.0,REVIEW ONLY,Non-slip feet proposed; actual material/attachment and tip test required
+G01_Outer_perforated_face,guard,1,320.0,320.0,1.0,102399.99999999997,REVIEW ONLY,"1mm sheet ENVELOPE ONLY. Proposed4mm holes6mm staggered pitch (~40%open). Deburr, fix, review reach/deflection; not safety certified"
+G02_Outer_skirt_0,guard,1,1.0,320.0,50.0,15961.515489993524,REVIEW ONLY,R02G new skirt blank: rivet holes y110/130/230/250 at z590. Old y50/70/290/310 drilling NOT used.
+G02_Outer_skirt_1,guard,1,1.0,320.0,50.0,15961.515489993524,REVIEW ONLY,R02G new skirt blank: rivet holes y110/130/230/250 at z590. Old y50/70/290/310 drilling NOT used.
+G02_Outer_skirt_2,guard,1,318.0,1.0,50.0,15900.0,REVIEW ONLY,Solid skirt; corner joints and attachment flanges require shop detail
+G02_Outer_skirt_3,guard,1,318.0,1.0,50.0,15900.0,REVIEW ONLY,Solid skirt; corner joints and attachment flanges require shop detail
+G01_Inner_perforated_face,guard,1,320.0,320.0,1.0,102399.99999999997,REVIEW ONLY,"1mm sheet ENVELOPE ONLY. Proposed4mm holes6mm staggered pitch (~40%open). Deburr, fix, review reach/deflection; not safety certified"
+G02_Inner_skirt_0,guard,1,1.0,320.0,41.0,13081.515489993526,REVIEW ONLY,Solid skirt; corner joints and attachment flanges require shop detail
+G02_Inner_skirt_1,guard,1,1.0,320.0,41.0,13081.515489993526,REVIEW ONLY,Solid skirt; corner joints and attachment flanges require shop detail
+G02_Inner_skirt_2,guard,1,318.0,1.0,41.0,13038.0,REVIEW ONLY,Solid skirt; corner joints and attachment flanges require shop detail
+G02_Inner_skirt_3,guard,1,318.0,1.0,41.0,13038.0,REVIEW ONLY,Solid skirt; corner joints and attachment flanges require shop detail
+E01_Control_box_RESERVATION,reservation,1,40.0,140.0,100.0,560000.0,RESERVATION - NOT A PART,"140x100x40 external reservation; exact enclosure, mounting, glands and routing NOT detailed"
+G03_Outer_L_40,detail,1,20.0,40.0,20.0,2969.7068643759285,REVIEW ONLY,Outer bracket relocated to y100..140 or220..260. Part name retains historical identifier; use R02G coordinates.
+G03_Inner_L_40,detail,1,20.0,40.0,20.0,2969.706864375927,REVIEW ONLY,"20x20x2 angle segment40mm; nominal sharp inner corner, actual extrusion root radius must be checked. Two dia3.5 rivet holes; one dia4.5 base hole."
+G03_Outer_L_280,detail,1,20.0,40.0,20.0,2969.7068643759285,REVIEW ONLY,Outer bracket relocated to y100..140 or220..260. Part name retains historical identifier; use R02G coordinates.
+G03_Inner_L_280,detail,1,20.0,40.0,20.0,2969.706864375927,REVIEW ONLY,"20x20x2 angle segment40mm; nominal sharp inner corner, actual extrusion root radius must be checked. Two dia3.5 rivet holes; one dia4.5 base hole."
+G03_Outer_R_40,detail,1,20.0,40.0,20.0,2969.7068643759276,REVIEW ONLY,Outer bracket relocated to y100..140 or220..260. Part name retains historical identifier; use R02G coordinates.
+G03_Inner_R_40,detail,1,20.0,40.0,20.0,2969.706864375927,REVIEW ONLY,"20x20x2 angle segment40mm; nominal sharp inner corner, actual extrusion root radius must be checked. Two dia3.5 rivet holes; one dia4.5 base hole."
+G03_Outer_R_280,detail,1,20.0,40.0,20.0,2969.7068643759276,REVIEW ONLY,Outer bracket relocated to y100..140 or220..260. Part name retains historical identifier; use R02G coordinates.
+G03_Inner_R_280,detail,1,20.0,40.0,20.0,2969.706864375927,REVIEW ONLY,"20x20x2 angle segment40mm; nominal sharp inner corner, actual extrusion root radius must be checked. Two dia3.5 rivet holes; one dia4.5 base hole."
+H06_End_False_19_105,hardware,1,44.0,7.0,7.0,656.5928646002669,REVIEW ONLY,Proposed detail; no strength or safety approval
+H06_End_False_19_205,hardware,1,44.0,7.0,7.0,656.5928646002676,REVIEW ONLY,Proposed detail; no strength or safety approval
+H06_End_False_19_405,hardware,1,44.0,7.0,7.0,656.5928646002676,REVIEW ONLY,Proposed detail; no strength or safety approval
+H06_End_False_19_505,hardware,1,44.0,7.0,7.0,656.5928646002676,REVIEW ONLY,Proposed detail; no strength or safety approval
+H06_End_False_341_105,hardware,1,44.0,7.0,7.0,656.5928646002683,REVIEW ONLY,Proposed detail; no strength or safety approval
+H06_End_False_341_205,hardware,1,44.0,7.0,7.0,656.5928646002687,REVIEW ONLY,Proposed detail; no strength or safety approval
+H06_End_False_341_405,hardware,1,44.0,7.0,7.0,656.5928646002687,REVIEW ONLY,Proposed detail; no strength or safety approval
+H06_End_False_341_505,hardware,1,44.0,7.0,7.0,656.5928646002687,REVIEW ONLY,Proposed detail; no strength or safety approval
+H06_End_True_19_105,hardware,1,44.0,7.0,7.0,656.5928646002669,REVIEW ONLY,Proposed detail; no strength or safety approval
+H06_End_True_19_205,hardware,1,44.0,7.0,7.0,656.5928646002674,REVIEW ONLY,Proposed detail; no strength or safety approval
+H06_End_True_19_405,hardware,1,44.0,7.0,7.0,656.5928646002676,REVIEW ONLY,Proposed detail; no strength or safety approval
+H06_End_True_19_505,hardware,1,44.0,7.0,7.0,656.5928646002676,REVIEW ONLY,Proposed detail; no strength or safety approval
+H06_End_True_341_105,hardware,1,44.0,7.0,7.0,656.5928646002681,REVIEW ONLY,Proposed detail; no strength or safety approval
+H06_End_True_341_205,hardware,1,44.0,7.0,7.0,656.5928646002687,REVIEW ONLY,Proposed detail; no strength or safety approval
+H06_End_True_341_405,hardware,1,44.0,7.0,7.0,656.5928646002687,REVIEW ONLY,Proposed detail; no strength or safety approval
+H06_End_True_341_505,hardware,1,44.0,7.0,7.0,656.5928646002687,REVIEW ONLY,Proposed detail; no strength or safety approval
+H07_Seat_False_20_155,hardware,1,7.0,44.0,7.0,656.5928646002676,REVIEW ONLY,Proposed detail; no strength or safety approval
+H07_Seat_False_20_255,hardware,1,7.0,44.0,7.0,656.5928646002678,REVIEW ONLY,Proposed detail; no strength or safety approval
+H07_Seat_False_20_355,hardware,1,7.0,44.0,7.0,656.5928646002676,REVIEW ONLY,Proposed detail; no strength or safety approval
+H07_Seat_False_20_455,hardware,1,7.0,44.0,7.0,656.5928646002676,REVIEW ONLY,Proposed detail; no strength or safety approval
+H07_Seat_False_530_155,hardware,1,7.0,44.0,7.0,656.5928646002668,REVIEW ONLY,Proposed detail; no strength or safety approval
+H07_Seat_False_530_255,hardware,1,7.0,44.0,7.0,656.5928646002673,REVIEW ONLY,Proposed detail; no strength or safety approval
+H07_Seat_False_530_355,hardware,1,7.0,44.0,7.0,656.592864600267,REVIEW ONLY,Proposed detail; no strength or safety approval
+H07_Seat_False_530_455,hardware,1,7.0,44.0,7.0,656.592864600267,REVIEW ONLY,Proposed detail; no strength or safety approval
+H07_Seat_True_20_155,hardware,1,7.0,44.0,7.0,656.5928646002674,REVIEW ONLY,Proposed detail; no strength or safety approval
+H07_Seat_True_20_255,hardware,1,7.0,44.0,7.0,656.5928646002677,REVIEW ONLY,Proposed detail; no strength or safety approval
+H07_Seat_True_20_355,hardware,1,7.0,44.0,7.0,656.5928646002676,REVIEW ONLY,Proposed detail; no strength or safety approval
+H07_Seat_True_20_455,hardware,1,7.0,44.0,7.0,656.5928646002676,REVIEW ONLY,Proposed detail; no strength or safety approval
+H07_Seat_True_530_155,hardware,1,7.0,44.0,7.0,656.5928646002667,REVIEW ONLY,Proposed detail; no strength or safety approval
+H07_Seat_True_530_255,hardware,1,7.0,44.0,7.0,656.5928646002671,REVIEW ONLY,Proposed detail; no strength or safety approval
+H07_Seat_True_530_355,hardware,1,7.0,44.0,7.0,656.5928646002669,REVIEW ONLY,Proposed detail; no strength or safety approval
+H07_Seat_True_530_455,hardware,1,7.0,44.0,7.0,656.5928646002669,REVIEW ONLY,Proposed detail; no strength or safety approval
+H10_False_19_19,hardware,1,2.3999999999999986,2.3999999999999986,25.0,113.09733552923254,REVIEW ONLY,"Pilot/wood-screw core envelope only; external thread/head not modeled. Timber end-grain holding capacity unknown; carry by base, not lid."
+H10_False_19_341,hardware,1,2.3999999999999986,2.3999999999999773,25.0,113.09733552923275,REVIEW ONLY,"Pilot/wood-screw core envelope only; external thread/head not modeled. Timber end-grain holding capacity unknown; carry by base, not lid."
+H10_False_531_19,hardware,1,2.400000000000091,2.3999999999999986,25.0,113.09733552923335,REVIEW ONLY,"Pilot/wood-screw core envelope only; external thread/head not modeled. Timber end-grain holding capacity unknown; carry by base, not lid."
+H10_False_531_341,hardware,1,2.400000000000091,2.3999999999999773,25.0,113.09733552923359,REVIEW ONLY,"Pilot/wood-screw core envelope only; external thread/head not modeled. Timber end-grain holding capacity unknown; carry by base, not lid."
+H10_True_19_19,hardware,1,2.3999999999999986,2.3999999999999986,20.0,90.47786842338604,REVIEW ONLY,"Pilot/wood-screw core envelope only; external thread/head not modeled. Timber end-grain holding capacity unknown; carry by base, not lid."
+H10_True_19_341,hardware,1,2.3999999999999986,2.3999999999999773,20.0,90.47786842338621,REVIEW ONLY,"Pilot/wood-screw core envelope only; external thread/head not modeled. Timber end-grain holding capacity unknown; carry by base, not lid."
+H10_True_531_19,hardware,1,2.400000000000091,2.3999999999999986,20.0,90.4778684233867,REVIEW ONLY,"Pilot/wood-screw core envelope only; external thread/head not modeled. Timber end-grain holding capacity unknown; carry by base, not lid."
+H10_True_531_341,hardware,1,2.400000000000091,2.3999999999999773,20.0,90.47786842338688,REVIEW ONLY,"Pilot/wood-screw core envelope only; external thread/head not modeled. Timber end-grain holding capacity unknown; carry by base, not lid."
+E02_Cable_corridor_0,reservation,1,130.0,12.0,12.0,14702.65361880022,RESERVATION - NOT A PART,12mm corridor is NOT a drilled gland hole. Select closed-entry gland/connector and restraint; preserve guard access protection.
+E02_Cable_corridor_1,reservation,1,12.0,12.0,105.0,11875.22023056941,RESERVATION - NOT A PART,12mm corridor is NOT a drilled gland hole. Select closed-entry gland/connector and restraint; preserve guard access protection.
+A01_Reducer_Front,panel,1,550.0,9.0,550.0,1865811.4551715115,REVIEW ONLY,550x550x9; opening350x270. Existing eight M5 studs retain adapter; new M4 feedthroughs require sealed washers. Seal/contact forces and panel stiffness unknown.
+A02_Filter_gasket_Front,seal,1,370.0,3.0,290.0,38400.0,REVIEW ONLY,"ASSUMED10mm flat border,3mm installed gasket. OEM border flatness and compression NOT verified."
+A03_STARKVIND_envelope_Front,filter,1,370.0,40.0,290.0,4291999.999999999,REVIEW ONLY,IKEA104.633.30 published370x290x40 envelope. OEM specifies STARKVIND-only; custom use experimental. No MERV/HEPA/airflow claim.
+A04_Retainer_Front,panel,1,410.0,9.0,330.0,366627.4447388832,REVIEW ONLY,"410x330x9, opening350x270; four M4 studs. Unknown frame strength/contact/torque; head/nut details omitted."
+A06_Feedthrough_seal_0_Front,seal,1,10.0,1.0,10.0,65.97344572538562,REVIEW ONLY,Assumed installed sealing washer envelope; exact product and compression unverified.
+A06_Feedthrough_seal_1_Front,seal,1,10.0,1.0,10.0,65.97344572538564,REVIEW ONLY,Assumed installed sealing washer envelope; exact product and compression unverified.
+A06_Feedthrough_seal_2_Front,seal,1,10.0,1.0,10.0,65.97344572538552,REVIEW ONLY,Assumed installed sealing washer envelope; exact product and compression unverified.
+A06_Feedthrough_seal_3_Front,seal,1,10.0,1.0,10.0,65.97344572538559,REVIEW ONLY,Assumed installed sealing washer envelope; exact product and compression unverified.
+A07_Ledge_130_Front,support,1,30.0,43.0,22.0,3748.191374382404,REVIEW ONLY,"Proposed bent2mm bracket,43mm shelf and20mm downstand,30mm width. Root radius/material/strength not resolved."
+A09_Ledge_seal_130_Front,seal,1,10.0,1.0,10.0,65.97344572538562,REVIEW ONLY,"Seal feedthrough below filter, product unselected; no adhesive-only retention."
+A07_Ledge_390_Front,support,1,30.0,43.0,22.0,3748.191374382404,REVIEW ONLY,"Proposed bent2mm bracket,43mm shelf and20mm downstand,30mm width. Root radius/material/strength not resolved."
+A09_Ledge_seal_390_Front,seal,1,10.0,1.0,10.0,65.97344572538552,REVIEW ONLY,"Seal feedthrough below filter, product unselected; no adhesive-only retention."
+A01_Reducer_Rear,panel,1,550.0,9.0,550.0,1865811.4551715115,REVIEW ONLY,550x550x9; opening350x270. Existing eight M5 studs retain adapter; new M4 feedthroughs require sealed washers. Seal/contact forces and panel stiffness unknown.
+A02_Filter_gasket_Rear,seal,1,370.0,3.0,290.0,38400.0,REVIEW ONLY,"ASSUMED10mm flat border,3mm installed gasket. OEM border flatness and compression NOT verified."
+A03_STARKVIND_envelope_Rear,filter,1,370.0,40.0,290.0,4291999.999999999,REVIEW ONLY,IKEA104.633.30 published370x290x40 envelope. OEM specifies STARKVIND-only; custom use experimental. No MERV/HEPA/airflow claim.
+A04_Retainer_Rear,panel,1,410.0,9.0,330.0,366627.4447388832,REVIEW ONLY,"410x330x9, opening350x270; four M4 studs. Unknown frame strength/contact/torque; head/nut details omitted."
+A06_Feedthrough_seal_0_Rear,seal,1,10.0,1.0,10.0,65.97344572538562,REVIEW ONLY,Assumed installed sealing washer envelope; exact product and compression unverified.
+A06_Feedthrough_seal_1_Rear,seal,1,10.0,1.0,10.0,65.97344572538564,REVIEW ONLY,Assumed installed sealing washer envelope; exact product and compression unverified.
+A06_Feedthrough_seal_2_Rear,seal,1,10.0,1.0,10.0,65.97344572538552,REVIEW ONLY,Assumed installed sealing washer envelope; exact product and compression unverified.
+A06_Feedthrough_seal_3_Rear,seal,1,10.0,1.0,10.0,65.97344572538559,REVIEW ONLY,Assumed installed sealing washer envelope; exact product and compression unverified.
+A07_Ledge_130_Rear,support,1,30.0,43.0,22.0,3748.191374382403,REVIEW ONLY,"Proposed bent2mm bracket,43mm shelf and20mm downstand,30mm width. Root radius/material/strength not resolved."
+A09_Ledge_seal_130_Rear,seal,1,10.0,1.0,10.0,65.97344572538562,REVIEW ONLY,"Seal feedthrough below filter, product unselected; no adhesive-only retention."
+A07_Ledge_390_Rear,support,1,30.0,43.0,22.0,3748.191374382403,REVIEW ONLY,"Proposed bent2mm bracket,43mm shelf and20mm downstand,30mm width. Root radius/material/strength not resolved."
+A09_Ledge_seal_390_Rear,seal,1,10.0,1.0,10.0,65.97344572538552,REVIEW ONLY,"Seal feedthrough below filter, product unselected; no adhesive-only retention."
+A05_Stud_0_Front,hardware,1,4.0,80.0,4.0,1005.3096491487341,REVIEW ONLY,M4x80 proposed stud envelope; replaces R02 70 mm shaft
+H10_Service_washer_0_Front,hardware,1,12.0,1.0,12.0,98.57532348801368,REVIEW ONLY,"Nominal hardware envelope; no threads, torque or strength approval"
+H10_Outer_fixed_washer_0_Front,hardware,1,12.0,1.0,12.0,98.57532348801368,REVIEW ONLY,"Nominal hardware envelope; no threads, torque or strength approval"
+H10_Inner_fixed_washer_0_Front,hardware,1,12.0,1.0,12.0,98.57532348801368,REVIEW ONLY,"Nominal hardware envelope; no threads, torque or strength approval"
+H11_Service_nut_0_Front,hardware,1,8.082903768654774,5.0,7.0,149.3443708553919,REVIEW ONLY,"Nominal hardware envelope; no threads, torque or strength approval"
+H11_Outer_fixed_nut_0_Front,hardware,1,8.082903768654774,5.0,7.0,149.3443708553919,REVIEW ONLY,"Nominal hardware envelope; no threads, torque or strength approval"
+H11_Inner_fixed_nut_0_Front,hardware,1,8.082903768654774,5.0,7.0,149.3443708553919,REVIEW ONLY,"Nominal hardware envelope; no threads, torque or strength approval"
+A05_Stud_1_Front,hardware,1,4.0,80.0,4.0,1005.3096491487346,REVIEW ONLY,M4x80 proposed stud envelope; replaces R02 70 mm shaft
+H10_Service_washer_1_Front,hardware,1,12.0,1.0,12.0,98.57532348801368,REVIEW ONLY,"Nominal hardware envelope; no threads, torque or strength approval"
+H10_Outer_fixed_washer_1_Front,hardware,1,12.0,1.0,12.0,98.57532348801368,REVIEW ONLY,"Nominal hardware envelope; no threads, torque or strength approval"
+H10_Inner_fixed_washer_1_Front,hardware,1,12.0,1.0,12.0,98.57532348801368,REVIEW ONLY,"Nominal hardware envelope; no threads, torque or strength approval"
+H11_Service_nut_1_Front,hardware,1,8.082903768654774,5.0,7.0,149.34437085539187,REVIEW ONLY,"Nominal hardware envelope; no threads, torque or strength approval"
+H11_Outer_fixed_nut_1_Front,hardware,1,8.082903768654774,5.0,7.0,149.34437085539187,REVIEW ONLY,"Nominal hardware envelope; no threads, torque or strength approval"
+H11_Inner_fixed_nut_1_Front,hardware,1,8.082903768654774,5.0,7.0,149.34437085539187,REVIEW ONLY,"Nominal hardware envelope; no threads, torque or strength approval"
+A05_Stud_2_Front,hardware,1,4.0,80.0,4.0,1005.3096491487369,REVIEW ONLY,M4x80 proposed stud envelope; replaces R02 70 mm shaft
+H10_Service_washer_2_Front,hardware,1,12.0,1.0,12.0,98.5753234880137,REVIEW ONLY,"Nominal hardware envelope; no threads, torque or strength approval"
+H10_Outer_fixed_washer_2_Front,hardware,1,12.0,1.0,12.0,98.5753234880137,REVIEW ONLY,"Nominal hardware envelope; no threads, torque or strength approval"
+H10_Inner_fixed_washer_2_Front,hardware,1,12.0,1.0,12.0,98.5753234880137,REVIEW ONLY,"Nominal hardware envelope; no threads, torque or strength approval"
+H11_Service_nut_2_Front,hardware,1,8.082903768654774,5.000000000000014,7.0,149.34437085539074,REVIEW ONLY,"Nominal hardware envelope; no threads, torque or strength approval"
+H11_Outer_fixed_nut_2_Front,hardware,1,8.082903768654774,5.0000000000000036,7.0,149.34437085539074,REVIEW ONLY,"Nominal hardware envelope; no threads, torque or strength approval"
+H11_Inner_fixed_nut_2_Front,hardware,1,8.082903768654774,5.0,7.0,149.34437085539074,REVIEW ONLY,"Nominal hardware envelope; no threads, torque or strength approval"
+A05_Stud_3_Front,hardware,1,4.0,80.0,4.0,1005.3096491487374,REVIEW ONLY,M4x80 proposed stud envelope; replaces R02 70 mm shaft
+H10_Service_washer_3_Front,hardware,1,12.0,1.0,12.0,98.57532348801374,REVIEW ONLY,"Nominal hardware envelope; no threads, torque or strength approval"
+H10_Outer_fixed_washer_3_Front,hardware,1,12.0,1.0,12.0,98.57532348801374,REVIEW ONLY,"Nominal hardware envelope; no threads, torque or strength approval"
+H10_Inner_fixed_washer_3_Front,hardware,1,12.0,1.0,12.0,98.57532348801374,REVIEW ONLY,"Nominal hardware envelope; no threads, torque or strength approval"
+H11_Service_nut_3_Front,hardware,1,8.082903768654774,5.000000000000014,7.0,149.3443708553907,REVIEW ONLY,"Nominal hardware envelope; no threads, torque or strength approval"
+H11_Outer_fixed_nut_3_Front,hardware,1,8.082903768654774,5.0000000000000036,7.0,149.3443708553907,REVIEW ONLY,"Nominal hardware envelope; no threads, torque or strength approval"
+H11_Inner_fixed_nut_3_Front,hardware,1,8.082903768654774,5.0,7.0,149.3443708553907,REVIEW ONLY,"Nominal hardware envelope; no threads, torque or strength approval"
+A08_Ledge_bolt_130_Front,hardware,1,7.0,29.0,7.0,468.09730538487935,REVIEW ONLY,"M4x25 nominal cap screw, 7 dia x4 head; socket/threads omitted"
+H12_Outer_washer_130_Front,hardware,1,12.0,1.0,12.0,98.57532348801371,REVIEW ONLY,"Nominal hardware envelope; no threads, torque or strength approval"
+H12_Inner_washer_130_Front,hardware,1,12.0,1.0,12.0,98.57532348801371,REVIEW ONLY,"Nominal hardware envelope; no threads, torque or strength approval"
+H13_Ledge_nut_130_Front,hardware,1,8.082903768654774,5.0,7.0,149.3443708553919,REVIEW ONLY,"Nominal hardware envelope; no threads, torque or strength approval"
+A08_Ledge_bolt_390_Front,hardware,1,7.0,29.0,7.0,468.0973053848804,REVIEW ONLY,"M4x25 nominal cap screw, 7 dia x4 head; socket/threads omitted"
+H12_Outer_washer_390_Front,hardware,1,12.0,1.0,12.0,98.5753234880137,REVIEW ONLY,"Nominal hardware envelope; no threads, torque or strength approval"
+H12_Inner_washer_390_Front,hardware,1,12.0,1.0,12.0,98.5753234880137,REVIEW ONLY,"Nominal hardware envelope; no threads, torque or strength approval"
+H13_Ledge_nut_390_Front,hardware,1,8.082903768654774,5.0,7.0,149.3443708553907,REVIEW ONLY,"Nominal hardware envelope; no threads, torque or strength approval"
+A05_Stud_0_Rear,hardware,1,4.0,80.0,4.0,1005.3096491487341,REVIEW ONLY,M4x80 proposed stud envelope; replaces R02 70 mm shaft
+H10_Service_washer_0_Rear,hardware,1,12.0,1.0,12.0,98.57532348801368,REVIEW ONLY,"Nominal hardware envelope; no threads, torque or strength approval"
+H10_Outer_fixed_washer_0_Rear,hardware,1,12.0,1.0,12.0,98.57532348801368,REVIEW ONLY,"Nominal hardware envelope; no threads, torque or strength approval"
+H10_Inner_fixed_washer_0_Rear,hardware,1,12.0,1.0,12.0,98.57532348801368,REVIEW ONLY,"Nominal hardware envelope; no threads, torque or strength approval"
+H11_Service_nut_0_Rear,hardware,1,8.082903768654774,5.0,7.0,149.3443708553919,REVIEW ONLY,"Nominal hardware envelope; no threads, torque or strength approval"
+H11_Outer_fixed_nut_0_Rear,hardware,1,8.082903768654774,5.0,7.0,149.3443708553919,REVIEW ONLY,"Nominal hardware envelope; no threads, torque or strength approval"
+H11_Inner_fixed_nut_0_Rear,hardware,1,8.082903768654774,5.0,7.0,149.3443708553919,REVIEW ONLY,"Nominal hardware envelope; no threads, torque or strength approval"
+A05_Stud_1_Rear,hardware,1,4.0,80.0,4.0,1005.3096491487346,REVIEW ONLY,M4x80 proposed stud envelope; replaces R02 70 mm shaft
+H10_Service_washer_1_Rear,hardware,1,12.0,1.0,12.0,98.5753234880138,REVIEW ONLY,"Nominal hardware envelope; no threads, torque or strength approval"
+H10_Outer_fixed_washer_1_Rear,hardware,1,12.0,1.0,12.0,98.5753234880138,REVIEW ONLY,"Nominal hardware envelope; no threads, torque or strength approval"
+H10_Inner_fixed_washer_1_Rear,hardware,1,12.0,1.0,12.0,98.5753234880138,REVIEW ONLY,"Nominal hardware envelope; no threads, torque or strength approval"
+H11_Service_nut_1_Rear,hardware,1,8.082903768654774,5.0,7.0,149.34437085539187,REVIEW ONLY,"Nominal hardware envelope; no threads, torque or strength approval"
+H11_Outer_fixed_nut_1_Rear,hardware,1,8.082903768654774,5.0,7.0,149.34437085539187,REVIEW ONLY,"Nominal hardware envelope; no threads, torque or strength approval"
+H11_Inner_fixed_nut_1_Rear,hardware,1,8.082903768654774,5.0,7.0,149.34437085539187,REVIEW ONLY,"Nominal hardware envelope; no threads, torque or strength approval"
+A05_Stud_2_Rear,hardware,1,4.0,80.0,4.0,1005.3096491487369,REVIEW ONLY,M4x80 proposed stud envelope; replaces R02 70 mm shaft
+H10_Service_washer_2_Rear,hardware,1,12.0,1.0,12.0,98.5753234880137,REVIEW ONLY,"Nominal hardware envelope; no threads, torque or strength approval"
+H10_Outer_fixed_washer_2_Rear,hardware,1,12.0,1.0,12.0,98.5753234880137,REVIEW ONLY,"Nominal hardware envelope; no threads, torque or strength approval"
+H10_Inner_fixed_washer_2_Rear,hardware,1,12.0,1.0,12.0,98.5753234880137,REVIEW ONLY,"Nominal hardware envelope; no threads, torque or strength approval"
+H11_Service_nut_2_Rear,hardware,1,8.082903768654774,5.0,7.0,149.34437085539074,REVIEW ONLY,"Nominal hardware envelope; no threads, torque or strength approval"
+H11_Outer_fixed_nut_2_Rear,hardware,1,8.082903768654774,5.0,7.0,149.34437085539074,REVIEW ONLY,"Nominal hardware envelope; no threads, torque or strength approval"
+H11_Inner_fixed_nut_2_Rear,hardware,1,8.082903768654774,5.0,7.0,149.34437085539074,REVIEW ONLY,"Nominal hardware envelope; no threads, torque or strength approval"
+A05_Stud_3_Rear,hardware,1,4.0,80.0,4.0,1005.3096491487374,REVIEW ONLY,M4x80 proposed stud envelope; replaces R02 70 mm shaft
+H10_Service_washer_3_Rear,hardware,1,12.0,1.0,12.0,98.57532348801385,REVIEW ONLY,"Nominal hardware envelope; no threads, torque or strength approval"
+H10_Outer_fixed_washer_3_Rear,hardware,1,12.0,1.0,12.0,98.57532348801385,REVIEW ONLY,"Nominal hardware envelope; no threads, torque or strength approval"
+H10_Inner_fixed_washer_3_Rear,hardware,1,12.0,1.0,12.0,98.57532348801385,REVIEW ONLY,"Nominal hardware envelope; no threads, torque or strength approval"
+H11_Service_nut_3_Rear,hardware,1,8.082903768654774,5.0,7.0,149.3443708553907,REVIEW ONLY,"Nominal hardware envelope; no threads, torque or strength approval"
+H11_Outer_fixed_nut_3_Rear,hardware,1,8.082903768654774,5.0,7.0,149.3443708553907,REVIEW ONLY,"Nominal hardware envelope; no threads, torque or strength approval"
+H11_Inner_fixed_nut_3_Rear,hardware,1,8.082903768654774,5.0,7.0,149.3443708553907,REVIEW ONLY,"Nominal hardware envelope; no threads, torque or strength approval"
+A08_Ledge_bolt_130_Rear,hardware,1,7.0,29.0,7.0,468.09730538487935,REVIEW ONLY,"M4x25 nominal cap screw, 7 dia x4 head; socket/threads omitted"
+H12_Outer_washer_130_Rear,hardware,1,12.0,1.0,12.0,98.57532348801371,REVIEW ONLY,"Nominal hardware envelope; no threads, torque or strength approval"
+H12_Inner_washer_130_Rear,hardware,1,12.0,1.0,12.0,98.57532348801371,REVIEW ONLY,"Nominal hardware envelope; no threads, torque or strength approval"
+H13_Ledge_nut_130_Rear,hardware,1,8.082903768654774,5.0,7.0,149.3443708553919,REVIEW ONLY,"Nominal hardware envelope; no threads, torque or strength approval"
+A08_Ledge_bolt_390_Rear,hardware,1,7.0,29.0,7.0,468.0973053848804,REVIEW ONLY,"M4x25 nominal cap screw, 7 dia x4 head; socket/threads omitted"
+H12_Outer_washer_390_Rear,hardware,1,12.0,1.0,12.0,98.5753234880137,REVIEW ONLY,"Nominal hardware envelope; no threads, torque or strength approval"
+H12_Inner_washer_390_Rear,hardware,1,12.0,1.0,12.0,98.5753234880137,REVIEW ONLY,"Nominal hardware envelope; no threads, torque or strength approval"
+H13_Ledge_nut_390_Rear,hardware,1,8.082903768654774,5.0,7.0,149.3443708553907,REVIEW ONLY,"Nominal hardware envelope; no threads, torque or strength approval"
+J01_Outer_105_120_Screw,hardware,1,7.0,7.0,24.0,405.2654523130832,REVIEW ONLY,"Proposed M4 hardware envelope, not approved grade/torque; threads/socket omitted"
+J01_Outer_105_120_Upper_washer,hardware,1,12.0,12.0,1.0,98.5753234880137,REVIEW ONLY,"Proposed M4 hardware envelope, not approved grade/torque; threads/socket omitted"
+J01_Outer_105_120_Lower_washer,hardware,1,12.0,12.0,1.0,98.5753234880137,REVIEW ONLY,"Proposed M4 hardware envelope, not approved grade/torque; threads/socket omitted"
+J01_Outer_105_120_Nut,hardware,1,8.082903768654774,7.0,5.0,149.34437085539201,REVIEW ONLY,"Proposed M4 hardware envelope, not approved grade/torque; threads/socket omitted"
+J01_Outer_105_240_Screw,hardware,1,7.0,7.0,24.0,405.26545231308313,REVIEW ONLY,"Proposed M4 hardware envelope, not approved grade/torque; threads/socket omitted"
+J01_Outer_105_240_Upper_washer,hardware,1,12.0,12.0,1.0,98.57532348801372,REVIEW ONLY,"Proposed M4 hardware envelope, not approved grade/torque; threads/socket omitted"
+J01_Outer_105_240_Lower_washer,hardware,1,12.0,12.0,1.0,98.57532348801372,REVIEW ONLY,"Proposed M4 hardware envelope, not approved grade/torque; threads/socket omitted"
+J01_Outer_105_240_Nut,hardware,1,8.082903768654774,7.0,5.0,149.34437085539201,REVIEW ONLY,"Proposed M4 hardware envelope, not approved grade/torque; threads/socket omitted"
+J01_Outer_445_120_Screw,hardware,1,7.0,7.0,24.0,405.26545231308353,REVIEW ONLY,"Proposed M4 hardware envelope, not approved grade/torque; threads/socket omitted"
+J01_Outer_445_120_Upper_washer,hardware,1,12.0,12.0,1.0,98.57532348801368,REVIEW ONLY,"Proposed M4 hardware envelope, not approved grade/torque; threads/socket omitted"
+J01_Outer_445_120_Lower_washer,hardware,1,12.0,12.0,1.0,98.57532348801368,REVIEW ONLY,"Proposed M4 hardware envelope, not approved grade/torque; threads/socket omitted"
+J01_Outer_445_120_Nut,hardware,1,8.082903768654774,7.0,5.0,149.34437085539093,REVIEW ONLY,"Proposed M4 hardware envelope, not approved grade/torque; threads/socket omitted"
+J01_Outer_445_240_Screw,hardware,1,7.0,7.0,24.0,405.2654523130836,REVIEW ONLY,"Proposed M4 hardware envelope, not approved grade/torque; threads/socket omitted"
+J01_Outer_445_240_Upper_washer,hardware,1,12.0,12.0,1.0,98.57532348801374,REVIEW ONLY,"Proposed M4 hardware envelope, not approved grade/torque; threads/socket omitted"
+J01_Outer_445_240_Lower_washer,hardware,1,12.0,12.0,1.0,98.57532348801374,REVIEW ONLY,"Proposed M4 hardware envelope, not approved grade/torque; threads/socket omitted"
+J01_Outer_445_240_Nut,hardware,1,8.082903768654774,7.0,5.0,149.34437085539093,REVIEW ONLY,"Proposed M4 hardware envelope, not approved grade/torque; threads/socket omitted"
+J01_Inner_105_60_Screw,hardware,1,7.0,7.0,24.0,405.2654523130833,REVIEW ONLY,"Proposed M4 hardware envelope, not approved grade/torque; threads/socket omitted"
+J01_Inner_105_60_Upper_washer,hardware,1,12.0,12.0,1.0,98.5753234880137,REVIEW ONLY,"Proposed M4 hardware envelope, not approved grade/torque; threads/socket omitted"
+J01_Inner_105_60_Lower_washer,hardware,1,12.0,12.0,1.0,98.5753234880137,REVIEW ONLY,"Proposed M4 hardware envelope, not approved grade/torque; threads/socket omitted"
+J01_Inner_105_60_Nut,hardware,1,8.082903768654774,7.0,5.000000000000114,149.344370855392,REVIEW ONLY,"Proposed M4 hardware envelope, not approved grade/torque; threads/socket omitted"
+J01_Inner_105_300_Screw,hardware,1,7.0,7.0,24.0,405.26545231308404,REVIEW ONLY,"Proposed M4 hardware envelope, not approved grade/torque; threads/socket omitted"
+J01_Inner_105_300_Upper_washer,hardware,1,12.0,12.0,1.0,98.57532348801374,REVIEW ONLY,"Proposed M4 hardware envelope, not approved grade/torque; threads/socket omitted"
+J01_Inner_105_300_Lower_washer,hardware,1,12.0,12.0,1.0,98.57532348801374,REVIEW ONLY,"Proposed M4 hardware envelope, not approved grade/torque; threads/socket omitted"
+J01_Inner_105_300_Nut,hardware,1,8.082903768654774,7.0,5.000000000000114,149.34437085539182,REVIEW ONLY,"Proposed M4 hardware envelope, not approved grade/torque; threads/socket omitted"
+J01_Inner_445_60_Screw,hardware,1,7.0,7.0,24.0,405.2654523130837,REVIEW ONLY,"Proposed M4 hardware envelope, not approved grade/torque; threads/socket omitted"
+J01_Inner_445_60_Upper_washer,hardware,1,12.0,12.0,1.0,98.57532348801368,REVIEW ONLY,"Proposed M4 hardware envelope, not approved grade/torque; threads/socket omitted"
+J01_Inner_445_60_Lower_washer,hardware,1,12.0,12.0,1.0,98.57532348801368,REVIEW ONLY,"Proposed M4 hardware envelope, not approved grade/torque; threads/socket omitted"
+J01_Inner_445_60_Nut,hardware,1,8.082903768654774,7.0,5.000000000000114,149.3443708553909,REVIEW ONLY,"Proposed M4 hardware envelope, not approved grade/torque; threads/socket omitted"
+J01_Inner_445_300_Screw,hardware,1,7.0,7.0,24.0,405.2654523130844,REVIEW ONLY,"Proposed M4 hardware envelope, not approved grade/torque; threads/socket omitted"
+J01_Inner_445_300_Upper_washer,hardware,1,12.0,12.0,1.0,98.57532348801374,REVIEW ONLY,"Proposed M4 hardware envelope, not approved grade/torque; threads/socket omitted"
+J01_Inner_445_300_Lower_washer,hardware,1,12.0,12.0,1.0,98.57532348801374,REVIEW ONLY,"Proposed M4 hardware envelope, not approved grade/torque; threads/socket omitted"
+J01_Inner_445_300_Nut,hardware,1,8.082903768654774,7.0,5.000000000000114,149.34437085539076,REVIEW ONLY,"Proposed M4 hardware envelope, not approved grade/torque; threads/socket omitted"

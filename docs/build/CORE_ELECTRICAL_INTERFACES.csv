@@ -1,0 +1,12 @@
+ID,Function,Origin,Destination,Required_evidence,Physical_terminal_ID,Rating_or_size,Status
+EI01,Incoming supply,Actual premises,Reviewed protection/isolation,Supply earthing fault conditions circuit capacity and installation details,UNKNOWN,UNKNOWN,OPEN_NOT_RELEASED
+EI02,Fan power,Reviewed switching branch,Exact selected OEM fan,SKU nameplate matching wiring manual inrush leakage and stop limits,UNKNOWN,UNKNOWN,OPEN_NOT_RELEASED
+EI03,Protective bonding,Verified PE system,Applicable exposed conductive parts,Actual appliance class enclosure bonding routes and continuity procedure,UNKNOWN,UNKNOWN,OPEN_NOT_RELEASED
+EI04,Local start stop reset,Selected local controls,Reviewed operating/protective architecture,Restart prevention and stop priority including held start,UNKNOWN,UNKNOWN,OPEN_NOT_RELEASED
+EI05,Service access protection,Actual doors and guards,Reviewed protective architecture,Hazard reach run-down access function and fault response,UNKNOWN,UNKNOWN,OPEN_NOT_RELEASED
+EI06,OEM motor protection,Exact selected fan,Reviewed protective architecture,Internal trip auto-reset and available external feedback,UNKNOWN,UNKNOWN,OPEN_NOT_RELEASED
+EI07,Manual speed reference,OEM compatible control,Exact selected fan,Signal interface isolation range and disconnected-command behavior,UNKNOWN,UNKNOWN,OPEN_NOT_RELEASED
+EI08,Operation feedback,Verified fan feedback or independent detection,Indication and test record,Available signal and distinction between request and rotation,UNKNOWN,UNKNOWN,OPEN_NOT_RELEASED
+EI09,Monitoring supply,Approved isolated instrument supply,Monitoring devices,Delivered instruments voltages isolation and USB backfeed review,UNKNOWN,UNKNOWN,OPEN_NOT_RELEASED
+EI10,Measurement data,Selected instruments,Existing laptop recorder,Actual ports drivers export format clocks and units,UNKNOWN,UNKNOWN,OPEN_NOT_RELEASED
+EI11,Emergency stop if required,Risk assessed operator position,Reviewed protective architecture,Need stop category location reset and validation,UNKNOWN,UNKNOWN,OPEN_NOT_RELEASED

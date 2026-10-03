@@ -1,5 +1,29 @@
 # AQI Tower
 
+## Latest engineering deliverable — D01 indoor demonstrator
+
+**Package1 mechanical batch: [R03M mechanical package](reports/prototype_d01/mechanical_package/README.md).** Integrated/exploded CAD, complete proposed cabinet/fan/M5 stacks, shorter rods, positive foot fixings, seal stops and joined guard fabrication route.493 valid objects;119,805 pair checks clear excluding reservations only; filter sweeps and native/STEP checks pass. Matching panel and guard drawings, inventory, assembly sequence and load/seal sensitivities are included. Material/weld strength, actual seal fit and physical guarding/stability holds remain; NOT a construction release. Control enclosure/glands stay a package2 interface.
+
+**READ FIRST: [One current review handoff](reports/prototype_d01/current_handoff/README.md).**15-page consolidated PDF, current integrated CAD bundle,10 flat-panel drawings/DXFs extracted from that CAD,245-object inventory, missing-item register and current-geometry pressure allowance. Whole-assembly audit:29,116 checked pairs clear,774 excluded;8 pressure checks pass. Three closure packages remain mechanical/electrical/performance. NOT construction-ready; no more interpretation of delta-only PDFs is required for the current review. Earlier links below are historical detail evidence.
+
+**Current assembly: [R02G independent guard mountings](reports/prototype_d01/r02_guards/README.md).**245 valid CAD objects; upper and lower guards now have separate four-bolt attachments.8,641 changed-part pair checks and16 assumed tool-envelope checks clear; native/STEP checks pass. Two-sheet drawing and delta BOM included. Guard seams/rivets, strength, access/isolation and remaining construction gates are not released.
+
+**Current detail revision: [R02H fastening and filter service](reports/prototype_d01/r02_adapter/hardware_detail/README.md).** Same assembly,229 valid CAD objects; full proposed adapter nut/washer stacks and ledge bolt heads.13,644 changed-part pair checks and both200 mm nominal filter withdrawal sweeps clear; native/STEP checks pass. Drawing sheet and hardware delta BOM included. No strength, tool-access, sealing or safety release; previous CAD preserved.
+
+**Latest CAD: [R02 removable experimental filter adapter](reports/prototype_d01/r02_adapter/README.md).** Integrated169-object assembly, two dimensioned sheets, STEP, two review DXFs and delta BOM.5,310 new-part pair checks and native/STEP checks pass. Retains the R01 cabinet, but changes filter modules; old airflow predictions do not transfer. OEM STARKVIND-only intended use, custom seal/structure and electrical release remain unresolved. No physical build or purchase.
+
+**Internet-only continuation:** [online filter options and dimensioned comparison](reports/prototype_d01/component_validation/D01_ONLINE_FILTER_OPTIONS.pdf) checks official IKEA/Smart Air India alternatives and expensive Filtrete import listings. User is not being asked to contact suppliers. No drop-in selection or performance approval yet. Corrected an inquiry-document error: actual CAD gasket495.3/475.3mm, not490/470mm. Five fit-screen arithmetic checks pass; original CAD preserved.
+
+Filter closure: [ready-to-send technical inquiry](reports/prototype_d01/component_validation/FILTER_INQUIRY_UNSENT.md) now includes exact interface dimensions and per-filter duty points. Added a returned-curve checker with ten passing synthetic tests, no extrapolation and no automatic purchase approval. Public catalogues have not established a pressure-qualified, obtainable drop-in filter; supplier response is needed. Inquiry NOT SENT.
+
+Deployment decision: [India heat, public-use robustness and size](docs/build/INDIA_DEPLOYMENT_BASIS.md). D01 remains a supervised indoor prototype proposal, not an outdoor/public unit. Verified fan ceiling40 C; added weather-guard loss and cylinder-size sensitivities pass five arithmetic checks. Outdoor protection/anchors/materials remain unselected; do not simply wrap D01 in a metal cylinder.
+
+Latest evidence check: [OEM fan comparison and filter pressure allowance](reports/prototype_d01/component_validation/README.md), with a two-page PDF and nine passing calculation checks. Numeric OEM data predict 371/344/299 m3/h under the same assumed filter cases; historical R01 predicts 359/337/298. Manufacturer source discrepancies remain explicit. At 300 total, roughly14.5 Pa remains per filter;400 total is unsupported under current loss assumptions. These are calculations, not measured performance or purchase approval. R01 CAD remains current.
+
+Latest continuation: [R01 construction drawings and revised assembly](reports/prototype_d01/r01/README.md) adds guard brackets, cabinet joints, filter-ledge supports and cable routing. **Still review-only**, with updated pressure screening; do not combine R00 drilling files with R01.
+
+3 October 2026: [Open the integrated CAD/drawing/BOM/test package](reports/prototype_d01/README.md) or [read the 11-page engineering PDF](reports/prototype_d01/AQI_D01_ENGINEERING_PACKAGE.pdf). This is a proposed custom 12 V, four-fan, two-MERV13-filter demonstrator before the larger cylindrical tower. Native assembly/exploded CAD, STEP, panel DXFs and reproducible pressure calculations are supplied. It is **not HEPA, not a physical prototype and not released for fabrication or energizing**. Exact obtainable components, guard/joint details, seals and restart protection remain open. Historical full-size plans below remain evidence, not released construction instructions.
+
 > Working project name. The final device/project name has not yet been selected.
 
 AQI Tower is an evidence-first engineering project exploring a tower-shaped air-cleaning system. The aim is to study the idea with requirements, CAD, airflow simulation, filter data, and controlled physical tests before making product-performance claims.
@@ -17,10 +41,67 @@ If you are new to the project, follow this order:
 5. Open only the folder related to your task using the repository map below.
 6. Before changing anything, read the latest document for that phase and check its stated assumptions and unknowns.
 
+## Paper and team handbook
+
+- [AQI Tower System Map](docs/paper/AQI_TOWER_SYSTEM_MAP.html): project specifications, the four software layers (geometry, simulation, visualization, data and decisions) with their files, dependencies and tech stack. Open it in a browser.
+- [Conference paper draft](docs/paper/AQI_Tower_IEEE_Paper.docx) ([PDF](docs/paper/AQI_Tower_IEEE_Paper.pdf)): IEEE A4 format. Author names, college and funding body are still placeholders.
+- [Reference material](docs/paper/REFERENCES.md): the paper's citations with DOIs, the source documents archived in this repository, and the main external sources used in the engineering documents.
+
 ## Current status
 
-**Engineering status last updated:** 7 September 2026  
-**Repository onboarding updated:** 16 September 2026
+Ready to present: [six-page prototype stakeholder PDF](reports/prototype_delivery/AQI_TOWER_PROTOTYPE_STAKEHOLDER_BRIEF.pdf) and [offline clickable explainer](reports/prototype_delivery/PROTOTYPE_DEMO.html). Includes project evidence, original diagrams, public construction references and an optional clearly labelled reference-appliance demo route. Six PDF pages visually checked; browser interaction/mobile checks passed. These are presentation deliverables, not physical hardware or new performance evidence.
+
+Build-start priority: [three pre-construction gates and conditional time allowance](docs/build/BUILD_REMAINING.md). Focus on actual component replies, premises and qualified workshop/review quotes rather than more generic CAD branches. A 4–8-week coordination allowance starts only after usable OEM inputs and service/parts availability; it is not a booked delivery estimate and excludes unknown delays/outdoor work.
+
+Latest fan step: [supplier selection brief R00](docs/build/FAN_SELECTION_BRIEF_R00.md) and [response sheet](docs/build/FAN_SUPPLIER_RESPONSE_R00.csv). Recomputed three-flow clean/loaded scenarios; neither current fan is confirmed adequate at the provisional loaded duty. Request prepared, not sent; no fan selected or ordered.
+
+Latest electrical step: [core start/stop and fault plan](docs/build/CORE_CONTROL_SEQUENCE.md), [functional schematic](docs/build/CORE_ELECTRICAL_FUNCTIONS.svg) and eleven-interface register. No automatic restart proposed; laptop monitoring remains outside protection. Fifteen commissioning cases prepared, none executed. Not a rated wiring design or permission to energize.
+
+Current build route: [no college lab required](docs/build/NO_LAB_BUILD_ROUTE.md). College/NGO provide funding only; buy/rent instruments and hire scoped fabrication/testing services. The assistant still prepares the digital design; [ENTC review](docs/build/OPTIONAL_ENTC_REVIEW.md) is optional/unconfirmed, not a delivery dependency. Pune/Hyderabad/Mumbai are possible locations. Use [funded work packages](docs/build/FUNDED_WORK_PACKAGES.csv) for itemized quotes, not assumed prices.
+
+Latest equipment step: [indoor instrument kit and placement plan](docs/build/INDOOR_INSTRUMENT_KIT.md), [revised no-lab equipment request sheet](docs/build/INDOOR_INSTRUMENT_REQUEST_NO_LAB.csv) and updated monitoring BOM. Earlier college-based CSV is superseded. No equipment obtained or physical data collected; exact kits and acquisition routes remain unselected.
+
+Newest analysis software: [exploratory indoor off/on decay comparison](docs/build/INDOOR_DECAY_ANALYSIS.md), explicit-window plan template and eight synthetic tests. Withholds a conditional estimate without declared assumptions; rejects mixed evidence and outdoor use. No physical data, uncertainty/certified rating or release implied.
+
+Newest software: [indoor measurement recorder](docs/build/MEASUREMENT_RECORDING.md) imports instrument/manual readings into traceable CSV with explicit physical/synthetic labels. Eight synthetic unit tests; no live sensor connection, fan control, physical readings or performance claims. No new dependencies.
+
+Build planning updated 3 October 2026: [HEPA closure supplier/workshop review package](docs/build/M05_CLOSURE_REVIEW_PACKAGE.md) includes a copyable request, option comparison, load/tolerance worksheet and [response sheet](docs/build/M05_SUPPLIER_RESPONSE.csv). No request sent, hardware selected or drawings released; supplier data and mechanical review are now the next hatch-design input.
+
+Latest closure check: [real latch drawings and gasket-force screening](docs/build/M05_HARDWARE_GASKET_REVIEW.md). Reviewed hardware cannot replace M05's small location blocks unchanged; reference gasket force illustrates why door pressure alone cannot size latches. Six new arithmetic tests; no hardware selected or CAD/fabrication release.
+
+For a plain-language answer to what is still left, read [How much remains? Six build gates](docs/build/BUILD_REMAINING.md). We are in design development, not fabrication-ready; OEM data, mechanical/electrical reviews and physical validation remain essential.
+
+**Engineering/build planning updated:** 3 October 2026
+
+The current priority is transition to a physical prototype. Start with the [Build planning package](docs/build/START_HERE.md): mechanical/filter planning, electrical architecture, preliminary tower BOM, reproducible screening calculations and test gates. These documents are **not released fabrication or wiring drawings**.
+
+User direction: first test indoors; final goal fully outdoors. Earlier small-device testing was clarified as digital-only. A particulate-only first build is recommended so optional gas research does not block core validation. Budget is to remain reasonable; the exact ceiling, deadline, site and performance targets are not fixed.
+
+Also compare [cylindrical/HushJet-inspired options](docs/build/CYLINDRICAL_OPTIONS.md), including verified government-trial lessons and OEM component families. No final shape or exact new component SKU has been selected.
+
+[Visual schematics R00](docs/build/SCHEMATICS.html) show a round-shell/panel-filter packaging study, airflow instrumentation and electrical/control functions. Read the [drawing register](docs/build/SCHEMATIC_REGISTER.md) for assumptions and release gaps. These are not final CAD or wire-by-wire schematics.
+
+[Parametric packaging CAD R00](docs/build/PACKAGING_CAD_R00.md) now provides a new native FreeCAD/STEP fit study with filter envelopes, assumed service openings, bulkheads and clearly labeled fan/electrical/base allowances. Executed checks cover geometry validity, nominal overlaps, assumed HEPA removal path and parameter propagation—not structure, sealing, real fan fit or airflow performance.
+
+Latest fit revision: [R01 cassette/intake study](docs/build/CASSETTE_INTAKE_R01.md), with intake apertures and illustrative HEPA seat/gasket/retainer. [Draft supplier questions](docs/build/SUPPLIER_RELEASE_QUESTIONS.md) define missing OEM data; none sent. Guards, rated supports, exact fan and seal/clamp approval remain unresolved.
+
+Latest duty study: [Fan comparison and R02 candidate packaging](docs/build/FAN_DUTY_DECISION.md) compares the historical KVO curve with visually digitized official S&P TD-2000/315 SILENT ECOWATT data. Stronger candidate is not a purchase selection; restrictive loaded scenario still falls below the illustrative 1,200 m3/h goal. R02 accommodates its drawing-based bounding envelope, not detailed OEM CAD.
+
+Latest air-path detail: [M04 transition/outlet geometry and pressure accounting](docs/build/AIRPATH_AND_PRESSURE_BASIS.md), with separate hollow CAD parts and five-test loss sensitivity script. Static/total pressure, exit energy and installed fan effects must be reconciled; previous fan comparisons remain unvalidated scenarios. Room dimensions and outdoor pilot setting requested from team.
+
+Latest mechanical check: [M02 weight/support/stability screening](docs/build/M02_WEIGHT_STABILITY.md). Read-only CAD-volume inventory gives about 135.6 kg for an all-steel scenario versus 46.6 kg for aluminium on the same study geometry, before fan, filters, frame/base and electrics. Neither material is approved; complete weight/CG and structural/stability release remain UNKNOWN. Compare independently supported frame/lightweight casing options before buying sheet metal.
+
+New [M02 frame-routing CAD and mounting interfaces](docs/build/M02_FRAME_INTERFACES.md), with [visual layout](docs/build/M02_FRAME_LAYOUT.html): twenty valid assumed tube routes clear checked component envelopes and the assumed HEPA service sweep, but intersect both existing filter plates at eight locations. Pressure-boundary and hollow-post bypass paths must be resolved. Base/feet and structural sizing remain unknown; not an integrated assembly or fabrication release.
+
+Latest branch: [M02/M03 segmented closed-post interface](docs/build/M02_M03_SEGMENTED_INTERFACE.md) and [illustration](docs/build/M02_M03_SEGMENTED_INTERFACE.html). Twenty-eight route solids and a combined 41-solid fit snapshot remove the eight nominal clashes without perforating the plates. Sixteen cap/plate contacts verified; real joints, structural load transfer and airtightness remain unapproved. Earlier CAD preserved; this is an option study, not a complete build assembly.
+
+Latest load review: [plate loads and connection decision](docs/build/M02_PLATE_LOAD_REVIEW.md). Partial modeled material plus the unselected fan gives 49.33 kg above the HEPA plane, not an actual support load or total weight. Eccentric/lateral examples demonstrate why resting contact is insufficient as a connection design. Do not freeze segmented posts; compare a continuous frame surrounding a separately sealed inner cassette. No structural PASS or plate sizing claimed.
+
+Latest fit candidate: [independent inner filter housing with continuous surrounding frame](docs/build/M03_INDEPENDENT_HOUSING.md). Thirty-six valid solids and zero nominal clashes; three assumed service sweeps clear. Side gap 6 mm and retainer opening margin 1 mm per side are NOT manufacturing-approved. All-steel partial material sum 191.27 kg excludes actual fan/filters/base/hardware; no weight optimization, assembly-seal proof or architecture freeze yet.
+
+Latest decision check: [weight and service-access comparison](docs/build/M03_WEIGHT_SERVICE_DECISION.md). Changing cosmetic-casing density only to assumed aluminium gives a 129.52 kg partial material scenario, not approved or complete weight. Hypothetical tolerance allowances eliminate the existing 1 mm service gap; wider opening/door hardware may require a larger casing. Example dimensions are NOT changes to the CAD or manufacturing specifications.
+
+Newest separate branch: [M05 removable HEPA hatch](docs/build/M05_HEPA_SERVICE_HATCH.md) and [layout illustration](docs/build/M05_HEPA_SERVICE_HATCH.html). Models a flange, gasket space, cover and generic latch/handle locations with assumed 980 mm casing, 700 mm outer access and 645 mm inner opening. Forty-eight valid solids, no modeled clashes and assumed cover/filter service paths clear. Actual mechanisms, compression, panel retention and strength remain unresolved; earlier CAD untouched.
 
 - Phase 19 is complete: a G4 washable pre-filter is the current recommended pre-filter, pending supplier RFQ data.
 - The water-spray stage was evaluated and rejected. It is not part of the current treatment path.
@@ -32,6 +113,8 @@ If you are new to the project, follow this order:
 - The official device/project name is still to be selected. **AQI Tower is the working name.**
 
 For the complete status, decisions, blockers, and next authorized work, read [memory/project_status.md](memory/project_status.md).
+
+Historical phase conclusions remain below; build-stage qualifications in the new package take precedence for procurement and physical release. In particular, old CAD filter placeholders do not fit the actual HEPA depth, and the claimed carbon pressure margin is not established at 1,300 m3/h.
 
 ## Current system concept
 
@@ -200,4 +283,3 @@ Every pull request must either update the README or explicitly state why the REA
 3. Obtain expert review of the current CAD, fan, filters, seals, and test plan.
 4. Procure or borrow the approved clean-air pressure-drop test equipment.
 5. Perform controlled component tests before any final product claim or gas-phase CFD.
-

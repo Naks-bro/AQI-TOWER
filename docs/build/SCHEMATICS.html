@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>AQI Tower · Preliminary schematics R00</title>
+<style>
+*{box-sizing:border-box}body{margin:0;background:#e9eef1;color:#142d3e;font:16px/1.5 Arial,sans-serif}main{max-width:1120px;margin:35px auto;padding:0 22px}.sheet{background:white;padding:32px;border-radius:16px;margin:24px 0;box-shadow:0 8px 35px #142d3e12}h1{font-size:34px;margin:8px 0}h2{margin:8px 0 12px}.tag{font-size:12px;letter-spacing:2px;color:#277767}.warning{background:#fff2d9;border-left:5px solid #cf901f;padding:12px 18px}.caption{color:#526675;font-size:14px}svg{width:100%;height:auto}svg text{font-family:Arial,sans-serif;fill:#142d3e}a{color:#177d70}footer{font-size:13px;color:#526675} @media print{body{background:white}main{margin:0;max-width:none;padding:0}.sheet{box-shadow:none;border-radius:0;break-after:page;margin:0;padding:16mm}h1{font-size:27px}.intro{break-after:avoid}a{color:inherit}}
+</style></head><body><main>
+<header class="intro"><div class="tag">AQI TOWER · WORKING PROJECT NAME · 2 OCTOBER 2026</div><h1>From idea to a buildable tower</h1><p>Three preliminary schematics for the first indoor test unit. Outdoor operation remains the final goal.</p><p class="warning"><strong>R00 · NOT FOR FABRICATION OR WIRING.</strong> Layout allowances are assumptions. Exact parts, dimensions, structure and electrical protection still need review.</p></header>
+<section class="sheet"><div class="tag">M01-R00 · CONCEPT SECTION · NOT TO SCALE</div><h2>Round housing, standard filters</h2><p>A circular exterior can contain standard rectangular filters—but their edges must seal into a full-width partition.</p>
+<svg viewBox="0 0 1000 800" role="img" aria-label="Tower section showing guarded outlet, supported fan, clean plenum, horizontal HEPA and prefilter, dirty intake and base; square filter fit in circular housing">
+<defs><marker id="arrow1" markerWidth="8" markerHeight="8" refX="6" refY="4" orient="auto"><path d="M0 0 L8 4 L0 8" fill="#168a7b"/></marker></defs>
+<rect x="130" y="75" width="330" height="600" rx="45" fill="#f1f7f8" stroke="#345267" stroke-width="3"/>
+<rect x="150" y="95" width="290" height="65" rx="12" fill="#cce9e3"/><text x="295" y="134" text-anchor="middle">Guarded outlet</text>
+<rect x="180" y="182" width="230" height="100" rx="12" fill="#dbe4ed" stroke="#345267"/><circle cx="295" cy="231" r="30" fill="#fff" stroke="#345267"/><path d="M270 230 Q290 200 305 217 Q330 245 304 247 Q270 259 270 230" fill="#9eb3c5"/>
+<path d="M150 288 H440" stroke="#345267" stroke-width="5"/><text x="295" y="316" text-anchor="middle">Clean plenum</text>
+<rect x="180" y="345" width="230" height="95" fill="#b6dcd2" stroke="#177d70" stroke-width="2"/><text x="295" y="384" text-anchor="middle">HEPA cassette</text><text x="295" y="409" text-anchor="middle" font-size="15">292 mm candidate depth</text>
+<path d="M130 345 H180 M410 345 H460 M130 440 H180 M410 440 H460" stroke="#cf901f" stroke-width="7"/>
+<text x="295" y="478" text-anchor="middle" font-size="15">Inter-stage space</text>
+<rect x="170" y="495" width="250" height="30" fill="#e7d9b3" stroke="#947432"/><text x="295" y="515" text-anchor="middle" font-size="15">Prefilter · 48 mm depth</text>
+<path d="M130 495 H170 M420 495 H460" stroke="#cf901f" stroke-width="7"/>
+<text x="295" y="574" text-anchor="middle">Dirty-air plenum</text><rect x="155" y="630" width="280" height="30" fill="#9eb3c5"/><text x="295" y="653" text-anchor="middle" font-size="14">Rated metal base / frame</text>
+<path d="M60 575 H115 M530 575 H475 M295 570 V535 M295 490 V452 M295 340 V323 M295 175 V164 M295 91 V40" stroke="#168a7b" stroke-width="4" marker-end="url(#arrow1)"/>
+<text x="55" y="610" font-size="14">Guarded intake</text>
+<path d="M410 230 H565" stroke="#7e94a3"/><text x="580" y="225">Fan independently supported</text><text x="580" y="248" font-size="14">600 mm allowance is NOT a fan dimension</text>
+<path d="M460 440 H565" stroke="#cf901f"/><text x="580" y="437">Sealed bulkhead + gasket</text><text x="580" y="460" font-size="14">No open bypass around filter corners</text>
+<rect x="570" y="530" width="350" height="80" rx="10" fill="#f1f3f6" stroke="#345267"/><text x="745" y="562" text-anchor="middle">Separate electrical compartment</text><text x="745" y="587" text-anchor="middle" font-size="14">Side-mounted position to be checked in CAD</text>
+<circle cx="720" cy="110" r="87" fill="#eef6f5" stroke="#345267"/><rect x="666" y="56" width="108" height="108" fill="#b6dcd2" stroke="#177d70"/><text x="720" y="214" text-anchor="middle" font-size="14">Top-view fit study: square inside circle</text><text x="720" y="238" text-anchor="middle" font-size="14">593 mm square diagonal ≈ 839 mm</text>
+<text x="140" y="720" font-size="17">ASSUMED study envelope: 950 mm INTERNAL diameter; ≈ 1,990 mm zone height.</text><text x="140" y="750" font-size="15">Frames, service access, exact fan and stability can change the envelope.</text>
+</svg><p class="caption">Supplier must approve horizontal filter mounting. Guards, access doors, fasteners and frame members are not detailed here. No weatherproofing implied.</p></section>
+<section class="sheet"><div class="tag">F01-R00 · AIRFLOW AND TEST INSTRUMENTATION</div><h2>Every cleaning stage must be measurable</h2>
+<svg viewBox="0 0 1000 450" role="img" aria-label="Air path through coarse prefilter, HEPA, clean plenum, fan and outlet with pressure taps S0 S1 S2 S3 S4">
+<defs><marker id="arrow2" markerWidth="8" markerHeight="8" refX="6" refY="4" orient="auto"><path d="M0 0 L8 4 L0 8" fill="#168a7b"/></marker></defs>
+<path d="M40 175 H940" stroke="#168a7b" stroke-width="5" marker-end="url(#arrow2)"/>
+<rect x="120" y="120" width="155" height="110" rx="10" fill="#eee4c9" stroke="#947432"/><text x="198" y="169" text-anchor="middle">Coarse</text><text x="198" y="194" text-anchor="middle">prefilter</text>
+<rect x="355" y="120" width="155" height="110" rx="10" fill="#b6dcd2" stroke="#177d70"/><text x="433" y="178" text-anchor="middle">Sealed HEPA</text>
+<rect x="590" y="120" width="130" height="110" rx="10" fill="#e8f0f4" stroke="#345267"/><text x="655" y="170" text-anchor="middle">Clean</text><text x="655" y="196" text-anchor="middle">plenum</text>
+<rect x="790" y="120" width="100" height="110" rx="10" fill="#dbe4ed" stroke="#345267"/><text x="840" y="178" text-anchor="middle">Fan</text>
+<g stroke="#345267" stroke-width="2"><path d="M90 175 V65 H305 V175 M330 175 V85 H540 V175 M750 175 V65 H915 V175" fill="none"/></g>
+<g font-size="14"><text x="75" y="255">S0</text><text x="292" y="255">S1</text><text x="318" y="255">S2</text><text x="528" y="255">S3</text><text x="733" y="255">F-in</text><text x="901" y="255">F-out</text></g>
+<g fill="#fff"><rect x="146" y="43" width="105" height="42" rx="6" stroke="#345267"/><rect x="373" y="63" width="125" height="42" rx="6" stroke="#345267"/><rect x="768" y="43" width="135" height="42" rx="6" stroke="#345267"/></g>
+<text x="198" y="70" text-anchor="middle" font-size="14">ΔP prefilter</text><text x="435" y="90" text-anchor="middle" font-size="14">ΔP HEPA</text><text x="835" y="70" text-anchor="middle" font-size="14">Fan static rise</text>
+<text x="35" y="305">Additional tests: calibrated airflow traverse / flow hood, power, noise, temperature.</text><text x="35" y="337">Matched particle monitors: room control points and suitable intake/outlet sampling.</text><text x="35" y="369">Static taps and straight test sections must be located using the selected measurement method.</text><text x="35" y="401">No carbon stage fitted in this first-test schematic. No claimed outdoor coverage radius.</text>
+</svg><p class="caption">ΔP means pressure difference: how much each filter resists airflow. These tap positions are functional, not drilled-hole instructions. Fan static rise is not automatically fan total pressure.</p></section>
+<section class="sheet"><div class="tag">E01-R00 · ELECTRICAL / CONTROL FUNCTIONAL SCHEMATIC</div><h2>Power and safety separate from the logger</h2>
+<svg viewBox="0 0 1000 650" role="img" aria-label="Mains supply through approved protection and isolation to motor control and fan; separate isolated power supply feeds logger; independent local safety and protective earth paths">
+<defs><marker id="arrow3" markerWidth="8" markerHeight="8" refX="6" refY="4" orient="auto"><path d="M0 0 L8 4 L0 8" fill="#345267"/></marker></defs>
+<g fill="#edf2f6" stroke="#345267" stroke-width="2"><rect x="25" y="65" width="155" height="90" rx="9"/><rect x="230" y="65" width="200" height="90" rx="9"/><rect x="500" y="65" width="200" height="90" rx="9"/><rect x="770" y="65" width="180" height="90" rx="9"/></g>
+<g font-size="16" text-anchor="middle"><text x="102" y="103">Mains supply</text><text x="102" y="129">exact rating TBD</text><text x="330" y="100">Approved protection</text><text x="330" y="126">+ lockable isolation</text><text x="600" y="101">Motor control</text><text x="600" y="127">OEM protection</text><text x="860" y="104">Selected fan</text><text x="860" y="129">AC / EC: confirm</text></g>
+<path d="M180 110 H225 M430 110 H495 M700 110 H765" stroke="#345267" stroke-width="3" marker-end="url(#arrow3)"/>
+<rect x="230" y="255" width="200" height="90" rx="9" fill="#dceee8" stroke="#177d70"/><text x="330" y="292" text-anchor="middle">Certified isolated</text><text x="330" y="317" text-anchor="middle">low-voltage supply</text>
+<rect x="500" y="255" width="200" height="90" rx="9" fill="#dceee8" stroke="#177d70"/><text x="600" y="292" text-anchor="middle">Logger / controller</text><text x="600" y="317" text-anchor="middle">not a safety device</text>
+<rect x="770" y="255" width="180" height="90" rx="9" fill="#dceee8" stroke="#177d70"/><text x="860" y="292" text-anchor="middle">PM, pressure,</text><text x="860" y="317" text-anchor="middle">temperature sensors</text>
+<path d="M330 155 V249 M430 300 H495" stroke="#345267" stroke-width="3" marker-end="url(#arrow3)"/>
+<path d="M770 300 H706" stroke="#168a7b" stroke-width="3" stroke-dasharray="8 5"/>
+<rect x="480" y="390" width="440" height="80" rx="9" fill="#fff2d9" stroke="#cf901f"/><text x="700" y="420" text-anchor="middle">Local stop / reviewed service interlock</text><text x="700" y="447" text-anchor="middle">+ OEM thermal function independent of logger</text>
+<path d="M730 430 H735 V195 H600 V160" fill="none" stroke="#cf901f" stroke-width="3"/>
+<path d="M600 255 V220 H860 V160" fill="none" stroke="#168a7b" stroke-width="2" stroke-dasharray="8 5"/><text x="300" y="211" font-size="14">Optional approved speed interface only</text>
+<rect x="25" y="390" width="350" height="80" rx="9" fill="#f4f6e0" stroke="#7d8c2d"/><text x="200" y="420" text-anchor="middle">Protective earth / bonding</text><text x="200" y="446" text-anchor="middle">fan + exposed conductive enclosure</text>
+<text x="30" y="522">Solid lines: functional power paths. Dashed lines: information / optional control.</text><text x="30" y="553">No cable sizes, breaker ratings, terminal numbers or relay wiring specified.</text><text x="30" y="584">Electrical engineer must complete the actual schematic and verify the installation.</text><text x="30" y="615">Indoor prototype only: no outdoor ingress-protection or compliance claim.</text>
+</svg><p class="caption">Protection, interlocks and motor control are functional requirements—not a ready-to-wire circuit. Protective earth is not switched. A logger failure must not defeat safety.</p></section>
+<footer>Read <a href="SCHEMATIC_REGISTER.md">schematic register and assumptions</a>, <a href="MECHANICAL_FILTER_PLAN.md">mechanical plan</a>, <a href="ELECTRICAL_PLAN.md">electrical plan</a> and <a href="BUILD_AND_TEST.md">test gates</a>. Revision R00. No parts ordered.</footer>
+</main></body></html>

@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><title>AQI Tower — M02 frame routing</title>
+<style>
+body{background:#edf2f4;color:#173340;font:16px system-ui,sans-serif;margin:0;padding:28px}main{max-width:1080px;margin:auto;background:white;padding:32px;border-radius:16px}h1{margin:8px 0}p{line-height:1.5}.tag{font-size:13px;letter-spacing:2px;color:#387f80}.warning{padding:18px;background:#fff1dd;border-left:5px solid #dc8c22;border-radius:5px}svg{width:100%;height:auto}svg text{font-family:system-ui,sans-serif}footer{font-size:13px;color:#536873;margin-top:22px}@media print{body{padding:0;background:white}main{border-radius:0;padding:16px}.warning{break-inside:avoid}}
+</style></head><body><main>
+<div class="tag">AQI TOWER · MECHANICAL STUDY · 02 OCT 2026</div>
+<h1>A frame that carries the parts</h1>
+<p>The outer casing is separate from the supports. This sheet shows an <strong>assumed route</strong>, not metal sizes to order or a safe-to-build drawing.</p>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1020 620" role="img" aria-labelledby="title desc">
+<title id="title">Frame plan and simplified elevation</title><desc id="desc">Plan shows four posts outside the square filter envelope, within the cylindrical shell. Elevation highlights unresolved intersections with both filter plates. All dimensions are study assumptions.</desc>
+<defs><marker id="arrow" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10Z" fill="#438284"/></marker></defs>
+<text x="35" y="35" font-size="22" font-weight="600">TOP VIEW — ROUTING PLAN</text>
+<circle cx="250" cy="290" r="190" fill="#f1f6f6" stroke="#6d9495" stroke-width="2"/>
+<rect x="131.4" y="171.4" width="237.2" height="237.2" fill="#bbdeda" stroke="#317f79" stroke-width="2"/>
+<rect x="110" y="210" width="280" height="160" fill="none" stroke="#e8a548" stroke-width="5"/>
+<g fill="#da8b28" stroke="#865716"><rect x="103" y="203" width="14" height="14"/><rect x="383" y="203" width="14" height="14"/><rect x="103" y="363" width="14" height="14"/><rect x="383" y="363" width="14" height="14"/></g>
+<text x="250" y="273" text-anchor="middle" font-size="18">593 × 593 mm</text><text x="250" y="302" text-anchor="middle" font-size="16">HEPA envelope</text>
+<text x="250" y="74" text-anchor="middle" font-size="15">Casing internal diameter: 950 mm</text>
+<line x1="103" y1="510" x2="397" y2="510" stroke="#438284" marker-start="url(#arrow)" marker-end="url(#arrow)"/>
+<text x="250" y="538" text-anchor="middle" font-size="15">Frame envelope: 735 × 435 mm</text>
+<line x1="250" y1="427" x2="250" y2="479" stroke="#438284" stroke-width="3" marker-end="url(#arrow)"/>
+<text x="250" y="572" text-anchor="middle" font-size="15">Front: assumed filter removal direction</text>
+<text x="570" y="35" font-size="22" font-weight="600">SIDE VIEW — SIMPLIFIED</text>
+<rect x="612" y="86" width="198" height="457" rx="30" fill="#f1f6f6" stroke="#6d9495" stroke-dasharray="6 5"/>
+<g stroke="#da8b28" stroke-width="8"><line x1="638" y1="117" x2="638" y2="512"/><line x1="784" y1="117" x2="784" y2="512"/><line x1="638" y1="505" x2="784" y2="505"/><line x1="638" y1="451" x2="784" y2="451"/><line x1="638" y1="411" x2="784" y2="411"/><line x1="638" y1="297" x2="784" y2="297"/></g>
+<rect x="666" y="125" width="90" height="171" fill="#ffd9a1" stroke="#da8b28"/>
+<text x="711" y="190" text-anchor="middle" font-size="15">Fan envelope</text><text x="711" y="215" text-anchor="middle" font-size="13">mounts UNKNOWN</text>
+<path d="M652 345L678 297H744L770 345Z" fill="#bbdeda" stroke="#438284"/>
+<rect x="650" y="347" width="122" height="60" fill="#bbdeda" stroke="#438284"/>
+<rect x="650" y="440" width="122" height="10" fill="#dbe8b8" stroke="#7f9453"/>
+<g stroke="#c54f42" stroke-width="4"><line x1="612" y1="411" x2="810" y2="411"/><line x1="612" y1="451" x2="810" y2="451"/></g>
+<g fill="#c54f42"><circle cx="638" cy="411" r="9"/><circle cx="784" cy="411" r="9"/><circle cx="638" cy="451" r="9"/><circle cx="784" cy="451" r="9"/></g>
+<text x="835" y="370" font-size="14">HEPA</text><text x="835" y="414" font-size="14" fill="#b33f34">Plate clash</text><text x="835" y="455" font-size="14" fill="#b33f34">Plate clash</text>
+<rect x="605" y="543" width="214" height="20" fill="#d7dfe2" stroke="#768c96" stroke-dasharray="4 4"/>
+<text x="711" y="593" text-anchor="middle" font-size="15">Base / feet / anchors: NOT DESIGNED</text>
+</svg>
+<div class="warning"><strong>Eight real CAD clashes found.</strong> Four posts cross both filter plates. Holes or open hollow tubes could let dirty air bypass the HEPA. A reviewed support-and-seal interface is required; do not cut holes from this drawing.</div>
+<p><strong>What passed:</strong> twenty valid route solids; FreeCAD reopen and STEP reimport; nominal clearance from checked component envelopes and the assumed HEPA removal sweep.</p>
+<p><strong>Still unknown:</strong> approved member sizes, joints, fan mounts, complete weight/centre of gravity, strength, tipping/sliding, installed leakage and outdoor anchoring. The assumed 35 × 35 × 3 mm steel routes add about 47.75 kg before base and hardware.</p>
+<footer>Illustration simplifies the elevation; dimensions are routing assumptions only. See M02_FRAME_INTERFACES.md and M02_FRAME_ROUTING_AUDIT.json. NOT FOR FABRICATION.</footer>
+</main></body></html>

@@ -1,0 +1,348 @@
+<title>AQI Tower System Map</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500;600;700&family=Source+Sans+3:ital,wght@0,400;0,600;1,400&family=JetBrains+Mono:wght@400;500&display=swap">
+<style>
+/* Layout: one reading column; the four layers stack top-down from Layer 4 to Layer 1, mirroring the bottom-up data flow, each a tinted band */
+:root {
+  --bg: #f6f7f8;
+  --surface: #ffffff;
+  --fg: #1d2329;
+  --muted: #5b6670;
+  --line: #d8dde2;
+  --accent: #1f5f8b;
+  --l1: #ececea; --l1-ink: #4a4a44;
+  --l2: #dfeaf7; --l2-ink: #1f4e79;
+  --l3: #e3f0dd; --l3-ink: #3c6a2e;
+  --l4: #fbe8dc; --l4-ink: #8a4a22;
+  --ok: #2f7d4f; --ok-bg: #e2f2e8;
+  --warn: #8a5f00; --warn-bg: #fbf0d4;
+  --no: #a33a3a; --no-bg: #f8e3e3;
+  --code-bg: #eef1f4;
+  --f-display: "Barlow Semi Condensed", "Arial Narrow", Arial, sans-serif;
+  --f-body: "Source Sans 3", "Segoe UI", Helvetica, Arial, sans-serif;
+  --f-mono: "JetBrains Mono", Consolas, "Courier New", monospace;
+}
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) {
+  --bg: #14181c; --surface: #1b2026; --fg: #e3e7eb; --muted: #9aa5af; --line: #2e353d; --accent: #7db4dd;
+  --l1: #24262a; --l1-ink: #c9c9c2; --l2: #172636; --l2-ink: #9cc3ea; --l3: #192a1c; --l3-ink: #a6d39a;
+  --l4: #2e2018; --l4-ink: #efb38c; --ok: #7fd09d; --ok-bg: #173323; --warn: #e6c068; --warn-bg: #352b12;
+  --no: #ef9a9a; --no-bg: #3a1c1c; --code-bg: #232a31; color-scheme: dark } }
+:root[data-theme="dark"] {
+  --bg: #14181c; --surface: #1b2026; --fg: #e3e7eb; --muted: #9aa5af; --line: #2e353d; --accent: #7db4dd;
+  --l1: #24262a; --l1-ink: #c9c9c2; --l2: #172636; --l2-ink: #9cc3ea; --l3: #192a1c; --l3-ink: #a6d39a;
+  --l4: #2e2018; --l4-ink: #efb38c; --ok: #7fd09d; --ok-bg: #173323; --warn: #e6c068; --warn-bg: #352b12;
+  --no: #ef9a9a; --no-bg: #3a1c1c; --code-bg: #232a31; color-scheme: dark }
+
+body { background: var(--bg); color: var(--fg); font: 16px/1.55 var(--f-body); padding: 0 16px; }
+.wrap { max-width: 880px; margin: 0 auto; padding-block: 40px 64px; display: grid; gap: 44px; }
+h1, h2, h3 { font-family: var(--f-display); text-wrap: balance; line-height: 1.15; margin: 0; }
+h1 { font-size: clamp(2rem, 5vw, 2.8rem); font-weight: 700; letter-spacing: -0.01em; }
+h2 { font-size: 1.6rem; font-weight: 600; }
+h3 { font-size: 1.25rem; font-weight: 600; }
+p { margin: 0; max-width: 68ch; }
+section { display: grid; gap: 16px; min-width: 0; }
+.eyebrow { font: 600 0.75rem/1 var(--f-body); letter-spacing: 0.12em; text-transform: uppercase; color: var(--muted); }
+code { font-family: var(--f-mono); font-size: 0.84em; background: var(--code-bg); padding: 1px 5px; border-radius: 4px; overflow-wrap: anywhere; }
+a { color: var(--accent); }
+
+header { display: grid; gap: 14px; }
+.lead { font-size: 1.1rem; }
+.chips { display: flex; flex-wrap: wrap; gap: 8px; }
+.chip { font: 600 0.8rem/1.2 var(--f-body); padding: 5px 10px; border-radius: 999px; }
+.chip.ok { background: var(--ok-bg); color: var(--ok); }
+.chip.warn { background: var(--warn-bg); color: var(--warn); }
+.chip.no { background: var(--no-bg); color: var(--no); }
+.note { border-left: 3px solid var(--accent); padding: 4px 0 4px 14px; color: var(--muted); }
+
+.specs { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(300px, 100%), 1fr)); gap: 16px; }
+.sheet { background: var(--surface); border: 1px solid var(--line); border-radius: 8px; padding: 18px; display: grid; gap: 12px; align-content: start; min-width: 0; }
+.sheet dl { display: grid; grid-template-columns: max-content 1fr; gap: 6px 14px; margin: 0; font-size: 0.93rem; }
+.sheet dt { color: var(--muted); }
+.sheet dd { margin: 0; font-variant-numeric: tabular-nums; min-width: 0; }
+.train { display: flex; flex-wrap: wrap; align-items: center; gap: 6px; font-size: 0.85rem; }
+.train span { background: var(--code-bg); padding: 3px 8px; border-radius: 4px; }
+.train i { color: var(--muted); font-style: normal; }
+
+.layers { display: grid; gap: 14px; }
+.layer { border-radius: 10px; padding: 20px; display: grid; gap: 14px; min-width: 0; }
+.layer.l1 { background: var(--l1); } .layer.l2 { background: var(--l2); }
+.layer.l3 { background: var(--l3); } .layer.l4 { background: var(--l4); }
+.tag { font: 700 0.78rem/1 var(--f-display); letter-spacing: 0.1em; text-transform: uppercase; display: block; margin-bottom: 4px; }
+.l1 .tag { color: var(--l1-ink); } .l2 .tag { color: var(--l2-ink); } .l3 .tag { color: var(--l3-ink); } .l4 .tag { color: var(--l4-ink); }
+.layer-head { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: end; gap: 8px; }
+.owner { font-size: 0.85rem; color: var(--muted); }
+.cols { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(240px, 100%), 1fr)); gap: 12px 24px; }
+.cols > div { min-width: 0; display: grid; gap: 4px; align-content: start; }
+.cols h4 { margin: 6px 0 0; font: 600 0.75rem/1.2 var(--f-body); letter-spacing: 0.1em; text-transform: uppercase; color: var(--muted); }
+.cols h4:first-child { margin-top: 0; }
+.cols ul { margin: 0; padding-left: 18px; font-size: 0.93rem; }
+.cols li { margin: 2px 0; }
+.status { display: flex; flex-wrap: wrap; gap: 8px; }
+
+.tbl { overflow-x: auto; border: 1px solid var(--line); border-radius: 8px; background: var(--surface); }
+table { border-collapse: collapse; width: 100%; font-size: 0.92rem; min-width: 560px; }
+th, td { text-align: left; padding: 9px 12px; border-bottom: 1px solid var(--line); vertical-align: top; }
+th { font: 600 0.75rem/1.2 var(--f-body); letter-spacing: 0.08em; text-transform: uppercase; color: var(--muted); background: var(--code-bg); }
+tr:last-child td { border-bottom: 0; }
+.swatch { display: inline-block; width: 10px; height: 10px; border-radius: 2px; margin-right: 6px; }
+.sw1 { background: var(--l1-ink); } .sw2 { background: var(--l2-ink); } .sw3 { background: var(--l3-ink); } .sw4 { background: var(--l4-ink); }
+
+.diagram { overflow-x: auto; background: var(--surface); border: 1px solid var(--line); border-radius: 8px; padding: 12px; }
+.mermaid { margin: 0; background: transparent; }
+
+ol.timeline { margin: 0; padding-left: 20px; display: grid; gap: 6px; font-size: 0.95rem; }
+ol.timeline b { font-family: var(--f-display); font-weight: 600; }
+footer { color: var(--muted); font-size: 0.85rem; border-top: 1px solid var(--line); padding-top: 16px; }
+@media (prefers-reduced-motion: reduce) { * { animation: none !important; transition: none !important; } }
+</style>
+
+<div class="wrap">
+
+<header>
+  <span class="eyebrow">Final-year PBL · team handbook · 3 Oct 2026</span>
+  <h1>AQI Tower System Map</h1>
+  <p class="lead">AQI Tower is a tower-type air purifier that we have designed entirely in software so far. CAD models, airflow simulations, a 3D web viewer and analysis scripts all live in one Git repository. This page explains how that repository splits into four layers, what each layer depends on and which tools it uses, so every member can find their part and see how it connects to the rest.</p>
+  <div class="chips">
+    <span class="chip no">Physical prototypes built: 0</span>
+    <span class="chip ok">Airflow CFD: done (simulated)</span>
+    <span class="chip ok">3D web viewer: done</span>
+    <span class="chip warn">Measurement tools: ready, no data yet</span>
+    <span class="chip warn">First build (D01): CAD for review only</span>
+  </div>
+  <p class="note">Every performance number on this page comes from simulation or calculation. None of it has been measured on hardware. When presenting, say "the model predicts", not "the tower delivers".</p>
+</header>
+
+<section>
+  <span class="eyebrow">What we are building</span>
+  <h2>Project specifications</h2>
+  <p>There are two designs. The full tower is the research concept that all the CFD was run on. D01 is a smaller indoor demonstrator picked as the first thing to actually build, because the full tower needs a heavy mains fan, sheet-metal work and rated wiring that nobody has reviewed yet.</p>
+  <div class="specs">
+    <div class="sheet">
+      <h3>Full tower (research concept)</h3>
+      <div class="train"><span>Inlet</span><i>→</i><span>G4 pre-filter</span><i>→</i><span>Carbon bed (space reserved)</span><i>→</i><span>H13 HEPA</span><i>→</i><span>Clean riser</span><i>→</i><span>Fan</span><i>→</i><span>Outlet</span></div>
+      <dl>
+        <dt>Geometry</dt><dd>GEO_C, best of 3 CFD variants</dd>
+        <dt>Fan</dt><dd>Systemair KVO 250, 230 V, about 301 W, 250 mm port</dd>
+        <dt>HEPA</dt><dd>Freudenberg H13, 593 × 593 × 292 mm</dd>
+        <dt>Pre-filter</dt><dd>G4 panel, 592 × 592 × 48 mm (quote pending)</dd>
+        <dt>Airflow</dt><dd>1,332 m³/h sealed model; about 1,300 m³/h with a clean G4</dd>
+        <dt>Filter Δp</dt><dd>111.2 Pa across the HEPA (model)</dd>
+        <dt>Face velocity</dt><dd>1.053 m/s at the HEPA</dd>
+        <dt>Gas target</dt><dd>Formaldehyde, carbon stage, research only</dd>
+        <dt>Rejected</dt><dd>Water-spray stage (13/100 vs 84/100 for a pre-filter)</dd>
+      </dl>
+    </div>
+    <div class="sheet">
+      <h3>D01 indoor demonstrator (first build)</h3>
+      <div class="train"><span>Guarded intake</span><i>→</i><span>2 × MERV13 filters</span><i>→</i><span>Sealed cabinet</span><i>→</i><span>4 × PC fans</span><i>→</i><span>Top outlet</span></div>
+      <dl>
+        <dt>Cabinet</dt><dd>550 W × 360 D × 580 H mm (631 mm with top guard)</dd>
+        <dt>Material</dt><dd>Plywood panels, 8 DXF outlines for review</dd>
+        <dt>Filters</dt><dd>2 × MERV13, 495.3 × 495.3 × 44.45 mm</dd>
+        <dt>Fans</dt><dd>4 × ARCTIC P14 Max, 140 mm, 12 V</dd>
+        <dt>Power</dt><dd>Noctua NV-PS1 12 V chain, fans about 16.8 W total</dd>
+        <dt>Airflow</dt><dd>309–377 m³/h, screening scenarios with assumed filter resistance</dd>
+        <dt>CAD state</dt><dd>Revision R03M, 493 objects, 119,805 clash checks clear</dd>
+        <dt>Not claimed</dt><dd>MERV13 is not HEPA; no gas or outdoor cleaning</dd>
+        <dt>Purpose</dt><dd>Measure flow, Δp, power, noise and room decay</dd>
+      </dl>
+    </div>
+  </div>
+</section>
+
+<section>
+  <span class="eyebrow">The architecture</span>
+  <h2>Four layers, one per member</h2>
+  <p>Data flows upward: geometry feeds the simulation, simulation results feed the viewer and the calculators, and the calculators feed design decisions. Layers only exchange files (JSON, OpenFOAM dictionaries, CSV), so each member can rerun their layer without breaking anyone else's. Owners are placeholders; assign one member to each.</p>
+
+  <div class="layers">
+
+    <article class="layer l4">
+      <div class="layer-head"><div><span class="tag">Layer 4</span><h3>Data, analysis and decisions</h3></div><span class="owner">Owner: [Member 4]</span></div>
+      <p>Turns numbers into decisions, and will take in real measurements once D01 exists. It answers questions like "how much airflow is left if we add this filter?" and "did the room clean up faster with the purifier on?"</p>
+      <div class="cols">
+        <div><h4>Main files</h4><ul>
+          <li><code>scripts/analysis/build_screening.py</code>, <code>fan_duty_screen.py</code>, <code>d01_pressure.py</code>: operating points and pressure budgets</li>
+          <li><code>scripts/monitoring/record_measurements.py</code>: imports sensor readings (JSONL) into a checked CSV</li>
+          <li><code>scripts/analysis/indoor_decay.py</code>: CADR = V × (k_on − k_off)</li>
+          <li><code>scripts/reports/*.py</code>: build the PDF packages</li>
+          <li><code>docs/PHASE18_*</code>, <code>docs/PHASE19_*</code>: decision matrices</li>
+        </ul></div>
+        <div><h4>Takes in → gives out</h4><ul>
+          <li>In: CFD results JSON, fan curves in <code>data/fans/</code>, filter data, future sensor logs</li>
+          <li>Out: <code>results/*.json</code>, checked CSV, CADR estimate, PDF reports</li>
+        </ul>
+        <h4>Read first</h4><ul>
+          <li><code>docs/build/START_HERE.md</code></li>
+          <li><code>docs/build/MEASUREMENT_RECORDING.md</code></li>
+          <li><code>docs/PRESSURE_DROP_BUDGET.md</code></li>
+        </ul></div>
+      </div>
+      <div class="status"><span class="chip ok">44 unit tests pass (synthetic data)</span><span class="chip warn">No real measurements yet</span><span class="chip no">Live sensor reading not built</span></div>
+    </article>
+
+    <article class="layer l3">
+      <div class="layer-head"><div><span class="tag">Layer 3</span><h3>Visualization (web viewer)</h3></div><span class="owner">Owner: [Member 3]</span></div>
+      <p>Shows the tower and the simulation results in a browser, so the guide, examiners and teammates can see the airflow without installing CFD software. This is the part that looks most like a digital twin.</p>
+      <div class="cols">
+        <div><h4>Main files</h4><ul>
+          <li><code>threejs/src/main.js</code>: entry point and the four modes (Architecture, Particle, CFD Summary, CFD Field)</li>
+          <li><code>threejs/src/scene/</code>: <code>createTower.js</code>, <code>createAirflow.js</code>, <code>createParticles.js</code>, <code>createCfdPlane.js</code></li>
+          <li><code>threejs/src/ui/</code>: panels, layer toggles, provenance panel</li>
+          <li><code>threejs/data/</code>: <code>towerConfig.js</code>, <code>cases.js</code>, <code>engineeringStatus.js</code></li>
+          <li><code>threejs/tools/cfd/export_scalar_planes.py</code>: pvpython export</li>
+        </ul></div>
+        <div><h4>Takes in → gives out</h4><ul>
+          <li>In: OpenFOAM fields, exported as 12 JSON slices into <code>threejs/public/data/cfd/</code></li>
+          <li>Out: interactive site, 518 kB build in <code>threejs/dist/</code></li>
+        </ul>
+        <h4>Run it</h4><ul>
+          <li><code>cd threejs</code>, <code>npm install</code>, <code>npm run dev</code></li>
+          <li>Open <code>http://localhost:5173</code></li>
+          <li>Details: <code>threejs/README.md</code></li>
+        </ul></div>
+      </div>
+      <div class="status"><span class="chip ok">T1–T3 complete</span><span class="chip warn">Shows the full tower (GEO_C), not D01</span><span class="chip no">No live data link</span></div>
+    </article>
+
+    <article class="layer l2">
+      <div class="layer-head"><div><span class="tag">Layer 2</span><h3>Simulation (CFD)</h3></div><span class="owner">Owner: [Member 2]</span></div>
+      <p>Predicts how air moves through the tower: how much flows, where it swirls back, how much pressure each filter costs and where particles end up. This is where the design mistakes were caught, including the 38–48% of air leaking around the HEPA filter.</p>
+      <div class="cols">
+        <div><h4>Main files</h4><ul>
+          <li><code>scripts/simulation/prepare_*.py</code>: write <code>blockMeshDict</code> and the fan boundary condition from JSON</li>
+          <li><code>scripts/simulation/run_*.sh</code>: run OpenFOAM in WSL</li>
+          <li><code>scripts/simulation/analyze_*.py</code>: extract flow, Δp and bypass</li>
+          <li><code>scripts/simulation/phase12b_particle_tracking.py</code>: 224 particles, 4 sizes</li>
+          <li><code>cfd/</code>: cases V00, V01_fan, GEO_A/B/C, FILTER_H13/CASE_M_SEALED</li>
+        </ul></div>
+        <div><h4>Takes in → gives out</h4><ul>
+          <li>In: tower geometry, fan curve <code>data/fans/systemair_KVO_250.json</code>, HEPA rated point (300 Pa at 2.84 m/s)</li>
+          <li>Out: flow fields, plus JSON and Markdown summaries in <code>results/</code></li>
+        </ul>
+        <h4>Read first</h4><ul>
+          <li><code>docs/CFD_V00.md</code>, <code>docs/GEOMETRY_OPTIMIZATION.md</code></li>
+          <li><code>docs/FILTER_BYPASS_FIX.md</code>, <code>docs/PARTICLE_CFD_V12B.md</code></li>
+        </ul></div>
+      </div>
+      <div class="status"><span class="chip ok">Empty tower, GEO_C, sealed HEPA: done</span><span class="chip warn">One mesh size, no independence study</span><span class="chip no">No CFD of D01; gas CFD blocked</span></div>
+    </article>
+
+    <article class="layer l1">
+      <div class="layer-head"><div><span class="tag">Layer 1</span><h3>Parametric geometry and CAD</h3></div><span class="owner">Owner: [Member 1]</span></div>
+      <p>Defines the physical shape. Dimensions are written in JSON, and Python scripts running inside FreeCAD build the 3D model, export it and check automatically that no two parts overlap. Changing a size means editing a number and rerunning a script.</p>
+      <div class="cols">
+        <div><h4>Main files</h4><ul>
+          <li><code>cad/parametric/*.json</code>: dimensions for each design branch</li>
+          <li><code>scripts/geometry/build_d01.py</code>, <code>detail_d01_*.py</code>, <code>adapt_d01_filter.py</code>: D01 assembly</li>
+          <li><code>scripts/geometry/create_*_study.py</code>: tower packaging studies (M02–M05)</li>
+          <li><code>scripts/geometry/verify_d01.py</code>: clash checks</li>
+          <li><code>reports/prototype_d01/</code>: FCStd, STEP, DXF, renders, BOM</li>
+        </ul></div>
+        <div><h4>Takes in → gives out</h4><ul>
+          <li>In: JSON dimensions, OEM drawings for fan and filter sizes</li>
+          <li>Out: <code>.FCStd</code>, <code>.step</code>, review-only <code>.dxf</code>, <code>geometry_checks.json</code></li>
+        </ul>
+        <h4>Read first</h4><ul>
+          <li><code>reports/prototype_d01/README.md</code></li>
+          <li><code>docs/build/PACKAGING_CAD_R00.md</code></li>
+          <li><code>docs/build/MECHANICAL_FILTER_PLAN.md</code></li>
+        </ul></div>
+      </div>
+      <div class="status"><span class="chip ok">D01 R03M: 493 objects, clashes clear</span><span class="chip warn">Not checked for strength or sealing</span><span class="chip no">Not released for fabrication</span></div>
+    </article>
+
+  </div>
+</section>
+
+<section>
+  <span class="eyebrow">How the layers connect</span>
+  <h2>Dependencies</h2>
+  <p>An arrow means "is an input to". The dashed line is the loop we have not built yet: real D01 measurements going back to correct the simulation. Building that loop is what would turn this digital model into a real digital twin.</p>
+  <div class="diagram">
+<pre class="mermaid">
+flowchart TB
+  subgraph EXT[External data]
+    FAN[Fan catalogue curves<br/>data/fans/*.json]
+    FIL[Filter data sheets<br/>single rated point]
+  end
+  subgraph L1[Layer 1: Geometry and CAD]
+    J[cad/parametric/*.json] --> FC[FreeCAD build scripts]
+    FC --> OUT1[FCStd / STEP / DXF<br/>clash audit JSON]
+  end
+  subgraph L2[Layer 2: Simulation]
+    PREP[prepare_*.py<br/>blockMeshDict + fan BC] --> OF[OpenFOAM 14<br/>foamRun, k-epsilon]
+    OF --> AN[analyze_*.py<br/>results JSON]
+    OF --> PT[particle tracking]
+  end
+  subgraph L3[Layer 3: Visualization]
+    PV[pvpython export<br/>JSON slices] --> TJ[Three.js viewer<br/>Vite build]
+  end
+  subgraph L4[Layer 4: Data and decisions]
+    SC[screening calculators] --> DM[decision matrices<br/>and PDF reports]
+    REC[record_measurements.py] --> DEC[indoor_decay.py<br/>CADR]
+  end
+  J --> PREP
+  FAN --> PREP
+  FAN --> SC
+  FIL --> PREP
+  FIL --> SC
+  OF --> PV
+  AN --> SC
+  PT --> TJ
+  D01[(D01 sensors<br/>not built yet)] --> REC
+  DEC -. planned feedback .-> PREP
+</pre>
+  </div>
+
+  <h3>If you change this, rerun that</h3>
+  <div class="tbl"><table>
+    <thead><tr><th>You change</th><th>Then rerun</th><th>Layers affected</th></tr></thead>
+    <tbody>
+      <tr><td>A dimension in <code>cad/parametric/*.json</code></td><td>The FreeCAD build script and its clash check. If it changes the full tower's air path: prepare, OpenFOAM, analyze, pvpython export, viewer build</td><td>1, 2, 3, 4</td></tr>
+      <tr><td>A fan curve in <code>data/fans/</code></td><td>The CFD case with the new fan, then the screening calculators</td><td>2, 4</td></tr>
+      <tr><td>Filter resistance data from a supplier</td><td><code>build_screening.py</code> or <code>d01_pressure.py</code>; the HEPA porous coefficient if it is the H13</td><td>2, 4</td></tr>
+      <tr><td>A CFD result</td><td><code>export_scalar_planes.py</code> (pvpython), then <code>npm run build</code></td><td>3, 4</td></tr>
+      <tr><td>Viewer code in <code>threejs/src/</code></td><td><code>npm run build</code> only; no CFD rerun</td><td>3</td></tr>
+      <tr><td>New sensor readings</td><td><code>record_measurements.py</code>, then <code>indoor_decay.py</code></td><td>4</td></tr>
+    </tbody>
+  </table></div>
+</section>
+
+<section>
+  <span class="eyebrow">Tools</span>
+  <h2>Tech stack</h2>
+  <div class="tbl"><table>
+    <thead><tr><th>Layer</th><th>Language and tools</th><th>Version</th><th>Runs on</th></tr></thead>
+    <tbody>
+      <tr><td><span class="swatch sw1"></span>1 Geometry</td><td>Python scripts inside FreeCAD; STEP and DXF export</td><td>FreeCAD 1.1.3</td><td>Windows (FreeCAD's own Python)</td></tr>
+      <tr><td><span class="swatch sw2"></span>2 Simulation</td><td>OpenFOAM: blockMesh, foamRun (incompressibleFluid), k-epsilon RANS, coded fan boundary condition, porous baffle; Python for prep and analysis</td><td>OpenFOAM 14</td><td>Ubuntu in WSL</td></tr>
+      <tr><td><span class="swatch sw3"></span>3 Visualization</td><td>JavaScript, Three.js, Vite; ParaView pvpython for export</td><td>three 0.167, Vite 5.4, ParaView 5.11, Node 24</td><td>Browser; export in WSL</td></tr>
+      <tr><td><span class="swatch sw4"></span>4 Data</td><td>Python standard library (recorder, decay tool), NumPy, SciPy, Matplotlib, unittest</td><td>Python 3.13</td><td>Windows</td></tr>
+      <tr><td>Shared</td><td>Git, Markdown docs, JSON as the exchange format</td><td>Git 2.51</td><td>Windows 11 laptop (i7-13650HX, 16 GB)</td></tr>
+    </tbody>
+  </table></div>
+  <p class="note">Install order on a new machine: Git, Python 3.13, Node.js and npm, FreeCAD 1.1.3, then WSL Ubuntu with OpenFOAM 14 and ParaView 5.11. Only Layer 2 and the CFD export need WSL. Exact versions are in <code>docs/ENVIRONMENT.md</code>.</p>
+</section>
+
+<section>
+  <span class="eyebrow">How we got here</span>
+  <h2>Phase history</h2>
+  <ol class="timeline">
+    <li><b>Phases 1–5:</b> environment setup, concept, first CAD (V00) and first CFD with a placeholder fan.</li>
+    <li><b>Phases 6–7:</b> real fan chosen (KVO 250) and coupled to the CFD through its catalogue curve.</li>
+    <li><b>Phase 8:</b> three geometry variants; GEO_C cut modelled pressure loss from 17.3 to 3.5 Pa.</li>
+    <li><b>Phases 9–10:</b> HEPA filter added, 38–48% bypass found and sealed, 1,332 m³/h predicted.</li>
+    <li><b>Phases 11–12:</b> HEPA evidence audit, CADR method, particle tracking (about 62% reach the filter).</li>
+    <li><b>Phases 13–17:</b> carbon stage research, formaldehyde chosen as target gas, bench test rig and procurement plan. No hardware bought.</li>
+    <li><b>Phases 18–19:</b> water spray rejected, G4 pre-filter specified.</li>
+    <li><b>October 2026:</b> build planning: packaging CAD, electrical plan, measurement tools and the D01 indoor demonstrator.</li>
+  </ol>
+</section>
+
+<footer>
+  Compiled from the AQI-TOWER repository: README, CHANGELOG, docs/build/START_HERE.md and results/. Member owners are placeholders. Model and screening values are predictions, not measurements.
+</footer>
+
+</div>

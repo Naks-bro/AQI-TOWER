@@ -1,0 +1,167 @@
+{
+  "status": "CAD VOLUMES ONLY; MATERIAL/GRADE NOT SELECTED",
+  "source": "cad/packaging/AQI_M03_Independent_Housing_STUDY.FCStd",
+  "sha256_unchanged": "42a6283bbc3ab8b85a9a9f1857455b86e2f85d4dc7a44148634cdafd66d93a02",
+  "parts": [
+    {
+      "part": "Shell",
+      "group": "cosmetic_casing",
+      "volume_mm3": 11376568.561427355
+    },
+    {
+      "part": "HEPAServiceDoor",
+      "group": "cosmetic_casing",
+      "volume_mm3": 486524.72760875337
+    },
+    {
+      "part": "PrefilterServiceDoor",
+      "group": "cosmetic_casing",
+      "volume_mm3": 128785.95730819972
+    },
+    {
+      "part": "HEPARetainerEnvelope",
+      "group": "seats_and_retainer",
+      "volume_mm3": 418600.00000000047
+    },
+    {
+      "part": "Transition",
+      "group": "airpath",
+      "volume_mm3": 694312.8089130651
+    },
+    {
+      "part": "InletNeck",
+      "group": "airpath",
+      "volume_mm3": 19917.69742375944
+    },
+    {
+      "part": "StraightOutlet",
+      "group": "airpath",
+      "volume_mm3": 398353.9484751858
+    },
+    {
+      "part": "Post1",
+      "group": "frame",
+      "volume_mm3": 729600.0000000002
+    },
+    {
+      "part": "Post2",
+      "group": "frame",
+      "volume_mm3": 729600.0000000002
+    },
+    {
+      "part": "Post3",
+      "group": "frame",
+      "volume_mm3": 729600.0000000002
+    },
+    {
+      "part": "Post4",
+      "group": "frame",
+      "volume_mm3": 729600.0000000002
+    },
+    {
+      "part": "Rail1XNeg",
+      "group": "frame",
+      "volume_mm3": 255360.0
+    },
+    {
+      "part": "Rail1YNeg",
+      "group": "frame",
+      "volume_mm3": 140160.00000000012
+    },
+    {
+      "part": "Rail1XPos",
+      "group": "frame",
+      "volume_mm3": 255360.0
+    },
+    {
+      "part": "Rail1YPos",
+      "group": "frame",
+      "volume_mm3": 140160.00000000012
+    },
+    {
+      "part": "Rail2YNeg",
+      "group": "frame",
+      "volume_mm3": 140160.00000000012
+    },
+    {
+      "part": "Rail2YPos",
+      "group": "frame",
+      "volume_mm3": 140160.00000000012
+    },
+    {
+      "part": "Rail3YNeg",
+      "group": "frame",
+      "volume_mm3": 140160.00000000012
+    },
+    {
+      "part": "Rail3YPos",
+      "group": "frame",
+      "volume_mm3": 140160.00000000012
+    },
+    {
+      "part": "Rail4XNeg",
+      "group": "frame",
+      "volume_mm3": 255360.0
+    },
+    {
+      "part": "Rail4YNeg",
+      "group": "frame",
+      "volume_mm3": 140160.00000000012
+    },
+    {
+      "part": "Rail4XPos",
+      "group": "frame",
+      "volume_mm3": 255360.0
+    },
+    {
+      "part": "Rail4YPos",
+      "group": "frame",
+      "volume_mm3": 140160.00000000012
+    },
+    {
+      "part": "LowerIntakeHousing",
+      "group": "inner_housing_panels",
+      "volume_mm3": 907143.999999973
+    },
+    {
+      "part": "IndependentPrefilterSeat",
+      "group": "seats_and_retainer",
+      "volume_mm3": 581525.0000000007
+    },
+    {
+      "part": "IndependentHEPASeat",
+      "group": "seats_and_retainer",
+      "volume_mm3": 575900.0000000005
+    },
+    {
+      "part": "DirtyHousing",
+      "group": "inner_housing_panels",
+      "volume_mm3": 906969.9999999963
+    },
+    {
+      "part": "DirtyHousingServicePanel",
+      "group": "inner_housing_panels",
+      "volume_mm3": 82550.0
+    },
+    {
+      "part": "CleanHousing",
+      "group": "inner_housing_panels",
+      "volume_mm3": 1262443.9999999702
+    },
+    {
+      "part": "CleanHousingServicePanel",
+      "group": "inner_housing_panels",
+      "volume_mm3": 393700.00000000006
+    },
+    {
+      "part": "HousingBottom",
+      "group": "inner_housing_panels",
+      "volume_mm3": 852818.0000000001
+    },
+    {
+      "part": "HousingTopAdapterSeat",
+      "group": "inner_housing_panels",
+      "volume_mm3": 218880.00000000003
+    }
+  ]
+}

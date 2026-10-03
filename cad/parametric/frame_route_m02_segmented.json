@@ -1,0 +1,21 @@
+{
+  "revision": "SEGMENTED_R01",
+  "status": "SEGMENTED CAPPED POST FIT STUDY — NOT STRUCTURAL OR LEAKAGE APPROVAL",
+  "units": "mm",
+  "post_x": 350,
+  "post_y": 200,
+  "post_start_z": 150,
+  "post_end_z": 2050,
+  "post_segments_z": [[150, 445], [450, 640], [645, 2050]],
+  "cap_vertical_posts": true,
+  "profile_outer": 35,
+  "profile_wall": 3,
+  "rail_top_z": [185, 445, 640, 1190],
+  "notes": [
+    "ASSUMED segmented support route; existing filter bulkheads remain unperforated",
+    "Post end closures are ideal CAD geometry, not approved welded cap details",
+    "Loads transfer through bulkheads; bearing, bending, local buckling and joints NOT checked",
+    "Rail ends and real tube joints still require sealing review",
+    "No approved material/profile, base/feet/anchors, fan cradle or actual gasket design"
+  ]
+}

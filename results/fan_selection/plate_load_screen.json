@@ -1,0 +1,320 @@
+{
+  "status": "LOAD-TRANSFER SENSITIVITY ONLY; NO PLATE/JOINING RELEASE",
+  "partial_plane_subtotals_with_candidate_fan_kg": {
+    "HEPA_upper_face": 49.3288343702743,
+    "prefilter_upper_face": 73.36811083707254
+  },
+  "subtotal_note": "Not actual load ratings or total machine weights; missing loads are NOT zero",
+  "cases": {
+    "partial_HEPA_concentric": {
+      "mass_kg_ASSUMED": 49.3288343702743,
+      "eccentricity_m_ASSUMED": [
+        0,
+        0
+      ],
+      "additional_reaction_first_moments_Nm_ASSUMED": [
+        0,
+        0
+      ],
+      "weight_N": 483.9158651723909,
+      "target_first_moments_Nm": [
+        0.0,
+        0.0
+      ],
+      "contacts": [
+        {
+          "x_m": 0.35,
+          "y_m": 0.2,
+          "reaction_N": 120.97896629309773,
+          "nominal_compression_average_MPa": 0.09875833983110019
+        },
+        {
+          "x_m": -0.35,
+          "y_m": 0.2,
+          "reaction_N": 120.97896629309773,
+          "nominal_compression_average_MPa": 0.09875833983110019
+        },
+        {
+          "x_m": -0.35,
+          "y_m": -0.2,
+          "reaction_N": 120.97896629309773,
+          "nominal_compression_average_MPa": 0.09875833983110019
+        },
+        {
+          "x_m": 0.35,
+          "y_m": -0.2,
+          "reaction_N": 120.97896629309773,
+          "nominal_compression_average_MPa": 0.09875833983110019
+        }
+      ],
+      "contact_only_model_valid": true,
+      "structural_approval": "UNKNOWN: no allowable stress or joint rating established"
+    },
+    "partial_prefilter_concentric": {
+      "mass_kg_ASSUMED": 73.36811083707254,
+      "eccentricity_m_ASSUMED": [
+        0,
+        0
+      ],
+      "additional_reaction_first_moments_Nm_ASSUMED": [
+        0,
+        0
+      ],
+      "weight_N": 719.7411673116816,
+      "target_first_moments_Nm": [
+        0.0,
+        0.0
+      ],
+      "contacts": [
+        {
+          "x_m": 0.35,
+          "y_m": 0.2,
+          "reaction_N": 179.9352918279204,
+          "nominal_compression_average_MPa": 0.14688595251258807
+        },
+        {
+          "x_m": -0.35,
+          "y_m": 0.2,
+          "reaction_N": 179.9352918279204,
+          "nominal_compression_average_MPa": 0.14688595251258807
+        },
+        {
+          "x_m": -0.35,
+          "y_m": -0.2,
+          "reaction_N": 179.9352918279204,
+          "nominal_compression_average_MPa": 0.14688595251258807
+        },
+        {
+          "x_m": 0.35,
+          "y_m": -0.2,
+          "reaction_N": 179.9352918279204,
+          "nominal_compression_average_MPa": 0.14688595251258807
+        }
+      ],
+      "contact_only_model_valid": true,
+      "structural_approval": "UNKNOWN: no allowable stress or joint rating established"
+    },
+    "HEPA_plus_ASSUMED_20kg_missing_components": {
+      "mass_kg_ASSUMED": 69.32883437027431,
+      "eccentricity_m_ASSUMED": [
+        0,
+        0
+      ],
+      "additional_reaction_first_moments_Nm_ASSUMED": [
+        0,
+        0
+      ],
+      "weight_N": 680.115865172391,
+      "target_first_moments_Nm": [
+        0.0,
+        0.0
+      ],
+      "contacts": [
+        {
+          "x_m": 0.35,
+          "y_m": 0.2,
+          "reaction_N": 170.02896629309774,
+          "nominal_compression_average_MPa": 0.1387991561576308
+        },
+        {
+          "x_m": -0.35,
+          "y_m": 0.2,
+          "reaction_N": 170.02896629309774,
+          "nominal_compression_average_MPa": 0.1387991561576308
+        },
+        {
+          "x_m": -0.35,
+          "y_m": -0.2,
+          "reaction_N": 170.02896629309774,
+          "nominal_compression_average_MPa": 0.1387991561576308
+        },
+        {
+          "x_m": 0.35,
+          "y_m": -0.2,
+          "reaction_N": 170.02896629309774,
+          "nominal_compression_average_MPa": 0.1387991561576308
+        }
+      ],
+      "contact_only_model_valid": true,
+      "structural_approval": "UNKNOWN: no allowable stress or joint rating established"
+    },
+    "HEPA_plus_20kg_ASSUMED_offset_150x100mm": {
+      "mass_kg_ASSUMED": 69.32883437027431,
+      "eccentricity_m_ASSUMED": [
+        0.15,
+        0.1
+      ],
+      "additional_reaction_first_moments_Nm_ASSUMED": [
+        0,
+        0
+      ],
+      "weight_N": 680.115865172391,
+      "target_first_moments_Nm": [
+        68.0115865172391,
+        102.01737977585864
+      ],
+      "contacts": [
+        {
+          "x_m": 0.35,
+          "y_m": 0.2,
+          "reaction_N": 327.91300642240276,
+          "nominal_compression_average_MPa": 0.2676840868754308
+        },
+        {
+          "x_m": -0.35,
+          "y_m": 0.2,
+          "reaction_N": 182.17389245689043,
+          "nominal_compression_average_MPa": 0.14871338159746159
+        },
+        {
+          "x_m": -0.35,
+          "y_m": -0.2,
+          "reaction_N": 12.14492616379269,
+          "nominal_compression_average_MPa": 0.009914225439830768
+        },
+        {
+          "x_m": 0.35,
+          "y_m": -0.2,
+          "reaction_N": 157.88404012930505,
+          "nominal_compression_average_MPa": 0.12888493071780005
+        }
+      ],
+      "contact_only_model_valid": true,
+      "structural_approval": "UNKNOWN: no allowable stress or joint rating established"
+    },
+    "HEPA_plus_20kg_ASSUMED_200N_lateral_at_1_2m": {
+      "mass_kg_ASSUMED": 69.32883437027431,
+      "eccentricity_m_ASSUMED": [
+        0,
+        0
+      ],
+      "additional_reaction_first_moments_Nm_ASSUMED": [
+        110.99999999999999,
+        0
+      ],
+      "weight_N": 680.115865172391,
+      "target_first_moments_Nm": [
+        110.99999999999999,
+        0.0
+      ],
+      "contacts": [
+        {
+          "x_m": 0.35,
+          "y_m": 0.2,
+          "reaction_N": 308.7789662930977,
+          "nominal_compression_average_MPa": 0.2520644622800798
+        },
+        {
+          "x_m": -0.35,
+          "y_m": 0.2,
+          "reaction_N": 308.7789662930977,
+          "nominal_compression_average_MPa": 0.2520644622800798
+        },
+        {
+          "x_m": -0.35,
+          "y_m": -0.2,
+          "reaction_N": 31.278966293097767,
+          "nominal_compression_average_MPa": 0.02553385003518185
+        },
+        {
+          "x_m": 0.35,
+          "y_m": -0.2,
+          "reaction_N": 31.278966293097767,
+          "nominal_compression_average_MPa": 0.02553385003518185
+        }
+      ],
+      "contact_only_model_valid": true,
+      "structural_approval": "UNKNOWN: no allowable stress or joint rating established"
+    },
+    "HEPA_plus_20kg_ASSUMED_300N_lateral_at_1_2m": {
+      "mass_kg_ASSUMED": 69.32883437027431,
+      "eccentricity_m_ASSUMED": [
+        0,
+        0
+      ],
+      "additional_reaction_first_moments_Nm_ASSUMED": [
+        166.49999999999997,
+        0
+      ],
+      "weight_N": 680.115865172391,
+      "target_first_moments_Nm": [
+        166.49999999999997,
+        0.0
+      ],
+      "contacts": [
+        {
+          "x_m": 0.35,
+          "y_m": 0.2,
+          "reaction_N": 378.1539662930977,
+          "nominal_compression_average_MPa": 0.30869711534130423
+        },
+        {
+          "x_m": -0.35,
+          "y_m": 0.2,
+          "reaction_N": 378.1539662930977,
+          "nominal_compression_average_MPa": 0.30869711534130423
+        },
+        {
+          "x_m": -0.35,
+          "y_m": -0.2,
+          "reaction_N": -38.096033706902205,
+          "nominal_compression_average_MPa": 0.0
+        },
+        {
+          "x_m": 0.35,
+          "y_m": -0.2,
+          "reaction_N": -38.096033706902205,
+          "nominal_compression_average_MPa": 0.0
+        }
+      ],
+      "contact_only_model_valid": false,
+      "structural_approval": "UNKNOWN: no allowable stress or joint rating established"
+    }
+  },
+  "cap_projected_alignment_examples_mm2": [
+    {
+      "dx_mm": 0,
+      "dy_mm": 0,
+      "projected_overlap_mm2": 1225
+    },
+    {
+      "dx_mm": 1,
+      "dy_mm": 1,
+      "projected_overlap_mm2": 1156
+    },
+    {
+      "dx_mm": 3,
+      "dy_mm": 3,
+      "projected_overlap_mm2": 1024
+    },
+    {
+      "dx_mm": 5,
+      "dy_mm": 5,
+      "projected_overlap_mm2": 900
+    }
+  ],
+  "pressure_example_500Pa_HEPA_gross_face_force_N": 175.8245,
+  "assumptions": [
+    "Rigid load-distribution plane, four equal-stiffness supports",
+    "Caps nominally aligned at x +/-350 and y +/-200 mm",
+    "Plate flexibility, frame racking and joint preload ignored",
+    "Moments are demand first moments of vertical reactions; not a signed external-load specification",
+    "Negative reaction means contact-only linear model invalid; no redistribution or anchor design",
+    "Nominal force/1225 mm2 is not peak bearing, plate bending, cap or weld stress",
+    "Positive reactions do not establish whole-device tipping/sliding safety"
+  ],
+  "source_sha256": {
+    "cad/packaging/AQI_M02_Segmented_Frame_STUDY.FCStd": "8bb50862e6136618fe2b9838c47f1fdda3f906709281dbeac0555cbfbef3d70f",
+    "cad/packaging/AQI_M04_Airpath_STUDY.FCStd": "25d39edc9d2f32d1128eebc669a9da464fefda6a16668f441d3e7812d4e8f320",
+    "cad/packaging/AQI_Cylindrical_Packaging_R02.FCStd": "5977058d385267a60b9b54e6c7ffdc6d7c9b6c5e6649195c45999c88bd0c4db2"
+  },
+  "unknowns": [
+    "shell/doors (attachment load path unknown)",
+    "actual filter masses",
+    "gasket, mounts, joints, guards, wiring and electronics",
+    "base, floor and any ballast",
+    "material grade/allowables",
+    "actual connection stiffness and tolerance",
+    "gasket compression and allowable seal-plane deflection"
+  ]
+}
