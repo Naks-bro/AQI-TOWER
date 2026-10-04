@@ -1,0 +1,6904 @@
+[
+  {
+    "id": "M01_Base",
+    "kind": "panel",
+    "x_mm": 550.0,
+    "y_mm": 360.0,
+    "z_mm": 9.0,
+    "volume_mm3": 1780854.8894777661,
+    "centre_mm": [
+      275.00000000000006,
+      180.00000000000009,
+      24.499999999999996
+    ],
+    "note": "PROPOSED GEOMETRY; review required"
+  },
+  {
+    "id": "M02_Left",
+    "kind": "panel",
+    "x_mm": 9.0,
+    "y_mm": 360.0,
+    "z_mm": 542.0,
+    "volume_mm3": 1754934.8894777661,
+    "centre_mm": [
+      4.500000000000001,
+      180.00000000000006,
+      299.9967374558194
+    ],
+    "note": "PROPOSED GEOMETRY; review required"
+  },
+  {
+    "id": "M02_Right",
+    "kind": "panel",
+    "x_mm": 9.0,
+    "y_mm": 360.0,
+    "z_mm": 542.0,
+    "volume_mm3": 1754934.8894777661,
+    "centre_mm": [
+      545.5,
+      180.00000000000006,
+      299.9967374558194
+    ],
+    "note": "PROPOSED GEOMETRY; review required"
+  },
+  {
+    "id": "M03_Seat_Front",
+    "kind": "panel",
+    "x_mm": 532.0,
+    "y_mm": 9.0,
+    "z_mm": 542.0,
+    "volume_mm3": 603567.7370167692,
+    "centre_mm": [
+      274.99999999999983,
+      4.499999999999985,
+      283.75626147050946
+    ],
+    "note": "PROPOSED GEOMETRY; review required"
+  },
+  {
+    "id": "S01_Filter_seal_Front",
+    "kind": "seal",
+    "x_mm": 495.29999999999995,
+    "y_mm": 3.0,
+    "z_mm": 495.29999999999995,
+    "volume_mm3": 58235.99999999991,
+    "centre_mm": [
+      274.99999999999983,
+      -1.4999999999999987,
+      304.99999999999994
+    ],
+    "note": "ASSUMED 4mm free foam to3mm installed; compression force and frame landing unverified"
+  },
+  {
+    "id": "M03_Seat_Rear",
+    "kind": "panel",
+    "x_mm": 532.0,
+    "y_mm": 9.0,
+    "z_mm": 542.0,
+    "volume_mm3": 603567.7370167692,
+    "centre_mm": [
+      274.99999999999983,
+      355.50000000000045,
+      283.75626147050946
+    ],
+    "note": "PROPOSED GEOMETRY; review required"
+  },
+  {
+    "id": "S01_Filter_seal_Rear",
+    "kind": "seal",
+    "x_mm": 495.29999999999995,
+    "y_mm": 3.0,
+    "z_mm": 495.29999999999995,
+    "volume_mm3": 58235.99999999991,
+    "centre_mm": [
+      274.99999999999983,
+      361.5000000000003,
+      304.99999999999994
+    ],
+    "note": "ASSUMED 4mm free foam to3mm installed; compression force and frame landing unverified"
+  },
+  {
+    "id": "S02_Fan_seal_1",
+    "kind": "seal",
+    "x_mm": 140.0,
+    "y_mm": 140.0,
+    "z_mm": 1.0,
+    "volume_mm3": 5391.644569315585,
+    "centre_mm": [
+      200.00000000000017,
+      105.00000000000003,
+      580.5000000000007
+    ],
+    "note": "PROPOSED GEOMETRY; review required"
+  },
+  {
+    "id": "F02_P14_Max_1",
+    "kind": "fan",
+    "x_mm": 140.0,
+    "y_mm": 140.0,
+    "z_mm": 27.0,
+    "volume_mm3": 194585.88243233695,
+    "centre_mm": [
+      199.99999999999997,
+      104.99999999999997,
+      594.3415801557321
+    ],
+    "note": "OEM140x140x27,125pitch; simplified rotor, no claimed rotor clearance"
+  },
+  {
+    "id": "S02_Fan_seal_2",
+    "kind": "seal",
+    "x_mm": 140.0,
+    "y_mm": 140.0,
+    "z_mm": 1.0,
+    "volume_mm3": 5391.644569315585,
+    "centre_mm": [
+      350.00000000000006,
+      105.00000000000003,
+      580.5000000000007
+    ],
+    "note": "PROPOSED GEOMETRY; review required"
+  },
+  {
+    "id": "F02_P14_Max_2",
+    "kind": "fan",
+    "x_mm": 140.0,
+    "y_mm": 140.0,
+    "z_mm": 27.0,
+    "volume_mm3": 194585.8824323369,
+    "centre_mm": [
+      349.99999999999983,
+      104.99999999999999,
+      594.3415801557322
+    ],
+    "note": "OEM140x140x27,125pitch; simplified rotor, no claimed rotor clearance"
+  },
+  {
+    "id": "S02_Fan_seal_3",
+    "kind": "seal",
+    "x_mm": 140.0,
+    "y_mm": 140.0,
+    "z_mm": 1.0,
+    "volume_mm3": 5391.644569315585,
+    "centre_mm": [
+      200.00000000000017,
+      255.00000000000023,
+      580.5000000000007
+    ],
+    "note": "PROPOSED GEOMETRY; review required"
+  },
+  {
+    "id": "F02_P14_Max_3",
+    "kind": "fan",
+    "x_mm": 140.0,
+    "y_mm": 140.0,
+    "z_mm": 27.0,
+    "volume_mm3": 194585.88243233692,
+    "centre_mm": [
+      200.00000000000003,
+      254.99999999999997,
+      594.3415801557321
+    ],
+    "note": "OEM140x140x27,125pitch; simplified rotor, no claimed rotor clearance"
+  },
+  {
+    "id": "S02_Fan_seal_4",
+    "kind": "seal",
+    "x_mm": 140.0,
+    "y_mm": 140.0,
+    "z_mm": 1.0,
+    "volume_mm3": 5391.6445693155865,
+    "centre_mm": [
+      350.0,
+      255.00000000000014,
+      580.5000000000005
+    ],
+    "note": "PROPOSED GEOMETRY; review required"
+  },
+  {
+    "id": "F02_P14_Max_4",
+    "kind": "fan",
+    "x_mm": 140.0,
+    "y_mm": 140.0,
+    "z_mm": 27.0,
+    "volume_mm3": 194585.88243233692,
+    "centre_mm": [
+      349.9999999999998,
+      254.9999999999999,
+      594.341580155732
+    ],
+    "note": "OEM140x140x27,125pitch; simplified rotor, no claimed rotor clearance"
+  },
+  {
+    "id": "M06_Fan_plate",
+    "kind": "panel",
+    "x_mm": 550.0,
+    "y_mm": 360.0,
+    "z_mm": 9.0,
+    "volume_mm3": 1268781.5387120093,
+    "centre_mm": [
+      275.0000000000004,
+      180.00000000000017,
+      575.5000000000014
+    ],
+    "note": "R02G guard holes x105/445, y60/120/240/300. Separate inner/outer fixings. Other R01 holes retained."
+  },
+  {
+    "id": "M07_Cleat_9_9",
+    "kind": "support",
+    "x_mm": 20.0,
+    "y_mm": 20.0,
+    "z_mm": 542.0,
+    "volume_mm3": 212697.2763439526,
+    "centre_mm": [
+      18.987316044955328,
+      19.0,
+      299.93638405734964
+    ],
+    "note": "PROPOSED GEOMETRY; review required"
+  },
+  {
+    "id": "M07_Cleat_9_331",
+    "kind": "support",
+    "x_mm": 20.0,
+    "y_mm": 20.0,
+    "z_mm": 542.0,
+    "volume_mm3": 212697.2763439526,
+    "centre_mm": [
+      18.987316044955328,
+      340.99999999999994,
+      299.93638405734964
+    ],
+    "note": "PROPOSED GEOMETRY; review required"
+  },
+  {
+    "id": "M07_Cleat_521_9",
+    "kind": "support",
+    "x_mm": 20.0,
+    "y_mm": 20.0,
+    "z_mm": 542.0,
+    "volume_mm3": 212697.27634395263,
+    "centre_mm": [
+      531.0126839550445,
+      19.0,
+      299.9363840573497
+    ],
+    "note": "PROPOSED GEOMETRY; review required"
+  },
+  {
+    "id": "M07_Cleat_521_331",
+    "kind": "support",
+    "x_mm": 20.0,
+    "y_mm": 20.0,
+    "z_mm": 542.0,
+    "volume_mm3": 212697.27634395263,
+    "centre_mm": [
+      531.0126839550445,
+      341.00000000000006,
+      299.9363840573497
+    ],
+    "note": "PROPOSED GEOMETRY; review required"
+  },
+  {
+    "id": "M08_Foot_25_15",
+    "kind": "support",
+    "x_mm": 30.0,
+    "y_mm": 30.0,
+    "z_mm": 20.0,
+    "volume_mm3": 16807.176539340126,
+    "centre_mm": [
+      39.99999999999999,
+      30.0,
+      10.28625002024584
+    ],
+    "note": "Proposed30x30x20 foot,4.5 through bore and12dia x9 underside recess. Exact foot material/load/compression/tear capacity unselected."
+  },
+  {
+    "id": "M08_Foot_25_315",
+    "kind": "support",
+    "x_mm": 30.0,
+    "y_mm": 30.0,
+    "z_mm": 20.0,
+    "volume_mm3": 16807.176539340126,
+    "centre_mm": [
+      39.99999999999999,
+      330.0,
+      10.28625002024584
+    ],
+    "note": "Proposed30x30x20 foot,4.5 through bore and12dia x9 underside recess. Exact foot material/load/compression/tear capacity unselected."
+  },
+  {
+    "id": "M08_Foot_495_15",
+    "kind": "support",
+    "x_mm": 30.0,
+    "y_mm": 30.0,
+    "z_mm": 20.0,
+    "volume_mm3": 16807.176539340126,
+    "centre_mm": [
+      510.0000000000001,
+      30.000000000000004,
+      10.28625002024584
+    ],
+    "note": "Proposed30x30x20 foot,4.5 through bore and12dia x9 underside recess. Exact foot material/load/compression/tear capacity unselected."
+  },
+  {
+    "id": "M08_Foot_495_315",
+    "kind": "support",
+    "x_mm": 30.0,
+    "y_mm": 30.0,
+    "z_mm": 20.0,
+    "volume_mm3": 16807.176539340126,
+    "centre_mm": [
+      510.0000000000001,
+      330.00000000000006,
+      10.28625002024584
+    ],
+    "note": "Proposed30x30x20 foot,4.5 through bore and12dia x9 underside recess. Exact foot material/load/compression/tear capacity unselected."
+  },
+  {
+    "id": "E01_Control_box_RESERVATION",
+    "kind": "reservation",
+    "x_mm": 40.0,
+    "y_mm": 140.0,
+    "z_mm": 100.0,
+    "volume_mm3": 560000.0,
+    "centre_mm": [
+      570.0,
+      180.0,
+      439.9999999999999
+    ],
+    "note": "140x100x40 external reservation; exact enclosure, mounting, glands and routing NOT detailed"
+  },
+  {
+    "id": "H10_False_19_19",
+    "kind": "hardware",
+    "x_mm": 2.3977239944844513,
+    "y_mm": 2.398861727312081,
+    "z_mm": 25.0,
+    "volume_mm3": 113.09733552923254,
+    "centre_mm": [
+      19.0,
+      19.0,
+      31.5
+    ],
+    "note": "Proposed4x25 wood screw, core-only envelope. Pilot/core are not actual threads. Head/washer separate; end-grain withdrawal and torque unverified."
+  },
+  {
+    "id": "H10_False_19_341",
+    "kind": "hardware",
+    "x_mm": 2.3977239944844513,
+    "y_mm": 2.3988617273121235,
+    "z_mm": 25.0,
+    "volume_mm3": 113.09733552923275,
+    "centre_mm": [
+      18.999999999999993,
+      341.0,
+      31.5
+    ],
+    "note": "Proposed4x25 wood screw, core-only envelope. Pilot/core are not actual threads. Head/washer separate; end-grain withdrawal and torque unverified."
+  },
+  {
+    "id": "H10_False_531_19",
+    "kind": "hardware",
+    "x_mm": 2.3977239944845223,
+    "y_mm": 2.398861727312081,
+    "z_mm": 25.0,
+    "volume_mm3": 113.09733552923335,
+    "centre_mm": [
+      531.0,
+      19.0,
+      31.5
+    ],
+    "note": "Proposed4x25 wood screw, core-only envelope. Pilot/core are not actual threads. Head/washer separate; end-grain withdrawal and torque unverified."
+  },
+  {
+    "id": "H10_False_531_341",
+    "kind": "hardware",
+    "x_mm": 2.3977239944845223,
+    "y_mm": 2.3988617273121235,
+    "z_mm": 25.0,
+    "volume_mm3": 113.09733552923359,
+    "centre_mm": [
+      531.0,
+      341.0,
+      31.5
+    ],
+    "note": "Proposed4x25 wood screw, core-only envelope. Pilot/core are not actual threads. Head/washer separate; end-grain withdrawal and torque unverified."
+  },
+  {
+    "id": "H10_True_19_19",
+    "kind": "hardware",
+    "x_mm": 2.3977239944844513,
+    "y_mm": 2.398861727312081,
+    "z_mm": 20.0,
+    "volume_mm3": 90.47786842338604,
+    "centre_mm": [
+      19.0,
+      19.0,
+      571.0
+    ],
+    "note": "Proposed4x20 wood screw, core-only envelope. Pilot/core are not actual threads. Head/washer separate; end-grain withdrawal and torque unverified."
+  },
+  {
+    "id": "H10_True_19_341",
+    "kind": "hardware",
+    "x_mm": 2.3977239944844513,
+    "y_mm": 2.3988617273121235,
+    "z_mm": 20.0,
+    "volume_mm3": 90.47786842338621,
+    "centre_mm": [
+      18.999999999999996,
+      341.0,
+      571.0
+    ],
+    "note": "Proposed4x20 wood screw, core-only envelope. Pilot/core are not actual threads. Head/washer separate; end-grain withdrawal and torque unverified."
+  },
+  {
+    "id": "H10_True_531_19",
+    "kind": "hardware",
+    "x_mm": 2.3977239944845223,
+    "y_mm": 2.398861727312081,
+    "z_mm": 20.0,
+    "volume_mm3": 90.4778684233867,
+    "centre_mm": [
+      531.0,
+      19.0,
+      571.0
+    ],
+    "note": "Proposed4x20 wood screw, core-only envelope. Pilot/core are not actual threads. Head/washer separate; end-grain withdrawal and torque unverified."
+  },
+  {
+    "id": "H10_True_531_341",
+    "kind": "hardware",
+    "x_mm": 2.3977239944845223,
+    "y_mm": 2.3988617273121235,
+    "z_mm": 20.0,
+    "volume_mm3": 90.47786842338688,
+    "centre_mm": [
+      531.0,
+      341.0,
+      571.0
+    ],
+    "note": "Proposed4x20 wood screw, core-only envelope. Pilot/core are not actual threads. Head/washer separate; end-grain withdrawal and torque unverified."
+  },
+  {
+    "id": "E02_Cable_corridor_0",
+    "kind": "reservation",
+    "x_mm": 130.0,
+    "y_mm": 11.996270184009802,
+    "z_mm": 12.0,
+    "volume_mm3": 14702.65361880022,
+    "centre_mm": [
+      500.0,
+      180.00000000000003,
+      595.0000000000001
+    ],
+    "note": "12mm corridor is NOT a drilled gland hole. Select closed-entry gland/connector and restraint; preserve guard access protection."
+  },
+  {
+    "id": "E02_Cable_corridor_1",
+    "kind": "reservation",
+    "x_mm": 12.0,
+    "y_mm": 11.996270184009802,
+    "z_mm": 105.0,
+    "volume_mm3": 11875.22023056941,
+    "centre_mm": [
+      565.0,
+      180.00000000000003,
+      542.5
+    ],
+    "note": "12mm corridor is NOT a drilled gland hole. Select closed-entry gland/connector and restraint; preserve guard access protection."
+  },
+  {
+    "id": "A01_Reducer_Front",
+    "kind": "panel",
+    "x_mm": 550.0,
+    "y_mm": 9.0,
+    "z_mm": 550.0,
+    "volume_mm3": 1865811.4551715115,
+    "centre_mm": [
+      274.9999999999999,
+      -7.499999999999992,
+      305.02408902993506
+    ],
+    "note": "550x550x9; opening350x270. Existing eight M5 studs retain adapter; new M4 feedthroughs require sealed washers. Seal/contact forces and panel stiffness unknown."
+  },
+  {
+    "id": "A02_Filter_gasket_Front",
+    "kind": "seal",
+    "x_mm": 370.0,
+    "y_mm": 3.0,
+    "z_mm": 290.0,
+    "volume_mm3": 38400.0,
+    "centre_mm": [
+      275.0,
+      -13.5,
+      305.0
+    ],
+    "note": "ASSUMED10mm flat border,3mm installed gasket. OEM border flatness and compression NOT verified."
+  },
+  {
+    "id": "A03_STARKVIND_envelope_Front",
+    "kind": "filter",
+    "x_mm": 370.0,
+    "y_mm": 40.0,
+    "z_mm": 290.0,
+    "volume_mm3": 4291999.999999999,
+    "centre_mm": [
+      275.0,
+      -35.0,
+      305.0
+    ],
+    "note": "IKEA104.633.30 published370x290x40 envelope. OEM specifies STARKVIND-only; custom use experimental. No MERV/HEPA/airflow claim."
+  },
+  {
+    "id": "A04_Retainer_Front",
+    "kind": "panel",
+    "x_mm": 410.0,
+    "y_mm": 9.0,
+    "z_mm": 330.0,
+    "volume_mm3": 366627.4447388832,
+    "centre_mm": [
+      275.00000000000017,
+      -59.5,
+      305.00000000000006
+    ],
+    "note": "410x330x9, opening350x270; four M4 studs. Unknown frame strength/contact/torque; head/nut details omitted."
+  },
+  {
+    "id": "A06_Feedthrough_seal_0_Front",
+    "kind": "seal",
+    "x_mm": 9.996891820008159,
+    "y_mm": 1.0,
+    "z_mm": 10.0,
+    "volume_mm3": 65.97344572538562,
+    "centre_mm": [
+      80.0,
+      -12.499999999999998,
+      150.0
+    ],
+    "note": "Assumed installed sealing washer envelope; exact product and compression unverified."
+  },
+  {
+    "id": "A06_Feedthrough_seal_1_Front",
+    "kind": "seal",
+    "x_mm": 9.996891820008159,
+    "y_mm": 1.0,
+    "z_mm": 10.0,
+    "volume_mm3": 65.97344572538564,
+    "centre_mm": [
+      80.00000000000001,
+      -12.500000000000002,
+      460.0000000000001
+    ],
+    "note": "Assumed installed sealing washer envelope; exact product and compression unverified."
+  },
+  {
+    "id": "A06_Feedthrough_seal_2_Front",
+    "kind": "seal",
+    "x_mm": 9.996891820008159,
+    "y_mm": 1.0,
+    "z_mm": 10.0,
+    "volume_mm3": 65.97344572538552,
+    "centre_mm": [
+      470.0000000000001,
+      -12.5,
+      150.00000000000006
+    ],
+    "note": "Assumed installed sealing washer envelope; exact product and compression unverified."
+  },
+  {
+    "id": "A06_Feedthrough_seal_3_Front",
+    "kind": "seal",
+    "x_mm": 9.996891820008159,
+    "y_mm": 1.0,
+    "z_mm": 10.0,
+    "volume_mm3": 65.97344572538559,
+    "centre_mm": [
+      470.0,
+      -12.499999999999998,
+      459.99999999999994
+    ],
+    "note": "Assumed installed sealing washer envelope; exact product and compression unverified."
+  },
+  {
+    "id": "A07_Ledge_130_Front",
+    "kind": "support",
+    "x_mm": 30.0,
+    "y_mm": 43.0,
+    "z_mm": 22.0,
+    "volume_mm3": 3748.191374382404,
+    "centre_mm": [
+      144.99999999999994,
+      -27.110805643885993,
+      155.57165180891445
+    ],
+    "note": "Proposed bent2mm bracket,43mm shelf and20mm downstand,30mm width. Root radius/material/strength not resolved."
+  },
+  {
+    "id": "A09_Ledge_seal_130_Front",
+    "kind": "seal",
+    "x_mm": 9.996891820008159,
+    "y_mm": 1.0,
+    "z_mm": 10.0,
+    "volume_mm3": 65.97344572538562,
+    "centre_mm": [
+      144.99999999999997,
+      -14.5,
+      148.0
+    ],
+    "note": "Seal feedthrough below filter, product unselected; no adhesive-only retention."
+  },
+  {
+    "id": "A07_Ledge_390_Front",
+    "kind": "support",
+    "x_mm": 30.0,
+    "y_mm": 43.0,
+    "z_mm": 22.0,
+    "volume_mm3": 3748.191374382404,
+    "centre_mm": [
+      404.99999999999994,
+      -27.110805643885993,
+      155.57165180891445
+    ],
+    "note": "Proposed bent2mm bracket,43mm shelf and20mm downstand,30mm width. Root radius/material/strength not resolved."
+  },
+  {
+    "id": "A09_Ledge_seal_390_Front",
+    "kind": "seal",
+    "x_mm": 9.996891820008159,
+    "y_mm": 1.0,
+    "z_mm": 10.0,
+    "volume_mm3": 65.97344572538552,
+    "centre_mm": [
+      405.0,
+      -14.500000000000005,
+      147.99999999999997
+    ],
+    "note": "Seal feedthrough below filter, product unselected; no adhesive-only retention."
+  },
+  {
+    "id": "A01_Reducer_Rear",
+    "kind": "panel",
+    "x_mm": 550.0,
+    "y_mm": 9.0,
+    "z_mm": 550.0,
+    "volume_mm3": 1865811.4551715115,
+    "centre_mm": [
+      274.9999999999999,
+      367.49999999999966,
+      305.02408902993506
+    ],
+    "note": "550x550x9; opening350x270. Existing eight M5 studs retain adapter; new M4 feedthroughs require sealed washers. Seal/contact forces and panel stiffness unknown."
+  },
+  {
+    "id": "A02_Filter_gasket_Rear",
+    "kind": "seal",
+    "x_mm": 370.0,
+    "y_mm": 3.0,
+    "z_mm": 290.0,
+    "volume_mm3": 38400.0,
+    "centre_mm": [
+      275.0,
+      373.5,
+      305.0
+    ],
+    "note": "ASSUMED10mm flat border,3mm installed gasket. OEM border flatness and compression NOT verified."
+  },
+  {
+    "id": "A03_STARKVIND_envelope_Rear",
+    "kind": "filter",
+    "x_mm": 370.0,
+    "y_mm": 40.0,
+    "z_mm": 290.0,
+    "volume_mm3": 4291999.999999999,
+    "centre_mm": [
+      275.0,
+      395.0,
+      305.0
+    ],
+    "note": "IKEA104.633.30 published370x290x40 envelope. OEM specifies STARKVIND-only; custom use experimental. No MERV/HEPA/airflow claim."
+  },
+  {
+    "id": "A04_Retainer_Rear",
+    "kind": "panel",
+    "x_mm": 410.0,
+    "y_mm": 9.0,
+    "z_mm": 330.0,
+    "volume_mm3": 366627.4447388832,
+    "centre_mm": [
+      275.00000000000017,
+      419.5000000000002,
+      305.00000000000006
+    ],
+    "note": "410x330x9, opening350x270; four M4 studs. Unknown frame strength/contact/torque; head/nut details omitted."
+  },
+  {
+    "id": "A06_Feedthrough_seal_0_Rear",
+    "kind": "seal",
+    "x_mm": 9.996891820008159,
+    "y_mm": 1.0,
+    "z_mm": 10.0,
+    "volume_mm3": 65.97344572538562,
+    "centre_mm": [
+      80.0,
+      372.5,
+      150.0
+    ],
+    "note": "Assumed installed sealing washer envelope; exact product and compression unverified."
+  },
+  {
+    "id": "A06_Feedthrough_seal_1_Rear",
+    "kind": "seal",
+    "x_mm": 9.996891820008159,
+    "y_mm": 1.0,
+    "z_mm": 10.0,
+    "volume_mm3": 65.97344572538564,
+    "centre_mm": [
+      80.00000000000001,
+      372.5000000000001,
+      460.0000000000001
+    ],
+    "note": "Assumed installed sealing washer envelope; exact product and compression unverified."
+  },
+  {
+    "id": "A06_Feedthrough_seal_2_Rear",
+    "kind": "seal",
+    "x_mm": 9.996891820008159,
+    "y_mm": 1.0,
+    "z_mm": 10.0,
+    "volume_mm3": 65.97344572538552,
+    "centre_mm": [
+      470.0000000000001,
+      372.50000000000006,
+      150.00000000000006
+    ],
+    "note": "Assumed installed sealing washer envelope; exact product and compression unverified."
+  },
+  {
+    "id": "A06_Feedthrough_seal_3_Rear",
+    "kind": "seal",
+    "x_mm": 9.996891820008159,
+    "y_mm": 1.0,
+    "z_mm": 10.0,
+    "volume_mm3": 65.97344572538559,
+    "centre_mm": [
+      470.0,
+      372.5,
+      459.99999999999994
+    ],
+    "note": "Assumed installed sealing washer envelope; exact product and compression unverified."
+  },
+  {
+    "id": "A07_Ledge_130_Rear",
+    "kind": "support",
+    "x_mm": 30.0,
+    "y_mm": 43.0,
+    "z_mm": 22.0,
+    "volume_mm3": 3748.191374382403,
+    "centre_mm": [
+      144.99999999999997,
+      387.110805643886,
+      155.57165180891442
+    ],
+    "note": "Proposed bent2mm bracket,43mm shelf and20mm downstand,30mm width. Root radius/material/strength not resolved."
+  },
+  {
+    "id": "A09_Ledge_seal_130_Rear",
+    "kind": "seal",
+    "x_mm": 9.996891820008159,
+    "y_mm": 1.0,
+    "z_mm": 10.0,
+    "volume_mm3": 65.97344572538562,
+    "centre_mm": [
+      144.99999999999997,
+      374.49999999999994,
+      148.0
+    ],
+    "note": "Seal feedthrough below filter, product unselected; no adhesive-only retention."
+  },
+  {
+    "id": "A07_Ledge_390_Rear",
+    "kind": "support",
+    "x_mm": 30.0,
+    "y_mm": 43.0,
+    "z_mm": 22.0,
+    "volume_mm3": 3748.191374382403,
+    "centre_mm": [
+      404.9999999999999,
+      387.110805643886,
+      155.57165180891442
+    ],
+    "note": "Proposed bent2mm bracket,43mm shelf and20mm downstand,30mm width. Root radius/material/strength not resolved."
+  },
+  {
+    "id": "A09_Ledge_seal_390_Rear",
+    "kind": "seal",
+    "x_mm": 9.996891820008159,
+    "y_mm": 1.0,
+    "z_mm": 10.0,
+    "volume_mm3": 65.97344572538552,
+    "centre_mm": [
+      405.0,
+      374.5000000000001,
+      147.99999999999997
+    ],
+    "note": "Seal feedthrough below filter, product unselected; no adhesive-only retention."
+  },
+  {
+    "id": "A05_Stud_0_Front",
+    "kind": "hardware",
+    "x_mm": 4.0,
+    "y_mm": 80.0,
+    "z_mm": 4.0,
+    "volume_mm3": 1005.3096491487341,
+    "centre_mm": [
+      80.00000000000001,
+      -32.00000000000001,
+      150.0
+    ],
+    "note": "M4x80 proposed stud envelope; replaces R02 70 mm shaft"
+  },
+  {
+    "id": "H10_Service_washer_0_Front",
+    "kind": "hardware",
+    "x_mm": 11.996270184009802,
+    "y_mm": 1.0,
+    "z_mm": 12.0,
+    "volume_mm3": 98.57532348801368,
+    "centre_mm": [
+      79.99999999999999,
+      -64.50000000000001,
+      150.00000000000003
+    ],
+    "note": "Nominal hardware envelope; no threads, torque or strength approval"
+  },
+  {
+    "id": "H10_Outer_fixed_washer_0_Front",
+    "kind": "hardware",
+    "x_mm": 11.996270184009802,
+    "y_mm": 1.0,
+    "z_mm": 12.0,
+    "volume_mm3": 98.57532348801368,
+    "centre_mm": [
+      79.99999999999999,
+      -13.5,
+      150.00000000000003
+    ],
+    "note": "Nominal hardware envelope; no threads, torque or strength approval"
+  },
+  {
+    "id": "H10_Inner_fixed_washer_0_Front",
+    "kind": "hardware",
+    "x_mm": 11.996270184009802,
+    "y_mm": 1.0,
+    "z_mm": 12.0,
+    "volume_mm3": 98.57532348801368,
+    "centre_mm": [
+      79.99999999999999,
+      -2.5000000000000004,
+      150.00000000000003
+    ],
+    "note": "Nominal hardware envelope; no threads, torque or strength approval"
+  },
+  {
+    "id": "H11_Service_nut_0_Front",
+    "kind": "hardware",
+    "x_mm": 8.082903768654774,
+    "y_mm": 5.0,
+    "z_mm": 7.0,
+    "volume_mm3": 149.3443708553919,
+    "centre_mm": [
+      80.00000000000001,
+      -67.5,
+      150.0
+    ],
+    "note": "Nominal hardware envelope; no threads, torque or strength approval"
+  },
+  {
+    "id": "H11_Outer_fixed_nut_0_Front",
+    "kind": "hardware",
+    "x_mm": 8.082903768654774,
+    "y_mm": 5.0,
+    "z_mm": 7.0,
+    "volume_mm3": 149.3443708553919,
+    "centre_mm": [
+      80.00000000000001,
+      -16.5,
+      150.0
+    ],
+    "note": "Nominal hardware envelope; no threads, torque or strength approval"
+  },
+  {
+    "id": "H11_Inner_fixed_nut_0_Front",
+    "kind": "hardware",
+    "x_mm": 8.082903768654774,
+    "y_mm": 5.0,
+    "z_mm": 7.0,
+    "volume_mm3": 149.3443708553919,
+    "centre_mm": [
+      80.00000000000001,
+      0.5000000000000002,
+      150.0
+    ],
+    "note": "Nominal hardware envelope; no threads, torque or strength approval"
+  },
+  {
+    "id": "A05_Stud_1_Front",
+    "kind": "hardware",
+    "x_mm": 4.0,
+    "y_mm": 80.0,
+    "z_mm": 4.0,
+    "volume_mm3": 1005.3096491487346,
+    "centre_mm": [
+      80.00000000000001,
+      -32.00000000000001,
+      460.00000000000006
+    ],
+    "note": "M4x80 proposed stud envelope; replaces R02 70 mm shaft"
+  },
+  {
+    "id": "H10_Service_washer_1_Front",
+    "kind": "hardware",
+    "x_mm": 11.996270184009802,
+    "y_mm": 1.0,
+    "z_mm": 12.0,
+    "volume_mm3": 98.57532348801368,
+    "centre_mm": [
+      79.99999999999999,
+      -64.50000000000001,
+      460.00000000000017
+    ],
+    "note": "Nominal hardware envelope; no threads, torque or strength approval"
+  },
+  {
+    "id": "H10_Outer_fixed_washer_1_Front",
+    "kind": "hardware",
+    "x_mm": 11.996270184009802,
+    "y_mm": 1.0,
+    "z_mm": 12.0,
+    "volume_mm3": 98.57532348801368,
+    "centre_mm": [
+      79.99999999999999,
+      -13.500000000000002,
+      460.00000000000017
+    ],
+    "note": "Nominal hardware envelope; no threads, torque or strength approval"
+  },
+  {
+    "id": "H10_Inner_fixed_washer_1_Front",
+    "kind": "hardware",
+    "x_mm": 11.996270184009802,
+    "y_mm": 1.0,
+    "z_mm": 12.0,
+    "volume_mm3": 98.57532348801368,
+    "centre_mm": [
+      79.99999999999999,
+      -2.5000000000000004,
+      460.00000000000017
+    ],
+    "note": "Nominal hardware envelope; no threads, torque or strength approval"
+  },
+  {
+    "id": "H11_Service_nut_1_Front",
+    "kind": "hardware",
+    "x_mm": 8.082903768654774,
+    "y_mm": 5.0,
+    "z_mm": 7.0,
+    "volume_mm3": 149.34437085539187,
+    "centre_mm": [
+      80.00000000000001,
+      -67.5,
+      460.0000000000001
+    ],
+    "note": "Nominal hardware envelope; no threads, torque or strength approval"
+  },
+  {
+    "id": "H11_Outer_fixed_nut_1_Front",
+    "kind": "hardware",
+    "x_mm": 8.082903768654774,
+    "y_mm": 5.0,
+    "z_mm": 7.0,
+    "volume_mm3": 149.34437085539187,
+    "centre_mm": [
+      80.00000000000001,
+      -16.5,
+      460.0000000000001
+    ],
+    "note": "Nominal hardware envelope; no threads, torque or strength approval"
+  },
+  {
+    "id": "H11_Inner_fixed_nut_1_Front",
+    "kind": "hardware",
+    "x_mm": 8.082903768654774,
+    "y_mm": 5.0,
+    "z_mm": 7.0,
+    "volume_mm3": 149.34437085539187,
+    "centre_mm": [
+      80.00000000000001,
+      0.5000000000000001,
+      460.0000000000001
+    ],
+    "note": "Nominal hardware envelope; no threads, torque or strength approval"
+  },
+  {
+    "id": "A05_Stud_2_Front",
+    "kind": "hardware",
+    "x_mm": 4.0,
+    "y_mm": 80.0,
+    "z_mm": 4.0,
+    "volume_mm3": 1005.3096491487369,
+    "centre_mm": [
+      470.00000000000006,
+      -32.00000000000001,
+      150.0
+    ],
+    "note": "M4x80 proposed stud envelope; replaces R02 70 mm shaft"
+  },
+  {
+    "id": "H10_Service_washer_2_Front",
+    "kind": "hardware",
+    "x_mm": 11.996270184009745,
+    "y_mm": 1.0,
+    "z_mm": 12.0,
+    "volume_mm3": 98.5753234880137,
+    "centre_mm": [
+      470.00000000000006,
+      -64.50000000000001,
+      150.00000000000003
+    ],
+    "note": "Nominal hardware envelope; no threads, torque or strength approval"
+  },
+  {
+    "id": "H10_Outer_fixed_washer_2_Front",
+    "kind": "hardware",
+    "x_mm": 11.996270184009745,
+    "y_mm": 1.0,
+    "z_mm": 12.0,
+    "volume_mm3": 98.5753234880137,
+    "centre_mm": [
+      470.00000000000006,
+      -13.5,
+      150.00000000000003
+    ],
+    "note": "Nominal hardware envelope; no threads, torque or strength approval"
+  },
+  {
+    "id": "H10_Inner_fixed_washer_2_Front",
+    "kind": "hardware",
+    "x_mm": 11.996270184009745,
+    "y_mm": 1.0,
+    "z_mm": 12.0,
+    "volume_mm3": 98.5753234880137,
+    "centre_mm": [
+      470.00000000000006,
+      -2.5,
+      150.00000000000003
+    ],
+    "note": "Nominal hardware envelope; no threads, torque or strength approval"
+  },
+  {
+    "id": "H11_Service_nut_2_Front",
+    "kind": "hardware",
+    "x_mm": 8.082903768654774,
+    "y_mm": 5.000000000000014,
+    "z_mm": 7.0,
+    "volume_mm3": 149.34437085539074,
+    "centre_mm": [
+      469.99999999999994,
+      -67.50000000000001,
+      150.00000000000006
+    ],
+    "note": "Nominal hardware envelope; no threads, torque or strength approval"
+  },
+  {
+    "id": "H11_Outer_fixed_nut_2_Front",
+    "kind": "hardware",
+    "x_mm": 8.082903768654774,
+    "y_mm": 5.0000000000000036,
+    "z_mm": 7.0,
+    "volume_mm3": 149.34437085539074,
+    "centre_mm": [
+      469.99999999999994,
+      -16.499999999999996,
+      150.0
+    ],
+    "note": "Nominal hardware envelope; no threads, torque or strength approval"
+  },
+  {
+    "id": "H11_Inner_fixed_nut_2_Front",
+    "kind": "hardware",
+    "x_mm": 8.082903768654774,
+    "y_mm": 5.0,
+    "z_mm": 7.0,
+    "volume_mm3": 149.34437085539074,
+    "centre_mm": [
+      469.99999999999994,
+      0.5,
+      150.00000000000006
+    ],
+    "note": "Nominal hardware envelope; no threads, torque or strength approval"
+  },
+  {
+    "id": "A05_Stud_3_Front",
+    "kind": "hardware",
+    "x_mm": 4.0,
+    "y_mm": 80.0,
+    "z_mm": 4.0,
+    "volume_mm3": 1005.3096491487374,
+    "centre_mm": [
+      470.0,
+      -32.0,
+      460.00000000000006
+    ],
+    "note": "M4x80 proposed stud envelope; replaces R02 70 mm shaft"
+  },
+  {
+    "id": "H10_Service_washer_3_Front",
+    "kind": "hardware",
+    "x_mm": 11.996270184009745,
+    "y_mm": 1.0,
+    "z_mm": 12.0,
+    "volume_mm3": 98.57532348801374,
+    "centre_mm": [
+      470.00000000000006,
+      -64.50000000000001,
+      460.0000000000001
+    ],
+    "note": "Nominal hardware envelope; no threads, torque or strength approval"
+  },
+  {
+    "id": "H10_Outer_fixed_washer_3_Front",
+    "kind": "hardware",
+    "x_mm": 11.996270184009745,
+    "y_mm": 1.0,
+    "z_mm": 12.0,
+    "volume_mm3": 98.57532348801374,
+    "centre_mm": [
+      470.00000000000006,
+      -13.500000000000002,
+      460.0000000000001
+    ],
+    "note": "Nominal hardware envelope; no threads, torque or strength approval"
+  },
+  {
+    "id": "H10_Inner_fixed_washer_3_Front",
+    "kind": "hardware",
+    "x_mm": 11.996270184009745,
+    "y_mm": 1.0,
+    "z_mm": 12.0,
+    "volume_mm3": 98.57532348801374,
+    "centre_mm": [
+      470.00000000000006,
+      -2.4999999999999996,
+      460.0000000000001
+    ],
+    "note": "Nominal hardware envelope; no threads, torque or strength approval"
+  },
+  {
+    "id": "H11_Service_nut_3_Front",
+    "kind": "hardware",
+    "x_mm": 8.082903768654774,
+    "y_mm": 5.000000000000014,
+    "z_mm": 7.0,
+    "volume_mm3": 149.3443708553907,
+    "centre_mm": [
+      469.99999999999994,
+      -67.50000000000003,
+      460.0
+    ],
+    "note": "Nominal hardware envelope; no threads, torque or strength approval"
+  },
+  {
+    "id": "H11_Outer_fixed_nut_3_Front",
+    "kind": "hardware",
+    "x_mm": 8.082903768654774,
+    "y_mm": 5.0000000000000036,
+    "z_mm": 7.0,
+    "volume_mm3": 149.3443708553907,
+    "centre_mm": [
+      469.99999999999994,
+      -16.499999999999996,
+      460.0000000000001
+    ],
+    "note": "Nominal hardware envelope; no threads, torque or strength approval"
+  },
+  {
+    "id": "H11_Inner_fixed_nut_3_Front",
+    "kind": "hardware",
+    "x_mm": 8.082903768654774,
+    "y_mm": 5.0,
+    "z_mm": 7.0,
+    "volume_mm3": 149.3443708553907,
+    "centre_mm": [
+      469.99999999999994,
+      0.5,
+      460.0
+    ],
+    "note": "Nominal hardware envelope; no threads, torque or strength approval"
+  },
+  {
+    "id": "A08_Ledge_bolt_130_Front",
+    "kind": "hardware",
+    "x_mm": 6.997824274005723,
+    "y_mm": 29.0,
+    "z_mm": 7.0,
+    "volume_mm3": 468.09730538487935,
+    "centre_mm": [
+      145.0,
+      -8.268456375838927,
+      148.0
+    ],
+    "note": "M4x25 nominal cap screw, 7 dia x4 head; socket/threads omitted"
+  },
+  {
+    "id": "H12_Outer_washer_130_Front",
+    "kind": "hardware",
+    "x_mm": 11.996270184009802,
+    "y_mm": 1.0,
+    "z_mm": 12.0,
+    "volume_mm3": 98.57532348801371,
+    "centre_mm": [
+      145.0,
+      -15.500000000000002,
+      148.00000000000003
+    ],
+    "note": "Nominal hardware envelope; no threads, torque or strength approval"
+  },
+  {
+    "id": "H12_Inner_washer_130_Front",
+    "kind": "hardware",
+    "x_mm": 11.996270184009802,
+    "y_mm": 1.0,
+    "z_mm": 12.0,
+    "volume_mm3": 98.57532348801371,
+    "centre_mm": [
+      145.0,
+      -2.5,
+      148.00000000000003
+    ],
+    "note": "Nominal hardware envelope; no threads, torque or strength approval"
+  },
+  {
+    "id": "H13_Ledge_nut_130_Front",
+    "kind": "hardware",
+    "x_mm": 8.082903768654774,
+    "y_mm": 5.0,
+    "z_mm": 7.0,
+    "volume_mm3": 149.3443708553919,
+    "centre_mm": [
+      145.0,
+      0.5000000000000002,
+      148.0
+    ],
+    "note": "Nominal hardware envelope; no threads, torque or strength approval"
+  },
+  {
+    "id": "A08_Ledge_bolt_390_Front",
+    "kind": "hardware",
+    "x_mm": 6.997824274005666,
+    "y_mm": 29.0,
+    "z_mm": 7.0,
+    "volume_mm3": 468.0973053848804,
+    "centre_mm": [
+      405.00000000000006,
+      -8.268456375838923,
+      148.0
+    ],
+    "note": "M4x25 nominal cap screw, 7 dia x4 head; socket/threads omitted"
+  },
+  {
+    "id": "H12_Outer_washer_390_Front",
+    "kind": "hardware",
+    "x_mm": 11.996270184009745,
+    "y_mm": 1.0,
+    "z_mm": 12.0,
+    "volume_mm3": 98.5753234880137,
+    "centre_mm": [
+      405.0000000000001,
+      -15.500000000000002,
+      148.00000000000003
+    ],
+    "note": "Nominal hardware envelope; no threads, torque or strength approval"
+  },
+  {
+    "id": "H12_Inner_washer_390_Front",
+    "kind": "hardware",
+    "x_mm": 11.996270184009745,
+    "y_mm": 1.0,
+    "z_mm": 12.0,
+    "volume_mm3": 98.5753234880137,
+    "centre_mm": [
+      405.0000000000001,
+      -2.5,
+      148.00000000000003
+    ],
+    "note": "Nominal hardware envelope; no threads, torque or strength approval"
+  },
+  {
+    "id": "H13_Ledge_nut_390_Front",
+    "kind": "hardware",
+    "x_mm": 8.082903768654774,
+    "y_mm": 5.0,
+    "z_mm": 7.0,
+    "volume_mm3": 149.3443708553907,
+    "centre_mm": [
+      404.99999999999994,
+      0.5,
+      148.0
+    ],
+    "note": "Nominal hardware envelope; no threads, torque or strength approval"
+  },
+  {
+    "id": "A05_Stud_0_Rear",
+    "kind": "hardware",
+    "x_mm": 4.0,
+    "y_mm": 80.0,
+    "z_mm": 4.0,
+    "volume_mm3": 1005.3096491487341,
+    "centre_mm": [
+      80.00000000000001,
+      392.0,
+      150.0
+    ],
+    "note": "M4x80 proposed stud envelope; replaces R02 70 mm shaft"
+  },
+  {
+    "id": "H10_Service_washer_0_Rear",
+    "kind": "hardware",
+    "x_mm": 11.996270184009802,
+    "y_mm": 1.0,
+    "z_mm": 12.0,
+    "volume_mm3": 98.57532348801368,
+    "centre_mm": [
+      79.99999999999999,
+      424.49999999999983,
+      150.0
+    ],
+    "note": "Nominal hardware envelope; no threads, torque or strength approval"
+  },
+  {
+    "id": "H10_Outer_fixed_washer_0_Rear",
+    "kind": "hardware",
+    "x_mm": 11.996270184009802,
+    "y_mm": 1.0,
+    "z_mm": 12.0,
+    "volume_mm3": 98.57532348801368,
+    "centre_mm": [
+      79.99999999999999,
+      373.4999999999999,
+      150.0
+    ],
+    "note": "Nominal hardware envelope; no threads, torque or strength approval"
+  },
+  {
+    "id": "H10_Inner_fixed_washer_0_Rear",
+    "kind": "hardware",
+    "x_mm": 11.996270184009802,
+    "y_mm": 1.0,
+    "z_mm": 12.0,
+    "volume_mm3": 98.57532348801368,
+    "centre_mm": [
+      79.99999999999999,
+      362.49999999999994,
+      150.0
+    ],
+    "note": "Nominal hardware envelope; no threads, torque or strength approval"
+  },
+  {
+    "id": "H11_Service_nut_0_Rear",
+    "kind": "hardware",
+    "x_mm": 8.082903768654774,
+    "y_mm": 5.0,
+    "z_mm": 7.0,
+    "volume_mm3": 149.3443708553919,
+    "centre_mm": [
+      80.00000000000001,
+      427.5000000000001,
+      150.0
+    ],
+    "note": "Nominal hardware envelope; no threads, torque or strength approval"
+  },
+  {
+    "id": "H11_Outer_fixed_nut_0_Rear",
+    "kind": "hardware",
+    "x_mm": 8.082903768654774,
+    "y_mm": 5.0,
+    "z_mm": 7.0,
+    "volume_mm3": 149.3443708553919,
+    "centre_mm": [
+      80.00000000000001,
+      376.49999999999994,
+      150.0
+    ],
+    "note": "Nominal hardware envelope; no threads, torque or strength approval"
+  },
+  {
+    "id": "H11_Inner_fixed_nut_0_Rear",
+    "kind": "hardware",
+    "x_mm": 8.082903768654774,
+    "y_mm": 5.0,
+    "z_mm": 7.0,
+    "volume_mm3": 149.3443708553919,
+    "centre_mm": [
+      80.00000000000001,
+      359.5,
+      150.0
+    ],
+    "note": "Nominal hardware envelope; no threads, torque or strength approval"
+  },
+  {
+    "id": "A05_Stud_1_Rear",
+    "kind": "hardware",
+    "x_mm": 4.0,
+    "y_mm": 80.0,
+    "z_mm": 4.0,
+    "volume_mm3": 1005.3096491487346,
+    "centre_mm": [
+      80.00000000000001,
+      392.00000000000006,
+      460.00000000000006
+    ],
+    "note": "M4x80 proposed stud envelope; replaces R02 70 mm shaft"
+  },
+  {
+    "id": "H10_Service_washer_1_Rear",
+    "kind": "hardware",
+    "x_mm": 11.996270184009802,
+    "y_mm": 1.0,
+    "z_mm": 12.0,
+    "volume_mm3": 98.5753234880138,
+    "centre_mm": [
+      80.00000000000001,
+      424.5,
+      460.00000000000006
+    ],
+    "note": "Nominal hardware envelope; no threads, torque or strength approval"
+  },
+  {
+    "id": "H10_Outer_fixed_washer_1_Rear",
+    "kind": "hardware",
+    "x_mm": 11.996270184009802,
+    "y_mm": 1.0,
+    "z_mm": 12.0,
+    "volume_mm3": 98.5753234880138,
+    "centre_mm": [
+      80.00000000000001,
+      373.50000000000006,
+      460.00000000000006
+    ],
+    "note": "Nominal hardware envelope; no threads, torque or strength approval"
+  },
+  {
+    "id": "H10_Inner_fixed_washer_1_Rear",
+    "kind": "hardware",
+    "x_mm": 11.996270184009802,
+    "y_mm": 1.0,
+    "z_mm": 12.0,
+    "volume_mm3": 98.5753234880138,
+    "centre_mm": [
+      80.00000000000001,
+      362.49999999999994,
+      460.00000000000006
+    ],
+    "note": "Nominal hardware envelope; no threads, torque or strength approval"
+  },
+  {
+    "id": "H11_Service_nut_1_Rear",
+    "kind": "hardware",
+    "x_mm": 8.082903768654774,
+    "y_mm": 5.0,
+    "z_mm": 7.0,
+    "volume_mm3": 149.34437085539187,
+    "centre_mm": [
+      80.00000000000001,
+      427.5000000000001,
+      460.0000000000001
+    ],
+    "note": "Nominal hardware envelope; no threads, torque or strength approval"
+  },
+  {
+    "id": "H11_Outer_fixed_nut_1_Rear",
+    "kind": "hardware",
+    "x_mm": 8.082903768654774,
+    "y_mm": 5.0,
+    "z_mm": 7.0,
+    "volume_mm3": 149.34437085539187,
+    "centre_mm": [
+      80.00000000000001,
+      376.49999999999994,
+      460.0000000000001
+    ],
+    "note": "Nominal hardware envelope; no threads, torque or strength approval"
+  },
+  {
+    "id": "H11_Inner_fixed_nut_1_Rear",
+    "kind": "hardware",
+    "x_mm": 8.082903768654774,
+    "y_mm": 5.0,
+    "z_mm": 7.0,
+    "volume_mm3": 149.34437085539187,
+    "centre_mm": [
+      80.00000000000001,
+      359.50000000000006,
+      460.0000000000001
+    ],
+    "note": "Nominal hardware envelope; no threads, torque or strength approval"
+  },
+  {
+    "id": "A05_Stud_2_Rear",
+    "kind": "hardware",
+    "x_mm": 4.0,
+    "y_mm": 80.0,
+    "z_mm": 4.0,
+    "volume_mm3": 1005.3096491487369,
+    "centre_mm": [
+      470.00000000000006,
+      392.00000000000006,
+      150.0
+    ],
+    "note": "M4x80 proposed stud envelope; replaces R02 70 mm shaft"
+  },
+  {
+    "id": "H10_Service_washer_2_Rear",
+    "kind": "hardware",
+    "x_mm": 11.996270184009745,
+    "y_mm": 1.0,
+    "z_mm": 12.0,
+    "volume_mm3": 98.5753234880137,
+    "centre_mm": [
+      469.9999999999999,
+      424.4999999999999,
+      150.0
+    ],
+    "note": "Nominal hardware envelope; no threads, torque or strength approval"
+  },
+  {
+    "id": "H10_Outer_fixed_washer_2_Rear",
+    "kind": "hardware",
+    "x_mm": 11.996270184009745,
+    "y_mm": 1.0,
+    "z_mm": 12.0,
+    "volume_mm3": 98.5753234880137,
+    "centre_mm": [
+      469.9999999999999,
+      373.49999999999994,
+      150.0
+    ],
+    "note": "Nominal hardware envelope; no threads, torque or strength approval"
+  },
+  {
+    "id": "H10_Inner_fixed_washer_2_Rear",
+    "kind": "hardware",
+    "x_mm": 11.996270184009745,
+    "y_mm": 1.0,
+    "z_mm": 12.0,
+    "volume_mm3": 98.5753234880137,
+    "centre_mm": [
+      469.9999999999999,
+      362.4999999999999,
+      150.0
+    ],
+    "note": "Nominal hardware envelope; no threads, torque or strength approval"
+  },
+  {
+    "id": "H11_Service_nut_2_Rear",
+    "kind": "hardware",
+    "x_mm": 8.082903768654774,
+    "y_mm": 5.0,
+    "z_mm": 7.0,
+    "volume_mm3": 149.34437085539074,
+    "centre_mm": [
+      469.99999999999994,
+      427.50000000000006,
+      150.00000000000006
+    ],
+    "note": "Nominal hardware envelope; no threads, torque or strength approval"
+  },
+  {
+    "id": "H11_Outer_fixed_nut_2_Rear",
+    "kind": "hardware",
+    "x_mm": 8.082903768654774,
+    "y_mm": 5.0,
+    "z_mm": 7.0,
+    "volume_mm3": 149.34437085539074,
+    "centre_mm": [
+      469.99999999999994,
+      376.4999999999999,
+      150.00000000000006
+    ],
+    "note": "Nominal hardware envelope; no threads, torque or strength approval"
+  },
+  {
+    "id": "H11_Inner_fixed_nut_2_Rear",
+    "kind": "hardware",
+    "x_mm": 8.082903768654774,
+    "y_mm": 5.0,
+    "z_mm": 7.0,
+    "volume_mm3": 149.34437085539074,
+    "centre_mm": [
+      469.99999999999994,
+      359.5000000000001,
+      150.00000000000006
+    ],
+    "note": "Nominal hardware envelope; no threads, torque or strength approval"
+  },
+  {
+    "id": "A05_Stud_3_Rear",
+    "kind": "hardware",
+    "x_mm": 4.0,
+    "y_mm": 80.0,
+    "z_mm": 4.0,
+    "volume_mm3": 1005.3096491487374,
+    "centre_mm": [
+      470.0,
+      392.0000000000001,
+      460.00000000000006
+    ],
+    "note": "M4x80 proposed stud envelope; replaces R02 70 mm shaft"
+  },
+  {
+    "id": "H10_Service_washer_3_Rear",
+    "kind": "hardware",
+    "x_mm": 11.996270184009745,
+    "y_mm": 1.0,
+    "z_mm": 12.0,
+    "volume_mm3": 98.57532348801385,
+    "centre_mm": [
+      469.99999999999994,
+      424.49999999999994,
+      460.0
+    ],
+    "note": "Nominal hardware envelope; no threads, torque or strength approval"
+  },
+  {
+    "id": "H10_Outer_fixed_washer_3_Rear",
+    "kind": "hardware",
+    "x_mm": 11.996270184009745,
+    "y_mm": 1.0,
+    "z_mm": 12.0,
+    "volume_mm3": 98.57532348801385,
+    "centre_mm": [
+      469.99999999999994,
+      373.5,
+      460.0
+    ],
+    "note": "Nominal hardware envelope; no threads, torque or strength approval"
+  },
+  {
+    "id": "H10_Inner_fixed_washer_3_Rear",
+    "kind": "hardware",
+    "x_mm": 11.996270184009745,
+    "y_mm": 1.0,
+    "z_mm": 12.0,
+    "volume_mm3": 98.57532348801385,
+    "centre_mm": [
+      469.99999999999994,
+      362.49999999999994,
+      460.0
+    ],
+    "note": "Nominal hardware envelope; no threads, torque or strength approval"
+  },
+  {
+    "id": "H11_Service_nut_3_Rear",
+    "kind": "hardware",
+    "x_mm": 8.082903768654774,
+    "y_mm": 5.0,
+    "z_mm": 7.0,
+    "volume_mm3": 149.3443708553907,
+    "centre_mm": [
+      469.99999999999994,
+      427.50000000000006,
+      460.0
+    ],
+    "note": "Nominal hardware envelope; no threads, torque or strength approval"
+  },
+  {
+    "id": "H11_Outer_fixed_nut_3_Rear",
+    "kind": "hardware",
+    "x_mm": 8.082903768654774,
+    "y_mm": 5.0,
+    "z_mm": 7.0,
+    "volume_mm3": 149.3443708553907,
+    "centre_mm": [
+      469.99999999999994,
+      376.49999999999994,
+      460.0
+    ],
+    "note": "Nominal hardware envelope; no threads, torque or strength approval"
+  },
+  {
+    "id": "H11_Inner_fixed_nut_3_Rear",
+    "kind": "hardware",
+    "x_mm": 8.082903768654774,
+    "y_mm": 5.0,
+    "z_mm": 7.0,
+    "volume_mm3": 149.3443708553907,
+    "centre_mm": [
+      469.99999999999994,
+      359.5000000000001,
+      460.0
+    ],
+    "note": "Nominal hardware envelope; no threads, torque or strength approval"
+  },
+  {
+    "id": "A08_Ledge_bolt_130_Rear",
+    "kind": "hardware",
+    "x_mm": 6.997824274005723,
+    "y_mm": 29.0,
+    "z_mm": 7.0,
+    "volume_mm3": 468.09730538487935,
+    "centre_mm": [
+      145.0,
+      368.26845637583887,
+      148.0
+    ],
+    "note": "M4x25 nominal cap screw, 7 dia x4 head; socket/threads omitted"
+  },
+  {
+    "id": "H12_Outer_washer_130_Rear",
+    "kind": "hardware",
+    "x_mm": 11.996270184009802,
+    "y_mm": 1.0,
+    "z_mm": 12.0,
+    "volume_mm3": 98.57532348801371,
+    "centre_mm": [
+      144.99999999999994,
+      375.49999999999994,
+      148.0
+    ],
+    "note": "Nominal hardware envelope; no threads, torque or strength approval"
+  },
+  {
+    "id": "H12_Inner_washer_130_Rear",
+    "kind": "hardware",
+    "x_mm": 11.996270184009802,
+    "y_mm": 1.0,
+    "z_mm": 12.0,
+    "volume_mm3": 98.57532348801371,
+    "centre_mm": [
+      144.99999999999994,
+      362.4999999999999,
+      148.0
+    ],
+    "note": "Nominal hardware envelope; no threads, torque or strength approval"
+  },
+  {
+    "id": "H13_Ledge_nut_130_Rear",
+    "kind": "hardware",
+    "x_mm": 8.082903768654774,
+    "y_mm": 5.0,
+    "z_mm": 7.0,
+    "volume_mm3": 149.3443708553919,
+    "centre_mm": [
+      145.0,
+      359.50000000000006,
+      148.0
+    ],
+    "note": "Nominal hardware envelope; no threads, torque or strength approval"
+  },
+  {
+    "id": "A08_Ledge_bolt_390_Rear",
+    "kind": "hardware",
+    "x_mm": 6.997824274005666,
+    "y_mm": 29.0,
+    "z_mm": 7.0,
+    "volume_mm3": 468.0973053848804,
+    "centre_mm": [
+      405.00000000000006,
+      368.2684563758389,
+      148.0
+    ],
+    "note": "M4x25 nominal cap screw, 7 dia x4 head; socket/threads omitted"
+  },
+  {
+    "id": "H12_Outer_washer_390_Rear",
+    "kind": "hardware",
+    "x_mm": 11.996270184009745,
+    "y_mm": 1.0,
+    "z_mm": 12.0,
+    "volume_mm3": 98.5753234880137,
+    "centre_mm": [
+      404.99999999999994,
+      375.49999999999994,
+      148.0
+    ],
+    "note": "Nominal hardware envelope; no threads, torque or strength approval"
+  },
+  {
+    "id": "H12_Inner_washer_390_Rear",
+    "kind": "hardware",
+    "x_mm": 11.996270184009745,
+    "y_mm": 1.0,
+    "z_mm": 12.0,
+    "volume_mm3": 98.5753234880137,
+    "centre_mm": [
+      404.99999999999994,
+      362.4999999999999,
+      148.0
+    ],
+    "note": "Nominal hardware envelope; no threads, torque or strength approval"
+  },
+  {
+    "id": "H13_Ledge_nut_390_Rear",
+    "kind": "hardware",
+    "x_mm": 8.082903768654774,
+    "y_mm": 5.0,
+    "z_mm": 7.0,
+    "volume_mm3": 149.3443708553907,
+    "centre_mm": [
+      404.99999999999994,
+      359.5,
+      148.0
+    ],
+    "note": "Nominal hardware envelope; no threads, torque or strength approval"
+  },
+  {
+    "id": "J01_Outer_105_120_Screw",
+    "kind": "hardware",
+    "x_mm": 7.0,
+    "y_mm": 6.997824274005723,
+    "z_mm": 24.0,
+    "volume_mm3": 405.2654523130832,
+    "centre_mm": [
+      105.0,
+      119.99999999999999,
+      577.5581395348836
+    ],
+    "note": "Proposed M4 hardware envelope, not approved grade/torque; threads/socket omitted"
+  },
+  {
+    "id": "J01_Outer_105_120_Upper_washer",
+    "kind": "hardware",
+    "x_mm": 12.0,
+    "y_mm": 11.996270184009802,
+    "z_mm": 1.0,
+    "volume_mm3": 98.5753234880137,
+    "centre_mm": [
+      105.00000000000001,
+      120.0,
+      582.5000000000001
+    ],
+    "note": "Proposed M4 hardware envelope, not approved grade/torque; threads/socket omitted"
+  },
+  {
+    "id": "J01_Outer_105_120_Lower_washer",
+    "kind": "hardware",
+    "x_mm": 12.0,
+    "y_mm": 11.996270184009802,
+    "z_mm": 1.0,
+    "volume_mm3": 98.5753234880137,
+    "centre_mm": [
+      105.00000000000001,
+      120.0,
+      570.5000000000001
+    ],
+    "note": "Proposed M4 hardware envelope, not approved grade/torque; threads/socket omitted"
+  },
+  {
+    "id": "J01_Outer_105_120_Nut",
+    "kind": "hardware",
+    "x_mm": 8.082903768654774,
+    "y_mm": 7.0,
+    "z_mm": 5.0,
+    "volume_mm3": 149.34437085539201,
+    "centre_mm": [
+      104.99999999999997,
+      119.99999999999999,
+      567.5
+    ],
+    "note": "Proposed M4 hardware envelope, not approved grade/torque; threads/socket omitted"
+  },
+  {
+    "id": "J01_Outer_105_240_Screw",
+    "kind": "hardware",
+    "x_mm": 7.0,
+    "y_mm": 6.997824274005723,
+    "z_mm": 24.0,
+    "volume_mm3": 405.26545231308313,
+    "centre_mm": [
+      105.00000000000001,
+      240.00000000000003,
+      577.5581395348838
+    ],
+    "note": "Proposed M4 hardware envelope, not approved grade/torque; threads/socket omitted"
+  },
+  {
+    "id": "J01_Outer_105_240_Upper_washer",
+    "kind": "hardware",
+    "x_mm": 12.0,
+    "y_mm": 11.996270184009802,
+    "z_mm": 1.0,
+    "volume_mm3": 98.57532348801372,
+    "centre_mm": [
+      105.00000000000001,
+      240.0,
+      582.5000000000001
+    ],
+    "note": "Proposed M4 hardware envelope, not approved grade/torque; threads/socket omitted"
+  },
+  {
+    "id": "J01_Outer_105_240_Lower_washer",
+    "kind": "hardware",
+    "x_mm": 12.0,
+    "y_mm": 11.996270184009802,
+    "z_mm": 1.0,
+    "volume_mm3": 98.57532348801372,
+    "centre_mm": [
+      105.00000000000001,
+      240.0,
+      570.5
+    ],
+    "note": "Proposed M4 hardware envelope, not approved grade/torque; threads/socket omitted"
+  },
+  {
+    "id": "J01_Outer_105_240_Nut",
+    "kind": "hardware",
+    "x_mm": 8.082903768654774,
+    "y_mm": 7.0,
+    "z_mm": 5.0,
+    "volume_mm3": 149.34437085539201,
+    "centre_mm": [
+      104.99999999999999,
+      240.00000000000003,
+      567.5
+    ],
+    "note": "Proposed M4 hardware envelope, not approved grade/torque; threads/socket omitted"
+  },
+  {
+    "id": "J01_Outer_445_120_Screw",
+    "kind": "hardware",
+    "x_mm": 7.0,
+    "y_mm": 6.997824274005723,
+    "z_mm": 24.0,
+    "volume_mm3": 405.26545231308353,
+    "centre_mm": [
+      445.0,
+      120.0,
+      577.5581395348837
+    ],
+    "note": "Proposed M4 hardware envelope, not approved grade/torque; threads/socket omitted"
+  },
+  {
+    "id": "J01_Outer_445_120_Upper_washer",
+    "kind": "hardware",
+    "x_mm": 12.0,
+    "y_mm": 11.996270184009802,
+    "z_mm": 1.0,
+    "volume_mm3": 98.57532348801368,
+    "centre_mm": [
+      445.0000000000002,
+      120.00000000000001,
+      582.5000000000001
+    ],
+    "note": "Proposed M4 hardware envelope, not approved grade/torque; threads/socket omitted"
+  },
+  {
+    "id": "J01_Outer_445_120_Lower_washer",
+    "kind": "hardware",
+    "x_mm": 12.0,
+    "y_mm": 11.996270184009802,
+    "z_mm": 1.0,
+    "volume_mm3": 98.57532348801368,
+    "centre_mm": [
+      445.0000000000002,
+      120.00000000000001,
+      570.5000000000001
+    ],
+    "note": "Proposed M4 hardware envelope, not approved grade/torque; threads/socket omitted"
+  },
+  {
+    "id": "J01_Outer_445_120_Nut",
+    "kind": "hardware",
+    "x_mm": 8.082903768654774,
+    "y_mm": 7.0,
+    "z_mm": 5.0,
+    "volume_mm3": 149.34437085539093,
+    "centre_mm": [
+      444.9999999999999,
+      119.99999999999997,
+      567.5
+    ],
+    "note": "Proposed M4 hardware envelope, not approved grade/torque; threads/socket omitted"
+  },
+  {
+    "id": "J01_Outer_445_240_Screw",
+    "kind": "hardware",
+    "x_mm": 7.0,
+    "y_mm": 6.997824274005723,
+    "z_mm": 24.0,
+    "volume_mm3": 405.2654523130836,
+    "centre_mm": [
+      445.0,
+      240.00000000000003,
+      577.5581395348838
+    ],
+    "note": "Proposed M4 hardware envelope, not approved grade/torque; threads/socket omitted"
+  },
+  {
+    "id": "J01_Outer_445_240_Upper_washer",
+    "kind": "hardware",
+    "x_mm": 12.0,
+    "y_mm": 11.996270184009802,
+    "z_mm": 1.0,
+    "volume_mm3": 98.57532348801374,
+    "centre_mm": [
+      445.0000000000001,
+      240.0,
+      582.5
+    ],
+    "note": "Proposed M4 hardware envelope, not approved grade/torque; threads/socket omitted"
+  },
+  {
+    "id": "J01_Outer_445_240_Lower_washer",
+    "kind": "hardware",
+    "x_mm": 12.0,
+    "y_mm": 11.996270184009802,
+    "z_mm": 1.0,
+    "volume_mm3": 98.57532348801374,
+    "centre_mm": [
+      445.0000000000001,
+      240.0,
+      570.5
+    ],
+    "note": "Proposed M4 hardware envelope, not approved grade/torque; threads/socket omitted"
+  },
+  {
+    "id": "J01_Outer_445_240_Nut",
+    "kind": "hardware",
+    "x_mm": 8.082903768654774,
+    "y_mm": 7.0,
+    "z_mm": 5.0,
+    "volume_mm3": 149.34437085539093,
+    "centre_mm": [
+      444.9999999999999,
+      239.99999999999994,
+      567.5
+    ],
+    "note": "Proposed M4 hardware envelope, not approved grade/torque; threads/socket omitted"
+  },
+  {
+    "id": "J01_Inner_105_60_Screw",
+    "kind": "hardware",
+    "x_mm": 7.0,
+    "y_mm": 6.9978242740057155,
+    "z_mm": 24.0,
+    "volume_mm3": 405.2654523130833,
+    "centre_mm": [
+      105.00000000000001,
+      59.99999999999999,
+      575.5581395348836
+    ],
+    "note": "Proposed M4 hardware envelope, not approved grade/torque; threads/socket omitted"
+  },
+  {
+    "id": "J01_Inner_105_60_Upper_washer",
+    "kind": "hardware",
+    "x_mm": 12.0,
+    "y_mm": 11.996270184009802,
+    "z_mm": 1.0,
+    "volume_mm3": 98.5753234880137,
+    "centre_mm": [
+      105.00000000000001,
+      60.0,
+      580.5000000000001
+    ],
+    "note": "Proposed M4 hardware envelope, not approved grade/torque; threads/socket omitted"
+  },
+  {
+    "id": "J01_Inner_105_60_Lower_washer",
+    "kind": "hardware",
+    "x_mm": 12.0,
+    "y_mm": 11.996270184009802,
+    "z_mm": 1.0,
+    "volume_mm3": 98.5753234880137,
+    "centre_mm": [
+      105.00000000000001,
+      60.0,
+      568.5000000000001
+    ],
+    "note": "Proposed M4 hardware envelope, not approved grade/torque; threads/socket omitted"
+  },
+  {
+    "id": "J01_Inner_105_60_Nut",
+    "kind": "hardware",
+    "x_mm": 8.082903768654774,
+    "y_mm": 7.0,
+    "z_mm": 5.000000000000114,
+    "volume_mm3": 149.344370855392,
+    "centre_mm": [
+      104.99999999999999,
+      60.00000000000001,
+      565.5
+    ],
+    "note": "Proposed M4 hardware envelope, not approved grade/torque; threads/socket omitted"
+  },
+  {
+    "id": "J01_Inner_105_300_Screw",
+    "kind": "hardware",
+    "x_mm": 7.0,
+    "y_mm": 6.997824274005666,
+    "z_mm": 24.0,
+    "volume_mm3": 405.26545231308404,
+    "centre_mm": [
+      105.0,
+      300.00000000000006,
+      575.5581395348837
+    ],
+    "note": "Proposed M4 hardware envelope, not approved grade/torque; threads/socket omitted"
+  },
+  {
+    "id": "J01_Inner_105_300_Upper_washer",
+    "kind": "hardware",
+    "x_mm": 12.0,
+    "y_mm": 11.996270184009745,
+    "z_mm": 1.0,
+    "volume_mm3": 98.57532348801374,
+    "centre_mm": [
+      105.00000000000001,
+      300.00000000000006,
+      580.4999999999999
+    ],
+    "note": "Proposed M4 hardware envelope, not approved grade/torque; threads/socket omitted"
+  },
+  {
+    "id": "J01_Inner_105_300_Lower_washer",
+    "kind": "hardware",
+    "x_mm": 12.0,
+    "y_mm": 11.996270184009745,
+    "z_mm": 1.0,
+    "volume_mm3": 98.57532348801374,
+    "centre_mm": [
+      105.00000000000001,
+      300.00000000000006,
+      568.5000000000002
+    ],
+    "note": "Proposed M4 hardware envelope, not approved grade/torque; threads/socket omitted"
+  },
+  {
+    "id": "J01_Inner_105_300_Nut",
+    "kind": "hardware",
+    "x_mm": 8.082903768654774,
+    "y_mm": 7.0,
+    "z_mm": 5.000000000000114,
+    "volume_mm3": 149.34437085539182,
+    "centre_mm": [
+      104.99999999999999,
+      300.00000000000006,
+      565.5
+    ],
+    "note": "Proposed M4 hardware envelope, not approved grade/torque; threads/socket omitted"
+  },
+  {
+    "id": "J01_Inner_445_60_Screw",
+    "kind": "hardware",
+    "x_mm": 7.0,
+    "y_mm": 6.9978242740057155,
+    "z_mm": 24.0,
+    "volume_mm3": 405.2654523130837,
+    "centre_mm": [
+      444.99999999999994,
+      59.99999999999999,
+      575.5581395348837
+    ],
+    "note": "Proposed M4 hardware envelope, not approved grade/torque; threads/socket omitted"
+  },
+  {
+    "id": "J01_Inner_445_60_Upper_washer",
+    "kind": "hardware",
+    "x_mm": 12.0,
+    "y_mm": 11.996270184009802,
+    "z_mm": 1.0,
+    "volume_mm3": 98.57532348801368,
+    "centre_mm": [
+      445.0000000000001,
+      60.00000000000001,
+      580.5000000000001
+    ],
+    "note": "Proposed M4 hardware envelope, not approved grade/torque; threads/socket omitted"
+  },
+  {
+    "id": "J01_Inner_445_60_Lower_washer",
+    "kind": "hardware",
+    "x_mm": 12.0,
+    "y_mm": 11.996270184009802,
+    "z_mm": 1.0,
+    "volume_mm3": 98.57532348801368,
+    "centre_mm": [
+      445.0000000000001,
+      60.00000000000001,
+      568.5000000000001
+    ],
+    "note": "Proposed M4 hardware envelope, not approved grade/torque; threads/socket omitted"
+  },
+  {
+    "id": "J01_Inner_445_60_Nut",
+    "kind": "hardware",
+    "x_mm": 8.082903768654774,
+    "y_mm": 7.0,
+    "z_mm": 5.000000000000114,
+    "volume_mm3": 149.3443708553909,
+    "centre_mm": [
+      444.9999999999999,
+      60.0,
+      565.5000000000002
+    ],
+    "note": "Proposed M4 hardware envelope, not approved grade/torque; threads/socket omitted"
+  },
+  {
+    "id": "J01_Inner_445_300_Screw",
+    "kind": "hardware",
+    "x_mm": 7.0,
+    "y_mm": 6.997824274005666,
+    "z_mm": 24.0,
+    "volume_mm3": 405.2654523130844,
+    "centre_mm": [
+      445.00000000000006,
+      300.0,
+      575.5581395348837
+    ],
+    "note": "Proposed M4 hardware envelope, not approved grade/torque; threads/socket omitted"
+  },
+  {
+    "id": "J01_Inner_445_300_Upper_washer",
+    "kind": "hardware",
+    "x_mm": 12.0,
+    "y_mm": 11.996270184009745,
+    "z_mm": 1.0,
+    "volume_mm3": 98.57532348801374,
+    "centre_mm": [
+      445.0000000000001,
+      300.0,
+      580.5000000000001
+    ],
+    "note": "Proposed M4 hardware envelope, not approved grade/torque; threads/socket omitted"
+  },
+  {
+    "id": "J01_Inner_445_300_Lower_washer",
+    "kind": "hardware",
+    "x_mm": 12.0,
+    "y_mm": 11.996270184009745,
+    "z_mm": 1.0,
+    "volume_mm3": 98.57532348801374,
+    "centre_mm": [
+      445.0000000000001,
+      300.0,
+      568.5000000000001
+    ],
+    "note": "Proposed M4 hardware envelope, not approved grade/torque; threads/socket omitted"
+  },
+  {
+    "id": "J01_Inner_445_300_Nut",
+    "kind": "hardware",
+    "x_mm": 8.082903768654774,
+    "y_mm": 7.0,
+    "z_mm": 5.000000000000114,
+    "volume_mm3": 149.34437085539076,
+    "centre_mm": [
+      444.9999999999999,
+      299.99999999999994,
+      565.5000000000001
+    ],
+    "note": "Proposed M4 hardware envelope, not approved grade/torque; threads/socket omitted"
+  },
+  {
+    "id": "G10_Outer_fabricated_guard",
+    "kind": "guard",
+    "x_mm": 360.0,
+    "y_mm": 320.0,
+    "z_mm": 51.0,
+    "volume_mm3": 178232.76549753034,
+    "centre_mm": [
+      274.99999999999835,
+      179.99999999999983,
+      618.3534012189881
+    ],
+    "note": "PROPOSED welded steel sheet/angle assembly. Face perimeter, four vertical corners and four bracket laps joined. Weld process/size/distortion/strength not released; no rivet holes. Perforations not modeled."
+  },
+  {
+    "id": "G10_Inner_fabricated_guard",
+    "kind": "guard",
+    "x_mm": 360.0,
+    "y_mm": 320.0,
+    "z_mm": 41.0,
+    "volume_mm3": 165472.7654975293,
+    "centre_mm": [
+      275.0000000000011,
+      180.0000000000005,
+      539.3474634043259
+    ],
+    "note": "PROPOSED welded steel sheet/angle assembly. Face perimeter, four vertical corners and four bracket laps joined. Weld process/size/distortion/strength not released; no rivet holes. Perforations not modeled."
+  },
+  {
+    "id": "K01_Front_0_stud",
+    "kind": "hardware",
+    "x_mm": 4.99888108070876,
+    "y_mm": 60.0,
+    "z_mm": 4.999440509051382,
+    "volume_mm3": 1178.0972450961722,
+    "centre_mm": [
+      20.0,
+      9.000000000000004,
+      55.00000000000001
+    ],
+    "note": "Proposed M5x60 rod; replaces old projecting stud. End treatment/retention pending."
+  },
+  {
+    "id": "K01_Front_0_outer_washer",
+    "kind": "hardware",
+    "x_mm": 15.0,
+    "y_mm": 1.2000000000000046,
+    "z_mm": 14.995337730012245,
+    "volume_mm3": 185.58330282550986,
+    "centre_mm": [
+      20.0,
+      -12.600000000000001,
+      55.0
+    ],
+    "note": "Proposed fastener envelope; grade, torque and locking engagement unreleased"
+  },
+  {
+    "id": "K01_Front_0_inner_washer",
+    "kind": "hardware",
+    "x_mm": 15.0,
+    "y_mm": 1.2000000000000028,
+    "z_mm": 14.995337730012245,
+    "volume_mm3": 185.58330282550983,
+    "centre_mm": [
+      20.0,
+      29.6,
+      55.0
+    ],
+    "note": "Proposed fastener envelope; grade, torque and locking engagement unreleased"
+  },
+  {
+    "id": "K01_Front_0_outer_nut",
+    "kind": "hardware",
+    "x_mm": 9.237604307034012,
+    "y_mm": 5.0000000000000036,
+    "z_mm": 8.000000000000007,
+    "volume_mm3": 178.95335878633944,
+    "centre_mm": [
+      20.0,
+      -15.7,
+      55.0
+    ],
+    "note": "Proposed fastener envelope; grade, torque and locking engagement unreleased"
+  },
+  {
+    "id": "K01_Front_0_inner_nut",
+    "kind": "hardware",
+    "x_mm": 9.237604307034012,
+    "y_mm": 5.000000000000011,
+    "z_mm": 8.0,
+    "volume_mm3": 178.95335878633944,
+    "centre_mm": [
+      20.0,
+      32.7,
+      55.0
+    ],
+    "note": "Proposed fastener envelope; grade, torque and locking engagement unreleased"
+  },
+  {
+    "id": "K01_Front_1_stud",
+    "kind": "hardware",
+    "x_mm": 4.99888108070876,
+    "y_mm": 60.0,
+    "z_mm": 4.9994405090513965,
+    "volume_mm3": 1178.0972450961733,
+    "centre_mm": [
+      20.0,
+      8.999999999999996,
+      305.0
+    ],
+    "note": "Proposed M5x60 rod; replaces old projecting stud. End treatment/retention pending."
+  },
+  {
+    "id": "K01_Front_1_outer_washer",
+    "kind": "hardware",
+    "x_mm": 15.0,
+    "y_mm": 1.2000000000000046,
+    "z_mm": 14.995337730012238,
+    "volume_mm3": 185.58330282550995,
+    "centre_mm": [
+      20.0,
+      -12.6,
+      305.0
+    ],
+    "note": "Proposed fastener envelope; grade, torque and locking engagement unreleased"
+  },
+  {
+    "id": "K01_Front_1_inner_washer",
+    "kind": "hardware",
+    "x_mm": 15.0,
+    "y_mm": 1.2000000000000028,
+    "z_mm": 14.995337730012238,
+    "volume_mm3": 185.58330282550992,
+    "centre_mm": [
+      20.0,
+      29.6,
+      305.0
+    ],
+    "note": "Proposed fastener envelope; grade, torque and locking engagement unreleased"
+  },
+  {
+    "id": "K01_Front_1_outer_nut",
+    "kind": "hardware",
+    "x_mm": 9.237604307034012,
+    "y_mm": 5.0,
+    "z_mm": 8.0,
+    "volume_mm3": 178.9533587863392,
+    "centre_mm": [
+      20.0,
+      -15.699999999999998,
+      305.0
+    ],
+    "note": "Proposed fastener envelope; grade, torque and locking engagement unreleased"
+  },
+  {
+    "id": "K01_Front_1_inner_nut",
+    "kind": "hardware",
+    "x_mm": 9.237604307034012,
+    "y_mm": 5.0000000000000036,
+    "z_mm": 8.0,
+    "volume_mm3": 178.95335878633927,
+    "centre_mm": [
+      20.0,
+      32.7,
+      305.0
+    ],
+    "note": "Proposed fastener envelope; grade, torque and locking engagement unreleased"
+  },
+  {
+    "id": "K01_Front_2_stud",
+    "kind": "hardware",
+    "x_mm": 4.99888108070876,
+    "y_mm": 60.0,
+    "z_mm": 4.999440509051283,
+    "volume_mm3": 1178.0972450961683,
+    "centre_mm": [
+      19.999999999999996,
+      9.000000000000004,
+      555.0
+    ],
+    "note": "Proposed M5x60 rod; replaces old projecting stud. End treatment/retention pending."
+  },
+  {
+    "id": "K01_Front_2_outer_washer",
+    "kind": "hardware",
+    "x_mm": 15.0,
+    "y_mm": 1.2000000000000046,
+    "z_mm": 14.995337730012352,
+    "volume_mm3": 185.58330282550986,
+    "centre_mm": [
+      20.000000000000004,
+      -12.600000000000001,
+      555.0
+    ],
+    "note": "Proposed fastener envelope; grade, torque and locking engagement unreleased"
+  },
+  {
+    "id": "K01_Front_2_inner_washer",
+    "kind": "hardware",
+    "x_mm": 15.0,
+    "y_mm": 1.2000000000000028,
+    "z_mm": 14.995337730012352,
+    "volume_mm3": 185.58330282550983,
+    "centre_mm": [
+      20.000000000000004,
+      29.6,
+      555.0
+    ],
+    "note": "Proposed fastener envelope; grade, torque and locking engagement unreleased"
+  },
+  {
+    "id": "K01_Front_2_outer_nut",
+    "kind": "hardware",
+    "x_mm": 9.237604307034012,
+    "y_mm": 5.0000000000000036,
+    "z_mm": 8.0,
+    "volume_mm3": 178.95335878633975,
+    "centre_mm": [
+      20.0,
+      -15.7,
+      555.0
+    ],
+    "note": "Proposed fastener envelope; grade, torque and locking engagement unreleased"
+  },
+  {
+    "id": "K01_Front_2_inner_nut",
+    "kind": "hardware",
+    "x_mm": 9.237604307034012,
+    "y_mm": 5.000000000000007,
+    "z_mm": 8.0,
+    "volume_mm3": 178.95335878633975,
+    "centre_mm": [
+      20.0,
+      32.7,
+      555.0
+    ],
+    "note": "Proposed fastener envelope; grade, torque and locking engagement unreleased"
+  },
+  {
+    "id": "K01_Front_3_stud",
+    "kind": "hardware",
+    "x_mm": 4.99888108070877,
+    "y_mm": 60.0,
+    "z_mm": 4.999440509051382,
+    "volume_mm3": 1178.0972450961722,
+    "centre_mm": [
+      530.0,
+      9.000000000000004,
+      55.00000000000001
+    ],
+    "note": "Proposed M5x60 rod; replaces old projecting stud. End treatment/retention pending."
+  },
+  {
+    "id": "K01_Front_3_outer_washer",
+    "kind": "hardware",
+    "x_mm": 15.0,
+    "y_mm": 1.2000000000000046,
+    "z_mm": 14.995337730012245,
+    "volume_mm3": 185.5833028255098,
+    "centre_mm": [
+      530.0,
+      -12.6,
+      55.0
+    ],
+    "note": "Proposed fastener envelope; grade, torque and locking engagement unreleased"
+  },
+  {
+    "id": "K01_Front_3_inner_washer",
+    "kind": "hardware",
+    "x_mm": 15.0,
+    "y_mm": 1.2000000000000028,
+    "z_mm": 14.995337730012245,
+    "volume_mm3": 185.58330282550978,
+    "centre_mm": [
+      530.0,
+      29.6,
+      55.0
+    ],
+    "note": "Proposed fastener envelope; grade, torque and locking engagement unreleased"
+  },
+  {
+    "id": "K01_Front_3_outer_nut",
+    "kind": "hardware",
+    "x_mm": 9.237604307033962,
+    "y_mm": 5.0000000000000036,
+    "z_mm": 8.000000000000007,
+    "volume_mm3": 178.95335878633904,
+    "centre_mm": [
+      530.0,
+      -15.700000000000001,
+      55.0
+    ],
+    "note": "Proposed fastener envelope; grade, torque and locking engagement unreleased"
+  },
+  {
+    "id": "K01_Front_3_inner_nut",
+    "kind": "hardware",
+    "x_mm": 9.237604307033962,
+    "y_mm": 5.000000000000011,
+    "z_mm": 8.0,
+    "volume_mm3": 178.95335878633904,
+    "centre_mm": [
+      530.0,
+      32.7,
+      55.0
+    ],
+    "note": "Proposed fastener envelope; grade, torque and locking engagement unreleased"
+  },
+  {
+    "id": "K01_Front_4_stud",
+    "kind": "hardware",
+    "x_mm": 4.99888108070877,
+    "y_mm": 60.0,
+    "z_mm": 4.9994405090513965,
+    "volume_mm3": 1178.097245096173,
+    "centre_mm": [
+      530.0,
+      8.999999999999996,
+      305.0
+    ],
+    "note": "Proposed M5x60 rod; replaces old projecting stud. End treatment/retention pending."
+  },
+  {
+    "id": "K01_Front_4_outer_washer",
+    "kind": "hardware",
+    "x_mm": 15.0,
+    "y_mm": 1.2000000000000046,
+    "z_mm": 14.995337730012238,
+    "volume_mm3": 185.5833028255099,
+    "centre_mm": [
+      530.0,
+      -12.599999999999998,
+      305.0
+    ],
+    "note": "Proposed fastener envelope; grade, torque and locking engagement unreleased"
+  },
+  {
+    "id": "K01_Front_4_inner_washer",
+    "kind": "hardware",
+    "x_mm": 15.0,
+    "y_mm": 1.2000000000000028,
+    "z_mm": 14.995337730012238,
+    "volume_mm3": 185.58330282550986,
+    "centre_mm": [
+      530.0,
+      29.6,
+      305.0
+    ],
+    "note": "Proposed fastener envelope; grade, torque and locking engagement unreleased"
+  },
+  {
+    "id": "K01_Front_4_outer_nut",
+    "kind": "hardware",
+    "x_mm": 9.237604307033962,
+    "y_mm": 5.0,
+    "z_mm": 8.0,
+    "volume_mm3": 178.9533587863389,
+    "centre_mm": [
+      530.0,
+      -15.7,
+      305.0
+    ],
+    "note": "Proposed fastener envelope; grade, torque and locking engagement unreleased"
+  },
+  {
+    "id": "K01_Front_4_inner_nut",
+    "kind": "hardware",
+    "x_mm": 9.237604307033962,
+    "y_mm": 5.0000000000000036,
+    "z_mm": 8.0,
+    "volume_mm3": 178.9533587863389,
+    "centre_mm": [
+      530.0,
+      32.7,
+      305.0
+    ],
+    "note": "Proposed fastener envelope; grade, torque and locking engagement unreleased"
+  },
+  {
+    "id": "K01_Front_5_stud",
+    "kind": "hardware",
+    "x_mm": 4.99888108070877,
+    "y_mm": 60.0,
+    "z_mm": 4.999440509051283,
+    "volume_mm3": 1178.0972450961683,
+    "centre_mm": [
+      530.0,
+      9.000000000000004,
+      555.0
+    ],
+    "note": "Proposed M5x60 rod; replaces old projecting stud. End treatment/retention pending."
+  },
+  {
+    "id": "K01_Front_5_outer_washer",
+    "kind": "hardware",
+    "x_mm": 15.0,
+    "y_mm": 1.2000000000000046,
+    "z_mm": 14.995337730012352,
+    "volume_mm3": 185.5833028255098,
+    "centre_mm": [
+      530.0,
+      -12.6,
+      555.0
+    ],
+    "note": "Proposed fastener envelope; grade, torque and locking engagement unreleased"
+  },
+  {
+    "id": "K01_Front_5_inner_washer",
+    "kind": "hardware",
+    "x_mm": 15.0,
+    "y_mm": 1.2000000000000028,
+    "z_mm": 14.995337730012352,
+    "volume_mm3": 185.58330282550978,
+    "centre_mm": [
+      530.0,
+      29.6,
+      555.0
+    ],
+    "note": "Proposed fastener envelope; grade, torque and locking engagement unreleased"
+  },
+  {
+    "id": "K01_Front_5_outer_nut",
+    "kind": "hardware",
+    "x_mm": 9.237604307033962,
+    "y_mm": 5.0000000000000036,
+    "z_mm": 8.0,
+    "volume_mm3": 178.95335878633938,
+    "centre_mm": [
+      530.0,
+      -15.699999999999998,
+      555.0
+    ],
+    "note": "Proposed fastener envelope; grade, torque and locking engagement unreleased"
+  },
+  {
+    "id": "K01_Front_5_inner_nut",
+    "kind": "hardware",
+    "x_mm": 9.237604307033962,
+    "y_mm": 5.000000000000007,
+    "z_mm": 8.0,
+    "volume_mm3": 178.95335878633938,
+    "centre_mm": [
+      530.0,
+      32.7,
+      555.0
+    ],
+    "note": "Proposed fastener envelope; grade, torque and locking engagement unreleased"
+  },
+  {
+    "id": "K01_Front_6_stud",
+    "kind": "hardware",
+    "x_mm": 4.99888108070877,
+    "y_mm": 40.0,
+    "z_mm": 4.999440509051368,
+    "volume_mm3": 785.3981633974494,
+    "centre_mm": [
+      275.0,
+      -1.0,
+      50.000000000000014
+    ],
+    "note": "Proposed M5x40 rod; replaces old projecting stud. End treatment/retention pending."
+  },
+  {
+    "id": "K01_Front_6_outer_washer",
+    "kind": "hardware",
+    "x_mm": 15.0,
+    "y_mm": 1.2000000000000046,
+    "z_mm": 14.995337730012245,
+    "volume_mm3": 185.58330282550997,
+    "centre_mm": [
+      275.0,
+      -12.6,
+      50.0
+    ],
+    "note": "Proposed fastener envelope; grade, torque and locking engagement unreleased"
+  },
+  {
+    "id": "K01_Front_6_inner_washer",
+    "kind": "hardware",
+    "x_mm": 15.0,
+    "y_mm": 1.2000000000000046,
+    "z_mm": 14.995337730012245,
+    "volume_mm3": 185.58330282550995,
+    "centre_mm": [
+      275.0,
+      9.6,
+      50.00000000000001
+    ],
+    "note": "Proposed fastener envelope; grade, torque and locking engagement unreleased"
+  },
+  {
+    "id": "K01_Front_6_outer_nut",
+    "kind": "hardware",
+    "x_mm": 9.237604307033962,
+    "y_mm": 5.0,
+    "z_mm": 8.000000000000007,
+    "volume_mm3": 178.95335878633938,
+    "centre_mm": [
+      275.0,
+      -15.699999999999998,
+      50.0
+    ],
+    "note": "Proposed fastener envelope; grade, torque and locking engagement unreleased"
+  },
+  {
+    "id": "K01_Front_6_inner_nut",
+    "kind": "hardware",
+    "x_mm": 9.237604307033962,
+    "y_mm": 5.0,
+    "z_mm": 8.0,
+    "volume_mm3": 178.95335878633944,
+    "centre_mm": [
+      275.0,
+      12.700000000000001,
+      50.00000000000001
+    ],
+    "note": "Proposed fastener envelope; grade, torque and locking engagement unreleased"
+  },
+  {
+    "id": "K01_Front_7_stud",
+    "kind": "hardware",
+    "x_mm": 4.99888108070877,
+    "y_mm": 40.0,
+    "z_mm": 4.999440509051283,
+    "volume_mm3": 785.3981633974465,
+    "centre_mm": [
+      275.0,
+      -1.0000000000000036,
+      560.0
+    ],
+    "note": "Proposed M5x40 rod; replaces old projecting stud. End treatment/retention pending."
+  },
+  {
+    "id": "K01_Front_7_outer_washer",
+    "kind": "hardware",
+    "x_mm": 15.0,
+    "y_mm": 1.2000000000000046,
+    "z_mm": 14.995337730012352,
+    "volume_mm3": 185.58330282550997,
+    "centre_mm": [
+      275.0,
+      -12.6,
+      560.0
+    ],
+    "note": "Proposed fastener envelope; grade, torque and locking engagement unreleased"
+  },
+  {
+    "id": "K01_Front_7_inner_washer",
+    "kind": "hardware",
+    "x_mm": 15.0,
+    "y_mm": 1.2000000000000046,
+    "z_mm": 14.995337730012352,
+    "volume_mm3": 185.58330282550995,
+    "centre_mm": [
+      275.0,
+      9.6,
+      560.0
+    ],
+    "note": "Proposed fastener envelope; grade, torque and locking engagement unreleased"
+  },
+  {
+    "id": "K01_Front_7_outer_nut",
+    "kind": "hardware",
+    "x_mm": 9.237604307033962,
+    "y_mm": 5.0,
+    "z_mm": 8.0,
+    "volume_mm3": 178.95335878633975,
+    "centre_mm": [
+      275.0,
+      -15.7,
+      560.0
+    ],
+    "note": "Proposed fastener envelope; grade, torque and locking engagement unreleased"
+  },
+  {
+    "id": "K01_Front_7_inner_nut",
+    "kind": "hardware",
+    "x_mm": 9.237604307033962,
+    "y_mm": 5.0,
+    "z_mm": 8.0,
+    "volume_mm3": 178.9533587863398,
+    "centre_mm": [
+      275.0,
+      12.7,
+      560.0
+    ],
+    "note": "Proposed fastener envelope; grade, torque and locking engagement unreleased"
+  },
+  {
+    "id": "K01_Rear_0_stud",
+    "kind": "hardware",
+    "x_mm": 4.99888108070876,
+    "y_mm": 60.0,
+    "z_mm": 4.999440509051411,
+    "volume_mm3": 1178.0972450961726,
+    "centre_mm": [
+      20.0,
+      350.99999999999994,
+      55.00000000000016
+    ],
+    "note": "Proposed M5x60 rod; replaces old projecting stud. End treatment/retention pending."
+  },
+  {
+    "id": "K01_Rear_0_outer_washer",
+    "kind": "hardware",
+    "x_mm": 14.999999999999996,
+    "y_mm": 1.1999999999999886,
+    "z_mm": 14.995337730012253,
+    "volume_mm3": 185.58330282550926,
+    "centre_mm": [
+      19.999999999999996,
+      372.5999999999999,
+      55.00000000000017
+    ],
+    "note": "Proposed fastener envelope; grade, torque and locking engagement unreleased"
+  },
+  {
+    "id": "K01_Rear_0_inner_washer",
+    "kind": "hardware",
+    "x_mm": 14.999999999999996,
+    "y_mm": 1.2000000000000455,
+    "z_mm": 14.995337730012245,
+    "volume_mm3": 185.58330282550924,
+    "centre_mm": [
+      19.999999999999996,
+      330.4,
+      55.00000000000013
+    ],
+    "note": "Proposed fastener envelope; grade, torque and locking engagement unreleased"
+  },
+  {
+    "id": "K01_Rear_0_outer_nut",
+    "kind": "hardware",
+    "x_mm": 9.237604307034013,
+    "y_mm": 5.0,
+    "z_mm": 8.000000000000007,
+    "volume_mm3": 178.95335878633944,
+    "centre_mm": [
+      20.0,
+      375.6999999999999,
+      55.00000000000018
+    ],
+    "note": "Proposed fastener envelope; grade, torque and locking engagement unreleased"
+  },
+  {
+    "id": "K01_Rear_0_inner_nut",
+    "kind": "hardware",
+    "x_mm": 9.237604307034013,
+    "y_mm": 5.0,
+    "z_mm": 8.000000000000007,
+    "volume_mm3": 178.95335878633944,
+    "centre_mm": [
+      20.0,
+      327.2999999999999,
+      55.00000000000013
+    ],
+    "note": "Proposed fastener envelope; grade, torque and locking engagement unreleased"
+  },
+  {
+    "id": "K01_Rear_1_stud",
+    "kind": "hardware",
+    "x_mm": 4.99888108070876,
+    "y_mm": 60.0,
+    "z_mm": 4.999440509051453,
+    "volume_mm3": 1178.0972450961722,
+    "centre_mm": [
+      20.0,
+      350.99999999999994,
+      305.0000000000001
+    ],
+    "note": "Proposed M5x60 rod; replaces old projecting stud. End treatment/retention pending."
+  },
+  {
+    "id": "K01_Rear_1_outer_washer",
+    "kind": "hardware",
+    "x_mm": 14.999999999999996,
+    "y_mm": 1.1999999999999886,
+    "z_mm": 14.995337730012295,
+    "volume_mm3": 185.5833028255093,
+    "centre_mm": [
+      19.999999999999996,
+      372.59999999999985,
+      305.0000000000001
+    ],
+    "note": "Proposed fastener envelope; grade, torque and locking engagement unreleased"
+  },
+  {
+    "id": "K01_Rear_1_inner_washer",
+    "kind": "hardware",
+    "x_mm": 14.999999999999996,
+    "y_mm": 1.2000000000000455,
+    "z_mm": 14.995337730012238,
+    "volume_mm3": 185.58330282550926,
+    "centre_mm": [
+      19.999999999999996,
+      330.4,
+      305.0000000000001
+    ],
+    "note": "Proposed fastener envelope; grade, torque and locking engagement unreleased"
+  },
+  {
+    "id": "K01_Rear_1_outer_nut",
+    "kind": "hardware",
+    "x_mm": 9.237604307034013,
+    "y_mm": 5.0,
+    "z_mm": 8.0,
+    "volume_mm3": 178.9533587863395,
+    "centre_mm": [
+      20.0,
+      375.7,
+      305.00000000000017
+    ],
+    "note": "Proposed fastener envelope; grade, torque and locking engagement unreleased"
+  },
+  {
+    "id": "K01_Rear_1_inner_nut",
+    "kind": "hardware",
+    "x_mm": 9.237604307034013,
+    "y_mm": 5.0,
+    "z_mm": 8.0,
+    "volume_mm3": 178.95335878633932,
+    "centre_mm": [
+      20.0,
+      327.29999999999984,
+      305.0000000000001
+    ],
+    "note": "Proposed fastener envelope; grade, torque and locking engagement unreleased"
+  },
+  {
+    "id": "K01_Rear_2_stud",
+    "kind": "hardware",
+    "x_mm": 4.99888108070876,
+    "y_mm": 60.0,
+    "z_mm": 4.9994405090513965,
+    "volume_mm3": 1178.0972450961744,
+    "centre_mm": [
+      20.0,
+      350.99999999999994,
+      555.0000000000002
+    ],
+    "note": "Proposed M5x60 rod; replaces old projecting stud. End treatment/retention pending."
+  },
+  {
+    "id": "K01_Rear_2_outer_washer",
+    "kind": "hardware",
+    "x_mm": 14.999999999999996,
+    "y_mm": 1.1999999999999886,
+    "z_mm": 14.995337730012238,
+    "volume_mm3": 185.58330282550935,
+    "centre_mm": [
+      19.999999999999996,
+      372.59999999999985,
+      555.0000000000002
+    ],
+    "note": "Proposed fastener envelope; grade, torque and locking engagement unreleased"
+  },
+  {
+    "id": "K01_Rear_2_inner_washer",
+    "kind": "hardware",
+    "x_mm": 14.999999999999996,
+    "y_mm": 1.2000000000000455,
+    "z_mm": 14.995337730012238,
+    "volume_mm3": 185.58330282550924,
+    "centre_mm": [
+      19.999999999999993,
+      330.3999999999999,
+      555.0000000000001
+    ],
+    "note": "Proposed fastener envelope; grade, torque and locking engagement unreleased"
+  },
+  {
+    "id": "K01_Rear_2_outer_nut",
+    "kind": "hardware",
+    "x_mm": 9.237604307034013,
+    "y_mm": 5.0,
+    "z_mm": 8.0,
+    "volume_mm3": 178.95335878633935,
+    "centre_mm": [
+      20.0,
+      375.7,
+      555.0000000000002
+    ],
+    "note": "Proposed fastener envelope; grade, torque and locking engagement unreleased"
+  },
+  {
+    "id": "K01_Rear_2_inner_nut",
+    "kind": "hardware",
+    "x_mm": 9.237604307034013,
+    "y_mm": 5.0,
+    "z_mm": 8.0,
+    "volume_mm3": 178.9533587863392,
+    "centre_mm": [
+      20.0,
+      327.29999999999995,
+      555.0000000000002
+    ],
+    "note": "Proposed fastener envelope; grade, torque and locking engagement unreleased"
+  },
+  {
+    "id": "K01_Rear_3_stud",
+    "kind": "hardware",
+    "x_mm": 4.99888108070877,
+    "y_mm": 60.0,
+    "z_mm": 4.999440509051411,
+    "volume_mm3": 1178.0972450961722,
+    "centre_mm": [
+      530.0,
+      350.99999999999994,
+      55.00000000000016
+    ],
+    "note": "Proposed M5x60 rod; replaces old projecting stud. End treatment/retention pending."
+  },
+  {
+    "id": "K01_Rear_3_outer_washer",
+    "kind": "hardware",
+    "x_mm": 15.0,
+    "y_mm": 1.1999999999999886,
+    "z_mm": 14.995337730012253,
+    "volume_mm3": 185.58330282550924,
+    "centre_mm": [
+      530.0,
+      372.59999999999997,
+      55.00000000000016
+    ],
+    "note": "Proposed fastener envelope; grade, torque and locking engagement unreleased"
+  },
+  {
+    "id": "K01_Rear_3_inner_washer",
+    "kind": "hardware",
+    "x_mm": 15.0,
+    "y_mm": 1.2000000000000455,
+    "z_mm": 14.995337730012245,
+    "volume_mm3": 185.5833028255092,
+    "centre_mm": [
+      530.0,
+      330.40000000000003,
+      55.00000000000013
+    ],
+    "note": "Proposed fastener envelope; grade, torque and locking engagement unreleased"
+  },
+  {
+    "id": "K01_Rear_3_outer_nut",
+    "kind": "hardware",
+    "x_mm": 9.237604307033962,
+    "y_mm": 5.0,
+    "z_mm": 8.000000000000007,
+    "volume_mm3": 178.95335878633904,
+    "centre_mm": [
+      530.0,
+      375.7,
+      55.000000000000185
+    ],
+    "note": "Proposed fastener envelope; grade, torque and locking engagement unreleased"
+  },
+  {
+    "id": "K01_Rear_3_inner_nut",
+    "kind": "hardware",
+    "x_mm": 9.237604307033962,
+    "y_mm": 5.0,
+    "z_mm": 8.000000000000007,
+    "volume_mm3": 178.95335878633904,
+    "centre_mm": [
+      530.0,
+      327.3,
+      55.00000000000013
+    ],
+    "note": "Proposed fastener envelope; grade, torque and locking engagement unreleased"
+  },
+  {
+    "id": "K01_Rear_4_stud",
+    "kind": "hardware",
+    "x_mm": 4.99888108070877,
+    "y_mm": 60.0,
+    "z_mm": 4.999440509051453,
+    "volume_mm3": 1178.0972450961722,
+    "centre_mm": [
+      530.0,
+      350.9999999999999,
+      305.0000000000001
+    ],
+    "note": "Proposed M5x60 rod; replaces old projecting stud. End treatment/retention pending."
+  },
+  {
+    "id": "K01_Rear_4_outer_washer",
+    "kind": "hardware",
+    "x_mm": 15.0,
+    "y_mm": 1.1999999999999886,
+    "z_mm": 14.995337730012295,
+    "volume_mm3": 185.58330282550926,
+    "centre_mm": [
+      530.0,
+      372.5999999999999,
+      305.0000000000001
+    ],
+    "note": "Proposed fastener envelope; grade, torque and locking engagement unreleased"
+  },
+  {
+    "id": "K01_Rear_4_inner_washer",
+    "kind": "hardware",
+    "x_mm": 15.0,
+    "y_mm": 1.2000000000000455,
+    "z_mm": 14.995337730012238,
+    "volume_mm3": 185.58330282550924,
+    "centre_mm": [
+      530.0,
+      330.4,
+      305.0000000000001
+    ],
+    "note": "Proposed fastener envelope; grade, torque and locking engagement unreleased"
+  },
+  {
+    "id": "K01_Rear_4_outer_nut",
+    "kind": "hardware",
+    "x_mm": 9.237604307033962,
+    "y_mm": 5.0,
+    "z_mm": 8.0,
+    "volume_mm3": 178.95335878633918,
+    "centre_mm": [
+      530.0,
+      375.6999999999998,
+      305.00000000000017
+    ],
+    "note": "Proposed fastener envelope; grade, torque and locking engagement unreleased"
+  },
+  {
+    "id": "K01_Rear_4_inner_nut",
+    "kind": "hardware",
+    "x_mm": 9.237604307033962,
+    "y_mm": 5.0,
+    "z_mm": 8.0,
+    "volume_mm3": 178.95335878633898,
+    "centre_mm": [
+      530.0,
+      327.3,
+      305.0000000000001
+    ],
+    "note": "Proposed fastener envelope; grade, torque and locking engagement unreleased"
+  },
+  {
+    "id": "K01_Rear_5_stud",
+    "kind": "hardware",
+    "x_mm": 4.99888108070877,
+    "y_mm": 60.0,
+    "z_mm": 4.9994405090513965,
+    "volume_mm3": 1178.097245096174,
+    "centre_mm": [
+      530.0,
+      351.0,
+      555.0000000000002
+    ],
+    "note": "Proposed M5x60 rod; replaces old projecting stud. End treatment/retention pending."
+  },
+  {
+    "id": "K01_Rear_5_outer_washer",
+    "kind": "hardware",
+    "x_mm": 15.0,
+    "y_mm": 1.1999999999999886,
+    "z_mm": 14.995337730012238,
+    "volume_mm3": 185.58330282550932,
+    "centre_mm": [
+      530.0,
+      372.6000000000001,
+      555.0000000000002
+    ],
+    "note": "Proposed fastener envelope; grade, torque and locking engagement unreleased"
+  },
+  {
+    "id": "K01_Rear_5_inner_washer",
+    "kind": "hardware",
+    "x_mm": 15.0,
+    "y_mm": 1.2000000000000455,
+    "z_mm": 14.995337730012238,
+    "volume_mm3": 185.58330282550915,
+    "centre_mm": [
+      530.0,
+      330.40000000000003,
+      555.0000000000001
+    ],
+    "note": "Proposed fastener envelope; grade, torque and locking engagement unreleased"
+  },
+  {
+    "id": "K01_Rear_5_outer_nut",
+    "kind": "hardware",
+    "x_mm": 9.237604307033962,
+    "y_mm": 5.0,
+    "z_mm": 8.0,
+    "volume_mm3": 178.95335878633895,
+    "centre_mm": [
+      530.0,
+      375.70000000000005,
+      555.0000000000002
+    ],
+    "note": "Proposed fastener envelope; grade, torque and locking engagement unreleased"
+  },
+  {
+    "id": "K01_Rear_5_inner_nut",
+    "kind": "hardware",
+    "x_mm": 9.237604307033962,
+    "y_mm": 5.0,
+    "z_mm": 8.0,
+    "volume_mm3": 178.9533587863388,
+    "centre_mm": [
+      530.0,
+      327.3,
+      555.0000000000002
+    ],
+    "note": "Proposed fastener envelope; grade, torque and locking engagement unreleased"
+  },
+  {
+    "id": "K01_Rear_6_stud",
+    "kind": "hardware",
+    "x_mm": 4.99888108070877,
+    "y_mm": 40.0,
+    "z_mm": 4.999440509051404,
+    "volume_mm3": 785.3981633974494,
+    "centre_mm": [
+      275.0,
+      360.9999999999999,
+      50.00000000000017
+    ],
+    "note": "Proposed M5x40 rod; replaces old projecting stud. End treatment/retention pending."
+  },
+  {
+    "id": "K01_Rear_6_outer_washer",
+    "kind": "hardware",
+    "x_mm": 15.0,
+    "y_mm": 1.1999999999999886,
+    "z_mm": 14.995337730012253,
+    "volume_mm3": 185.5833028255094,
+    "centre_mm": [
+      275.0,
+      372.5999999999999,
+      50.00000000000016
+    ],
+    "note": "Proposed fastener envelope; grade, torque and locking engagement unreleased"
+  },
+  {
+    "id": "K01_Rear_6_inner_washer",
+    "kind": "hardware",
+    "x_mm": 15.0,
+    "y_mm": 1.1999999999999886,
+    "z_mm": 14.995337730012245,
+    "volume_mm3": 185.58330282550935,
+    "centre_mm": [
+      275.0,
+      350.4,
+      50.000000000000156
+    ],
+    "note": "Proposed fastener envelope; grade, torque and locking engagement unreleased"
+  },
+  {
+    "id": "K01_Rear_6_outer_nut",
+    "kind": "hardware",
+    "x_mm": 9.237604307033962,
+    "y_mm": 5.0,
+    "z_mm": 8.0,
+    "volume_mm3": 178.95335878633944,
+    "centre_mm": [
+      275.0,
+      375.6999999999999,
+      50.00000000000018
+    ],
+    "note": "Proposed fastener envelope; grade, torque and locking engagement unreleased"
+  },
+  {
+    "id": "K01_Rear_6_inner_nut",
+    "kind": "hardware",
+    "x_mm": 9.237604307033962,
+    "y_mm": 5.0,
+    "z_mm": 8.0,
+    "volume_mm3": 178.95335878633944,
+    "centre_mm": [
+      275.0,
+      347.2999999999999,
+      50.00000000000015
+    ],
+    "note": "Proposed fastener envelope; grade, torque and locking engagement unreleased"
+  },
+  {
+    "id": "K01_Rear_7_stud",
+    "kind": "hardware",
+    "x_mm": 4.99888108070877,
+    "y_mm": 40.0,
+    "z_mm": 4.9994405090513965,
+    "volume_mm3": 785.3981633974507,
+    "centre_mm": [
+      275.0,
+      360.99999999999994,
+      560.0000000000002
+    ],
+    "note": "Proposed M5x40 rod; replaces old projecting stud. End treatment/retention pending."
+  },
+  {
+    "id": "K01_Rear_7_outer_washer",
+    "kind": "hardware",
+    "x_mm": 15.0,
+    "y_mm": 1.1999999999999886,
+    "z_mm": 14.995337730012238,
+    "volume_mm3": 185.5833028255094,
+    "centre_mm": [
+      275.0,
+      372.59999999999997,
+      560.0000000000002
+    ],
+    "note": "Proposed fastener envelope; grade, torque and locking engagement unreleased"
+  },
+  {
+    "id": "K01_Rear_7_inner_washer",
+    "kind": "hardware",
+    "x_mm": 15.0,
+    "y_mm": 1.1999999999999886,
+    "z_mm": 14.995337730012238,
+    "volume_mm3": 185.5833028255093,
+    "centre_mm": [
+      275.0,
+      350.40000000000003,
+      560.0000000000002
+    ],
+    "note": "Proposed fastener envelope; grade, torque and locking engagement unreleased"
+  },
+  {
+    "id": "K01_Rear_7_outer_nut",
+    "kind": "hardware",
+    "x_mm": 9.237604307033962,
+    "y_mm": 5.0,
+    "z_mm": 8.0,
+    "volume_mm3": 178.95335878633932,
+    "centre_mm": [
+      275.0,
+      375.70000000000005,
+      560.0000000000002
+    ],
+    "note": "Proposed fastener envelope; grade, torque and locking engagement unreleased"
+  },
+  {
+    "id": "K01_Rear_7_inner_nut",
+    "kind": "hardware",
+    "x_mm": 9.237604307033962,
+    "y_mm": 5.0,
+    "z_mm": 8.0,
+    "volume_mm3": 178.95335878633927,
+    "centre_mm": [
+      275.0,
+      347.30000000000007,
+      560.0000000000002
+    ],
+    "note": "Proposed fastener envelope; grade, torque and locking engagement unreleased"
+  },
+  {
+    "id": "K03_Outer_stop_False_0",
+    "kind": "hardware",
+    "x_mm": 10.0,
+    "y_mm": 3.000000000000002,
+    "z_mm": 9.996891820008159,
+    "volume_mm3": 164.34456569091606,
+    "centre_mm": [
+      20.0,
+      -1.5,
+      55.0
+    ],
+    "note": "Proposed OD10/ID5.5 x3 spacer fixes outer installed seal gap. Gasket free thickness/force unverified; NOT a compression specification."
+  },
+  {
+    "id": "K03_Outer_stop_False_1",
+    "kind": "hardware",
+    "x_mm": 10.0,
+    "y_mm": 3.000000000000002,
+    "z_mm": 9.996891820008159,
+    "volume_mm3": 164.34456569091586,
+    "centre_mm": [
+      20.0,
+      -1.4999999999999996,
+      305.0
+    ],
+    "note": "Proposed OD10/ID5.5 x3 spacer fixes outer installed seal gap. Gasket free thickness/force unverified; NOT a compression specification."
+  },
+  {
+    "id": "K03_Outer_stop_False_2",
+    "kind": "hardware",
+    "x_mm": 10.0,
+    "y_mm": 3.000000000000002,
+    "z_mm": 9.996891820008159,
+    "volume_mm3": 164.34456569091654,
+    "centre_mm": [
+      20.000000000000004,
+      -1.4999999999999996,
+      555.0
+    ],
+    "note": "Proposed OD10/ID5.5 x3 spacer fixes outer installed seal gap. Gasket free thickness/force unverified; NOT a compression specification."
+  },
+  {
+    "id": "K03_Outer_stop_False_3",
+    "kind": "hardware",
+    "x_mm": 10.0,
+    "y_mm": 3.000000000000002,
+    "z_mm": 9.996891820008159,
+    "volume_mm3": 164.34456569091674,
+    "centre_mm": [
+      530.0,
+      -1.5000000000000002,
+      55.0
+    ],
+    "note": "Proposed OD10/ID5.5 x3 spacer fixes outer installed seal gap. Gasket free thickness/force unverified; NOT a compression specification."
+  },
+  {
+    "id": "K03_Outer_stop_False_4",
+    "kind": "hardware",
+    "x_mm": 10.0,
+    "y_mm": 3.000000000000002,
+    "z_mm": 9.996891820008159,
+    "volume_mm3": 164.34456569091657,
+    "centre_mm": [
+      530.0,
+      -1.4999999999999996,
+      305.0
+    ],
+    "note": "Proposed OD10/ID5.5 x3 spacer fixes outer installed seal gap. Gasket free thickness/force unverified; NOT a compression specification."
+  },
+  {
+    "id": "K03_Outer_stop_False_5",
+    "kind": "hardware",
+    "x_mm": 10.0,
+    "y_mm": 3.000000000000002,
+    "z_mm": 9.996891820008159,
+    "volume_mm3": 164.3445656909172,
+    "centre_mm": [
+      530.0,
+      -1.4999999999999996,
+      555.0
+    ],
+    "note": "Proposed OD10/ID5.5 x3 spacer fixes outer installed seal gap. Gasket free thickness/force unverified; NOT a compression specification."
+  },
+  {
+    "id": "K03_Outer_stop_False_6",
+    "kind": "hardware",
+    "x_mm": 10.0,
+    "y_mm": 3.0000000000000018,
+    "z_mm": 9.996891820008159,
+    "volume_mm3": 164.344565690916,
+    "centre_mm": [
+      275.0,
+      -1.4999999999999996,
+      50.0
+    ],
+    "note": "Proposed OD10/ID5.5 x3 spacer fixes outer installed seal gap. Gasket free thickness/force unverified; NOT a compression specification."
+  },
+  {
+    "id": "K03_Outer_stop_False_7",
+    "kind": "hardware",
+    "x_mm": 10.0,
+    "y_mm": 3.0000000000000018,
+    "z_mm": 9.996891820008159,
+    "volume_mm3": 164.34456569091648,
+    "centre_mm": [
+      275.0,
+      -1.5,
+      560.0
+    ],
+    "note": "Proposed OD10/ID5.5 x3 spacer fixes outer installed seal gap. Gasket free thickness/force unverified; NOT a compression specification."
+  },
+  {
+    "id": "K04_Inner_stop_False_0",
+    "kind": "hardware",
+    "x_mm": 6.5,
+    "y_mm": 36.0,
+    "z_mm": 6.497979683005326,
+    "volume_mm3": 622.0353454107794,
+    "centre_mm": [
+      80.0,
+      -37.0,
+      150.0
+    ],
+    "note": "Proposed OD6.5/ID4.5 x36 sleeve between fixed nut and retainer. Assumed40mm filter +3mm installed seal; adjust only after actual filter/gasket verification."
+  },
+  {
+    "id": "K04_Inner_stop_False_1",
+    "kind": "hardware",
+    "x_mm": 6.5,
+    "y_mm": 36.0,
+    "z_mm": 6.497979683005269,
+    "volume_mm3": 622.0353454107791,
+    "centre_mm": [
+      80.0,
+      -37.0,
+      460.0
+    ],
+    "note": "Proposed OD6.5/ID4.5 x36 sleeve between fixed nut and retainer. Assumed40mm filter +3mm installed seal; adjust only after actual filter/gasket verification."
+  },
+  {
+    "id": "K04_Inner_stop_False_2",
+    "kind": "hardware",
+    "x_mm": 6.5,
+    "y_mm": 36.0,
+    "z_mm": 6.497979683005326,
+    "volume_mm3": 622.0353454107805,
+    "centre_mm": [
+      470.00000000000006,
+      -37.0,
+      150.0
+    ],
+    "note": "Proposed OD6.5/ID4.5 x36 sleeve between fixed nut and retainer. Assumed40mm filter +3mm installed seal; adjust only after actual filter/gasket verification."
+  },
+  {
+    "id": "K04_Inner_stop_False_3",
+    "kind": "hardware",
+    "x_mm": 6.5,
+    "y_mm": 36.0,
+    "z_mm": 6.497979683005269,
+    "volume_mm3": 622.0353454107799,
+    "centre_mm": [
+      470.0,
+      -37.0,
+      459.99999999999994
+    ],
+    "note": "Proposed OD6.5/ID4.5 x36 sleeve between fixed nut and retainer. Assumed40mm filter +3mm installed seal; adjust only after actual filter/gasket verification."
+  },
+  {
+    "id": "K03_Outer_stop_True_0",
+    "kind": "hardware",
+    "x_mm": 9.999999999999996,
+    "y_mm": 3.0,
+    "z_mm": 9.996891820008166,
+    "volume_mm3": 164.34456569091603,
+    "centre_mm": [
+      20.0,
+      361.49999999999994,
+      55.00000000000015
+    ],
+    "note": "Proposed OD10/ID5.5 x3 spacer fixes outer installed seal gap. Gasket free thickness/force unverified; NOT a compression specification."
+  },
+  {
+    "id": "K03_Outer_stop_True_1",
+    "kind": "hardware",
+    "x_mm": 9.999999999999996,
+    "y_mm": 3.0,
+    "z_mm": 9.996891820008159,
+    "volume_mm3": 164.34456569091608,
+    "centre_mm": [
+      20.0,
+      361.49999999999994,
+      305.0000000000001
+    ],
+    "note": "Proposed OD10/ID5.5 x3 spacer fixes outer installed seal gap. Gasket free thickness/force unverified; NOT a compression specification."
+  },
+  {
+    "id": "K03_Outer_stop_True_2",
+    "kind": "hardware",
+    "x_mm": 9.999999999999996,
+    "y_mm": 3.0,
+    "z_mm": 9.996891820008159,
+    "volume_mm3": 164.3445656909159,
+    "centre_mm": [
+      20.0,
+      361.5,
+      555.0000000000002
+    ],
+    "note": "Proposed OD10/ID5.5 x3 spacer fixes outer installed seal gap. Gasket free thickness/force unverified; NOT a compression specification."
+  },
+  {
+    "id": "K03_Outer_stop_True_3",
+    "kind": "hardware",
+    "x_mm": 10.0,
+    "y_mm": 3.0,
+    "z_mm": 9.996891820008166,
+    "volume_mm3": 164.34456569091674,
+    "centre_mm": [
+      530.0,
+      361.49999999999994,
+      55.000000000000156
+    ],
+    "note": "Proposed OD10/ID5.5 x3 spacer fixes outer installed seal gap. Gasket free thickness/force unverified; NOT a compression specification."
+  },
+  {
+    "id": "K03_Outer_stop_True_4",
+    "kind": "hardware",
+    "x_mm": 10.0,
+    "y_mm": 3.0,
+    "z_mm": 9.996891820008159,
+    "volume_mm3": 164.34456569091674,
+    "centre_mm": [
+      530.0,
+      361.5,
+      305.0000000000001
+    ],
+    "note": "Proposed OD10/ID5.5 x3 spacer fixes outer installed seal gap. Gasket free thickness/force unverified; NOT a compression specification."
+  },
+  {
+    "id": "K03_Outer_stop_True_5",
+    "kind": "hardware",
+    "x_mm": 10.0,
+    "y_mm": 3.0,
+    "z_mm": 9.996891820008159,
+    "volume_mm3": 164.34456569091657,
+    "centre_mm": [
+      530.0,
+      361.49999999999994,
+      555.0000000000002
+    ],
+    "note": "Proposed OD10/ID5.5 x3 spacer fixes outer installed seal gap. Gasket free thickness/force unverified; NOT a compression specification."
+  },
+  {
+    "id": "K03_Outer_stop_True_6",
+    "kind": "hardware",
+    "x_mm": 10.0,
+    "y_mm": 3.0,
+    "z_mm": 9.996891820008166,
+    "volume_mm3": 164.34456569091603,
+    "centre_mm": [
+      275.0,
+      361.49999999999994,
+      50.000000000000156
+    ],
+    "note": "Proposed OD10/ID5.5 x3 spacer fixes outer installed seal gap. Gasket free thickness/force unverified; NOT a compression specification."
+  },
+  {
+    "id": "K03_Outer_stop_True_7",
+    "kind": "hardware",
+    "x_mm": 10.0,
+    "y_mm": 3.0,
+    "z_mm": 9.996891820008159,
+    "volume_mm3": 164.3445656909159,
+    "centre_mm": [
+      275.0,
+      361.4999999999999,
+      560.0000000000002
+    ],
+    "note": "Proposed OD10/ID5.5 x3 spacer fixes outer installed seal gap. Gasket free thickness/force unverified; NOT a compression specification."
+  },
+  {
+    "id": "K04_Inner_stop_True_0",
+    "kind": "hardware",
+    "x_mm": 6.5,
+    "y_mm": 36.0,
+    "z_mm": 6.4979796830053544,
+    "volume_mm3": 622.0353454107792,
+    "centre_mm": [
+      80.0,
+      396.9999999999998,
+      150.00000000000017
+    ],
+    "note": "Proposed OD6.5/ID4.5 x36 sleeve between fixed nut and retainer. Assumed40mm filter +3mm installed seal; adjust only after actual filter/gasket verification."
+  },
+  {
+    "id": "K04_Inner_stop_True_1",
+    "kind": "hardware",
+    "x_mm": 6.5,
+    "y_mm": 36.0,
+    "z_mm": 6.497979683005326,
+    "volume_mm3": 622.035345410779,
+    "centre_mm": [
+      80.0,
+      396.99999999999983,
+      460.00000000000017
+    ],
+    "note": "Proposed OD6.5/ID4.5 x36 sleeve between fixed nut and retainer. Assumed40mm filter +3mm installed seal; adjust only after actual filter/gasket verification."
+  },
+  {
+    "id": "K04_Inner_stop_True_2",
+    "kind": "hardware",
+    "x_mm": 6.5,
+    "y_mm": 36.0,
+    "z_mm": 6.4979796830053544,
+    "volume_mm3": 622.0353454107803,
+    "centre_mm": [
+      470.00000000000006,
+      396.9999999999998,
+      150.00000000000017
+    ],
+    "note": "Proposed OD6.5/ID4.5 x36 sleeve between fixed nut and retainer. Assumed40mm filter +3mm installed seal; adjust only after actual filter/gasket verification."
+  },
+  {
+    "id": "K04_Inner_stop_True_3",
+    "kind": "hardware",
+    "x_mm": 6.5,
+    "y_mm": 36.0,
+    "z_mm": 6.497979683005326,
+    "volume_mm3": 622.0353454107801,
+    "centre_mm": [
+      470.0,
+      396.99999999999994,
+      460.00000000000017
+    ],
+    "note": "Proposed OD6.5/ID4.5 x36 sleeve between fixed nut and retainer. Assumed40mm filter +3mm installed seal; adjust only after actual filter/gasket verification."
+  },
+  {
+    "id": "K02_Fan_bolt_1_1_screw",
+    "kind": "hardware",
+    "x_mm": 7.0,
+    "y_mm": 6.9978242740057155,
+    "z_mm": 54.0,
+    "volume_mm3": 782.2565707438591,
+    "centre_mm": [
+      137.5,
+      42.5,
+      589.3132530120482
+    ],
+    "note": "Proposed fastener envelope; grade, torque and locking engagement unreleased"
+  },
+  {
+    "id": "K02_Fan_bolt_1_1_top_washer",
+    "kind": "hardware",
+    "x_mm": 12.0,
+    "y_mm": 11.996270184009802,
+    "z_mm": 1.0,
+    "volume_mm3": 98.57532348801367,
+    "centre_mm": [
+      137.5,
+      42.5,
+      608.5
+    ],
+    "note": "Proposed fastener envelope; grade, torque and locking engagement unreleased"
+  },
+  {
+    "id": "K02_Fan_bolt_1_1_bottom_washer",
+    "kind": "hardware",
+    "x_mm": 12.0,
+    "y_mm": 11.996270184009802,
+    "z_mm": 1.0,
+    "volume_mm3": 98.57532348801367,
+    "centre_mm": [
+      137.5,
+      42.5,
+      570.5
+    ],
+    "note": "Proposed fastener envelope; grade, torque and locking engagement unreleased"
+  },
+  {
+    "id": "K02_Fan_bolt_1_1_nut",
+    "kind": "hardware",
+    "x_mm": 8.082903768654774,
+    "y_mm": 7.0,
+    "z_mm": 5.0,
+    "volume_mm3": 149.34437085539162,
+    "centre_mm": [
+      137.5,
+      42.5,
+      567.5
+    ],
+    "note": "Proposed fastener envelope; grade, torque and locking engagement unreleased"
+  },
+  {
+    "id": "K02_Fan_bolt_1_2_screw",
+    "kind": "hardware",
+    "x_mm": 7.0,
+    "y_mm": 6.997824274005723,
+    "z_mm": 54.0,
+    "volume_mm3": 782.2565707438588,
+    "centre_mm": [
+      137.5,
+      167.5,
+      589.3132530120482
+    ],
+    "note": "Proposed fastener envelope; grade, torque and locking engagement unreleased"
+  },
+  {
+    "id": "K02_Fan_bolt_1_2_top_washer",
+    "kind": "hardware",
+    "x_mm": 12.0,
+    "y_mm": 11.996270184009802,
+    "z_mm": 1.0,
+    "volume_mm3": 98.57532348801371,
+    "centre_mm": [
+      137.5,
+      167.5,
+      608.5
+    ],
+    "note": "Proposed fastener envelope; grade, torque and locking engagement unreleased"
+  },
+  {
+    "id": "K02_Fan_bolt_1_2_bottom_washer",
+    "kind": "hardware",
+    "x_mm": 12.0,
+    "y_mm": 11.996270184009802,
+    "z_mm": 1.0,
+    "volume_mm3": 98.57532348801371,
+    "centre_mm": [
+      137.5,
+      167.5,
+      570.5
+    ],
+    "note": "Proposed fastener envelope; grade, torque and locking engagement unreleased"
+  },
+  {
+    "id": "K02_Fan_bolt_1_2_nut",
+    "kind": "hardware",
+    "x_mm": 8.082903768654774,
+    "y_mm": 7.0,
+    "z_mm": 5.0,
+    "volume_mm3": 149.34437085539165,
+    "centre_mm": [
+      137.5,
+      167.5,
+      567.5
+    ],
+    "note": "Proposed fastener envelope; grade, torque and locking engagement unreleased"
+  },
+  {
+    "id": "K02_Fan_bolt_1_3_screw",
+    "kind": "hardware",
+    "x_mm": 7.0,
+    "y_mm": 6.9978242740057155,
+    "z_mm": 54.0,
+    "volume_mm3": 782.2565707438596,
+    "centre_mm": [
+      262.5,
+      42.5,
+      589.3132530120482
+    ],
+    "note": "Proposed fastener envelope; grade, torque and locking engagement unreleased"
+  },
+  {
+    "id": "K02_Fan_bolt_1_3_top_washer",
+    "kind": "hardware",
+    "x_mm": 12.0,
+    "y_mm": 11.996270184009802,
+    "z_mm": 1.0,
+    "volume_mm3": 98.57532348801371,
+    "centre_mm": [
+      262.5,
+      42.5,
+      608.5
+    ],
+    "note": "Proposed fastener envelope; grade, torque and locking engagement unreleased"
+  },
+  {
+    "id": "K02_Fan_bolt_1_3_bottom_washer",
+    "kind": "hardware",
+    "x_mm": 12.0,
+    "y_mm": 11.996270184009802,
+    "z_mm": 1.0,
+    "volume_mm3": 98.57532348801371,
+    "centre_mm": [
+      262.5,
+      42.5,
+      570.5
+    ],
+    "note": "Proposed fastener envelope; grade, torque and locking engagement unreleased"
+  },
+  {
+    "id": "K02_Fan_bolt_1_3_nut",
+    "kind": "hardware",
+    "x_mm": 8.082903768654774,
+    "y_mm": 7.0,
+    "z_mm": 5.0,
+    "volume_mm3": 149.34437085539153,
+    "centre_mm": [
+      262.5,
+      42.5,
+      567.5
+    ],
+    "note": "Proposed fastener envelope; grade, torque and locking engagement unreleased"
+  },
+  {
+    "id": "K02_Fan_bolt_1_4_screw",
+    "kind": "hardware",
+    "x_mm": 7.0,
+    "y_mm": 6.997824274005723,
+    "z_mm": 54.0,
+    "volume_mm3": 782.2565707438592,
+    "centre_mm": [
+      262.5,
+      167.5,
+      589.3132530120482
+    ],
+    "note": "Proposed fastener envelope; grade, torque and locking engagement unreleased"
+  },
+  {
+    "id": "K02_Fan_bolt_1_4_top_washer",
+    "kind": "hardware",
+    "x_mm": 12.0,
+    "y_mm": 11.996270184009802,
+    "z_mm": 1.0,
+    "volume_mm3": 98.57532348801372,
+    "centre_mm": [
+      262.5,
+      167.5,
+      608.5
+    ],
+    "note": "Proposed fastener envelope; grade, torque and locking engagement unreleased"
+  },
+  {
+    "id": "K02_Fan_bolt_1_4_bottom_washer",
+    "kind": "hardware",
+    "x_mm": 12.0,
+    "y_mm": 11.996270184009802,
+    "z_mm": 1.0,
+    "volume_mm3": 98.57532348801372,
+    "centre_mm": [
+      262.5,
+      167.5,
+      570.5
+    ],
+    "note": "Proposed fastener envelope; grade, torque and locking engagement unreleased"
+  },
+  {
+    "id": "K02_Fan_bolt_1_4_nut",
+    "kind": "hardware",
+    "x_mm": 8.082903768654774,
+    "y_mm": 7.0,
+    "z_mm": 5.0,
+    "volume_mm3": 149.34437085539156,
+    "centre_mm": [
+      262.5,
+      167.5,
+      567.5
+    ],
+    "note": "Proposed fastener envelope; grade, torque and locking engagement unreleased"
+  },
+  {
+    "id": "K02_Fan_bolt_2_1_screw",
+    "kind": "hardware",
+    "x_mm": 7.0,
+    "y_mm": 6.9978242740057155,
+    "z_mm": 54.0,
+    "volume_mm3": 782.2565707438596,
+    "centre_mm": [
+      287.5,
+      42.5,
+      589.3132530120482
+    ],
+    "note": "Proposed fastener envelope; grade, torque and locking engagement unreleased"
+  },
+  {
+    "id": "K02_Fan_bolt_2_1_top_washer",
+    "kind": "hardware",
+    "x_mm": 12.0,
+    "y_mm": 11.996270184009802,
+    "z_mm": 1.0,
+    "volume_mm3": 98.57532348801371,
+    "centre_mm": [
+      287.5,
+      42.5,
+      608.5
+    ],
+    "note": "Proposed fastener envelope; grade, torque and locking engagement unreleased"
+  },
+  {
+    "id": "K02_Fan_bolt_2_1_bottom_washer",
+    "kind": "hardware",
+    "x_mm": 12.0,
+    "y_mm": 11.996270184009802,
+    "z_mm": 1.0,
+    "volume_mm3": 98.57532348801371,
+    "centre_mm": [
+      287.5,
+      42.5,
+      570.5
+    ],
+    "note": "Proposed fastener envelope; grade, torque and locking engagement unreleased"
+  },
+  {
+    "id": "K02_Fan_bolt_2_1_nut",
+    "kind": "hardware",
+    "x_mm": 8.082903768654774,
+    "y_mm": 7.0,
+    "z_mm": 5.0,
+    "volume_mm3": 149.34437085539153,
+    "centre_mm": [
+      287.5,
+      42.5,
+      567.5
+    ],
+    "note": "Proposed fastener envelope; grade, torque and locking engagement unreleased"
+  },
+  {
+    "id": "K02_Fan_bolt_2_2_screw",
+    "kind": "hardware",
+    "x_mm": 7.0,
+    "y_mm": 6.997824274005723,
+    "z_mm": 54.0,
+    "volume_mm3": 782.2565707438592,
+    "centre_mm": [
+      287.5,
+      167.5,
+      589.3132530120482
+    ],
+    "note": "Proposed fastener envelope; grade, torque and locking engagement unreleased"
+  },
+  {
+    "id": "K02_Fan_bolt_2_2_top_washer",
+    "kind": "hardware",
+    "x_mm": 12.0,
+    "y_mm": 11.996270184009802,
+    "z_mm": 1.0,
+    "volume_mm3": 98.57532348801372,
+    "centre_mm": [
+      287.5,
+      167.5,
+      608.5
+    ],
+    "note": "Proposed fastener envelope; grade, torque and locking engagement unreleased"
+  },
+  {
+    "id": "K02_Fan_bolt_2_2_bottom_washer",
+    "kind": "hardware",
+    "x_mm": 12.0,
+    "y_mm": 11.996270184009802,
+    "z_mm": 1.0,
+    "volume_mm3": 98.57532348801372,
+    "centre_mm": [
+      287.5,
+      167.5,
+      570.5
+    ],
+    "note": "Proposed fastener envelope; grade, torque and locking engagement unreleased"
+  },
+  {
+    "id": "K02_Fan_bolt_2_2_nut",
+    "kind": "hardware",
+    "x_mm": 8.082903768654774,
+    "y_mm": 7.0,
+    "z_mm": 5.0,
+    "volume_mm3": 149.34437085539156,
+    "centre_mm": [
+      287.5,
+      167.5,
+      567.5
+    ],
+    "note": "Proposed fastener envelope; grade, torque and locking engagement unreleased"
+  },
+  {
+    "id": "K02_Fan_bolt_2_3_screw",
+    "kind": "hardware",
+    "x_mm": 7.0,
+    "y_mm": 6.9978242740057155,
+    "z_mm": 54.0,
+    "volume_mm3": 782.2565707438596,
+    "centre_mm": [
+      412.5,
+      42.5,
+      589.3132530120482
+    ],
+    "note": "Proposed fastener envelope; grade, torque and locking engagement unreleased"
+  },
+  {
+    "id": "K02_Fan_bolt_2_3_top_washer",
+    "kind": "hardware",
+    "x_mm": 12.0,
+    "y_mm": 11.996270184009802,
+    "z_mm": 1.0,
+    "volume_mm3": 98.57532348801368,
+    "centre_mm": [
+      412.5,
+      42.5,
+      608.5
+    ],
+    "note": "Proposed fastener envelope; grade, torque and locking engagement unreleased"
+  },
+  {
+    "id": "K02_Fan_bolt_2_3_bottom_washer",
+    "kind": "hardware",
+    "x_mm": 12.0,
+    "y_mm": 11.996270184009802,
+    "z_mm": 1.0,
+    "volume_mm3": 98.57532348801368,
+    "centre_mm": [
+      412.5,
+      42.5,
+      570.5
+    ],
+    "note": "Proposed fastener envelope; grade, torque and locking engagement unreleased"
+  },
+  {
+    "id": "K02_Fan_bolt_2_3_nut",
+    "kind": "hardware",
+    "x_mm": 8.082903768654774,
+    "y_mm": 7.0,
+    "z_mm": 5.0,
+    "volume_mm3": 149.34437085539147,
+    "centre_mm": [
+      412.5,
+      42.5,
+      567.5
+    ],
+    "note": "Proposed fastener envelope; grade, torque and locking engagement unreleased"
+  },
+  {
+    "id": "K02_Fan_bolt_2_4_screw",
+    "kind": "hardware",
+    "x_mm": 7.0,
+    "y_mm": 6.997824274005723,
+    "z_mm": 54.0,
+    "volume_mm3": 782.2565707438592,
+    "centre_mm": [
+      412.5,
+      167.5,
+      589.3132530120482
+    ],
+    "note": "Proposed fastener envelope; grade, torque and locking engagement unreleased"
+  },
+  {
+    "id": "K02_Fan_bolt_2_4_top_washer",
+    "kind": "hardware",
+    "x_mm": 12.0,
+    "y_mm": 11.996270184009802,
+    "z_mm": 1.0,
+    "volume_mm3": 98.57532348801374,
+    "centre_mm": [
+      412.5,
+      167.5,
+      608.5
+    ],
+    "note": "Proposed fastener envelope; grade, torque and locking engagement unreleased"
+  },
+  {
+    "id": "K02_Fan_bolt_2_4_bottom_washer",
+    "kind": "hardware",
+    "x_mm": 12.0,
+    "y_mm": 11.996270184009802,
+    "z_mm": 1.0,
+    "volume_mm3": 98.57532348801374,
+    "centre_mm": [
+      412.5,
+      167.5,
+      570.5
+    ],
+    "note": "Proposed fastener envelope; grade, torque and locking engagement unreleased"
+  },
+  {
+    "id": "K02_Fan_bolt_2_4_nut",
+    "kind": "hardware",
+    "x_mm": 8.082903768654774,
+    "y_mm": 7.0,
+    "z_mm": 5.0,
+    "volume_mm3": 149.3443708553915,
+    "centre_mm": [
+      412.5,
+      167.5,
+      567.5
+    ],
+    "note": "Proposed fastener envelope; grade, torque and locking engagement unreleased"
+  },
+  {
+    "id": "K02_Fan_bolt_3_1_screw",
+    "kind": "hardware",
+    "x_mm": 7.0,
+    "y_mm": 6.997824274005723,
+    "z_mm": 54.0,
+    "volume_mm3": 782.2565707438588,
+    "centre_mm": [
+      137.5,
+      192.5,
+      589.3132530120482
+    ],
+    "note": "Proposed fastener envelope; grade, torque and locking engagement unreleased"
+  },
+  {
+    "id": "K02_Fan_bolt_3_1_top_washer",
+    "kind": "hardware",
+    "x_mm": 12.0,
+    "y_mm": 11.996270184009802,
+    "z_mm": 1.0,
+    "volume_mm3": 98.57532348801371,
+    "centre_mm": [
+      137.5,
+      192.5,
+      608.5
+    ],
+    "note": "Proposed fastener envelope; grade, torque and locking engagement unreleased"
+  },
+  {
+    "id": "K02_Fan_bolt_3_1_bottom_washer",
+    "kind": "hardware",
+    "x_mm": 12.0,
+    "y_mm": 11.996270184009802,
+    "z_mm": 1.0,
+    "volume_mm3": 98.57532348801371,
+    "centre_mm": [
+      137.5,
+      192.5,
+      570.5
+    ],
+    "note": "Proposed fastener envelope; grade, torque and locking engagement unreleased"
+  },
+  {
+    "id": "K02_Fan_bolt_3_1_nut",
+    "kind": "hardware",
+    "x_mm": 8.082903768654774,
+    "y_mm": 7.0,
+    "z_mm": 5.0,
+    "volume_mm3": 149.34437085539165,
+    "centre_mm": [
+      137.5,
+      192.5,
+      567.5
+    ],
+    "note": "Proposed fastener envelope; grade, torque and locking engagement unreleased"
+  },
+  {
+    "id": "K02_Fan_bolt_3_2_screw",
+    "kind": "hardware",
+    "x_mm": 7.0,
+    "y_mm": 6.997824274005666,
+    "z_mm": 54.0,
+    "volume_mm3": 782.256570743861,
+    "centre_mm": [
+      137.5,
+      317.5,
+      589.3132530120482
+    ],
+    "note": "Proposed fastener envelope; grade, torque and locking engagement unreleased"
+  },
+  {
+    "id": "K02_Fan_bolt_3_2_top_washer",
+    "kind": "hardware",
+    "x_mm": 12.0,
+    "y_mm": 11.996270184009745,
+    "z_mm": 1.0,
+    "volume_mm3": 98.5753234880137,
+    "centre_mm": [
+      137.5,
+      317.5,
+      608.5
+    ],
+    "note": "Proposed fastener envelope; grade, torque and locking engagement unreleased"
+  },
+  {
+    "id": "K02_Fan_bolt_3_2_bottom_washer",
+    "kind": "hardware",
+    "x_mm": 12.0,
+    "y_mm": 11.996270184009745,
+    "z_mm": 1.0,
+    "volume_mm3": 98.5753234880137,
+    "centre_mm": [
+      137.5,
+      317.5,
+      570.5
+    ],
+    "note": "Proposed fastener envelope; grade, torque and locking engagement unreleased"
+  },
+  {
+    "id": "K02_Fan_bolt_3_2_nut",
+    "kind": "hardware",
+    "x_mm": 8.082903768654774,
+    "y_mm": 7.0,
+    "z_mm": 5.0,
+    "volume_mm3": 149.34437085539147,
+    "centre_mm": [
+      137.5,
+      317.5,
+      567.5
+    ],
+    "note": "Proposed fastener envelope; grade, torque and locking engagement unreleased"
+  },
+  {
+    "id": "K02_Fan_bolt_3_3_screw",
+    "kind": "hardware",
+    "x_mm": 7.0,
+    "y_mm": 6.997824274005723,
+    "z_mm": 54.0,
+    "volume_mm3": 782.2565707438592,
+    "centre_mm": [
+      262.5,
+      192.5,
+      589.3132530120482
+    ],
+    "note": "Proposed fastener envelope; grade, torque and locking engagement unreleased"
+  },
+  {
+    "id": "K02_Fan_bolt_3_3_top_washer",
+    "kind": "hardware",
+    "x_mm": 12.0,
+    "y_mm": 11.996270184009802,
+    "z_mm": 1.0,
+    "volume_mm3": 98.57532348801372,
+    "centre_mm": [
+      262.5,
+      192.5,
+      608.5
+    ],
+    "note": "Proposed fastener envelope; grade, torque and locking engagement unreleased"
+  },
+  {
+    "id": "K02_Fan_bolt_3_3_bottom_washer",
+    "kind": "hardware",
+    "x_mm": 12.0,
+    "y_mm": 11.996270184009802,
+    "z_mm": 1.0,
+    "volume_mm3": 98.57532348801372,
+    "centre_mm": [
+      262.5,
+      192.5,
+      570.5
+    ],
+    "note": "Proposed fastener envelope; grade, torque and locking engagement unreleased"
+  },
+  {
+    "id": "K02_Fan_bolt_3_3_nut",
+    "kind": "hardware",
+    "x_mm": 8.082903768654774,
+    "y_mm": 7.0,
+    "z_mm": 5.0,
+    "volume_mm3": 149.34437085539156,
+    "centre_mm": [
+      262.5,
+      192.5,
+      567.5
+    ],
+    "note": "Proposed fastener envelope; grade, torque and locking engagement unreleased"
+  },
+  {
+    "id": "K02_Fan_bolt_3_4_screw",
+    "kind": "hardware",
+    "x_mm": 7.0,
+    "y_mm": 6.997824274005666,
+    "z_mm": 54.0,
+    "volume_mm3": 782.2565707438611,
+    "centre_mm": [
+      262.5,
+      317.5,
+      589.3132530120482
+    ],
+    "note": "Proposed fastener envelope; grade, torque and locking engagement unreleased"
+  },
+  {
+    "id": "K02_Fan_bolt_3_4_top_washer",
+    "kind": "hardware",
+    "x_mm": 12.0,
+    "y_mm": 11.996270184009745,
+    "z_mm": 1.0,
+    "volume_mm3": 98.57532348801374,
+    "centre_mm": [
+      262.5,
+      317.5,
+      608.5
+    ],
+    "note": "Proposed fastener envelope; grade, torque and locking engagement unreleased"
+  },
+  {
+    "id": "K02_Fan_bolt_3_4_bottom_washer",
+    "kind": "hardware",
+    "x_mm": 12.0,
+    "y_mm": 11.996270184009745,
+    "z_mm": 1.0,
+    "volume_mm3": 98.57532348801374,
+    "centre_mm": [
+      262.5,
+      317.5,
+      570.5
+    ],
+    "note": "Proposed fastener envelope; grade, torque and locking engagement unreleased"
+  },
+  {
+    "id": "K02_Fan_bolt_3_4_nut",
+    "kind": "hardware",
+    "x_mm": 8.082903768654774,
+    "y_mm": 7.0,
+    "z_mm": 5.0,
+    "volume_mm3": 149.3443708553914,
+    "centre_mm": [
+      262.5,
+      317.5,
+      567.5
+    ],
+    "note": "Proposed fastener envelope; grade, torque and locking engagement unreleased"
+  },
+  {
+    "id": "K02_Fan_bolt_4_1_screw",
+    "kind": "hardware",
+    "x_mm": 7.0,
+    "y_mm": 6.997824274005723,
+    "z_mm": 54.0,
+    "volume_mm3": 782.2565707438592,
+    "centre_mm": [
+      287.5,
+      192.5,
+      589.3132530120482
+    ],
+    "note": "Proposed fastener envelope; grade, torque and locking engagement unreleased"
+  },
+  {
+    "id": "K02_Fan_bolt_4_1_top_washer",
+    "kind": "hardware",
+    "x_mm": 12.0,
+    "y_mm": 11.996270184009802,
+    "z_mm": 1.0,
+    "volume_mm3": 98.57532348801372,
+    "centre_mm": [
+      287.5,
+      192.5,
+      608.5
+    ],
+    "note": "Proposed fastener envelope; grade, torque and locking engagement unreleased"
+  },
+  {
+    "id": "K02_Fan_bolt_4_1_bottom_washer",
+    "kind": "hardware",
+    "x_mm": 12.0,
+    "y_mm": 11.996270184009802,
+    "z_mm": 1.0,
+    "volume_mm3": 98.57532348801372,
+    "centre_mm": [
+      287.5,
+      192.5,
+      570.5
+    ],
+    "note": "Proposed fastener envelope; grade, torque and locking engagement unreleased"
+  },
+  {
+    "id": "K02_Fan_bolt_4_1_nut",
+    "kind": "hardware",
+    "x_mm": 8.082903768654774,
+    "y_mm": 7.0,
+    "z_mm": 5.0,
+    "volume_mm3": 149.34437085539156,
+    "centre_mm": [
+      287.5,
+      192.5,
+      567.5
+    ],
+    "note": "Proposed fastener envelope; grade, torque and locking engagement unreleased"
+  },
+  {
+    "id": "K02_Fan_bolt_4_2_screw",
+    "kind": "hardware",
+    "x_mm": 7.0,
+    "y_mm": 6.997824274005666,
+    "z_mm": 54.0,
+    "volume_mm3": 782.2565707438611,
+    "centre_mm": [
+      287.5,
+      317.5,
+      589.3132530120482
+    ],
+    "note": "Proposed fastener envelope; grade, torque and locking engagement unreleased"
+  },
+  {
+    "id": "K02_Fan_bolt_4_2_top_washer",
+    "kind": "hardware",
+    "x_mm": 12.0,
+    "y_mm": 11.996270184009745,
+    "z_mm": 1.0,
+    "volume_mm3": 98.57532348801374,
+    "centre_mm": [
+      287.5,
+      317.5,
+      608.5
+    ],
+    "note": "Proposed fastener envelope; grade, torque and locking engagement unreleased"
+  },
+  {
+    "id": "K02_Fan_bolt_4_2_bottom_washer",
+    "kind": "hardware",
+    "x_mm": 12.0,
+    "y_mm": 11.996270184009745,
+    "z_mm": 1.0,
+    "volume_mm3": 98.57532348801374,
+    "centre_mm": [
+      287.5,
+      317.5,
+      570.5
+    ],
+    "note": "Proposed fastener envelope; grade, torque and locking engagement unreleased"
+  },
+  {
+    "id": "K02_Fan_bolt_4_2_nut",
+    "kind": "hardware",
+    "x_mm": 8.082903768654774,
+    "y_mm": 7.0,
+    "z_mm": 5.0,
+    "volume_mm3": 149.3443708553914,
+    "centre_mm": [
+      287.5,
+      317.5,
+      567.5
+    ],
+    "note": "Proposed fastener envelope; grade, torque and locking engagement unreleased"
+  },
+  {
+    "id": "K02_Fan_bolt_4_3_screw",
+    "kind": "hardware",
+    "x_mm": 7.0,
+    "y_mm": 6.997824274005723,
+    "z_mm": 54.0,
+    "volume_mm3": 782.2565707438592,
+    "centre_mm": [
+      412.5,
+      192.5,
+      589.3132530120482
+    ],
+    "note": "Proposed fastener envelope; grade, torque and locking engagement unreleased"
+  },
+  {
+    "id": "K02_Fan_bolt_4_3_top_washer",
+    "kind": "hardware",
+    "x_mm": 12.0,
+    "y_mm": 11.996270184009802,
+    "z_mm": 1.0,
+    "volume_mm3": 98.57532348801374,
+    "centre_mm": [
+      412.5,
+      192.49999999999997,
+      608.5
+    ],
+    "note": "Proposed fastener envelope; grade, torque and locking engagement unreleased"
+  },
+  {
+    "id": "K02_Fan_bolt_4_3_bottom_washer",
+    "kind": "hardware",
+    "x_mm": 12.0,
+    "y_mm": 11.996270184009802,
+    "z_mm": 1.0,
+    "volume_mm3": 98.57532348801374,
+    "centre_mm": [
+      412.5,
+      192.49999999999997,
+      570.5
+    ],
+    "note": "Proposed fastener envelope; grade, torque and locking engagement unreleased"
+  },
+  {
+    "id": "K02_Fan_bolt_4_3_nut",
+    "kind": "hardware",
+    "x_mm": 8.082903768654774,
+    "y_mm": 7.0,
+    "z_mm": 5.0,
+    "volume_mm3": 149.3443708553915,
+    "centre_mm": [
+      412.5,
+      192.5,
+      567.5
+    ],
+    "note": "Proposed fastener envelope; grade, torque and locking engagement unreleased"
+  },
+  {
+    "id": "K02_Fan_bolt_4_4_screw",
+    "kind": "hardware",
+    "x_mm": 7.0,
+    "y_mm": 6.997824274005666,
+    "z_mm": 54.0,
+    "volume_mm3": 782.2565707438611,
+    "centre_mm": [
+      412.50000000000006,
+      317.5,
+      589.3132530120482
+    ],
+    "note": "Proposed fastener envelope; grade, torque and locking engagement unreleased"
+  },
+  {
+    "id": "K02_Fan_bolt_4_4_top_washer",
+    "kind": "hardware",
+    "x_mm": 12.0,
+    "y_mm": 11.996270184009745,
+    "z_mm": 1.0,
+    "volume_mm3": 98.57532348801374,
+    "centre_mm": [
+      412.5,
+      317.5,
+      608.5
+    ],
+    "note": "Proposed fastener envelope; grade, torque and locking engagement unreleased"
+  },
+  {
+    "id": "K02_Fan_bolt_4_4_bottom_washer",
+    "kind": "hardware",
+    "x_mm": 12.0,
+    "y_mm": 11.996270184009745,
+    "z_mm": 1.0,
+    "volume_mm3": 98.57532348801374,
+    "centre_mm": [
+      412.5,
+      317.5,
+      570.5
+    ],
+    "note": "Proposed fastener envelope; grade, torque and locking engagement unreleased"
+  },
+  {
+    "id": "K02_Fan_bolt_4_4_nut",
+    "kind": "hardware",
+    "x_mm": 8.082903768654774,
+    "y_mm": 7.0,
+    "z_mm": 5.0,
+    "volume_mm3": 149.34437085539133,
+    "centre_mm": [
+      412.5,
+      317.5,
+      567.5
+    ],
+    "note": "Proposed fastener envelope; grade, torque and locking engagement unreleased"
+  },
+  {
+    "id": "K06_End_False_19_105_screw",
+    "kind": "hardware",
+    "x_mm": 44.0,
+    "y_mm": 6.9978242740057155,
+    "z_mm": 7.0,
+    "volume_mm3": 656.592864600267,
+    "centre_mm": [
+      13.842105263157894,
+      19.0,
+      105.0
+    ],
+    "note": "Proposed fastener envelope; grade, torque and locking engagement unreleased"
+  },
+  {
+    "id": "K06_End_False_19_105_outer_washer",
+    "kind": "hardware",
+    "x_mm": 1.0000000000000027,
+    "y_mm": 11.996270184009797,
+    "z_mm": 12.0,
+    "volume_mm3": 98.57532348801372,
+    "centre_mm": [
+      -0.5,
+      19.0,
+      105.0
+    ],
+    "note": "Proposed fastener envelope; grade, torque and locking engagement unreleased"
+  },
+  {
+    "id": "K06_End_False_19_105_inner_washer",
+    "kind": "hardware",
+    "x_mm": 1.0000000000000036,
+    "y_mm": 11.996270184009797,
+    "z_mm": 12.0,
+    "volume_mm3": 98.57532348801372,
+    "centre_mm": [
+      29.5,
+      19.0,
+      105.0
+    ],
+    "note": "Proposed fastener envelope; grade, torque and locking engagement unreleased"
+  },
+  {
+    "id": "K06_End_False_19_105_nut",
+    "kind": "hardware",
+    "x_mm": 5.0000000000000036,
+    "y_mm": 7.0,
+    "z_mm": 8.082903768654788,
+    "volume_mm3": 149.34437085539167,
+    "centre_mm": [
+      32.5,
+      19.0,
+      105.0
+    ],
+    "note": "Proposed fastener envelope; grade, torque and locking engagement unreleased"
+  },
+  {
+    "id": "K06_End_False_19_205_screw",
+    "kind": "hardware",
+    "x_mm": 44.0,
+    "y_mm": 6.9978242740057155,
+    "z_mm": 7.0,
+    "volume_mm3": 656.5928646002671,
+    "centre_mm": [
+      13.84210526315789,
+      19.0,
+      205.0
+    ],
+    "note": "Proposed fastener envelope; grade, torque and locking engagement unreleased"
+  },
+  {
+    "id": "K06_End_False_19_205_outer_washer",
+    "kind": "hardware",
+    "x_mm": 1.0000000000000027,
+    "y_mm": 11.996270184009797,
+    "z_mm": 12.0,
+    "volume_mm3": 98.5753234880137,
+    "centre_mm": [
+      -0.5,
+      19.0,
+      205.0
+    ],
+    "note": "Proposed fastener envelope; grade, torque and locking engagement unreleased"
+  },
+  {
+    "id": "K06_End_False_19_205_inner_washer",
+    "kind": "hardware",
+    "x_mm": 1.0000000000000036,
+    "y_mm": 11.996270184009797,
+    "z_mm": 12.0,
+    "volume_mm3": 98.5753234880137,
+    "centre_mm": [
+      29.499999999999996,
+      19.0,
+      205.0
+    ],
+    "note": "Proposed fastener envelope; grade, torque and locking engagement unreleased"
+  },
+  {
+    "id": "K06_End_False_19_205_nut",
+    "kind": "hardware",
+    "x_mm": 5.0,
+    "y_mm": 7.0,
+    "z_mm": 8.082903768654774,
+    "volume_mm3": 149.34437085539167,
+    "centre_mm": [
+      32.5,
+      19.0,
+      205.0
+    ],
+    "note": "Proposed fastener envelope; grade, torque and locking engagement unreleased"
+  },
+  {
+    "id": "K06_End_False_19_405_screw",
+    "kind": "hardware",
+    "x_mm": 44.0,
+    "y_mm": 6.9978242740057155,
+    "z_mm": 7.0,
+    "volume_mm3": 656.5928646002676,
+    "centre_mm": [
+      13.84210526315789,
+      19.0,
+      405.0
+    ],
+    "note": "Proposed fastener envelope; grade, torque and locking engagement unreleased"
+  },
+  {
+    "id": "K06_End_False_19_405_outer_washer",
+    "kind": "hardware",
+    "x_mm": 1.0000000000000027,
+    "y_mm": 11.996270184009797,
+    "z_mm": 12.0,
+    "volume_mm3": 98.57532348801371,
+    "centre_mm": [
+      -0.5,
+      19.0,
+      405.0
+    ],
+    "note": "Proposed fastener envelope; grade, torque and locking engagement unreleased"
+  },
+  {
+    "id": "K06_End_False_19_405_inner_washer",
+    "kind": "hardware",
+    "x_mm": 1.0000000000000036,
+    "y_mm": 11.996270184009797,
+    "z_mm": 12.0,
+    "volume_mm3": 98.57532348801371,
+    "centre_mm": [
+      29.499999999999996,
+      19.0,
+      405.0
+    ],
+    "note": "Proposed fastener envelope; grade, torque and locking engagement unreleased"
+  },
+  {
+    "id": "K06_End_False_19_405_nut",
+    "kind": "hardware",
+    "x_mm": 5.000000000000007,
+    "y_mm": 7.0,
+    "z_mm": 8.082903768654774,
+    "volume_mm3": 149.34437085539145,
+    "centre_mm": [
+      32.5,
+      19.0,
+      405.0
+    ],
+    "note": "Proposed fastener envelope; grade, torque and locking engagement unreleased"
+  },
+  {
+    "id": "K06_End_False_19_505_screw",
+    "kind": "hardware",
+    "x_mm": 44.0,
+    "y_mm": 6.9978242740057155,
+    "z_mm": 7.0,
+    "volume_mm3": 656.5928646002676,
+    "centre_mm": [
+      13.84210526315789,
+      19.0,
+      505.0
+    ],
+    "note": "Proposed fastener envelope; grade, torque and locking engagement unreleased"
+  },
+  {
+    "id": "K06_End_False_19_505_outer_washer",
+    "kind": "hardware",
+    "x_mm": 1.0000000000000027,
+    "y_mm": 11.996270184009797,
+    "z_mm": 12.0,
+    "volume_mm3": 98.57532348801371,
+    "centre_mm": [
+      -0.5,
+      19.0,
+      505.0
+    ],
+    "note": "Proposed fastener envelope; grade, torque and locking engagement unreleased"
+  },
+  {
+    "id": "K06_End_False_19_505_inner_washer",
+    "kind": "hardware",
+    "x_mm": 1.0000000000000036,
+    "y_mm": 11.996270184009797,
+    "z_mm": 12.0,
+    "volume_mm3": 98.57532348801371,
+    "centre_mm": [
+      29.499999999999996,
+      19.0,
+      505.0
+    ],
+    "note": "Proposed fastener envelope; grade, torque and locking engagement unreleased"
+  },
+  {
+    "id": "K06_End_False_19_505_nut",
+    "kind": "hardware",
+    "x_mm": 5.0000000000000036,
+    "y_mm": 7.0,
+    "z_mm": 8.082903768654774,
+    "volume_mm3": 149.34437085539145,
+    "centre_mm": [
+      32.5,
+      19.0,
+      505.00000000000006
+    ],
+    "note": "Proposed fastener envelope; grade, torque and locking engagement unreleased"
+  },
+  {
+    "id": "K06_End_False_341_105_screw",
+    "kind": "hardware",
+    "x_mm": 44.0,
+    "y_mm": 6.997824274005666,
+    "z_mm": 7.0,
+    "volume_mm3": 656.5928646002683,
+    "centre_mm": [
+      13.842105263157892,
+      341.0,
+      105.0
+    ],
+    "note": "Proposed fastener envelope; grade, torque and locking engagement unreleased"
+  },
+  {
+    "id": "K06_End_False_341_105_outer_washer",
+    "kind": "hardware",
+    "x_mm": 1.0000000000000027,
+    "y_mm": 11.996270184009745,
+    "z_mm": 12.0,
+    "volume_mm3": 98.57532348801375,
+    "centre_mm": [
+      -0.4999999999999998,
+      341.00000000000006,
+      105.0
+    ],
+    "note": "Proposed fastener envelope; grade, torque and locking engagement unreleased"
+  },
+  {
+    "id": "K06_End_False_341_105_inner_washer",
+    "kind": "hardware",
+    "x_mm": 1.0000000000000036,
+    "y_mm": 11.996270184009745,
+    "z_mm": 12.0,
+    "volume_mm3": 98.57532348801377,
+    "centre_mm": [
+      29.5,
+      341.0,
+      105.00000000000001
+    ],
+    "note": "Proposed fastener envelope; grade, torque and locking engagement unreleased"
+  },
+  {
+    "id": "K06_End_False_341_105_nut",
+    "kind": "hardware",
+    "x_mm": 5.0000000000000036,
+    "y_mm": 7.0,
+    "z_mm": 8.082903768654788,
+    "volume_mm3": 149.34437085539153,
+    "centre_mm": [
+      32.5,
+      341.0,
+      105.0
+    ],
+    "note": "Proposed fastener envelope; grade, torque and locking engagement unreleased"
+  },
+  {
+    "id": "K06_End_False_341_205_screw",
+    "kind": "hardware",
+    "x_mm": 44.0,
+    "y_mm": 6.997824274005666,
+    "z_mm": 7.0,
+    "volume_mm3": 656.5928646002683,
+    "centre_mm": [
+      13.842105263157892,
+      341.0,
+      205.0
+    ],
+    "note": "Proposed fastener envelope; grade, torque and locking engagement unreleased"
+  },
+  {
+    "id": "K06_End_False_341_205_outer_washer",
+    "kind": "hardware",
+    "x_mm": 1.0000000000000027,
+    "y_mm": 11.996270184009745,
+    "z_mm": 12.0,
+    "volume_mm3": 98.57532348801371,
+    "centre_mm": [
+      -0.5,
+      341.00000000000006,
+      205.00000000000003
+    ],
+    "note": "Proposed fastener envelope; grade, torque and locking engagement unreleased"
+  },
+  {
+    "id": "K06_End_False_341_205_inner_washer",
+    "kind": "hardware",
+    "x_mm": 1.0000000000000036,
+    "y_mm": 11.996270184009745,
+    "z_mm": 12.0,
+    "volume_mm3": 98.57532348801372,
+    "centre_mm": [
+      29.5,
+      341.0,
+      204.99999999999997
+    ],
+    "note": "Proposed fastener envelope; grade, torque and locking engagement unreleased"
+  },
+  {
+    "id": "K06_End_False_341_205_nut",
+    "kind": "hardware",
+    "x_mm": 5.0,
+    "y_mm": 7.0,
+    "z_mm": 8.082903768654774,
+    "volume_mm3": 149.34437085539153,
+    "centre_mm": [
+      32.5,
+      341.0,
+      205.0
+    ],
+    "note": "Proposed fastener envelope; grade, torque and locking engagement unreleased"
+  },
+  {
+    "id": "K06_End_False_341_405_screw",
+    "kind": "hardware",
+    "x_mm": 44.0,
+    "y_mm": 6.997824274005666,
+    "z_mm": 7.0,
+    "volume_mm3": 656.5928646002686,
+    "centre_mm": [
+      13.842105263157896,
+      341.0,
+      405.0
+    ],
+    "note": "Proposed fastener envelope; grade, torque and locking engagement unreleased"
+  },
+  {
+    "id": "K06_End_False_341_405_outer_washer",
+    "kind": "hardware",
+    "x_mm": 1.0000000000000027,
+    "y_mm": 11.996270184009745,
+    "z_mm": 12.0,
+    "volume_mm3": 98.57532348801374,
+    "centre_mm": [
+      -0.4999999999999998,
+      341.0,
+      405.0
+    ],
+    "note": "Proposed fastener envelope; grade, torque and locking engagement unreleased"
+  },
+  {
+    "id": "K06_End_False_341_405_inner_washer",
+    "kind": "hardware",
+    "x_mm": 1.0000000000000036,
+    "y_mm": 11.996270184009745,
+    "z_mm": 12.0,
+    "volume_mm3": 98.57532348801377,
+    "centre_mm": [
+      29.5,
+      341.0,
+      404.99999999999994
+    ],
+    "note": "Proposed fastener envelope; grade, torque and locking engagement unreleased"
+  },
+  {
+    "id": "K06_End_False_341_405_nut",
+    "kind": "hardware",
+    "x_mm": 5.000000000000007,
+    "y_mm": 7.0,
+    "z_mm": 8.082903768654774,
+    "volume_mm3": 149.34437085539133,
+    "centre_mm": [
+      32.5,
+      341.0,
+      405.0
+    ],
+    "note": "Proposed fastener envelope; grade, torque and locking engagement unreleased"
+  },
+  {
+    "id": "K06_End_False_341_505_screw",
+    "kind": "hardware",
+    "x_mm": 44.0,
+    "y_mm": 6.997824274005666,
+    "z_mm": 7.0,
+    "volume_mm3": 656.5928646002686,
+    "centre_mm": [
+      13.842105263157896,
+      341.0,
+      505.0
+    ],
+    "note": "Proposed fastener envelope; grade, torque and locking engagement unreleased"
+  },
+  {
+    "id": "K06_End_False_341_505_outer_washer",
+    "kind": "hardware",
+    "x_mm": 1.0000000000000027,
+    "y_mm": 11.996270184009745,
+    "z_mm": 12.0,
+    "volume_mm3": 98.57532348801374,
+    "centre_mm": [
+      -0.4999999999999998,
+      341.0,
+      505.0
+    ],
+    "note": "Proposed fastener envelope; grade, torque and locking engagement unreleased"
+  },
+  {
+    "id": "K06_End_False_341_505_inner_washer",
+    "kind": "hardware",
+    "x_mm": 1.0000000000000036,
+    "y_mm": 11.996270184009745,
+    "z_mm": 12.0,
+    "volume_mm3": 98.57532348801377,
+    "centre_mm": [
+      29.5,
+      341.0,
+      505.0
+    ],
+    "note": "Proposed fastener envelope; grade, torque and locking engagement unreleased"
+  },
+  {
+    "id": "K06_End_False_341_505_nut",
+    "kind": "hardware",
+    "x_mm": 5.0000000000000036,
+    "y_mm": 7.0,
+    "z_mm": 8.082903768654774,
+    "volume_mm3": 149.34437085539133,
+    "centre_mm": [
+      32.5,
+      341.0,
+      505.00000000000006
+    ],
+    "note": "Proposed fastener envelope; grade, torque and locking engagement unreleased"
+  },
+  {
+    "id": "K06_End_True_19_105_screw",
+    "kind": "hardware",
+    "x_mm": 44.0,
+    "y_mm": 6.9978242740057155,
+    "z_mm": 7.0,
+    "volume_mm3": 656.5928646002668,
+    "centre_mm": [
+      536.1578947368421,
+      19.0,
+      104.99999999999999
+    ],
+    "note": "Proposed fastener envelope; grade, torque and locking engagement unreleased"
+  },
+  {
+    "id": "K06_End_True_19_105_outer_washer",
+    "kind": "hardware",
+    "x_mm": 1.0,
+    "y_mm": 11.996270184009797,
+    "z_mm": 12.0,
+    "volume_mm3": 98.57532348801374,
+    "centre_mm": [
+      550.5,
+      19.0,
+      105.0
+    ],
+    "note": "Proposed fastener envelope; grade, torque and locking engagement unreleased"
+  },
+  {
+    "id": "K06_End_True_19_105_inner_washer",
+    "kind": "hardware",
+    "x_mm": 1.0,
+    "y_mm": 11.996270184009797,
+    "z_mm": 12.0,
+    "volume_mm3": 98.57532348801374,
+    "centre_mm": [
+      520.5,
+      19.0,
+      105.0
+    ],
+    "note": "Proposed fastener envelope; grade, torque and locking engagement unreleased"
+  },
+  {
+    "id": "K06_End_True_19_105_nut",
+    "kind": "hardware",
+    "x_mm": 5.0,
+    "y_mm": 7.0,
+    "z_mm": 8.082903768654774,
+    "volume_mm3": 149.34437085539173,
+    "centre_mm": [
+      517.5,
+      19.0,
+      105.0
+    ],
+    "note": "Proposed fastener envelope; grade, torque and locking engagement unreleased"
+  },
+  {
+    "id": "K06_End_True_19_205_screw",
+    "kind": "hardware",
+    "x_mm": 44.00000000000006,
+    "y_mm": 6.9978242740057155,
+    "z_mm": 7.0,
+    "volume_mm3": 656.5928646002671,
+    "centre_mm": [
+      536.1578947368421,
+      19.0,
+      205.0
+    ],
+    "note": "Proposed fastener envelope; grade, torque and locking engagement unreleased"
+  },
+  {
+    "id": "K06_End_True_19_205_outer_washer",
+    "kind": "hardware",
+    "x_mm": 1.0,
+    "y_mm": 11.996270184009797,
+    "z_mm": 12.0,
+    "volume_mm3": 98.57532348801371,
+    "centre_mm": [
+      550.5,
+      19.0,
+      205.00000000000003
+    ],
+    "note": "Proposed fastener envelope; grade, torque and locking engagement unreleased"
+  },
+  {
+    "id": "K06_End_True_19_205_inner_washer",
+    "kind": "hardware",
+    "x_mm": 1.0,
+    "y_mm": 11.996270184009797,
+    "z_mm": 12.0,
+    "volume_mm3": 98.57532348801371,
+    "centre_mm": [
+      520.5,
+      19.0,
+      205.00000000000003
+    ],
+    "note": "Proposed fastener envelope; grade, torque and locking engagement unreleased"
+  },
+  {
+    "id": "K06_End_True_19_205_nut",
+    "kind": "hardware",
+    "x_mm": 5.0,
+    "y_mm": 7.0,
+    "z_mm": 8.082903768654774,
+    "volume_mm3": 149.34437085539167,
+    "centre_mm": [
+      517.5,
+      19.0,
+      205.0
+    ],
+    "note": "Proposed fastener envelope; grade, torque and locking engagement unreleased"
+  },
+  {
+    "id": "K06_End_True_19_405_screw",
+    "kind": "hardware",
+    "x_mm": 44.0,
+    "y_mm": 6.9978242740057155,
+    "z_mm": 7.0,
+    "volume_mm3": 656.5928646002677,
+    "centre_mm": [
+      536.1578947368421,
+      19.0,
+      405.00000000000006
+    ],
+    "note": "Proposed fastener envelope; grade, torque and locking engagement unreleased"
+  },
+  {
+    "id": "K06_End_True_19_405_outer_washer",
+    "kind": "hardware",
+    "x_mm": 1.0,
+    "y_mm": 11.996270184009797,
+    "z_mm": 12.0,
+    "volume_mm3": 98.57532348801372,
+    "centre_mm": [
+      550.5,
+      19.0,
+      405.0
+    ],
+    "note": "Proposed fastener envelope; grade, torque and locking engagement unreleased"
+  },
+  {
+    "id": "K06_End_True_19_405_inner_washer",
+    "kind": "hardware",
+    "x_mm": 1.0,
+    "y_mm": 11.996270184009797,
+    "z_mm": 12.0,
+    "volume_mm3": 98.57532348801372,
+    "centre_mm": [
+      520.5,
+      19.0,
+      405.0
+    ],
+    "note": "Proposed fastener envelope; grade, torque and locking engagement unreleased"
+  },
+  {
+    "id": "K06_End_True_19_405_nut",
+    "kind": "hardware",
+    "x_mm": 5.0,
+    "y_mm": 7.0,
+    "z_mm": 8.082903768654774,
+    "volume_mm3": 149.3443708553915,
+    "centre_mm": [
+      517.5,
+      19.0,
+      405.0
+    ],
+    "note": "Proposed fastener envelope; grade, torque and locking engagement unreleased"
+  },
+  {
+    "id": "K06_End_True_19_505_screw",
+    "kind": "hardware",
+    "x_mm": 44.0,
+    "y_mm": 6.9978242740057155,
+    "z_mm": 7.0,
+    "volume_mm3": 656.5928646002677,
+    "centre_mm": [
+      536.1578947368421,
+      19.0,
+      505.0
+    ],
+    "note": "Proposed fastener envelope; grade, torque and locking engagement unreleased"
+  },
+  {
+    "id": "K06_End_True_19_505_outer_washer",
+    "kind": "hardware",
+    "x_mm": 1.0,
+    "y_mm": 11.996270184009797,
+    "z_mm": 12.0,
+    "volume_mm3": 98.57532348801372,
+    "centre_mm": [
+      550.5,
+      19.0,
+      505.0
+    ],
+    "note": "Proposed fastener envelope; grade, torque and locking engagement unreleased"
+  },
+  {
+    "id": "K06_End_True_19_505_inner_washer",
+    "kind": "hardware",
+    "x_mm": 1.0,
+    "y_mm": 11.996270184009797,
+    "z_mm": 12.0,
+    "volume_mm3": 98.57532348801372,
+    "centre_mm": [
+      520.5,
+      19.0,
+      505.0
+    ],
+    "note": "Proposed fastener envelope; grade, torque and locking engagement unreleased"
+  },
+  {
+    "id": "K06_End_True_19_505_nut",
+    "kind": "hardware",
+    "x_mm": 5.0,
+    "y_mm": 7.0,
+    "z_mm": 8.082903768654774,
+    "volume_mm3": 149.3443708553915,
+    "centre_mm": [
+      517.5,
+      19.0,
+      505.00000000000006
+    ],
+    "note": "Proposed fastener envelope; grade, torque and locking engagement unreleased"
+  },
+  {
+    "id": "K06_End_True_341_105_screw",
+    "kind": "hardware",
+    "x_mm": 44.0,
+    "y_mm": 6.997824274005666,
+    "z_mm": 7.0,
+    "volume_mm3": 656.592864600268,
+    "centre_mm": [
+      536.1578947368421,
+      341.0,
+      105.00000000000001
+    ],
+    "note": "Proposed fastener envelope; grade, torque and locking engagement unreleased"
+  },
+  {
+    "id": "K06_End_True_341_105_outer_washer",
+    "kind": "hardware",
+    "x_mm": 1.0,
+    "y_mm": 11.996270184009745,
+    "z_mm": 12.0,
+    "volume_mm3": 98.57532348801375,
+    "centre_mm": [
+      550.5,
+      341.00000000000006,
+      105.0
+    ],
+    "note": "Proposed fastener envelope; grade, torque and locking engagement unreleased"
+  },
+  {
+    "id": "K06_End_True_341_105_inner_washer",
+    "kind": "hardware",
+    "x_mm": 1.0,
+    "y_mm": 11.996270184009745,
+    "z_mm": 12.0,
+    "volume_mm3": 98.57532348801375,
+    "centre_mm": [
+      520.5,
+      341.00000000000006,
+      105.0
+    ],
+    "note": "Proposed fastener envelope; grade, torque and locking engagement unreleased"
+  },
+  {
+    "id": "K06_End_True_341_105_nut",
+    "kind": "hardware",
+    "x_mm": 5.0,
+    "y_mm": 7.0,
+    "z_mm": 8.082903768654774,
+    "volume_mm3": 149.3443708553916,
+    "centre_mm": [
+      517.5,
+      341.0,
+      105.0
+    ],
+    "note": "Proposed fastener envelope; grade, torque and locking engagement unreleased"
+  },
+  {
+    "id": "K06_End_True_341_205_screw",
+    "kind": "hardware",
+    "x_mm": 44.00000000000006,
+    "y_mm": 6.997824274005666,
+    "z_mm": 7.0,
+    "volume_mm3": 656.5928646002683,
+    "centre_mm": [
+      536.1578947368421,
+      341.0,
+      205.0
+    ],
+    "note": "Proposed fastener envelope; grade, torque and locking engagement unreleased"
+  },
+  {
+    "id": "K06_End_True_341_205_outer_washer",
+    "kind": "hardware",
+    "x_mm": 1.0,
+    "y_mm": 11.996270184009745,
+    "z_mm": 12.0,
+    "volume_mm3": 98.57532348801371,
+    "centre_mm": [
+      550.5,
+      341.00000000000006,
+      205.00000000000003
+    ],
+    "note": "Proposed fastener envelope; grade, torque and locking engagement unreleased"
+  },
+  {
+    "id": "K06_End_True_341_205_inner_washer",
+    "kind": "hardware",
+    "x_mm": 1.0,
+    "y_mm": 11.996270184009745,
+    "z_mm": 12.0,
+    "volume_mm3": 98.57532348801371,
+    "centre_mm": [
+      520.5,
+      341.00000000000006,
+      205.00000000000003
+    ],
+    "note": "Proposed fastener envelope; grade, torque and locking engagement unreleased"
+  },
+  {
+    "id": "K06_End_True_341_205_nut",
+    "kind": "hardware",
+    "x_mm": 5.0,
+    "y_mm": 7.0,
+    "z_mm": 8.082903768654774,
+    "volume_mm3": 149.34437085539153,
+    "centre_mm": [
+      517.5,
+      341.0,
+      205.0
+    ],
+    "note": "Proposed fastener envelope; grade, torque and locking engagement unreleased"
+  },
+  {
+    "id": "K06_End_True_341_405_screw",
+    "kind": "hardware",
+    "x_mm": 44.0,
+    "y_mm": 6.997824274005666,
+    "z_mm": 7.0,
+    "volume_mm3": 656.5928646002689,
+    "centre_mm": [
+      536.1578947368421,
+      341.0,
+      405.00000000000006
+    ],
+    "note": "Proposed fastener envelope; grade, torque and locking engagement unreleased"
+  },
+  {
+    "id": "K06_End_True_341_405_outer_washer",
+    "kind": "hardware",
+    "x_mm": 1.0,
+    "y_mm": 11.996270184009745,
+    "z_mm": 12.0,
+    "volume_mm3": 98.57532348801374,
+    "centre_mm": [
+      550.5,
+      341.0,
+      405.0
+    ],
+    "note": "Proposed fastener envelope; grade, torque and locking engagement unreleased"
+  },
+  {
+    "id": "K06_End_True_341_405_inner_washer",
+    "kind": "hardware",
+    "x_mm": 1.0,
+    "y_mm": 11.996270184009745,
+    "z_mm": 12.0,
+    "volume_mm3": 98.57532348801374,
+    "centre_mm": [
+      520.5,
+      341.0,
+      405.0
+    ],
+    "note": "Proposed fastener envelope; grade, torque and locking engagement unreleased"
+  },
+  {
+    "id": "K06_End_True_341_405_nut",
+    "kind": "hardware",
+    "x_mm": 5.0,
+    "y_mm": 7.0,
+    "z_mm": 8.082903768654774,
+    "volume_mm3": 149.3443708553914,
+    "centre_mm": [
+      517.5,
+      341.0,
+      405.0
+    ],
+    "note": "Proposed fastener envelope; grade, torque and locking engagement unreleased"
+  },
+  {
+    "id": "K06_End_True_341_505_screw",
+    "kind": "hardware",
+    "x_mm": 44.0,
+    "y_mm": 6.997824274005666,
+    "z_mm": 7.0,
+    "volume_mm3": 656.5928646002689,
+    "centre_mm": [
+      536.1578947368421,
+      341.0,
+      505.0
+    ],
+    "note": "Proposed fastener envelope; grade, torque and locking engagement unreleased"
+  },
+  {
+    "id": "K06_End_True_341_505_outer_washer",
+    "kind": "hardware",
+    "x_mm": 1.0,
+    "y_mm": 11.996270184009745,
+    "z_mm": 12.0,
+    "volume_mm3": 98.57532348801374,
+    "centre_mm": [
+      550.5,
+      341.0,
+      505.0
+    ],
+    "note": "Proposed fastener envelope; grade, torque and locking engagement unreleased"
+  },
+  {
+    "id": "K06_End_True_341_505_inner_washer",
+    "kind": "hardware",
+    "x_mm": 1.0,
+    "y_mm": 11.996270184009745,
+    "z_mm": 12.0,
+    "volume_mm3": 98.57532348801374,
+    "centre_mm": [
+      520.5,
+      341.0,
+      505.0
+    ],
+    "note": "Proposed fastener envelope; grade, torque and locking engagement unreleased"
+  },
+  {
+    "id": "K06_End_True_341_505_nut",
+    "kind": "hardware",
+    "x_mm": 5.0,
+    "y_mm": 7.0,
+    "z_mm": 8.082903768654774,
+    "volume_mm3": 149.3443708553914,
+    "centre_mm": [
+      517.5,
+      341.0,
+      505.00000000000006
+    ],
+    "note": "Proposed fastener envelope; grade, torque and locking engagement unreleased"
+  },
+  {
+    "id": "K07_Seat_False_20_155_screw",
+    "kind": "hardware",
+    "x_mm": 7.0,
+    "y_mm": 44.0,
+    "z_mm": 6.997824274005723,
+    "volume_mm3": 656.5928646002665,
+    "centre_mm": [
+      20.0,
+      13.842105263157894,
+      155.0
+    ],
+    "note": "Proposed fastener envelope; grade, torque and locking engagement unreleased"
+  },
+  {
+    "id": "K07_Seat_False_20_155_outer_washer",
+    "kind": "hardware",
+    "x_mm": 12.0,
+    "y_mm": 1.0000000000000027,
+    "z_mm": 11.996270184009802,
+    "volume_mm3": 98.57532348801375,
+    "centre_mm": [
+      19.999999999999996,
+      -0.5,
+      155.0
+    ],
+    "note": "Proposed fastener envelope; grade, torque and locking engagement unreleased"
+  },
+  {
+    "id": "K07_Seat_False_20_155_inner_washer",
+    "kind": "hardware",
+    "x_mm": 12.0,
+    "y_mm": 1.0000000000000036,
+    "z_mm": 11.996270184009802,
+    "volume_mm3": 98.57532348801375,
+    "centre_mm": [
+      19.999999999999996,
+      29.5,
+      155.0
+    ],
+    "note": "Proposed fastener envelope; grade, torque and locking engagement unreleased"
+  },
+  {
+    "id": "K07_Seat_False_20_155_nut",
+    "kind": "hardware",
+    "x_mm": 8.08290376865476,
+    "y_mm": 5.0000000000000036,
+    "z_mm": 7.0,
+    "volume_mm3": 149.3443708553917,
+    "centre_mm": [
+      20.0,
+      32.5,
+      155.0
+    ],
+    "note": "Proposed fastener envelope; grade, torque and locking engagement unreleased"
+  },
+  {
+    "id": "K07_Seat_False_20_255_screw",
+    "kind": "hardware",
+    "x_mm": 7.0,
+    "y_mm": 44.0,
+    "z_mm": 6.997824274005694,
+    "volume_mm3": 656.5928646002674,
+    "centre_mm": [
+      20.0,
+      13.842105263157894,
+      255.0
+    ],
+    "note": "Proposed fastener envelope; grade, torque and locking engagement unreleased"
+  },
+  {
+    "id": "K07_Seat_False_20_255_outer_washer",
+    "kind": "hardware",
+    "x_mm": 12.0,
+    "y_mm": 1.0000000000000027,
+    "z_mm": 11.996270184009774,
+    "volume_mm3": 98.57532348801375,
+    "centre_mm": [
+      20.0,
+      -0.5,
+      255.0
+    ],
+    "note": "Proposed fastener envelope; grade, torque and locking engagement unreleased"
+  },
+  {
+    "id": "K07_Seat_False_20_255_inner_washer",
+    "kind": "hardware",
+    "x_mm": 12.0,
+    "y_mm": 1.0,
+    "z_mm": 11.996270184009774,
+    "volume_mm3": 98.57532348801378,
+    "centre_mm": [
+      20.0,
+      29.5,
+      255.0
+    ],
+    "note": "Proposed fastener envelope; grade, torque and locking engagement unreleased"
+  },
+  {
+    "id": "K07_Seat_False_20_255_nut",
+    "kind": "hardware",
+    "x_mm": 8.08290376865476,
+    "y_mm": 5.0,
+    "z_mm": 7.0,
+    "volume_mm3": 149.34437085539162,
+    "centre_mm": [
+      20.0,
+      32.5,
+      255.0
+    ],
+    "note": "Proposed fastener envelope; grade, torque and locking engagement unreleased"
+  },
+  {
+    "id": "K07_Seat_False_20_355_screw",
+    "kind": "hardware",
+    "x_mm": 7.0,
+    "y_mm": 44.0,
+    "z_mm": 6.997824274005666,
+    "volume_mm3": 656.5928646002674,
+    "centre_mm": [
+      20.0,
+      13.842105263157887,
+      355.0
+    ],
+    "note": "Proposed fastener envelope; grade, torque and locking engagement unreleased"
+  },
+  {
+    "id": "K07_Seat_False_20_355_outer_washer",
+    "kind": "hardware",
+    "x_mm": 12.0,
+    "y_mm": 1.0000000000000027,
+    "z_mm": 11.996270184009745,
+    "volume_mm3": 98.57532348801374,
+    "centre_mm": [
+      20.0,
+      -0.49999999999999983,
+      354.99999999999994
+    ],
+    "note": "Proposed fastener envelope; grade, torque and locking engagement unreleased"
+  },
+  {
+    "id": "K07_Seat_False_20_355_inner_washer",
+    "kind": "hardware",
+    "x_mm": 12.0,
+    "y_mm": 1.0000000000000036,
+    "z_mm": 11.996270184009745,
+    "volume_mm3": 98.57532348801377,
+    "centre_mm": [
+      20.0,
+      29.5,
+      355.0
+    ],
+    "note": "Proposed fastener envelope; grade, torque and locking engagement unreleased"
+  },
+  {
+    "id": "K07_Seat_False_20_355_nut",
+    "kind": "hardware",
+    "x_mm": 8.08290376865476,
+    "y_mm": 5.0,
+    "z_mm": 7.0,
+    "volume_mm3": 149.34437085539153,
+    "centre_mm": [
+      20.0,
+      32.5,
+      355.0
+    ],
+    "note": "Proposed fastener envelope; grade, torque and locking engagement unreleased"
+  },
+  {
+    "id": "K07_Seat_False_20_455_screw",
+    "kind": "hardware",
+    "x_mm": 7.0,
+    "y_mm": 44.0,
+    "z_mm": 6.997824274005666,
+    "volume_mm3": 656.5928646002674,
+    "centre_mm": [
+      20.0,
+      13.842105263157887,
+      455.0
+    ],
+    "note": "Proposed fastener envelope; grade, torque and locking engagement unreleased"
+  },
+  {
+    "id": "K07_Seat_False_20_455_outer_washer",
+    "kind": "hardware",
+    "x_mm": 12.0,
+    "y_mm": 1.0000000000000027,
+    "z_mm": 11.996270184009745,
+    "volume_mm3": 98.57532348801374,
+    "centre_mm": [
+      20.0,
+      -0.49999999999999983,
+      455.0
+    ],
+    "note": "Proposed fastener envelope; grade, torque and locking engagement unreleased"
+  },
+  {
+    "id": "K07_Seat_False_20_455_inner_washer",
+    "kind": "hardware",
+    "x_mm": 12.0,
+    "y_mm": 1.0000000000000036,
+    "z_mm": 11.996270184009745,
+    "volume_mm3": 98.57532348801377,
+    "centre_mm": [
+      20.0,
+      29.5,
+      455.0
+    ],
+    "note": "Proposed fastener envelope; grade, torque and locking engagement unreleased"
+  },
+  {
+    "id": "K07_Seat_False_20_455_nut",
+    "kind": "hardware",
+    "x_mm": 8.08290376865476,
+    "y_mm": 5.0,
+    "z_mm": 7.0,
+    "volume_mm3": 149.34437085539153,
+    "centre_mm": [
+      20.0,
+      32.5,
+      455.0
+    ],
+    "note": "Proposed fastener envelope; grade, torque and locking engagement unreleased"
+  },
+  {
+    "id": "K07_Seat_False_530_155_screw",
+    "kind": "hardware",
+    "x_mm": 7.0,
+    "y_mm": 44.0,
+    "z_mm": 6.997824274005723,
+    "volume_mm3": 656.5928646002651,
+    "centre_mm": [
+      530.0,
+      13.842105263157896,
+      155.0
+    ],
+    "note": "Proposed fastener envelope; grade, torque and locking engagement unreleased"
+  },
+  {
+    "id": "K07_Seat_False_530_155_outer_washer",
+    "kind": "hardware",
+    "x_mm": 12.0,
+    "y_mm": 1.0000000000000027,
+    "z_mm": 11.996270184009802,
+    "volume_mm3": 98.57532348801362,
+    "centre_mm": [
+      530.0,
+      -0.49999999999999983,
+      155.0
+    ],
+    "note": "Proposed fastener envelope; grade, torque and locking engagement unreleased"
+  },
+  {
+    "id": "K07_Seat_False_530_155_inner_washer",
+    "kind": "hardware",
+    "x_mm": 12.0,
+    "y_mm": 1.0000000000000036,
+    "z_mm": 11.996270184009802,
+    "volume_mm3": 98.57532348801365,
+    "centre_mm": [
+      530.0,
+      29.5,
+      155.0
+    ],
+    "note": "Proposed fastener envelope; grade, torque and locking engagement unreleased"
+  },
+  {
+    "id": "K07_Seat_False_530_155_nut",
+    "kind": "hardware",
+    "x_mm": 8.08290376865466,
+    "y_mm": 5.0000000000000036,
+    "z_mm": 7.0,
+    "volume_mm3": 149.34437085539176,
+    "centre_mm": [
+      530.0,
+      32.5,
+      155.0
+    ],
+    "note": "Proposed fastener envelope; grade, torque and locking engagement unreleased"
+  },
+  {
+    "id": "K07_Seat_False_530_255_screw",
+    "kind": "hardware",
+    "x_mm": 7.0,
+    "y_mm": 44.0,
+    "z_mm": 6.997824274005694,
+    "volume_mm3": 656.5928646002658,
+    "centre_mm": [
+      530.0,
+      13.842105263157901,
+      255.0
+    ],
+    "note": "Proposed fastener envelope; grade, torque and locking engagement unreleased"
+  },
+  {
+    "id": "K07_Seat_False_530_255_outer_washer",
+    "kind": "hardware",
+    "x_mm": 12.0,
+    "y_mm": 1.0000000000000027,
+    "z_mm": 11.996270184009774,
+    "volume_mm3": 98.57532348801362,
+    "centre_mm": [
+      530.0,
+      -0.49999999999999983,
+      255.0
+    ],
+    "note": "Proposed fastener envelope; grade, torque and locking engagement unreleased"
+  },
+  {
+    "id": "K07_Seat_False_530_255_inner_washer",
+    "kind": "hardware",
+    "x_mm": 12.0,
+    "y_mm": 1.0,
+    "z_mm": 11.996270184009774,
+    "volume_mm3": 98.57532348801365,
+    "centre_mm": [
+      530.0,
+      29.5,
+      255.0
+    ],
+    "note": "Proposed fastener envelope; grade, torque and locking engagement unreleased"
+  },
+  {
+    "id": "K07_Seat_False_530_255_nut",
+    "kind": "hardware",
+    "x_mm": 8.08290376865466,
+    "y_mm": 5.0,
+    "z_mm": 7.0,
+    "volume_mm3": 149.34437085539165,
+    "centre_mm": [
+      530.0,
+      32.5,
+      255.0
+    ],
+    "note": "Proposed fastener envelope; grade, torque and locking engagement unreleased"
+  },
+  {
+    "id": "K07_Seat_False_530_355_screw",
+    "kind": "hardware",
+    "x_mm": 7.0,
+    "y_mm": 44.0,
+    "z_mm": 6.997824274005666,
+    "volume_mm3": 656.592864600266,
+    "centre_mm": [
+      530.0,
+      13.84210526315789,
+      355.0
+    ],
+    "note": "Proposed fastener envelope; grade, torque and locking engagement unreleased"
+  },
+  {
+    "id": "K07_Seat_False_530_355_outer_washer",
+    "kind": "hardware",
+    "x_mm": 12.0,
+    "y_mm": 1.0000000000000027,
+    "z_mm": 11.996270184009745,
+    "volume_mm3": 98.57532348801365,
+    "centre_mm": [
+      530.0,
+      -0.4999999999999998,
+      355.0
+    ],
+    "note": "Proposed fastener envelope; grade, torque and locking engagement unreleased"
+  },
+  {
+    "id": "K07_Seat_False_530_355_inner_washer",
+    "kind": "hardware",
+    "x_mm": 12.0,
+    "y_mm": 1.0000000000000036,
+    "z_mm": 11.996270184009745,
+    "volume_mm3": 98.57532348801368,
+    "centre_mm": [
+      530.0,
+      29.500000000000004,
+      355.0
+    ],
+    "note": "Proposed fastener envelope; grade, torque and locking engagement unreleased"
+  },
+  {
+    "id": "K07_Seat_False_530_355_nut",
+    "kind": "hardware",
+    "x_mm": 8.08290376865466,
+    "y_mm": 5.0,
+    "z_mm": 7.0,
+    "volume_mm3": 149.34437085539156,
+    "centre_mm": [
+      530.0,
+      32.5,
+      355.0
+    ],
+    "note": "Proposed fastener envelope; grade, torque and locking engagement unreleased"
+  },
+  {
+    "id": "K07_Seat_False_530_455_screw",
+    "kind": "hardware",
+    "x_mm": 7.0,
+    "y_mm": 44.0,
+    "z_mm": 6.997824274005666,
+    "volume_mm3": 656.592864600266,
+    "centre_mm": [
+      530.0,
+      13.84210526315789,
+      455.00000000000006
+    ],
+    "note": "Proposed fastener envelope; grade, torque and locking engagement unreleased"
+  },
+  {
+    "id": "K07_Seat_False_530_455_outer_washer",
+    "kind": "hardware",
+    "x_mm": 12.0,
+    "y_mm": 1.0000000000000027,
+    "z_mm": 11.996270184009745,
+    "volume_mm3": 98.57532348801365,
+    "centre_mm": [
+      530.0,
+      -0.4999999999999998,
+      455.0
+    ],
+    "note": "Proposed fastener envelope; grade, torque and locking engagement unreleased"
+  },
+  {
+    "id": "K07_Seat_False_530_455_inner_washer",
+    "kind": "hardware",
+    "x_mm": 12.0,
+    "y_mm": 1.0000000000000036,
+    "z_mm": 11.996270184009745,
+    "volume_mm3": 98.57532348801368,
+    "centre_mm": [
+      530.0,
+      29.500000000000004,
+      455.0
+    ],
+    "note": "Proposed fastener envelope; grade, torque and locking engagement unreleased"
+  },
+  {
+    "id": "K07_Seat_False_530_455_nut",
+    "kind": "hardware",
+    "x_mm": 8.08290376865466,
+    "y_mm": 5.0,
+    "z_mm": 7.0,
+    "volume_mm3": 149.34437085539156,
+    "centre_mm": [
+      530.0,
+      32.5,
+      455.00000000000006
+    ],
+    "note": "Proposed fastener envelope; grade, torque and locking engagement unreleased"
+  },
+  {
+    "id": "K07_Seat_True_20_155_screw",
+    "kind": "hardware",
+    "x_mm": 7.0,
+    "y_mm": 44.0,
+    "z_mm": 6.997824274005723,
+    "volume_mm3": 656.5928646002665,
+    "centre_mm": [
+      20.0,
+      346.1578947368421,
+      155.0
+    ],
+    "note": "Proposed fastener envelope; grade, torque and locking engagement unreleased"
+  },
+  {
+    "id": "K07_Seat_True_20_155_outer_washer",
+    "kind": "hardware",
+    "x_mm": 12.0,
+    "y_mm": 1.0,
+    "z_mm": 11.996270184009802,
+    "volume_mm3": 98.57532348801377,
+    "centre_mm": [
+      20.0,
+      360.49999999999994,
+      155.0
+    ],
+    "note": "Proposed fastener envelope; grade, torque and locking engagement unreleased"
+  },
+  {
+    "id": "K07_Seat_True_20_155_inner_washer",
+    "kind": "hardware",
+    "x_mm": 12.0,
+    "y_mm": 1.0,
+    "z_mm": 11.996270184009802,
+    "volume_mm3": 98.57532348801377,
+    "centre_mm": [
+      20.0,
+      330.5,
+      155.0
+    ],
+    "note": "Proposed fastener envelope; grade, torque and locking engagement unreleased"
+  },
+  {
+    "id": "K07_Seat_True_20_155_nut",
+    "kind": "hardware",
+    "x_mm": 8.08290376865476,
+    "y_mm": 5.0,
+    "z_mm": 7.0,
+    "volume_mm3": 149.34437085539167,
+    "centre_mm": [
+      20.0,
+      327.5,
+      155.0
+    ],
+    "note": "Proposed fastener envelope; grade, torque and locking engagement unreleased"
+  },
+  {
+    "id": "K07_Seat_True_20_255_screw",
+    "kind": "hardware",
+    "x_mm": 7.0,
+    "y_mm": 44.0,
+    "z_mm": 6.997824274005637,
+    "volume_mm3": 656.5928646002674,
+    "centre_mm": [
+      20.0,
+      346.1578947368421,
+      255.0
+    ],
+    "note": "Proposed fastener envelope; grade, torque and locking engagement unreleased"
+  },
+  {
+    "id": "K07_Seat_True_20_255_outer_washer",
+    "kind": "hardware",
+    "x_mm": 12.0,
+    "y_mm": 1.0,
+    "z_mm": 11.996270184009774,
+    "volume_mm3": 98.57532348801377,
+    "centre_mm": [
+      20.0,
+      360.49999999999994,
+      255.0
+    ],
+    "note": "Proposed fastener envelope; grade, torque and locking engagement unreleased"
+  },
+  {
+    "id": "K07_Seat_True_20_255_inner_washer",
+    "kind": "hardware",
+    "x_mm": 12.0,
+    "y_mm": 1.0,
+    "z_mm": 11.996270184009774,
+    "volume_mm3": 98.57532348801377,
+    "centre_mm": [
+      20.0,
+      330.5,
+      255.0
+    ],
+    "note": "Proposed fastener envelope; grade, torque and locking engagement unreleased"
+  },
+  {
+    "id": "K07_Seat_True_20_255_nut",
+    "kind": "hardware",
+    "x_mm": 8.08290376865476,
+    "y_mm": 5.0,
+    "z_mm": 7.0,
+    "volume_mm3": 149.34437085539162,
+    "centre_mm": [
+      20.0,
+      327.5,
+      255.0
+    ],
+    "note": "Proposed fastener envelope; grade, torque and locking engagement unreleased"
+  },
+  {
+    "id": "K07_Seat_True_20_355_screw",
+    "kind": "hardware",
+    "x_mm": 7.0,
+    "y_mm": 44.0,
+    "z_mm": 6.997824274005666,
+    "volume_mm3": 656.5928646002674,
+    "centre_mm": [
+      20.0,
+      346.15789473684214,
+      355.0
+    ],
+    "note": "Proposed fastener envelope; grade, torque and locking engagement unreleased"
+  },
+  {
+    "id": "K07_Seat_True_20_355_outer_washer",
+    "kind": "hardware",
+    "x_mm": 12.0,
+    "y_mm": 1.0,
+    "z_mm": 11.996270184009745,
+    "volume_mm3": 98.57532348801375,
+    "centre_mm": [
+      20.0,
+      360.5,
+      355.0
+    ],
+    "note": "Proposed fastener envelope; grade, torque and locking engagement unreleased"
+  },
+  {
+    "id": "K07_Seat_True_20_355_inner_washer",
+    "kind": "hardware",
+    "x_mm": 12.0,
+    "y_mm": 1.0,
+    "z_mm": 11.996270184009745,
+    "volume_mm3": 98.57532348801375,
+    "centre_mm": [
+      20.0,
+      330.5,
+      355.0
+    ],
+    "note": "Proposed fastener envelope; grade, torque and locking engagement unreleased"
+  },
+  {
+    "id": "K07_Seat_True_20_355_nut",
+    "kind": "hardware",
+    "x_mm": 8.08290376865476,
+    "y_mm": 5.0,
+    "z_mm": 7.0,
+    "volume_mm3": 149.3443708553915,
+    "centre_mm": [
+      20.0,
+      327.5,
+      355.0
+    ],
+    "note": "Proposed fastener envelope; grade, torque and locking engagement unreleased"
+  },
+  {
+    "id": "K07_Seat_True_20_455_screw",
+    "kind": "hardware",
+    "x_mm": 7.0,
+    "y_mm": 44.0,
+    "z_mm": 6.997824274005666,
+    "volume_mm3": 656.5928646002674,
+    "centre_mm": [
+      20.0,
+      346.15789473684214,
+      455.0
+    ],
+    "note": "Proposed fastener envelope; grade, torque and locking engagement unreleased"
+  },
+  {
+    "id": "K07_Seat_True_20_455_outer_washer",
+    "kind": "hardware",
+    "x_mm": 12.0,
+    "y_mm": 1.0,
+    "z_mm": 11.996270184009745,
+    "volume_mm3": 98.57532348801375,
+    "centre_mm": [
+      20.0,
+      360.5,
+      455.0
+    ],
+    "note": "Proposed fastener envelope; grade, torque and locking engagement unreleased"
+  },
+  {
+    "id": "K07_Seat_True_20_455_inner_washer",
+    "kind": "hardware",
+    "x_mm": 12.0,
+    "y_mm": 1.0,
+    "z_mm": 11.996270184009745,
+    "volume_mm3": 98.57532348801375,
+    "centre_mm": [
+      20.0,
+      330.5,
+      455.0
+    ],
+    "note": "Proposed fastener envelope; grade, torque and locking engagement unreleased"
+  },
+  {
+    "id": "K07_Seat_True_20_455_nut",
+    "kind": "hardware",
+    "x_mm": 8.08290376865476,
+    "y_mm": 5.0,
+    "z_mm": 7.0,
+    "volume_mm3": 149.3443708553915,
+    "centre_mm": [
+      20.0,
+      327.5,
+      455.0
+    ],
+    "note": "Proposed fastener envelope; grade, torque and locking engagement unreleased"
+  },
+  {
+    "id": "K07_Seat_True_530_155_screw",
+    "kind": "hardware",
+    "x_mm": 7.0,
+    "y_mm": 44.0,
+    "z_mm": 6.997824274005723,
+    "volume_mm3": 656.5928646002651,
+    "centre_mm": [
+      530.0,
+      346.1578947368421,
+      155.0
+    ],
+    "note": "Proposed fastener envelope; grade, torque and locking engagement unreleased"
+  },
+  {
+    "id": "K07_Seat_True_530_155_outer_washer",
+    "kind": "hardware",
+    "x_mm": 12.0,
+    "y_mm": 1.0,
+    "z_mm": 11.996270184009802,
+    "volume_mm3": 98.57532348801365,
+    "centre_mm": [
+      530.0,
+      360.5,
+      155.0
+    ],
+    "note": "Proposed fastener envelope; grade, torque and locking engagement unreleased"
+  },
+  {
+    "id": "K07_Seat_True_530_155_inner_washer",
+    "kind": "hardware",
+    "x_mm": 12.0,
+    "y_mm": 1.0,
+    "z_mm": 11.996270184009802,
+    "volume_mm3": 98.57532348801365,
+    "centre_mm": [
+      530.0,
+      330.5,
+      155.0
+    ],
+    "note": "Proposed fastener envelope; grade, torque and locking engagement unreleased"
+  },
+  {
+    "id": "K07_Seat_True_530_155_nut",
+    "kind": "hardware",
+    "x_mm": 8.08290376865466,
+    "y_mm": 5.0,
+    "z_mm": 7.0,
+    "volume_mm3": 149.34437085539173,
+    "centre_mm": [
+      530.0,
+      327.5,
+      155.0
+    ],
+    "note": "Proposed fastener envelope; grade, torque and locking engagement unreleased"
+  },
+  {
+    "id": "K07_Seat_True_530_255_screw",
+    "kind": "hardware",
+    "x_mm": 7.0,
+    "y_mm": 44.0,
+    "z_mm": 6.997824274005637,
+    "volume_mm3": 656.5928646002658,
+    "centre_mm": [
+      530.0,
+      346.1578947368421,
+      255.0
+    ],
+    "note": "Proposed fastener envelope; grade, torque and locking engagement unreleased"
+  },
+  {
+    "id": "K07_Seat_True_530_255_outer_washer",
+    "kind": "hardware",
+    "x_mm": 12.0,
+    "y_mm": 1.0,
+    "z_mm": 11.996270184009774,
+    "volume_mm3": 98.57532348801364,
+    "centre_mm": [
+      530.0,
+      360.5,
+      255.0
+    ],
+    "note": "Proposed fastener envelope; grade, torque and locking engagement unreleased"
+  },
+  {
+    "id": "K07_Seat_True_530_255_inner_washer",
+    "kind": "hardware",
+    "x_mm": 12.0,
+    "y_mm": 1.0,
+    "z_mm": 11.996270184009774,
+    "volume_mm3": 98.57532348801364,
+    "centre_mm": [
+      530.0,
+      330.5,
+      255.0
+    ],
+    "note": "Proposed fastener envelope; grade, torque and locking engagement unreleased"
+  },
+  {
+    "id": "K07_Seat_True_530_255_nut",
+    "kind": "hardware",
+    "x_mm": 8.08290376865466,
+    "y_mm": 5.0,
+    "z_mm": 7.0,
+    "volume_mm3": 149.34437085539167,
+    "centre_mm": [
+      530.0,
+      327.5,
+      255.0
+    ],
+    "note": "Proposed fastener envelope; grade, torque and locking engagement unreleased"
+  },
+  {
+    "id": "K07_Seat_True_530_355_screw",
+    "kind": "hardware",
+    "x_mm": 7.0,
+    "y_mm": 44.0,
+    "z_mm": 6.997824274005666,
+    "volume_mm3": 656.592864600266,
+    "centre_mm": [
+      530.0,
+      346.15789473684214,
+      355.0
+    ],
+    "note": "Proposed fastener envelope; grade, torque and locking engagement unreleased"
+  },
+  {
+    "id": "K07_Seat_True_530_355_outer_washer",
+    "kind": "hardware",
+    "x_mm": 12.0,
+    "y_mm": 1.0,
+    "z_mm": 11.996270184009745,
+    "volume_mm3": 98.57532348801367,
+    "centre_mm": [
+      530.0,
+      360.49999999999994,
+      355.0
+    ],
+    "note": "Proposed fastener envelope; grade, torque and locking engagement unreleased"
+  },
+  {
+    "id": "K07_Seat_True_530_355_inner_washer",
+    "kind": "hardware",
+    "x_mm": 12.0,
+    "y_mm": 1.0,
+    "z_mm": 11.996270184009745,
+    "volume_mm3": 98.57532348801367,
+    "centre_mm": [
+      530.0,
+      330.5,
+      355.0
+    ],
+    "note": "Proposed fastener envelope; grade, torque and locking engagement unreleased"
+  },
+  {
+    "id": "K07_Seat_True_530_355_nut",
+    "kind": "hardware",
+    "x_mm": 8.08290376865466,
+    "y_mm": 5.0,
+    "z_mm": 7.0,
+    "volume_mm3": 149.3443708553916,
+    "centre_mm": [
+      530.0,
+      327.5,
+      355.0
+    ],
+    "note": "Proposed fastener envelope; grade, torque and locking engagement unreleased"
+  },
+  {
+    "id": "K07_Seat_True_530_455_screw",
+    "kind": "hardware",
+    "x_mm": 7.0,
+    "y_mm": 44.0,
+    "z_mm": 6.997824274005666,
+    "volume_mm3": 656.592864600266,
+    "centre_mm": [
+      530.0,
+      346.15789473684214,
+      455.00000000000006
+    ],
+    "note": "Proposed fastener envelope; grade, torque and locking engagement unreleased"
+  },
+  {
+    "id": "K07_Seat_True_530_455_outer_washer",
+    "kind": "hardware",
+    "x_mm": 12.0,
+    "y_mm": 1.0,
+    "z_mm": 11.996270184009745,
+    "volume_mm3": 98.57532348801367,
+    "centre_mm": [
+      530.0,
+      360.49999999999994,
+      455.0
+    ],
+    "note": "Proposed fastener envelope; grade, torque and locking engagement unreleased"
+  },
+  {
+    "id": "K07_Seat_True_530_455_inner_washer",
+    "kind": "hardware",
+    "x_mm": 12.0,
+    "y_mm": 1.0,
+    "z_mm": 11.996270184009745,
+    "volume_mm3": 98.57532348801367,
+    "centre_mm": [
+      530.0,
+      330.5,
+      455.0
+    ],
+    "note": "Proposed fastener envelope; grade, torque and locking engagement unreleased"
+  },
+  {
+    "id": "K07_Seat_True_530_455_nut",
+    "kind": "hardware",
+    "x_mm": 8.08290376865466,
+    "y_mm": 5.0,
+    "z_mm": 7.0,
+    "volume_mm3": 149.3443708553916,
+    "centre_mm": [
+      530.0,
+      327.5,
+      455.00000000000006
+    ],
+    "note": "Proposed fastener envelope; grade, torque and locking engagement unreleased"
+  },
+  {
+    "id": "K10_washer_H10_False_19_19",
+    "kind": "hardware",
+    "x_mm": 12.0,
+    "y_mm": 11.996270184009797,
+    "z_mm": 1.0,
+    "volume_mm3": 98.57532348801371,
+    "centre_mm": [
+      19.0,
+      19.0,
+      19.5
+    ],
+    "note": "Proposed fastener envelope; grade, torque and locking engagement unreleased"
+  },
+  {
+    "id": "K10_head_H10_False_19_19",
+    "kind": "hardware",
+    "x_mm": 7.0,
+    "y_mm": 6.9978242740057155,
+    "z_mm": 4.0,
+    "volume_mm3": 153.9380400258999,
+    "centre_mm": [
+      19.0,
+      19.0,
+      17.0
+    ],
+    "note": "Head envelope for retained core-only wood screw. Full screw/thread geometry and end-grain withdrawal capacity remain unverified."
+  },
+  {
+    "id": "K10_washer_H10_False_19_341",
+    "kind": "hardware",
+    "x_mm": 12.0,
+    "y_mm": 11.996270184009745,
+    "z_mm": 1.0,
+    "volume_mm3": 98.57532348801374,
+    "centre_mm": [
+      19.0,
+      341.0,
+      19.5
+    ],
+    "note": "Proposed fastener envelope; grade, torque and locking engagement unreleased"
+  },
+  {
+    "id": "K10_head_H10_False_19_341",
+    "kind": "hardware",
+    "x_mm": 7.0,
+    "y_mm": 6.997824274005666,
+    "z_mm": 4.0,
+    "volume_mm3": 153.93804002590002,
+    "centre_mm": [
+      19.0,
+      341.0,
+      17.0
+    ],
+    "note": "Head envelope for retained core-only wood screw. Full screw/thread geometry and end-grain withdrawal capacity remain unverified."
+  },
+  {
+    "id": "K10_washer_H10_False_531_19",
+    "kind": "hardware",
+    "x_mm": 12.0,
+    "y_mm": 11.996270184009797,
+    "z_mm": 1.0,
+    "volume_mm3": 98.57532348801362,
+    "centre_mm": [
+      531.0,
+      19.0,
+      19.5
+    ],
+    "note": "Proposed fastener envelope; grade, torque and locking engagement unreleased"
+  },
+  {
+    "id": "K10_head_H10_False_531_19",
+    "kind": "hardware",
+    "x_mm": 7.0,
+    "y_mm": 6.9978242740057155,
+    "z_mm": 4.0,
+    "volume_mm3": 153.93804002589962,
+    "centre_mm": [
+      531.0,
+      19.0,
+      17.0
+    ],
+    "note": "Head envelope for retained core-only wood screw. Full screw/thread geometry and end-grain withdrawal capacity remain unverified."
+  },
+  {
+    "id": "K10_washer_H10_False_531_341",
+    "kind": "hardware",
+    "x_mm": 12.0,
+    "y_mm": 11.996270184009745,
+    "z_mm": 1.0,
+    "volume_mm3": 98.57532348801365,
+    "centre_mm": [
+      531.0,
+      341.0,
+      19.5
+    ],
+    "note": "Proposed fastener envelope; grade, torque and locking engagement unreleased"
+  },
+  {
+    "id": "K10_head_H10_False_531_341",
+    "kind": "hardware",
+    "x_mm": 7.0,
+    "y_mm": 6.997824274005666,
+    "z_mm": 4.0,
+    "volume_mm3": 153.93804002589974,
+    "centre_mm": [
+      531.0,
+      341.0,
+      17.0
+    ],
+    "note": "Head envelope for retained core-only wood screw. Full screw/thread geometry and end-grain withdrawal capacity remain unverified."
+  },
+  {
+    "id": "K10_washer_H10_True_19_19",
+    "kind": "hardware",
+    "x_mm": 12.0,
+    "y_mm": 11.996270184009797,
+    "z_mm": 1.0,
+    "volume_mm3": 98.57532348801371,
+    "centre_mm": [
+      19.0,
+      19.0,
+      580.5
+    ],
+    "note": "Proposed fastener envelope; grade, torque and locking engagement unreleased"
+  },
+  {
+    "id": "K10_head_H10_True_19_19",
+    "kind": "hardware",
+    "x_mm": 7.0,
+    "y_mm": 6.9978242740057155,
+    "z_mm": 4.0,
+    "volume_mm3": 153.9380400258999,
+    "centre_mm": [
+      19.0,
+      19.0,
+      583.0
+    ],
+    "note": "Head envelope for retained core-only wood screw. Full screw/thread geometry and end-grain withdrawal capacity remain unverified."
+  },
+  {
+    "id": "K10_washer_H10_True_19_341",
+    "kind": "hardware",
+    "x_mm": 12.0,
+    "y_mm": 11.996270184009745,
+    "z_mm": 1.0,
+    "volume_mm3": 98.57532348801374,
+    "centre_mm": [
+      19.0,
+      341.0,
+      580.5
+    ],
+    "note": "Proposed fastener envelope; grade, torque and locking engagement unreleased"
+  },
+  {
+    "id": "K10_head_H10_True_19_341",
+    "kind": "hardware",
+    "x_mm": 7.0,
+    "y_mm": 6.997824274005666,
+    "z_mm": 4.0,
+    "volume_mm3": 153.93804002590002,
+    "centre_mm": [
+      19.0,
+      341.0,
+      583.0
+    ],
+    "note": "Head envelope for retained core-only wood screw. Full screw/thread geometry and end-grain withdrawal capacity remain unverified."
+  },
+  {
+    "id": "K10_washer_H10_True_531_19",
+    "kind": "hardware",
+    "x_mm": 12.0,
+    "y_mm": 11.996270184009797,
+    "z_mm": 1.0,
+    "volume_mm3": 98.57532348801362,
+    "centre_mm": [
+      531.0,
+      19.0,
+      580.5
+    ],
+    "note": "Proposed fastener envelope; grade, torque and locking engagement unreleased"
+  },
+  {
+    "id": "K10_head_H10_True_531_19",
+    "kind": "hardware",
+    "x_mm": 7.0,
+    "y_mm": 6.9978242740057155,
+    "z_mm": 4.0,
+    "volume_mm3": 153.93804002589962,
+    "centre_mm": [
+      531.0,
+      19.0,
+      583.0
+    ],
+    "note": "Head envelope for retained core-only wood screw. Full screw/thread geometry and end-grain withdrawal capacity remain unverified."
+  },
+  {
+    "id": "K10_washer_H10_True_531_341",
+    "kind": "hardware",
+    "x_mm": 12.0,
+    "y_mm": 11.996270184009745,
+    "z_mm": 1.0,
+    "volume_mm3": 98.57532348801365,
+    "centre_mm": [
+      531.0,
+      341.0,
+      580.5
+    ],
+    "note": "Proposed fastener envelope; grade, torque and locking engagement unreleased"
+  },
+  {
+    "id": "K10_head_H10_True_531_341",
+    "kind": "hardware",
+    "x_mm": 7.0,
+    "y_mm": 6.997824274005666,
+    "z_mm": 4.0,
+    "volume_mm3": 153.93804002589974,
+    "centre_mm": [
+      531.0,
+      341.0,
+      583.0
+    ],
+    "note": "Head envelope for retained core-only wood screw. Full screw/thread geometry and end-grain withdrawal capacity remain unverified."
+  },
+  {
+    "id": "K08_M08_Foot_25_15_screw",
+    "kind": "hardware",
+    "x_mm": 7.0,
+    "y_mm": 6.997824274005712,
+    "z_mm": 34.0,
+    "volume_mm3": 530.9291584566752,
+    "centre_mm": [
+      40.0,
+      30.0,
+      18.071005917159763
+    ],
+    "note": "Proposed fastener envelope; grade, torque and locking engagement unreleased"
+  },
+  {
+    "id": "K08_M08_Foot_25_15_lower_washer",
+    "kind": "hardware",
+    "x_mm": 12.0,
+    "y_mm": 11.996270184009802,
+    "z_mm": 1.0,
+    "volume_mm3": 98.57532348801371,
+    "centre_mm": [
+      40.0,
+      30.0,
+      8.5
+    ],
+    "note": "Proposed fastener envelope; grade, torque and locking engagement unreleased"
+  },
+  {
+    "id": "K08_M08_Foot_25_15_upper_washer",
+    "kind": "hardware",
+    "x_mm": 12.0,
+    "y_mm": 11.996270184009802,
+    "z_mm": 1.0,
+    "volume_mm3": 98.57532348801371,
+    "centre_mm": [
+      40.0,
+      30.0,
+      29.499999999999996
+    ],
+    "note": "Proposed fastener envelope; grade, torque and locking engagement unreleased"
+  },
+  {
+    "id": "K08_M08_Foot_25_15_nut",
+    "kind": "hardware",
+    "x_mm": 8.08290376865476,
+    "y_mm": 7.0,
+    "z_mm": 5.0,
+    "volume_mm3": 149.34437085539167,
+    "centre_mm": [
+      40.0,
+      29.999999999999996,
+      32.5
+    ],
+    "note": "Proposed fastener envelope; grade, torque and locking engagement unreleased"
+  },
+  {
+    "id": "K08_M08_Foot_25_315_screw",
+    "kind": "hardware",
+    "x_mm": 7.0,
+    "y_mm": 6.997824274005666,
+    "z_mm": 34.0,
+    "volume_mm3": 530.9291584566761,
+    "centre_mm": [
+      40.0,
+      330.0,
+      18.071005917159766
+    ],
+    "note": "Proposed fastener envelope; grade, torque and locking engagement unreleased"
+  },
+  {
+    "id": "K08_M08_Foot_25_315_lower_washer",
+    "kind": "hardware",
+    "x_mm": 12.0,
+    "y_mm": 11.996270184009745,
+    "z_mm": 1.0,
+    "volume_mm3": 98.57532348801377,
+    "centre_mm": [
+      40.0,
+      330.0,
+      8.5
+    ],
+    "note": "Proposed fastener envelope; grade, torque and locking engagement unreleased"
+  },
+  {
+    "id": "K08_M08_Foot_25_315_upper_washer",
+    "kind": "hardware",
+    "x_mm": 12.0,
+    "y_mm": 11.996270184009745,
+    "z_mm": 1.0,
+    "volume_mm3": 98.57532348801377,
+    "centre_mm": [
+      40.0,
+      330.0,
+      29.5
+    ],
+    "note": "Proposed fastener envelope; grade, torque and locking engagement unreleased"
+  },
+  {
+    "id": "K08_M08_Foot_25_315_nut",
+    "kind": "hardware",
+    "x_mm": 8.08290376865476,
+    "y_mm": 7.0,
+    "z_mm": 5.0,
+    "volume_mm3": 149.34437085539153,
+    "centre_mm": [
+      40.0,
+      330.0,
+      32.5
+    ],
+    "note": "Proposed fastener envelope; grade, torque and locking engagement unreleased"
+  },
+  {
+    "id": "K08_M08_Foot_495_15_screw",
+    "kind": "hardware",
+    "x_mm": 7.0,
+    "y_mm": 6.997824274005712,
+    "z_mm": 34.0,
+    "volume_mm3": 530.9291584566759,
+    "centre_mm": [
+      510.0,
+      30.0,
+      18.071005917159766
+    ],
+    "note": "Proposed fastener envelope; grade, torque and locking engagement unreleased"
+  },
+  {
+    "id": "K08_M08_Foot_495_15_lower_washer",
+    "kind": "hardware",
+    "x_mm": 12.0,
+    "y_mm": 11.996270184009802,
+    "z_mm": 1.0,
+    "volume_mm3": 98.5753234880136,
+    "centre_mm": [
+      510.0,
+      30.0,
+      8.5
+    ],
+    "note": "Proposed fastener envelope; grade, torque and locking engagement unreleased"
+  },
+  {
+    "id": "K08_M08_Foot_495_15_upper_washer",
+    "kind": "hardware",
+    "x_mm": 12.0,
+    "y_mm": 11.996270184009802,
+    "z_mm": 1.0,
+    "volume_mm3": 98.5753234880136,
+    "centre_mm": [
+      510.0,
+      30.0,
+      29.5
+    ],
+    "note": "Proposed fastener envelope; grade, torque and locking engagement unreleased"
+  },
+  {
+    "id": "K08_M08_Foot_495_15_nut",
+    "kind": "hardware",
+    "x_mm": 8.082903768654717,
+    "y_mm": 7.0,
+    "z_mm": 5.0,
+    "volume_mm3": 149.34437085539145,
+    "centre_mm": [
+      510.0,
+      30.0,
+      32.5
+    ],
+    "note": "Proposed fastener envelope; grade, torque and locking engagement unreleased"
+  },
+  {
+    "id": "K08_M08_Foot_495_315_screw",
+    "kind": "hardware",
+    "x_mm": 7.0,
+    "y_mm": 6.997824274005666,
+    "z_mm": 34.0,
+    "volume_mm3": 530.9291584566768,
+    "centre_mm": [
+      510.0,
+      330.0,
+      18.071005917159763
+    ],
+    "note": "Proposed fastener envelope; grade, torque and locking engagement unreleased"
+  },
+  {
+    "id": "K08_M08_Foot_495_315_lower_washer",
+    "kind": "hardware",
+    "x_mm": 12.0,
+    "y_mm": 11.996270184009745,
+    "z_mm": 1.0,
+    "volume_mm3": 98.57532348801361,
+    "centre_mm": [
+      510.0,
+      330.0,
+      8.5
+    ],
+    "note": "Proposed fastener envelope; grade, torque and locking engagement unreleased"
+  },
+  {
+    "id": "K08_M08_Foot_495_315_upper_washer",
+    "kind": "hardware",
+    "x_mm": 12.0,
+    "y_mm": 11.996270184009745,
+    "z_mm": 1.0,
+    "volume_mm3": 98.57532348801361,
+    "centre_mm": [
+      510.0,
+      330.0,
+      29.5
+    ],
+    "note": "Proposed fastener envelope; grade, torque and locking engagement unreleased"
+  },
+  {
+    "id": "K08_M08_Foot_495_315_nut",
+    "kind": "hardware",
+    "x_mm": 8.082903768654717,
+    "y_mm": 7.0,
+    "z_mm": 5.0,
+    "volume_mm3": 149.34437085539133,
+    "centre_mm": [
+      510.0,
+      330.0,
+      32.5
+    ],
+    "note": "Proposed fastener envelope; grade, torque and locking engagement unreleased"
+  }
+]

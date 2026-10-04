@@ -1,0 +1,16 @@
+ID,Item,Quantity_basis,Vendor_or_service,Quote_date,Unit_cost_INR,Tax_INR,Delivery_INR,Lead_time,Scope_and_exclusions,Release_ID,Approval
+F1-F4,ARCTIC P14 Max ACFAN00287A,4,,,,,,,,,UNQUOTED / NOT ORDER AUTHORIZATION
+FL1-FL2,IKEA STARKVIND104.633.30 particle filter,2,,,,,,,,,UNQUOTED / NOT ORDER AUTHORIZATION
+PS1,Noctua NV-PS1 with NA-AC10,1,,,,,,,,,UNQUOTED / NOT ORDER AUTHORIZATION
+SC1,Noctua NA-FC1,1,,,,,,,,,UNQUOTED / NOT ORDER AUTHORIZATION
+H1,Noctua NA-FH1 with NA-EC1,1,,,,,,,,,UNQUOTED / NOT ORDER AUTHORIZATION
+EXT,NA-EC1 300mm from NA-SEC1 kit,2 candidate leads,,,,,,,,,UNQUOTED / NOT ORDER AUTHORIZATION
+CAB,R03M panels and cleats,1 assembly,,,,,,,,,UNQUOTED / NOT ORDER AUTHORIZATION
+GUARD,R03M welded perforated guards,2 assemblies,,,,,,,,,UNQUOTED / NOT ORDER AUTHORIZATION
+FIX,R03M fasteners and compression limiters,1 scheduled set,,,,,,,,,UNQUOTED / NOT ORDER AUTHORIZATION
+SEAL,Filter/fan/penetration seals,1 design set,,,,,,,,,UNQUOTED / NOT ORDER AUTHORIZATION
+FEET,Retained feet,4,,,,,,,,,UNQUOTED / NOT ORDER AUTHORIZATION
+PR1,Protection and service isolation,1 assembly,,,,,,,,,UNQUOTED / NOT ORDER AUTHORIZATION
+BOX,Controls enclosure and cable restraints,1 assembly,,,,,,,,,UNQUOTED / NOT ORDER AUTHORIZATION
+TEST,Calibrated airflow/pressure/power/noise/PM measurement,1 service scope,,,,,,,,,UNQUOTED / NOT ORDER AUTHORIZATION
+BUILD,Fabrication assembly and qualified review,1 service scope,,,,,,,,,UNQUOTED / NOT ORDER AUTHORIZATION

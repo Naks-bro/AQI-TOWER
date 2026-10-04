@@ -1,5 +1,7 @@
 # Electrical and monitoring plan
 
+**Current prototype reference, 5 October 2026:** [IH02 engineering handoff](../../reports/prototype_d01/internal_handoff_20261005/START_HERE.md) controls the D01 review: four12V P14 Max fans and proposed OEM Noctua power/control chain. The historical230V large-tower plan below is not a D01 wiring instruction. Rated protection, enclosure/harness and commissioning remain unfinished; use the current electrical appendix and release register for internal review.
+
 PRELIMINARY FUNCTIONAL PLAN — NOT A WIRING DRAWING. 2 October 2026.
 
 Delivery basis updated 3 October 2026: college/NGO funding only, no college lab assumed. Assistant prepares OEM-based drawings/calculations/software; ENTC review is optional/unconfirmed. Hire qualified review/assembly/commissioning where needed. See [no-lab route](NO_LAB_BUILD_ROUTE.md) and [review handout](OPTIONAL_ENTC_REVIEW.md).

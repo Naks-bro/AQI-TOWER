@@ -8,9 +8,10 @@ from reportlab.lib.styles import getSampleStyleSheet, ParagraphStyle
 from reportlab.lib.colors import HexColor, white
 import pypdfium2 as pdfium
 from PIL import Image as PILImage, ImageOps, ImageDraw
+from reportlab.graphics.shapes import Drawing, Rect, Circle, Line, String
 
 R=Path(__file__).resolve().parents[2]
-O=R/'reports/prototype_d01/internal_handoff_20261004'
+O=R/'reports/prototype_d01/internal_handoff_20261005'
 M=R/'reports/prototype_d01/mechanical_package'
 E=R/'reports/prototype_d01/electrical_package'
 V=R/'reports/prototype_d01/validation_package'
@@ -80,10 +81,22 @@ def photo(name,w=370):
     f=M/name;im=PILImage.open(f);return Image(str(f),width=w,height=w*im.height/im.width)
 def footer(c,d):
     c.setFillColor(HexColor('#65757b'));c.setFont('Helvetica',8)
-    c.drawString(40,24,'AQI TOWER  |  D01 R03M  |  4 October 2026  |  REVIEW ONLY - NOT FOR CONSTRUCTION')
+    c.drawString(40,24,'AQI TOWER  |  D01 R03M  |  5 October 2026  |  REVIEW ONLY - NOT FOR CONSTRUCTION')
     c.drawRightString(555,24,str(d.page))
 def makepdf(name,story):
     SimpleDocTemplate(str(O/name),pagesize=(595,842),leftMargin=40,rightMargin=40,topMargin=38,bottomMargin=46).build(story,onFirstPage=footer,onLaterPages=footer)
+
+def network_diagram():
+    d=Drawing(515,115)
+    for i in range(3):
+        x=92+i*165
+        d.add(Circle(x,65,55,fillColor=HexColor('#edf6f3'),strokeColor=HexColor('#74a99a'),strokeDashArray=[3,3]))
+        d.add(Rect(x-9,42,18,43,fillColor=HexColor('#257d74'),strokeColor=None))
+        d.add(String(x,27,'Future tower',textAnchor='middle',fontSize=9))
+        if i<2:
+            d.add(Line(x+57,65,x+108,65,strokeColor=HexColor('#658077')))
+    d.add(String(257,5,'Concept only: circles do not represent a measured radius or guaranteed coverage',textAnchor='middle',fontSize=8))
+    return d
 
 stake=[title('AQI Tower'),p('Indoor prototype and next funding milestone'),
  p('We are developing a fan-and-filter air cleaner. The first physical unit will help us measure how much air it moves, how well the filters work in our housing, and how practical it is to maintain.'),
@@ -95,7 +108,7 @@ stake=[title('AQI Tower'),p('Indoor prototype and next funding milestone'),
  table(['Part','Plain explanation'],[['Two removable filters','Catch particles; sealing around their edges is essential. Actual performance in this unit is untested.'],['Four fans','Move air through the resistance of filters and guards. Free-air fan figures are not the finished unit output.'],['Cabinet and guards','Hold the parts together and separate users from moving fans. Strength, access and electrical checks must finish before operation.'],['External power adapter','Proposed12V supply inside the fan system; household mains remains at the external OEM adapter. Electrical review is still required.']],[140,375]),Spacer(1,15),
  p('<b>Why start smaller?</b> It makes the first build easier to inspect, transport and measure. It remains our custom enclosure, filter mounting, integration and testing project. It does not prove that a large outdoor tower will work.'),
  p('<b>Long-term idea:</b> larger towers may create local cleaner-air zones. A chain of zones is a research goal, not a proven network. Wind, weather, nearby pollution and placement will affect results. Bubble size, cleaning percentage and spacing are unknown.'),
- p('No gas-removal, water, solar or outdoor coverage claim is attached to this first particulate prototype. The current experimental replacement filters do not make the assembled device a certified HEPA purifier.'),PageBreak(),
+ p('No gas-removal, water, solar or outdoor coverage claim is attached to this first particulate prototype. The current experimental replacement filters do not make the assembled device a certified HEPA purifier.'),network_diagram(),PageBreak(),
  heading('What support achieves next'),
  table(['Already prepared','Still needed'],[['Integrated CAD, exploded view, dimensioned panel drawings and hardware schedules','Internal mechanical review of structure, guarding, sealing and service'],['OEM fan data and pressure calculations','Real filter resistance and installed airflow measurements'],['Power-reference schematic and control requirements','Electrical design completion, rated protection and commissioning'],['Blank test sheets and checked analysis software','A supervised indoor location, instruments and an assembled unit']],[255,260]),Spacer(1,12),
  p('<b>Funding request:</b> fund engineering closure first, then released parts and outsourced fabrication, followed by qualified assembly and instrumented testing. Prices, stock and service lead times are not confirmed; the parts register is not a quotation.'),
@@ -104,7 +117,7 @@ stake=[title('AQI Tower'),p('Indoor prototype and next funding milestone'),
  p('<b>Team:</b> Nakul Kokate coordinates the project. Mechanical and electrical reviewers can work in parallel using the engineering pack. College and NGO support is funding; no college laboratory is assumed. A final project/device name remains to be agreed.')]
 makepdf('01_STAKEHOLDER_BRIEF.pdf',stake)
 
-engineer=[title('D01 Internal Engineering Handoff'),p('Review revision IH01 | Mechanical R03M | Electrical E00 with supplements | Updated validation tools'),
+engineer=[title('D01 Internal Engineering Handoff'),p('Review revision IH02 | Mechanical R03M | Electrical E00 with supplements | 5 October 2026'),
  p('<b>Decision requested:</b> review and resolve the open engineering items in REVIEW_AND_RELEASE_REGISTER.csv. This is a coordinated design-review issue, not a fabrication or energization issue. Manufacturer replies are not the only remaining dependency.'),
  photo('D01_EXPLODED.png',365),p('Exploded view of the actual current assembly. Omitted threads, weld beads and perforations limit what CAD checks establish. Nominal component fits do not establish strength, safety or sealing.',True),
  table(['Evidence class','Meaning'],[['DETECTED','Recorded files or geometry; not physical measurement'],['OEM REFERENCE','Published component data; not approval of our integration'],['ASSUMPTION','Provisional input requiring validation'],['UNKNOWN / OPEN','Do not order, cut or energize the affected interface']],[120,395]),PageBreak(),
@@ -145,14 +158,32 @@ engineer=[title('D01 Internal Engineering Handoff'),p('Review revision IH01 | Me
  p('Use staged funding: review and engineering closure; then released components/fabrication; then commissioning and calibrated testing. Request actual quotes and lead times against the approved revision. No INR total is asserted without quotations.'),
  p('The ZIP includes selected current native/STEP/exploded files,15 DXFs, current engineering evidence and standalone calculation inputs. No old CAD branches, downloaded manufacturer manuals, email address or conversation records are included. OEM facts must still be checked against delivered parts.'),
  p('Sources are recorded in electrical_package/sources.json, harness_detail/README.md and GUARD_ACCESS_DECISION.md. Principal official sources include ARCTIC P14 Max support, Noctua NV-PS1/NA-FC1/NA-FH1 manuals and IKEA India STARKVIND104.633.30. Archived references are evidence, not current stock or price guarantees.'),
+ p('<b>Current filter comparison:</b> scripts/analysis/d01_current_filter_screen.py uses the current R03M budget. Supply per-filter m3/h and Pa with exact part/revision, source, CLEAN or LOADED condition and its conditioning reference. It refuses extrapolation and preserves input hashes. Positive model margin is conditional, not approval. Do not use the earlier R01 offer checker for this design. See TOOL_USAGE.md.'),
  p('The geometric assembly is ours; proprietary purchased parts retain their manufacturers\u2019 rights. This package is for internal review and does not assert patentability or a license to redistribute OEM materials.'),
  p('<b>Handback requested from the team:</b> one annotated review register and one coordinated revision, not parallel incompatible assemblies. Keep changes traceable to R03M and record any accepted change to safety requirements. Do not mark all remaining work complete while these decisions remain open.'),
  p('Annexes follow: mechanical R03M; electrical E00; validation V00. All are reference snapshots and remain review-only. Corrections in this review section take precedence. The complete machine has not been built or tested.')]
 makepdf('02_ENGINEERING_REVIEW.pdf',engineer)
 
-# Append the existing reviewed drawings without regenerating or overwriting history.
+# Make explicit separators so no engineer can mistake an appendix for the current review.
+appendices=[('A','Mechanical drawings',M/'AQI_D01_MECHANICAL_PACKAGE.pdf'),
+            ('B','Electrical review',E/'AQI_D01_ELECTRICAL_REVIEW.pdf'),
+            ('C','Validation procedure',V/'AQI_D01_VALIDATION_PACKAGE.pdf')]
 merged=pdfium.PdfDocument.new()
-for f in [O/'02_ENGINEERING_REVIEW.pdf',M/'AQI_D01_MECHANICAL_PACKAGE.pdf',E/'AQI_D01_ELECTRICAL_REVIEW.pdf',V/'AQI_D01_VALIDATION_PACKAGE.pdf']:
+doc=pdfium.PdfDocument(str(O/'02_ENGINEERING_REVIEW.pdf'));merged.import_pages(doc);doc.close()
+for tag,label,f in appendices:
+    cover=io.BytesIO();cc=canvas.Canvas(cover,pagesize=(595,842))
+    cc.setFont('Helvetica-Bold',24);cc.drawString(40,740,'Appendix '+tag)
+    cc.setFont('Helvetica',20);cc.drawString(40,700,label)
+    cc.setFont('Helvetica',11)
+    for i,line in enumerate(['Reference snapshot for D01 R03M internal review',
+                             'Read the current review section and TOOL_USAGE.md first.',
+                             'Current scripts and corrections supersede older analysis instructions.',
+                             'Review drawings require release before cutting or wiring.',
+                             'No physical performance or safety approval is recorded.']):
+        cc.drawString(40,650-i*24,line)
+    cc.setFont('Helvetica',9);cc.drawString(40,430,'Source: '+f.name)
+    cc.save();cover.seek(0)
+    separator=pdfium.PdfDocument(cover);merged.import_pages(separator);separator.close()
     doc=pdfium.PdfDocument(str(f));merged.import_pages(doc);doc.close()
 merged.save(str(O/'03_ENGINEERING_DRAWINGS_AND_REVIEW.pdf'));merged.close()
 
@@ -163,13 +194,13 @@ for directory in (M,E):
             selected.append(f)
 selected += [M/'harness_detail/README.md',R/'reports/prototype_d01/r02_adapter/README.md',E/'sources.json']
 selected += [V/n for n in ('AIRFLOW_BLANK.csv','RUN_LOG_BLANK.csv','PARTICLE_TIMESERIES_BLANK.csv','sources.json')]
-selected += [R/f'scripts/analysis/{n}.py' for n in ('d01_validation','d01_guard_bending','d01_control_acceptance')]
+selected += [R/f'scripts/analysis/{n}.py' for n in ('d01_validation','d01_guard_bending','d01_control_acceptance','d01_current_filter_screen','test_d01_current_filter_screen')]
 selected += [R/'reports/prototype_d01/component_validation/OEM_P14_Max_points.csv']
 for f in set(selected):
     dest=O/'engineering'/f.relative_to(R);dest.parent.mkdir(parents=True,exist_ok=True);shutil.copy2(f,dest)
-(O/'START_HERE.md').write_text('''# AQI Tower internal handoff IH01
+(O/'START_HERE.md').write_text('''# AQI Tower internal handoff IH02
 
-4 October2026. READY FOR INTERNAL REVIEW ONLY. NOT ready for construction or energization.
+5 October2026. READY FOR INTERNAL REVIEW ONLY. NOT ready for construction or energization. Source CAD and OEM evidence are the existing4 October revision; supplier replies are still pending in the project records.
 
 Stakeholders: read01_STAKEHOLDER_BRIEF.pdf (3 pages).
 Engineers: read03_ENGINEERING_DRAWINGS_AND_REVIEW.pdf, which combines the current review with mechanical, electrical and validation reference appendices.02_ENGINEERING_REVIEW.pdf is the same review section separately for quick navigation.
@@ -179,12 +210,43 @@ Authoritative base: engineering/reports/prototype_d01/mechanical_package/D01_R03
 
 Current pressure: CURRENT_PRESSURE_BUDGET.json. Current code: engineering/scripts/analysis/d01_validation.py. Run from engineering/; physical CSV requires --plane-area-m2 AREA. Older analyzer commands/counts in V00 appendix are superseded. Do not use legacy R01 filter prediction or large-tower mains plans for this unit.
 
+Use TOOL_USAGE.md for the current filter screen and independent arithmetic checks. Blank source-curve CSV contains no invented measurements. This handoff supersedes IH01 for team circulation; older files remain historical.
+
 Known missing design: released guard/structure/seals, protected harness entry, rated electrical circuit and enclosure. Open inputs: exact filter properties, room/acceptance targets, manufacturing/review services and physical commissioning/performance. OEM cable enquiries sent; replies pending. No supplier response alone closes whole-system release.
 
 No purchasing, fabrication, physical test or external distribution performed by preparation of this handoff. No guarantee of outdoor coverage, filter class or patentability. Physical prototypes0.
 
 MANIFEST.json records every packaged source/output hash. The bundle deliberately excludes old branches, source conversations, personal email and manufacturer PDF redistribution. README links inside preserved supplementary evidence may point to the full project; use this start file for package navigation.
 ''',encoding='utf-8')
+(O/'TOOL_USAGE.md').write_text('''# Running the current tools
+
+Extract the whole ZIP. Open a terminal in engineering/. Python3 is required; these analysis tools use the standard library. No extra engineering program is needed to run the checks. FreeCAD opens FCStd; STEP is supplied for other CAD tools. This is a review package.
+
+```
+python scripts/analysis/d01_validation.py
+python scripts/analysis/d01_guard_bending.py
+python scripts/analysis/d01_control_acceptance.py
+python -m unittest discover -s scripts/analysis -p test_d01_current_filter_screen.py -v
+```
+
+To compare real OEM or reviewed physical filter data, create a new CSV from FILTER_CURVE_BLANK.csv. Use per-filter flow, not total tower flow. Rows must be sorted, finite and nonnegative. Do not extrapolate. Supply exact evidence and the condition definition:
+
+```
+python scripts/analysis/d01_current_filter_screen.py CURVE.csv --part "EXACT PART AND REVISION" --source "DOCUMENT OR TEST RECORD" --evidence OEM --condition CLEAN --condition-ref "SOURCE CLEAN CONDITION" --output NEW_SCREEN.json
+```
+
+For measured data use --evidence PHYSICAL; for a loaded curve use --condition LOADED and its actual loading reference. The tool does not verify the truth of labels or the authenticity of a source. Separate clean and loaded runs are needed.15 scenarios use the actual R03M guard open area with assumed loss coefficients. A positive margin does not release purchase or establish actual operating flow.
+
+For accepted physical airflow rows:
+
+```
+python scripts/analysis/d01_validation.py --airflow-csv AIRFLOW.csv --plane-area-m2 AREA --output NEW_FLOW.json
+```
+
+Replace AREA with the independently established full measurement-plane area in m2. It is not automatically the guard hole area. Velocity-only error is not complete uncertainty. Preserve raw logs and use new output filenames. All bundled test fixtures are synthetic; there are no physical test results.
+''',encoding='utf-8')
+csvout(O/'FILTER_CURVE_BLANK.csv',['per_filter_flow_m3h','pressure_Pa'],[])
+csvout(O/'QUOTE_AND_FUNDING_REGISTER.csv',['ID','Item','Quantity_basis','Vendor_or_service','Quote_date','Unit_cost_INR','Tax_INR','Delivery_INR','Lead_time','Scope_and_exclusions','Release_ID','Approval'],[[r[0],r[2],r[1],'','','','','','','', '','UNQUOTED / NOT ORDER AUTHORIZATION'] for r in bom])
 
 # Render all newly authored pages for inspection; montage is QA only, outside distribution.
 qa=O/'qa';qa.mkdir()
@@ -202,9 +264,9 @@ for start in range(0,len(imgs),4):
 files=[f for f in O.rglob('*') if f.is_file() and qa not in f.parents]
 manifest={str(f.relative_to(O)).replace('\\','/'):hashlib.sha256(f.read_bytes()).hexdigest() for f in files}
 (O/'MANIFEST.json').write_text(json.dumps(manifest,indent=2))
-with zipfile.ZipFile(O/'AQI_TOWER_INTERNAL_HANDOFF_IH01.zip','w',zipfile.ZIP_DEFLATED) as z:
+with zipfile.ZipFile(O/'AQI_TOWER_INTERNAL_HANDOFF_IH02.zip','w',zipfile.ZIP_DEFLATED) as z:
     for f in files+[O/'MANIFEST.json']:z.write(f,str(f.relative_to(O)))
-with zipfile.ZipFile(O/'AQI_TOWER_INTERNAL_HANDOFF_IH01.zip') as z:
+with zipfile.ZipFile(O/'AQI_TOWER_INTERNAL_HANDOFF_IH02.zip') as z:
     assert z.testzip() is None
     assert all(hashlib.sha256(z.read(n)).hexdigest()==h for n,h in manifest.items())
 print(json.dumps({'output':str(O),'packaged_files':len(manifest),'archive_hashes_verified':True,'new_pages':len(imgs),'checks':tests['airflow'],'pressure_at300':central},indent=2))
