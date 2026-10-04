@@ -1,0 +1,4827 @@
+{
+  "status": "PARTIAL ASSUMED MASS ONLY / NO BUILD OR STABILITY RELEASE",
+  "sources_sha256": {
+    "part_inventory.json": "512c4b98c1be4c2b2e93f6fb119263bad7294e27df5eea53af4bd02bfb5b1c7b",
+    "cad_mesh.json": "118f26142c8f80aaccf5ab6aea0c930cb91ac520c8ccdb531e47f49d504a8bb2",
+    "panel_DXF_REVIEW_ONLY/G_FACE.dxf": "e11ff9523d40fac9f01c03d86d1353bae223e7db039d9f8180a999f7da27148e",
+    "D01_R03M_ASSEMBLY.FCStd": "fb28a31315968509dcdbbb2caac8c6d69c84ecb94a35ccd75937a5d9ecaa33a6"
+  },
+  "fan_source": {
+    "url": "https://www.arctic.de/media/8a/18/01/1710507321/Spec_Sheet_P14_Max_EN.pdf",
+    "accessed": "2026-10-05",
+    "sku": "ACFAN00287A",
+    "net_mass_kg": 0.245,
+    "ambient_temperature_C": [
+      0,
+      40
+    ],
+    "note": "OEM specification, NOT mass measured on delivered fan"
+  },
+  "guard_holes": {
+    "count_per_face": 2822,
+    "removed_volume_per_face_mm3": 35462.29787372158,
+    "local_area_centroid_mm": [
+      159.00000000000003,
+      157.4922678357857
+    ],
+    "removed_assumed_mass_both_kg": 0.5567580766174289
+  },
+  "nominal_support_polygon_mm": [
+    [
+      25.0,
+      15.0
+    ],
+    [
+      525.0,
+      15.0
+    ],
+    [
+      525.0,
+      345.0
+    ],
+    [
+      25.0,
+      345.0
+    ]
+  ],
+  "partial_mass_kg": 12.61307841429789,
+  "partial_centroid_mm": [
+    275.04414133158684,
+    180.11069463699184,
+    365.5453888664832
+  ],
+  "unknown_mass_objects": [
+    "S01_Filter_seal_Front",
+    "S01_Filter_seal_Rear",
+    "S02_Fan_seal_1",
+    "S02_Fan_seal_2",
+    "S02_Fan_seal_3",
+    "S02_Fan_seal_4",
+    "M08_Foot_25_15",
+    "M08_Foot_25_315",
+    "M08_Foot_495_15",
+    "M08_Foot_495_315",
+    "E01_Control_box_RESERVATION",
+    "E02_Cable_corridor_0",
+    "E02_Cable_corridor_1",
+    "A02_Filter_gasket_Front",
+    "A03_STARKVIND_envelope_Front",
+    "A06_Feedthrough_seal_0_Front",
+    "A06_Feedthrough_seal_1_Front",
+    "A06_Feedthrough_seal_2_Front",
+    "A06_Feedthrough_seal_3_Front",
+    "A09_Ledge_seal_130_Front",
+    "A09_Ledge_seal_390_Front",
+    "A02_Filter_gasket_Rear",
+    "A03_STARKVIND_envelope_Rear",
+    "A06_Feedthrough_seal_0_Rear",
+    "A06_Feedthrough_seal_1_Rear",
+    "A06_Feedthrough_seal_2_Rear",
+    "A06_Feedthrough_seal_3_Rear",
+    "A09_Ledge_seal_130_Rear",
+    "A09_Ledge_seal_390_Rear"
+  ],
+  "mass_rows": [
+    {
+      "id": "M01_Base",
+      "mass_kg": 1.157555678160548,
+      "centre_mm": [
+        275.00000000000006,
+        180.00000000000009,
+        24.499999999999996
+      ],
+      "basis": "ASSUMED density 650 kg/m3; nominal CAD volume"
+    },
+    {
+      "id": "M02_Left",
+      "mass_kg": 1.140707678160548,
+      "centre_mm": [
+        4.500000000000001,
+        180.00000000000006,
+        299.9967374558194
+      ],
+      "basis": "ASSUMED density 650 kg/m3; nominal CAD volume"
+    },
+    {
+      "id": "M02_Right",
+      "mass_kg": 1.140707678160548,
+      "centre_mm": [
+        545.5,
+        180.00000000000006,
+        299.9967374558194
+      ],
+      "basis": "ASSUMED density 650 kg/m3; nominal CAD volume"
+    },
+    {
+      "id": "M03_Seat_Front",
+      "mass_kg": 0.39231902906090005,
+      "centre_mm": [
+        274.99999999999983,
+        4.499999999999985,
+        283.75626147050946
+      ],
+      "basis": "ASSUMED density 650 kg/m3; nominal CAD volume"
+    },
+    {
+      "id": "M03_Seat_Rear",
+      "mass_kg": 0.39231902906090005,
+      "centre_mm": [
+        274.99999999999983,
+        355.50000000000045,
+        283.75626147050946
+      ],
+      "basis": "ASSUMED density 650 kg/m3; nominal CAD volume"
+    },
+    {
+      "id": "F02_P14_Max_1",
+      "mass_kg": 0.245,
+      "centre_mm": [
+        199.99999999999997,
+        104.99999999999997,
+        594.3415801557321
+      ],
+      "basis": "OEM net mass; CAD geometric centroid ASSUMED as mass location"
+    },
+    {
+      "id": "F02_P14_Max_2",
+      "mass_kg": 0.245,
+      "centre_mm": [
+        349.99999999999983,
+        104.99999999999999,
+        594.3415801557322
+      ],
+      "basis": "OEM net mass; CAD geometric centroid ASSUMED as mass location"
+    },
+    {
+      "id": "F02_P14_Max_3",
+      "mass_kg": 0.245,
+      "centre_mm": [
+        200.00000000000003,
+        254.99999999999997,
+        594.3415801557321
+      ],
+      "basis": "OEM net mass; CAD geometric centroid ASSUMED as mass location"
+    },
+    {
+      "id": "F02_P14_Max_4",
+      "mass_kg": 0.245,
+      "centre_mm": [
+        349.9999999999998,
+        254.9999999999999,
+        594.341580155732
+      ],
+      "basis": "OEM net mass; CAD geometric centroid ASSUMED as mass location"
+    },
+    {
+      "id": "M06_Fan_plate",
+      "mass_kg": 0.8247080001628061,
+      "centre_mm": [
+        275.0000000000004,
+        180.00000000000017,
+        575.5000000000014
+      ],
+      "basis": "ASSUMED density 650 kg/m3; nominal CAD volume"
+    },
+    {
+      "id": "M07_Cleat_9_9",
+      "mass_kg": 0.12761836580637156,
+      "centre_mm": [
+        18.987316044955328,
+        19.0,
+        299.93638405734964
+      ],
+      "basis": "ASSUMED density 600 kg/m3; nominal CAD volume"
+    },
+    {
+      "id": "M07_Cleat_9_331",
+      "mass_kg": 0.12761836580637156,
+      "centre_mm": [
+        18.987316044955328,
+        340.99999999999994,
+        299.93638405734964
+      ],
+      "basis": "ASSUMED density 600 kg/m3; nominal CAD volume"
+    },
+    {
+      "id": "M07_Cleat_521_9",
+      "mass_kg": 0.1276183658063716,
+      "centre_mm": [
+        531.0126839550445,
+        19.0,
+        299.9363840573497
+      ],
+      "basis": "ASSUMED density 600 kg/m3; nominal CAD volume"
+    },
+    {
+      "id": "M07_Cleat_521_331",
+      "mass_kg": 0.1276183658063716,
+      "centre_mm": [
+        531.0126839550445,
+        341.00000000000006,
+        299.9363840573497
+      ],
+      "basis": "ASSUMED density 600 kg/m3; nominal CAD volume"
+    },
+    {
+      "id": "H10_False_19_19",
+      "mass_kg": 0.0008878140839044755,
+      "centre_mm": [
+        19.0,
+        19.0,
+        31.5
+      ],
+      "basis": "ASSUMED density 7850 kg/m3; nominal CAD volume"
+    },
+    {
+      "id": "H10_False_19_341",
+      "mass_kg": 0.0008878140839044771,
+      "centre_mm": [
+        18.999999999999993,
+        341.0,
+        31.5
+      ],
+      "basis": "ASSUMED density 7850 kg/m3; nominal CAD volume"
+    },
+    {
+      "id": "H10_False_531_19",
+      "mass_kg": 0.0008878140839044818,
+      "centre_mm": [
+        531.0,
+        19.0,
+        31.5
+      ],
+      "basis": "ASSUMED density 7850 kg/m3; nominal CAD volume"
+    },
+    {
+      "id": "H10_False_531_341",
+      "mass_kg": 0.0008878140839044837,
+      "centre_mm": [
+        531.0,
+        341.0,
+        31.5
+      ],
+      "basis": "ASSUMED density 7850 kg/m3; nominal CAD volume"
+    },
+    {
+      "id": "H10_True_19_19",
+      "mass_kg": 0.0007102512671235805,
+      "centre_mm": [
+        19.0,
+        19.0,
+        571.0
+      ],
+      "basis": "ASSUMED density 7850 kg/m3; nominal CAD volume"
+    },
+    {
+      "id": "H10_True_19_341",
+      "mass_kg": 0.0007102512671235818,
+      "centre_mm": [
+        18.999999999999996,
+        341.0,
+        571.0
+      ],
+      "basis": "ASSUMED density 7850 kg/m3; nominal CAD volume"
+    },
+    {
+      "id": "H10_True_531_19",
+      "mass_kg": 0.0007102512671235856,
+      "centre_mm": [
+        531.0,
+        19.0,
+        571.0
+      ],
+      "basis": "ASSUMED density 7850 kg/m3; nominal CAD volume"
+    },
+    {
+      "id": "H10_True_531_341",
+      "mass_kg": 0.0007102512671235871,
+      "centre_mm": [
+        531.0,
+        341.0,
+        571.0
+      ],
+      "basis": "ASSUMED density 7850 kg/m3; nominal CAD volume"
+    },
+    {
+      "id": "A01_Reducer_Front",
+      "mass_kg": 1.2127774458614826,
+      "centre_mm": [
+        274.9999999999999,
+        -7.499999999999992,
+        305.02408902993506
+      ],
+      "basis": "ASSUMED density 650 kg/m3; nominal CAD volume"
+    },
+    {
+      "id": "A04_Retainer_Front",
+      "mass_kg": 0.2383078390802741,
+      "centre_mm": [
+        275.00000000000017,
+        -59.5,
+        305.00000000000006
+      ],
+      "basis": "ASSUMED density 650 kg/m3; nominal CAD volume"
+    },
+    {
+      "id": "A07_Ledge_130_Front",
+      "mass_kg": 0.029423302288901873,
+      "centre_mm": [
+        144.99999999999994,
+        -27.110805643885993,
+        155.57165180891445
+      ],
+      "basis": "ASSUMED density 7850 kg/m3; nominal CAD volume"
+    },
+    {
+      "id": "A07_Ledge_390_Front",
+      "mass_kg": 0.029423302288901873,
+      "centre_mm": [
+        404.99999999999994,
+        -27.110805643885993,
+        155.57165180891445
+      ],
+      "basis": "ASSUMED density 7850 kg/m3; nominal CAD volume"
+    },
+    {
+      "id": "A01_Reducer_Rear",
+      "mass_kg": 1.2127774458614826,
+      "centre_mm": [
+        274.9999999999999,
+        367.49999999999966,
+        305.02408902993506
+      ],
+      "basis": "ASSUMED density 650 kg/m3; nominal CAD volume"
+    },
+    {
+      "id": "A04_Retainer_Rear",
+      "mass_kg": 0.2383078390802741,
+      "centre_mm": [
+        275.00000000000017,
+        419.5000000000002,
+        305.00000000000006
+      ],
+      "basis": "ASSUMED density 650 kg/m3; nominal CAD volume"
+    },
+    {
+      "id": "A07_Ledge_130_Rear",
+      "mass_kg": 0.029423302288901863,
+      "centre_mm": [
+        144.99999999999997,
+        387.110805643886,
+        155.57165180891442
+      ],
+      "basis": "ASSUMED density 7850 kg/m3; nominal CAD volume"
+    },
+    {
+      "id": "A07_Ledge_390_Rear",
+      "mass_kg": 0.029423302288901863,
+      "centre_mm": [
+        404.9999999999999,
+        387.110805643886,
+        155.57165180891442
+      ],
+      "basis": "ASSUMED density 7850 kg/m3; nominal CAD volume"
+    },
+    {
+      "id": "A05_Stud_0_Front",
+      "mass_kg": 0.007891680745817564,
+      "centre_mm": [
+        80.00000000000001,
+        -32.00000000000001,
+        150.0
+      ],
+      "basis": "ASSUMED density 7850 kg/m3; nominal CAD volume"
+    },
+    {
+      "id": "H10_Service_washer_0_Front",
+      "mass_kg": 0.0007738162893809075,
+      "centre_mm": [
+        79.99999999999999,
+        -64.50000000000001,
+        150.00000000000003
+      ],
+      "basis": "ASSUMED density 7850 kg/m3; nominal CAD volume"
+    },
+    {
+      "id": "H10_Outer_fixed_washer_0_Front",
+      "mass_kg": 0.0007738162893809075,
+      "centre_mm": [
+        79.99999999999999,
+        -13.5,
+        150.00000000000003
+      ],
+      "basis": "ASSUMED density 7850 kg/m3; nominal CAD volume"
+    },
+    {
+      "id": "H10_Inner_fixed_washer_0_Front",
+      "mass_kg": 0.0007738162893809075,
+      "centre_mm": [
+        79.99999999999999,
+        -2.5000000000000004,
+        150.00000000000003
+      ],
+      "basis": "ASSUMED density 7850 kg/m3; nominal CAD volume"
+    },
+    {
+      "id": "H11_Service_nut_0_Front",
+      "mass_kg": 0.0011723533112148264,
+      "centre_mm": [
+        80.00000000000001,
+        -67.5,
+        150.0
+      ],
+      "basis": "ASSUMED density 7850 kg/m3; nominal CAD volume"
+    },
+    {
+      "id": "H11_Outer_fixed_nut_0_Front",
+      "mass_kg": 0.0011723533112148264,
+      "centre_mm": [
+        80.00000000000001,
+        -16.5,
+        150.0
+      ],
+      "basis": "ASSUMED density 7850 kg/m3; nominal CAD volume"
+    },
+    {
+      "id": "H11_Inner_fixed_nut_0_Front",
+      "mass_kg": 0.0011723533112148264,
+      "centre_mm": [
+        80.00000000000001,
+        0.5000000000000002,
+        150.0
+      ],
+      "basis": "ASSUMED density 7850 kg/m3; nominal CAD volume"
+    },
+    {
+      "id": "A05_Stud_1_Front",
+      "mass_kg": 0.007891680745817567,
+      "centre_mm": [
+        80.00000000000001,
+        -32.00000000000001,
+        460.00000000000006
+      ],
+      "basis": "ASSUMED density 7850 kg/m3; nominal CAD volume"
+    },
+    {
+      "id": "H10_Service_washer_1_Front",
+      "mass_kg": 0.0007738162893809075,
+      "centre_mm": [
+        79.99999999999999,
+        -64.50000000000001,
+        460.00000000000017
+      ],
+      "basis": "ASSUMED density 7850 kg/m3; nominal CAD volume"
+    },
+    {
+      "id": "H10_Outer_fixed_washer_1_Front",
+      "mass_kg": 0.0007738162893809075,
+      "centre_mm": [
+        79.99999999999999,
+        -13.500000000000002,
+        460.00000000000017
+      ],
+      "basis": "ASSUMED density 7850 kg/m3; nominal CAD volume"
+    },
+    {
+      "id": "H10_Inner_fixed_washer_1_Front",
+      "mass_kg": 0.0007738162893809075,
+      "centre_mm": [
+        79.99999999999999,
+        -2.5000000000000004,
+        460.00000000000017
+      ],
+      "basis": "ASSUMED density 7850 kg/m3; nominal CAD volume"
+    },
+    {
+      "id": "H11_Service_nut_1_Front",
+      "mass_kg": 0.0011723533112148262,
+      "centre_mm": [
+        80.00000000000001,
+        -67.5,
+        460.0000000000001
+      ],
+      "basis": "ASSUMED density 7850 kg/m3; nominal CAD volume"
+    },
+    {
+      "id": "H11_Outer_fixed_nut_1_Front",
+      "mass_kg": 0.0011723533112148262,
+      "centre_mm": [
+        80.00000000000001,
+        -16.5,
+        460.0000000000001
+      ],
+      "basis": "ASSUMED density 7850 kg/m3; nominal CAD volume"
+    },
+    {
+      "id": "H11_Inner_fixed_nut_1_Front",
+      "mass_kg": 0.0011723533112148262,
+      "centre_mm": [
+        80.00000000000001,
+        0.5000000000000001,
+        460.0000000000001
+      ],
+      "basis": "ASSUMED density 7850 kg/m3; nominal CAD volume"
+    },
+    {
+      "id": "A05_Stud_2_Front",
+      "mass_kg": 0.007891680745817585,
+      "centre_mm": [
+        470.00000000000006,
+        -32.00000000000001,
+        150.0
+      ],
+      "basis": "ASSUMED density 7850 kg/m3; nominal CAD volume"
+    },
+    {
+      "id": "H10_Service_washer_2_Front",
+      "mass_kg": 0.0007738162893809076,
+      "centre_mm": [
+        470.00000000000006,
+        -64.50000000000001,
+        150.00000000000003
+      ],
+      "basis": "ASSUMED density 7850 kg/m3; nominal CAD volume"
+    },
+    {
+      "id": "H10_Outer_fixed_washer_2_Front",
+      "mass_kg": 0.0007738162893809076,
+      "centre_mm": [
+        470.00000000000006,
+        -13.5,
+        150.00000000000003
+      ],
+      "basis": "ASSUMED density 7850 kg/m3; nominal CAD volume"
+    },
+    {
+      "id": "H10_Inner_fixed_washer_2_Front",
+      "mass_kg": 0.0007738162893809076,
+      "centre_mm": [
+        470.00000000000006,
+        -2.5,
+        150.00000000000003
+      ],
+      "basis": "ASSUMED density 7850 kg/m3; nominal CAD volume"
+    },
+    {
+      "id": "H11_Service_nut_2_Front",
+      "mass_kg": 0.0011723533112148173,
+      "centre_mm": [
+        469.99999999999994,
+        -67.50000000000001,
+        150.00000000000006
+      ],
+      "basis": "ASSUMED density 7850 kg/m3; nominal CAD volume"
+    },
+    {
+      "id": "H11_Outer_fixed_nut_2_Front",
+      "mass_kg": 0.0011723533112148173,
+      "centre_mm": [
+        469.99999999999994,
+        -16.499999999999996,
+        150.0
+      ],
+      "basis": "ASSUMED density 7850 kg/m3; nominal CAD volume"
+    },
+    {
+      "id": "H11_Inner_fixed_nut_2_Front",
+      "mass_kg": 0.0011723533112148173,
+      "centre_mm": [
+        469.99999999999994,
+        0.5,
+        150.00000000000006
+      ],
+      "basis": "ASSUMED density 7850 kg/m3; nominal CAD volume"
+    },
+    {
+      "id": "A05_Stud_3_Front",
+      "mass_kg": 0.00789168074581759,
+      "centre_mm": [
+        470.0,
+        -32.0,
+        460.00000000000006
+      ],
+      "basis": "ASSUMED density 7850 kg/m3; nominal CAD volume"
+    },
+    {
+      "id": "H10_Service_washer_3_Front",
+      "mass_kg": 0.0007738162893809079,
+      "centre_mm": [
+        470.00000000000006,
+        -64.50000000000001,
+        460.0000000000001
+      ],
+      "basis": "ASSUMED density 7850 kg/m3; nominal CAD volume"
+    },
+    {
+      "id": "H10_Outer_fixed_washer_3_Front",
+      "mass_kg": 0.0007738162893809079,
+      "centre_mm": [
+        470.00000000000006,
+        -13.500000000000002,
+        460.0000000000001
+      ],
+      "basis": "ASSUMED density 7850 kg/m3; nominal CAD volume"
+    },
+    {
+      "id": "H10_Inner_fixed_washer_3_Front",
+      "mass_kg": 0.0007738162893809079,
+      "centre_mm": [
+        470.00000000000006,
+        -2.4999999999999996,
+        460.0000000000001
+      ],
+      "basis": "ASSUMED density 7850 kg/m3; nominal CAD volume"
+    },
+    {
+      "id": "H11_Service_nut_3_Front",
+      "mass_kg": 0.001172353311214817,
+      "centre_mm": [
+        469.99999999999994,
+        -67.50000000000003,
+        460.0
+      ],
+      "basis": "ASSUMED density 7850 kg/m3; nominal CAD volume"
+    },
+    {
+      "id": "H11_Outer_fixed_nut_3_Front",
+      "mass_kg": 0.001172353311214817,
+      "centre_mm": [
+        469.99999999999994,
+        -16.499999999999996,
+        460.0000000000001
+      ],
+      "basis": "ASSUMED density 7850 kg/m3; nominal CAD volume"
+    },
+    {
+      "id": "H11_Inner_fixed_nut_3_Front",
+      "mass_kg": 0.001172353311214817,
+      "centre_mm": [
+        469.99999999999994,
+        0.5,
+        460.0
+      ],
+      "basis": "ASSUMED density 7850 kg/m3; nominal CAD volume"
+    },
+    {
+      "id": "A08_Ledge_bolt_130_Front",
+      "mass_kg": 0.003674563847271303,
+      "centre_mm": [
+        145.0,
+        -8.268456375838927,
+        148.0
+      ],
+      "basis": "ASSUMED density 7850 kg/m3; nominal CAD volume"
+    },
+    {
+      "id": "H12_Outer_washer_130_Front",
+      "mass_kg": 0.0007738162893809077,
+      "centre_mm": [
+        145.0,
+        -15.500000000000002,
+        148.00000000000003
+      ],
+      "basis": "ASSUMED density 7850 kg/m3; nominal CAD volume"
+    },
+    {
+      "id": "H12_Inner_washer_130_Front",
+      "mass_kg": 0.0007738162893809077,
+      "centre_mm": [
+        145.0,
+        -2.5,
+        148.00000000000003
+      ],
+      "basis": "ASSUMED density 7850 kg/m3; nominal CAD volume"
+    },
+    {
+      "id": "H13_Ledge_nut_130_Front",
+      "mass_kg": 0.0011723533112148264,
+      "centre_mm": [
+        145.0,
+        0.5000000000000002,
+        148.0
+      ],
+      "basis": "ASSUMED density 7850 kg/m3; nominal CAD volume"
+    },
+    {
+      "id": "A08_Ledge_bolt_390_Front",
+      "mass_kg": 0.0036745638472713118,
+      "centre_mm": [
+        405.00000000000006,
+        -8.268456375838923,
+        148.0
+      ],
+      "basis": "ASSUMED density 7850 kg/m3; nominal CAD volume"
+    },
+    {
+      "id": "H12_Outer_washer_390_Front",
+      "mass_kg": 0.0007738162893809076,
+      "centre_mm": [
+        405.0000000000001,
+        -15.500000000000002,
+        148.00000000000003
+      ],
+      "basis": "ASSUMED density 7850 kg/m3; nominal CAD volume"
+    },
+    {
+      "id": "H12_Inner_washer_390_Front",
+      "mass_kg": 0.0007738162893809076,
+      "centre_mm": [
+        405.0000000000001,
+        -2.5,
+        148.00000000000003
+      ],
+      "basis": "ASSUMED density 7850 kg/m3; nominal CAD volume"
+    },
+    {
+      "id": "H13_Ledge_nut_390_Front",
+      "mass_kg": 0.001172353311214817,
+      "centre_mm": [
+        404.99999999999994,
+        0.5,
+        148.0
+      ],
+      "basis": "ASSUMED density 7850 kg/m3; nominal CAD volume"
+    },
+    {
+      "id": "A05_Stud_0_Rear",
+      "mass_kg": 0.007891680745817564,
+      "centre_mm": [
+        80.00000000000001,
+        392.0,
+        150.0
+      ],
+      "basis": "ASSUMED density 7850 kg/m3; nominal CAD volume"
+    },
+    {
+      "id": "H10_Service_washer_0_Rear",
+      "mass_kg": 0.0007738162893809075,
+      "centre_mm": [
+        79.99999999999999,
+        424.49999999999983,
+        150.0
+      ],
+      "basis": "ASSUMED density 7850 kg/m3; nominal CAD volume"
+    },
+    {
+      "id": "H10_Outer_fixed_washer_0_Rear",
+      "mass_kg": 0.0007738162893809075,
+      "centre_mm": [
+        79.99999999999999,
+        373.4999999999999,
+        150.0
+      ],
+      "basis": "ASSUMED density 7850 kg/m3; nominal CAD volume"
+    },
+    {
+      "id": "H10_Inner_fixed_washer_0_Rear",
+      "mass_kg": 0.0007738162893809075,
+      "centre_mm": [
+        79.99999999999999,
+        362.49999999999994,
+        150.0
+      ],
+      "basis": "ASSUMED density 7850 kg/m3; nominal CAD volume"
+    },
+    {
+      "id": "H11_Service_nut_0_Rear",
+      "mass_kg": 0.0011723533112148264,
+      "centre_mm": [
+        80.00000000000001,
+        427.5000000000001,
+        150.0
+      ],
+      "basis": "ASSUMED density 7850 kg/m3; nominal CAD volume"
+    },
+    {
+      "id": "H11_Outer_fixed_nut_0_Rear",
+      "mass_kg": 0.0011723533112148264,
+      "centre_mm": [
+        80.00000000000001,
+        376.49999999999994,
+        150.0
+      ],
+      "basis": "ASSUMED density 7850 kg/m3; nominal CAD volume"
+    },
+    {
+      "id": "H11_Inner_fixed_nut_0_Rear",
+      "mass_kg": 0.0011723533112148264,
+      "centre_mm": [
+        80.00000000000001,
+        359.5,
+        150.0
+      ],
+      "basis": "ASSUMED density 7850 kg/m3; nominal CAD volume"
+    },
+    {
+      "id": "A05_Stud_1_Rear",
+      "mass_kg": 0.007891680745817567,
+      "centre_mm": [
+        80.00000000000001,
+        392.00000000000006,
+        460.00000000000006
+      ],
+      "basis": "ASSUMED density 7850 kg/m3; nominal CAD volume"
+    },
+    {
+      "id": "H10_Service_washer_1_Rear",
+      "mass_kg": 0.0007738162893809083,
+      "centre_mm": [
+        80.00000000000001,
+        424.5,
+        460.00000000000006
+      ],
+      "basis": "ASSUMED density 7850 kg/m3; nominal CAD volume"
+    },
+    {
+      "id": "H10_Outer_fixed_washer_1_Rear",
+      "mass_kg": 0.0007738162893809083,
+      "centre_mm": [
+        80.00000000000001,
+        373.50000000000006,
+        460.00000000000006
+      ],
+      "basis": "ASSUMED density 7850 kg/m3; nominal CAD volume"
+    },
+    {
+      "id": "H10_Inner_fixed_washer_1_Rear",
+      "mass_kg": 0.0007738162893809083,
+      "centre_mm": [
+        80.00000000000001,
+        362.49999999999994,
+        460.00000000000006
+      ],
+      "basis": "ASSUMED density 7850 kg/m3; nominal CAD volume"
+    },
+    {
+      "id": "H11_Service_nut_1_Rear",
+      "mass_kg": 0.0011723533112148262,
+      "centre_mm": [
+        80.00000000000001,
+        427.5000000000001,
+        460.0000000000001
+      ],
+      "basis": "ASSUMED density 7850 kg/m3; nominal CAD volume"
+    },
+    {
+      "id": "H11_Outer_fixed_nut_1_Rear",
+      "mass_kg": 0.0011723533112148262,
+      "centre_mm": [
+        80.00000000000001,
+        376.49999999999994,
+        460.0000000000001
+      ],
+      "basis": "ASSUMED density 7850 kg/m3; nominal CAD volume"
+    },
+    {
+      "id": "H11_Inner_fixed_nut_1_Rear",
+      "mass_kg": 0.0011723533112148262,
+      "centre_mm": [
+        80.00000000000001,
+        359.50000000000006,
+        460.0000000000001
+      ],
+      "basis": "ASSUMED density 7850 kg/m3; nominal CAD volume"
+    },
+    {
+      "id": "A05_Stud_2_Rear",
+      "mass_kg": 0.007891680745817585,
+      "centre_mm": [
+        470.00000000000006,
+        392.00000000000006,
+        150.0
+      ],
+      "basis": "ASSUMED density 7850 kg/m3; nominal CAD volume"
+    },
+    {
+      "id": "H10_Service_washer_2_Rear",
+      "mass_kg": 0.0007738162893809076,
+      "centre_mm": [
+        469.9999999999999,
+        424.4999999999999,
+        150.0
+      ],
+      "basis": "ASSUMED density 7850 kg/m3; nominal CAD volume"
+    },
+    {
+      "id": "H10_Outer_fixed_washer_2_Rear",
+      "mass_kg": 0.0007738162893809076,
+      "centre_mm": [
+        469.9999999999999,
+        373.49999999999994,
+        150.0
+      ],
+      "basis": "ASSUMED density 7850 kg/m3; nominal CAD volume"
+    },
+    {
+      "id": "H10_Inner_fixed_washer_2_Rear",
+      "mass_kg": 0.0007738162893809076,
+      "centre_mm": [
+        469.9999999999999,
+        362.4999999999999,
+        150.0
+      ],
+      "basis": "ASSUMED density 7850 kg/m3; nominal CAD volume"
+    },
+    {
+      "id": "H11_Service_nut_2_Rear",
+      "mass_kg": 0.0011723533112148173,
+      "centre_mm": [
+        469.99999999999994,
+        427.50000000000006,
+        150.00000000000006
+      ],
+      "basis": "ASSUMED density 7850 kg/m3; nominal CAD volume"
+    },
+    {
+      "id": "H11_Outer_fixed_nut_2_Rear",
+      "mass_kg": 0.0011723533112148173,
+      "centre_mm": [
+        469.99999999999994,
+        376.4999999999999,
+        150.00000000000006
+      ],
+      "basis": "ASSUMED density 7850 kg/m3; nominal CAD volume"
+    },
+    {
+      "id": "H11_Inner_fixed_nut_2_Rear",
+      "mass_kg": 0.0011723533112148173,
+      "centre_mm": [
+        469.99999999999994,
+        359.5000000000001,
+        150.00000000000006
+      ],
+      "basis": "ASSUMED density 7850 kg/m3; nominal CAD volume"
+    },
+    {
+      "id": "A05_Stud_3_Rear",
+      "mass_kg": 0.00789168074581759,
+      "centre_mm": [
+        470.0,
+        392.0000000000001,
+        460.00000000000006
+      ],
+      "basis": "ASSUMED density 7850 kg/m3; nominal CAD volume"
+    },
+    {
+      "id": "H10_Service_washer_3_Rear",
+      "mass_kg": 0.0007738162893809088,
+      "centre_mm": [
+        469.99999999999994,
+        424.49999999999994,
+        460.0
+      ],
+      "basis": "ASSUMED density 7850 kg/m3; nominal CAD volume"
+    },
+    {
+      "id": "H10_Outer_fixed_washer_3_Rear",
+      "mass_kg": 0.0007738162893809088,
+      "centre_mm": [
+        469.99999999999994,
+        373.5,
+        460.0
+      ],
+      "basis": "ASSUMED density 7850 kg/m3; nominal CAD volume"
+    },
+    {
+      "id": "H10_Inner_fixed_washer_3_Rear",
+      "mass_kg": 0.0007738162893809088,
+      "centre_mm": [
+        469.99999999999994,
+        362.49999999999994,
+        460.0
+      ],
+      "basis": "ASSUMED density 7850 kg/m3; nominal CAD volume"
+    },
+    {
+      "id": "H11_Service_nut_3_Rear",
+      "mass_kg": 0.001172353311214817,
+      "centre_mm": [
+        469.99999999999994,
+        427.50000000000006,
+        460.0
+      ],
+      "basis": "ASSUMED density 7850 kg/m3; nominal CAD volume"
+    },
+    {
+      "id": "H11_Outer_fixed_nut_3_Rear",
+      "mass_kg": 0.001172353311214817,
+      "centre_mm": [
+        469.99999999999994,
+        376.49999999999994,
+        460.0
+      ],
+      "basis": "ASSUMED density 7850 kg/m3; nominal CAD volume"
+    },
+    {
+      "id": "H11_Inner_fixed_nut_3_Rear",
+      "mass_kg": 0.001172353311214817,
+      "centre_mm": [
+        469.99999999999994,
+        359.5000000000001,
+        460.0
+      ],
+      "basis": "ASSUMED density 7850 kg/m3; nominal CAD volume"
+    },
+    {
+      "id": "A08_Ledge_bolt_130_Rear",
+      "mass_kg": 0.003674563847271303,
+      "centre_mm": [
+        145.0,
+        368.26845637583887,
+        148.0
+      ],
+      "basis": "ASSUMED density 7850 kg/m3; nominal CAD volume"
+    },
+    {
+      "id": "H12_Outer_washer_130_Rear",
+      "mass_kg": 0.0007738162893809077,
+      "centre_mm": [
+        144.99999999999994,
+        375.49999999999994,
+        148.0
+      ],
+      "basis": "ASSUMED density 7850 kg/m3; nominal CAD volume"
+    },
+    {
+      "id": "H12_Inner_washer_130_Rear",
+      "mass_kg": 0.0007738162893809077,
+      "centre_mm": [
+        144.99999999999994,
+        362.4999999999999,
+        148.0
+      ],
+      "basis": "ASSUMED density 7850 kg/m3; nominal CAD volume"
+    },
+    {
+      "id": "H13_Ledge_nut_130_Rear",
+      "mass_kg": 0.0011723533112148264,
+      "centre_mm": [
+        145.0,
+        359.50000000000006,
+        148.0
+      ],
+      "basis": "ASSUMED density 7850 kg/m3; nominal CAD volume"
+    },
+    {
+      "id": "A08_Ledge_bolt_390_Rear",
+      "mass_kg": 0.0036745638472713118,
+      "centre_mm": [
+        405.00000000000006,
+        368.2684563758389,
+        148.0
+      ],
+      "basis": "ASSUMED density 7850 kg/m3; nominal CAD volume"
+    },
+    {
+      "id": "H12_Outer_washer_390_Rear",
+      "mass_kg": 0.0007738162893809076,
+      "centre_mm": [
+        404.99999999999994,
+        375.49999999999994,
+        148.0
+      ],
+      "basis": "ASSUMED density 7850 kg/m3; nominal CAD volume"
+    },
+    {
+      "id": "H12_Inner_washer_390_Rear",
+      "mass_kg": 0.0007738162893809076,
+      "centre_mm": [
+        404.99999999999994,
+        362.4999999999999,
+        148.0
+      ],
+      "basis": "ASSUMED density 7850 kg/m3; nominal CAD volume"
+    },
+    {
+      "id": "H13_Ledge_nut_390_Rear",
+      "mass_kg": 0.001172353311214817,
+      "centre_mm": [
+        404.99999999999994,
+        359.5,
+        148.0
+      ],
+      "basis": "ASSUMED density 7850 kg/m3; nominal CAD volume"
+    },
+    {
+      "id": "J01_Outer_105_120_Screw",
+      "mass_kg": 0.0031813338006577035,
+      "centre_mm": [
+        105.0,
+        119.99999999999999,
+        577.5581395348836
+      ],
+      "basis": "ASSUMED density 7850 kg/m3; nominal CAD volume"
+    },
+    {
+      "id": "J01_Outer_105_120_Upper_washer",
+      "mass_kg": 0.0007738162893809076,
+      "centre_mm": [
+        105.00000000000001,
+        120.0,
+        582.5000000000001
+      ],
+      "basis": "ASSUMED density 7850 kg/m3; nominal CAD volume"
+    },
+    {
+      "id": "J01_Outer_105_120_Lower_washer",
+      "mass_kg": 0.0007738162893809076,
+      "centre_mm": [
+        105.00000000000001,
+        120.0,
+        570.5000000000001
+      ],
+      "basis": "ASSUMED density 7850 kg/m3; nominal CAD volume"
+    },
+    {
+      "id": "J01_Outer_105_120_Nut",
+      "mass_kg": 0.0011723533112148275,
+      "centre_mm": [
+        104.99999999999997,
+        119.99999999999999,
+        567.5
+      ],
+      "basis": "ASSUMED density 7850 kg/m3; nominal CAD volume"
+    },
+    {
+      "id": "J01_Outer_105_240_Screw",
+      "mass_kg": 0.003181333800657703,
+      "centre_mm": [
+        105.00000000000001,
+        240.00000000000003,
+        577.5581395348838
+      ],
+      "basis": "ASSUMED density 7850 kg/m3; nominal CAD volume"
+    },
+    {
+      "id": "J01_Outer_105_240_Upper_washer",
+      "mass_kg": 0.0007738162893809078,
+      "centre_mm": [
+        105.00000000000001,
+        240.0,
+        582.5000000000001
+      ],
+      "basis": "ASSUMED density 7850 kg/m3; nominal CAD volume"
+    },
+    {
+      "id": "J01_Outer_105_240_Lower_washer",
+      "mass_kg": 0.0007738162893809078,
+      "centre_mm": [
+        105.00000000000001,
+        240.0,
+        570.5
+      ],
+      "basis": "ASSUMED density 7850 kg/m3; nominal CAD volume"
+    },
+    {
+      "id": "J01_Outer_105_240_Nut",
+      "mass_kg": 0.0011723533112148275,
+      "centre_mm": [
+        104.99999999999999,
+        240.00000000000003,
+        567.5
+      ],
+      "basis": "ASSUMED density 7850 kg/m3; nominal CAD volume"
+    },
+    {
+      "id": "J01_Outer_445_120_Screw",
+      "mass_kg": 0.0031813338006577057,
+      "centre_mm": [
+        445.0,
+        120.0,
+        577.5581395348837
+      ],
+      "basis": "ASSUMED density 7850 kg/m3; nominal CAD volume"
+    },
+    {
+      "id": "J01_Outer_445_120_Upper_washer",
+      "mass_kg": 0.0007738162893809075,
+      "centre_mm": [
+        445.0000000000002,
+        120.00000000000001,
+        582.5000000000001
+      ],
+      "basis": "ASSUMED density 7850 kg/m3; nominal CAD volume"
+    },
+    {
+      "id": "J01_Outer_445_120_Lower_washer",
+      "mass_kg": 0.0007738162893809075,
+      "centre_mm": [
+        445.0000000000002,
+        120.00000000000001,
+        570.5000000000001
+      ],
+      "basis": "ASSUMED density 7850 kg/m3; nominal CAD volume"
+    },
+    {
+      "id": "J01_Outer_445_120_Nut",
+      "mass_kg": 0.001172353311214819,
+      "centre_mm": [
+        444.9999999999999,
+        119.99999999999997,
+        567.5
+      ],
+      "basis": "ASSUMED density 7850 kg/m3; nominal CAD volume"
+    },
+    {
+      "id": "J01_Outer_445_240_Screw",
+      "mass_kg": 0.003181333800657706,
+      "centre_mm": [
+        445.0,
+        240.00000000000003,
+        577.5581395348838
+      ],
+      "basis": "ASSUMED density 7850 kg/m3; nominal CAD volume"
+    },
+    {
+      "id": "J01_Outer_445_240_Upper_washer",
+      "mass_kg": 0.0007738162893809079,
+      "centre_mm": [
+        445.0000000000001,
+        240.0,
+        582.5
+      ],
+      "basis": "ASSUMED density 7850 kg/m3; nominal CAD volume"
+    },
+    {
+      "id": "J01_Outer_445_240_Lower_washer",
+      "mass_kg": 0.0007738162893809079,
+      "centre_mm": [
+        445.0000000000001,
+        240.0,
+        570.5
+      ],
+      "basis": "ASSUMED density 7850 kg/m3; nominal CAD volume"
+    },
+    {
+      "id": "J01_Outer_445_240_Nut",
+      "mass_kg": 0.001172353311214819,
+      "centre_mm": [
+        444.9999999999999,
+        239.99999999999994,
+        567.5
+      ],
+      "basis": "ASSUMED density 7850 kg/m3; nominal CAD volume"
+    },
+    {
+      "id": "J01_Inner_105_60_Screw",
+      "mass_kg": 0.003181333800657704,
+      "centre_mm": [
+        105.00000000000001,
+        59.99999999999999,
+        575.5581395348836
+      ],
+      "basis": "ASSUMED density 7850 kg/m3; nominal CAD volume"
+    },
+    {
+      "id": "J01_Inner_105_60_Upper_washer",
+      "mass_kg": 0.0007738162893809076,
+      "centre_mm": [
+        105.00000000000001,
+        60.0,
+        580.5000000000001
+      ],
+      "basis": "ASSUMED density 7850 kg/m3; nominal CAD volume"
+    },
+    {
+      "id": "J01_Inner_105_60_Lower_washer",
+      "mass_kg": 0.0007738162893809076,
+      "centre_mm": [
+        105.00000000000001,
+        60.0,
+        568.5000000000001
+      ],
+      "basis": "ASSUMED density 7850 kg/m3; nominal CAD volume"
+    },
+    {
+      "id": "J01_Inner_105_60_Nut",
+      "mass_kg": 0.0011723533112148272,
+      "centre_mm": [
+        104.99999999999999,
+        60.00000000000001,
+        565.5
+      ],
+      "basis": "ASSUMED density 7850 kg/m3; nominal CAD volume"
+    },
+    {
+      "id": "J01_Inner_105_300_Screw",
+      "mass_kg": 0.00318133380065771,
+      "centre_mm": [
+        105.0,
+        300.00000000000006,
+        575.5581395348837
+      ],
+      "basis": "ASSUMED density 7850 kg/m3; nominal CAD volume"
+    },
+    {
+      "id": "J01_Inner_105_300_Upper_washer",
+      "mass_kg": 0.0007738162893809079,
+      "centre_mm": [
+        105.00000000000001,
+        300.00000000000006,
+        580.4999999999999
+      ],
+      "basis": "ASSUMED density 7850 kg/m3; nominal CAD volume"
+    },
+    {
+      "id": "J01_Inner_105_300_Lower_washer",
+      "mass_kg": 0.0007738162893809079,
+      "centre_mm": [
+        105.00000000000001,
+        300.00000000000006,
+        568.5000000000002
+      ],
+      "basis": "ASSUMED density 7850 kg/m3; nominal CAD volume"
+    },
+    {
+      "id": "J01_Inner_105_300_Nut",
+      "mass_kg": 0.0011723533112148257,
+      "centre_mm": [
+        104.99999999999999,
+        300.00000000000006,
+        565.5
+      ],
+      "basis": "ASSUMED density 7850 kg/m3; nominal CAD volume"
+    },
+    {
+      "id": "J01_Inner_445_60_Screw",
+      "mass_kg": 0.003181333800657707,
+      "centre_mm": [
+        444.99999999999994,
+        59.99999999999999,
+        575.5581395348837
+      ],
+      "basis": "ASSUMED density 7850 kg/m3; nominal CAD volume"
+    },
+    {
+      "id": "J01_Inner_445_60_Upper_washer",
+      "mass_kg": 0.0007738162893809075,
+      "centre_mm": [
+        445.0000000000001,
+        60.00000000000001,
+        580.5000000000001
+      ],
+      "basis": "ASSUMED density 7850 kg/m3; nominal CAD volume"
+    },
+    {
+      "id": "J01_Inner_445_60_Lower_washer",
+      "mass_kg": 0.0007738162893809075,
+      "centre_mm": [
+        445.0000000000001,
+        60.00000000000001,
+        568.5000000000001
+      ],
+      "basis": "ASSUMED density 7850 kg/m3; nominal CAD volume"
+    },
+    {
+      "id": "J01_Inner_445_60_Nut",
+      "mass_kg": 0.0011723533112148188,
+      "centre_mm": [
+        444.9999999999999,
+        60.0,
+        565.5000000000002
+      ],
+      "basis": "ASSUMED density 7850 kg/m3; nominal CAD volume"
+    },
+    {
+      "id": "J01_Inner_445_300_Screw",
+      "mass_kg": 0.0031813338006577126,
+      "centre_mm": [
+        445.00000000000006,
+        300.0,
+        575.5581395348837
+      ],
+      "basis": "ASSUMED density 7850 kg/m3; nominal CAD volume"
+    },
+    {
+      "id": "J01_Inner_445_300_Upper_washer",
+      "mass_kg": 0.0007738162893809079,
+      "centre_mm": [
+        445.0000000000001,
+        300.0,
+        580.5000000000001
+      ],
+      "basis": "ASSUMED density 7850 kg/m3; nominal CAD volume"
+    },
+    {
+      "id": "J01_Inner_445_300_Lower_washer",
+      "mass_kg": 0.0007738162893809079,
+      "centre_mm": [
+        445.0000000000001,
+        300.0,
+        568.5000000000001
+      ],
+      "basis": "ASSUMED density 7850 kg/m3; nominal CAD volume"
+    },
+    {
+      "id": "J01_Inner_445_300_Nut",
+      "mass_kg": 0.0011723533112148175,
+      "centre_mm": [
+        444.9999999999999,
+        299.99999999999994,
+        565.5000000000001
+      ],
+      "basis": "ASSUMED density 7850 kg/m3; nominal CAD volume"
+    },
+    {
+      "id": "G10_Outer_fabricated_guard",
+      "mass_kg": 1.3991272091556133,
+      "centre_mm": [
+        274.99999999999835,
+        179.99999999999983,
+        618.3534012189881
+      ],
+      "basis": "ASSUMED density 7850 kg/m3; nominal CAD volume"
+    },
+    {
+      "id": "G10_Outer_fabricated_guard_DXF_removed_holes",
+      "mass_kg": -0.27837903830871447,
+      "centre_mm": [
+        274.0,
+        177.4922678357857,
+        630.5
+      ],
+      "basis": "Proposed DXF holes subtracted; face placement from build_d01.py"
+    },
+    {
+      "id": "G10_Inner_fabricated_guard",
+      "mass_kg": 1.298961209155605,
+      "centre_mm": [
+        275.0000000000011,
+        180.0000000000005,
+        539.3474634043259
+      ],
+      "basis": "ASSUMED density 7850 kg/m3; nominal CAD volume"
+    },
+    {
+      "id": "G10_Inner_fabricated_guard_DXF_removed_holes",
+      "mass_kg": -0.27837903830871447,
+      "centre_mm": [
+        274.0,
+        177.4922678357857,
+        530.5
+      ],
+      "basis": "Proposed DXF holes subtracted; face placement from build_d01.py"
+    },
+    {
+      "id": "K01_Front_0_stud",
+      "mass_kg": 0.009248063374004951,
+      "centre_mm": [
+        20.0,
+        9.000000000000004,
+        55.00000000000001
+      ],
+      "basis": "ASSUMED density 7850 kg/m3; nominal CAD volume"
+    },
+    {
+      "id": "K01_Front_0_outer_washer",
+      "mass_kg": 0.0014568289271802526,
+      "centre_mm": [
+        20.0,
+        -12.600000000000001,
+        55.0
+      ],
+      "basis": "ASSUMED density 7850 kg/m3; nominal CAD volume"
+    },
+    {
+      "id": "K01_Front_0_inner_washer",
+      "mass_kg": 0.0014568289271802524,
+      "centre_mm": [
+        20.0,
+        29.6,
+        55.0
+      ],
+      "basis": "ASSUMED density 7850 kg/m3; nominal CAD volume"
+    },
+    {
+      "id": "K01_Front_0_outer_nut",
+      "mass_kg": 0.0014047838664727646,
+      "centre_mm": [
+        20.0,
+        -15.7,
+        55.0
+      ],
+      "basis": "ASSUMED density 7850 kg/m3; nominal CAD volume"
+    },
+    {
+      "id": "K01_Front_0_inner_nut",
+      "mass_kg": 0.0014047838664727646,
+      "centre_mm": [
+        20.0,
+        32.7,
+        55.0
+      ],
+      "basis": "ASSUMED density 7850 kg/m3; nominal CAD volume"
+    },
+    {
+      "id": "K01_Front_1_stud",
+      "mass_kg": 0.009248063374004961,
+      "centre_mm": [
+        20.0,
+        8.999999999999996,
+        305.0
+      ],
+      "basis": "ASSUMED density 7850 kg/m3; nominal CAD volume"
+    },
+    {
+      "id": "K01_Front_1_outer_washer",
+      "mass_kg": 0.0014568289271802532,
+      "centre_mm": [
+        20.0,
+        -12.6,
+        305.0
+      ],
+      "basis": "ASSUMED density 7850 kg/m3; nominal CAD volume"
+    },
+    {
+      "id": "K01_Front_1_inner_washer",
+      "mass_kg": 0.001456828927180253,
+      "centre_mm": [
+        20.0,
+        29.6,
+        305.0
+      ],
+      "basis": "ASSUMED density 7850 kg/m3; nominal CAD volume"
+    },
+    {
+      "id": "K01_Front_1_outer_nut",
+      "mass_kg": 0.0014047838664727628,
+      "centre_mm": [
+        20.0,
+        -15.699999999999998,
+        305.0
+      ],
+      "basis": "ASSUMED density 7850 kg/m3; nominal CAD volume"
+    },
+    {
+      "id": "K01_Front_1_inner_nut",
+      "mass_kg": 0.0014047838664727633,
+      "centre_mm": [
+        20.0,
+        32.7,
+        305.0
+      ],
+      "basis": "ASSUMED density 7850 kg/m3; nominal CAD volume"
+    },
+    {
+      "id": "K01_Front_2_stud",
+      "mass_kg": 0.009248063374004922,
+      "centre_mm": [
+        19.999999999999996,
+        9.000000000000004,
+        555.0
+      ],
+      "basis": "ASSUMED density 7850 kg/m3; nominal CAD volume"
+    },
+    {
+      "id": "K01_Front_2_outer_washer",
+      "mass_kg": 0.0014568289271802526,
+      "centre_mm": [
+        20.000000000000004,
+        -12.600000000000001,
+        555.0
+      ],
+      "basis": "ASSUMED density 7850 kg/m3; nominal CAD volume"
+    },
+    {
+      "id": "K01_Front_2_inner_washer",
+      "mass_kg": 0.0014568289271802524,
+      "centre_mm": [
+        20.000000000000004,
+        29.6,
+        555.0
+      ],
+      "basis": "ASSUMED density 7850 kg/m3; nominal CAD volume"
+    },
+    {
+      "id": "K01_Front_2_outer_nut",
+      "mass_kg": 0.0014047838664727672,
+      "centre_mm": [
+        20.0,
+        -15.7,
+        555.0
+      ],
+      "basis": "ASSUMED density 7850 kg/m3; nominal CAD volume"
+    },
+    {
+      "id": "K01_Front_2_inner_nut",
+      "mass_kg": 0.0014047838664727672,
+      "centre_mm": [
+        20.0,
+        32.7,
+        555.0
+      ],
+      "basis": "ASSUMED density 7850 kg/m3; nominal CAD volume"
+    },
+    {
+      "id": "K01_Front_3_stud",
+      "mass_kg": 0.009248063374004951,
+      "centre_mm": [
+        530.0,
+        9.000000000000004,
+        55.00000000000001
+      ],
+      "basis": "ASSUMED density 7850 kg/m3; nominal CAD volume"
+    },
+    {
+      "id": "K01_Front_3_outer_washer",
+      "mass_kg": 0.0014568289271802521,
+      "centre_mm": [
+        530.0,
+        -12.6,
+        55.0
+      ],
+      "basis": "ASSUMED density 7850 kg/m3; nominal CAD volume"
+    },
+    {
+      "id": "K01_Front_3_inner_washer",
+      "mass_kg": 0.001456828927180252,
+      "centre_mm": [
+        530.0,
+        29.6,
+        55.0
+      ],
+      "basis": "ASSUMED density 7850 kg/m3; nominal CAD volume"
+    },
+    {
+      "id": "K01_Front_3_outer_nut",
+      "mass_kg": 0.0014047838664727615,
+      "centre_mm": [
+        530.0,
+        -15.700000000000001,
+        55.0
+      ],
+      "basis": "ASSUMED density 7850 kg/m3; nominal CAD volume"
+    },
+    {
+      "id": "K01_Front_3_inner_nut",
+      "mass_kg": 0.0014047838664727615,
+      "centre_mm": [
+        530.0,
+        32.7,
+        55.0
+      ],
+      "basis": "ASSUMED density 7850 kg/m3; nominal CAD volume"
+    },
+    {
+      "id": "K01_Front_4_stud",
+      "mass_kg": 0.00924806337400496,
+      "centre_mm": [
+        530.0,
+        8.999999999999996,
+        305.0
+      ],
+      "basis": "ASSUMED density 7850 kg/m3; nominal CAD volume"
+    },
+    {
+      "id": "K01_Front_4_outer_washer",
+      "mass_kg": 0.0014568289271802528,
+      "centre_mm": [
+        530.0,
+        -12.599999999999998,
+        305.0
+      ],
+      "basis": "ASSUMED density 7850 kg/m3; nominal CAD volume"
+    },
+    {
+      "id": "K01_Front_4_inner_washer",
+      "mass_kg": 0.0014568289271802526,
+      "centre_mm": [
+        530.0,
+        29.6,
+        305.0
+      ],
+      "basis": "ASSUMED density 7850 kg/m3; nominal CAD volume"
+    },
+    {
+      "id": "K01_Front_4_outer_nut",
+      "mass_kg": 0.0014047838664727605,
+      "centre_mm": [
+        530.0,
+        -15.7,
+        305.0
+      ],
+      "basis": "ASSUMED density 7850 kg/m3; nominal CAD volume"
+    },
+    {
+      "id": "K01_Front_4_inner_nut",
+      "mass_kg": 0.0014047838664727605,
+      "centre_mm": [
+        530.0,
+        32.7,
+        305.0
+      ],
+      "basis": "ASSUMED density 7850 kg/m3; nominal CAD volume"
+    },
+    {
+      "id": "K01_Front_5_stud",
+      "mass_kg": 0.009248063374004922,
+      "centre_mm": [
+        530.0,
+        9.000000000000004,
+        555.0
+      ],
+      "basis": "ASSUMED density 7850 kg/m3; nominal CAD volume"
+    },
+    {
+      "id": "K01_Front_5_outer_washer",
+      "mass_kg": 0.0014568289271802521,
+      "centre_mm": [
+        530.0,
+        -12.6,
+        555.0
+      ],
+      "basis": "ASSUMED density 7850 kg/m3; nominal CAD volume"
+    },
+    {
+      "id": "K01_Front_5_inner_washer",
+      "mass_kg": 0.001456828927180252,
+      "centre_mm": [
+        530.0,
+        29.6,
+        555.0
+      ],
+      "basis": "ASSUMED density 7850 kg/m3; nominal CAD volume"
+    },
+    {
+      "id": "K01_Front_5_outer_nut",
+      "mass_kg": 0.0014047838664727641,
+      "centre_mm": [
+        530.0,
+        -15.699999999999998,
+        555.0
+      ],
+      "basis": "ASSUMED density 7850 kg/m3; nominal CAD volume"
+    },
+    {
+      "id": "K01_Front_5_inner_nut",
+      "mass_kg": 0.0014047838664727641,
+      "centre_mm": [
+        530.0,
+        32.7,
+        555.0
+      ],
+      "basis": "ASSUMED density 7850 kg/m3; nominal CAD volume"
+    },
+    {
+      "id": "K01_Front_6_stud",
+      "mass_kg": 0.006165375582669978,
+      "centre_mm": [
+        275.0,
+        -1.0,
+        50.000000000000014
+      ],
+      "basis": "ASSUMED density 7850 kg/m3; nominal CAD volume"
+    },
+    {
+      "id": "K01_Front_6_outer_washer",
+      "mass_kg": 0.0014568289271802534,
+      "centre_mm": [
+        275.0,
+        -12.6,
+        50.0
+      ],
+      "basis": "ASSUMED density 7850 kg/m3; nominal CAD volume"
+    },
+    {
+      "id": "K01_Front_6_inner_washer",
+      "mass_kg": 0.0014568289271802532,
+      "centre_mm": [
+        275.0,
+        9.6,
+        50.00000000000001
+      ],
+      "basis": "ASSUMED density 7850 kg/m3; nominal CAD volume"
+    },
+    {
+      "id": "K01_Front_6_outer_nut",
+      "mass_kg": 0.0014047838664727641,
+      "centre_mm": [
+        275.0,
+        -15.699999999999998,
+        50.0
+      ],
+      "basis": "ASSUMED density 7850 kg/m3; nominal CAD volume"
+    },
+    {
+      "id": "K01_Front_6_inner_nut",
+      "mass_kg": 0.0014047838664727646,
+      "centre_mm": [
+        275.0,
+        12.700000000000001,
+        50.00000000000001
+      ],
+      "basis": "ASSUMED density 7850 kg/m3; nominal CAD volume"
+    },
+    {
+      "id": "K01_Front_7_stud",
+      "mass_kg": 0.0061653755826699555,
+      "centre_mm": [
+        275.0,
+        -1.0000000000000036,
+        560.0
+      ],
+      "basis": "ASSUMED density 7850 kg/m3; nominal CAD volume"
+    },
+    {
+      "id": "K01_Front_7_outer_washer",
+      "mass_kg": 0.0014568289271802534,
+      "centre_mm": [
+        275.0,
+        -12.6,
+        560.0
+      ],
+      "basis": "ASSUMED density 7850 kg/m3; nominal CAD volume"
+    },
+    {
+      "id": "K01_Front_7_inner_washer",
+      "mass_kg": 0.0014568289271802532,
+      "centre_mm": [
+        275.0,
+        9.6,
+        560.0
+      ],
+      "basis": "ASSUMED density 7850 kg/m3; nominal CAD volume"
+    },
+    {
+      "id": "K01_Front_7_outer_nut",
+      "mass_kg": 0.0014047838664727672,
+      "centre_mm": [
+        275.0,
+        -15.7,
+        560.0
+      ],
+      "basis": "ASSUMED density 7850 kg/m3; nominal CAD volume"
+    },
+    {
+      "id": "K01_Front_7_inner_nut",
+      "mass_kg": 0.0014047838664727676,
+      "centre_mm": [
+        275.0,
+        12.7,
+        560.0
+      ],
+      "basis": "ASSUMED density 7850 kg/m3; nominal CAD volume"
+    },
+    {
+      "id": "K01_Rear_0_stud",
+      "mass_kg": 0.009248063374004955,
+      "centre_mm": [
+        20.0,
+        350.99999999999994,
+        55.00000000000016
+      ],
+      "basis": "ASSUMED density 7850 kg/m3; nominal CAD volume"
+    },
+    {
+      "id": "K01_Rear_0_outer_washer",
+      "mass_kg": 0.0014568289271802478,
+      "centre_mm": [
+        19.999999999999996,
+        372.5999999999999,
+        55.00000000000017
+      ],
+      "basis": "ASSUMED density 7850 kg/m3; nominal CAD volume"
+    },
+    {
+      "id": "K01_Rear_0_inner_washer",
+      "mass_kg": 0.0014568289271802476,
+      "centre_mm": [
+        19.999999999999996,
+        330.4,
+        55.00000000000013
+      ],
+      "basis": "ASSUMED density 7850 kg/m3; nominal CAD volume"
+    },
+    {
+      "id": "K01_Rear_0_outer_nut",
+      "mass_kg": 0.0014047838664727646,
+      "centre_mm": [
+        20.0,
+        375.6999999999999,
+        55.00000000000018
+      ],
+      "basis": "ASSUMED density 7850 kg/m3; nominal CAD volume"
+    },
+    {
+      "id": "K01_Rear_0_inner_nut",
+      "mass_kg": 0.0014047838664727646,
+      "centre_mm": [
+        20.0,
+        327.2999999999999,
+        55.00000000000013
+      ],
+      "basis": "ASSUMED density 7850 kg/m3; nominal CAD volume"
+    },
+    {
+      "id": "K01_Rear_1_stud",
+      "mass_kg": 0.009248063374004951,
+      "centre_mm": [
+        20.0,
+        350.99999999999994,
+        305.0000000000001
+      ],
+      "basis": "ASSUMED density 7850 kg/m3; nominal CAD volume"
+    },
+    {
+      "id": "K01_Rear_1_outer_washer",
+      "mass_kg": 0.001456828927180248,
+      "centre_mm": [
+        19.999999999999996,
+        372.59999999999985,
+        305.0000000000001
+      ],
+      "basis": "ASSUMED density 7850 kg/m3; nominal CAD volume"
+    },
+    {
+      "id": "K01_Rear_1_inner_washer",
+      "mass_kg": 0.0014568289271802478,
+      "centre_mm": [
+        19.999999999999996,
+        330.4,
+        305.0000000000001
+      ],
+      "basis": "ASSUMED density 7850 kg/m3; nominal CAD volume"
+    },
+    {
+      "id": "K01_Rear_1_outer_nut",
+      "mass_kg": 0.001404783866472765,
+      "centre_mm": [
+        20.0,
+        375.7,
+        305.00000000000017
+      ],
+      "basis": "ASSUMED density 7850 kg/m3; nominal CAD volume"
+    },
+    {
+      "id": "K01_Rear_1_inner_nut",
+      "mass_kg": 0.0014047838664727637,
+      "centre_mm": [
+        20.0,
+        327.29999999999984,
+        305.0000000000001
+      ],
+      "basis": "ASSUMED density 7850 kg/m3; nominal CAD volume"
+    },
+    {
+      "id": "K01_Rear_2_stud",
+      "mass_kg": 0.00924806337400497,
+      "centre_mm": [
+        20.0,
+        350.99999999999994,
+        555.0000000000002
+      ],
+      "basis": "ASSUMED density 7850 kg/m3; nominal CAD volume"
+    },
+    {
+      "id": "K01_Rear_2_outer_washer",
+      "mass_kg": 0.0014568289271802484,
+      "centre_mm": [
+        19.999999999999996,
+        372.59999999999985,
+        555.0000000000002
+      ],
+      "basis": "ASSUMED density 7850 kg/m3; nominal CAD volume"
+    },
+    {
+      "id": "K01_Rear_2_inner_washer",
+      "mass_kg": 0.0014568289271802476,
+      "centre_mm": [
+        19.999999999999993,
+        330.3999999999999,
+        555.0000000000001
+      ],
+      "basis": "ASSUMED density 7850 kg/m3; nominal CAD volume"
+    },
+    {
+      "id": "K01_Rear_2_outer_nut",
+      "mass_kg": 0.001404783866472764,
+      "centre_mm": [
+        20.0,
+        375.7,
+        555.0000000000002
+      ],
+      "basis": "ASSUMED density 7850 kg/m3; nominal CAD volume"
+    },
+    {
+      "id": "K01_Rear_2_inner_nut",
+      "mass_kg": 0.0014047838664727628,
+      "centre_mm": [
+        20.0,
+        327.29999999999995,
+        555.0000000000002
+      ],
+      "basis": "ASSUMED density 7850 kg/m3; nominal CAD volume"
+    },
+    {
+      "id": "K01_Rear_3_stud",
+      "mass_kg": 0.009248063374004951,
+      "centre_mm": [
+        530.0,
+        350.99999999999994,
+        55.00000000000016
+      ],
+      "basis": "ASSUMED density 7850 kg/m3; nominal CAD volume"
+    },
+    {
+      "id": "K01_Rear_3_outer_washer",
+      "mass_kg": 0.0014568289271802476,
+      "centre_mm": [
+        530.0,
+        372.59999999999997,
+        55.00000000000016
+      ],
+      "basis": "ASSUMED density 7850 kg/m3; nominal CAD volume"
+    },
+    {
+      "id": "K01_Rear_3_inner_washer",
+      "mass_kg": 0.0014568289271802474,
+      "centre_mm": [
+        530.0,
+        330.40000000000003,
+        55.00000000000013
+      ],
+      "basis": "ASSUMED density 7850 kg/m3; nominal CAD volume"
+    },
+    {
+      "id": "K01_Rear_3_outer_nut",
+      "mass_kg": 0.0014047838664727615,
+      "centre_mm": [
+        530.0,
+        375.7,
+        55.000000000000185
+      ],
+      "basis": "ASSUMED density 7850 kg/m3; nominal CAD volume"
+    },
+    {
+      "id": "K01_Rear_3_inner_nut",
+      "mass_kg": 0.0014047838664727615,
+      "centre_mm": [
+        530.0,
+        327.3,
+        55.00000000000013
+      ],
+      "basis": "ASSUMED density 7850 kg/m3; nominal CAD volume"
+    },
+    {
+      "id": "K01_Rear_4_stud",
+      "mass_kg": 0.009248063374004951,
+      "centre_mm": [
+        530.0,
+        350.9999999999999,
+        305.0000000000001
+      ],
+      "basis": "ASSUMED density 7850 kg/m3; nominal CAD volume"
+    },
+    {
+      "id": "K01_Rear_4_outer_washer",
+      "mass_kg": 0.0014568289271802478,
+      "centre_mm": [
+        530.0,
+        372.5999999999999,
+        305.0000000000001
+      ],
+      "basis": "ASSUMED density 7850 kg/m3; nominal CAD volume"
+    },
+    {
+      "id": "K01_Rear_4_inner_washer",
+      "mass_kg": 0.0014568289271802476,
+      "centre_mm": [
+        530.0,
+        330.4,
+        305.0000000000001
+      ],
+      "basis": "ASSUMED density 7850 kg/m3; nominal CAD volume"
+    },
+    {
+      "id": "K01_Rear_4_outer_nut",
+      "mass_kg": 0.0014047838664727626,
+      "centre_mm": [
+        530.0,
+        375.6999999999998,
+        305.00000000000017
+      ],
+      "basis": "ASSUMED density 7850 kg/m3; nominal CAD volume"
+    },
+    {
+      "id": "K01_Rear_4_inner_nut",
+      "mass_kg": 0.001404783866472761,
+      "centre_mm": [
+        530.0,
+        327.3,
+        305.0000000000001
+      ],
+      "basis": "ASSUMED density 7850 kg/m3; nominal CAD volume"
+    },
+    {
+      "id": "K01_Rear_5_stud",
+      "mass_kg": 0.009248063374004967,
+      "centre_mm": [
+        530.0,
+        351.0,
+        555.0000000000002
+      ],
+      "basis": "ASSUMED density 7850 kg/m3; nominal CAD volume"
+    },
+    {
+      "id": "K01_Rear_5_outer_washer",
+      "mass_kg": 0.0014568289271802482,
+      "centre_mm": [
+        530.0,
+        372.6000000000001,
+        555.0000000000002
+      ],
+      "basis": "ASSUMED density 7850 kg/m3; nominal CAD volume"
+    },
+    {
+      "id": "K01_Rear_5_inner_washer",
+      "mass_kg": 0.001456828927180247,
+      "centre_mm": [
+        530.0,
+        330.40000000000003,
+        555.0000000000001
+      ],
+      "basis": "ASSUMED density 7850 kg/m3; nominal CAD volume"
+    },
+    {
+      "id": "K01_Rear_5_outer_nut",
+      "mass_kg": 0.0014047838664727609,
+      "centre_mm": [
+        530.0,
+        375.70000000000005,
+        555.0000000000002
+      ],
+      "basis": "ASSUMED density 7850 kg/m3; nominal CAD volume"
+    },
+    {
+      "id": "K01_Rear_5_inner_nut",
+      "mass_kg": 0.0014047838664727598,
+      "centre_mm": [
+        530.0,
+        327.3,
+        555.0000000000002
+      ],
+      "basis": "ASSUMED density 7850 kg/m3; nominal CAD volume"
+    },
+    {
+      "id": "K01_Rear_6_stud",
+      "mass_kg": 0.006165375582669978,
+      "centre_mm": [
+        275.0,
+        360.9999999999999,
+        50.00000000000017
+      ],
+      "basis": "ASSUMED density 7850 kg/m3; nominal CAD volume"
+    },
+    {
+      "id": "K01_Rear_6_outer_washer",
+      "mass_kg": 0.001456828927180249,
+      "centre_mm": [
+        275.0,
+        372.5999999999999,
+        50.00000000000016
+      ],
+      "basis": "ASSUMED density 7850 kg/m3; nominal CAD volume"
+    },
+    {
+      "id": "K01_Rear_6_inner_washer",
+      "mass_kg": 0.0014568289271802484,
+      "centre_mm": [
+        275.0,
+        350.4,
+        50.000000000000156
+      ],
+      "basis": "ASSUMED density 7850 kg/m3; nominal CAD volume"
+    },
+    {
+      "id": "K01_Rear_6_outer_nut",
+      "mass_kg": 0.0014047838664727646,
+      "centre_mm": [
+        275.0,
+        375.6999999999999,
+        50.00000000000018
+      ],
+      "basis": "ASSUMED density 7850 kg/m3; nominal CAD volume"
+    },
+    {
+      "id": "K01_Rear_6_inner_nut",
+      "mass_kg": 0.0014047838664727646,
+      "centre_mm": [
+        275.0,
+        347.2999999999999,
+        50.00000000000015
+      ],
+      "basis": "ASSUMED density 7850 kg/m3; nominal CAD volume"
+    },
+    {
+      "id": "K01_Rear_7_stud",
+      "mass_kg": 0.0061653755826699885,
+      "centre_mm": [
+        275.0,
+        360.99999999999994,
+        560.0000000000002
+      ],
+      "basis": "ASSUMED density 7850 kg/m3; nominal CAD volume"
+    },
+    {
+      "id": "K01_Rear_7_outer_washer",
+      "mass_kg": 0.001456828927180249,
+      "centre_mm": [
+        275.0,
+        372.59999999999997,
+        560.0000000000002
+      ],
+      "basis": "ASSUMED density 7850 kg/m3; nominal CAD volume"
+    },
+    {
+      "id": "K01_Rear_7_inner_washer",
+      "mass_kg": 0.001456828927180248,
+      "centre_mm": [
+        275.0,
+        350.40000000000003,
+        560.0000000000002
+      ],
+      "basis": "ASSUMED density 7850 kg/m3; nominal CAD volume"
+    },
+    {
+      "id": "K01_Rear_7_outer_nut",
+      "mass_kg": 0.0014047838664727637,
+      "centre_mm": [
+        275.0,
+        375.70000000000005,
+        560.0000000000002
+      ],
+      "basis": "ASSUMED density 7850 kg/m3; nominal CAD volume"
+    },
+    {
+      "id": "K01_Rear_7_inner_nut",
+      "mass_kg": 0.0014047838664727633,
+      "centre_mm": [
+        275.0,
+        347.30000000000007,
+        560.0000000000002
+      ],
+      "basis": "ASSUMED density 7850 kg/m3; nominal CAD volume"
+    },
+    {
+      "id": "K03_Outer_stop_False_0",
+      "mass_kg": 0.001290104840673691,
+      "centre_mm": [
+        20.0,
+        -1.5,
+        55.0
+      ],
+      "basis": "ASSUMED density 7850 kg/m3; nominal CAD volume"
+    },
+    {
+      "id": "K03_Outer_stop_False_1",
+      "mass_kg": 0.0012901048406736895,
+      "centre_mm": [
+        20.0,
+        -1.4999999999999996,
+        305.0
+      ],
+      "basis": "ASSUMED density 7850 kg/m3; nominal CAD volume"
+    },
+    {
+      "id": "K03_Outer_stop_False_2",
+      "mass_kg": 0.001290104840673695,
+      "centre_mm": [
+        20.000000000000004,
+        -1.4999999999999996,
+        555.0
+      ],
+      "basis": "ASSUMED density 7850 kg/m3; nominal CAD volume"
+    },
+    {
+      "id": "K03_Outer_stop_False_3",
+      "mass_kg": 0.0012901048406736965,
+      "centre_mm": [
+        530.0,
+        -1.5000000000000002,
+        55.0
+      ],
+      "basis": "ASSUMED density 7850 kg/m3; nominal CAD volume"
+    },
+    {
+      "id": "K03_Outer_stop_False_4",
+      "mass_kg": 0.0012901048406736952,
+      "centre_mm": [
+        530.0,
+        -1.4999999999999996,
+        305.0
+      ],
+      "basis": "ASSUMED density 7850 kg/m3; nominal CAD volume"
+    },
+    {
+      "id": "K03_Outer_stop_False_5",
+      "mass_kg": 0.0012901048406737,
+      "centre_mm": [
+        530.0,
+        -1.4999999999999996,
+        555.0
+      ],
+      "basis": "ASSUMED density 7850 kg/m3; nominal CAD volume"
+    },
+    {
+      "id": "K03_Outer_stop_False_6",
+      "mass_kg": 0.0012901048406736906,
+      "centre_mm": [
+        275.0,
+        -1.4999999999999996,
+        50.0
+      ],
+      "basis": "ASSUMED density 7850 kg/m3; nominal CAD volume"
+    },
+    {
+      "id": "K03_Outer_stop_False_7",
+      "mass_kg": 0.0012901048406736943,
+      "centre_mm": [
+        275.0,
+        -1.5,
+        560.0
+      ],
+      "basis": "ASSUMED density 7850 kg/m3; nominal CAD volume"
+    },
+    {
+      "id": "K04_Inner_stop_False_0",
+      "mass_kg": 0.004882977461474619,
+      "centre_mm": [
+        80.0,
+        -37.0,
+        150.0
+      ],
+      "basis": "ASSUMED density 7850 kg/m3; nominal CAD volume"
+    },
+    {
+      "id": "K04_Inner_stop_False_1",
+      "mass_kg": 0.0048829774614746165,
+      "centre_mm": [
+        80.0,
+        -37.0,
+        460.0
+      ],
+      "basis": "ASSUMED density 7850 kg/m3; nominal CAD volume"
+    },
+    {
+      "id": "K04_Inner_stop_False_2",
+      "mass_kg": 0.004882977461474627,
+      "centre_mm": [
+        470.00000000000006,
+        -37.0,
+        150.0
+      ],
+      "basis": "ASSUMED density 7850 kg/m3; nominal CAD volume"
+    },
+    {
+      "id": "K04_Inner_stop_False_3",
+      "mass_kg": 0.004882977461474622,
+      "centre_mm": [
+        470.0,
+        -37.0,
+        459.99999999999994
+      ],
+      "basis": "ASSUMED density 7850 kg/m3; nominal CAD volume"
+    },
+    {
+      "id": "K03_Outer_stop_True_0",
+      "mass_kg": 0.0012901048406736909,
+      "centre_mm": [
+        20.0,
+        361.49999999999994,
+        55.00000000000015
+      ],
+      "basis": "ASSUMED density 7850 kg/m3; nominal CAD volume"
+    },
+    {
+      "id": "K03_Outer_stop_True_1",
+      "mass_kg": 0.0012901048406736913,
+      "centre_mm": [
+        20.0,
+        361.49999999999994,
+        305.0000000000001
+      ],
+      "basis": "ASSUMED density 7850 kg/m3; nominal CAD volume"
+    },
+    {
+      "id": "K03_Outer_stop_True_2",
+      "mass_kg": 0.00129010484067369,
+      "centre_mm": [
+        20.0,
+        361.5,
+        555.0000000000002
+      ],
+      "basis": "ASSUMED density 7850 kg/m3; nominal CAD volume"
+    },
+    {
+      "id": "K03_Outer_stop_True_3",
+      "mass_kg": 0.0012901048406736965,
+      "centre_mm": [
+        530.0,
+        361.49999999999994,
+        55.000000000000156
+      ],
+      "basis": "ASSUMED density 7850 kg/m3; nominal CAD volume"
+    },
+    {
+      "id": "K03_Outer_stop_True_4",
+      "mass_kg": 0.0012901048406736965,
+      "centre_mm": [
+        530.0,
+        361.5,
+        305.0000000000001
+      ],
+      "basis": "ASSUMED density 7850 kg/m3; nominal CAD volume"
+    },
+    {
+      "id": "K03_Outer_stop_True_5",
+      "mass_kg": 0.0012901048406736952,
+      "centre_mm": [
+        530.0,
+        361.49999999999994,
+        555.0000000000002
+      ],
+      "basis": "ASSUMED density 7850 kg/m3; nominal CAD volume"
+    },
+    {
+      "id": "K03_Outer_stop_True_6",
+      "mass_kg": 0.0012901048406736909,
+      "centre_mm": [
+        275.0,
+        361.49999999999994,
+        50.000000000000156
+      ],
+      "basis": "ASSUMED density 7850 kg/m3; nominal CAD volume"
+    },
+    {
+      "id": "K03_Outer_stop_True_7",
+      "mass_kg": 0.00129010484067369,
+      "centre_mm": [
+        275.0,
+        361.4999999999999,
+        560.0000000000002
+      ],
+      "basis": "ASSUMED density 7850 kg/m3; nominal CAD volume"
+    },
+    {
+      "id": "K04_Inner_stop_True_0",
+      "mass_kg": 0.004882977461474617,
+      "centre_mm": [
+        80.0,
+        396.9999999999998,
+        150.00000000000017
+      ],
+      "basis": "ASSUMED density 7850 kg/m3; nominal CAD volume"
+    },
+    {
+      "id": "K04_Inner_stop_True_1",
+      "mass_kg": 0.004882977461474616,
+      "centre_mm": [
+        80.0,
+        396.99999999999983,
+        460.00000000000017
+      ],
+      "basis": "ASSUMED density 7850 kg/m3; nominal CAD volume"
+    },
+    {
+      "id": "K04_Inner_stop_True_2",
+      "mass_kg": 0.004882977461474626,
+      "centre_mm": [
+        470.00000000000006,
+        396.9999999999998,
+        150.00000000000017
+      ],
+      "basis": "ASSUMED density 7850 kg/m3; nominal CAD volume"
+    },
+    {
+      "id": "K04_Inner_stop_True_3",
+      "mass_kg": 0.004882977461474624,
+      "centre_mm": [
+        470.0,
+        396.99999999999994,
+        460.00000000000017
+      ],
+      "basis": "ASSUMED density 7850 kg/m3; nominal CAD volume"
+    },
+    {
+      "id": "K02_Fan_bolt_1_1_screw",
+      "mass_kg": 0.0061407140803392945,
+      "centre_mm": [
+        137.5,
+        42.5,
+        589.3132530120482
+      ],
+      "basis": "ASSUMED density 7850 kg/m3; nominal CAD volume"
+    },
+    {
+      "id": "K02_Fan_bolt_1_1_top_washer",
+      "mass_kg": 0.0007738162893809072,
+      "centre_mm": [
+        137.5,
+        42.5,
+        608.5
+      ],
+      "basis": "ASSUMED density 7850 kg/m3; nominal CAD volume"
+    },
+    {
+      "id": "K02_Fan_bolt_1_1_bottom_washer",
+      "mass_kg": 0.0007738162893809072,
+      "centre_mm": [
+        137.5,
+        42.5,
+        570.5
+      ],
+      "basis": "ASSUMED density 7850 kg/m3; nominal CAD volume"
+    },
+    {
+      "id": "K02_Fan_bolt_1_1_nut",
+      "mass_kg": 0.0011723533112148244,
+      "centre_mm": [
+        137.5,
+        42.5,
+        567.5
+      ],
+      "basis": "ASSUMED density 7850 kg/m3; nominal CAD volume"
+    },
+    {
+      "id": "K02_Fan_bolt_1_2_screw",
+      "mass_kg": 0.006140714080339292,
+      "centre_mm": [
+        137.5,
+        167.5,
+        589.3132530120482
+      ],
+      "basis": "ASSUMED density 7850 kg/m3; nominal CAD volume"
+    },
+    {
+      "id": "K02_Fan_bolt_1_2_top_washer",
+      "mass_kg": 0.0007738162893809077,
+      "centre_mm": [
+        137.5,
+        167.5,
+        608.5
+      ],
+      "basis": "ASSUMED density 7850 kg/m3; nominal CAD volume"
+    },
+    {
+      "id": "K02_Fan_bolt_1_2_bottom_washer",
+      "mass_kg": 0.0007738162893809077,
+      "centre_mm": [
+        137.5,
+        167.5,
+        570.5
+      ],
+      "basis": "ASSUMED density 7850 kg/m3; nominal CAD volume"
+    },
+    {
+      "id": "K02_Fan_bolt_1_2_nut",
+      "mass_kg": 0.0011723533112148246,
+      "centre_mm": [
+        137.5,
+        167.5,
+        567.5
+      ],
+      "basis": "ASSUMED density 7850 kg/m3; nominal CAD volume"
+    },
+    {
+      "id": "K02_Fan_bolt_1_3_screw",
+      "mass_kg": 0.006140714080339298,
+      "centre_mm": [
+        262.5,
+        42.5,
+        589.3132530120482
+      ],
+      "basis": "ASSUMED density 7850 kg/m3; nominal CAD volume"
+    },
+    {
+      "id": "K02_Fan_bolt_1_3_top_washer",
+      "mass_kg": 0.0007738162893809077,
+      "centre_mm": [
+        262.5,
+        42.5,
+        608.5
+      ],
+      "basis": "ASSUMED density 7850 kg/m3; nominal CAD volume"
+    },
+    {
+      "id": "K02_Fan_bolt_1_3_bottom_washer",
+      "mass_kg": 0.0007738162893809077,
+      "centre_mm": [
+        262.5,
+        42.5,
+        570.5
+      ],
+      "basis": "ASSUMED density 7850 kg/m3; nominal CAD volume"
+    },
+    {
+      "id": "K02_Fan_bolt_1_3_nut",
+      "mass_kg": 0.0011723533112148236,
+      "centre_mm": [
+        262.5,
+        42.5,
+        567.5
+      ],
+      "basis": "ASSUMED density 7850 kg/m3; nominal CAD volume"
+    },
+    {
+      "id": "K02_Fan_bolt_1_4_screw",
+      "mass_kg": 0.006140714080339295,
+      "centre_mm": [
+        262.5,
+        167.5,
+        589.3132530120482
+      ],
+      "basis": "ASSUMED density 7850 kg/m3; nominal CAD volume"
+    },
+    {
+      "id": "K02_Fan_bolt_1_4_top_washer",
+      "mass_kg": 0.0007738162893809078,
+      "centre_mm": [
+        262.5,
+        167.5,
+        608.5
+      ],
+      "basis": "ASSUMED density 7850 kg/m3; nominal CAD volume"
+    },
+    {
+      "id": "K02_Fan_bolt_1_4_bottom_washer",
+      "mass_kg": 0.0007738162893809078,
+      "centre_mm": [
+        262.5,
+        167.5,
+        570.5
+      ],
+      "basis": "ASSUMED density 7850 kg/m3; nominal CAD volume"
+    },
+    {
+      "id": "K02_Fan_bolt_1_4_nut",
+      "mass_kg": 0.0011723533112148238,
+      "centre_mm": [
+        262.5,
+        167.5,
+        567.5
+      ],
+      "basis": "ASSUMED density 7850 kg/m3; nominal CAD volume"
+    },
+    {
+      "id": "K02_Fan_bolt_2_1_screw",
+      "mass_kg": 0.006140714080339298,
+      "centre_mm": [
+        287.5,
+        42.5,
+        589.3132530120482
+      ],
+      "basis": "ASSUMED density 7850 kg/m3; nominal CAD volume"
+    },
+    {
+      "id": "K02_Fan_bolt_2_1_top_washer",
+      "mass_kg": 0.0007738162893809077,
+      "centre_mm": [
+        287.5,
+        42.5,
+        608.5
+      ],
+      "basis": "ASSUMED density 7850 kg/m3; nominal CAD volume"
+    },
+    {
+      "id": "K02_Fan_bolt_2_1_bottom_washer",
+      "mass_kg": 0.0007738162893809077,
+      "centre_mm": [
+        287.5,
+        42.5,
+        570.5
+      ],
+      "basis": "ASSUMED density 7850 kg/m3; nominal CAD volume"
+    },
+    {
+      "id": "K02_Fan_bolt_2_1_nut",
+      "mass_kg": 0.0011723533112148236,
+      "centre_mm": [
+        287.5,
+        42.5,
+        567.5
+      ],
+      "basis": "ASSUMED density 7850 kg/m3; nominal CAD volume"
+    },
+    {
+      "id": "K02_Fan_bolt_2_2_screw",
+      "mass_kg": 0.006140714080339295,
+      "centre_mm": [
+        287.5,
+        167.5,
+        589.3132530120482
+      ],
+      "basis": "ASSUMED density 7850 kg/m3; nominal CAD volume"
+    },
+    {
+      "id": "K02_Fan_bolt_2_2_top_washer",
+      "mass_kg": 0.0007738162893809078,
+      "centre_mm": [
+        287.5,
+        167.5,
+        608.5
+      ],
+      "basis": "ASSUMED density 7850 kg/m3; nominal CAD volume"
+    },
+    {
+      "id": "K02_Fan_bolt_2_2_bottom_washer",
+      "mass_kg": 0.0007738162893809078,
+      "centre_mm": [
+        287.5,
+        167.5,
+        570.5
+      ],
+      "basis": "ASSUMED density 7850 kg/m3; nominal CAD volume"
+    },
+    {
+      "id": "K02_Fan_bolt_2_2_nut",
+      "mass_kg": 0.0011723533112148238,
+      "centre_mm": [
+        287.5,
+        167.5,
+        567.5
+      ],
+      "basis": "ASSUMED density 7850 kg/m3; nominal CAD volume"
+    },
+    {
+      "id": "K02_Fan_bolt_2_3_screw",
+      "mass_kg": 0.006140714080339298,
+      "centre_mm": [
+        412.5,
+        42.5,
+        589.3132530120482
+      ],
+      "basis": "ASSUMED density 7850 kg/m3; nominal CAD volume"
+    },
+    {
+      "id": "K02_Fan_bolt_2_3_top_washer",
+      "mass_kg": 0.0007738162893809075,
+      "centre_mm": [
+        412.5,
+        42.5,
+        608.5
+      ],
+      "basis": "ASSUMED density 7850 kg/m3; nominal CAD volume"
+    },
+    {
+      "id": "K02_Fan_bolt_2_3_bottom_washer",
+      "mass_kg": 0.0007738162893809075,
+      "centre_mm": [
+        412.5,
+        42.5,
+        570.5
+      ],
+      "basis": "ASSUMED density 7850 kg/m3; nominal CAD volume"
+    },
+    {
+      "id": "K02_Fan_bolt_2_3_nut",
+      "mass_kg": 0.0011723533112148231,
+      "centre_mm": [
+        412.5,
+        42.5,
+        567.5
+      ],
+      "basis": "ASSUMED density 7850 kg/m3; nominal CAD volume"
+    },
+    {
+      "id": "K02_Fan_bolt_2_4_screw",
+      "mass_kg": 0.006140714080339295,
+      "centre_mm": [
+        412.5,
+        167.5,
+        589.3132530120482
+      ],
+      "basis": "ASSUMED density 7850 kg/m3; nominal CAD volume"
+    },
+    {
+      "id": "K02_Fan_bolt_2_4_top_washer",
+      "mass_kg": 0.0007738162893809079,
+      "centre_mm": [
+        412.5,
+        167.5,
+        608.5
+      ],
+      "basis": "ASSUMED density 7850 kg/m3; nominal CAD volume"
+    },
+    {
+      "id": "K02_Fan_bolt_2_4_bottom_washer",
+      "mass_kg": 0.0007738162893809079,
+      "centre_mm": [
+        412.5,
+        167.5,
+        570.5
+      ],
+      "basis": "ASSUMED density 7850 kg/m3; nominal CAD volume"
+    },
+    {
+      "id": "K02_Fan_bolt_2_4_nut",
+      "mass_kg": 0.0011723533112148233,
+      "centre_mm": [
+        412.5,
+        167.5,
+        567.5
+      ],
+      "basis": "ASSUMED density 7850 kg/m3; nominal CAD volume"
+    },
+    {
+      "id": "K02_Fan_bolt_3_1_screw",
+      "mass_kg": 0.006140714080339292,
+      "centre_mm": [
+        137.5,
+        192.5,
+        589.3132530120482
+      ],
+      "basis": "ASSUMED density 7850 kg/m3; nominal CAD volume"
+    },
+    {
+      "id": "K02_Fan_bolt_3_1_top_washer",
+      "mass_kg": 0.0007738162893809077,
+      "centre_mm": [
+        137.5,
+        192.5,
+        608.5
+      ],
+      "basis": "ASSUMED density 7850 kg/m3; nominal CAD volume"
+    },
+    {
+      "id": "K02_Fan_bolt_3_1_bottom_washer",
+      "mass_kg": 0.0007738162893809077,
+      "centre_mm": [
+        137.5,
+        192.5,
+        570.5
+      ],
+      "basis": "ASSUMED density 7850 kg/m3; nominal CAD volume"
+    },
+    {
+      "id": "K02_Fan_bolt_3_1_nut",
+      "mass_kg": 0.0011723533112148246,
+      "centre_mm": [
+        137.5,
+        192.5,
+        567.5
+      ],
+      "basis": "ASSUMED density 7850 kg/m3; nominal CAD volume"
+    },
+    {
+      "id": "K02_Fan_bolt_3_2_screw",
+      "mass_kg": 0.006140714080339308,
+      "centre_mm": [
+        137.5,
+        317.5,
+        589.3132530120482
+      ],
+      "basis": "ASSUMED density 7850 kg/m3; nominal CAD volume"
+    },
+    {
+      "id": "K02_Fan_bolt_3_2_top_washer",
+      "mass_kg": 0.0007738162893809076,
+      "centre_mm": [
+        137.5,
+        317.5,
+        608.5
+      ],
+      "basis": "ASSUMED density 7850 kg/m3; nominal CAD volume"
+    },
+    {
+      "id": "K02_Fan_bolt_3_2_bottom_washer",
+      "mass_kg": 0.0007738162893809076,
+      "centre_mm": [
+        137.5,
+        317.5,
+        570.5
+      ],
+      "basis": "ASSUMED density 7850 kg/m3; nominal CAD volume"
+    },
+    {
+      "id": "K02_Fan_bolt_3_2_nut",
+      "mass_kg": 0.0011723533112148231,
+      "centre_mm": [
+        137.5,
+        317.5,
+        567.5
+      ],
+      "basis": "ASSUMED density 7850 kg/m3; nominal CAD volume"
+    },
+    {
+      "id": "K02_Fan_bolt_3_3_screw",
+      "mass_kg": 0.006140714080339295,
+      "centre_mm": [
+        262.5,
+        192.5,
+        589.3132530120482
+      ],
+      "basis": "ASSUMED density 7850 kg/m3; nominal CAD volume"
+    },
+    {
+      "id": "K02_Fan_bolt_3_3_top_washer",
+      "mass_kg": 0.0007738162893809078,
+      "centre_mm": [
+        262.5,
+        192.5,
+        608.5
+      ],
+      "basis": "ASSUMED density 7850 kg/m3; nominal CAD volume"
+    },
+    {
+      "id": "K02_Fan_bolt_3_3_bottom_washer",
+      "mass_kg": 0.0007738162893809078,
+      "centre_mm": [
+        262.5,
+        192.5,
+        570.5
+      ],
+      "basis": "ASSUMED density 7850 kg/m3; nominal CAD volume"
+    },
+    {
+      "id": "K02_Fan_bolt_3_3_nut",
+      "mass_kg": 0.0011723533112148238,
+      "centre_mm": [
+        262.5,
+        192.5,
+        567.5
+      ],
+      "basis": "ASSUMED density 7850 kg/m3; nominal CAD volume"
+    },
+    {
+      "id": "K02_Fan_bolt_3_4_screw",
+      "mass_kg": 0.006140714080339309,
+      "centre_mm": [
+        262.5,
+        317.5,
+        589.3132530120482
+      ],
+      "basis": "ASSUMED density 7850 kg/m3; nominal CAD volume"
+    },
+    {
+      "id": "K02_Fan_bolt_3_4_top_washer",
+      "mass_kg": 0.0007738162893809079,
+      "centre_mm": [
+        262.5,
+        317.5,
+        608.5
+      ],
+      "basis": "ASSUMED density 7850 kg/m3; nominal CAD volume"
+    },
+    {
+      "id": "K02_Fan_bolt_3_4_bottom_washer",
+      "mass_kg": 0.0007738162893809079,
+      "centre_mm": [
+        262.5,
+        317.5,
+        570.5
+      ],
+      "basis": "ASSUMED density 7850 kg/m3; nominal CAD volume"
+    },
+    {
+      "id": "K02_Fan_bolt_3_4_nut",
+      "mass_kg": 0.0011723533112148225,
+      "centre_mm": [
+        262.5,
+        317.5,
+        567.5
+      ],
+      "basis": "ASSUMED density 7850 kg/m3; nominal CAD volume"
+    },
+    {
+      "id": "K02_Fan_bolt_4_1_screw",
+      "mass_kg": 0.006140714080339295,
+      "centre_mm": [
+        287.5,
+        192.5,
+        589.3132530120482
+      ],
+      "basis": "ASSUMED density 7850 kg/m3; nominal CAD volume"
+    },
+    {
+      "id": "K02_Fan_bolt_4_1_top_washer",
+      "mass_kg": 0.0007738162893809078,
+      "centre_mm": [
+        287.5,
+        192.5,
+        608.5
+      ],
+      "basis": "ASSUMED density 7850 kg/m3; nominal CAD volume"
+    },
+    {
+      "id": "K02_Fan_bolt_4_1_bottom_washer",
+      "mass_kg": 0.0007738162893809078,
+      "centre_mm": [
+        287.5,
+        192.5,
+        570.5
+      ],
+      "basis": "ASSUMED density 7850 kg/m3; nominal CAD volume"
+    },
+    {
+      "id": "K02_Fan_bolt_4_1_nut",
+      "mass_kg": 0.0011723533112148238,
+      "centre_mm": [
+        287.5,
+        192.5,
+        567.5
+      ],
+      "basis": "ASSUMED density 7850 kg/m3; nominal CAD volume"
+    },
+    {
+      "id": "K02_Fan_bolt_4_2_screw",
+      "mass_kg": 0.006140714080339309,
+      "centre_mm": [
+        287.5,
+        317.5,
+        589.3132530120482
+      ],
+      "basis": "ASSUMED density 7850 kg/m3; nominal CAD volume"
+    },
+    {
+      "id": "K02_Fan_bolt_4_2_top_washer",
+      "mass_kg": 0.0007738162893809079,
+      "centre_mm": [
+        287.5,
+        317.5,
+        608.5
+      ],
+      "basis": "ASSUMED density 7850 kg/m3; nominal CAD volume"
+    },
+    {
+      "id": "K02_Fan_bolt_4_2_bottom_washer",
+      "mass_kg": 0.0007738162893809079,
+      "centre_mm": [
+        287.5,
+        317.5,
+        570.5
+      ],
+      "basis": "ASSUMED density 7850 kg/m3; nominal CAD volume"
+    },
+    {
+      "id": "K02_Fan_bolt_4_2_nut",
+      "mass_kg": 0.0011723533112148225,
+      "centre_mm": [
+        287.5,
+        317.5,
+        567.5
+      ],
+      "basis": "ASSUMED density 7850 kg/m3; nominal CAD volume"
+    },
+    {
+      "id": "K02_Fan_bolt_4_3_screw",
+      "mass_kg": 0.006140714080339295,
+      "centre_mm": [
+        412.5,
+        192.5,
+        589.3132530120482
+      ],
+      "basis": "ASSUMED density 7850 kg/m3; nominal CAD volume"
+    },
+    {
+      "id": "K02_Fan_bolt_4_3_top_washer",
+      "mass_kg": 0.0007738162893809079,
+      "centre_mm": [
+        412.5,
+        192.49999999999997,
+        608.5
+      ],
+      "basis": "ASSUMED density 7850 kg/m3; nominal CAD volume"
+    },
+    {
+      "id": "K02_Fan_bolt_4_3_bottom_washer",
+      "mass_kg": 0.0007738162893809079,
+      "centre_mm": [
+        412.5,
+        192.49999999999997,
+        570.5
+      ],
+      "basis": "ASSUMED density 7850 kg/m3; nominal CAD volume"
+    },
+    {
+      "id": "K02_Fan_bolt_4_3_nut",
+      "mass_kg": 0.0011723533112148233,
+      "centre_mm": [
+        412.5,
+        192.5,
+        567.5
+      ],
+      "basis": "ASSUMED density 7850 kg/m3; nominal CAD volume"
+    },
+    {
+      "id": "K02_Fan_bolt_4_4_screw",
+      "mass_kg": 0.006140714080339309,
+      "centre_mm": [
+        412.50000000000006,
+        317.5,
+        589.3132530120482
+      ],
+      "basis": "ASSUMED density 7850 kg/m3; nominal CAD volume"
+    },
+    {
+      "id": "K02_Fan_bolt_4_4_top_washer",
+      "mass_kg": 0.0007738162893809079,
+      "centre_mm": [
+        412.5,
+        317.5,
+        608.5
+      ],
+      "basis": "ASSUMED density 7850 kg/m3; nominal CAD volume"
+    },
+    {
+      "id": "K02_Fan_bolt_4_4_bottom_washer",
+      "mass_kg": 0.0007738162893809079,
+      "centre_mm": [
+        412.5,
+        317.5,
+        570.5
+      ],
+      "basis": "ASSUMED density 7850 kg/m3; nominal CAD volume"
+    },
+    {
+      "id": "K02_Fan_bolt_4_4_nut",
+      "mass_kg": 0.001172353311214822,
+      "centre_mm": [
+        412.5,
+        317.5,
+        567.5
+      ],
+      "basis": "ASSUMED density 7850 kg/m3; nominal CAD volume"
+    },
+    {
+      "id": "K06_End_False_19_105_screw",
+      "mass_kg": 0.005154253987112097,
+      "centre_mm": [
+        13.842105263157894,
+        19.0,
+        105.0
+      ],
+      "basis": "ASSUMED density 7850 kg/m3; nominal CAD volume"
+    },
+    {
+      "id": "K06_End_False_19_105_outer_washer",
+      "mass_kg": 0.0007738162893809078,
+      "centre_mm": [
+        -0.5,
+        19.0,
+        105.0
+      ],
+      "basis": "ASSUMED density 7850 kg/m3; nominal CAD volume"
+    },
+    {
+      "id": "K06_End_False_19_105_inner_washer",
+      "mass_kg": 0.0007738162893809078,
+      "centre_mm": [
+        29.5,
+        19.0,
+        105.0
+      ],
+      "basis": "ASSUMED density 7850 kg/m3; nominal CAD volume"
+    },
+    {
+      "id": "K06_End_False_19_105_nut",
+      "mass_kg": 0.0011723533112148249,
+      "centre_mm": [
+        32.5,
+        19.0,
+        105.0
+      ],
+      "basis": "ASSUMED density 7850 kg/m3; nominal CAD volume"
+    },
+    {
+      "id": "K06_End_False_19_205_screw",
+      "mass_kg": 0.005154253987112098,
+      "centre_mm": [
+        13.84210526315789,
+        19.0,
+        205.0
+      ],
+      "basis": "ASSUMED density 7850 kg/m3; nominal CAD volume"
+    },
+    {
+      "id": "K06_End_False_19_205_outer_washer",
+      "mass_kg": 0.0007738162893809076,
+      "centre_mm": [
+        -0.5,
+        19.0,
+        205.0
+      ],
+      "basis": "ASSUMED density 7850 kg/m3; nominal CAD volume"
+    },
+    {
+      "id": "K06_End_False_19_205_inner_washer",
+      "mass_kg": 0.0007738162893809076,
+      "centre_mm": [
+        29.499999999999996,
+        19.0,
+        205.0
+      ],
+      "basis": "ASSUMED density 7850 kg/m3; nominal CAD volume"
+    },
+    {
+      "id": "K06_End_False_19_205_nut",
+      "mass_kg": 0.0011723533112148249,
+      "centre_mm": [
+        32.5,
+        19.0,
+        205.0
+      ],
+      "basis": "ASSUMED density 7850 kg/m3; nominal CAD volume"
+    },
+    {
+      "id": "K06_End_False_19_405_screw",
+      "mass_kg": 0.0051542539871121005,
+      "centre_mm": [
+        13.84210526315789,
+        19.0,
+        405.0
+      ],
+      "basis": "ASSUMED density 7850 kg/m3; nominal CAD volume"
+    },
+    {
+      "id": "K06_End_False_19_405_outer_washer",
+      "mass_kg": 0.0007738162893809077,
+      "centre_mm": [
+        -0.5,
+        19.0,
+        405.0
+      ],
+      "basis": "ASSUMED density 7850 kg/m3; nominal CAD volume"
+    },
+    {
+      "id": "K06_End_False_19_405_inner_washer",
+      "mass_kg": 0.0007738162893809077,
+      "centre_mm": [
+        29.499999999999996,
+        19.0,
+        405.0
+      ],
+      "basis": "ASSUMED density 7850 kg/m3; nominal CAD volume"
+    },
+    {
+      "id": "K06_End_False_19_405_nut",
+      "mass_kg": 0.001172353311214823,
+      "centre_mm": [
+        32.5,
+        19.0,
+        405.0
+      ],
+      "basis": "ASSUMED density 7850 kg/m3; nominal CAD volume"
+    },
+    {
+      "id": "K06_End_False_19_505_screw",
+      "mass_kg": 0.0051542539871121005,
+      "centre_mm": [
+        13.84210526315789,
+        19.0,
+        505.0
+      ],
+      "basis": "ASSUMED density 7850 kg/m3; nominal CAD volume"
+    },
+    {
+      "id": "K06_End_False_19_505_outer_washer",
+      "mass_kg": 0.0007738162893809077,
+      "centre_mm": [
+        -0.5,
+        19.0,
+        505.0
+      ],
+      "basis": "ASSUMED density 7850 kg/m3; nominal CAD volume"
+    },
+    {
+      "id": "K06_End_False_19_505_inner_washer",
+      "mass_kg": 0.0007738162893809077,
+      "centre_mm": [
+        29.499999999999996,
+        19.0,
+        505.0
+      ],
+      "basis": "ASSUMED density 7850 kg/m3; nominal CAD volume"
+    },
+    {
+      "id": "K06_End_False_19_505_nut",
+      "mass_kg": 0.001172353311214823,
+      "centre_mm": [
+        32.5,
+        19.0,
+        505.00000000000006
+      ],
+      "basis": "ASSUMED density 7850 kg/m3; nominal CAD volume"
+    },
+    {
+      "id": "K06_End_False_341_105_screw",
+      "mass_kg": 0.005154253987112107,
+      "centre_mm": [
+        13.842105263157892,
+        341.0,
+        105.0
+      ],
+      "basis": "ASSUMED density 7850 kg/m3; nominal CAD volume"
+    },
+    {
+      "id": "K06_End_False_341_105_outer_washer",
+      "mass_kg": 0.000773816289380908,
+      "centre_mm": [
+        -0.4999999999999998,
+        341.00000000000006,
+        105.0
+      ],
+      "basis": "ASSUMED density 7850 kg/m3; nominal CAD volume"
+    },
+    {
+      "id": "K06_End_False_341_105_inner_washer",
+      "mass_kg": 0.0007738162893809081,
+      "centre_mm": [
+        29.5,
+        341.0,
+        105.00000000000001
+      ],
+      "basis": "ASSUMED density 7850 kg/m3; nominal CAD volume"
+    },
+    {
+      "id": "K06_End_False_341_105_nut",
+      "mass_kg": 0.0011723533112148236,
+      "centre_mm": [
+        32.5,
+        341.0,
+        105.0
+      ],
+      "basis": "ASSUMED density 7850 kg/m3; nominal CAD volume"
+    },
+    {
+      "id": "K06_End_False_341_205_screw",
+      "mass_kg": 0.005154253987112107,
+      "centre_mm": [
+        13.842105263157892,
+        341.0,
+        205.0
+      ],
+      "basis": "ASSUMED density 7850 kg/m3; nominal CAD volume"
+    },
+    {
+      "id": "K06_End_False_341_205_outer_washer",
+      "mass_kg": 0.0007738162893809077,
+      "centre_mm": [
+        -0.5,
+        341.00000000000006,
+        205.00000000000003
+      ],
+      "basis": "ASSUMED density 7850 kg/m3; nominal CAD volume"
+    },
+    {
+      "id": "K06_End_False_341_205_inner_washer",
+      "mass_kg": 0.0007738162893809078,
+      "centre_mm": [
+        29.5,
+        341.0,
+        204.99999999999997
+      ],
+      "basis": "ASSUMED density 7850 kg/m3; nominal CAD volume"
+    },
+    {
+      "id": "K06_End_False_341_205_nut",
+      "mass_kg": 0.0011723533112148236,
+      "centre_mm": [
+        32.5,
+        341.0,
+        205.0
+      ],
+      "basis": "ASSUMED density 7850 kg/m3; nominal CAD volume"
+    },
+    {
+      "id": "K06_End_False_341_405_screw",
+      "mass_kg": 0.005154253987112109,
+      "centre_mm": [
+        13.842105263157896,
+        341.0,
+        405.0
+      ],
+      "basis": "ASSUMED density 7850 kg/m3; nominal CAD volume"
+    },
+    {
+      "id": "K06_End_False_341_405_outer_washer",
+      "mass_kg": 0.0007738162893809079,
+      "centre_mm": [
+        -0.4999999999999998,
+        341.0,
+        405.0
+      ],
+      "basis": "ASSUMED density 7850 kg/m3; nominal CAD volume"
+    },
+    {
+      "id": "K06_End_False_341_405_inner_washer",
+      "mass_kg": 0.0007738162893809081,
+      "centre_mm": [
+        29.5,
+        341.0,
+        404.99999999999994
+      ],
+      "basis": "ASSUMED density 7850 kg/m3; nominal CAD volume"
+    },
+    {
+      "id": "K06_End_False_341_405_nut",
+      "mass_kg": 0.001172353311214822,
+      "centre_mm": [
+        32.5,
+        341.0,
+        405.0
+      ],
+      "basis": "ASSUMED density 7850 kg/m3; nominal CAD volume"
+    },
+    {
+      "id": "K06_End_False_341_505_screw",
+      "mass_kg": 0.005154253987112109,
+      "centre_mm": [
+        13.842105263157896,
+        341.0,
+        505.0
+      ],
+      "basis": "ASSUMED density 7850 kg/m3; nominal CAD volume"
+    },
+    {
+      "id": "K06_End_False_341_505_outer_washer",
+      "mass_kg": 0.0007738162893809079,
+      "centre_mm": [
+        -0.4999999999999998,
+        341.0,
+        505.0
+      ],
+      "basis": "ASSUMED density 7850 kg/m3; nominal CAD volume"
+    },
+    {
+      "id": "K06_End_False_341_505_inner_washer",
+      "mass_kg": 0.0007738162893809081,
+      "centre_mm": [
+        29.5,
+        341.0,
+        505.0
+      ],
+      "basis": "ASSUMED density 7850 kg/m3; nominal CAD volume"
+    },
+    {
+      "id": "K06_End_False_341_505_nut",
+      "mass_kg": 0.001172353311214822,
+      "centre_mm": [
+        32.5,
+        341.0,
+        505.00000000000006
+      ],
+      "basis": "ASSUMED density 7850 kg/m3; nominal CAD volume"
+    },
+    {
+      "id": "K06_End_True_19_105_screw",
+      "mass_kg": 0.005154253987112095,
+      "centre_mm": [
+        536.1578947368421,
+        19.0,
+        104.99999999999999
+      ],
+      "basis": "ASSUMED density 7850 kg/m3; nominal CAD volume"
+    },
+    {
+      "id": "K06_End_True_19_105_outer_washer",
+      "mass_kg": 0.0007738162893809079,
+      "centre_mm": [
+        550.5,
+        19.0,
+        105.0
+      ],
+      "basis": "ASSUMED density 7850 kg/m3; nominal CAD volume"
+    },
+    {
+      "id": "K06_End_True_19_105_inner_washer",
+      "mass_kg": 0.0007738162893809079,
+      "centre_mm": [
+        520.5,
+        19.0,
+        105.0
+      ],
+      "basis": "ASSUMED density 7850 kg/m3; nominal CAD volume"
+    },
+    {
+      "id": "K06_End_True_19_105_nut",
+      "mass_kg": 0.001172353311214825,
+      "centre_mm": [
+        517.5,
+        19.0,
+        105.0
+      ],
+      "basis": "ASSUMED density 7850 kg/m3; nominal CAD volume"
+    },
+    {
+      "id": "K06_End_True_19_205_screw",
+      "mass_kg": 0.005154253987112098,
+      "centre_mm": [
+        536.1578947368421,
+        19.0,
+        205.0
+      ],
+      "basis": "ASSUMED density 7850 kg/m3; nominal CAD volume"
+    },
+    {
+      "id": "K06_End_True_19_205_outer_washer",
+      "mass_kg": 0.0007738162893809077,
+      "centre_mm": [
+        550.5,
+        19.0,
+        205.00000000000003
+      ],
+      "basis": "ASSUMED density 7850 kg/m3; nominal CAD volume"
+    },
+    {
+      "id": "K06_End_True_19_205_inner_washer",
+      "mass_kg": 0.0007738162893809077,
+      "centre_mm": [
+        520.5,
+        19.0,
+        205.00000000000003
+      ],
+      "basis": "ASSUMED density 7850 kg/m3; nominal CAD volume"
+    },
+    {
+      "id": "K06_End_True_19_205_nut",
+      "mass_kg": 0.0011723533112148249,
+      "centre_mm": [
+        517.5,
+        19.0,
+        205.0
+      ],
+      "basis": "ASSUMED density 7850 kg/m3; nominal CAD volume"
+    },
+    {
+      "id": "K06_End_True_19_405_screw",
+      "mass_kg": 0.005154253987112101,
+      "centre_mm": [
+        536.1578947368421,
+        19.0,
+        405.00000000000006
+      ],
+      "basis": "ASSUMED density 7850 kg/m3; nominal CAD volume"
+    },
+    {
+      "id": "K06_End_True_19_405_outer_washer",
+      "mass_kg": 0.0007738162893809078,
+      "centre_mm": [
+        550.5,
+        19.0,
+        405.0
+      ],
+      "basis": "ASSUMED density 7850 kg/m3; nominal CAD volume"
+    },
+    {
+      "id": "K06_End_True_19_405_inner_washer",
+      "mass_kg": 0.0007738162893809078,
+      "centre_mm": [
+        520.5,
+        19.0,
+        405.0
+      ],
+      "basis": "ASSUMED density 7850 kg/m3; nominal CAD volume"
+    },
+    {
+      "id": "K06_End_True_19_405_nut",
+      "mass_kg": 0.0011723533112148233,
+      "centre_mm": [
+        517.5,
+        19.0,
+        405.0
+      ],
+      "basis": "ASSUMED density 7850 kg/m3; nominal CAD volume"
+    },
+    {
+      "id": "K06_End_True_19_505_screw",
+      "mass_kg": 0.005154253987112101,
+      "centre_mm": [
+        536.1578947368421,
+        19.0,
+        505.0
+      ],
+      "basis": "ASSUMED density 7850 kg/m3; nominal CAD volume"
+    },
+    {
+      "id": "K06_End_True_19_505_outer_washer",
+      "mass_kg": 0.0007738162893809078,
+      "centre_mm": [
+        550.5,
+        19.0,
+        505.0
+      ],
+      "basis": "ASSUMED density 7850 kg/m3; nominal CAD volume"
+    },
+    {
+      "id": "K06_End_True_19_505_inner_washer",
+      "mass_kg": 0.0007738162893809078,
+      "centre_mm": [
+        520.5,
+        19.0,
+        505.0
+      ],
+      "basis": "ASSUMED density 7850 kg/m3; nominal CAD volume"
+    },
+    {
+      "id": "K06_End_True_19_505_nut",
+      "mass_kg": 0.0011723533112148233,
+      "centre_mm": [
+        517.5,
+        19.0,
+        505.00000000000006
+      ],
+      "basis": "ASSUMED density 7850 kg/m3; nominal CAD volume"
+    },
+    {
+      "id": "K06_End_True_341_105_screw",
+      "mass_kg": 0.005154253987112103,
+      "centre_mm": [
+        536.1578947368421,
+        341.0,
+        105.00000000000001
+      ],
+      "basis": "ASSUMED density 7850 kg/m3; nominal CAD volume"
+    },
+    {
+      "id": "K06_End_True_341_105_outer_washer",
+      "mass_kg": 0.000773816289380908,
+      "centre_mm": [
+        550.5,
+        341.00000000000006,
+        105.0
+      ],
+      "basis": "ASSUMED density 7850 kg/m3; nominal CAD volume"
+    },
+    {
+      "id": "K06_End_True_341_105_inner_washer",
+      "mass_kg": 0.000773816289380908,
+      "centre_mm": [
+        520.5,
+        341.00000000000006,
+        105.0
+      ],
+      "basis": "ASSUMED density 7850 kg/m3; nominal CAD volume"
+    },
+    {
+      "id": "K06_End_True_341_105_nut",
+      "mass_kg": 0.0011723533112148242,
+      "centre_mm": [
+        517.5,
+        341.0,
+        105.0
+      ],
+      "basis": "ASSUMED density 7850 kg/m3; nominal CAD volume"
+    },
+    {
+      "id": "K06_End_True_341_205_screw",
+      "mass_kg": 0.005154253987112107,
+      "centre_mm": [
+        536.1578947368421,
+        341.0,
+        205.0
+      ],
+      "basis": "ASSUMED density 7850 kg/m3; nominal CAD volume"
+    },
+    {
+      "id": "K06_End_True_341_205_outer_washer",
+      "mass_kg": 0.0007738162893809077,
+      "centre_mm": [
+        550.5,
+        341.00000000000006,
+        205.00000000000003
+      ],
+      "basis": "ASSUMED density 7850 kg/m3; nominal CAD volume"
+    },
+    {
+      "id": "K06_End_True_341_205_inner_washer",
+      "mass_kg": 0.0007738162893809077,
+      "centre_mm": [
+        520.5,
+        341.00000000000006,
+        205.00000000000003
+      ],
+      "basis": "ASSUMED density 7850 kg/m3; nominal CAD volume"
+    },
+    {
+      "id": "K06_End_True_341_205_nut",
+      "mass_kg": 0.0011723533112148236,
+      "centre_mm": [
+        517.5,
+        341.0,
+        205.0
+      ],
+      "basis": "ASSUMED density 7850 kg/m3; nominal CAD volume"
+    },
+    {
+      "id": "K06_End_True_341_405_screw",
+      "mass_kg": 0.005154253987112111,
+      "centre_mm": [
+        536.1578947368421,
+        341.0,
+        405.00000000000006
+      ],
+      "basis": "ASSUMED density 7850 kg/m3; nominal CAD volume"
+    },
+    {
+      "id": "K06_End_True_341_405_outer_washer",
+      "mass_kg": 0.0007738162893809079,
+      "centre_mm": [
+        550.5,
+        341.0,
+        405.0
+      ],
+      "basis": "ASSUMED density 7850 kg/m3; nominal CAD volume"
+    },
+    {
+      "id": "K06_End_True_341_405_inner_washer",
+      "mass_kg": 0.0007738162893809079,
+      "centre_mm": [
+        520.5,
+        341.0,
+        405.0
+      ],
+      "basis": "ASSUMED density 7850 kg/m3; nominal CAD volume"
+    },
+    {
+      "id": "K06_End_True_341_405_nut",
+      "mass_kg": 0.0011723533112148225,
+      "centre_mm": [
+        517.5,
+        341.0,
+        405.0
+      ],
+      "basis": "ASSUMED density 7850 kg/m3; nominal CAD volume"
+    },
+    {
+      "id": "K06_End_True_341_505_screw",
+      "mass_kg": 0.005154253987112111,
+      "centre_mm": [
+        536.1578947368421,
+        341.0,
+        505.0
+      ],
+      "basis": "ASSUMED density 7850 kg/m3; nominal CAD volume"
+    },
+    {
+      "id": "K06_End_True_341_505_outer_washer",
+      "mass_kg": 0.0007738162893809079,
+      "centre_mm": [
+        550.5,
+        341.0,
+        505.0
+      ],
+      "basis": "ASSUMED density 7850 kg/m3; nominal CAD volume"
+    },
+    {
+      "id": "K06_End_True_341_505_inner_washer",
+      "mass_kg": 0.0007738162893809079,
+      "centre_mm": [
+        520.5,
+        341.0,
+        505.0
+      ],
+      "basis": "ASSUMED density 7850 kg/m3; nominal CAD volume"
+    },
+    {
+      "id": "K06_End_True_341_505_nut",
+      "mass_kg": 0.0011723533112148225,
+      "centre_mm": [
+        517.5,
+        341.0,
+        505.00000000000006
+      ],
+      "basis": "ASSUMED density 7850 kg/m3; nominal CAD volume"
+    },
+    {
+      "id": "K07_Seat_False_20_155_screw",
+      "mass_kg": 0.005154253987112092,
+      "centre_mm": [
+        20.0,
+        13.842105263157894,
+        155.0
+      ],
+      "basis": "ASSUMED density 7850 kg/m3; nominal CAD volume"
+    },
+    {
+      "id": "K07_Seat_False_20_155_outer_washer",
+      "mass_kg": 0.000773816289380908,
+      "centre_mm": [
+        19.999999999999996,
+        -0.5,
+        155.0
+      ],
+      "basis": "ASSUMED density 7850 kg/m3; nominal CAD volume"
+    },
+    {
+      "id": "K07_Seat_False_20_155_inner_washer",
+      "mass_kg": 0.000773816289380908,
+      "centre_mm": [
+        19.999999999999996,
+        29.5,
+        155.0
+      ],
+      "basis": "ASSUMED density 7850 kg/m3; nominal CAD volume"
+    },
+    {
+      "id": "K07_Seat_False_20_155_nut",
+      "mass_kg": 0.001172353311214825,
+      "centre_mm": [
+        20.0,
+        32.5,
+        155.0
+      ],
+      "basis": "ASSUMED density 7850 kg/m3; nominal CAD volume"
+    },
+    {
+      "id": "K07_Seat_False_20_255_screw",
+      "mass_kg": 0.005154253987112099,
+      "centre_mm": [
+        20.0,
+        13.842105263157894,
+        255.0
+      ],
+      "basis": "ASSUMED density 7850 kg/m3; nominal CAD volume"
+    },
+    {
+      "id": "K07_Seat_False_20_255_outer_washer",
+      "mass_kg": 0.000773816289380908,
+      "centre_mm": [
+        20.0,
+        -0.5,
+        255.0
+      ],
+      "basis": "ASSUMED density 7850 kg/m3; nominal CAD volume"
+    },
+    {
+      "id": "K07_Seat_False_20_255_inner_washer",
+      "mass_kg": 0.0007738162893809082,
+      "centre_mm": [
+        20.0,
+        29.5,
+        255.0
+      ],
+      "basis": "ASSUMED density 7850 kg/m3; nominal CAD volume"
+    },
+    {
+      "id": "K07_Seat_False_20_255_nut",
+      "mass_kg": 0.0011723533112148244,
+      "centre_mm": [
+        20.0,
+        32.5,
+        255.0
+      ],
+      "basis": "ASSUMED density 7850 kg/m3; nominal CAD volume"
+    },
+    {
+      "id": "K07_Seat_False_20_355_screw",
+      "mass_kg": 0.005154253987112099,
+      "centre_mm": [
+        20.0,
+        13.842105263157887,
+        355.0
+      ],
+      "basis": "ASSUMED density 7850 kg/m3; nominal CAD volume"
+    },
+    {
+      "id": "K07_Seat_False_20_355_outer_washer",
+      "mass_kg": 0.0007738162893809079,
+      "centre_mm": [
+        20.0,
+        -0.49999999999999983,
+        354.99999999999994
+      ],
+      "basis": "ASSUMED density 7850 kg/m3; nominal CAD volume"
+    },
+    {
+      "id": "K07_Seat_False_20_355_inner_washer",
+      "mass_kg": 0.0007738162893809081,
+      "centre_mm": [
+        20.0,
+        29.5,
+        355.0
+      ],
+      "basis": "ASSUMED density 7850 kg/m3; nominal CAD volume"
+    },
+    {
+      "id": "K07_Seat_False_20_355_nut",
+      "mass_kg": 0.0011723533112148236,
+      "centre_mm": [
+        20.0,
+        32.5,
+        355.0
+      ],
+      "basis": "ASSUMED density 7850 kg/m3; nominal CAD volume"
+    },
+    {
+      "id": "K07_Seat_False_20_455_screw",
+      "mass_kg": 0.005154253987112099,
+      "centre_mm": [
+        20.0,
+        13.842105263157887,
+        455.0
+      ],
+      "basis": "ASSUMED density 7850 kg/m3; nominal CAD volume"
+    },
+    {
+      "id": "K07_Seat_False_20_455_outer_washer",
+      "mass_kg": 0.0007738162893809079,
+      "centre_mm": [
+        20.0,
+        -0.49999999999999983,
+        455.0
+      ],
+      "basis": "ASSUMED density 7850 kg/m3; nominal CAD volume"
+    },
+    {
+      "id": "K07_Seat_False_20_455_inner_washer",
+      "mass_kg": 0.0007738162893809081,
+      "centre_mm": [
+        20.0,
+        29.5,
+        455.0
+      ],
+      "basis": "ASSUMED density 7850 kg/m3; nominal CAD volume"
+    },
+    {
+      "id": "K07_Seat_False_20_455_nut",
+      "mass_kg": 0.0011723533112148236,
+      "centre_mm": [
+        20.0,
+        32.5,
+        455.0
+      ],
+      "basis": "ASSUMED density 7850 kg/m3; nominal CAD volume"
+    },
+    {
+      "id": "K07_Seat_False_530_155_screw",
+      "mass_kg": 0.0051542539871120814,
+      "centre_mm": [
+        530.0,
+        13.842105263157896,
+        155.0
+      ],
+      "basis": "ASSUMED density 7850 kg/m3; nominal CAD volume"
+    },
+    {
+      "id": "K07_Seat_False_530_155_outer_washer",
+      "mass_kg": 0.000773816289380907,
+      "centre_mm": [
+        530.0,
+        -0.49999999999999983,
+        155.0
+      ],
+      "basis": "ASSUMED density 7850 kg/m3; nominal CAD volume"
+    },
+    {
+      "id": "K07_Seat_False_530_155_inner_washer",
+      "mass_kg": 0.0007738162893809071,
+      "centre_mm": [
+        530.0,
+        29.5,
+        155.0
+      ],
+      "basis": "ASSUMED density 7850 kg/m3; nominal CAD volume"
+    },
+    {
+      "id": "K07_Seat_False_530_155_nut",
+      "mass_kg": 0.0011723533112148253,
+      "centre_mm": [
+        530.0,
+        32.5,
+        155.0
+      ],
+      "basis": "ASSUMED density 7850 kg/m3; nominal CAD volume"
+    },
+    {
+      "id": "K07_Seat_False_530_255_screw",
+      "mass_kg": 0.005154253987112087,
+      "centre_mm": [
+        530.0,
+        13.842105263157901,
+        255.0
+      ],
+      "basis": "ASSUMED density 7850 kg/m3; nominal CAD volume"
+    },
+    {
+      "id": "K07_Seat_False_530_255_outer_washer",
+      "mass_kg": 0.000773816289380907,
+      "centre_mm": [
+        530.0,
+        -0.49999999999999983,
+        255.0
+      ],
+      "basis": "ASSUMED density 7850 kg/m3; nominal CAD volume"
+    },
+    {
+      "id": "K07_Seat_False_530_255_inner_washer",
+      "mass_kg": 0.0007738162893809071,
+      "centre_mm": [
+        530.0,
+        29.5,
+        255.0
+      ],
+      "basis": "ASSUMED density 7850 kg/m3; nominal CAD volume"
+    },
+    {
+      "id": "K07_Seat_False_530_255_nut",
+      "mass_kg": 0.0011723533112148246,
+      "centre_mm": [
+        530.0,
+        32.5,
+        255.0
+      ],
+      "basis": "ASSUMED density 7850 kg/m3; nominal CAD volume"
+    },
+    {
+      "id": "K07_Seat_False_530_355_screw",
+      "mass_kg": 0.005154253987112088,
+      "centre_mm": [
+        530.0,
+        13.84210526315789,
+        355.0
+      ],
+      "basis": "ASSUMED density 7850 kg/m3; nominal CAD volume"
+    },
+    {
+      "id": "K07_Seat_False_530_355_outer_washer",
+      "mass_kg": 0.0007738162893809071,
+      "centre_mm": [
+        530.0,
+        -0.4999999999999998,
+        355.0
+      ],
+      "basis": "ASSUMED density 7850 kg/m3; nominal CAD volume"
+    },
+    {
+      "id": "K07_Seat_False_530_355_inner_washer",
+      "mass_kg": 0.0007738162893809075,
+      "centre_mm": [
+        530.0,
+        29.500000000000004,
+        355.0
+      ],
+      "basis": "ASSUMED density 7850 kg/m3; nominal CAD volume"
+    },
+    {
+      "id": "K07_Seat_False_530_355_nut",
+      "mass_kg": 0.0011723533112148238,
+      "centre_mm": [
+        530.0,
+        32.5,
+        355.0
+      ],
+      "basis": "ASSUMED density 7850 kg/m3; nominal CAD volume"
+    },
+    {
+      "id": "K07_Seat_False_530_455_screw",
+      "mass_kg": 0.005154253987112088,
+      "centre_mm": [
+        530.0,
+        13.84210526315789,
+        455.00000000000006
+      ],
+      "basis": "ASSUMED density 7850 kg/m3; nominal CAD volume"
+    },
+    {
+      "id": "K07_Seat_False_530_455_outer_washer",
+      "mass_kg": 0.0007738162893809071,
+      "centre_mm": [
+        530.0,
+        -0.4999999999999998,
+        455.0
+      ],
+      "basis": "ASSUMED density 7850 kg/m3; nominal CAD volume"
+    },
+    {
+      "id": "K07_Seat_False_530_455_inner_washer",
+      "mass_kg": 0.0007738162893809075,
+      "centre_mm": [
+        530.0,
+        29.500000000000004,
+        455.0
+      ],
+      "basis": "ASSUMED density 7850 kg/m3; nominal CAD volume"
+    },
+    {
+      "id": "K07_Seat_False_530_455_nut",
+      "mass_kg": 0.0011723533112148238,
+      "centre_mm": [
+        530.0,
+        32.5,
+        455.00000000000006
+      ],
+      "basis": "ASSUMED density 7850 kg/m3; nominal CAD volume"
+    },
+    {
+      "id": "K07_Seat_True_20_155_screw",
+      "mass_kg": 0.005154253987112092,
+      "centre_mm": [
+        20.0,
+        346.1578947368421,
+        155.0
+      ],
+      "basis": "ASSUMED density 7850 kg/m3; nominal CAD volume"
+    },
+    {
+      "id": "K07_Seat_True_20_155_outer_washer",
+      "mass_kg": 0.0007738162893809081,
+      "centre_mm": [
+        20.0,
+        360.49999999999994,
+        155.0
+      ],
+      "basis": "ASSUMED density 7850 kg/m3; nominal CAD volume"
+    },
+    {
+      "id": "K07_Seat_True_20_155_inner_washer",
+      "mass_kg": 0.0007738162893809081,
+      "centre_mm": [
+        20.0,
+        330.5,
+        155.0
+      ],
+      "basis": "ASSUMED density 7850 kg/m3; nominal CAD volume"
+    },
+    {
+      "id": "K07_Seat_True_20_155_nut",
+      "mass_kg": 0.0011723533112148249,
+      "centre_mm": [
+        20.0,
+        327.5,
+        155.0
+      ],
+      "basis": "ASSUMED density 7850 kg/m3; nominal CAD volume"
+    },
+    {
+      "id": "K07_Seat_True_20_255_screw",
+      "mass_kg": 0.005154253987112099,
+      "centre_mm": [
+        20.0,
+        346.1578947368421,
+        255.0
+      ],
+      "basis": "ASSUMED density 7850 kg/m3; nominal CAD volume"
+    },
+    {
+      "id": "K07_Seat_True_20_255_outer_washer",
+      "mass_kg": 0.0007738162893809081,
+      "centre_mm": [
+        20.0,
+        360.49999999999994,
+        255.0
+      ],
+      "basis": "ASSUMED density 7850 kg/m3; nominal CAD volume"
+    },
+    {
+      "id": "K07_Seat_True_20_255_inner_washer",
+      "mass_kg": 0.0007738162893809081,
+      "centre_mm": [
+        20.0,
+        330.5,
+        255.0
+      ],
+      "basis": "ASSUMED density 7850 kg/m3; nominal CAD volume"
+    },
+    {
+      "id": "K07_Seat_True_20_255_nut",
+      "mass_kg": 0.0011723533112148244,
+      "centre_mm": [
+        20.0,
+        327.5,
+        255.0
+      ],
+      "basis": "ASSUMED density 7850 kg/m3; nominal CAD volume"
+    },
+    {
+      "id": "K07_Seat_True_20_355_screw",
+      "mass_kg": 0.005154253987112099,
+      "centre_mm": [
+        20.0,
+        346.15789473684214,
+        355.0
+      ],
+      "basis": "ASSUMED density 7850 kg/m3; nominal CAD volume"
+    },
+    {
+      "id": "K07_Seat_True_20_355_outer_washer",
+      "mass_kg": 0.000773816289380908,
+      "centre_mm": [
+        20.0,
+        360.5,
+        355.0
+      ],
+      "basis": "ASSUMED density 7850 kg/m3; nominal CAD volume"
+    },
+    {
+      "id": "K07_Seat_True_20_355_inner_washer",
+      "mass_kg": 0.000773816289380908,
+      "centre_mm": [
+        20.0,
+        330.5,
+        355.0
+      ],
+      "basis": "ASSUMED density 7850 kg/m3; nominal CAD volume"
+    },
+    {
+      "id": "K07_Seat_True_20_355_nut",
+      "mass_kg": 0.0011723533112148233,
+      "centre_mm": [
+        20.0,
+        327.5,
+        355.0
+      ],
+      "basis": "ASSUMED density 7850 kg/m3; nominal CAD volume"
+    },
+    {
+      "id": "K07_Seat_True_20_455_screw",
+      "mass_kg": 0.005154253987112099,
+      "centre_mm": [
+        20.0,
+        346.15789473684214,
+        455.0
+      ],
+      "basis": "ASSUMED density 7850 kg/m3; nominal CAD volume"
+    },
+    {
+      "id": "K07_Seat_True_20_455_outer_washer",
+      "mass_kg": 0.000773816289380908,
+      "centre_mm": [
+        20.0,
+        360.5,
+        455.0
+      ],
+      "basis": "ASSUMED density 7850 kg/m3; nominal CAD volume"
+    },
+    {
+      "id": "K07_Seat_True_20_455_inner_washer",
+      "mass_kg": 0.000773816289380908,
+      "centre_mm": [
+        20.0,
+        330.5,
+        455.0
+      ],
+      "basis": "ASSUMED density 7850 kg/m3; nominal CAD volume"
+    },
+    {
+      "id": "K07_Seat_True_20_455_nut",
+      "mass_kg": 0.0011723533112148233,
+      "centre_mm": [
+        20.0,
+        327.5,
+        455.0
+      ],
+      "basis": "ASSUMED density 7850 kg/m3; nominal CAD volume"
+    },
+    {
+      "id": "K07_Seat_True_530_155_screw",
+      "mass_kg": 0.0051542539871120814,
+      "centre_mm": [
+        530.0,
+        346.1578947368421,
+        155.0
+      ],
+      "basis": "ASSUMED density 7850 kg/m3; nominal CAD volume"
+    },
+    {
+      "id": "K07_Seat_True_530_155_outer_washer",
+      "mass_kg": 0.0007738162893809071,
+      "centre_mm": [
+        530.0,
+        360.5,
+        155.0
+      ],
+      "basis": "ASSUMED density 7850 kg/m3; nominal CAD volume"
+    },
+    {
+      "id": "K07_Seat_True_530_155_inner_washer",
+      "mass_kg": 0.0007738162893809071,
+      "centre_mm": [
+        530.0,
+        330.5,
+        155.0
+      ],
+      "basis": "ASSUMED density 7850 kg/m3; nominal CAD volume"
+    },
+    {
+      "id": "K07_Seat_True_530_155_nut",
+      "mass_kg": 0.001172353311214825,
+      "centre_mm": [
+        530.0,
+        327.5,
+        155.0
+      ],
+      "basis": "ASSUMED density 7850 kg/m3; nominal CAD volume"
+    },
+    {
+      "id": "K07_Seat_True_530_255_screw",
+      "mass_kg": 0.005154253987112087,
+      "centre_mm": [
+        530.0,
+        346.1578947368421,
+        255.0
+      ],
+      "basis": "ASSUMED density 7850 kg/m3; nominal CAD volume"
+    },
+    {
+      "id": "K07_Seat_True_530_255_outer_washer",
+      "mass_kg": 0.000773816289380907,
+      "centre_mm": [
+        530.0,
+        360.5,
+        255.0
+      ],
+      "basis": "ASSUMED density 7850 kg/m3; nominal CAD volume"
+    },
+    {
+      "id": "K07_Seat_True_530_255_inner_washer",
+      "mass_kg": 0.000773816289380907,
+      "centre_mm": [
+        530.0,
+        330.5,
+        255.0
+      ],
+      "basis": "ASSUMED density 7850 kg/m3; nominal CAD volume"
+    },
+    {
+      "id": "K07_Seat_True_530_255_nut",
+      "mass_kg": 0.0011723533112148249,
+      "centre_mm": [
+        530.0,
+        327.5,
+        255.0
+      ],
+      "basis": "ASSUMED density 7850 kg/m3; nominal CAD volume"
+    },
+    {
+      "id": "K07_Seat_True_530_355_screw",
+      "mass_kg": 0.005154253987112088,
+      "centre_mm": [
+        530.0,
+        346.15789473684214,
+        355.0
+      ],
+      "basis": "ASSUMED density 7850 kg/m3; nominal CAD volume"
+    },
+    {
+      "id": "K07_Seat_True_530_355_outer_washer",
+      "mass_kg": 0.0007738162893809072,
+      "centre_mm": [
+        530.0,
+        360.49999999999994,
+        355.0
+      ],
+      "basis": "ASSUMED density 7850 kg/m3; nominal CAD volume"
+    },
+    {
+      "id": "K07_Seat_True_530_355_inner_washer",
+      "mass_kg": 0.0007738162893809072,
+      "centre_mm": [
+        530.0,
+        330.5,
+        355.0
+      ],
+      "basis": "ASSUMED density 7850 kg/m3; nominal CAD volume"
+    },
+    {
+      "id": "K07_Seat_True_530_355_nut",
+      "mass_kg": 0.0011723533112148242,
+      "centre_mm": [
+        530.0,
+        327.5,
+        355.0
+      ],
+      "basis": "ASSUMED density 7850 kg/m3; nominal CAD volume"
+    },
+    {
+      "id": "K07_Seat_True_530_455_screw",
+      "mass_kg": 0.005154253987112088,
+      "centre_mm": [
+        530.0,
+        346.15789473684214,
+        455.00000000000006
+      ],
+      "basis": "ASSUMED density 7850 kg/m3; nominal CAD volume"
+    },
+    {
+      "id": "K07_Seat_True_530_455_outer_washer",
+      "mass_kg": 0.0007738162893809072,
+      "centre_mm": [
+        530.0,
+        360.49999999999994,
+        455.0
+      ],
+      "basis": "ASSUMED density 7850 kg/m3; nominal CAD volume"
+    },
+    {
+      "id": "K07_Seat_True_530_455_inner_washer",
+      "mass_kg": 0.0007738162893809072,
+      "centre_mm": [
+        530.0,
+        330.5,
+        455.0
+      ],
+      "basis": "ASSUMED density 7850 kg/m3; nominal CAD volume"
+    },
+    {
+      "id": "K07_Seat_True_530_455_nut",
+      "mass_kg": 0.0011723533112148242,
+      "centre_mm": [
+        530.0,
+        327.5,
+        455.00000000000006
+      ],
+      "basis": "ASSUMED density 7850 kg/m3; nominal CAD volume"
+    },
+    {
+      "id": "K10_washer_H10_False_19_19",
+      "mass_kg": 0.0007738162893809077,
+      "centre_mm": [
+        19.0,
+        19.0,
+        19.5
+      ],
+      "basis": "ASSUMED density 7850 kg/m3; nominal CAD volume"
+    },
+    {
+      "id": "K10_head_H10_False_19_19",
+      "mass_kg": 0.0012084136142033143,
+      "centre_mm": [
+        19.0,
+        19.0,
+        17.0
+      ],
+      "basis": "ASSUMED density 7850 kg/m3; nominal CAD volume"
+    },
+    {
+      "id": "K10_washer_H10_False_19_341",
+      "mass_kg": 0.0007738162893809079,
+      "centre_mm": [
+        19.0,
+        341.0,
+        19.5
+      ],
+      "basis": "ASSUMED density 7850 kg/m3; nominal CAD volume"
+    },
+    {
+      "id": "K10_head_H10_False_19_341",
+      "mass_kg": 0.0012084136142033154,
+      "centre_mm": [
+        19.0,
+        341.0,
+        17.0
+      ],
+      "basis": "ASSUMED density 7850 kg/m3; nominal CAD volume"
+    },
+    {
+      "id": "K10_washer_H10_False_531_19",
+      "mass_kg": 0.000773816289380907,
+      "centre_mm": [
+        531.0,
+        19.0,
+        19.5
+      ],
+      "basis": "ASSUMED density 7850 kg/m3; nominal CAD volume"
+    },
+    {
+      "id": "K10_head_H10_False_531_19",
+      "mass_kg": 0.0012084136142033123,
+      "centre_mm": [
+        531.0,
+        19.0,
+        17.0
+      ],
+      "basis": "ASSUMED density 7850 kg/m3; nominal CAD volume"
+    },
+    {
+      "id": "K10_washer_H10_False_531_341",
+      "mass_kg": 0.0007738162893809071,
+      "centre_mm": [
+        531.0,
+        341.0,
+        19.5
+      ],
+      "basis": "ASSUMED density 7850 kg/m3; nominal CAD volume"
+    },
+    {
+      "id": "K10_head_H10_False_531_341",
+      "mass_kg": 0.001208413614203313,
+      "centre_mm": [
+        531.0,
+        341.0,
+        17.0
+      ],
+      "basis": "ASSUMED density 7850 kg/m3; nominal CAD volume"
+    },
+    {
+      "id": "K10_washer_H10_True_19_19",
+      "mass_kg": 0.0007738162893809077,
+      "centre_mm": [
+        19.0,
+        19.0,
+        580.5
+      ],
+      "basis": "ASSUMED density 7850 kg/m3; nominal CAD volume"
+    },
+    {
+      "id": "K10_head_H10_True_19_19",
+      "mass_kg": 0.0012084136142033143,
+      "centre_mm": [
+        19.0,
+        19.0,
+        583.0
+      ],
+      "basis": "ASSUMED density 7850 kg/m3; nominal CAD volume"
+    },
+    {
+      "id": "K10_washer_H10_True_19_341",
+      "mass_kg": 0.0007738162893809079,
+      "centre_mm": [
+        19.0,
+        341.0,
+        580.5
+      ],
+      "basis": "ASSUMED density 7850 kg/m3; nominal CAD volume"
+    },
+    {
+      "id": "K10_head_H10_True_19_341",
+      "mass_kg": 0.0012084136142033154,
+      "centre_mm": [
+        19.0,
+        341.0,
+        583.0
+      ],
+      "basis": "ASSUMED density 7850 kg/m3; nominal CAD volume"
+    },
+    {
+      "id": "K10_washer_H10_True_531_19",
+      "mass_kg": 0.000773816289380907,
+      "centre_mm": [
+        531.0,
+        19.0,
+        580.5
+      ],
+      "basis": "ASSUMED density 7850 kg/m3; nominal CAD volume"
+    },
+    {
+      "id": "K10_head_H10_True_531_19",
+      "mass_kg": 0.0012084136142033123,
+      "centre_mm": [
+        531.0,
+        19.0,
+        583.0
+      ],
+      "basis": "ASSUMED density 7850 kg/m3; nominal CAD volume"
+    },
+    {
+      "id": "K10_washer_H10_True_531_341",
+      "mass_kg": 0.0007738162893809071,
+      "centre_mm": [
+        531.0,
+        341.0,
+        580.5
+      ],
+      "basis": "ASSUMED density 7850 kg/m3; nominal CAD volume"
+    },
+    {
+      "id": "K10_head_H10_True_531_341",
+      "mass_kg": 0.001208413614203313,
+      "centre_mm": [
+        531.0,
+        341.0,
+        583.0
+      ],
+      "basis": "ASSUMED density 7850 kg/m3; nominal CAD volume"
+    },
+    {
+      "id": "K08_M08_Foot_25_15_screw",
+      "mass_kg": 0.0041677938938849005,
+      "centre_mm": [
+        40.0,
+        30.0,
+        18.071005917159763
+      ],
+      "basis": "ASSUMED density 7850 kg/m3; nominal CAD volume"
+    },
+    {
+      "id": "K08_M08_Foot_25_15_lower_washer",
+      "mass_kg": 0.0007738162893809077,
+      "centre_mm": [
+        40.0,
+        30.0,
+        8.5
+      ],
+      "basis": "ASSUMED density 7850 kg/m3; nominal CAD volume"
+    },
+    {
+      "id": "K08_M08_Foot_25_15_upper_washer",
+      "mass_kg": 0.0007738162893809077,
+      "centre_mm": [
+        40.0,
+        30.0,
+        29.499999999999996
+      ],
+      "basis": "ASSUMED density 7850 kg/m3; nominal CAD volume"
+    },
+    {
+      "id": "K08_M08_Foot_25_15_nut",
+      "mass_kg": 0.0011723533112148249,
+      "centre_mm": [
+        40.0,
+        29.999999999999996,
+        32.5
+      ],
+      "basis": "ASSUMED density 7850 kg/m3; nominal CAD volume"
+    },
+    {
+      "id": "K08_M08_Foot_25_315_screw",
+      "mass_kg": 0.004167793893884907,
+      "centre_mm": [
+        40.0,
+        330.0,
+        18.071005917159766
+      ],
+      "basis": "ASSUMED density 7850 kg/m3; nominal CAD volume"
+    },
+    {
+      "id": "K08_M08_Foot_25_315_lower_washer",
+      "mass_kg": 0.0007738162893809081,
+      "centre_mm": [
+        40.0,
+        330.0,
+        8.5
+      ],
+      "basis": "ASSUMED density 7850 kg/m3; nominal CAD volume"
+    },
+    {
+      "id": "K08_M08_Foot_25_315_upper_washer",
+      "mass_kg": 0.0007738162893809081,
+      "centre_mm": [
+        40.0,
+        330.0,
+        29.5
+      ],
+      "basis": "ASSUMED density 7850 kg/m3; nominal CAD volume"
+    },
+    {
+      "id": "K08_M08_Foot_25_315_nut",
+      "mass_kg": 0.0011723533112148236,
+      "centre_mm": [
+        40.0,
+        330.0,
+        32.5
+      ],
+      "basis": "ASSUMED density 7850 kg/m3; nominal CAD volume"
+    },
+    {
+      "id": "K08_M08_Foot_495_15_screw",
+      "mass_kg": 0.004167793893884906,
+      "centre_mm": [
+        510.0,
+        30.0,
+        18.071005917159766
+      ],
+      "basis": "ASSUMED density 7850 kg/m3; nominal CAD volume"
+    },
+    {
+      "id": "K08_M08_Foot_495_15_lower_washer",
+      "mass_kg": 0.0007738162893809068,
+      "centre_mm": [
+        510.0,
+        30.0,
+        8.5
+      ],
+      "basis": "ASSUMED density 7850 kg/m3; nominal CAD volume"
+    },
+    {
+      "id": "K08_M08_Foot_495_15_upper_washer",
+      "mass_kg": 0.0007738162893809068,
+      "centre_mm": [
+        510.0,
+        30.0,
+        29.5
+      ],
+      "basis": "ASSUMED density 7850 kg/m3; nominal CAD volume"
+    },
+    {
+      "id": "K08_M08_Foot_495_15_nut",
+      "mass_kg": 0.001172353311214823,
+      "centre_mm": [
+        510.0,
+        30.0,
+        32.5
+      ],
+      "basis": "ASSUMED density 7850 kg/m3; nominal CAD volume"
+    },
+    {
+      "id": "K08_M08_Foot_495_315_screw",
+      "mass_kg": 0.0041677938938849135,
+      "centre_mm": [
+        510.0,
+        330.0,
+        18.071005917159763
+      ],
+      "basis": "ASSUMED density 7850 kg/m3; nominal CAD volume"
+    },
+    {
+      "id": "K08_M08_Foot_495_315_lower_washer",
+      "mass_kg": 0.0007738162893809069,
+      "centre_mm": [
+        510.0,
+        330.0,
+        8.5
+      ],
+      "basis": "ASSUMED density 7850 kg/m3; nominal CAD volume"
+    },
+    {
+      "id": "K08_M08_Foot_495_315_upper_washer",
+      "mass_kg": 0.0007738162893809069,
+      "centre_mm": [
+        510.0,
+        330.0,
+        29.5
+      ],
+      "basis": "ASSUMED density 7850 kg/m3; nominal CAD volume"
+    },
+    {
+      "id": "K08_M08_Foot_495_315_nut",
+      "mass_kg": 0.001172353311214822,
+      "centre_mm": [
+        510.0,
+        330.0,
+        32.5
+      ],
+      "basis": "ASSUMED density 7850 kg/m3; nominal CAD volume"
+    }
+  ],
+  "partial_only_edge_diagnostics": [
+    {
+      "edge_mm": [
+        [
+          25.0,
+          15.0
+        ],
+        [
+          525.0,
+          15.0
+        ]
+      ],
+      "outward_direction_xy": [
+        0.0,
+        -1.0
+      ],
+      "margin_mm": 165.11069463699184,
+      "static_tip_force_N": 32.3769510279581,
+      "incline_onset_deg": 24.307892449104624
+    },
+    {
+      "edge_mm": [
+        [
+          525.0,
+          15.0
+        ],
+        [
+          525.0,
+          345.0
+        ]
+      ],
+      "outward_direction_xy": [
+        1.0,
+        -0.0
+      ],
+      "margin_mm": 249.95585866841316,
+      "static_tip_force_N": 49.014442178025305,
+      "incline_onset_deg": 34.36388489555392
+    },
+    {
+      "edge_mm": [
+        [
+          525.0,
+          345.0
+        ],
+        [
+          25.0,
+          345.0
+        ]
+      ],
+      "outward_direction_xy": [
+        0.0,
+        1.0
+      ],
+      "margin_mm": 164.88930536300816,
+      "static_tip_force_N": 32.3335382756973,
+      "incline_onset_deg": 24.27906516787025
+    },
+    {
+      "edge_mm": [
+        [
+          25.0,
+          345.0
+        ],
+        [
+          25.0,
+          15.0
+        ]
+      ],
+      "outward_direction_xy": [
+        -1.0,
+        -0.0
+      ],
+      "margin_mm": 250.04414133158684,
+      "static_tip_force_N": 49.03175373660409,
+      "incline_onset_deg": 34.3733126852359
+    }
+  ],
+  "whole_device_mass_kg": null,
+  "whole_device_centroid_mm": null,
+  "limits": "Nominal foot contact only; actual friction, compression, floor contact and unevenness unknown. Partial CG and tipping numbers do NOT describe the complete device. Missing masses/locations, grades, joints, real guards and measured assembly required. No impact, cable pull, service-removal qualification, sliding test or safety factor. OEM 0-40 C is not outdoor/rain suitability."
+}

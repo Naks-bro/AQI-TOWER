@@ -4,6 +4,8 @@ AQI Tower is a student engineering project developing a fan-and-filter air clean
 
 **Current stage:** internal engineering review. **Physical prototypes built: 0.** The design still needs mechanical and electrical release before construction.
 
+Latest mechanical calculation: [mass and stability supplement](reports/prototype_d01/mechanical_package/MASS_STABILITY_REVIEW.md). Actual guard-hole drawings and published fan weights give a **12.61 kg partial assumed assembly**, not finished tower weight. Filters, feet, seals and controls remain unweighed; no stability approval. Includes reproducible calculations and six synthetic tests.
+
 ## See the current design
 
 ![Current D01 R03M assembly rendered in Blender](reports/shareable_20261005/visuals/assembly.png)

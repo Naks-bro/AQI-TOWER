@@ -230,6 +230,13 @@ for dest in (S,T):
     shutil.copy2(O/'AQI_TOWER_3D_REVIEW.html',dest/'AQI_TOWER_3D_REVIEW.html')
     shutil.copy2(O/'THREE_JS_LICENSE.txt',dest/'THREE_JS_LICENSE.txt')
 shutil.copytree(IH/'engineering',T/'engineering',dirs_exist_ok=True,ignore=shutil.ignore_patterns('__pycache__','*.pyc'))
+for name in ('d01_mass_stability.py','test_d01_mass_stability.py'):
+    shutil.copy2(R/'scripts/analysis'/name,T/'engineering/scripts/analysis'/name)
+for name in ('MASS_STABILITY_REVIEW.md','mass_stability_review.json','part_inventory.json','cad_mesh.json'):
+    shutil.copy2(M/name,T/'engineering/reports/prototype_d01/mechanical_package'/name)
+(T/'engineering/reports/prototype_d01/mechanical_package/panel_DXF_REVIEW_ONLY').mkdir(parents=True,exist_ok=True)
+shutil.copy2(M/'panel_DXF_REVIEW_ONLY/G_FACE.dxf',T/'engineering/reports/prototype_d01/mechanical_package/panel_DXF_REVIEW_ONLY/G_FACE.dxf')
+shutil.copy2(M/'MASS_STABILITY_REVIEW.md',T/'MASS_STABILITY_REVIEW.md')
 for name in ('indoor_decay.py','test_indoor_decay.py','test_measurement_recording.py'):
     shutil.copy2(R/'scripts/analysis'/name,T/'engineering/scripts/analysis'/name)
 (T/'engineering/scripts/monitoring').mkdir(parents=True,exist_ok=True)
@@ -302,6 +309,8 @@ Physical prototypes built: 0. Air animation is illustrative, NOT CFD. Outdoor bu
 (T/'START_HERE.md').write_text('''# AQI Tower technical bundle
 
 Read AQI_TOWER_TECHNICAL_HANDOFF.pdf: current five-page introduction followed by the preserved 41-page IH02 engineering reference. Room-model software and existing exploratory decay tool are included; read ROOM_MODEL_BASIS.md. Record actual decisions in TECHNICAL_REVIEW.xlsx. Not for fabrication, ordering or energization.
+
+Latest separate mechanical supplement: MASS_STABILITY_REVIEW.md. Corrected partial mass and directional static tipping arithmetic, NOT whole-device mass or safety approval. From engineering/ run python scripts/analysis/d01_mass_stability.py and python scripts/analysis/test_d01_mass_stability.py. Original mechanical PDFs and IH02 are preserved snapshots.
 
 Authoritative assembly: engineering/reports/prototype_d01/mechanical_package/D01_R03M_ASSEMBLY.FCStd. STEP, exploded CAD, harness reservation derivative and 15 review DXFs accompany it. Blender and the offline viewer are tessellated presentation derivatives, not manufacturing models or CFD validation.
 

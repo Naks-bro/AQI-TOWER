@@ -4,6 +4,8 @@
 
 ## Open these
 
+Latest mass supplement: [corrected partial mass and nominal foot support](MASS_STABILITY_REVIEW.md), [machine-readable calculation](mass_stability_review.json). Uses actual DXF perforations and OEM fan net mass, retaining unknown complete-device mass/CG. Six synthetic tests; no structural or stability release. Original mechanical PDF/ZIP remain historical snapshots; current shareable technical ZIP includes this separate supplement.
+
 Latest supplement: [guard bending sensitivity and limits](GUARD_ACCESS_DECISION.md).36 ideal solid-strip scenarios and28 arithmetic checks quantify thickness/span trade-offs, NOT perforated-guard strength. Native CAD and historical package are unchanged;1 mm sheet remains unreleased.
 
 - [Mechanical package PDF](AQI_D01_MECHANICAL_PACKAGE.pdf): assembly, exploded view, guard fabrication/joint route, fasteners, seals, support/stability, assembly sequence, release holds and10 current panel drawings.

@@ -2,6 +2,8 @@
 
 Read AQI_TOWER_TECHNICAL_HANDOFF.pdf: current five-page introduction followed by the preserved 41-page IH02 engineering reference. Room-model software and existing exploratory decay tool are included; read ROOM_MODEL_BASIS.md. Record actual decisions in TECHNICAL_REVIEW.xlsx. Not for fabrication, ordering or energization.
 
+Latest separate mechanical supplement: MASS_STABILITY_REVIEW.md. Corrected partial mass and directional static tipping arithmetic, NOT whole-device mass or safety approval. From engineering/ run python scripts/analysis/d01_mass_stability.py and python scripts/analysis/test_d01_mass_stability.py. Original mechanical PDFs and IH02 are preserved snapshots.
+
 Authoritative assembly: engineering/reports/prototype_d01/mechanical_package/D01_R03M_ASSEMBLY.FCStd. STEP, exploded CAD, harness reservation derivative and 15 review DXFs accompany it. Blender and the offline viewer are tessellated presentation derivatives, not manufacturing models or CFD validation.
 
 Run tools from engineering/ using TOOL_USAGE.md. The current pressure budget and blank filter curve are supplied. Supply actual measured data and calibration/source evidence; do not substitute animation dots for results.
