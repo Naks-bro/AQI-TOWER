@@ -24,3 +24,17 @@ python scripts/analysis/d01_validation.py --airflow-csv AIRFLOW.csv --plane-area
 ```
 
 Replace AREA with the independently established full measurement-plane area in m2. It is not automatically the guard hole area. Velocity-only error is not complete uncertainty. Preserve raw logs and use new output filenames. All bundled test fixtures are synthetic; there are no physical test results.
+
+
+## Room particle analysis supplement
+
+From engineering/:
+
+```
+python -m unittest discover -s scripts/analysis -p test_indoor_decay.py -v
+python -m unittest discover -s scripts/analysis -p test_measurement_recording.py -v
+python scripts/monitoring/record_measurements.py --help
+python scripts/analysis/indoor_decay.py --help
+```
+
+Copy the data/monitoring templates to new filenames and fill actual run/instrument/room/window metadata. Unfilled templates are intentionally invalid and must not be used as results. The importer converts actual JSONL records into a new CSV; it does not connect to sensors. Use that recorder CSV with indoor_decay.py, not the older particle-timeseries template. Both tools refuse to overwrite an existing evidence file. Read ROOM_MODEL_BASIS.md before interpretation; calibrated repeated trials remain necessary. No smoke/contaminant generation is authorized.

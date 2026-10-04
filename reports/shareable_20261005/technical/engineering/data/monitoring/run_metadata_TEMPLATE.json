@@ -1,0 +1,17 @@
+{
+  "run_id": "UNSET",
+  "evidence_kind": "physical_measurement",
+  "site": "UNKNOWN",
+  "room_volume_m3": null,
+  "ventilation_and_occupancy": "UNKNOWN",
+  "approved_test_procedure_reference": "UNKNOWN",
+  "instruments": {
+    "UNSET": {
+      "channel": "pm25_room_a",
+      "model": "UNKNOWN",
+      "position_or_method": "UNKNOWN",
+      "calibration_reference": "UNKNOWN",
+      "range_and_uncertainty": "UNKNOWN"
+    }
+  }
+}

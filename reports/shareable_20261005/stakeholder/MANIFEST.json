@@ -1,12 +1,15 @@
 {
-  "AQI_TOWER_3D_REVIEW.html": "4f2cda9fd6bae1545ffa57f759cd2bfa8ad83459c220b155dd9b3bb8fd54724d",
-  "AQI_TOWER_STAKEHOLDER_REPORT.pdf": "c6c1595b8ec125dda7e18df44a73461b1dd6b027a443e73e74925f6fd012a769",
-  "STAKEHOLDER_FUNDING.xlsx": "bfc7f345d830b2ba1c97e3bcc5fc86bc1ca4f40c0602165fdeb973819311d6c2",
+  "AQI_TOWER_3D_REVIEW.html": "ce5800b22ab97273d11f9b985171f3d64255c47385589f914a6986f0074847c3",
+  "AQI_TOWER_STAKEHOLDER_REPORT.pdf": "1108bbfe3b3c6c972a157069b858d1cee0c69f561907eb56a751e0def9b85852",
+  "ROOM_MODEL_BASIS.md": "c41c7741a374b195a8e023d35a9e85a58cd3ee671130ace7313d39b41ed6354c",
+  "STAKEHOLDER_FUNDING.xlsx": "0d3b5f4ae93933305f7badbda7e79f91266da3f893371615b959ff2aa2059017",
   "START_HERE.md": "1aea56f789d0c4e09c703b82cf164c1c57720a62443b5fb5f42f932c14bc09e4",
   "THREE_JS_LICENSE.txt": "4c40a1ef62450b857c3b2aaf294936304cd552d965fbcd9d32d4c5bcf4ba4454",
   "visuals/assembly.png": "ccd1b0c30da9224ed91b81f4b71e009e32a77e31fd934722e58114393e07867c",
   "visuals/assembly_exploded.gif": "cf6fac175b7a700f11daee13d7a7e7e49d056d677dc9f0a58918b8eed43f50e6",
   "visuals/cutaway.png": "ff8bf346d83d4163fc8e9b051d041c54e3b59f5098815d07b85d7a2364a6faf0",
   "visuals/exploded.png": "e26f8c93526e2125b03dc1da18b5b2ec870dcf8218427bf8453f0608977ece73",
-  "visuals/illustrative_airflow.gif": "69b5bde9bd280b97dfc78db0d1ef95f7f2c102d1bbc0aad7ac055de4c2826526"
+  "visuals/human_scale.png": "7fece2e761fc873a31582b5dd2e2e94c90cc57e83a45959ed2f63bd9a180f4c7",
+  "visuals/illustrative_airflow.gif": "69b5bde9bd280b97dfc78db0d1ef95f7f2c102d1bbc0aad7ac055de4c2826526",
+  "visuals/room_scenario.png": "b3d190fa26e1e6575018c5346544e5971c712325d4ca339da11d0563b9860978"
 }
