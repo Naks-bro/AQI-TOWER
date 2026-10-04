@@ -1,0 +1,4 @@
+Function,Head,Collar,Contact,Contact_type,Opta_terminal,Firmware_pin,Status
+START,ZB5AA3,ZB5AZ009,ZBE1016,NO,I1,A0,CANDIDATE; low-current minimum and assembled rear fit unverified
+STOP,ZB5AA4,ZB5AZ009,ZBE1026,NC,I2,A1,CANDIDATE; low-current minimum and assembled rear fit unverified
+RESET,ZB5AA6,ZB5AZ009,ZBE1016,NO,I3,A2,CANDIDATE; low-current minimum and assembled rear fit unverified

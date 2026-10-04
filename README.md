@@ -12,7 +12,7 @@ Implemented ordinary-control candidate: [Opta bench drawing](reports/prototype_d
 
 ## See the current design
 
-Control-module packaging: [dimensioned external-box layout](reports/prototype_d01/electrical_package/control_module/D01_E03_DIMENSIONED_CONTROL_LAYOUT.pdf) with [editable CAD and source evidence](reports/prototype_d01/electrical_package/control_module/README.md). Body envelopes clear the real OEM box model; controls, protection, cables and mounting unfinished. Not a wiring/build release.
+Control-module packaging: [latest lid controls and input drawing](reports/prototype_d01/electrical_package/control_module/D01_E04_LID_CONTROLS_REVIEW.pdf) with [editable CAD, candidate parts and source evidence](reports/prototype_d01/electrical_package/control_module/README.md). Proposed closed-lid START/STOP/RESET and isolated speed preset; body-fit checks pass, but wire-routing reservations conflict and actual button stacks/low-current ratings remain unverified. Protection, cables and mounting unfinished. Earlier [E03 body layout](reports/prototype_d01/electrical_package/control_module/D01_E03_DIMENSIONED_CONTROL_LAYOUT.pdf) preserved. No drilling/wiring/build release.
 
 ![Current D01 R03M assembly rendered in Blender](reports/shareable_20261005/visuals/assembly.png)
 

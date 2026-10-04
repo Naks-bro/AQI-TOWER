@@ -1,0 +1,184 @@
+{
+  "release": false,
+  "physical_tests": 0,
+  "access_date": "2026-10-05",
+  "status": "PROPOSED CLOSED-LID ORDINARY CONTROLS / NOT DRILLING OR WIRING RELEASE",
+  "native_tower_sha256": "fb28a31315968509dcdbbb2caac8c6d69c84ecb94a35ccd75937a5d9ecaa33a6",
+  "native_tower_unchanged": true,
+  "OEM_box_sha256": "eb10755ddc9c5a50c2c2ce4165a178575d1cc2d2dfa8b0f7289a745f01f57665",
+  "objects": 18,
+  "buttons": [
+    {
+      "name": "START",
+      "centre_mm": [
+        -15,
+        0
+      ],
+      "head": "ZB5AA3",
+      "collar": "ZB5AZ009",
+      "contact": "ZBE1016",
+      "contact_type": "NO",
+      "terminal": "I1",
+      "firmware_pin": "A0",
+      "color": "#148b69",
+      "lid_surface_levels_mm": [
+        46.0,
+        50.0
+      ],
+      "lid_local_thickness_mm": 4.0,
+      "rear_assumed_bounds_mm": [
+        -35,
+        -20,
+        -9,
+        5,
+        20,
+        46
+      ],
+      "wire_tail_assumed_bounds_mm": [
+        -35,
+        -20,
+        -29,
+        5,
+        20,
+        -9
+      ],
+      "OEM_collision_hits": [],
+      "minimum_body_gaps_mm": {
+        "CTRL1_OPTA_LITE": 10.0,
+        "H1_NA_FH1": 19.235419812418964,
+        "SC1_NA_FC1": 35.51600449600152
+      },
+      "assumed_service_overlap_mm3": {
+        "CTRL1_WIRE_SPACE_ASSUMED": 0.0,
+        "H1_CONNECTOR_SPACE_ASSUMED": 0.0,
+        "SC1_CONNECTOR_SPACE_ASSUMED": 0.0
+      }
+    },
+    {
+      "name": "STOP",
+      "centre_mm": [
+        45,
+        0
+      ],
+      "head": "ZB5AA4",
+      "collar": "ZB5AZ009",
+      "contact": "ZBE1026",
+      "contact_type": "NC",
+      "terminal": "I2",
+      "firmware_pin": "A1",
+      "color": "#d54451",
+      "lid_surface_levels_mm": [
+        46.0,
+        50.0
+      ],
+      "lid_local_thickness_mm": 4.0,
+      "rear_assumed_bounds_mm": [
+        25,
+        -20,
+        -9,
+        65,
+        20,
+        46
+      ],
+      "wire_tail_assumed_bounds_mm": [
+        25,
+        -20,
+        -29,
+        65,
+        20,
+        -9
+      ],
+      "OEM_collision_hits": [],
+      "minimum_body_gaps_mm": {
+        "CTRL1_OPTA_LITE": 70.0,
+        "H1_NA_FH1": 12.041651687372461,
+        "SC1_NA_FC1": 6.032128592793758
+      },
+      "assumed_service_overlap_mm3": {
+        "CTRL1_WIRE_SPACE_ASSUMED": 0.0,
+        "H1_CONNECTOR_SPACE_ASSUMED": 2250.431999999999,
+        "SC1_CONNECTOR_SPACE_ASSUMED": 6103.439999999999
+      }
+    },
+    {
+      "name": "RESET",
+      "centre_mm": [
+        105,
+        0
+      ],
+      "head": "ZB5AA6",
+      "collar": "ZB5AZ009",
+      "contact": "ZBE1016",
+      "contact_type": "NO",
+      "terminal": "I3",
+      "firmware_pin": "A2",
+      "color": "#4276c1",
+      "lid_surface_levels_mm": [
+        46.0,
+        50.0
+      ],
+      "lid_local_thickness_mm": 4.0,
+      "rear_assumed_bounds_mm": [
+        85,
+        -20,
+        -9,
+        125,
+        20,
+        46
+      ],
+      "wire_tail_assumed_bounds_mm": [
+        85,
+        -20,
+        -29,
+        125,
+        20,
+        -9
+      ],
+      "OEM_collision_hits": [],
+      "minimum_body_gaps_mm": {
+        "CTRL1_OPTA_LITE": 130.0,
+        "H1_NA_FH1": 12.041651687372461,
+        "SC1_NA_FC1": 6.032128592793758
+      },
+      "assumed_service_overlap_mm3": {
+        "CTRL1_WIRE_SPACE_ASSUMED": 0.0,
+        "H1_CONNECTOR_SPACE_ASSUMED": 2137.9103999999993,
+        "SC1_CONNECTOR_SPACE_ASSUMED": 2266.9919999999993
+      }
+    }
+  ],
+  "pitch_mm": 60,
+  "proposed_hole_diameter_mm": 22.3,
+  "hole_upper_tolerance_mm": 0.4,
+  "OEM_mount_panel_range_mm": [
+    1,
+    6
+  ],
+  "input_screen": {
+    "nominal_voltage_V": 12,
+    "OEM_impedance_ohm": 8900,
+    "nominal_resistance_screen_mA": 1.348314606741573,
+    "guaranteed_current_mA": null,
+    "OEM_current_at_10V_mA": 1.12,
+    "OEM_HIGH_min_V": 6.6,
+    "OEM_LOW_max_V": 4.46
+  },
+  "contact_minimum_switching_voltage_current": "UNKNOWN; gold-flashed low-power designation verified only",
+  "sources": {
+    "mounting": "https://download.se.com/files?p_Doc_Ref=BRU46063",
+    "low_power_catalogue": "https://iportal.se.com/Contents/docs/DIA5ED2121213EN.PDF",
+    "green_head": "https://www.clipsal.com/products/industrial/harmony/push-button-head-plastic-flush-green-22mm-spring-return-unmarked-zb5aa3?itemno=ZB5AA3",
+    "collar_CAD": "https://download.se.com/files?p_Doc_Ref=MCADID0005208_3D-CAD",
+    "opta": "https://docs.arduino.cc/resources/datasheets/AFX00001-AFX00002-AFX00003-datasheet.pdf",
+    "box": "https://www.hammfg.com/files/parts/pdf/1554XA2GY.pdf"
+  },
+  "limitations": [
+    "Rear stack55mm and wire tail20mm are deliberately ASSUMED reservations, not OEM assembly fit proof",
+    "Wire-tail reservations overlap existing assumed speed-controller service space; actual routing must resolve this",
+    "Local OEM lid thickness4mm at centres only; gasket, mounting torque, labels and sealing must be reviewed before drilling",
+    "Low-current numeric contact rating, terminal identifiers, leads, source protection and terminals not released",
+    "STOP is ordinary software input, not emergency stop or isolation; RESET never substitutes for protective restart",
+    "NA-FC1 remains internal: set only while source disconnected and lid closed before operation; no powered open-box adjustment",
+    "Protection, guards, mounts, source/harness and heat remain open; default firmware relay outputs remain disabled"
+  ]
+}

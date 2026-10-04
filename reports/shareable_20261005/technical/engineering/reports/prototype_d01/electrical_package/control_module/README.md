@@ -1,5 +1,21 @@
 # E03 — external control-module body layout
 
+## Latest continuation: E04 closed-lid ordinary controls
+
+[Two-page lid layout and input schematic](D01_E04_LID_CONTROLS_REVIEW.pdf), [editable FreeCAD](D01_E04_LID_CONTROL_ENVELOPES.FCStd), [STEP](D01_E04_LID_CONTROL_ENVELOPES.step), [candidate button parts](LID_CONTROL_PARTS.csv), [checks and source links](LID_CONTROL_CHECKS.json). E03 below remains the preserved body-layout snapshot. E04 extends that same module, not the tower geometry.
+
+RECOMMENDATION: three spring-return buttons, START green ZB5AA3 + NO ZBE1016, STOP red ZB5AA4 + NC ZBE1026, RESET blue ZB5AA6 + NO ZBE1016; each with ZB5AZ009 collar. Ordinary software controls, **not emergency stop, isolation or protective restart**. Default firmware cannot run fans: all relays remain disabled. Prices and India stock UNKNOWN; no order placed.
+
+VERIFIED: Schneider [BRU46063 installation instruction](https://download.se.com/files?p_Doc_Ref=BRU46063), page 2, specifies ordinary-head holes 22.3 mm with +0.4/-0 tolerance and panel range 1–6 mm. Proposed centres X=-15/45/105 mm, Y=0, provide 60 mm pitch. DETECTED: private Hammond STEP lid surfaces Z=46/50 mm at those centres, local thickness 4 mm. **No drilling release:** inspect delivered lid, head stack, torque, labels, sealing and all hardware first. Stock box/head ingress ratings do not rate this modified assembly.
+
+ASSUMED rear envelopes: 40 × 40 × 55 mm beneath inner lid, with a further 20 mm wire-tail reservation. They clear all 24 OEM box solids and the three E03 body proxies; minimum combined reservation/body gap 6.03 mm. **Routing conflict remains:** STOP/RESET tail space overlaps both the hub and speed-controller assumed service spaces. JSON records actual overlaps; these are not hidden or counted as a full fit pass. Actual assembled head/collar/contact depth and cable bends remain UNKNOWN. Public CAD contains 18 original proxy objects, not OEM manufacturing geometry.
+
+VERIFIED: [Harmony catalogue](https://iportal.se.com/Contents/docs/DIA5ED2121213EN.PDF) identifies ZBE1016/ZBE1026 as gold-flashed low-power contacts. Numerical minimum switching voltage/current at our conditions is UNKNOWN: designation alone does not release their use. Opta inputs draw 1.12 mA at 10 V per OEM datasheet; nominal 12 V / 8.9 kΩ gives 1.348 mA, a resistance screen only. Candidate input branches use I1/A0 START, I2/A1 healthy NC STOP, I3/A2 RESET; branch protection, contact terminal IDs, wire sizes, terminations and independent protection are unselected. Never substitute an ordinary STOP press for source disconnection.
+
+Speed-access decision: retain the unmodified internal NA-FC1 and propose an **isolated preset**, not a live external knob. Disconnect the external source before accessing it, set the speed, close the box before operation. This is a planning sequence, not commissioning permission; run-down, access protection and source/isolation review remain required. Live speed-adjustment hardware is not designed.
+
+Reproduce: existing FreeCAD Python runs `scripts/geometry/layout_d01_lid_controls.py` after E03; report runtime runs `scripts/reports/build_d01_lid_controls.py`. Checks 18 reopened native shapes and 18 exported STEP solids, exact-box clearance and unchanged native R03M hash. Private OEM CAD/PDFs stay ignored; no redistribution permission presumed. Access date: 5 October 2026. No physical tests or energization release.
+
 [Dimensioned drawing](D01_E03_DIMENSIONED_CONTROL_LAYOUT.pdf), [FreeCAD envelopes](D01_E03_CONTROL_ENVELOPES.FCStd), [STEP envelopes](D01_E03_CONTROL_ENVELOPES.step), [placement coordinates](PLACEMENT.csv), [fit evidence](FIT_CHECKS.json). **Not for drilling, wiring or energization.**
 
 FACT: the40mm tower reservation cannot accommodate the proposed Opta in normal DIN orientation. DETECTED: three OEM-sized body proxies and three assumed service volumes clear the downloaded Hammond STEP, excluding its support panel. Body separations65,85 and47mm. Native493-object tower CAD unchanged; physical prototypes0. **Body fit is not a completed control-panel fit:** PR1, fuse holders, terminals, buttons, actual cables and supports absent; do not assume these will fit the remaining space.

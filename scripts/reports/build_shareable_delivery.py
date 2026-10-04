@@ -255,10 +255,13 @@ for name in ('AQI_D01_OPTA_BENCH_REVIEW.pdf','OPTA_INTEGRATION_SCREEN.json','OPT
 shutil.copy2(R/'reports/prototype_d01/electrical_package/AQI_D01_OPTA_BENCH_REVIEW.pdf',T/'AQI_D01_OPTA_BENCH_REVIEW.pdf')
 shutil.copytree(R/'reports/prototype_d01/electrical_package/control_module',T/'engineering/reports/prototype_d01/electrical_package/control_module',dirs_exist_ok=True,ignore=shutil.ignore_patterns('previews'))
 shutil.copy2(R/'reports/prototype_d01/electrical_package/control_module/D01_E03_DIMENSIONED_CONTROL_LAYOUT.pdf',T/'D01_E03_DIMENSIONED_CONTROL_LAYOUT.pdf')
+shutil.copy2(R/'reports/prototype_d01/electrical_package/control_module/D01_E04_LID_CONTROLS_REVIEW.pdf',T/'D01_E04_LID_CONTROLS_REVIEW.pdf')
 for folder in ('geometry','reports'):
     (T/'engineering/scripts'/folder).mkdir(parents=True,exist_ok=True)
 shutil.copy2(R/'scripts/geometry/layout_d01_control_module.py',T/'engineering/scripts/geometry/layout_d01_control_module.py')
 shutil.copy2(R/'scripts/reports/build_d01_control_layout.py',T/'engineering/scripts/reports/build_d01_control_layout.py')
+shutil.copy2(R/'scripts/geometry/layout_d01_lid_controls.py',T/'engineering/scripts/geometry/layout_d01_lid_controls.py')
+shutil.copy2(R/'scripts/reports/build_d01_lid_controls.py',T/'engineering/scripts/reports/build_d01_lid_controls.py')
 for name in ('indoor_decay.py','test_indoor_decay.py','test_measurement_recording.py'):
     shutil.copy2(R/'scripts/analysis'/name,T/'engineering/scripts/analysis'/name)
 (T/'engineering/scripts/monitoring').mkdir(parents=True,exist_ok=True)
@@ -329,6 +332,8 @@ STAKEHOLDER_FUNDING.xlsx is the quote and milestone workbook. Prices, stock and 
 Physical prototypes built: 0. Air animation is illustrative, NOT CFD. Outdoor bubbles are unproven. R03M guards remain solid CAD envelopes; purple objects reserve space. No purchase or contact is performed by this package.
 ''',encoding='utf-8')
 (T/'START_HERE.md').write_text('''# AQI Tower technical bundle
+
+Latest E04: D01_E04_LID_CONTROLS_REVIEW.pdf provides proposed closed-lid START/STOP/RESET locations and ordinary input schematic. Editable 18-object proxy CAD, candidate parts and LID_CONTROL_CHECKS.json are in engineering/reports/prototype_d01/electrical_package/control_module/. OEM local lid thickness4mm and mounting-range compatibility checked; assumed rear/wire-tail reservations clear bodies but overlap hub/controller assumed service spaces. Actual button stack, contact minimum switching ratings, wiring and protection remain unverified. Speed control is an isolated preset proposal only; no powered open-box adjustment. NOT a drilling, wiring or energization release. Native tower unchanged; physical0. Sources/reproduction in module README.
 
 New E03: D01_E03_DIMENSIONED_CONTROL_LAYOUT.pdf and engineering/reports/prototype_d01/electrical_package/control_module/ contain original editable external-module envelope CAD and placements. Three bodies and three ASSUMED service spaces clear the private exact Hammond STEP; no physical fit or release. Closed-lid NA-FC1 access, supports, protection, actual cables and heat remain unresolved. Source STEP not redistributed; download source instructions and hashes in module README/FIT_CHECKS.json. Native R03M unchanged.
 
