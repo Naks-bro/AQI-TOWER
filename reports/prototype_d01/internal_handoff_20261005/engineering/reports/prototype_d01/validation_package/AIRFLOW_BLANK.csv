@@ -1,0 +1,10 @@
+run_id,cell_id,instrument_id,calibration_ref,method_ref,assembly_revision,timestamp,evidence,quality,cell_area_m2,normal_velocity_ms,velocity_error_bound_ms
+,1,,,,R03M,,NOT_MEASURED,,,,
+,2,,,,R03M,,NOT_MEASURED,,,,
+,3,,,,R03M,,NOT_MEASURED,,,,
+,4,,,,R03M,,NOT_MEASURED,,,,
+,5,,,,R03M,,NOT_MEASURED,,,,
+,6,,,,R03M,,NOT_MEASURED,,,,
+,7,,,,R03M,,NOT_MEASURED,,,,
+,8,,,,R03M,,NOT_MEASURED,,,,
+,9,,,,R03M,,NOT_MEASURED,,,,

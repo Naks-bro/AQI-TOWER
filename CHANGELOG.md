@@ -4,6 +4,8 @@ This file records repository-level changes. Detailed engineering evidence remain
 
 ## Unreleased
 
+- 2026-10-05: Published the IH02 internal review handoff with stakeholder/engineering PDFs, current R03M CAD and15 DXFs, parts/funding/release registers and corrected analysis tools. Added the current ZIP download exception and byte-preserving handoff attributes; local inspection renders stay ignored. Five current-filter screen tests pass; airflow23, guard28 and control14/1024 checks reproduce. Engineering release and physical performance remain open.
+
 - Added `docs/paper/`: IEEE A4 conference paper draft (DOCX and PDF) with five figures, a team handbook page describing the four-layer architecture, dependencies and tech stack, and `REFERENCES.md` listing paper citations, archived source documents and external sources. Zipped review packages under `reports/` are now ignored because their contents are already tracked as folders. No engineering results changed.
 
 - Package1 R03M mechanical batch:493-object integrated/exploded CAD,119,805 pair checks,joined-guard fabrication route,full proposed cabinet/fan/M5 stacks,positive feet and seal stops. Current panel/guard drawings,fastener schedule and assembly/inspection package. Actual materials/strength/seal/guarding and package2 interface holds remain open.

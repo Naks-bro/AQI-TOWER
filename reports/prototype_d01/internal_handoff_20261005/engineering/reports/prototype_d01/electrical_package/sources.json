@@ -1,0 +1,41 @@
+{
+  "accessed": "2026-10-04",
+  "sources": [
+    {
+      "id": "S1",
+      "title": "ARCTIC P14 Max black",
+      "url": "https://www.arctic.de/en/P14-Max-Black/ACFAN00287A"
+    },
+    {
+      "id": "S2",
+      "title": "NV-PS1 specifications",
+      "url": "https://www.noctua.at/en/products/nv-ps1/specifications"
+    },
+    {
+      "id": "S3",
+      "title": "NA-FC1 specifications",
+      "url": "https://www.noctua.at/en/products/na-fc1/specifications"
+    },
+    {
+      "id": "S4",
+      "title": "NA-FH1 specifications",
+      "url": "https://www.noctua.at/en/products/na-fh1/specifications"
+    },
+    {
+      "id": "S5",
+      "title": "NA-FH1 manual",
+      "url": "https://cdn.noctua.at/media/noctua_na_fh1_manual_spot_en.pdf?download=true"
+    },
+    {
+      "id": "S6",
+      "title": "NV-PS1 manual",
+      "url": "https://cdn.noctua.at/media/noctua_nv_ps1_manual_en_web.pdf?download=true"
+    },
+    {
+      "id": "S7",
+      "title": "NA-FH1 features",
+      "url": "https://www.noctua.at/en/products/na-fh1/features"
+    }
+  ],
+  "scope": "Manufacturer descriptions only; no India stock, price, whole-device compliance or delivered-unit verification claimed."
+}

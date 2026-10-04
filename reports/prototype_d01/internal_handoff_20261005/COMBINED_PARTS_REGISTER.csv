@@ -1,0 +1,16 @@
+ID,Quantity_basis,Item,Evidence_status,Unresolved,Source
+F1-F4,4,ARCTIC P14 Max ACFAN00287A,Exact OEM reference,Delivered revision and cable details; guard and duty integration,Electrical BOM; OEM sources S1
+FL1-FL2,2,IKEA STARKVIND104.633.30 particle filter,Experimental reference only,370x290x40 catalogue envelope; pressure curve/frame/seal tolerances unknown; OEM specifies STARKVIND use only,r02_adapter/README.md
+PS1,1,Noctua NV-PS1 with NA-AC10,Exact OEM reference,12V2A24W; startup/auxiliary/site suitability not closed,Electrical BOM S2/S6
+SC1,1,Noctua NA-FC1,Exact OEM reference,Speed controller is not protective isolation,Electrical BOM S3
+H1,1,Noctua NA-FH1 with NA-EC1,Exact OEM reference,24W selected input; self-reset; only port1 RPM upstream; SATA unused,Electrical BOM S4/S5
+EXT,2 candidate leads,NA-EC1 300mm from NA-SEC1 kit,Candidate not selected,Kit contains3 leads; dimensions pending; check total connection count before purchase,Harness README
+CAB,1 assembly,R03M panels and cleats,Custom proposed geometry,Grade/joints/strength/finish unreleased; panel inventory is controlling geometry,CAD_PART_INVENTORY.csv and15 DXFs
+GUARD,2 assemblies,R03M welded perforated guards,Custom proposed geometry,Strength/reach/weld criteria unreleased;1mm not approved,GUARD_BLANKS.csv; guard_pattern.json
+FIX,1 scheduled set,R03M fasteners and compression limiters,Proposed geometry,Use FASTENER_SCHEDULE; do not add inventory quantities again; grade/torque unresolved,FASTENER_SCHEDULE.csv
+SEAL,1 design set,Filter/fan/penetration seals,Unselected material,"Gasket dimensions are installed envelopes, not a compression specification",CAD inventory; mechanical_screen.json
+FEET,4,Retained feet,Proposed geometry,Material/bearing/stability not released,Mechanical package
+PR1,1 assembly,Protection and service isolation,UNSELECTED,"Not replaced by hub fuse, PWM or software model",Electrical interfaces J09/J11
+BOX,1 assembly,Controls enclosure and cable restraints,UNSELECTED,140x100x40 reservation is not selected enclosure or complete fit,Electrical package
+TEST,1 service scope,Calibrated airflow/pressure/power/noise/PM measurement,UNSELECTED,Rent or commission test service; no college lab assumed,Validation package
+BUILD,1 service scope,Fabrication assembly and qualified review,UNSELECTED,Internal engineers review; outsource workshop work as needed,Review register

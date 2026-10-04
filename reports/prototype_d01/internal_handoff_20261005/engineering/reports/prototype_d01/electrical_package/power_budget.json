@@ -1,0 +1,38 @@
+{
+  "basis": "Nominal arithmetic, not measured startup or coordinated protection",
+  "voltage_V": 12,
+  "fan_count": 4,
+  "fan_current_A": 0.35,
+  "fan_total_A": 1.4,
+  "fan_total_W": 16.799999999999997,
+  "supply_limit_A": 2,
+  "hub_input_limit_W": 24,
+  "nominal_difference_A": 0.6000000000000001,
+  "auxiliary_load_A": "UNKNOWN",
+  "startup_sensitivity": [
+    {
+      "assumed_multiplier": 1,
+      "fan_only_A": 1.4,
+      "difference_to_2A": 0.6000000000000001
+    },
+    {
+      "assumed_multiplier": 1.25,
+      "fan_only_A": 1.75,
+      "difference_to_2A": 0.25
+    },
+    {
+      "assumed_multiplier": 1.5,
+      "fan_only_A": 2.0999999999999996,
+      "difference_to_2A": -0.09999999999999964
+    },
+    {
+      "assumed_multiplier": 2,
+      "fan_only_A": 2.8,
+      "difference_to_2A": -0.7999999999999998
+    }
+  ],
+  "voltage_drop_example": {
+    "assumptions": "Copper rho 0.0175 ohm mm2/m at reference temperature; 1 m one-way; 0.5 mm2; 1.4 A. NOT cable selection.",
+    "drop_V": 0.098
+  }
+}

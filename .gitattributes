@@ -24,3 +24,5 @@ cfd/** text eol=lf
 *.mp4 binary
 *.zip binary
 
+# Curated handoff manifests hash exact bytes, including CSV line endings.
+reports/prototype_d01/internal_handoff_20261005/** -text -diff

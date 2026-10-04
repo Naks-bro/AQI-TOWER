@@ -1,5 +1,11 @@
 # How much remains?
 
+## Current D01 handoff — 5 October 2026
+
+[IH02 is ready for the internal team](../../reports/prototype_d01/internal_handoff_20261005/START_HERE.md). Digital handoff preparation is complete: stakeholder explanation, engineering review with current drawings, source CAD/STEP/DXFs, consolidated parts register, funding worksheet, current pressure screen and test software. This is not completion of all remaining engineering. The register names exact remaining work: perforated guard/attachments and access, cabinet joint/stability checks, actual gasket/filter fit, hazard allocation, rated protective circuit/enclosure, commissioning and measured performance. These can be reviewed by the internal mechanical/electrical team without waiting for cable replies, while supplier-dependent interfaces stay open. Filter pressure/frame data, indoor room/targets, actual quotes and physical evidence are separate missing inputs. No fabrication or wiring release exists.
+
+The full-size tower checklist and planning allowances below are historical context, not the current small D01 construction schedule. Do not infer a booked date or an approved procurement list from them.
+
 Updated 3 October 2026. This is a build-readiness checklist, not a progress percentage or a guaranteed schedule.
 
 ## Short answer

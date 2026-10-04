@@ -71,3 +71,6 @@ build/
 
 # Zipped review packages duplicate folders that are already tracked
 reports/**/*.zip
+# Keep the one current downloadable handoff; omit local PDF inspection images.
+!reports/prototype_d01/internal_handoff_20261005/AQI_TOWER_INTERNAL_HANDOFF_IH02.zip
+reports/prototype_d01/internal_handoff_*/qa/

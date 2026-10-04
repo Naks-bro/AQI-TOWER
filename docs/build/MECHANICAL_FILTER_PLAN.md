@@ -1,5 +1,7 @@
 # Mechanical and filter plan
 
+**Current prototype reference, 5 October 2026:** [IH02 engineering handoff](../../reports/prototype_d01/internal_handoff_20261005/START_HERE.md) controls the D01 review. R03M uses the smaller cabinet, two experimental370x290x40 STARKVIND filter envelopes and four P14 Max fans. The593x593x292 HEPA and large-tower frame plan below belongs to historical/full-size development. Current custom filter integration has no whole-device HEPA classification. Materials, guarding, joints, stability, gasket performance and exact delivered fit remain review items.
+
 PRELIMINARY — NOT FOR FABRICATION. 2 October 2026.
 
 Delivery basis updated 3 October 2026: assistant prepares mechanical CAD/calculations; use scoped paid mechanical review and local fabrication, not assumed college facilities. See [no-lab route](NO_LAB_BUILD_ROUTE.md). A fabricator's ability to make a part is not by itself structural approval.
