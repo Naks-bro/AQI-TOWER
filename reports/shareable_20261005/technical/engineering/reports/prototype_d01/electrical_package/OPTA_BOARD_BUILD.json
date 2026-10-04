@@ -1,0 +1,53 @@
+{
+  "status": "TARGET COMPILE PASS",
+  "target_board_compiled": true,
+  "returncode": 0,
+  "fqbn": "arduino:mbed_opta:opta",
+  "cli_version": "arduino-cli  Version: 1.5.1 Commit: 01f3d4f2b Date: 2026-06-05T10:22:12Z",
+  "cli_executable_sha256": "1017de89179c3167e6b8a38ca6cc4091fa69a3cf97aafa7810f01423003f5571",
+  "installed_cores": [
+    {
+      "id": "arduino:mbed_opta",
+      "version": "4.6.0"
+    }
+  ],
+  "command": [
+    "D:\\DUDE\\AQI-TOWER\\.tools\\arduino\\bin\\arduino-cli.exe",
+    "--config-file",
+    "D:\\DUDE\\AQI-TOWER\\.tools\\arduino\\arduino-cli.yaml",
+    "compile",
+    "--fqbn",
+    "arduino:mbed_opta:opta",
+    "--warnings",
+    "all",
+    "--build-path",
+    "D:\\DUDE\\AQI-TOWER\\.tools\\arduino\\build\\d01_opta_default",
+    "D:\\DUDE\\AQI-TOWER\\firmware\\d01_opta_review"
+  ],
+  "compile_output": "Sketch uses 128464 bytes (6%) of program storage space. Maximum is 1966080 bytes.\nGlobal variables use 59232 bytes (11%) of dynamic memory, leaving 464392 bytes for local variables. Maximum is 523624 bytes.\n\n",
+  "authorized_download_sources": {
+    "cli": "https://github.com/arduino/arduino-cli/releases/download/v1.5.1/arduino-cli_1.5.1_Windows_64bit.zip",
+    "cli_archive_sha256": "fabe42e0eb04d00e776a66178299ff95a46c623dbc260f997e58fd514853dd40",
+    "cli_checksum_verified": true,
+    "opta_core_url": "http://downloads.arduino.cc/cores/staging/ArduinoCore-mbed-opta-4.6.0.tar.bz2",
+    "opta_core_index_checksum": "SHA-256:138cc2f959ba2828fab72e1f19c9cc5ecb5913e0816c7998fac1800011267b90",
+    "index": "https://downloads.arduino.cc/packages/package_index.json"
+  },
+  "source_sha256": {
+    "firmware\\d01_opta_review\\ControlLogic.h": "d69b065064adcdebc56e6a873bb344c3d6532b847a948232cf8239b888435921",
+    "firmware\\d01_opta_review\\d01_opta_review.ino": "7b8e954812872e70b5d8377a1dcc7e8ff57b5c146bd0361ce3f4de940854c7de"
+  },
+  "build_artifacts_sha256": {
+    "d01_opta_review.ino.bin": "8ea3a5bcb36f7398b82869514d5da9c132b161d3f5e7d3ba6688f427a9b1aea8",
+    "d01_opta_review.ino.elf": "1ee2f8abcc83b8e7c83f4b2d654c7148093bd1905d849e32f17c81f90660c6b0",
+    "d01_opta_review.ino.hex": "0e93813c98ac91cefe84b52695d7d20b115dca88e8689d2125b92fe6dfcbdde7",
+    "d01_opta_review.ino.with_bootloader.bin": "65483ed8337d181703dd045479bc599458c1607eb5c36e074e2f5f8bb65bc2ee",
+    "d01_opta_review.ino.with_bootloader.hex": "7b2bb3c0412e681ef4ba15f854194e1a9c80f734efc0d9ac5cee37d6284afd5f"
+  },
+  "relay_output_enabled_by_default": false,
+  "hardware_uploaded": false,
+  "physical_tests": 0,
+  "construction_released": false,
+  "protective_function_validated": false,
+  "limitation": "Compilation only; not electrical safety approval or hardware behavior validation."
+}

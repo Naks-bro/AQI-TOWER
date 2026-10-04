@@ -60,6 +60,7 @@ cfd/**/core
 cfd/**/VTK/
 
 # Build and package output
+.tools/
 dist/
 build/
 # Engineering build-planning documents are source, not generated build output.

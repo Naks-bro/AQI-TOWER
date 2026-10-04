@@ -8,7 +8,7 @@ Latest mechanical calculation: [mass and stability supplement](reports/prototype
 
 Latest electrical calculation: [four-page power and wiring supplement](reports/prototype_d01/electrical_package/AQI_D01_POWER_AND_WIRING_SUPPLEMENT.pdf). OEM connector-level reference, verified fan pin functions, 20 load and 36 conditional wire-drop scenarios; ten synthetic tests. Rated restart/protection, actual conductor/fuse selection and enclosure remain open. Do not energize the incomplete circuit.
 
-Implemented ordinary-control candidate: [Opta bench drawing](reports/prototype_d01/electrical_package/AQI_D01_OPTA_BENCH_REVIEW.pdf) and [C++ firmware / source evidence](firmware/d01_opta_review/README.md).1,041 host assertions pass; target-board build and hardware testing NOT DONE. Relay outputs disabled by default. Not a protective controller or released fan wiring; PR1 remains open. Separate external-box and fuse-coordination screens included in the technical ZIP.
+Implemented ordinary-control candidate: [Opta bench drawing](reports/prototype_d01/electrical_package/AQI_D01_OPTA_BENCH_REVIEW.pdf) and [C++ firmware / source evidence](firmware/d01_opta_review/README.md).1,041 host assertions pass; default firmware also compiles for the real Opta target using official core4.6.0 / CLI1.5.1. [Reproducible board-build evidence](reports/prototype_d01/electrical_package/OPTA_BOARD_BUILD.json). Hardware testing NOT DONE. Relay outputs disabled by default. Not a protective controller or released fan wiring; PR1 remains open. Separate external-box and fuse-coordination screens included in the technical ZIP.
 
 ## See the current design
 

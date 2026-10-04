@@ -70,7 +70,7 @@
     "fuse": "https://www.littelfuse.com/assetdocs/littelfuse-datasheet-297-mini32v?assetguid=42c9dd21-a88e-4328-8e67-2f832444faf1"
   },
   "release": {
-    "board_compiled": false,
+    "board_compiled": true,
     "physical_test": false,
     "protective_controller": false,
     "fuse_selected": false,

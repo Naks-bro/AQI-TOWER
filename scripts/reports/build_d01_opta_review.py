@@ -11,6 +11,8 @@ R=Path(__file__).resolve().parents[2]
 O=R/'reports/prototype_d01/electrical_package'
 checks=json.loads((O/'OPTA_HOST_CHECKS.json').read_text())
 assert checks['host_assertions']==1041 and not checks['target_board_compiled']
+board=json.loads((O/'OPTA_BOARD_BUILD.json').read_text())
+assert board['target_board_compiled'] and not board['hardware_uploaded']
 opta_A=2/12
 candidate=dict(status='ORDINARY-CONTROL BENCH CANDIDATE ONLY / NO PROTECTIVE OR WIRING RELEASE',
     accessed='2026-10-05',controller=dict(part='Arduino Opta Lite AFX00003',max_W_at12V=2,
@@ -29,7 +31,7 @@ candidate=dict(status='ORDINARY-CONTROL BENCH CANDIDATE ONLY / NO PROTECTIVE OR 
         'opta_pinout':'https://docs.arduino.cc/resources/pinouts/AFX00001-AFX00002-AFX00003-full-pinout.pdf',
         'enclosure':'https://www.hammfg.com/part/1554XA2GY',
         'fuse':'https://www.littelfuse.com/assetdocs/littelfuse-datasheet-297-mini32v?assetguid=42c9dd21-a88e-4328-8e67-2f832444faf1'},
-    release=dict(board_compiled=False,physical_test=False,protective_controller=False,fuse_selected=False,
+    release=dict(board_compiled=board['target_board_compiled'],physical_test=False,protective_controller=False,fuse_selected=False,
                  enclosure_released=False,fan_output_connection_released=False))
 assert abs(candidate['power']['fan_plus_controller_A']-47/30)<1e-12
 assert candidate['power']['remaining_to_fuse_typical40C_1_7A'] < .134
@@ -98,7 +100,7 @@ y=table(['Real fuse screen','Verified OEM data','Decision / consequence'],[
     ['Opening at110% /2.2 A','Minimum360000 s; no maximum given','Not a2 A current limiter or proof of prompt clearing on a limited supply'],
     ['Opening at200% /4 A','0.15–5 s specified window','Actual PSU/hub fault current/time and weakest cable/contact required'],
 ], [155,275,340],233)
-text('<b>Limits:</b> 1,041 host assertions pass, including1,024 one-step cases. Board compilation and all physical tests are NOT DONE. Software, ordinary relays, digital source presence and LEDs do not prove safe access, fault coverage or standstill. Existing restart rules remain unchanged and unresolved for internal fan/hub resets.',36,y)
+text('<b>Limits:</b> 1,041 host assertions pass. Default sketch compiles for Opta (official core4.6.0 / CLI1.5.1). All physical tests are NOT DONE. Software, ordinary relays, digital source presence and LEDs do not prove safe access, fault coverage or standstill. Existing restart rules remain unchanged and unresolved for internal fan/hub resets.',36,y)
 c.save()
 doc=pdfium.PdfDocument(str(O/'AQI_D01_OPTA_BENCH_REVIEW.pdf'));assert len(doc)==2
 for i in range(2):doc[i].render(scale=1.5).to_pil().save(O/'previews'/f'E02_opta_{i+1}.png')

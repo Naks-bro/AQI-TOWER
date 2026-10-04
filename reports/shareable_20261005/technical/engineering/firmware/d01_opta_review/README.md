@@ -2,7 +2,7 @@
 
 **Not safety-rated. Not released for wiring, fan operation or energization.**
 
-This is implemented C++ ordinary START/STOP/RESET logic on a specific proposed controller, Arduino Opta Lite AFX00003. It is not a replacement for the open PR1 protective circuit. No new controller has been purchased or installed. No Arduino core/IDE was installed. Target-board compilation, flashing and physical tests are NOT DONE.
+This is implemented C++ ordinary START/STOP/RESET logic on a specific proposed controller, Arduino Opta Lite AFX00003. It is not a replacement for the open PR1 protective circuit. No new controller has been purchased or installed. On 5 October 2026, the user authorized the isolated Arduino CLI/core installation: the default sketch compiles for the real Opta board target. Flashing and physical tests are NOT DONE.
 
 ## What the code does
 
@@ -26,9 +26,13 @@ This is implemented C++ ordinary START/STOP/RESET logic on a specific proposed c
 
 OEM terminals use their printed `+`, `-`, `I1`–`I8` and numbered output-pair labels. We do not invent COM/NO terminal identifiers. Determine actual polarity, compatible harness, source-side protection and physical terminations from the drawing and qualified bench review. Never connect12 V to an analog-mode input; OEM analog range is0–10 V, while digital range is0–24 V. A digital HIGH threshold is not precision undervoltage protection. No fan tach inputs are connected here.
 
-Run `python scripts/analysis/test_d01_opta_host.py` from the repository or packaged engineering root with an already-installed host `g++`. It compiles the actual core and sketch against a clearly labelled GPIO shim and writes `OPTA_HOST_CHECKS.json`. This is not an Opta target build. The controller still needs the matching real Arduino board core, review and hardware tests before any bench use; installing these needs authorization.
+Run `python scripts/analysis/test_d01_opta_host.py` from the repository or packaged engineering root with an already-installed host `g++`. It compiles the actual core and sketch against a clearly labelled GPIO shim and writes `OPTA_HOST_CHECKS.json`. This is not an Opta target build. The separate real-board build is recorded in `OPTA_BOARD_BUILD.json`; review and hardware tests are still required before bench use.
 
-Board-build preparation: desktop tests and their Arduino shim live outside the sketch in `firmware/tests/d01_opta/`. Arduino otherwise compiles sketch-root `.cpp` files, which would bring in the test `main()` and duplicate sketch definitions. The host runner checks this layout. Arduino CLI/core were not detected in checked PATH, common installation locations or Arduino15 on5 October; real board compilation awaits authorization to download the official toolchain. No hardware flashing is requested.
+Board-build preparation: desktop tests and their Arduino shim live outside the sketch in `firmware/tests/d01_opta/`. Arduino otherwise compiles sketch-root `.cpp` files, which would bring in the test `main()` and duplicate sketch definitions. The host runner checks this layout.
+
+DETECTED build toolchain: Arduino CLI 1.5.1 and official `arduino:mbed_opta@4.6.0`, installed only in Git-ignored `.tools/arduino/`. CLI archive SHA256 was checked against the official release checksums. No system PATH changes or hardware uploads. The default `arduino:mbed_opta:opta` target (M7 / 2 MB M7 flash split / no signing) compiled with all compiler warnings enabled: 128,464 bytes program storage and 59,232 bytes dynamic memory, no warnings reported. This proves compilation/linking, not correct operation on hardware. The dummy-lamp-enabled variant is NOT compiled or released by this check.
+
+Reproduce on this computer: `python scripts/analysis/compile_d01_opta.py`. The script never installs or uploads; it uses the isolated existing toolchain. On another computer, install the same official versions and configure the local `.tools/arduino/arduino-cli.yaml` directories first. Evidence: [board build record](../../reports/prototype_d01/electrical_package/OPTA_BOARD_BUILD.json). Binaries/toolchain remain local, not included in the technical ZIP. Official [CLI installation instructions](https://docs.arduino.cc/arduino-cli/installation/) and [Arduino core](https://github.com/arduino/ArduinoCore-mbed) checked 5 October 2026.
 
 ## Candidate integration and unresolved protection
 
