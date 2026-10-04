@@ -1,0 +1,19 @@
+Object,Xmin,Ymin,Zmin,Xmax,Ymax,Zmax,Status
+CB1_SIMPLIFIED_ENVELOPE,-150.0,-100.0,-70.08,150.0,100.0,50.0,ORIGINAL APPROXIMATE SHELL; not Hammond manufacturing geometry
+PL1_SIMPLIFIED_PANEL,-142.5,-92.5,-60.0,142.5,92.5,-58.3744,"OEM285x185 outline; simplified rectangular proxy, contour/holes omitted except2 proposed4.5mm holes"
+DIN1_ENVELOPE,-135.0,-17.5,-58.3744,-10.0,17.5,-50.8744,"OEM35x7.5 profile envelope; proposed125mm cut, not full profile or approved attachment"
+CTRL1_OPTA_LITE,-115.0,-44.4,-50.8744,-45.0,44.4,10.2256,"OEM BODY DIMENSIONS / ASSUMED POSITION, ORIENTATION AND MOUNT; no connector geometry"
+H1_NA_FH1,-15.0,-70.00000000000001,-53.3744,28.00000000000003,23.0,-40.8744,"OEM BODY DIMENSIONS / ASSUMED POSITION, ORIENTATION AND MOUNT; no connector geometry"
+SC1_NA_FC1,68.0,-65.0,-53.3744,116.0,-40.0,-32.3744,"OEM BODY DIMENSIONS / ASSUMED POSITION, ORIENTATION AND MOUNT; no connector geometry"
+CTRL1_WIRE_SPACE_ASSUMED,-125.0,-64.4,-50.8744,-35.0,64.4,10.2256,ASSUMED routing/service volume; actual connectors/clip release and bends unknown
+H1_CONNECTOR_SPACE_ASSUMED,-35.0,-80.00000000000001,-53.3744,48.00000000000003,33.00000000000001,-25.8744,ASSUMED routing/service volume; actual connectors/clip release and bends unknown
+SC1_CONNECTOR_SPACE_ASSUMED,58.0,-85.0,-53.3744,126.0,-20.0,-17.3744,ASSUMED routing/service volume; actual connectors/clip release and bends unknown
+START_FACE_PROXY,-29.5,40.5,50.0,-0.5,69.5,58.0,29mm head width from OEM; round face and 8mm projection ASSUMED
+START_REAR_ASSUMED,-35.0,35.0,-9.0,5.0,75.0,46.0,ASSUMED40x40x55 below inner lid; not assembled OEM dimensions
+START_WIRE_TAIL_ASSUMED,-35.0,35.0,-29.0,5.0,75.0,-9.0,ASSUMED20mm additional depth; not verified bend radius
+STOP_FACE_PROXY,30.5,40.5,50.0,59.5,69.5,58.0,29mm head width from OEM; round face and 8mm projection ASSUMED
+STOP_REAR_ASSUMED,25.0,35.0,-9.0,65.0,75.0,46.0,ASSUMED40x40x55 below inner lid; not assembled OEM dimensions
+STOP_WIRE_TAIL_ASSUMED,25.0,35.0,-29.0,65.0,75.0,-9.0,ASSUMED20mm additional depth; not verified bend radius
+RESET_FACE_PROXY,90.5,40.5,50.0,119.5,69.5,58.0,29mm head width from OEM; round face and 8mm projection ASSUMED
+RESET_REAR_ASSUMED,85.0,35.0,-9.0,125.0,75.0,46.0,ASSUMED40x40x55 below inner lid; not assembled OEM dimensions
+RESET_WIRE_TAIL_ASSUMED,85.0,35.0,-29.0,125.0,75.0,-9.0,ASSUMED20mm additional depth; not verified bend radius

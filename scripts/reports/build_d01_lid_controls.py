@@ -1,6 +1,6 @@
 """Two-page E04 lid layout and ordinary-input schematic from checked CAD evidence."""
 from pathlib import Path
-import csv,json
+import csv,json,sys
 from reportlab.pdfgen import canvas
 from reportlab.lib.colors import HexColor
 from reportlab.platypus import Paragraph,Table,TableStyle
@@ -8,10 +8,12 @@ from reportlab.lib.styles import ParagraphStyle
 import pypdfium2 as pdfium
 R=Path(__file__).resolve().parents[2]
 O=R/'reports/prototype_d01/electrical_package/control_module'
-d=json.loads((O/'LID_CONTROL_CHECKS.json').read_text())
+current='--e05' in sys.argv
+rev='E05' if current else 'E04'
+d=json.loads((O/('CURRENT_CONTROL_CHECKS.json' if current else 'LID_CONTROL_CHECKS.json')).read_text())
 assert not d['release'] and d['native_tower_unchanged'] and d['objects']==18
-c=canvas.Canvas(str(O/'D01_E04_LID_CONTROLS_REVIEW.pdf'),pagesize=(842,595),invariant=1)
-c.setTitle('D01 E04 proposed lid controls and ordinary input circuit')
+c=canvas.Canvas(str(O/f'D01_{rev}_LID_CONTROLS_REVIEW.pdf'),pagesize=(842,595),invariant=1)
+c.setTitle(f'D01 {rev} proposed lid controls and ordinary input circuit')
 navy=HexColor('#153d4c')
 sty=ParagraphStyle('body',fontName='Helvetica',fontSize=9,leading=12,textColor=navy)
 def label(t,x,y,size=9):
@@ -20,7 +22,7 @@ def para(t,x,y,w):
  p=Paragraph(t,sty);_,h=p.wrap(w,500);assert y-h>42;p.drawOn(c,x,y-h);return y-h-8
 def header(t,n):
  c.setFillColor(navy);c.rect(0,522,842,73,fill=1,stroke=0)
- c.setFillColor(HexColor('#79e1cc'));c.setFont('Helvetica-Bold',9);c.drawString(30,572,'AQI TOWER / D01 R03M / E04 LID CONTROLS / 5 OCTOBER 2026')
+ c.setFillColor(HexColor('#79e1cc'));c.setFont('Helvetica-Bold',9);c.drawString(30,572,f'AQI TOWER / D01 R03M / {rev} LID CONTROLS / 5 OCTOBER 2026')
  c.setFillColor(HexColor('#ffffff'));c.setFont('Helvetica-Bold',20);c.drawString(30,544,t)
  c.setFillColor(HexColor('#ac2947'));c.setFont('Helvetica-Bold',8);c.drawString(30,23,'PROPOSED / NO DRILLING, WIRING OR ENERGIZATION RELEASE');c.drawRightString(812,23,str(n))
 def table(rows,widths,x,y):
@@ -37,21 +39,27 @@ header('A closed lid with three clearly labelled controls',1)
 cx,cy,s=255,331,1.35
 c.setStrokeColor(navy);c.setFillColor(HexColor('#eff5f6'));c.roundRect(cx-150*s,cy-100*s,300*s,200*s,8,stroke=1,fill=1)
 for b in d['buttons']:
- x=cx+b['centre_mm'][0]*s
- c.setStrokeColor(HexColor(b['color']));c.setFillColor(HexColor(b['color']));c.circle(x,cy,14.5*s,stroke=1,fill=1)
- label(b['name'],x-17,cy-37,10)
- c.setDash(3,3);c.rect(x-20*s,cy-20*s,40*s,40*s,stroke=1,fill=0);c.setDash()
- label(str(b['centre_mm'][0]),x-10,cy+40,8)
+ x=cx+b['centre_mm'][0]*s;y=cy+b['centre_mm'][1]*s
+ c.setStrokeColor(HexColor(b['color']));c.setFillColor(HexColor(b['color']));c.circle(x,y,14.5*s,stroke=1,fill=1)
+ label(b['name'],x-17,y-37,10)
+ c.setDash(3,3);c.rect(x-20*s,y-20*s,40*s,40*s,stroke=1,fill=0);c.setDash()
+ label(str(b['centre_mm'][0]),x-10,y+30,8)
+if current:
+ for item in d['placements']:
+  if item['name'] not in ('CTRL1_OPTA_LITE','H1_NA_FH1','SC1_NA_FC1'):continue
+  x,y,z,xx,yy,zz=item['bounds_mm'];c.setStrokeColor(HexColor('#78939c'));c.setFillColor(HexColor('#d5e6e8'));c.rect(cx+x*s,cy+y*s,(xx-x)*s,(yy-y)*s,stroke=1,fill=1)
+  label({'CTRL1_OPTA_LITE':'Opta','H1_NA_FH1':'Hub','SC1_NA_FC1':'Speed'}[item['name']],cx+x*s+6,cy+y*s+12,9)
 dim(cx-150*s,cy+112*s,cx+150*s,cy+112*s,'300 mm')
 dim(cx-160*s,cy-100*s,cx-160*s,cy+100*s,'200')
-dim(cx-15*s,cy-60*s,cx+45*s,cy-60*s,'60')
-dim(cx+45*s,cy-60*s,cx+105*s,cy-60*s,'60')
-label('Datum: box centre X/Y; proposed row Y=0; not a drilling template',45,174,8)
-label('Dashed squares: ASSUMED 40 x 40 rear envelopes',45,158,8)
+dim_y=cy-(110 if current else 60)*s
+dim(cx-15*s,dim_y,cx+45*s,dim_y,'60')
+dim(cx+45*s,dim_y,cx+105*s,dim_y,'60')
+label(f'Datum: box centre X/Y; proposed row Y={55 if current else 0}; not a drilling template',45,162 if current else 174,8)
+label('Dashed squares: ASSUMED 40 x 40 rear envelopes',45,148 if current else 158,8)
 y=para('<b>Verified OEM mounting instruction:</b> BRU46063 page2 specifies22.3mm hole with +0.4/-0 tolerance;1-6mm panel range for these ordinary heads. Same-row minimum30mm; proposed60mm pitch exceeds this. Labels and installed accessories must still fit.',487,491,325)
 y=para('<b>Detected in the private box STEP:</b> lid thickness4.0mm at all three proposed centres. It lies within the head mounting range. This does not establish delivered thickness, retention or ingress protection after drilling.',487,y,325)
-y=para('<b>Assumed, not measured:</b> rear stack40x40x55mm below inner lid plus20mm wire-tail depth. All reservations clear the24 OEM box solids and three existing component bodies. Smallest combined reservation/body gap6.03mm.',487,y,325)
-y=para('<b>Conflict found:</b> STOP/RESET wire-tail reservations overlap the hub and speed-controller <i>assumed service spaces</i>. No solid body clash, but cable routing/connector access is NOT closed. Keep these overlap results for review; do not claim full assembled fit.',487,y,325)
+y=para('<b>Assumed, not measured:</b> rear stack40x40x55mm below inner lid plus20mm wire-tail depth. Reservations remain the same size. OEM box collision checks exclude only the mounting panel for supported bodies. Actual button assembly and wire bends still need verification.',487,y,325)
+y=para('<b>Digital conflict closed:</b> hub rotated90 degrees and moved; controller moved below button row. All unchanged wire-tail and service reservations now clear each other and the OEM box. Current lower-left coordinates: hub -15/-70; controller68/-65; buttons Y55. Supports are not designed; see CURRENT_CONTROL_PLACEMENT.csv.' if current else '<b>Conflict found:</b> STOP/RESET wire-tail reservations overlap the hub and speed-controller <i>assumed service spaces</i>. No solid body clash, but actual routing/connector access is NOT closed.',487,y,325)
 para('<b>Speed setting:</b> retain the unmodified internal NA-FC1 for now. Disconnect the external source before access; set speed, then close the lid before operation. Live adjustable external knob mounting is NOT designed. Ordinary STOP is not isolation.',487,y,325)
 y=table([['Control','Candidate head / collar / contact','Centre X/Y mm','Function'],
  *[[b['name'],b['head']+' / ZB5AZ009 / '+b['contact'],str(b['centre_mm']),b['contact_type']+' spring-return'] for b in d['buttons']]], [85,325,125,245],30,136)
@@ -74,11 +82,11 @@ y=table([['Input state','Ordinary software interpretation'],
  ],[205,575],30,270)
 y=para('<b>OEM electrical facts:</b> Opta digital input0-24V, HIGH minimum6.6V, LOW maximum4.46V, impedance8.9kOhm,1.12mA at10V.12V/8.9kOhm =1.348mA is a nominal resistance screen only, not guaranteed current. Gold-flashed ZBE1016(NO) / ZBE1026(NC) are manufacturer-designated low-power contacts. Their numerical minimum switching range at our conditions remains UNKNOWN.',30,y,780)
 y=para('<b>Bench-only status:</b> default sketch leaves every relay OFF; this circuit cannot yet operate the fans. No protective PR1 selected, no fan-power contact assignment, no fuses or wire sizes released. Verify contact minimum rating, terminal IDs, retention, source/branch protection, actual cables, service loop, heat and isolation before any dummy-load commissioning.',30,y,780)
-para('<b>Primary sources checked5 Oct2026:</b> Schneider BRU46063 page2; Harmony catalogue DIA5ED2121213EN low-power contact table; Arduino Opta collective datasheet input specification. Full links in LID_CONTROL_CHECKS.json / README. OEM drawings/models are private research references, not redistributed. Physical prototypes0; unchanged R03M geometry.',30,y,780)
+para('<b>Primary sources checked5 Oct2026:</b> Schneider BRU46063 page2; Harmony catalogue; current Digest0100CT2401-SEC-19 page19-42; Arduino Opta input specification. Full links in module JSON / README. Current Digest confirms low-power parts but does not give numerical minimum switching limits. OEM files stay private. Physical prototypes0; R03M unchanged.',30,y,780)
 c.save()
 with (O/'LID_CONTROL_PARTS.csv').open('w',newline='',encoding='utf-8') as f:
  w=csv.writer(f);w.writerow(['Function','Head','Collar','Contact','Contact_type','Opta_terminal','Firmware_pin','Status'])
  for b in d['buttons']:w.writerow([b['name'],b['head'],b['collar'],b['contact'],b['contact_type'],b['terminal'],b['firmware_pin'],'CANDIDATE; low-current minimum and assembled rear fit unverified'])
-doc=pdfium.PdfDocument(str(O/'D01_E04_LID_CONTROLS_REVIEW.pdf'));assert len(doc)==2
-for i in range(2):doc[i].render(scale=1.4).to_pil().save(O/'previews'/f'E04_{i+1}.png')
-print('E04 two-page drawing and candidate parts schedule written.')
+doc=pdfium.PdfDocument(str(O/f'D01_{rev}_LID_CONTROLS_REVIEW.pdf'));assert len(doc)==2
+for i in range(2):doc[i].render(scale=1.4).to_pil().save(O/'previews'/f'{rev}_{i+1}.png')
+print(rev+' two-page drawing and candidate parts schedule written.')

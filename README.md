@@ -12,7 +12,7 @@ Implemented ordinary-control candidate: [Opta bench drawing](reports/prototype_d
 
 ## See the current design
 
-Control-module packaging: [latest lid controls and input drawing](reports/prototype_d01/electrical_package/control_module/D01_E04_LID_CONTROLS_REVIEW.pdf) with [editable CAD, candidate parts and source evidence](reports/prototype_d01/electrical_package/control_module/README.md). Proposed closed-lid START/STOP/RESET and isolated speed preset; body-fit checks pass, but wire-routing reservations conflict and actual button stacks/low-current ratings remain unverified. Protection, cables and mounting unfinished. Earlier [E03 body layout](reports/prototype_d01/electrical_package/control_module/D01_E03_DIMENSIONED_CONTROL_LAYOUT.pdf) preserved. No drilling/wiring/build release.
+Current control-module fit: [E05 layout/input drawing](reports/prototype_d01/electrical_package/control_module/D01_E05_LID_CONTROLS_REVIEW.pdf) and [editable CAD/evidence](reports/prototype_d01/electrical_package/control_module/README.md). E04's assumed wire-space conflicts are closed by rearrangement, without shrinking reservations. Actual button stack/contact ratings, cables, mounting and rated protection remain unfinished. [Current build decision](reports/prototype_d01/electrical_package/control_module/D01_CURRENT_BUILD_DECISION.pdf) consolidates five remaining release gates. Earlier E03/E04 preserved; no drilling/wiring/build release.
 
 ![Current D01 R03M assembly rendered in Blender](reports/shareable_20261005/visuals/assembly.png)
 
@@ -35,7 +35,7 @@ Control-module packaging: [latest lid controls and input drawing](reports/protot
 | Reader | Open first |
 | --- | --- |
 | Stakeholder or new team member | [8-page Executive Summary + Comprehensive Report](reports/shareable_20261005/stakeholder/AQI_TOWER_STAKEHOLDER_REPORT.pdf) or [complete stakeholder ZIP](reports/shareable_20261005/AQI_TOWER_STAKEHOLDER_BUNDLE.zip) |
-| Mechanical or electrical engineer | [50-page technical handoff](reports/shareable_20261005/technical/AQI_TOWER_TECHNICAL_HANDOFF.pdf) or [complete technical ZIP](reports/shareable_20261005/AQI_TOWER_TECHNICAL_BUNDLE.zip) |
+| Mechanical or electrical engineer | [56-page consolidated technical handoff](reports/shareable_20261005/technical/AQI_TOWER_TECHNICAL_HANDOFF.pdf): current decisions/layout first, preserved evidence afterwards; or [complete technical ZIP](reports/shareable_20261005/AQI_TOWER_TECHNICAL_BUNDLE.zip) |
 | Person budgeting the build | [Funding workbook](reports/shareable_20261005/stakeholder/STAKEHOLDER_FUNDING.xlsx); prices and stock remain unknown until quoted |
 | Engineer recording decisions | [Technical review workbook](reports/shareable_20261005/technical/TECHNICAL_REVIEW.xlsx), including parts, release, pressure and hardware sheets |
 | Anyone exploring the design | [Offline 3D viewer](reports/shareable_20261005/AQI_TOWER_3D_REVIEW.html), with Simple and Technical views, cutaway, part inspection and explosion controls; download and open in a WebGL browser |

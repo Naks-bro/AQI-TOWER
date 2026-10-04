@@ -164,7 +164,10 @@ tech += [PageBreak(),h('Room duty and validation tools'),
     p('Primary references checked5 October2026: EPA Guide to Air Cleaners in the Home; CDC Appendix B Air. See ROOM_MODEL_BASIS.md for exact links and applicability limits.',True)]
 pdf(T/'REVIEW_INTRO.pdf',tech)
 writer=PdfWriter()
-for path in (T/'REVIEW_INTRO.pdf',IH/'03_ENGINEERING_DRAWINGS_AND_REVIEW.pdf',R/'reports/prototype_d01/electrical_package/AQI_D01_POWER_AND_WIRING_SUPPLEMENT.pdf'):
+for path in (R/'reports/prototype_d01/electrical_package/control_module/D01_CURRENT_BUILD_DECISION.pdf',
+             R/'reports/prototype_d01/electrical_package/control_module/D01_E05_LID_CONTROLS_REVIEW.pdf',
+             R/'reports/prototype_d01/electrical_package/AQI_D01_OPTA_BENCH_REVIEW.pdf',
+             T/'REVIEW_INTRO.pdf',IH/'03_ENGINEERING_DRAWINGS_AND_REVIEW.pdf',R/'reports/prototype_d01/electrical_package/AQI_D01_POWER_AND_WIRING_SUPPLEMENT.pdf'):
     writer.append(str(path))
 with (T/'AQI_TOWER_TECHNICAL_HANDOFF.pdf').open('wb') as f:writer.write(f)
 
@@ -215,6 +218,8 @@ for technical,path in [(False,S/'STAKEHOLDER_FUNDING.xlsx'),(True,T/'TECHNICAL_R
         except ValueError:pass
     sheet(wb,'Funding quotes',rows)
     if technical:
+        sheet(wb,'Current release gates',readcsv(R/'reports/prototype_d01/electrical_package/control_module/CURRENT_RELEASE_GATES.csv'))
+        sheet(wb,'Control module placement',readcsv(R/'reports/prototype_d01/electrical_package/control_module/CURRENT_CONTROL_PLACEMENT.csv'))
         for name,file in [('Release decisions','REVIEW_AND_RELEASE_REGISTER.csv'),('Parts register','COMBINED_PARTS_REGISTER.csv')]:sheet(wb,name,readcsv(IH/file))
         keys=list(pressure['rows'][0]);sheet(wb,'Pressure screening',[keys]+[[row[k] for k in keys] for row in pressure['rows']])
         sheet(wb,'Pressure assumptions',[['Field','Value'],['Status',pressure['status']],['Assumptions',pressure['assumptions']],['Filter data','No measured clean or loaded curve; allowance is not actual loss']])
@@ -256,12 +261,16 @@ shutil.copy2(R/'reports/prototype_d01/electrical_package/AQI_D01_OPTA_BENCH_REVI
 shutil.copytree(R/'reports/prototype_d01/electrical_package/control_module',T/'engineering/reports/prototype_d01/electrical_package/control_module',dirs_exist_ok=True,ignore=shutil.ignore_patterns('previews'))
 shutil.copy2(R/'reports/prototype_d01/electrical_package/control_module/D01_E03_DIMENSIONED_CONTROL_LAYOUT.pdf',T/'D01_E03_DIMENSIONED_CONTROL_LAYOUT.pdf')
 shutil.copy2(R/'reports/prototype_d01/electrical_package/control_module/D01_E04_LID_CONTROLS_REVIEW.pdf',T/'D01_E04_LID_CONTROLS_REVIEW.pdf')
+for name in ('D01_E05_LID_CONTROLS_REVIEW.pdf','D01_CURRENT_BUILD_DECISION.pdf','CURRENT_RELEASE_GATES.csv'):
+    shutil.copy2(R/'reports/prototype_d01/electrical_package/control_module'/name,T/name)
 for folder in ('geometry','reports'):
     (T/'engineering/scripts'/folder).mkdir(parents=True,exist_ok=True)
 shutil.copy2(R/'scripts/geometry/layout_d01_control_module.py',T/'engineering/scripts/geometry/layout_d01_control_module.py')
 shutil.copy2(R/'scripts/reports/build_d01_control_layout.py',T/'engineering/scripts/reports/build_d01_control_layout.py')
 shutil.copy2(R/'scripts/geometry/layout_d01_lid_controls.py',T/'engineering/scripts/geometry/layout_d01_lid_controls.py')
 shutil.copy2(R/'scripts/reports/build_d01_lid_controls.py',T/'engineering/scripts/reports/build_d01_lid_controls.py')
+shutil.copy2(R/'scripts/geometry/close_d01_control_layout.py',T/'engineering/scripts/geometry/close_d01_control_layout.py')
+shutil.copy2(R/'scripts/reports/build_d01_closeout.py',T/'engineering/scripts/reports/build_d01_closeout.py')
 for name in ('indoor_decay.py','test_indoor_decay.py','test_measurement_recording.py'):
     shutil.copy2(R/'scripts/analysis'/name,T/'engineering/scripts/analysis'/name)
 (T/'engineering/scripts/monitoring').mkdir(parents=True,exist_ok=True)
@@ -333,11 +342,13 @@ Physical prototypes built: 0. Air animation is illustrative, NOT CFD. Outdoor bu
 ''',encoding='utf-8')
 (T/'START_HERE.md').write_text('''# AQI Tower technical bundle
 
+CURRENT HANDOFF: read pages1–6 of AQI_TOWER_TECHNICAL_HANDOFF.pdf first. Current build decision, E05 lid/control fit and preserved E02 ordinary-input reference are now inside ONE56-page PDF. The earlier50-page review follows as historical reference. E05 replaces E04's conflicted placement: unchanged assumed cable/service volumes now clear each other and the private exact box. See CURRENT_RELEASE_GATES.csv and workbook Current release gates tab. E03/E04 remain historical fit studies. Actual supports, connector/button stack, low-current contact numeric limits, protective functions/circuit and physical tests remain OPEN. Not construction release; no fans operated.
+
 Latest E04: D01_E04_LID_CONTROLS_REVIEW.pdf provides proposed closed-lid START/STOP/RESET locations and ordinary input schematic. Editable 18-object proxy CAD, candidate parts and LID_CONTROL_CHECKS.json are in engineering/reports/prototype_d01/electrical_package/control_module/. OEM local lid thickness4mm and mounting-range compatibility checked; assumed rear/wire-tail reservations clear bodies but overlap hub/controller assumed service spaces. Actual button stack, contact minimum switching ratings, wiring and protection remain unverified. Speed control is an isolated preset proposal only; no powered open-box adjustment. NOT a drilling, wiring or energization release. Native tower unchanged; physical0. Sources/reproduction in module README.
 
 New E03: D01_E03_DIMENSIONED_CONTROL_LAYOUT.pdf and engineering/reports/prototype_d01/electrical_package/control_module/ contain original editable external-module envelope CAD and placements. Three bodies and three ASSUMED service spaces clear the private exact Hammond STEP; no physical fit or release. Closed-lid NA-FC1 access, supports, protection, actual cables and heat remain unresolved. Source STEP not redistributed; download source instructions and hashes in module README/FIT_CHECKS.json. Native R03M unchanged.
 
-Read AQI_TOWER_TECHNICAL_HANDOFF.pdf: 50 pages comprising the current five-page introduction, preserved 41-page IH02 engineering reference and four-page E01 power/wiring supplement. Room-model software and existing exploratory decay tool are included; read ROOM_MODEL_BASIS.md. Record actual decisions in TECHNICAL_REVIEW.xlsx. Not for fabrication, ordering or energization.
+AQI_TOWER_TECHNICAL_HANDOFF.pdf now has56 pages: two current decision pages, two E05 layout pages, two preserved E02 bench pages, earlier five-page introduction, preserved41-page IH02 reference and four-page E01 supplement. Room-model software and exploratory decay tool included; read ROOM_MODEL_BASIS.md. Record actual decisions in TECHNICAL_REVIEW.xlsx. Not for fabrication, ordering or energization.
 
 The last four pages provide the current power path, fan pin-function reference, catalogue-load and conditional wire-drop calculation, and exact remaining protection gaps. From engineering/ run python scripts/analysis/d01_electrical_closure.py and python scripts/analysis/test_d01_electrical_closure.py. Ten synthetic tests, not physical commissioning. PR1 protection, actual wires/fuses/enclosure and manual-restart implementation are still UNSELECTED; do not bridge this open design.
 
@@ -381,7 +392,7 @@ with (O/'GITHUB_COVERAGE.csv').open('w',newline='',encoding='utf-8') as f:
 5 October 2026. Two audiences, one unchanged engineering basis: D01 R03M / IH02.
 
 - stakeholder/: 8-page plain-language Executive Summary and Comprehensive Report, room-scenario/funding workbook, offline dual-mode viewer and GIFs.
-- technical/: 50-page review including the current four-page E01 power/wiring supplement, preserved IH02 drawings, workbook, authoritative CAD/STEP/DXFs, current tools and editable Blender presentation.
+- technical/: one56-page review: current build decisions/E05 control layout/E02 bench reference first, preserved earlier50-page evidence afterwards; workbook, authoritative CAD/STEP/DXFs, current tools and editable Blender presentation. Current release gates and control placement are included. Not construction release.
 - The viewer now includes a1.70 m scale person, adjustable square room, area/height/assumed-CADR/time sliders and an ideal particle-decay chart. Default clean-air rate is an example, not a D01 rating. ROOM_MODEL_BASIS.md gives sources and limits.
 - visuals/: actual CAD-derived renders and annotated GIFs. Colour identifies parts; air motion is illustrative, not CFD.
 - GITHUB_COVERAGE.csv: excluded generated/dependency/history categories retained locally. GitHub is not an exact mirror of raw solver time folders or dependencies.

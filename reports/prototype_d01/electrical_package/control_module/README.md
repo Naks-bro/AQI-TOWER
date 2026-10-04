@@ -1,5 +1,17 @@
 # E03 — external control-module body layout
 
+## CURRENT: E05 consolidated control fit
+
+[Current build decision](D01_CURRENT_BUILD_DECISION.pdf), [corrected layout / input drawing](D01_E05_LID_CONTROLS_REVIEW.pdf), [editable current CAD](D01_E05_CURRENT_CONTROL_LAYOUT.FCStd), [STEP](D01_E05_CURRENT_CONTROL_LAYOUT.step), [coordinates](CURRENT_CONTROL_PLACEMENT.csv), [current fit evidence](CURRENT_CONTROL_CHECKS.json), [release gates](CURRENT_RELEASE_GATES.csv).
+
+DETECTED DIGITAL: E04 cable-space conflicts are now closed without reducing any assumed reservations. Hub rotated 90 degrees in the panel plane, lower-left X=-15/Y=-70 mm; controller lower-left X=68/Y=-65 mm. Button centres X=-15/45/105, Y=55 mm. All six rear/tail volumes, three body and three service envelopes clear the exact OEM box; mounting-panel support excluded. Service volumes mutually clear; button-tail reservations no longer overlap them. Geometry script reopens 18 valid native objects and checks 18 STEP solids. Native R03M remains unchanged. Earlier E03/E04 files below are preserved, NOT the current placement.
+
+ASSUMPTIONS unchanged: rear stack 40×40×55 mm, wire-tail depth 20 mm, body-only OEM envelopes, unselected carrier and actual connectors. UNKNOWN: actual assembly depth, bends/strain relief, supports and whole enclosure heat. Passing these reservations is not physical fit, wiring approval or proof that remaining protection/terminals fit. No drilling release.
+
+Current OEM source: [2026 Schneider Digest section19](https://www.se.com/us/en/download/document/0100CT2401-SEC-19/), dated22 July2026, page19-42/table19.99, confirms ZBE1016/ZBE1026 low-power blocks and separates dusty P variants. It does not state minimum switching values. A2005 manufacturer catalogue mirror quotes5–24V/0.1–100mA for historical assemblies, but is not used to release today's parts because variant descriptions have changed. Current numeric limits remain UNKNOWN; do not silently substitute historical data. Private source copies are not redistributed.
+
+Reproduce: `scripts/geometry/close_d01_control_layout.py` using existing FreeCAD Python, then report runtime `scripts/reports/build_d01_lid_controls.py --e05`, `scripts/reports/build_d01_closeout.py`, and `scripts/reports/build_shareable_delivery.py`. Required E03/E04 and private OEM model instructions follow. The combined technical PDF now puts current decision/E05/E02 pages first; historical drawings remain unchanged. Final review is consolidated; physical build release still depends on the five explicit gates in the decision PDF. No procurement, upload or physical test.
+
 ## Latest continuation: E04 closed-lid ordinary controls
 
 [Two-page lid layout and input schematic](D01_E04_LID_CONTROLS_REVIEW.pdf), [editable FreeCAD](D01_E04_LID_CONTROL_ENVELOPES.FCStd), [STEP](D01_E04_LID_CONTROL_ENVELOPES.step), [candidate button parts](LID_CONTROL_PARTS.csv), [checks and source links](LID_CONTROL_CHECKS.json). E03 below remains the preserved body-layout snapshot. E04 extends that same module, not the tower geometry.

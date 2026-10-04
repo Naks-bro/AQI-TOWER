@@ -1,0 +1,488 @@
+{
+  "release": false,
+  "physical_tests": 0,
+  "access_date": "2026-10-05",
+  "status": "ASSUMED SERVICE-VOLUME CONFLICTS CLOSED / ACTUAL WIRING AND BUILD RELEASE OPEN",
+  "native_tower_sha256": "fb28a31315968509dcdbbb2caac8c6d69c84ecb94a35ccd75937a5d9ecaa33a6",
+  "native_tower_unchanged": true,
+  "OEM_box_sha256": "eb10755ddc9c5a50c2c2ce4165a178575d1cc2d2dfa8b0f7289a745f01f57665",
+  "objects": 18,
+  "buttons": [
+    {
+      "name": "START",
+      "centre_mm": [
+        -15,
+        55
+      ],
+      "head": "ZB5AA3",
+      "collar": "ZB5AZ009",
+      "contact": "ZBE1016",
+      "contact_type": "NO",
+      "terminal": "I1",
+      "firmware_pin": "A0",
+      "color": "#148b69",
+      "lid_surface_levels_mm": [
+        46.0,
+        50.0
+      ],
+      "lid_local_thickness_mm": 4.0,
+      "rear_assumed_bounds_mm": [
+        -35,
+        35,
+        -9,
+        5,
+        75,
+        46
+      ],
+      "wire_tail_assumed_bounds_mm": [
+        -35,
+        35,
+        -29,
+        5,
+        75,
+        -9
+      ],
+      "OEM_collision_hits": [],
+      "minimum_body_gaps_mm": {
+        "CTRL1_OPTA_LITE": 10.0,
+        "H1_NA_FH1": 16.881983750732612,
+        "SC1_NA_FC1": 98.00707410876014
+      },
+      "assumed_service_overlap_mm3": {
+        "CTRL1_WIRE_SPACE_ASSUMED": 0.0,
+        "H1_CONNECTOR_SPACE_ASSUMED": 0.0,
+        "SC1_CONNECTOR_SPACE_ASSUMED": 0.0
+      }
+    },
+    {
+      "name": "STOP",
+      "centre_mm": [
+        45,
+        55
+      ],
+      "head": "ZB5AA4",
+      "collar": "ZB5AZ009",
+      "contact": "ZBE1026",
+      "contact_type": "NC",
+      "terminal": "I2",
+      "firmware_pin": "A1",
+      "color": "#d54451",
+      "lid_surface_levels_mm": [
+        46.0,
+        50.0
+      ],
+      "lid_local_thickness_mm": 4.0,
+      "rear_assumed_bounds_mm": [
+        25,
+        35,
+        -9,
+        65,
+        75,
+        46
+      ],
+      "wire_tail_assumed_bounds_mm": [
+        25,
+        35,
+        -29,
+        65,
+        75,
+        -9
+      ],
+      "OEM_collision_hits": [],
+      "minimum_body_gaps_mm": {
+        "CTRL1_OPTA_LITE": 70.0,
+        "H1_NA_FH1": 16.881983750732623,
+        "SC1_NA_FC1": 75.13578758061966
+      },
+      "assumed_service_overlap_mm3": {
+        "CTRL1_WIRE_SPACE_ASSUMED": 0.0,
+        "H1_CONNECTOR_SPACE_ASSUMED": 0.0,
+        "SC1_CONNECTOR_SPACE_ASSUMED": 0.0
+      }
+    },
+    {
+      "name": "RESET",
+      "centre_mm": [
+        105,
+        55
+      ],
+      "head": "ZB5AA6",
+      "collar": "ZB5AZ009",
+      "contact": "ZBE1016",
+      "contact_type": "NO",
+      "terminal": "I3",
+      "firmware_pin": "A2",
+      "color": "#4276c1",
+      "lid_surface_levels_mm": [
+        46.0,
+        50.0
+      ],
+      "lid_local_thickness_mm": 4.0,
+      "rear_assumed_bounds_mm": [
+        85,
+        35,
+        -9,
+        125,
+        75,
+        46
+      ],
+      "wire_tail_assumed_bounds_mm": [
+        85,
+        35,
+        -29,
+        125,
+        75,
+        -9
+      ],
+      "OEM_collision_hits": [],
+      "minimum_body_gaps_mm": {
+        "CTRL1_OPTA_LITE": 130.0,
+        "H1_NA_FH1": 59.44746735866885,
+        "SC1_NA_FC1": 75.07587212520411
+      },
+      "assumed_service_overlap_mm3": {
+        "CTRL1_WIRE_SPACE_ASSUMED": 0.0,
+        "H1_CONNECTOR_SPACE_ASSUMED": 0.0,
+        "SC1_CONNECTOR_SPACE_ASSUMED": 0.0
+      }
+    }
+  ],
+  "pitch_mm": 60,
+  "proposed_hole_diameter_mm": 22.3,
+  "hole_upper_tolerance_mm": 0.4,
+  "OEM_mount_panel_range_mm": [
+    1,
+    6
+  ],
+  "input_screen": {
+    "nominal_voltage_V": 12,
+    "OEM_impedance_ohm": 8900,
+    "nominal_resistance_screen_mA": 1.348314606741573,
+    "guaranteed_current_mA": null,
+    "OEM_current_at_10V_mA": 1.12,
+    "OEM_HIGH_min_V": 6.6,
+    "OEM_LOW_max_V": 4.46
+  },
+  "contact_minimum_switching_voltage_current": "UNKNOWN; gold-flashed low-power designation verified only",
+  "sources": {
+    "mounting": "https://download.se.com/files?p_Doc_Ref=BRU46063",
+    "low_power_catalogue": "https://iportal.se.com/Contents/docs/DIA5ED2121213EN.PDF",
+    "green_head": "https://www.clipsal.com/products/industrial/harmony/push-button-head-plastic-flush-green-22mm-spring-return-unmarked-zb5aa3?itemno=ZB5AA3",
+    "collar_CAD": "https://download.se.com/files?p_Doc_Ref=MCADID0005208_3D-CAD",
+    "opta": "https://docs.arduino.cc/resources/datasheets/AFX00001-AFX00002-AFX00003-datasheet.pdf",
+    "box": "https://www.hammfg.com/files/parts/pdf/1554XA2GY.pdf",
+    "current_contacts": "https://download.se.com/files?p_Doc_Ref=0100CT2401-SEC-19",
+    "current_contacts_page": "19-42; dated22 July2026; tables19.98/19.99; no numeric minimum switching range supplied"
+  },
+  "limitations": [
+    "Rear stack55mm and wire tail20mm are deliberately ASSUMED reservations, not OEM assembly fit proof",
+    "All unchanged assumed service/wire-tail reservations now mutually clear; actual lead bends/connectors still unknown",
+    "Local OEM lid thickness4mm at centres only; gasket, mounting torque, labels and sealing must be reviewed before drilling",
+    "Low-current numeric contact rating, terminal identifiers, leads, source protection and terminals not released",
+    "STOP is ordinary software input, not emergency stop or isolation; RESET never substitutes for protective restart",
+    "NA-FC1 remains internal: set only while source disconnected and lid closed before operation; no powered open-box adjustment",
+    "Protection, guards, mounts, source/harness and heat remain open; default firmware relay outputs remain disabled"
+  ],
+  "revision": "E05",
+  "actual_box_checks": [
+    {
+      "object": "START_REAR_ASSUMED",
+      "hits": []
+    },
+    {
+      "object": "START_WIRE_TAIL_ASSUMED",
+      "hits": []
+    },
+    {
+      "object": "STOP_REAR_ASSUMED",
+      "hits": []
+    },
+    {
+      "object": "STOP_WIRE_TAIL_ASSUMED",
+      "hits": []
+    },
+    {
+      "object": "RESET_REAR_ASSUMED",
+      "hits": []
+    },
+    {
+      "object": "RESET_WIRE_TAIL_ASSUMED",
+      "hits": []
+    },
+    {
+      "object": "CTRL1_WIRE_SPACE_ASSUMED",
+      "hits": []
+    },
+    {
+      "object": "H1_CONNECTOR_SPACE_ASSUMED",
+      "hits": []
+    },
+    {
+      "object": "SC1_CONNECTOR_SPACE_ASSUMED",
+      "hits": []
+    },
+    {
+      "object": "CTRL1_OPTA_LITE",
+      "hits": []
+    },
+    {
+      "object": "H1_NA_FH1",
+      "hits": []
+    },
+    {
+      "object": "SC1_NA_FC1",
+      "hits": []
+    }
+  ],
+  "service_pair_checks": [
+    {
+      "objects": [
+        "CTRL1_WIRE_SPACE_ASSUMED",
+        "SC1_CONNECTOR_SPACE_ASSUMED"
+      ],
+      "overlap_mm3": 0.0,
+      "gap_mm": 93.0
+    },
+    {
+      "objects": [
+        "H1_CONNECTOR_SPACE_ASSUMED",
+        "SC1_CONNECTOR_SPACE_ASSUMED"
+      ],
+      "overlap_mm3": 0.0,
+      "gap_mm": 9.999999999999993
+    },
+    {
+      "objects": [
+        "SC1_CONNECTOR_SPACE_ASSUMED",
+        "SC1_CONNECTOR_SPACE_ASSUMED"
+      ],
+      "overlap_mm3": 0.0,
+      "gap_mm": 9.999999999999993
+    }
+  ],
+  "placements": [
+    {
+      "name": "CB1_SIMPLIFIED_ENVELOPE",
+      "bounds_mm": [
+        -150.0,
+        -100.0,
+        -70.08,
+        150.0,
+        100.0,
+        50.0
+      ],
+      "status": "ORIGINAL APPROXIMATE SHELL; not Hammond manufacturing geometry"
+    },
+    {
+      "name": "PL1_SIMPLIFIED_PANEL",
+      "bounds_mm": [
+        -142.5,
+        -92.5,
+        -60.0,
+        142.5,
+        92.5,
+        -58.3744
+      ],
+      "status": "OEM285x185 outline; simplified rectangular proxy, contour/holes omitted except2 proposed4.5mm holes"
+    },
+    {
+      "name": "DIN1_ENVELOPE",
+      "bounds_mm": [
+        -135.0,
+        -17.5,
+        -58.3744,
+        -10.0,
+        17.5,
+        -50.8744
+      ],
+      "status": "OEM35x7.5 profile envelope; proposed125mm cut, not full profile or approved attachment"
+    },
+    {
+      "name": "CTRL1_OPTA_LITE",
+      "bounds_mm": [
+        -115.0,
+        -44.4,
+        -50.8744,
+        -45.0,
+        44.4,
+        10.2256
+      ],
+      "status": "OEM BODY DIMENSIONS / ASSUMED POSITION, ORIENTATION AND MOUNT; no connector geometry"
+    },
+    {
+      "name": "H1_NA_FH1",
+      "bounds_mm": [
+        -15.0,
+        -70.00000000000001,
+        -53.3744,
+        28.00000000000003,
+        23.0,
+        -40.8744
+      ],
+      "status": "OEM BODY DIMENSIONS / ASSUMED POSITION, ORIENTATION AND MOUNT; no connector geometry"
+    },
+    {
+      "name": "SC1_NA_FC1",
+      "bounds_mm": [
+        68.0,
+        -65.0,
+        -53.3744,
+        116.0,
+        -40.0,
+        -32.3744
+      ],
+      "status": "OEM BODY DIMENSIONS / ASSUMED POSITION, ORIENTATION AND MOUNT; no connector geometry"
+    },
+    {
+      "name": "CTRL1_WIRE_SPACE_ASSUMED",
+      "bounds_mm": [
+        -125.0,
+        -64.4,
+        -50.8744,
+        -35.0,
+        64.4,
+        10.2256
+      ],
+      "status": "ASSUMED routing/service volume; actual connectors/clip release and bends unknown"
+    },
+    {
+      "name": "H1_CONNECTOR_SPACE_ASSUMED",
+      "bounds_mm": [
+        -35.0,
+        -80.00000000000001,
+        -53.3744,
+        48.00000000000003,
+        33.00000000000001,
+        -25.8744
+      ],
+      "status": "ASSUMED routing/service volume; actual connectors/clip release and bends unknown"
+    },
+    {
+      "name": "SC1_CONNECTOR_SPACE_ASSUMED",
+      "bounds_mm": [
+        58.0,
+        -85.0,
+        -53.3744,
+        126.0,
+        -20.0,
+        -17.3744
+      ],
+      "status": "ASSUMED routing/service volume; actual connectors/clip release and bends unknown"
+    },
+    {
+      "name": "START_FACE_PROXY",
+      "bounds_mm": [
+        -29.5,
+        40.5,
+        50.0,
+        -0.5,
+        69.5,
+        58.0
+      ],
+      "status": "29mm head width from OEM; round face and 8mm projection ASSUMED"
+    },
+    {
+      "name": "START_REAR_ASSUMED",
+      "bounds_mm": [
+        -35.0,
+        35.0,
+        -9.0,
+        5.0,
+        75.0,
+        46.0
+      ],
+      "status": "ASSUMED40x40x55 below inner lid; not assembled OEM dimensions"
+    },
+    {
+      "name": "START_WIRE_TAIL_ASSUMED",
+      "bounds_mm": [
+        -35.0,
+        35.0,
+        -29.0,
+        5.0,
+        75.0,
+        -9.0
+      ],
+      "status": "ASSUMED20mm additional depth; not verified bend radius"
+    },
+    {
+      "name": "STOP_FACE_PROXY",
+      "bounds_mm": [
+        30.5,
+        40.5,
+        50.0,
+        59.5,
+        69.5,
+        58.0
+      ],
+      "status": "29mm head width from OEM; round face and 8mm projection ASSUMED"
+    },
+    {
+      "name": "STOP_REAR_ASSUMED",
+      "bounds_mm": [
+        25.0,
+        35.0,
+        -9.0,
+        65.0,
+        75.0,
+        46.0
+      ],
+      "status": "ASSUMED40x40x55 below inner lid; not assembled OEM dimensions"
+    },
+    {
+      "name": "STOP_WIRE_TAIL_ASSUMED",
+      "bounds_mm": [
+        25.0,
+        35.0,
+        -29.0,
+        65.0,
+        75.0,
+        -9.0
+      ],
+      "status": "ASSUMED20mm additional depth; not verified bend radius"
+    },
+    {
+      "name": "RESET_FACE_PROXY",
+      "bounds_mm": [
+        90.5,
+        40.5,
+        50.0,
+        119.5,
+        69.5,
+        58.0
+      ],
+      "status": "29mm head width from OEM; round face and 8mm projection ASSUMED"
+    },
+    {
+      "name": "RESET_REAR_ASSUMED",
+      "bounds_mm": [
+        85.0,
+        35.0,
+        -9.0,
+        125.0,
+        75.0,
+        46.0
+      ],
+      "status": "ASSUMED40x40x55 below inner lid; not assembled OEM dimensions"
+    },
+    {
+      "name": "RESET_WIRE_TAIL_ASSUMED",
+      "bounds_mm": [
+        85.0,
+        35.0,
+        -29.0,
+        125.0,
+        75.0,
+        -9.0
+      ],
+      "status": "ASSUMED20mm additional depth; not verified bend radius"
+    }
+  ],
+  "changes": {
+    "hub": "Rotate90 degrees about Z; translate X-37,Y-90 from E03",
+    "controller": "Translate X+28,Y-90 from E03",
+    "buttons": "Row Y55 instead of0; X unchanged"
+  },
+  "digital_routing_conflict_closed": true,
+  "actual_routing_verified": false
+}
