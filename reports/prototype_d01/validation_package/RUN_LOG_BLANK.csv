@@ -1,0 +1,2 @@
+run_id,date,operator,reviewer,assembly_revision,filter_part_revision,fan_setting,room_volume_m3,temperature_C,humidity_percent,ambient_pressure_Pa,flow_m3h,filter_left_dp_Pa,filter_right_dp_Pa,input_W,noise_dBA,instrument_refs,method_ref,anomalies,status
+,,,,R03M,,,,,,,,,,,,,,,NOT_EXECUTED

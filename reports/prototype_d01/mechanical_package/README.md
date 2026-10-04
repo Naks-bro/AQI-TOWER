@@ -4,6 +4,8 @@
 
 ## Open these
 
+Latest supplement: [guard bending sensitivity and limits](GUARD_ACCESS_DECISION.md).36 ideal solid-strip scenarios and28 arithmetic checks quantify thickness/span trade-offs, NOT perforated-guard strength. Native CAD and historical package are unchanged;1 mm sheet remains unreleased.
+
 - [Mechanical package PDF](AQI_D01_MECHANICAL_PACKAGE.pdf): assembly, exploded view, guard fabrication/joint route, fasteners, seals, support/stability, assembly sequence, release holds and10 current panel drawings.
 - [Assembly CAD](D01_R03M_ASSEMBLY.FCStd), [STEP](D01_R03M_ASSEMBLY.step), [exploded native CAD](D01_R03M_EXPLODED.FCStd).
 - [One mechanical ZIP](AQI_D01_MECHANICAL_PACKAGE.zip): current authored files with hashes; OEM source PDFs are not redistributed.
