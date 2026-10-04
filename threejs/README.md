@@ -2,7 +2,7 @@
 
 ## Current prototype presentation
 
-The current D01 R03M prototype has a separate [offline dual-mode viewer](../reports/shareable_20261005/AQI_TOWER_3D_REVIEW.html). Download/open it locally, or extract either [shareable bundle](../reports/shareable_20261005/README.md). It uses the actual 493 CAD objects and provides Simple/Technical modes, cutaway, explosion, part inspection and explicitly illustrative air markers. It is not a CFD solver or manufacturing model.
+The current D01 R03M prototype has a separate [offline dual-mode viewer](../reports/shareable_20261005/AQI_TOWER_3D_REVIEW.html). Download/open it locally, or extract either [shareable bundle](../reports/shareable_20261005/README.md). It uses the actual 493 CAD objects and provides Simple/Technical modes, cutaway, explosion, part inspection and explicitly illustrative air markers. A 1.70 m reference person and adjustable square room show scale; area/ceiling/assumed-CADR/time controls and reduction goals drive an ideal particle-decay chart. CADR is UNKNOWN for D01; defaults are examples. It is not a CFD solver, medical-clearance tool or manufacturing model. Test arithmetic with `node test_room_scenario.mjs` from this folder. See the [source/assumption basis](../reports/shareable_20261005/technical/ROOM_MODEL_BASIS.md).
 
 Sources are `src/presentation.js` and `presentation.template.html`. Build its bundled JS with the existing esbuild dependency, then run `scripts/reports/build_shareable_delivery.py` using the documented ReportLab/openpyxl/Pillow/pypdf/pypdfium2 environment. The report builder also requires the existing Blender renders and current IH02 evidence. Do not treat a presentation rebuild as an engineering release.
 

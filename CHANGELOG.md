@@ -4,6 +4,8 @@ This file records repository-level changes. Detailed engineering evidence remain
 
 ## Unreleased
 
+- 2026-10-05: Added human scale and adjustable room/ceiling/assumed-CADR/time/particle-reduction controls with an ideal decay chart and conditional airflow feasibility limit;19 synthetic JS checks. Refreshed stakeholder/technical reports to8/46 pages and workbooks with validated scenario formulas. Included existing offline recorder and exploratory decay analysis/tests/templates in technical bundle. No measured CADR, room rating, new CFD or mechanical/electrical release.
+
 - 2026-10-05: Added two shareable review bundles: 7-page plain-language stakeholder report/funding workbook and 45-page technical report/review workbook with preserved IH02 engineering payload. Imported actual R03M CAD into Blender, rendered assembly/exploded/cutaway views and two annotated GIFs, and built an offline Simple/Technical 3D viewer. Added source provenance, byte manifests and GitHub coverage exclusions. No native CAD change, new CFD, physical result or construction release.
 
 - 2026-10-05: Reorganized README around the current IH02/R03M prototype, added existing assembly and exploded-view images with limitations, corrected onboarding paths and historical revision wording, and added a local link/tracking check plus a Linux CI template for current analysis tools. Workflow activation is pending credentials with workflow write permission; the template is not an active check. No engineering result or release status changed.

@@ -17,6 +17,7 @@ from reportlab.graphics.shapes import Drawing, Circle, Rect, Line, String
 from openpyxl import Workbook, load_workbook
 from openpyxl.styles import Font, PatternFill, Alignment
 from openpyxl.utils import get_column_letter
+from openpyxl.worksheet.datavalidation import DataValidation
 from pypdf import PdfReader, PdfWriter
 import pypdfium2 as pdfium
 
@@ -126,6 +127,15 @@ stake += [PageBreak(),h('Report 2 Comprehensive Report'),sub('Vision for 2026'),
           sub('The next measurable milestone'),p('A review-approved prototype assembly followed by a safe first run with recorded airflow and pressure. A later controlled room test should compare background particle decay with purifier-on trials.'),
           p('Supplier responses, fabrication, delivery, qualified commissioning and physical testing are separate tasks. No completion date or performance percentage is promised.'),
           p('Use STAKEHOLDER_FUNDING.xlsx for staged funding discussions. Meetings content is omitted as requested; no meeting count has been invented.',True)]
+room_page=[PageBreak(),h('Room size, time and what we target'),
+    p('The prototype is about 0.631 m high in the current display envelope. The viewer places a simple 1.70 m person beside it for scale. This is not an average Indian height or a picture of a tested installation.'),
+    sub('The first target: airborne particles'),p('We aim to reduce airborne dust and fine smoke particles, including PM2.5 and PM10. The actual capture and room reduction need measurements. Smoke gases, CO2, carbon monoxide, odours/VOCs and bacteria/virus control are not established. Particle filtration does not replace ventilation or removing pollution sources.'),
+    sub('Why a bigger room takes longer'),p('A room contains a volume of air: floor area multiplied by ceiling height. More air takes longer to clean at the same particle-cleaned air rate. The interactive viewer lets you change the area, height, assumed clean-air rate and elapsed time.'),
+    table(['Example only','Ideal time to 90% fewer particles'],[['25 m2 room, 2.8 m ceiling, assumed150 m3/h clean air','64.5 minutes'],['50 m2 room, same ceiling and assumed clean-air rate','128.9 minutes']],[310,209]),
+    p('These examples are NOT prototype ratings or safe-occupancy times. They assume perfect mixing, no new particles and no outdoor influx. Open windows, people, cooking, leaks and uneven mixing change the result.'),
+    sub('A useful engineering requirement'),p('For the example25 m2 room to reach90% reduction in30 minutes, the ideal model needs322.4 m3/h of particle-cleaned air. Even perfect capture at the assumed300 m3/h airflow screening point cannot meet that target: its ideal minimum is32.2 minutes. That airflow has not been measured. We must agree a realistic room/target before claiming success.'),
+    p('Sources checked5 October2026: EPA Guide to Air Cleaners in the Home (epa.gov/indoor-air-quality-iaq/guide-air-cleaners-home), and CDC Appendix B Air (cdc.gov/infection-control/hcp/environmental-control/appendix-b-air.html). The latter supplies the ideal decay equation/mixing limitations, not a medical approval for our prototype.',True)]
+stake += room_page
 pdf(S/'AQI_TOWER_STAKEHOLDER_REPORT.pdf',stake)
 
 tech=[Paragraph('AQI Tower Engineering Handoff',styles['Title']),p('Current D01 R03M integration with IH02 evidence'),picture(V/'exploded.png',420),
@@ -144,6 +154,14 @@ tech=[Paragraph('AQI Tower Engineering Handoff',styles['Title']),p('Current D01 
       p('Existing Phase 9 CASE_M plot: KVO 250 + GEO_C + H13 approximation from a single manufacturer data point. Colours show calculated speed and gauge pressure for that historical case, not R03M performance.'),
       p('GEO_C is an earlier air-path geometry trial. It is not the current manufacturing assembly. Historical CFD is partial/nonconverged; the later numerical bypass seal is not a proven physical seal. No new R03M CFD has been run for this delivery.'),
       p('For the current prototype, use the pressure screen and obtain measured filter/installed-flow evidence. The following IH02 appendices are preserved unchanged.')]
+tech += [PageBreak(),h('Room duty and validation tools'),
+    p('Digital supplement. T01 remains OPEN: actual premises, accepted targets and instruments are not selected. The viewer calculates scenarios, not D01 CADR. First scope remains airborne particles; no gas, medical or outdoor coverage claims.'),
+    sub('Mass balance and performance requirement'),p('Volume V = area x ceiling height. Ideal particle concentration ratio = exp(-CADR x t / (60 x V)); time in minutes = -60 x V x ln(1-reduction) / CADR. CADR is size-dependent effective particle-cleaned flow, not fan free-air flow or the300 m3/h pressure-screen assumption. Source/influx, settling, ventilation and nonuniform mixing are excluded.'),
+    table(['Illustrative room at2.8 m height','90% in30 min requires CADR','Ideal90% time at assumed150 m3/h'],[['10 m2 /28 m3','128.9 m3/h','25.8 min'],['25 m2 /70 m3','322.4 m3/h','64.5 min'],['50 m2 /140 m3','644.7 m3/h','128.9 min']],[180,169,170]),
+    p('For a filtration-only mass balance, effective clean-air delivery cannot exceed actual installed airflow at100% capture. The25 m2 example needs more than the assumed300 m3/h screening flow. This is a conditional feasibility limit, not proof of delivered airflow. Accept room/target only after measured duty is known.'),
+    sub('Tools carried forward'),p('engineering/scripts/analysis/indoor_decay.py and its8 synthetic tests are now included. This existing single-pair off/on fit estimates conditional additional particle-cleaned flow only if its assumptions are explicitly declared. It is not certified CADR; repeatability and uncertainty remain unevaluated. Preserve calibration, source/background, ventilation state, timing and measured room volume. Use the existing recorder schema, not the older PARTICLE_TIMESERIES_BLANK.csv interchange format.'),
+    p('A new room-scenario workbook tab and ROOM_MODEL_BASIS.md explain inputs, limitations and sources. The interactive person and room are visual references, not a modeled occupied ventilation field. No guard, electrical or structural approval has been granted by this supplement.'),
+    p('Primary references checked5 October2026: EPA Guide to Air Cleaners in the Home; CDC Appendix B Air. See ROOM_MODEL_BASIS.md for exact links and applicability limits.',True)]
 pdf(T/'REVIEW_INTRO.pdf',tech)
 writer=PdfWriter()
 for path in (T/'REVIEW_INTRO.pdf',IH/'03_ENGINEERING_DRAWINGS_AND_REVIEW.pdf'):
@@ -180,6 +198,15 @@ for technical,path in [(False,S/'STAKEHOLDER_FUNDING.xlsx'),(True,T/'TECHNICAL_R
     sheet(wb,'Read me',[['Topic','Meaning'],['Revision','D01 R03M / IH02 / 5 October 2026'],['Status','Review only. Not order, fabrication or energization authorization.'],['Prices','Blank means UNKNOWN; no prices have been invented.'],['Evidence','CAD/digital checks are not physical results.'],['Team','College/NGO funding; no college lab assumed; qualified physical services still needed.']])
     sheet(wb,'Milestones',milestones)
     sheet(wb,'Claims',claims)
+    roomrows=[['ASSUMED area m2','ASSUMED height m','ASSUMED CADR m3/h','Target fraction reduced','Volume m3','Ideal target minutes','Required CADR for30 min','Status']]
+    for n,area in enumerate([10,25,50,100],2):
+        valid=f'AND(ISNUMBER(A{n}),A{n}>0,ISNUMBER(B{n}),B{n}>0,ISNUMBER(C{n}),C{n}>=0,ISNUMBER(D{n}),D{n}>0,D{n}<1)'
+        roomrows.append([area,2.8,150,.9,f'=IF({valid},A{n}*B{n},"INVALID INPUT")',f'=IF({valid},IF(C{n}>0,-60*E{n}*LN(1-D{n})/C{n},"NO MODELED CLEANING"),"INVALID INPUT")',f'=IF({valid},-2*E{n}*LN(1-D{n}),"INVALID INPUT")','Illustrative only; no measured D01 CADR'])
+    roomws=sheet(wb,'Room scenarios',roomrows)
+    for col,low,high in [('A',.1,10000),('B',.1,100),('C',0,100000),('D',.000001,.999999)]:
+        rule=DataValidation(type='decimal',operator='between',formula1=low,formula2=high,allow_blank=False)
+        rule.errorTitle='Invalid scenario';rule.error='Use a positive area/height, nonnegative CADR, and a reduction fraction strictly between0 and1.';rule.showErrorMessage=True;rule.errorStyle='stop';roomws.add_data_validation(rule);rule.add(f'{col}2:{col}5')
+    for row in roomws.iter_rows(min_row=2):row[3].number_format='0%'
     rows=readcsv(IH/'QUOTE_AND_FUNDING_REGISTER.csv')
     rows[0]+=['Quoted_line_total_INR']
     for n,row in enumerate(rows[1:],2):
@@ -198,11 +225,37 @@ for technical,path in [(False,S/'STAKEHOLDER_FUNDING.xlsx'),(True,T/'TECHNICAL_R
 
 for dest in (S,T):
     (dest/'visuals').mkdir(exist_ok=True)
-    for name in ('assembly.png','exploded.png','cutaway.png','assembly_exploded.gif','illustrative_airflow.gif'):
+    for name in ('assembly.png','exploded.png','cutaway.png','assembly_exploded.gif','illustrative_airflow.gif','human_scale.png','room_scenario.png'):
         shutil.copy2(V/name,dest/'visuals'/name)
     shutil.copy2(O/'AQI_TOWER_3D_REVIEW.html',dest/'AQI_TOWER_3D_REVIEW.html')
     shutil.copy2(O/'THREE_JS_LICENSE.txt',dest/'THREE_JS_LICENSE.txt')
 shutil.copytree(IH/'engineering',T/'engineering',dirs_exist_ok=True,ignore=shutil.ignore_patterns('__pycache__','*.pyc'))
+for name in ('indoor_decay.py','test_indoor_decay.py','test_measurement_recording.py'):
+    shutil.copy2(R/'scripts/analysis'/name,T/'engineering/scripts/analysis'/name)
+(T/'engineering/scripts/monitoring').mkdir(parents=True,exist_ok=True)
+shutil.copy2(R/'scripts/monitoring/record_measurements.py',T/'engineering/scripts/monitoring/record_measurements.py')
+(T/'engineering/data/monitoring').mkdir(parents=True,exist_ok=True)
+for name in ('decay_plan_TEMPLATE.json','run_metadata_TEMPLATE.json'):
+    shutil.copy2(R/'data/monitoring'/name,T/'engineering/data/monitoring'/name)
+(T/'ROOM_MODEL_BASIS.md').write_text('''# Indoor particle room model - 5 October 2026
+
+ASSUMPTIONS: well-mixed closed room, constant size-specific particle-clean-air delivery, no ongoing source/outdoor influx; natural deposition and ventilation excluded. Scene person1.70 m is a scale marker only. Room is drawn square from adjustable floor area; height is independently adjustable. These are not measured premises or an occupied-room simulation. Default25 m2,2.8 m,150 m3/h CADR are examples; D01 CADR is UNKNOWN.
+
+V=area*height; concentration ratio=exp(-CADR*t_minutes/(60*V)); target time=-60*V*ln(1-reduction)/CADR. At zero CADR the modeled fraction stays1 and target time is unavailable. Exactly100% removal is not reached in finite ideal time. The plot shows relative particles, not AQI or disease risk.
+
+Example25 m2/2.8 m/150 m3/h:90% in64.472 min. Double volume doubles time; double clean-air rate halves it. To reach90% in30 min,70 m3 requires322.362 m3/h CADR. If filtration airflow were300 m3/h and capture perfect, minimum ideal time would be32.236 min; both actual airflow and capture remain unmeasured. User-entered rates above300 do not describe that300 m3/h screening point.
+
+Targets: airborne dust and fine smoke particles, with PM2.5/PM10 trial measurements proposed. No whole-device HEPA, gases/CO2/CO/VOCs/odours, bacteria/virus control, medical protection or outdoor coverage established. Filtration supplements source control and ventilation; no intentional ozone, ionizer or UV stage is added.
+
+Sources checked5 October2026:
+- EPA https://www.epa.gov/indoor-air-quality-iaq/guide-air-cleaners-home : CADR is particle-specific, room volume matters, gas removal is distinct, filtration does not replace ventilation/source control. EPA does not certify D01.
+- CDC https://www.cdc.gov/infection-control/hcp/environmental-control/appendix-b-air.html : ideal exponential purge equation and no-source/perfect-mixing limits. We adapt Q to effective particle clean-air delivery; this is NOT healthcare clearance advice or certification.
+
+Existing research analysis: engineering/scripts/analysis/indoor_decay.py. It consumes recorder CSV fields timestamp_utc,stage,run_id,evidence_kind,channel,instrument_id,value,unit,calibration_reference. A plan specifies actual run/channel/instrument, indoor environment, room_volume_m3 and measured/assumed basis, usable_pm_floor_ug_m3 and floor evidence, off/on time windows and explicit assumption declarations. Run its --help and eight synthetic tests; never turn a synthetic fixture into physical evidence. This analysis does not subtract an asymptotic background, evaluate repeatability or produce confidence intervals. Use expert-designed real trials after safe commissioning; do not generate smoke or contaminants for a stakeholder demo.
+
+Remaining engineering release register is unchanged: source data, guard/structure/seals, rated circuit/enclosure, commissioning and physical trials remain OPEN. This supplement closes the room-scenario software task, not those approvals.
+''',encoding='utf-8')
+shutil.copy2(T/'ROOM_MODEL_BASIS.md',S/'ROOM_MODEL_BASIS.md')
 shutil.copy2(V/'AQI_R03M_REVIEW.blend',T/'AQI_R03M_REVIEW.blend')
 (T/'BLENDER_VIEW_GUIDE.md').write_text('''# Blender presentation guide
 
@@ -220,6 +273,22 @@ Sources: scripts/visualization/build_blender_review.py and render_blender_review
 shutil.copy2(R/'results/FILTER_H13/central_velocity_pressure_CASE_M.png',T/'historical_cfd/PHASE9_CASE_M_NOT_R03M.png')
 for name in ('CURRENT_PRESSURE_BUDGET.json','TOOL_USAGE.md','FILTER_CURVE_BLANK.csv'):
     shutil.copy2(IH/name,T/name)
+with (T/'TOOL_USAGE.md').open('a',encoding='utf-8') as f:
+    f.write('''
+
+## Room particle analysis supplement
+
+From engineering/:
+
+```
+python -m unittest discover -s scripts/analysis -p test_indoor_decay.py -v
+python -m unittest discover -s scripts/analysis -p test_measurement_recording.py -v
+python scripts/monitoring/record_measurements.py --help
+python scripts/analysis/indoor_decay.py --help
+```
+
+Copy the data/monitoring templates to new filenames and fill actual run/instrument/room/window metadata. Unfilled templates are intentionally invalid and must not be used as results. The importer converts actual JSONL records into a new CSV; it does not connect to sensors. Use that recorder CSV with indoor_decay.py, not the older particle-timeseries template. Both tools refuse to overwrite an existing evidence file. Read ROOM_MODEL_BASIS.md before interpretation; calibrated repeated trials remain necessary. No smoke/contaminant generation is authorized.
+''')
 (S/'START_HERE.md').write_text('''# AQI Tower stakeholder bundle
 
 Read AQI_TOWER_STAKEHOLDER_REPORT.pdf first. It separates Report 1 Executive Summary from Report 2 Comprehensive Report. Meetings content is omitted as requested; final project name is still needed.
@@ -232,7 +301,7 @@ Physical prototypes built: 0. Air animation is illustrative, NOT CFD. Outdoor bu
 ''',encoding='utf-8')
 (T/'START_HERE.md').write_text('''# AQI Tower technical bundle
 
-Read AQI_TOWER_TECHNICAL_HANDOFF.pdf: current four-page introduction followed by the preserved 41-page IH02 engineering reference. Record actual decisions in TECHNICAL_REVIEW.xlsx. Not for fabrication, ordering or energization.
+Read AQI_TOWER_TECHNICAL_HANDOFF.pdf: current five-page introduction followed by the preserved 41-page IH02 engineering reference. Room-model software and existing exploratory decay tool are included; read ROOM_MODEL_BASIS.md. Record actual decisions in TECHNICAL_REVIEW.xlsx. Not for fabrication, ordering or energization.
 
 Authoritative assembly: engineering/reports/prototype_d01/mechanical_package/D01_R03M_ASSEMBLY.FCStd. STEP, exploded CAD, harness reservation derivative and 15 review DXFs accompany it. Blender and the offline viewer are tessellated presentation derivatives, not manufacturing models or CFD validation.
 
@@ -269,8 +338,9 @@ with (O/'GITHUB_COVERAGE.csv').open('w',newline='',encoding='utf-8') as f:
 
 5 October 2026. Two audiences, one unchanged engineering basis: D01 R03M / IH02.
 
-- stakeholder/: plain-language Executive Summary and Comprehensive Report, funding workbook, offline dual-mode viewer and GIFs.
-- technical/: review introduction plus preserved IH02 drawings, workbook, authoritative CAD/STEP/DXFs, current tools and editable Blender presentation.
+- stakeholder/: 8-page plain-language Executive Summary and Comprehensive Report, room-scenario/funding workbook, offline dual-mode viewer and GIFs.
+- technical/: 46-page review plus preserved IH02 drawings, workbook, authoritative CAD/STEP/DXFs, current tools and editable Blender presentation.
+- The viewer now includes a1.70 m scale person, adjustable square room, area/height/assumed-CADR/time sliders and an ideal particle-decay chart. Default clean-air rate is an example, not a D01 rating. ROOM_MODEL_BASIS.md gives sources and limits.
 - visuals/: actual CAD-derived renders and annotated GIFs. Colour identifies parts; air motion is illustrative, not CFD.
 - GITHUB_COVERAGE.csv: excluded generated/dependency/history categories retained locally. GitHub is not an exact mirror of raw solver time folders or dependencies.
 

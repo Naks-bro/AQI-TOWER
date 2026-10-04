@@ -18,18 +18,22 @@ AQI Tower is a student engineering project developing a fan-and-filter air clean
 
 *Hand-authored air markers explain the intended path. This animation is NOT CFD, measured airflow or proof of cleaning. Existing historical CFD remains separately labelled in the technical report.*
 
+![Adjustable room with scale person and assumed particle-cleaning scenario](reports/shareable_20261005/visuals/room_scenario.png)
+
+*The viewer includes a 1.70 m illustrative person and adjustable room area/ceiling height, assumed particle clean-air rate, reduction goal and time. The model predicts ideal particle decay under explicit assumptions, NOT actual D01 performance or safe occupancy. Actual CADR remains unknown. See [room model basis](reports/shareable_20261005/technical/ROOM_MODEL_BASIS.md).*
+
 ## Start here
 
 | Reader | Open first |
 | --- | --- |
-| Stakeholder or new team member | [7-page Executive Summary + Comprehensive Report](reports/shareable_20261005/stakeholder/AQI_TOWER_STAKEHOLDER_REPORT.pdf) or [complete stakeholder ZIP](reports/shareable_20261005/AQI_TOWER_STAKEHOLDER_BUNDLE.zip) |
-| Mechanical or electrical engineer | [45-page technical handoff](reports/shareable_20261005/technical/AQI_TOWER_TECHNICAL_HANDOFF.pdf) or [complete technical ZIP](reports/shareable_20261005/AQI_TOWER_TECHNICAL_BUNDLE.zip) |
+| Stakeholder or new team member | [8-page Executive Summary + Comprehensive Report](reports/shareable_20261005/stakeholder/AQI_TOWER_STAKEHOLDER_REPORT.pdf) or [complete stakeholder ZIP](reports/shareable_20261005/AQI_TOWER_STAKEHOLDER_BUNDLE.zip) |
+| Mechanical or electrical engineer | [46-page technical handoff](reports/shareable_20261005/technical/AQI_TOWER_TECHNICAL_HANDOFF.pdf) or [complete technical ZIP](reports/shareable_20261005/AQI_TOWER_TECHNICAL_BUNDLE.zip) |
 | Person budgeting the build | [Funding workbook](reports/shareable_20261005/stakeholder/STAKEHOLDER_FUNDING.xlsx); prices and stock remain unknown until quoted |
 | Engineer recording decisions | [Technical review workbook](reports/shareable_20261005/technical/TECHNICAL_REVIEW.xlsx), including parts, release, pressure and hardware sheets |
 | Anyone exploring the design | [Offline 3D viewer](reports/shareable_20261005/AQI_TOWER_3D_REVIEW.html), with Simple and Technical views, cutaway, part inspection and explosion controls; download and open in a WebGL browser |
 | Blender user | [Editable CAD-derived presentation](reports/shareable_20261005/visuals/AQI_R03M_REVIEW.blend), not a manufacturing model |
 
-**The shareable delivery, dated 5 October 2026, uses unchanged IH02 / mechanical R03M evidence.** The technical PDF preserves the [41-page IH02 reference](reports/prototype_d01/internal_handoff_20261005/03_ENGINEERING_DRAWINGS_AND_REVIEW.pdf) after a four-page introduction. See [delivery instructions](reports/shareable_20261005/README.md). Older R00/R01/R02 handoffs and full-size tower studies remain historical evidence; do not combine their filter, fan, wiring or drilling assumptions with this prototype. This is a presentation/review update, not a new engineering release.
+**The shareable delivery, dated 5 October 2026, uses unchanged IH02 / mechanical R03M evidence.** The technical PDF preserves the [41-page IH02 reference](reports/prototype_d01/internal_handoff_20261005/03_ENGINEERING_DRAWINGS_AND_REVIEW.pdf) after a five-page introduction. See [delivery instructions](reports/shareable_20261005/README.md). Older R00/R01/R02 handoffs and full-size tower studies remain historical evidence; do not combine their filter, fan, wiring or drilling assumptions with this prototype. This is a presentation/review update, not a new engineering release.
 
 ## How the first prototype works
 
@@ -60,6 +64,12 @@ An external **12 V Noctua power adapter** and OEM fan controller/hub form the el
 | Future outdoor zones | Bubble radius, removal percentage and tower spacing remain unproven. Indoor results cannot establish outdoor coverage. |
 
 The historical sealed-filter CFD predicted approximately 1,332 m³/h for a different tower geometry and was partial/nonconverged. It does not validate D01. Carbon adsorption, solar assistance and outdoor deployment remain separate development work.
+
+## Intended targets and room sizing
+
+The first prototype aims to reduce airborne particles such as dust and fine smoke particles (PM2.5/PM10), not smoke gases. Actual particle capture and room reduction are unmeasured. No CO₂/CO, VOC/odour, bacteria/virus-control or health-protection performance is established. Filtration does not replace ventilation and source control.
+
+The viewer's example 25 m² room × 2.8 m ceiling has 70 m³ of air. At **assumed**, not measured, 150 m³/h particle-cleaned flow, the ideal 90% reduction time is 64.5 min. A 90% goal in 30 min instead requires 322.4 m³/h effective clean air. Even perfect capture at the **assumed 300 m³/h airflow** screening point cannot meet that target. This calculation helps choose realistic test requirements; it does not establish a room rating. Sources and no-source/perfect-mixing limitations are in [the model basis](reports/shareable_20261005/technical/ROOM_MODEL_BASIS.md).
 
 ## What remains before building
 

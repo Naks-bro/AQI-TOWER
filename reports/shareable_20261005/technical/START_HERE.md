@@ -1,6 +1,6 @@
 # AQI Tower technical bundle
 
-Read AQI_TOWER_TECHNICAL_HANDOFF.pdf: current four-page introduction followed by the preserved 41-page IH02 engineering reference. Record actual decisions in TECHNICAL_REVIEW.xlsx. Not for fabrication, ordering or energization.
+Read AQI_TOWER_TECHNICAL_HANDOFF.pdf: current five-page introduction followed by the preserved 41-page IH02 engineering reference. Room-model software and existing exploratory decay tool are included; read ROOM_MODEL_BASIS.md. Record actual decisions in TECHNICAL_REVIEW.xlsx. Not for fabrication, ordering or energization.
 
 Authoritative assembly: engineering/reports/prototype_d01/mechanical_package/D01_R03M_ASSEMBLY.FCStd. STEP, exploded CAD, harness reservation derivative and 15 review DXFs accompany it. Blender and the offline viewer are tessellated presentation derivatives, not manufacturing models or CFD validation.
 
