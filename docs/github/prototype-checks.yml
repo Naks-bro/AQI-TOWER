@@ -1,0 +1,20 @@
+name: Prototype analysis and README checks
+on:
+  push:
+    branches: [main]
+  pull_request:
+permissions:
+  contents: read
+jobs:
+  checks:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: python scripts/maintenance/check_readme_links.py
+      - run: python -m unittest discover -s scripts/analysis -p test_d01_current_filter_screen.py -v
+      - run: python scripts/analysis/d01_validation.py
+      - run: python scripts/analysis/d01_guard_bending.py
+      - run: python scripts/analysis/d01_control_acceptance.py
