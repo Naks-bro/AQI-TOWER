@@ -1,11 +1,11 @@
 #include <cassert>
 #include <iostream>
 #include <stdint.h>
-#include "ControlLogic.h"
-#include "test_support/Arduino.h"
+#include "../../d01_opta_review/ControlLogic.h"
+#include "Arduino.h"
 int hostInputs[32]={},hostOutputs[32]={};
 uint32_t hostTime=0;
-#include "d01_opta_review.ino"
+#include "../../d01_opta_review/d01_opta_review.ino"
 
 int main() {
   int checks=0;

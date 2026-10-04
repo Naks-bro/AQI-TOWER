@@ -1,4 +1,4 @@
-// HOST TEST SHIM ONLY, not the Arduino core or real board pin numbers.
+// HOST TEST SHIM ONLY, kept outside the sketch; not real board pin numbers.
 #pragma once
 #include <stdint.h>
 #include <initializer_list>

@@ -28,6 +28,8 @@ OEM terminals use their printed `+`, `-`, `I1`–`I8` and numbered output-pair l
 
 Run `python scripts/analysis/test_d01_opta_host.py` from the repository or packaged engineering root with an already-installed host `g++`. It compiles the actual core and sketch against a clearly labelled GPIO shim and writes `OPTA_HOST_CHECKS.json`. This is not an Opta target build. The controller still needs the matching real Arduino board core, review and hardware tests before any bench use; installing these needs authorization.
 
+Board-build preparation: desktop tests and their Arduino shim live outside the sketch in `firmware/tests/d01_opta/`. Arduino otherwise compiles sketch-root `.cpp` files, which would bring in the test `main()` and duplicate sketch definitions. The host runner checks this layout. Arduino CLI/core were not detected in checked PATH, common installation locations or Arduino15 on5 October; real board compilation awaits authorization to download the official toolchain. No hardware flashing is requested.
+
 ## Candidate integration and unresolved protection
 
 VERIFIED OEM: Opta Lite12–24 V supply, at12 V maximum2 W; IP20. The drawing shows70 x88.8 mm front dimensions and56.8 mm depth plus4.3 mm projection. It does not fit the current40 mm deep reservation in a normal DIN orientation. RECOMMENDATION: a separate low-voltage bench/control enclosure, not a new tower CAD branch. Hammond1554XA2GY300 x200 x120 mm is a verified enclosure candidate only; mounting plate, DIN rail, buttons, cable entries, clearances and cooling are not released. A drilled enclosure does not inherit the stock ingress rating.

@@ -243,6 +243,11 @@ for name in ('AQI_D01_POWER_AND_WIRING_SUPPLEMENT.pdf','POWER_COORDINATION.json'
     shutil.copy2(R/'reports/prototype_d01/electrical_package'/name,T/'engineering/reports/prototype_d01/electrical_package'/name)
 shutil.copy2(R/'reports/prototype_d01/electrical_package/AQI_D01_POWER_AND_WIRING_SUPPLEMENT.pdf',T/'AQI_D01_POWER_AND_WIRING_SUPPLEMENT.pdf')
 shutil.copytree(R/'firmware/d01_opta_review',T/'engineering/firmware/d01_opta_review',dirs_exist_ok=True)
+shutil.copytree(R/'firmware/tests/d01_opta',T/'engineering/firmware/tests/d01_opta',dirs_exist_ok=True)
+# Remove only superseded generated host-test copies, now preserved in firmware/tests.
+for stale in ('test_control.cpp','test_support/Arduino.h'):
+    target=T/'engineering/firmware/d01_opta_review'/stale
+    if target.is_file(): target.unlink()
 shutil.copy2(R/'scripts/analysis/test_d01_opta_host.py',T/'engineering/scripts/analysis/test_d01_opta_host.py')
 for name in ('AQI_D01_OPTA_BENCH_REVIEW.pdf','OPTA_INTEGRATION_SCREEN.json','OPTA_HOST_CHECKS.json'):
     shutil.copy2(R/'reports/prototype_d01/electrical_package'/name,T/'engineering/reports/prototype_d01/electrical_package'/name)

@@ -6,10 +6,11 @@
   "relay_output_enabled_by_default": false,
   "status": "HOST SYNTHETIC TESTS PASS / NOT BOARD COMPILED OR SAFETY IMPLEMENTATION",
   "compiler_version": "g++.EXE (MinGW-W64 x86_64-ucrt-posix-seh, built by Brecht Sanders) 13.2.0",
+  "sketch_layout_checked": true,
   "source_sha256": {
-    "ControlLogic.h": "d69b065064adcdebc56e6a873bb344c3d6532b847a948232cf8239b888435921",
-    "d01_opta_review.ino": "7b8e954812872e70b5d8377a1dcc7e8ff57b5c146bd0361ce3f4de940854c7de",
-    "test_control.cpp": "36f5aac58fe17b94f0659665dcf3dad1819830beb7da2caf2e27c65911fef5d6",
-    "test_support\\Arduino.h": "ac2ad15f4d7688ea8f7a1293008c80cc443914694e0505afefc7c95d50d2b56d"
+    "d01_opta_review\\ControlLogic.h": "d69b065064adcdebc56e6a873bb344c3d6532b847a948232cf8239b888435921",
+    "d01_opta_review\\d01_opta_review.ino": "7b8e954812872e70b5d8377a1dcc7e8ff57b5c146bd0361ce3f4de940854c7de",
+    "tests\\d01_opta\\Arduino.h": "209d1604ff36cac5c5950f67ead705c66ababdf85178859f754f212f6c7fd9d2",
+    "tests\\d01_opta\\test_control.cpp": "a1594292c5ddb9061ed08361224958c78dca5c0972e119d98c6995e680c3cd5d"
   }
 }
