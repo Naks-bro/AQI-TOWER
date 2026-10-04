@@ -1,0 +1,679 @@
+{
+  "status": "E01 DIGITAL ENGINEERING COMPLETE / POWER, WIRING AND SAFETY RELEASE OPEN",
+  "accessed": "2026-10-05",
+  "sources": {
+    "fan": "https://www.arctic.de/media/8a/18/01/1710507321/Spec_Sheet_P14_Max_EN.pdf",
+    "supply": "https://www.noctua.at/en/products/nv-ps1/specifications",
+    "controller": "https://www.noctua.at/en/products/na-fc1/specifications",
+    "hub": "https://www.noctua.at/en/products/na-fh1/specifications",
+    "hub_functions": "https://www.noctua.at/en/products/na-fh1/features",
+    "chain": "https://www.noctua.at/en/products/nv-ps1",
+    "isolation_principle": "https://www.hse.gov.uk/work-equipment-machinery/maintenance.htm"
+  },
+  "verified_catalogue": {
+    "fan_sku": "ACFAN00287A",
+    "fan_count": 4,
+    "fan_typical_voltage_V": 12,
+    "fan_published_current_A": 0.35,
+    "fan_published_start_voltage_V": 3.9,
+    "supply_output_V": 12,
+    "supply_max_A": 2,
+    "supply_max_W": 24,
+    "controller_max_A": 3,
+    "controller_max_W": 36,
+    "hub_selected_4pin_max_W": 24,
+    "hub_unselected_SATA_max_W": 54,
+    "fan_ambient_C": [
+      0,
+      40
+    ],
+    "supply_ambient_C": [
+      0,
+      40
+    ],
+    "hub_ambient_C": [
+      -40,
+      60
+    ],
+    "controller_environment": "UNKNOWN",
+    "fan_pin_functions": {
+      "1": "Ground (-)",
+      "2": "Power (+)",
+      "3": "Tachometer output",
+      "4": "PWM control"
+    }
+  },
+  "unresolved": {
+    "fan_startup_A": null,
+    "startup_duration_ms": null,
+    "auxiliary_current_A": null,
+    "supply_current_limit_time_curve": null,
+    "hub_fuse_time_current_curve": null,
+    "OEM_conductor_cross_sections": null,
+    "connector_contact_ratings": null,
+    "DC_switching_part": null,
+    "fuse_part_and_rating": null,
+    "complete_restart_hardware": null,
+    "enclosure_part": null,
+    "approved_minimum_running_fan_voltage_V": null
+  },
+  "nominal_fan_only": {
+    "assumed_fan_current_multiplier": 1,
+    "assumed_auxiliary_A": 0,
+    "total_A": 1.4,
+    "total_W": 16.799999999999997,
+    "governing_current_limit_A": 2.0,
+    "arithmetic_margin_A": 0.6000000000000001,
+    "exceeds_catalogue_continuous_limit": false,
+    "maximum_multiplier_at_assumed_auxiliary": 1.4285714285714286,
+    "interpretation": "Conditional catalogue-load screen, NOT measured inrush/trip timing or safety pass"
+  },
+  "load_scenarios": [
+    {
+      "assumed_fan_current_multiplier": 1,
+      "assumed_auxiliary_A": 0,
+      "total_A": 1.4,
+      "total_W": 16.799999999999997,
+      "governing_current_limit_A": 2.0,
+      "arithmetic_margin_A": 0.6000000000000001,
+      "exceeds_catalogue_continuous_limit": false,
+      "maximum_multiplier_at_assumed_auxiliary": 1.4285714285714286,
+      "interpretation": "Conditional catalogue-load screen, NOT measured inrush/trip timing or safety pass"
+    },
+    {
+      "assumed_fan_current_multiplier": 1.25,
+      "assumed_auxiliary_A": 0,
+      "total_A": 1.75,
+      "total_W": 21.0,
+      "governing_current_limit_A": 2.0,
+      "arithmetic_margin_A": 0.25,
+      "exceeds_catalogue_continuous_limit": false,
+      "maximum_multiplier_at_assumed_auxiliary": 1.4285714285714286,
+      "interpretation": "Conditional catalogue-load screen, NOT measured inrush/trip timing or safety pass"
+    },
+    {
+      "assumed_fan_current_multiplier": 1.5,
+      "assumed_auxiliary_A": 0,
+      "total_A": 2.0999999999999996,
+      "total_W": 25.199999999999996,
+      "governing_current_limit_A": 2.0,
+      "arithmetic_margin_A": -0.09999999999999964,
+      "exceeds_catalogue_continuous_limit": true,
+      "maximum_multiplier_at_assumed_auxiliary": 1.4285714285714286,
+      "interpretation": "Conditional catalogue-load screen, NOT measured inrush/trip timing or safety pass"
+    },
+    {
+      "assumed_fan_current_multiplier": 2,
+      "assumed_auxiliary_A": 0,
+      "total_A": 2.8,
+      "total_W": 33.599999999999994,
+      "governing_current_limit_A": 2.0,
+      "arithmetic_margin_A": -0.7999999999999998,
+      "exceeds_catalogue_continuous_limit": true,
+      "maximum_multiplier_at_assumed_auxiliary": 1.4285714285714286,
+      "interpretation": "Conditional catalogue-load screen, NOT measured inrush/trip timing or safety pass"
+    },
+    {
+      "assumed_fan_current_multiplier": 1,
+      "assumed_auxiliary_A": 0.05,
+      "total_A": 1.45,
+      "total_W": 17.4,
+      "governing_current_limit_A": 2.0,
+      "arithmetic_margin_A": 0.55,
+      "exceeds_catalogue_continuous_limit": false,
+      "maximum_multiplier_at_assumed_auxiliary": 1.392857142857143,
+      "interpretation": "Conditional catalogue-load screen, NOT measured inrush/trip timing or safety pass"
+    },
+    {
+      "assumed_fan_current_multiplier": 1.25,
+      "assumed_auxiliary_A": 0.05,
+      "total_A": 1.8,
+      "total_W": 21.6,
+      "governing_current_limit_A": 2.0,
+      "arithmetic_margin_A": 0.19999999999999996,
+      "exceeds_catalogue_continuous_limit": false,
+      "maximum_multiplier_at_assumed_auxiliary": 1.392857142857143,
+      "interpretation": "Conditional catalogue-load screen, NOT measured inrush/trip timing or safety pass"
+    },
+    {
+      "assumed_fan_current_multiplier": 1.5,
+      "assumed_auxiliary_A": 0.05,
+      "total_A": 2.1499999999999995,
+      "total_W": 25.799999999999994,
+      "governing_current_limit_A": 2.0,
+      "arithmetic_margin_A": -0.14999999999999947,
+      "exceeds_catalogue_continuous_limit": true,
+      "maximum_multiplier_at_assumed_auxiliary": 1.392857142857143,
+      "interpretation": "Conditional catalogue-load screen, NOT measured inrush/trip timing or safety pass"
+    },
+    {
+      "assumed_fan_current_multiplier": 2,
+      "assumed_auxiliary_A": 0.05,
+      "total_A": 2.8499999999999996,
+      "total_W": 34.199999999999996,
+      "governing_current_limit_A": 2.0,
+      "arithmetic_margin_A": -0.8499999999999996,
+      "exceeds_catalogue_continuous_limit": true,
+      "maximum_multiplier_at_assumed_auxiliary": 1.392857142857143,
+      "interpretation": "Conditional catalogue-load screen, NOT measured inrush/trip timing or safety pass"
+    },
+    {
+      "assumed_fan_current_multiplier": 1,
+      "assumed_auxiliary_A": 0.1,
+      "total_A": 1.5,
+      "total_W": 18.0,
+      "governing_current_limit_A": 2.0,
+      "arithmetic_margin_A": 0.5,
+      "exceeds_catalogue_continuous_limit": false,
+      "maximum_multiplier_at_assumed_auxiliary": 1.3571428571428572,
+      "interpretation": "Conditional catalogue-load screen, NOT measured inrush/trip timing or safety pass"
+    },
+    {
+      "assumed_fan_current_multiplier": 1.25,
+      "assumed_auxiliary_A": 0.1,
+      "total_A": 1.85,
+      "total_W": 22.200000000000003,
+      "governing_current_limit_A": 2.0,
+      "arithmetic_margin_A": 0.1499999999999999,
+      "exceeds_catalogue_continuous_limit": false,
+      "maximum_multiplier_at_assumed_auxiliary": 1.3571428571428572,
+      "interpretation": "Conditional catalogue-load screen, NOT measured inrush/trip timing or safety pass"
+    },
+    {
+      "assumed_fan_current_multiplier": 1.5,
+      "assumed_auxiliary_A": 0.1,
+      "total_A": 2.1999999999999997,
+      "total_W": 26.4,
+      "governing_current_limit_A": 2.0,
+      "arithmetic_margin_A": -0.19999999999999973,
+      "exceeds_catalogue_continuous_limit": true,
+      "maximum_multiplier_at_assumed_auxiliary": 1.3571428571428572,
+      "interpretation": "Conditional catalogue-load screen, NOT measured inrush/trip timing or safety pass"
+    },
+    {
+      "assumed_fan_current_multiplier": 2,
+      "assumed_auxiliary_A": 0.1,
+      "total_A": 2.9,
+      "total_W": 34.8,
+      "governing_current_limit_A": 2.0,
+      "arithmetic_margin_A": -0.8999999999999999,
+      "exceeds_catalogue_continuous_limit": true,
+      "maximum_multiplier_at_assumed_auxiliary": 1.3571428571428572,
+      "interpretation": "Conditional catalogue-load screen, NOT measured inrush/trip timing or safety pass"
+    },
+    {
+      "assumed_fan_current_multiplier": 1,
+      "assumed_auxiliary_A": 0.2,
+      "total_A": 1.5999999999999999,
+      "total_W": 19.2,
+      "governing_current_limit_A": 2.0,
+      "arithmetic_margin_A": 0.40000000000000013,
+      "exceeds_catalogue_continuous_limit": false,
+      "maximum_multiplier_at_assumed_auxiliary": 1.2857142857142858,
+      "interpretation": "Conditional catalogue-load screen, NOT measured inrush/trip timing or safety pass"
+    },
+    {
+      "assumed_fan_current_multiplier": 1.25,
+      "assumed_auxiliary_A": 0.2,
+      "total_A": 1.95,
+      "total_W": 23.4,
+      "governing_current_limit_A": 2.0,
+      "arithmetic_margin_A": 0.050000000000000044,
+      "exceeds_catalogue_continuous_limit": false,
+      "maximum_multiplier_at_assumed_auxiliary": 1.2857142857142858,
+      "interpretation": "Conditional catalogue-load screen, NOT measured inrush/trip timing or safety pass"
+    },
+    {
+      "assumed_fan_current_multiplier": 1.5,
+      "assumed_auxiliary_A": 0.2,
+      "total_A": 2.3,
+      "total_W": 27.599999999999998,
+      "governing_current_limit_A": 2.0,
+      "arithmetic_margin_A": -0.2999999999999998,
+      "exceeds_catalogue_continuous_limit": true,
+      "maximum_multiplier_at_assumed_auxiliary": 1.2857142857142858,
+      "interpretation": "Conditional catalogue-load screen, NOT measured inrush/trip timing or safety pass"
+    },
+    {
+      "assumed_fan_current_multiplier": 2,
+      "assumed_auxiliary_A": 0.2,
+      "total_A": 3.0,
+      "total_W": 36.0,
+      "governing_current_limit_A": 2.0,
+      "arithmetic_margin_A": -1.0,
+      "exceeds_catalogue_continuous_limit": true,
+      "maximum_multiplier_at_assumed_auxiliary": 1.2857142857142858,
+      "interpretation": "Conditional catalogue-load screen, NOT measured inrush/trip timing or safety pass"
+    },
+    {
+      "assumed_fan_current_multiplier": 1,
+      "assumed_auxiliary_A": 0.5,
+      "total_A": 1.9,
+      "total_W": 22.799999999999997,
+      "governing_current_limit_A": 2.0,
+      "arithmetic_margin_A": 0.10000000000000009,
+      "exceeds_catalogue_continuous_limit": false,
+      "maximum_multiplier_at_assumed_auxiliary": 1.0714285714285714,
+      "interpretation": "Conditional catalogue-load screen, NOT measured inrush/trip timing or safety pass"
+    },
+    {
+      "assumed_fan_current_multiplier": 1.25,
+      "assumed_auxiliary_A": 0.5,
+      "total_A": 2.25,
+      "total_W": 27.0,
+      "governing_current_limit_A": 2.0,
+      "arithmetic_margin_A": -0.25,
+      "exceeds_catalogue_continuous_limit": true,
+      "maximum_multiplier_at_assumed_auxiliary": 1.0714285714285714,
+      "interpretation": "Conditional catalogue-load screen, NOT measured inrush/trip timing or safety pass"
+    },
+    {
+      "assumed_fan_current_multiplier": 1.5,
+      "assumed_auxiliary_A": 0.5,
+      "total_A": 2.5999999999999996,
+      "total_W": 31.199999999999996,
+      "governing_current_limit_A": 2.0,
+      "arithmetic_margin_A": -0.5999999999999996,
+      "exceeds_catalogue_continuous_limit": true,
+      "maximum_multiplier_at_assumed_auxiliary": 1.0714285714285714,
+      "interpretation": "Conditional catalogue-load screen, NOT measured inrush/trip timing or safety pass"
+    },
+    {
+      "assumed_fan_current_multiplier": 2,
+      "assumed_auxiliary_A": 0.5,
+      "total_A": 3.3,
+      "total_W": 39.599999999999994,
+      "governing_current_limit_A": 2.0,
+      "arithmetic_margin_A": -1.2999999999999998,
+      "exceeds_catalogue_continuous_limit": true,
+      "maximum_multiplier_at_assumed_auxiliary": 1.0714285714285714,
+      "interpretation": "Conditional catalogue-load screen, NOT measured inrush/trip timing or safety pass"
+    }
+  ],
+  "stronger_supply_same_hub_counterexample": {
+    "assumed_fan_current_multiplier": 2,
+    "assumed_auxiliary_A": 0,
+    "total_A": 2.8,
+    "total_W": 33.599999999999994,
+    "governing_current_limit_A": 2.0,
+    "arithmetic_margin_A": -0.7999999999999998,
+    "exceeds_catalogue_continuous_limit": true,
+    "maximum_multiplier_at_assumed_auxiliary": 1.4285714285714286,
+    "interpretation": "Conditional catalogue-load screen, NOT measured inrush/trip timing or safety pass"
+  },
+  "voltage_drop_assumptions": "Copper rho20=0.0175 ohm mm2/m; alpha=0.00393/K. Example sections/lengths/temperatures, NOT existing OEM gauge, ampacity or allowable drop. Contact, controller and supply drops excluded; 3.9V startup is NOT approved running minimum.",
+  "voltage_drop_scenarios": [
+    {
+      "current_A": 0.35,
+      "assumed_one_way_m": 0.3,
+      "assumed_copper_section_mm2": 0.14,
+      "assumed_temperature_C": 20,
+      "loop_resistance_ohm": 0.075,
+      "drop_V": 0.02625,
+      "conductor_loss_W": 0.009187499999999998
+    },
+    {
+      "current_A": 0.35,
+      "assumed_one_way_m": 0.3,
+      "assumed_copper_section_mm2": 0.14,
+      "assumed_temperature_C": 40,
+      "loop_resistance_ohm": 0.080895,
+      "drop_V": 0.028313249999999995,
+      "conductor_loss_W": 0.009909637499999999
+    },
+    {
+      "current_A": 0.35,
+      "assumed_one_way_m": 0.3,
+      "assumed_copper_section_mm2": 0.25,
+      "assumed_temperature_C": 20,
+      "loop_resistance_ohm": 0.042,
+      "drop_V": 0.0147,
+      "conductor_loss_W": 0.005144999999999999
+    },
+    {
+      "current_A": 0.35,
+      "assumed_one_way_m": 0.3,
+      "assumed_copper_section_mm2": 0.25,
+      "assumed_temperature_C": 40,
+      "loop_resistance_ohm": 0.0453012,
+      "drop_V": 0.01585542,
+      "conductor_loss_W": 0.005549396999999999
+    },
+    {
+      "current_A": 0.35,
+      "assumed_one_way_m": 0.3,
+      "assumed_copper_section_mm2": 0.5,
+      "assumed_temperature_C": 20,
+      "loop_resistance_ohm": 0.021,
+      "drop_V": 0.00735,
+      "conductor_loss_W": 0.0025724999999999997
+    },
+    {
+      "current_A": 0.35,
+      "assumed_one_way_m": 0.3,
+      "assumed_copper_section_mm2": 0.5,
+      "assumed_temperature_C": 40,
+      "loop_resistance_ohm": 0.0226506,
+      "drop_V": 0.00792771,
+      "conductor_loss_W": 0.0027746984999999997
+    },
+    {
+      "current_A": 0.35,
+      "assumed_one_way_m": 0.7,
+      "assumed_copper_section_mm2": 0.14,
+      "assumed_temperature_C": 20,
+      "loop_resistance_ohm": 0.175,
+      "drop_V": 0.06124999999999999,
+      "conductor_loss_W": 0.021437499999999995
+    },
+    {
+      "current_A": 0.35,
+      "assumed_one_way_m": 0.7,
+      "assumed_copper_section_mm2": 0.14,
+      "assumed_temperature_C": 40,
+      "loop_resistance_ohm": 0.18875499999999998,
+      "drop_V": 0.06606424999999999,
+      "conductor_loss_W": 0.023122487499999993
+    },
+    {
+      "current_A": 0.35,
+      "assumed_one_way_m": 0.7,
+      "assumed_copper_section_mm2": 0.25,
+      "assumed_temperature_C": 20,
+      "loop_resistance_ohm": 0.098,
+      "drop_V": 0.0343,
+      "conductor_loss_W": 0.012004999999999998
+    },
+    {
+      "current_A": 0.35,
+      "assumed_one_way_m": 0.7,
+      "assumed_copper_section_mm2": 0.25,
+      "assumed_temperature_C": 40,
+      "loop_resistance_ohm": 0.1057028,
+      "drop_V": 0.03699598,
+      "conductor_loss_W": 0.012948592999999998
+    },
+    {
+      "current_A": 0.35,
+      "assumed_one_way_m": 0.7,
+      "assumed_copper_section_mm2": 0.5,
+      "assumed_temperature_C": 20,
+      "loop_resistance_ohm": 0.049,
+      "drop_V": 0.01715,
+      "conductor_loss_W": 0.006002499999999999
+    },
+    {
+      "current_A": 0.35,
+      "assumed_one_way_m": 0.7,
+      "assumed_copper_section_mm2": 0.5,
+      "assumed_temperature_C": 40,
+      "loop_resistance_ohm": 0.0528514,
+      "drop_V": 0.01849799,
+      "conductor_loss_W": 0.006474296499999999
+    },
+    {
+      "current_A": 0.35,
+      "assumed_one_way_m": 1.0,
+      "assumed_copper_section_mm2": 0.14,
+      "assumed_temperature_C": 20,
+      "loop_resistance_ohm": 0.25,
+      "drop_V": 0.0875,
+      "conductor_loss_W": 0.030624999999999996
+    },
+    {
+      "current_A": 0.35,
+      "assumed_one_way_m": 1.0,
+      "assumed_copper_section_mm2": 0.14,
+      "assumed_temperature_C": 40,
+      "loop_resistance_ohm": 0.26965,
+      "drop_V": 0.09437749999999999,
+      "conductor_loss_W": 0.033032124999999996
+    },
+    {
+      "current_A": 0.35,
+      "assumed_one_way_m": 1.0,
+      "assumed_copper_section_mm2": 0.25,
+      "assumed_temperature_C": 20,
+      "loop_resistance_ohm": 0.14,
+      "drop_V": 0.049,
+      "conductor_loss_W": 0.01715
+    },
+    {
+      "current_A": 0.35,
+      "assumed_one_way_m": 1.0,
+      "assumed_copper_section_mm2": 0.25,
+      "assumed_temperature_C": 40,
+      "loop_resistance_ohm": 0.15100400000000003,
+      "drop_V": 0.05285140000000001,
+      "conductor_loss_W": 0.018497990000000002
+    },
+    {
+      "current_A": 0.35,
+      "assumed_one_way_m": 1.0,
+      "assumed_copper_section_mm2": 0.5,
+      "assumed_temperature_C": 20,
+      "loop_resistance_ohm": 0.07,
+      "drop_V": 0.0245,
+      "conductor_loss_W": 0.008575
+    },
+    {
+      "current_A": 0.35,
+      "assumed_one_way_m": 1.0,
+      "assumed_copper_section_mm2": 0.5,
+      "assumed_temperature_C": 40,
+      "loop_resistance_ohm": 0.07550200000000001,
+      "drop_V": 0.026425700000000003,
+      "conductor_loss_W": 0.009248995000000001
+    },
+    {
+      "current_A": 1.4,
+      "assumed_one_way_m": 0.3,
+      "assumed_copper_section_mm2": 0.14,
+      "assumed_temperature_C": 20,
+      "loop_resistance_ohm": 0.075,
+      "drop_V": 0.105,
+      "conductor_loss_W": 0.14699999999999996
+    },
+    {
+      "current_A": 1.4,
+      "assumed_one_way_m": 0.3,
+      "assumed_copper_section_mm2": 0.14,
+      "assumed_temperature_C": 40,
+      "loop_resistance_ohm": 0.080895,
+      "drop_V": 0.11325299999999998,
+      "conductor_loss_W": 0.15855419999999998
+    },
+    {
+      "current_A": 1.4,
+      "assumed_one_way_m": 0.3,
+      "assumed_copper_section_mm2": 0.25,
+      "assumed_temperature_C": 20,
+      "loop_resistance_ohm": 0.042,
+      "drop_V": 0.0588,
+      "conductor_loss_W": 0.08231999999999999
+    },
+    {
+      "current_A": 1.4,
+      "assumed_one_way_m": 0.3,
+      "assumed_copper_section_mm2": 0.25,
+      "assumed_temperature_C": 40,
+      "loop_resistance_ohm": 0.0453012,
+      "drop_V": 0.06342168,
+      "conductor_loss_W": 0.08879035199999999
+    },
+    {
+      "current_A": 1.4,
+      "assumed_one_way_m": 0.3,
+      "assumed_copper_section_mm2": 0.5,
+      "assumed_temperature_C": 20,
+      "loop_resistance_ohm": 0.021,
+      "drop_V": 0.0294,
+      "conductor_loss_W": 0.041159999999999995
+    },
+    {
+      "current_A": 1.4,
+      "assumed_one_way_m": 0.3,
+      "assumed_copper_section_mm2": 0.5,
+      "assumed_temperature_C": 40,
+      "loop_resistance_ohm": 0.0226506,
+      "drop_V": 0.03171084,
+      "conductor_loss_W": 0.044395175999999995
+    },
+    {
+      "current_A": 1.4,
+      "assumed_one_way_m": 0.7,
+      "assumed_copper_section_mm2": 0.14,
+      "assumed_temperature_C": 20,
+      "loop_resistance_ohm": 0.175,
+      "drop_V": 0.24499999999999997,
+      "conductor_loss_W": 0.3429999999999999
+    },
+    {
+      "current_A": 1.4,
+      "assumed_one_way_m": 0.7,
+      "assumed_copper_section_mm2": 0.14,
+      "assumed_temperature_C": 40,
+      "loop_resistance_ohm": 0.18875499999999998,
+      "drop_V": 0.26425699999999996,
+      "conductor_loss_W": 0.3699597999999999
+    },
+    {
+      "current_A": 1.4,
+      "assumed_one_way_m": 0.7,
+      "assumed_copper_section_mm2": 0.25,
+      "assumed_temperature_C": 20,
+      "loop_resistance_ohm": 0.098,
+      "drop_V": 0.1372,
+      "conductor_loss_W": 0.19207999999999997
+    },
+    {
+      "current_A": 1.4,
+      "assumed_one_way_m": 0.7,
+      "assumed_copper_section_mm2": 0.25,
+      "assumed_temperature_C": 40,
+      "loop_resistance_ohm": 0.1057028,
+      "drop_V": 0.14798392,
+      "conductor_loss_W": 0.20717748799999997
+    },
+    {
+      "current_A": 1.4,
+      "assumed_one_way_m": 0.7,
+      "assumed_copper_section_mm2": 0.5,
+      "assumed_temperature_C": 20,
+      "loop_resistance_ohm": 0.049,
+      "drop_V": 0.0686,
+      "conductor_loss_W": 0.09603999999999999
+    },
+    {
+      "current_A": 1.4,
+      "assumed_one_way_m": 0.7,
+      "assumed_copper_section_mm2": 0.5,
+      "assumed_temperature_C": 40,
+      "loop_resistance_ohm": 0.0528514,
+      "drop_V": 0.07399196,
+      "conductor_loss_W": 0.10358874399999998
+    },
+    {
+      "current_A": 1.4,
+      "assumed_one_way_m": 1.0,
+      "assumed_copper_section_mm2": 0.14,
+      "assumed_temperature_C": 20,
+      "loop_resistance_ohm": 0.25,
+      "drop_V": 0.35,
+      "conductor_loss_W": 0.48999999999999994
+    },
+    {
+      "current_A": 1.4,
+      "assumed_one_way_m": 1.0,
+      "assumed_copper_section_mm2": 0.14,
+      "assumed_temperature_C": 40,
+      "loop_resistance_ohm": 0.26965,
+      "drop_V": 0.37750999999999996,
+      "conductor_loss_W": 0.5285139999999999
+    },
+    {
+      "current_A": 1.4,
+      "assumed_one_way_m": 1.0,
+      "assumed_copper_section_mm2": 0.25,
+      "assumed_temperature_C": 20,
+      "loop_resistance_ohm": 0.14,
+      "drop_V": 0.196,
+      "conductor_loss_W": 0.2744
+    },
+    {
+      "current_A": 1.4,
+      "assumed_one_way_m": 1.0,
+      "assumed_copper_section_mm2": 0.25,
+      "assumed_temperature_C": 40,
+      "loop_resistance_ohm": 0.15100400000000003,
+      "drop_V": 0.21140560000000003,
+      "conductor_loss_W": 0.29596784000000004
+    },
+    {
+      "current_A": 1.4,
+      "assumed_one_way_m": 1.0,
+      "assumed_copper_section_mm2": 0.5,
+      "assumed_temperature_C": 20,
+      "loop_resistance_ohm": 0.07,
+      "drop_V": 0.098,
+      "conductor_loss_W": 0.1372
+    },
+    {
+      "current_A": 1.4,
+      "assumed_one_way_m": 1.0,
+      "assumed_copper_section_mm2": 0.5,
+      "assumed_temperature_C": 40,
+      "loop_resistance_ohm": 0.07550200000000001,
+      "drop_V": 0.10570280000000001,
+      "conductor_loss_W": 0.14798392000000002
+    }
+  ],
+  "fault_coverage": [
+    {
+      "event": "Mains interruption/restoration",
+      "documented_action": "NV-PS1 power removal/restoration; no deliberate-start latch demonstrated",
+      "closure": "UNPROVEN",
+      "required": "Remove run permission; reject held START; fresh action required"
+    },
+    {
+      "event": "Hub overload/short recovery",
+      "documented_action": "OEM auto-resetting input fuses",
+      "closure": "NOT A MANUAL-RESTART LATCH",
+      "required": "Address recovery without defeating OEM fuses; sensing/latched response unselected"
+    },
+    {
+      "event": "Fan2/3/4 stalls",
+      "documented_action": "Per-port RPM LEDs; only fan1 RPM forwarded upstream",
+      "closure": "NO INDEPENDENT FOUR-FAN PROTECTIVE FEEDBACK",
+      "required": "Allocate fault response from actual hazards; independent coverage if required"
+    },
+    {
+      "event": "PWM cable open or speed dial at minimum",
+      "documented_action": "No verified whole-chain stopped-state guarantee",
+      "closure": "UNKNOWN",
+      "required": "Never treat PWM setting as isolation; document actual loss-of-signal response"
+    },
+    {
+      "event": "Filter or guard servicing",
+      "documented_action": "No selected reconnection-prevention assembly",
+      "closure": "OPEN",
+      "required": "Isolate every energy path; prevent reconnection; verify run-down before access"
+    },
+    {
+      "event": "Logger/USB loss",
+      "documented_action": "Logger separate from fan power reference",
+      "closure": "ARCHITECTURE INTENT ONLY",
+      "required": "No backfeed or safety dependence; physical segregation/verification still required"
+    }
+  ],
+  "release": {
+    "energization": false,
+    "procurement": false,
+    "fuse_selected": false,
+    "wire_selected": false,
+    "safety_function_implemented": false,
+    "physical_prototypes": 0,
+    "physical_tests": 0
+  },
+  "recommendation": "Retain external unmodified OEM adapter reference and single fan-power domain for indoor prototype. Do not insert an unselected relay, bridge the protective gap, uprate the supply alone, use SATA or parallel adapters. Finish hazard allocation and rated switching/protection/enclosure as one assembly. Existing restart requirements unchanged."
+}

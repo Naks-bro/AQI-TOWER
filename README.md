@@ -6,6 +6,8 @@ AQI Tower is a student engineering project developing a fan-and-filter air clean
 
 Latest mechanical calculation: [mass and stability supplement](reports/prototype_d01/mechanical_package/MASS_STABILITY_REVIEW.md). Actual guard-hole drawings and published fan weights give a **12.61 kg partial assumed assembly**, not finished tower weight. Filters, feet, seals and controls remain unweighed; no stability approval. Includes reproducible calculations and six synthetic tests.
 
+Latest electrical calculation: [four-page power and wiring supplement](reports/prototype_d01/electrical_package/AQI_D01_POWER_AND_WIRING_SUPPLEMENT.pdf). OEM connector-level reference, verified fan pin functions, 20 load and 36 conditional wire-drop scenarios; ten synthetic tests. Rated restart/protection, actual conductor/fuse selection and enclosure remain open. Do not energize the incomplete circuit.
+
 ## See the current design
 
 ![Current D01 R03M assembly rendered in Blender](reports/shareable_20261005/visuals/assembly.png)
@@ -29,13 +31,13 @@ Latest mechanical calculation: [mass and stability supplement](reports/prototype
 | Reader | Open first |
 | --- | --- |
 | Stakeholder or new team member | [8-page Executive Summary + Comprehensive Report](reports/shareable_20261005/stakeholder/AQI_TOWER_STAKEHOLDER_REPORT.pdf) or [complete stakeholder ZIP](reports/shareable_20261005/AQI_TOWER_STAKEHOLDER_BUNDLE.zip) |
-| Mechanical or electrical engineer | [46-page technical handoff](reports/shareable_20261005/technical/AQI_TOWER_TECHNICAL_HANDOFF.pdf) or [complete technical ZIP](reports/shareable_20261005/AQI_TOWER_TECHNICAL_BUNDLE.zip) |
+| Mechanical or electrical engineer | [50-page technical handoff](reports/shareable_20261005/technical/AQI_TOWER_TECHNICAL_HANDOFF.pdf) or [complete technical ZIP](reports/shareable_20261005/AQI_TOWER_TECHNICAL_BUNDLE.zip) |
 | Person budgeting the build | [Funding workbook](reports/shareable_20261005/stakeholder/STAKEHOLDER_FUNDING.xlsx); prices and stock remain unknown until quoted |
 | Engineer recording decisions | [Technical review workbook](reports/shareable_20261005/technical/TECHNICAL_REVIEW.xlsx), including parts, release, pressure and hardware sheets |
 | Anyone exploring the design | [Offline 3D viewer](reports/shareable_20261005/AQI_TOWER_3D_REVIEW.html), with Simple and Technical views, cutaway, part inspection and explosion controls; download and open in a WebGL browser |
 | Blender user | [Editable CAD-derived presentation](reports/shareable_20261005/visuals/AQI_R03M_REVIEW.blend), not a manufacturing model |
 
-**The shareable delivery, dated 5 October 2026, uses unchanged IH02 / mechanical R03M evidence.** The technical PDF preserves the [41-page IH02 reference](reports/prototype_d01/internal_handoff_20261005/03_ENGINEERING_DRAWINGS_AND_REVIEW.pdf) after a five-page introduction. See [delivery instructions](reports/shareable_20261005/README.md). Older R00/R01/R02 handoffs and full-size tower studies remain historical evidence; do not combine their filter, fan, wiring or drilling assumptions with this prototype. This is a presentation/review update, not a new engineering release.
+**The shareable delivery, dated 5 October 2026, preserves IH02 / mechanical R03M evidence and adds current calculation supplements.** The technical PDF preserves the [41-page IH02 reference](reports/prototype_d01/internal_handoff_20261005/03_ENGINEERING_DRAWINGS_AND_REVIEW.pdf) after a five-page introduction, followed by the four-page E01 electrical supplement. See [delivery instructions](reports/shareable_20261005/README.md). Older R00/R01/R02 handoffs and full-size tower studies remain historical evidence; do not combine their filter, fan, wiring or drilling assumptions with this prototype. This is an engineering-review update, not a build release.
 
 ## How the first prototype works
 

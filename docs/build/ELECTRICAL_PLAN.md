@@ -1,5 +1,7 @@
 # Electrical and monitoring plan
 
+**Latest D01 supplement, 5 October:** [E01 power and wiring review](../../reports/prototype_d01/electrical_package/AQI_D01_POWER_AND_WIRING_SUPPLEMENT.pdf) and [coordination arithmetic](../../reports/prototype_d01/electrical_package/POWER_COORDINATION.json). Four-page connector-level drawing, official fan pin functions,20 assumed load/36 wire-drop examples and10 tests. Rated protection/manual restart, conductor/fuse selection and enclosure remain OPEN. This does not supersede the existing control-sequence requirements or release hardware.
+
 **Current prototype reference, 5 October 2026:** [IH02 engineering handoff](../../reports/prototype_d01/internal_handoff_20261005/START_HERE.md) controls the D01 review: four12V P14 Max fans and proposed OEM Noctua power/control chain. The historical230V large-tower plan below is not a D01 wiring instruction. Rated protection, enclosure/harness and commissioning remain unfinished; use the current electrical appendix and release register for internal review.
 
 PRELIMINARY FUNCTIONAL PLAN — NOT A WIRING DRAWING. 2 October 2026.

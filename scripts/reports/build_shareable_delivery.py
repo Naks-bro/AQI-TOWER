@@ -164,7 +164,7 @@ tech += [PageBreak(),h('Room duty and validation tools'),
     p('Primary references checked5 October2026: EPA Guide to Air Cleaners in the Home; CDC Appendix B Air. See ROOM_MODEL_BASIS.md for exact links and applicability limits.',True)]
 pdf(T/'REVIEW_INTRO.pdf',tech)
 writer=PdfWriter()
-for path in (T/'REVIEW_INTRO.pdf',IH/'03_ENGINEERING_DRAWINGS_AND_REVIEW.pdf'):
+for path in (T/'REVIEW_INTRO.pdf',IH/'03_ENGINEERING_DRAWINGS_AND_REVIEW.pdf',R/'reports/prototype_d01/electrical_package/AQI_D01_POWER_AND_WIRING_SUPPLEMENT.pdf'):
     writer.append(str(path))
 with (T/'AQI_TOWER_TECHNICAL_HANDOFF.pdf').open('wb') as f:writer.write(f)
 
@@ -237,6 +237,11 @@ for name in ('MASS_STABILITY_REVIEW.md','mass_stability_review.json','part_inven
 (T/'engineering/reports/prototype_d01/mechanical_package/panel_DXF_REVIEW_ONLY').mkdir(parents=True,exist_ok=True)
 shutil.copy2(M/'panel_DXF_REVIEW_ONLY/G_FACE.dxf',T/'engineering/reports/prototype_d01/mechanical_package/panel_DXF_REVIEW_ONLY/G_FACE.dxf')
 shutil.copy2(M/'MASS_STABILITY_REVIEW.md',T/'MASS_STABILITY_REVIEW.md')
+for name in ('d01_electrical_closure.py','test_d01_electrical_closure.py'):
+    shutil.copy2(R/'scripts/analysis'/name,T/'engineering/scripts/analysis'/name)
+for name in ('AQI_D01_POWER_AND_WIRING_SUPPLEMENT.pdf','POWER_COORDINATION.json','E01_RATED_PARTS.csv'):
+    shutil.copy2(R/'reports/prototype_d01/electrical_package'/name,T/'engineering/reports/prototype_d01/electrical_package'/name)
+shutil.copy2(R/'reports/prototype_d01/electrical_package/AQI_D01_POWER_AND_WIRING_SUPPLEMENT.pdf',T/'AQI_D01_POWER_AND_WIRING_SUPPLEMENT.pdf')
 for name in ('indoor_decay.py','test_indoor_decay.py','test_measurement_recording.py'):
     shutil.copy2(R/'scripts/analysis'/name,T/'engineering/scripts/analysis'/name)
 (T/'engineering/scripts/monitoring').mkdir(parents=True,exist_ok=True)
@@ -308,7 +313,9 @@ Physical prototypes built: 0. Air animation is illustrative, NOT CFD. Outdoor bu
 ''',encoding='utf-8')
 (T/'START_HERE.md').write_text('''# AQI Tower technical bundle
 
-Read AQI_TOWER_TECHNICAL_HANDOFF.pdf: current five-page introduction followed by the preserved 41-page IH02 engineering reference. Room-model software and existing exploratory decay tool are included; read ROOM_MODEL_BASIS.md. Record actual decisions in TECHNICAL_REVIEW.xlsx. Not for fabrication, ordering or energization.
+Read AQI_TOWER_TECHNICAL_HANDOFF.pdf: 50 pages comprising the current five-page introduction, preserved 41-page IH02 engineering reference and four-page E01 power/wiring supplement. Room-model software and existing exploratory decay tool are included; read ROOM_MODEL_BASIS.md. Record actual decisions in TECHNICAL_REVIEW.xlsx. Not for fabrication, ordering or energization.
+
+The last four pages provide the current power path, fan pin-function reference, catalogue-load and conditional wire-drop calculation, and exact remaining protection gaps. From engineering/ run python scripts/analysis/d01_electrical_closure.py and python scripts/analysis/test_d01_electrical_closure.py. Ten synthetic tests, not physical commissioning. PR1 protection, actual wires/fuses/enclosure and manual-restart implementation are still UNSELECTED; do not bridge this open design.
 
 Latest separate mechanical supplement: MASS_STABILITY_REVIEW.md. Corrected partial mass and directional static tipping arithmetic, NOT whole-device mass or safety approval. From engineering/ run python scripts/analysis/d01_mass_stability.py and python scripts/analysis/test_d01_mass_stability.py. Original mechanical PDFs and IH02 are preserved snapshots.
 
@@ -348,7 +355,7 @@ with (O/'GITHUB_COVERAGE.csv').open('w',newline='',encoding='utf-8') as f:
 5 October 2026. Two audiences, one unchanged engineering basis: D01 R03M / IH02.
 
 - stakeholder/: 8-page plain-language Executive Summary and Comprehensive Report, room-scenario/funding workbook, offline dual-mode viewer and GIFs.
-- technical/: 46-page review plus preserved IH02 drawings, workbook, authoritative CAD/STEP/DXFs, current tools and editable Blender presentation.
+- technical/: 50-page review including the current four-page E01 power/wiring supplement, preserved IH02 drawings, workbook, authoritative CAD/STEP/DXFs, current tools and editable Blender presentation.
 - The viewer now includes a1.70 m scale person, adjustable square room, area/height/assumed-CADR/time sliders and an ideal particle-decay chart. Default clean-air rate is an example, not a D01 rating. ROOM_MODEL_BASIS.md gives sources and limits.
 - visuals/: actual CAD-derived renders and annotated GIFs. Colour identifies parts; air motion is illustrative, not CFD.
 - GITHUB_COVERAGE.csv: excluded generated/dependency/history categories retained locally. GitHub is not an exact mirror of raw solver time folders or dependencies.

@@ -1,0 +1,8 @@
+ID,Quantity,Part,Evidence status,Release hold
+PS1,1,Noctua NV-PS1 + supplied NA-AC10,VERIFIED OEM REFERENCE,12V/2A/24W; external unmodified; actual India plug/conformity unresolved
+SC1,1,Noctua NA-FC1,VERIFIED OEM REFERENCE,3A limit; speed control only; consumption unknown
+H1,1,Noctua NA-FH1 + NA-EC1,VERIFIED OEM REFERENCE,24W four-pin input; SATA not used
+F1-F4,4,ARCTIC P14 Max ACFAN00287A,VERIFIED OEM REFERENCE,0.35A published current; startup profile unknown
+PR1,1 assembly,Isolation / switching / restart protective chain,UNSELECTED,"Actual hazards, sensing, held-start behavior, DC ratings and qualified review"
+W1,as required,Cables / entries / protection,UNSELECTED,"OEM gauge/contact data, actual routes, fault-current/time, restraints and guard entry"
+CB1,1,Control enclosure and mountings,UNSELECTED,140x100x40 CAD reservation is not a finished enclosure

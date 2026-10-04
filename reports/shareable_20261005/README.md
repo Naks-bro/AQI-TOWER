@@ -3,7 +3,7 @@
 5 October 2026. Two audiences, one unchanged engineering basis: D01 R03M / IH02.
 
 - stakeholder/: 8-page plain-language Executive Summary and Comprehensive Report, room-scenario/funding workbook, offline dual-mode viewer and GIFs.
-- technical/: 46-page review plus preserved IH02 drawings, workbook, authoritative CAD/STEP/DXFs, current tools and editable Blender presentation.
+- technical/: 50-page review including the current four-page E01 power/wiring supplement, preserved IH02 drawings, workbook, authoritative CAD/STEP/DXFs, current tools and editable Blender presentation.
 - The viewer now includes a1.70 m scale person, adjustable square room, area/height/assumed-CADR/time sliders and an ideal particle-decay chart. Default clean-air rate is an example, not a D01 rating. ROOM_MODEL_BASIS.md gives sources and limits.
 - visuals/: actual CAD-derived renders and annotated GIFs. Colour identifies parts; air motion is illustrative, not CFD.
 - GITHUB_COVERAGE.csv: excluded generated/dependency/history categories retained locally. GitHub is not an exact mirror of raw solver time folders or dependencies.

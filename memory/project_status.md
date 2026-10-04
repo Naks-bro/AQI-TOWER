@@ -2,6 +2,8 @@
 
 Last updated: 2026-10-05
 
+5 October electrical continuation: four-page AQI_D01_POWER_AND_WIRING_SUPPLEMENT.pdf visually inspected; verified OEM12V/2A NV-PS1,3A NA-FC1,24W4-pin NA-FH1 and ARCTIC pin functions. POWER_COORDINATION.json20 conditional load/36 assumed copper-loop cases; ten analytic/synthetic tests pass.0.10A illustrative auxiliary draw reduces multiplier ceiling to1.357x; actual startup/auxiliary/fault-time/contact/wire inputs UNKNOWN. Bigger adapter alone cannot remove hub2A path limit. PR1 remains unselected; actual fuse/conductor/contact ratings, complete protective restart and enclosure unresolved. Current technical PDF50 pages (5intro+preserved41IH02+4E01); E00 originals preserved. No physical tests, components purchased or invented terminals; native CAD unchanged. Arithmetic/drawing supplement complete, NOT rated electrical/build release.
+
 5 October mechanical continuation: new d01_mass_stability.py derives nominal contact hull from four actual foot meshes, parses2822 holes per guard face from DXF and subtracts their exact first moments from solid-face CAD proxies. At assumed650/600/7850kg/m3 panel/cleat/metal densities, hole removal reduces mass0.556758kg; adds four OEM-specified245g P14 Max fan masses with ASSUMED CAD centroid locations. Corrected partial subtotal12.613078kg, partial CG[275.044,180.111,365.545]mm.29 modeled mass objects remain unresolved; complete mass/CG null. Six synthetic/analytic tests pass; unchanged native CAD hash verified. OEM sheet0–40C ambient limitation recorded, not outdoor suitability. New MASS_STABILITY_REVIEW.md and JSON supplement; old screen/ZIP/PDF preserved. No physical results, sourcing, ordering or build release.
 
 ## Physical build transition — current priority
