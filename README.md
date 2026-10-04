@@ -1,5 +1,7 @@
 # AQI Tower
 
+Latest parallel engineering batch: [concrete results and one-command verification](reports/prototype_d01/batch_summary/README.md). New seal-tolerance and cabinet-joint demand tools, electrical startup/voltage/fault screens, current28-line parts register, and independent handoff audit.18 new synthetic tests pass; no seal, structure, rated circuit or physical performance approval inferred. Use the workbook's **Current combined parts** tab rather than the preserved historical parts list.
+
 AQI Tower is a student engineering project developing a fan-and-filter air cleaner. We are preparing a small indoor prototype before investigating a larger outdoor cylindrical tower.
 
 **Current stage:** internal engineering review. **Physical prototypes built: 0.** The design still needs mechanical and electrical release before construction.

@@ -1,0 +1,1150 @@
+{
+  "status": "DIGITAL REQUIREMENTS SCREEN / NOT FABRICATION OR SAFETY APPROVAL",
+  "input_sha256": {
+    "cad_mesh.json": "118f26142c8f80aaccf5ab6aea0c930cb91ac520c8ccdb531e47f49d504a8bb2",
+    "part_inventory.json": "512c4b98c1be4c2b2e93f6fb119263bad7294e27df5eea53af4bd02bfb5b1c7b",
+    "fasteners.json": "fe603efe07b01facaf2c671d69b20854bbe8762ebca7bc5a823bb0f2f0fd6cca",
+    "D01_R03M_ASSEMBLY.FCStd": "fb28a31315968509dcdbbb2caac8c6d69c84ecb94a35ccd75937a5d9ecaa33a6"
+  },
+  "cad_filter_stacks": {
+    "Front": {
+      "nominal_stop_gap_mm": 43.0,
+      "modeled_filter_thickness_mm": 40.0,
+      "modeled_installed_gasket_mm": 3.0,
+      "modeled_inner_sleeve_mm": 36.0,
+      "gap_minus_sleeve_mm": 7.0,
+      "reducer_y_faces_mm": [
+        -12.0,
+        -3.0
+      ],
+      "retainer_y_faces_mm": [
+        -64.0,
+        -55.0
+      ]
+    },
+    "Rear": {
+      "nominal_stop_gap_mm": 43.0,
+      "modeled_filter_thickness_mm": 40.0,
+      "modeled_installed_gasket_mm": 3.0,
+      "modeled_inner_sleeve_mm": 36.0,
+      "gap_minus_sleeve_mm": 7.0,
+      "reducer_y_faces_mm": [
+        363.0,
+        372.0
+      ],
+      "retainer_y_faces_mm": [
+        415.0,
+        424.0
+      ]
+    }
+  },
+  "seal_scenarios": [
+    {
+      "id": "historical_thickness_sensitivity",
+      "basis": "ASSUMED independent bounds; not OEM limits or selected material",
+      "filter_mm": [
+        39,
+        41
+      ],
+      "free_gasket_mm": [
+        4,
+        4
+      ],
+      "compression_fraction": [
+        0.2,
+        0.4
+      ],
+      "gap_error_mm": 0.25,
+      "result": {
+        "nominal_gap_lower_mm": 43.65,
+        "nominal_gap_upper_mm": 41.95,
+        "robust_fixed_stop_possible": false,
+        "window_width_mm": -1.6999999999999957,
+        "nominal_gap_midpoint_mm": null
+      },
+      "current_43mm_compression": {
+        "min_fraction": -0.0625,
+        "max_fraction": 0.5625,
+        "interpretation": "Negative = uncompressed gap; >1 = impossible geometric overclosure"
+      },
+      "candidate_sleeve_mm": null
+    },
+    {
+      "id": "illustrative_matched_parts",
+      "basis": "ASSUMED independent bounds; not OEM limits or selected material",
+      "filter_mm": [
+        39.9,
+        40.1
+      ],
+      "free_gasket_mm": [
+        3.9,
+        4.1
+      ],
+      "compression_fraction": [
+        0.2,
+        0.4
+      ],
+      "gap_error_mm": 0.1,
+      "result": {
+        "nominal_gap_lower_mm": 42.660000000000004,
+        "nominal_gap_upper_mm": 42.919999999999995,
+        "robust_fixed_stop_possible": true,
+        "window_width_mm": 0.2599999999999909,
+        "nominal_gap_midpoint_mm": 42.79
+      },
+      "current_43mm_compression": {
+        "min_fraction": 0.17948717948717874,
+        "max_fraction": 0.31707317073170793,
+        "interpretation": "Negative = uncompressed gap; >1 = impossible geometric overclosure"
+      },
+      "candidate_sleeve_mm": 35.79
+    },
+    {
+      "id": "illustrative_wider_gasket_tolerance",
+      "basis": "ASSUMED independent bounds; not OEM limits or selected material",
+      "filter_mm": [
+        39.9,
+        40.1
+      ],
+      "free_gasket_mm": [
+        3.5,
+        4.5
+      ],
+      "compression_fraction": [
+        0.2,
+        0.4
+      ],
+      "gap_error_mm": 0.1,
+      "result": {
+        "nominal_gap_lower_mm": 42.900000000000006,
+        "nominal_gap_upper_mm": 42.599999999999994,
+        "robust_fixed_stop_possible": false,
+        "window_width_mm": -0.30000000000001137,
+        "nominal_gap_midpoint_mm": null
+      },
+      "current_43mm_compression": {
+        "min_fraction": 0.08571428571428485,
+        "max_fraction": 0.37777777777777843,
+        "interpretation": "Negative = uncompressed gap; >1 = impossible geometric overclosure"
+      },
+      "candidate_sleeve_mm": null
+    }
+  ],
+  "cad_gasket_contact_area_mm2": 12800.0,
+  "clamp_force_relationship": {
+    "total_N": "selected gasket compression stress MPa * modeled ring area mm2",
+    "modeled_ring_area_mm2": 12800.0,
+    "stress_MPa": null,
+    "installed_total_force_N": null,
+    "note": "Uniform contact assumption; adhesive, corners, seams and actual compression law unknown"
+  },
+  "cabinet_groups": {
+    "K06_End_False_": {
+      "plane_axes": [
+        "y",
+        "z"
+      ],
+      "bolt_count": 8,
+      "centres_mm": [
+        [
+          19.0,
+          105.0
+        ],
+        [
+          19.0,
+          205.0
+        ],
+        [
+          19.0,
+          405.0
+        ],
+        [
+          19.0,
+          505.0
+        ],
+        [
+          341.0,
+          105.0
+        ],
+        [
+          341.0,
+          205.0
+        ],
+        [
+          341.0,
+          405.0
+        ],
+        [
+          341.0,
+          505.0
+        ]
+      ],
+      "assumed_group_load_cases": [
+        {
+          "assumed_vertical_force_N": 10,
+          "assumed_horizontal_eccentricity_mm": 0,
+          "result": {
+            "centroid_mm": [
+              180.0,
+              305.0
+            ],
+            "sum_r_squared_mm2": 407368.0,
+            "force_vectors_N": [
+              [
+                0.0,
+                -1.25
+              ],
+              [
+                0.0,
+                -1.25
+              ],
+              [
+                0.0,
+                -1.25
+              ],
+              [
+                0.0,
+                -1.25
+              ],
+              [
+                0.0,
+                -1.25
+              ],
+              [
+                0.0,
+                -1.25
+              ],
+              [
+                0.0,
+                -1.25
+              ],
+              [
+                0.0,
+                -1.25
+              ]
+            ],
+            "peak_resultant_N": 1.25,
+            "recovered_force_N": [
+              0.0,
+              -10.0
+            ],
+            "recovered_moment_Nmm": 0.0
+          }
+        },
+        {
+          "assumed_vertical_force_N": 30,
+          "assumed_horizontal_eccentricity_mm": 0,
+          "result": {
+            "centroid_mm": [
+              180.0,
+              305.0
+            ],
+            "sum_r_squared_mm2": 407368.0,
+            "force_vectors_N": [
+              [
+                0.0,
+                -3.75
+              ],
+              [
+                0.0,
+                -3.75
+              ],
+              [
+                0.0,
+                -3.75
+              ],
+              [
+                0.0,
+                -3.75
+              ],
+              [
+                0.0,
+                -3.75
+              ],
+              [
+                0.0,
+                -3.75
+              ],
+              [
+                0.0,
+                -3.75
+              ],
+              [
+                0.0,
+                -3.75
+              ]
+            ],
+            "peak_resultant_N": 3.75,
+            "recovered_force_N": [
+              0.0,
+              -30.0
+            ],
+            "recovered_moment_Nmm": 0.0
+          }
+        },
+        {
+          "assumed_vertical_force_N": 60,
+          "assumed_horizontal_eccentricity_mm": 0,
+          "result": {
+            "centroid_mm": [
+              180.0,
+              305.0
+            ],
+            "sum_r_squared_mm2": 407368.0,
+            "force_vectors_N": [
+              [
+                0.0,
+                -7.5
+              ],
+              [
+                0.0,
+                -7.5
+              ],
+              [
+                0.0,
+                -7.5
+              ],
+              [
+                0.0,
+                -7.5
+              ],
+              [
+                0.0,
+                -7.5
+              ],
+              [
+                0.0,
+                -7.5
+              ],
+              [
+                0.0,
+                -7.5
+              ],
+              [
+                0.0,
+                -7.5
+              ]
+            ],
+            "peak_resultant_N": 7.5,
+            "recovered_force_N": [
+              0.0,
+              -60.0
+            ],
+            "recovered_moment_Nmm": 0.0
+          }
+        },
+        {
+          "assumed_vertical_force_N": 30,
+          "assumed_horizontal_eccentricity_mm": 100,
+          "result": {
+            "centroid_mm": [
+              180.0,
+              305.0
+            ],
+            "sum_r_squared_mm2": 407368.0,
+            "force_vectors_N": [
+              [
+                -1.4728697394002475,
+                -2.564339859782801
+              ],
+              [
+                -0.7364348697001237,
+                -2.564339859782801
+              ],
+              [
+                0.7364348697001237,
+                -2.564339859782801
+              ],
+              [
+                1.4728697394002475,
+                -2.564339859782801
+              ],
+              [
+                -1.4728697394002475,
+                -4.935660140217199
+              ],
+              [
+                -0.7364348697001237,
+                -4.935660140217199
+              ],
+              [
+                0.7364348697001237,
+                -4.935660140217199
+              ],
+              [
+                1.4728697394002475,
+                -4.935660140217199
+              ]
+            ],
+            "peak_resultant_N": 5.15073648024919,
+            "recovered_force_N": [
+              0.0,
+              -30.0
+            ],
+            "recovered_moment_Nmm": -3000.0
+          }
+        }
+      ]
+    },
+    "K06_End_True_": {
+      "plane_axes": [
+        "y",
+        "z"
+      ],
+      "bolt_count": 8,
+      "centres_mm": [
+        [
+          19.0,
+          105.0
+        ],
+        [
+          19.0,
+          205.0
+        ],
+        [
+          19.0,
+          405.0
+        ],
+        [
+          19.0,
+          505.0
+        ],
+        [
+          341.0,
+          105.0
+        ],
+        [
+          341.0,
+          205.0
+        ],
+        [
+          341.0,
+          405.0
+        ],
+        [
+          341.0,
+          505.0
+        ]
+      ],
+      "assumed_group_load_cases": [
+        {
+          "assumed_vertical_force_N": 10,
+          "assumed_horizontal_eccentricity_mm": 0,
+          "result": {
+            "centroid_mm": [
+              180.0,
+              305.0
+            ],
+            "sum_r_squared_mm2": 407368.0,
+            "force_vectors_N": [
+              [
+                0.0,
+                -1.25
+              ],
+              [
+                0.0,
+                -1.25
+              ],
+              [
+                0.0,
+                -1.25
+              ],
+              [
+                0.0,
+                -1.25
+              ],
+              [
+                0.0,
+                -1.25
+              ],
+              [
+                0.0,
+                -1.25
+              ],
+              [
+                0.0,
+                -1.25
+              ],
+              [
+                0.0,
+                -1.25
+              ]
+            ],
+            "peak_resultant_N": 1.25,
+            "recovered_force_N": [
+              0.0,
+              -10.0
+            ],
+            "recovered_moment_Nmm": 0.0
+          }
+        },
+        {
+          "assumed_vertical_force_N": 30,
+          "assumed_horizontal_eccentricity_mm": 0,
+          "result": {
+            "centroid_mm": [
+              180.0,
+              305.0
+            ],
+            "sum_r_squared_mm2": 407368.0,
+            "force_vectors_N": [
+              [
+                0.0,
+                -3.75
+              ],
+              [
+                0.0,
+                -3.75
+              ],
+              [
+                0.0,
+                -3.75
+              ],
+              [
+                0.0,
+                -3.75
+              ],
+              [
+                0.0,
+                -3.75
+              ],
+              [
+                0.0,
+                -3.75
+              ],
+              [
+                0.0,
+                -3.75
+              ],
+              [
+                0.0,
+                -3.75
+              ]
+            ],
+            "peak_resultant_N": 3.75,
+            "recovered_force_N": [
+              0.0,
+              -30.0
+            ],
+            "recovered_moment_Nmm": 0.0
+          }
+        },
+        {
+          "assumed_vertical_force_N": 60,
+          "assumed_horizontal_eccentricity_mm": 0,
+          "result": {
+            "centroid_mm": [
+              180.0,
+              305.0
+            ],
+            "sum_r_squared_mm2": 407368.0,
+            "force_vectors_N": [
+              [
+                0.0,
+                -7.5
+              ],
+              [
+                0.0,
+                -7.5
+              ],
+              [
+                0.0,
+                -7.5
+              ],
+              [
+                0.0,
+                -7.5
+              ],
+              [
+                0.0,
+                -7.5
+              ],
+              [
+                0.0,
+                -7.5
+              ],
+              [
+                0.0,
+                -7.5
+              ],
+              [
+                0.0,
+                -7.5
+              ]
+            ],
+            "peak_resultant_N": 7.5,
+            "recovered_force_N": [
+              0.0,
+              -60.0
+            ],
+            "recovered_moment_Nmm": 0.0
+          }
+        },
+        {
+          "assumed_vertical_force_N": 30,
+          "assumed_horizontal_eccentricity_mm": 100,
+          "result": {
+            "centroid_mm": [
+              180.0,
+              305.0
+            ],
+            "sum_r_squared_mm2": 407368.0,
+            "force_vectors_N": [
+              [
+                -1.4728697394002475,
+                -2.564339859782801
+              ],
+              [
+                -0.7364348697001237,
+                -2.564339859782801
+              ],
+              [
+                0.7364348697001237,
+                -2.564339859782801
+              ],
+              [
+                1.4728697394002475,
+                -2.564339859782801
+              ],
+              [
+                -1.4728697394002475,
+                -4.935660140217199
+              ],
+              [
+                -0.7364348697001237,
+                -4.935660140217199
+              ],
+              [
+                0.7364348697001237,
+                -4.935660140217199
+              ],
+              [
+                1.4728697394002475,
+                -4.935660140217199
+              ]
+            ],
+            "peak_resultant_N": 5.15073648024919,
+            "recovered_force_N": [
+              0.0,
+              -30.0
+            ],
+            "recovered_moment_Nmm": -3000.0
+          }
+        }
+      ]
+    },
+    "K07_Seat_False_": {
+      "plane_axes": [
+        "x",
+        "z"
+      ],
+      "bolt_count": 8,
+      "centres_mm": [
+        [
+          20.0,
+          155.0
+        ],
+        [
+          20.0,
+          255.0
+        ],
+        [
+          20.0,
+          355.0
+        ],
+        [
+          20.0,
+          455.0
+        ],
+        [
+          530.0,
+          155.0
+        ],
+        [
+          530.0,
+          255.0
+        ],
+        [
+          530.0,
+          355.0
+        ],
+        [
+          530.0,
+          455.0
+        ]
+      ],
+      "assumed_group_load_cases": [
+        {
+          "assumed_vertical_force_N": 10,
+          "assumed_horizontal_eccentricity_mm": 0,
+          "result": {
+            "centroid_mm": [
+              275.0,
+              305.0
+            ],
+            "sum_r_squared_mm2": 620200.0,
+            "force_vectors_N": [
+              [
+                0.0,
+                -1.25
+              ],
+              [
+                0.0,
+                -1.25
+              ],
+              [
+                0.0,
+                -1.25
+              ],
+              [
+                0.0,
+                -1.25
+              ],
+              [
+                0.0,
+                -1.25
+              ],
+              [
+                0.0,
+                -1.25
+              ],
+              [
+                0.0,
+                -1.25
+              ],
+              [
+                0.0,
+                -1.25
+              ]
+            ],
+            "peak_resultant_N": 1.25,
+            "recovered_force_N": [
+              0.0,
+              -10.0
+            ],
+            "recovered_moment_Nmm": 0.0
+          }
+        },
+        {
+          "assumed_vertical_force_N": 30,
+          "assumed_horizontal_eccentricity_mm": 0,
+          "result": {
+            "centroid_mm": [
+              275.0,
+              305.0
+            ],
+            "sum_r_squared_mm2": 620200.0,
+            "force_vectors_N": [
+              [
+                0.0,
+                -3.75
+              ],
+              [
+                0.0,
+                -3.75
+              ],
+              [
+                0.0,
+                -3.75
+              ],
+              [
+                0.0,
+                -3.75
+              ],
+              [
+                0.0,
+                -3.75
+              ],
+              [
+                0.0,
+                -3.75
+              ],
+              [
+                0.0,
+                -3.75
+              ],
+              [
+                0.0,
+                -3.75
+              ]
+            ],
+            "peak_resultant_N": 3.75,
+            "recovered_force_N": [
+              0.0,
+              -30.0
+            ],
+            "recovered_moment_Nmm": 0.0
+          }
+        },
+        {
+          "assumed_vertical_force_N": 60,
+          "assumed_horizontal_eccentricity_mm": 0,
+          "result": {
+            "centroid_mm": [
+              275.0,
+              305.0
+            ],
+            "sum_r_squared_mm2": 620200.0,
+            "force_vectors_N": [
+              [
+                0.0,
+                -7.5
+              ],
+              [
+                0.0,
+                -7.5
+              ],
+              [
+                0.0,
+                -7.5
+              ],
+              [
+                0.0,
+                -7.5
+              ],
+              [
+                0.0,
+                -7.5
+              ],
+              [
+                0.0,
+                -7.5
+              ],
+              [
+                0.0,
+                -7.5
+              ],
+              [
+                0.0,
+                -7.5
+              ]
+            ],
+            "peak_resultant_N": 7.5,
+            "recovered_force_N": [
+              0.0,
+              -60.0
+            ],
+            "recovered_moment_Nmm": 0.0
+          }
+        },
+        {
+          "assumed_vertical_force_N": 30,
+          "assumed_horizontal_eccentricity_mm": 100,
+          "result": {
+            "centroid_mm": [
+              275.0,
+              305.0
+            ],
+            "sum_r_squared_mm2": 620200.0,
+            "force_vectors_N": [
+              [
+                -0.7255723960012899,
+                -2.516526926797807
+              ],
+              [
+                -0.2418574653337633,
+                -2.516526926797807
+              ],
+              [
+                0.2418574653337633,
+                -2.516526926797807
+              ],
+              [
+                0.7255723960012899,
+                -2.516526926797807
+              ],
+              [
+                -0.7255723960012899,
+                -4.983473073202193
+              ],
+              [
+                -0.2418574653337633,
+                -4.983473073202193
+              ],
+              [
+                0.2418574653337633,
+                -4.983473073202193
+              ],
+              [
+                0.7255723960012899,
+                -4.983473073202193
+              ]
+            ],
+            "peak_resultant_N": 5.036016200646138,
+            "recovered_force_N": [
+              0.0,
+              -30.0
+            ],
+            "recovered_moment_Nmm": -2999.9999999999995
+          }
+        }
+      ]
+    },
+    "K07_Seat_True_": {
+      "plane_axes": [
+        "x",
+        "z"
+      ],
+      "bolt_count": 8,
+      "centres_mm": [
+        [
+          20.0,
+          155.0
+        ],
+        [
+          20.0,
+          254.99999999999994
+        ],
+        [
+          20.0,
+          355.0
+        ],
+        [
+          20.0,
+          455.0
+        ],
+        [
+          530.0,
+          155.0
+        ],
+        [
+          530.0,
+          254.99999999999994
+        ],
+        [
+          530.0,
+          355.0
+        ],
+        [
+          530.0,
+          455.0
+        ]
+      ],
+      "assumed_group_load_cases": [
+        {
+          "assumed_vertical_force_N": 10,
+          "assumed_horizontal_eccentricity_mm": 0,
+          "result": {
+            "centroid_mm": [
+              275.0,
+              305.0
+            ],
+            "sum_r_squared_mm2": 620200.0,
+            "force_vectors_N": [
+              [
+                0.0,
+                -1.25
+              ],
+              [
+                0.0,
+                -1.25
+              ],
+              [
+                0.0,
+                -1.25
+              ],
+              [
+                0.0,
+                -1.25
+              ],
+              [
+                0.0,
+                -1.25
+              ],
+              [
+                0.0,
+                -1.25
+              ],
+              [
+                0.0,
+                -1.25
+              ],
+              [
+                0.0,
+                -1.25
+              ]
+            ],
+            "peak_resultant_N": 1.25,
+            "recovered_force_N": [
+              0.0,
+              -10.0
+            ],
+            "recovered_moment_Nmm": 0.0
+          }
+        },
+        {
+          "assumed_vertical_force_N": 30,
+          "assumed_horizontal_eccentricity_mm": 0,
+          "result": {
+            "centroid_mm": [
+              275.0,
+              305.0
+            ],
+            "sum_r_squared_mm2": 620200.0,
+            "force_vectors_N": [
+              [
+                0.0,
+                -3.75
+              ],
+              [
+                0.0,
+                -3.75
+              ],
+              [
+                0.0,
+                -3.75
+              ],
+              [
+                0.0,
+                -3.75
+              ],
+              [
+                0.0,
+                -3.75
+              ],
+              [
+                0.0,
+                -3.75
+              ],
+              [
+                0.0,
+                -3.75
+              ],
+              [
+                0.0,
+                -3.75
+              ]
+            ],
+            "peak_resultant_N": 3.75,
+            "recovered_force_N": [
+              0.0,
+              -30.0
+            ],
+            "recovered_moment_Nmm": 0.0
+          }
+        },
+        {
+          "assumed_vertical_force_N": 60,
+          "assumed_horizontal_eccentricity_mm": 0,
+          "result": {
+            "centroid_mm": [
+              275.0,
+              305.0
+            ],
+            "sum_r_squared_mm2": 620200.0,
+            "force_vectors_N": [
+              [
+                0.0,
+                -7.5
+              ],
+              [
+                0.0,
+                -7.5
+              ],
+              [
+                0.0,
+                -7.5
+              ],
+              [
+                0.0,
+                -7.5
+              ],
+              [
+                0.0,
+                -7.5
+              ],
+              [
+                0.0,
+                -7.5
+              ],
+              [
+                0.0,
+                -7.5
+              ],
+              [
+                0.0,
+                -7.5
+              ]
+            ],
+            "peak_resultant_N": 7.5,
+            "recovered_force_N": [
+              0.0,
+              -60.0
+            ],
+            "recovered_moment_Nmm": 0.0
+          }
+        },
+        {
+          "assumed_vertical_force_N": 30,
+          "assumed_horizontal_eccentricity_mm": 100,
+          "result": {
+            "centroid_mm": [
+              275.0,
+              305.0
+            ],
+            "sum_r_squared_mm2": 620200.0,
+            "force_vectors_N": [
+              [
+                -0.7255723960012899,
+                -2.516526926797807
+              ],
+              [
+                -0.2418574653337636,
+                -2.516526926797807
+              ],
+              [
+                0.2418574653337633,
+                -2.516526926797807
+              ],
+              [
+                0.7255723960012899,
+                -2.516526926797807
+              ],
+              [
+                -0.7255723960012899,
+                -4.983473073202193
+              ],
+              [
+                -0.2418574653337636,
+                -4.983473073202193
+              ],
+              [
+                0.2418574653337633,
+                -4.983473073202193
+              ],
+              [
+                0.7255723960012899,
+                -4.983473073202193
+              ]
+            ],
+            "peak_resultant_N": 5.036016200646138,
+            "recovered_force_N": [
+              -6.106226635438361e-16,
+              -30.0
+            ],
+            "recovered_moment_Nmm": -2999.9999999999995
+          }
+        }
+      ]
+    }
+  },
+  "cad_fan_screw_count": 16,
+  "actual_service_loads_N": null,
+  "actual_material_allowables_MPa": null,
+  "guard_strength_status": "OPEN: actual perforated plate, welded skirt/brackets, attachment and probe criteria not evaluated",
+  "digital_gaps_closed": [
+    "Actual front/rear stop stack independently extracted from saved mesh",
+    "Robust fixed-stop feasibility and measurable sleeve adjustment solved for supplied tolerance bounds",
+    "Actual cabinet bolt groups extracted with force/moment equilibrium checks",
+    "Selected seal force retained as unknown rather than pressure-derived clamp force"
+  ],
+  "physical_release_open": [
+    "Exact filter delivered thickness/frame tolerance and compression strength",
+    "Selected gasket free thickness tolerance, compression window, force/relaxation/adhesive data",
+    "Measured reducer/retainer flatness and assembled stop gap; seam/feedthrough leak integrity",
+    "Selected plywood/cleat grades, fastener threads/grades/torque and withdrawal/bearing design",
+    "Cabinet racking, guard perforated plate/weld/attachment/probe and stability review",
+    "Full installed mass/CG, foot contact/friction and accepted service/cable/push loads"
+  ],
+  "restrictions": "No CAD edited, actual strength inferred, proof-load specified, contact made or physical test performed. Equal stiffness is conditional, not assured conservative. Existing isolation/restart requirements unchanged."
+}

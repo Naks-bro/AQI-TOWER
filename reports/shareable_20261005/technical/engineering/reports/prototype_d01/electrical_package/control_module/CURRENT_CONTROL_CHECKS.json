@@ -238,6 +238,14 @@
     {
       "objects": [
         "CTRL1_WIRE_SPACE_ASSUMED",
+        "H1_CONNECTOR_SPACE_ASSUMED"
+      ],
+      "overlap_mm3": 0.0,
+      "gap_mm": 0.0
+    },
+    {
+      "objects": [
+        "CTRL1_WIRE_SPACE_ASSUMED",
         "SC1_CONNECTOR_SPACE_ASSUMED"
       ],
       "overlap_mm3": 0.0,
@@ -246,14 +254,6 @@
     {
       "objects": [
         "H1_CONNECTOR_SPACE_ASSUMED",
-        "SC1_CONNECTOR_SPACE_ASSUMED"
-      ],
-      "overlap_mm3": 0.0,
-      "gap_mm": 9.999999999999993
-    },
-    {
-      "objects": [
-        "SC1_CONNECTOR_SPACE_ASSUMED",
         "SC1_CONNECTOR_SPACE_ASSUMED"
       ],
       "overlap_mm3": 0.0,

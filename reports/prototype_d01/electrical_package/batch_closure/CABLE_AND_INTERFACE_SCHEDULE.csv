@@ -1,0 +1,13 @@
+ID,From_function,To_function,Verified_interface_or_unknown,Load_basis,Installed_length,Exact_release_dependency
+W01,NV-PS1 OEM output,proposed DC distribution,OEM NA-AC10 / distribution adapter unresolved,12V / source max2A,UNKNOWN,"Source protection, polarity, strain relief, source tolerance"
+W02,DC distribution,NA-FC1 input then NA-FH1 four-pin input,OEM connectors; exact installed distribution unselected,fan path nominal1.4A; ceiling2A,UNKNOWN,No splicing release; OEM conductor/contact data and fault curve
+W03-06,NA-FH1 output ports1-4,P14 Max fans1-4,OEM pin1GND/2power/3tach/4PWM,each published0.35A; startup UNKNOWN,UNKNOWN,Final connector envelope/extension/entry/retention; no cut OEM lead
+W07,proposed protected unswitched DC branch,Opta supply + and -,OEM labelled supply terminals; distribution unselected,max2W at12V =0.167A screen,UNKNOWN,"Supply2W budget; branch fuse, conductor and distribution terminals"
+W08,proposed protected DC sense branch via START NO,Opta I1 / A0,ZBE1016 contact screw IDs UNVERIFIED,nominal1.348mA resistance screen,UNKNOWN,"0.5mm2 minimum Opta accepted wire, not cable selection"
+W09,proposed protected DC sense branch via STOP NC,Opta I2 / A1,ZBE1026 contact screw IDs UNVERIFIED,nominal1.348mA; HIGH healthy,UNKNOWN,"Broken wire inhibits ordinary request, not safety fault tolerance"
+W10,proposed protected DC sense branch via RESET NO,Opta I3 / A2,ZBE1016 contact screw IDs UNVERIFIED,nominal1.348mA resistance screen,UNKNOWN,RESET not fan START; low-load compatibility open
+W11,reviewed bench permissive,Opta I4 / A3,NO protective field interface selected,ordinary bench input,UNKNOWN,Must not substitute for PR1 protective path
+W12,proposed protected unswitched DC sense,Opta I5 / A4,digital mode only,nominal1.348mA resistance screen,UNKNOWN,Not fan branch voltage or downstream reset proof
+W13,Opta relay outputs1-4,NO FAN CONNECTION,default D0-D3 LOW,all outputs disabled,not connected,Do not energize fans with bench review sketch
+W14,Opta functional earth / metal panel,reviewed reference/bonding point,OEM FE is not a substitute for PE,UNKNOWN,UNKNOWN,Qualified classification and OEM FE/bonding; no invented mains PE route
+W15,USB/service instruments,controller/logger,additional source/backfeed domain,UNKNOWN,UNKNOWN,Identify/disconnect or review all service energy sources

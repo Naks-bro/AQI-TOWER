@@ -6,6 +6,7 @@ import hashlib
 import json
 import shutil
 import subprocess
+import sys
 import zipfile
 from pathlib import Path
 from xml.sax.saxutils import escape
@@ -31,7 +32,12 @@ T = O/'technical'
 for d in (S,T,O/'qa'):
     d.mkdir(parents=True,exist_ok=True)
 mesh = json.loads((M/'cad_mesh.json').read_text())
-pressure = json.loads((IH/'CURRENT_PRESSURE_BUDGET.json').read_text())
+sys.path.insert(0,str(R/'scripts/analysis'))
+from d01_validation import pressure_rows
+pressure = pressure_rows()
+batch_summary=R/'reports/prototype_d01/batch_summary'
+batch_summary.mkdir(exist_ok=True)
+(batch_summary/'CURRENT_PRESSURE_BUDGET.json').write_text(json.dumps(pressure,indent=2)+'\n',encoding='utf-8')
 central = next(x for x in pressure['rows'] if x['total_m3h']==300 and x['reducer_K']==1)
 assert abs(central['filter_allowance_Pa']-14.316071817116585)<1e-8
 assert len(mesh)==493
@@ -115,7 +121,7 @@ stake += [PageBreak(),h('Report 2 Comprehensive Report'),sub('Vision for 2026'),
           table(['Part','Simple explanation'],[['Two filters','Air enters through two opposite filter branches. They work side by side, not in sequence.'],['Four fans','Pull air into a shared chamber and discharge it through the top.'],['Cabinet seals and guards','Keep the parts supported, limit leaks and restrict access to moving fans. These details still need approval.']],[135,384]),
           p('Cutaway view removes panels and guards for explanation. Never operate an unguarded unit. Colours identify parts; they do not show measured pollution, flow speed or efficiency.',True),PageBreak(),
           h('Work completed'),picture(V/'exploded.png',390),
-          p('The current model coordinates the cabinet, filters, seals, fan plate, guards and proposed hardware. Drawings, calculations, review sheets and test software are available for the internal team.'),
+          p('The current model coordinates the cabinet, filters, seals, fan plate, guards and proposed hardware. A parallel engineering review has added filter-fit tolerance checks, joint-load calculations, power and wiring screens, and an updated parts register. These calculations help find problems before we buy or build.'),
           sub('What the computer work tells us'),p('We can check nominal fit and explore pressure losses. We cannot yet state actual airflow, cleaning efficiency, noise, power or filter lifetime. The fan and filter must work together under load.'),
           sub('Important evidence boundary'),p('Earlier coloured CFD studies belong to a different large-tower geometry. They were partial or nonconverged and do not validate this prototype. The new animation explains assembly and the intended air path; it is not a new CFD result.'),PageBreak(),
           h('Key decisions and unresolved challenges'),sub('Key decisions'),p(six[2][1]),
@@ -198,7 +204,7 @@ milestones=[['Milestone','Current state','Evidence needed','Timing'],['Engineeri
 claims=[['Claim','Evidence status','Permitted wording'],['Physical prototype','0 built','We have prepared the digital design for review.'],['Flow and cleaning','Unmeasured','The calculations are conditional; tests are planned.'],['Outdoor bubble','Unproven','The chain of zones is a research concept.'],['Costs and stock','Unquoted','Funding will be based on verified quotes.'],['Final name','Not selected','AQI Tower is the working name.']]
 for technical,path in [(False,S/'STAKEHOLDER_FUNDING.xlsx'),(True,T/'TECHNICAL_REVIEW.xlsx')]:
     wb=Workbook();wb.remove(wb.active)
-    sheet(wb,'Read me',[['Topic','Meaning'],['Revision','D01 R03M / IH02 / 5 October 2026'],['Status','Review only. Not order, fabrication or energization authorization.'],['Prices','Blank means UNKNOWN; no prices have been invented.'],['Evidence','CAD/digital checks are not physical results.'],['Team','College/NGO funding; no college lab assumed; qualified physical services still needed.']])
+    sheet(wb,'Read me',[['Topic','Meaning'],['Revision','D01 R03M / E05 / current parallel batch / 5 October 2026'],['Status','Review only. Not order, fabrication or energization authorization.'],['Current parts','Funding quotes and Current combined parts use28 current references; other parts/release tabs are historical snapshots. Verify quote unit/kit basis before entering quantity.'],['Prices','Blank means UNKNOWN; no prices have been invented.'],['Evidence','CAD/digital checks are not physical results.'],['Team','College/NGO funding; no college lab assumed; qualified physical services still needed.']])
     sheet(wb,'Milestones',milestones)
     sheet(wb,'Claims',claims)
     roomrows=[['ASSUMED area m2','ASSUMED height m','ASSUMED CADR m3/h','Target fraction reduced','Volume m3','Ideal target minutes','Required CADR for30 min','Status']]
@@ -210,7 +216,13 @@ for technical,path in [(False,S/'STAKEHOLDER_FUNDING.xlsx'),(True,T/'TECHNICAL_R
         rule=DataValidation(type='decimal',operator='between',formula1=low,formula2=high,allow_blank=False)
         rule.errorTitle='Invalid scenario';rule.error='Use a positive area/height, nonnegative CADR, and a reduction fraction strictly between0 and1.';rule.showErrorMessage=True;rule.errorStyle='stop';roomws.add_data_validation(rule);rule.add(f'{col}2:{col}5')
     for row in roomws.iter_rows(min_row=2):row[3].number_format='0%'
-    rows=readcsv(IH/'QUOTE_AND_FUNDING_REGISTER.csv')
+    # Current quote sheet, not a mutation of the preserved IH02 quotation template.
+    parts=list(csv.DictReader((R/'reports/prototype_d01/batch_review/CURRENT_COMBINED_PARTS_REGISTER.csv').open(encoding='utf-8-sig',newline='')))
+    rows=[['ID','Item','Quantity_basis','Vendor_or_service','Quote_date','Unit_cost_INR','Tax_INR','Delivery_INR','Lead_time','Scope_and_exclusions','Release_ID','Approval']]
+    for item in parts:
+        rows.append([item['ID'],item['Exact_product_or_geometry'],item['Quantity_basis'],'','','','','','',
+                     item['Not_released_or_unknown']+'; quantities are proposals, verify kit/unit basis before quotation',
+                     '', 'UNQUOTED / NOT ORDER AUTHORIZATION'])
     rows[0]+=['Quoted_line_total_INR']
     for n,row in enumerate(rows[1:],2):
         row += [f'=IF(AND(ISNUMBER(C{n}),ISNUMBER(F{n}),ISNUMBER(G{n}),ISNUMBER(H{n})),C{n}*F{n}+SUM(G{n}:H{n}),"UNQUOTED")']
@@ -218,6 +230,7 @@ for technical,path in [(False,S/'STAKEHOLDER_FUNDING.xlsx'),(True,T/'TECHNICAL_R
         except ValueError:pass
     sheet(wb,'Funding quotes',rows)
     if technical:
+        sheet(wb,'Current combined parts',readcsv(R/'reports/prototype_d01/batch_review/CURRENT_COMBINED_PARTS_REGISTER.csv'))
         sheet(wb,'Current release gates',readcsv(R/'reports/prototype_d01/electrical_package/control_module/CURRENT_RELEASE_GATES.csv'))
         sheet(wb,'Control module placement',readcsv(R/'reports/prototype_d01/electrical_package/control_module/CURRENT_CONTROL_PLACEMENT.csv'))
         for name,file in [('Release decisions','REVIEW_AND_RELEASE_REGISTER.csv'),('Parts register','COMBINED_PARTS_REGISTER.csv')]:sheet(wb,name,readcsv(IH/file))
@@ -258,7 +271,35 @@ for name in ('test_d01_opta_host.py','compile_d01_opta.py'):
 for name in ('AQI_D01_OPTA_BENCH_REVIEW.pdf','OPTA_INTEGRATION_SCREEN.json','OPTA_HOST_CHECKS.json','OPTA_BOARD_BUILD.json'):
     shutil.copy2(R/'reports/prototype_d01/electrical_package'/name,T/'engineering/reports/prototype_d01/electrical_package'/name)
 shutil.copy2(R/'reports/prototype_d01/electrical_package/AQI_D01_OPTA_BENCH_REVIEW.pdf',T/'AQI_D01_OPTA_BENCH_REVIEW.pdf')
-shutil.copytree(R/'reports/prototype_d01/electrical_package/control_module',T/'engineering/reports/prototype_d01/electrical_package/control_module',dirs_exist_ok=True,ignore=shutil.ignore_patterns('previews'))
+shutil.copytree(R/'reports/prototype_d01/electrical_package/control_module',T/'engineering/reports/prototype_d01/electrical_package/control_module',dirs_exist_ok=True,ignore=shutil.ignore_patterns('previews','*.FCBak','__pycache__','*.pyc'))
+for relative in ('reports/prototype_d01/mechanical_package/batch_closure',
+                 'reports/prototype_d01/electrical_package/batch_closure',
+                 'reports/prototype_d01/batch_review','reports/prototype_d01/batch_summary'):
+    shutil.copytree(R/relative,T/'engineering'/relative,dirs_exist_ok=True,ignore=shutil.ignore_patterns('__pycache__','*.pyc','previews'))
+for relative in ('reports/prototype_d01/component_validation/OEM_P14_Max_points.csv',
+                 'reports/prototype_d01/component_validation/README.md',
+                 'reports/prototype_d01/mechanical_package/README.md',
+                 'docs/build/NO_LAB_BUILD_ROUTE.md',
+                 'reports/prototype_d01/mechanical_package/guard_pattern.json',
+                 'reports/prototype_d01/mechanical_package/cad_mesh.json',
+                 'reports/prototype_d01/mechanical_package/part_inventory.json',
+                 'reports/prototype_d01/mechanical_package/fasteners.json'):
+    target=T/'engineering'/relative
+    target.parent.mkdir(parents=True,exist_ok=True)
+    shutil.copy2(R/relative,target)
+for name in ('d01_mechanical_release_batch.py','test_d01_mechanical_release_batch.py',
+             'd01_electrical_release_batch.py','test_d01_electrical_release_batch.py'):
+    shutil.copy2(R/'scripts/analysis'/name,T/'engineering/scripts/analysis'/name)
+(T/'engineering/scripts/maintenance').mkdir(exist_ok=True)
+for name in ('run_d01_release_batch.py','check_d01_handoff_consistency.py'):
+    shutil.copy2(R/'scripts/maintenance'/name,T/'engineering/scripts/maintenance'/name)
+shutil.copy2(R/'reports/prototype_d01/batch_review/CURRENT_COMBINED_PARTS_REGISTER.csv',T/'CURRENT_COMBINED_PARTS_REGISTER.csv')
+# Only generated delivery duplicates; project sources/local backups stay untouched.
+packaged_root=(T/'engineering').resolve()
+for path in packaged_root.rglob('*'):
+    if path.is_file() and (path.suffix.lower() in ('.pyc','.fcbak') or '__pycache__' in path.parts):
+        assert path.resolve().is_relative_to(packaged_root)
+        path.unlink()
 shutil.copy2(R/'reports/prototype_d01/electrical_package/control_module/D01_E03_DIMENSIONED_CONTROL_LAYOUT.pdf',T/'D01_E03_DIMENSIONED_CONTROL_LAYOUT.pdf')
 shutil.copy2(R/'reports/prototype_d01/electrical_package/control_module/D01_E04_LID_CONTROLS_REVIEW.pdf',T/'D01_E04_LID_CONTROLS_REVIEW.pdf')
 for name in ('D01_E05_LID_CONTROLS_REVIEW.pdf','D01_CURRENT_BUILD_DECISION.pdf','CURRENT_RELEASE_GATES.csv'):
@@ -312,7 +353,8 @@ Sources: scripts/visualization/build_blender_review.py and render_blender_review
 ''',encoding='utf-8')
 (T/'historical_cfd').mkdir(exist_ok=True)
 shutil.copy2(R/'results/FILTER_H13/central_velocity_pressure_CASE_M.png',T/'historical_cfd/PHASE9_CASE_M_NOT_R03M.png')
-for name in ('CURRENT_PRESSURE_BUDGET.json','TOOL_USAGE.md','FILTER_CURVE_BLANK.csv'):
+shutil.copy2(batch_summary/'CURRENT_PRESSURE_BUDGET.json',T/'CURRENT_PRESSURE_BUDGET.json')
+for name in ('TOOL_USAGE.md','FILTER_CURVE_BLANK.csv'):
     shutil.copy2(IH/name,T/name)
 with (T/'TOOL_USAGE.md').open('a',encoding='utf-8') as f:
     f.write('''
@@ -341,6 +383,8 @@ STAKEHOLDER_FUNDING.xlsx is the quote and milestone workbook. Prices, stock and 
 Physical prototypes built: 0. Air animation is illustrative, NOT CFD. Outdoor bubbles are unproven. R03M guards remain solid CAD envelopes; purple objects reserve space. No purchase or contact is performed by this package.
 ''',encoding='utf-8')
 (T/'START_HERE.md').write_text('''# AQI Tower technical bundle
+
+MULTI-AGENT BATCH: CURRENT_COMBINED_PARTS_REGISTER.csv / workbook Current combined parts supersedes historical IH02 procurement navigation, without releasing any line for purchase. Mechanical and electrical batch_closure folders contain executable tolerance/load/voltage/protection screens and their tests. From engineering/ run python scripts/maintenance/run_d01_release_batch.py --calculations-only. Root verification also audits package consistency. Read the concrete batch results at engineering/reports/prototype_d01/batch_summary/. Current pressure inputs now have exact root-byte provenance; historicalIH02 unchanged. All calculations are conditional, not physical qualification.
 
 CURRENT HANDOFF: read pages1–6 of AQI_TOWER_TECHNICAL_HANDOFF.pdf first. Current build decision, E05 lid/control fit and preserved E02 ordinary-input reference are now inside ONE56-page PDF. The earlier50-page review follows as historical reference. E05 replaces E04's conflicted placement: unchanged assumed cable/service volumes now clear each other and the private exact box. See CURRENT_RELEASE_GATES.csv and workbook Current release gates tab. E03/E04 remain historical fit studies. Actual supports, connector/button stack, low-current contact numeric limits, protective functions/circuit and physical tests remain OPEN. Not construction release; no fans operated.
 

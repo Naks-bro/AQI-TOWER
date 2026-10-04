@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="600" viewBox="0 0 1100 600">
+<rect width="1100" height="600" fill="#f3f7fc"/>
+<g font-family="Arial,sans-serif" fill="#17304b">
+<text x="45" y="50" font-size="26" font-weight="bold">R03M filter closing stack — actual saved CAD</text>
+<text x="45" y="80" font-size="17">REVIEW ONLY • model envelopes, not measured parts • not a fabrication setting</text>
+<rect x="125" y="170" width="90" height="155" fill="#8ea4b7"/>
+<rect x="215" y="170" width="400" height="155" fill="#bbd8f5"/>
+<rect x="615" y="170" width="30" height="155" fill="#eead60"/>
+<rect x="645" y="170" width="90" height="155" fill="#8ea4b7"/>
+<text x="125" y="151" font-size="16">Retainer</text>
+<text x="320" y="235" font-size="23">Filter proxy: 40 mm</text>
+<text x="654" y="151" font-size="16">Reducer</text>
+<path d="M630 280 L860 280" stroke="#17304b" stroke-width="2"/>
+<text x="770" y="221" font-size="17">Installed gasket</text>
+<text x="770" y="249" font-size="17">3 mm in CAD</text>
+<path d="M215 335 V385 M645 335 V385 M215 368 H645" stroke="#17304b" fill="none" stroke-width="2"/>
+<text x="294" y="399" font-size="21">Fixed closing gap: 43 mm</text>
+<text x="142" y="350" font-size="14">y = -55</text>
+<text x="650" y="350" font-size="14">y = -12</text>
+<text x="45" y="451" font-size="18">Gap = measured filter thickness + compressed gasket thickness</text>
+<text x="45" y="482" font-size="18">Current sleeve 36 mm + fixed stack offset 7 mm = gap 43 mm</text>
+<text x="45" y="523" font-size="18" fill="#ad4b22">Do not assume 43 mm seals every delivered filter: broad tolerance cases fail.</text>
+<text x="45" y="553" font-size="16">Run the interval solver with actual gasket limits, filter dimensions and flatness before selecting stops.</text>
+</g></svg>

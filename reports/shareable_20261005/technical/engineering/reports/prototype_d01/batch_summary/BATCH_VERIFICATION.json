@@ -1,0 +1,52 @@
+{
+  "status": "SYNTHETIC/CALCULATION BATCH PASS; NOT BUILD OR SAFETY RELEASE",
+  "physical_tests": 0,
+  "physical_prototypes": 0,
+  "construction_release": false,
+  "energization_release": false,
+  "calculations_only": true,
+  "commands": [
+    {
+      "script": "scripts/analysis/test_d01_electrical_closure.py",
+      "returncode": 0,
+      "script_sha256": "716556781d783da687518c6d8bc10f2e63277b51f2cb648d5dc397c292cc57b4",
+      "stdout": "",
+      "stderr": "..........\n----------------------------------------------------------------------\nRan 10 tests in 0.000s\n\nOK\n"
+    },
+    {
+      "script": "scripts/analysis/test_d01_mass_stability.py",
+      "returncode": 0,
+      "script_sha256": "3b6fc88238c6c76cab4ccf485bfb8963c494a147fca001736fa6366b13e703cb",
+      "stdout": "",
+      "stderr": "......\n----------------------------------------------------------------------\nRan 6 tests in 0.284s\n\nOK\n"
+    },
+    {
+      "script": "scripts/analysis/test_d01_current_filter_screen.py",
+      "returncode": 0,
+      "script_sha256": "5295e74b22116ffc747b69030bc664858ad783099610a6a6f7a4a4ecdb772e3d",
+      "stdout": "",
+      "stderr": ".....\n----------------------------------------------------------------------\nRan 5 tests in 0.007s\n\nOK\n"
+    },
+    {
+      "script": "scripts/analysis/test_d01_opta_host.py",
+      "returncode": 0,
+      "script_sha256": "81cc471f83643ed2c6d75e61265c85a20c5a6765f001a390780c13ce67168037",
+      "stdout": "{\n  \"host_assertions\": 1041,\n  \"exhaustive_one_step_cases\": 1024,\n  \"target_board_compiled\": false,\n  \"physical_tests\": 0,\n  \"relay_output_enabled_by_default\": false,\n  \"status\": \"HOST SYNTHETIC TESTS PASS / NOT BOARD COMPILED OR SAFETY IMPLEMENTATION\",\n  \"compiler_version\": \"g++.EXE (MinGW-W64 x86_64-ucrt-posix-seh, built by Brecht Sanders) 13.2.0\",\n  \"sketch_layout_checked\": true,\n  \"source_sha256\": {\n    \"d01_opta_review\\\\ControlLogic.h\": \"d69b065064adcdebc56e6a873bb344c3d6532b847a948232cf8239b888435921\",\n    \"d01_opta_review\\\\d01_opta_review.ino\": \"7b8e954812872e70b5d8377a1dcc7e8ff57b5c146bd0361ce3f4de940854c7de\",\n    \"tests\\\\d01_opta\\\\Arduino.h\": \"209d1604ff36cac5c5950f67ead705c66ababdf85178859f754f212f6c7fd9d2\",\n    \"tests\\\\d01_opta\\\\test_control.cpp\": \"a1594292c5ddb9061ed08361224958c78dca5c0972e119d98c6995e680c3cd5d\"\n  }\n}\n",
+      "stderr": ""
+    },
+    {
+      "script": "scripts/analysis/test_d01_mechanical_release_batch.py",
+      "returncode": 0,
+      "script_sha256": "0eec8dfbda48c7782e9d21a3cafde67f6eb5e74f38a40b7ba6b62e6b3487a354",
+      "stdout": "",
+      "stderr": "..........\n----------------------------------------------------------------------\nRan 10 tests in 0.306s\n\nOK\n"
+    },
+    {
+      "script": "scripts/analysis/test_d01_electrical_release_batch.py",
+      "returncode": 0,
+      "script_sha256": "70ac9d2dfcb32ffd2e1be3e16f893fe2526ba0c62e0b99a8adee64a19d0cccb0",
+      "stdout": "",
+      "stderr": "........\n----------------------------------------------------------------------\nRan 8 tests in 0.000s\n\nOK\n"
+    }
+  ]
+}

@@ -52,7 +52,10 @@ for i,n in enumerate(keeps):
  for m in keeps[i+1:]:
   a,b=doc.getObject(n).Shape,doc.getObject(m).Shape
   v=a.common(b).Volume;assert v<.01
- service_pairs.append(dict(objects=[n,m],overlap_mm3=v,gap_mm=a.distToShape(b)[0]))
+  service_pairs.append(dict(objects=[n,m],overlap_mm3=v,gap_mm=a.distToShape(b)[0]))
+assert len(service_pairs)==3
+assert len({tuple(row['objects']) for row in service_pairs})==3
+assert all(row['objects'][0]!=row['objects'][1] for row in service_pairs)
 body_names=['CTRL1_OPTA_LITE','H1_NA_FH1','SC1_NA_FC1']
 for i,n in enumerate(body_names):
  for m in body_names[i+1:]:assert doc.getObject(n).Shape.common(doc.getObject(m).Shape).Volume<.01

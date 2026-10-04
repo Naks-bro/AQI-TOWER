@@ -1,0 +1,961 @@
+{
+  "status": "PASS",
+  "scope": "Digital evidence/packaging consistency only; no construction approval",
+  "physical_tests": 0,
+  "checks": [
+    {
+      "check": "native_tower_hash",
+      "passed": true,
+      "detail": "reports/prototype_d01/mechanical_package/D01_R03M_ASSEMBLY.FCStd"
+    },
+    {
+      "check": "native_tower_493_objects",
+      "passed": true,
+      "detail": "493 objects"
+    },
+    {
+      "check": "control_review_not_release",
+      "passed": true,
+      "detail": "Assumed reservations only; physical 0; actual wiring unverified"
+    },
+    {
+      "check": "control_revision_current",
+      "passed": true,
+      "detail": "Current same-module E05, 18 proxy objects"
+    },
+    {
+      "check": "current_control_18_native_objects",
+      "passed": true,
+      "detail": "18 original proxy objects; not OEM manufacturing geometry"
+    },
+    {
+      "check": "all_12_box_body_reservations_clear",
+      "passed": true,
+      "detail": "Twelve modeled volumes checked against OEM box except mounting panel"
+    },
+    {
+      "check": "ordinary_button_candidate_identity",
+      "passed": true,
+      "detail": "Exact candidate sensing chain only; not low-current release or safety isolation"
+    },
+    {
+      "check": "START_assumed_service_clear",
+      "passed": true,
+      "detail": "Reservation intersection only, not real connector fit"
+    },
+    {
+      "check": "STOP_assumed_service_clear",
+      "passed": true,
+      "detail": "Reservation intersection only, not real connector fit"
+    },
+    {
+      "check": "RESET_assumed_service_clear",
+      "passed": true,
+      "detail": "Reservation intersection only, not real connector fit"
+    },
+    {
+      "check": "all_three_service_pair_labels",
+      "passed": true,
+      "detail": "Every unordered pair must appear exactly once; self-pair invalid"
+    },
+    {
+      "check": "target_build_claim_boundary",
+      "passed": true,
+      "detail": "Compile only, never hardware proof"
+    },
+    {
+      "check": "target_build_source:firmware/d01_opta_review/ControlLogic.h",
+      "passed": true,
+      "detail": "Board compilation evidence matches actual current source"
+    },
+    {
+      "check": "target_build_source:firmware/d01_opta_review/d01_opta_review.ino",
+      "passed": true,
+      "detail": "Board compilation evidence matches actual current source"
+    },
+    {
+      "check": "firmware_default_disabled",
+      "passed": true,
+      "detail": "Default ordinary output disabled; macro override requires separate reviewed bench"
+    },
+    {
+      "check": "pressure_input:reports/prototype_d01/component_validation/OEM_P14_Max_points.csv",
+      "passed": true,
+      "detail": "OEM curve/pattern provenance"
+    },
+    {
+      "check": "pressure_input:reports/prototype_d01/mechanical_package/guard_pattern.json",
+      "passed": true,
+      "detail": "OEM curve/pattern provenance"
+    },
+    {
+      "check": "pressure_screen_identity",
+      "passed": true,
+      "detail": "300 m3/h / K1 assumed screen only; not measured operating point"
+    },
+    {
+      "check": "stakeholder_zip_members",
+      "passed": true,
+      "detail": "13 payload files"
+    },
+    {
+      "check": "stakeholder_zip_manifest",
+      "passed": true,
+      "detail": "Embedded and external manifest agree"
+    },
+    {
+      "check": "stakeholder_all_payload_hashes",
+      "passed": true,
+      "detail": "[]"
+    },
+    {
+      "check": "stakeholder_no_generated_caches_or_backups",
+      "passed": true,
+      "detail": "[]"
+    },
+    {
+      "check": "technical_zip_members",
+      "passed": true,
+      "detail": "157 payload files"
+    },
+    {
+      "check": "technical_zip_manifest",
+      "passed": true,
+      "detail": "Embedded and external manifest agree"
+    },
+    {
+      "check": "packaged_source:data/monitoring/decay_plan_TEMPLATE.json",
+      "passed": true,
+      "detail": "Byte-identical"
+    },
+    {
+      "check": "packaged_source:data/monitoring/run_metadata_TEMPLATE.json",
+      "passed": true,
+      "detail": "Byte-identical"
+    },
+    {
+      "check": "packaged_source:docs/build/NO_LAB_BUILD_ROUTE.md",
+      "passed": true,
+      "detail": "Byte-identical"
+    },
+    {
+      "check": "packaged_source:firmware/d01_opta_review/ControlLogic.h",
+      "passed": true,
+      "detail": "Byte-identical"
+    },
+    {
+      "check": "packaged_source:firmware/d01_opta_review/d01_opta_review.ino",
+      "passed": true,
+      "detail": "Byte-identical"
+    },
+    {
+      "check": "packaged_source:firmware/d01_opta_review/README.md",
+      "passed": true,
+      "detail": "Byte-identical"
+    },
+    {
+      "check": "packaged_source:firmware/tests/d01_opta/Arduino.h",
+      "passed": true,
+      "detail": "Byte-identical"
+    },
+    {
+      "check": "packaged_source:firmware/tests/d01_opta/test_control.cpp",
+      "passed": true,
+      "detail": "Byte-identical"
+    },
+    {
+      "check": "packaged_source:reports/prototype_d01/batch_review/CURRENT_COMBINED_PARTS_REGISTER.csv",
+      "passed": true,
+      "detail": "Byte-identical"
+    },
+    {
+      "check": "packaged_source:reports/prototype_d01/batch_review/README.md",
+      "passed": true,
+      "detail": "Byte-identical"
+    },
+    {
+      "check": "packaged_source:reports/prototype_d01/batch_summary/BATCH_VERIFICATION.json",
+      "passed": true,
+      "detail": "Byte-identical"
+    },
+    {
+      "check": "packaged_source:reports/prototype_d01/batch_summary/CURRENT_PRESSURE_BUDGET.json",
+      "passed": true,
+      "detail": "Byte-identical"
+    },
+    {
+      "check": "packaged_source:reports/prototype_d01/batch_summary/README.md",
+      "passed": true,
+      "detail": "Byte-identical"
+    },
+    {
+      "check": "packaged_source:reports/prototype_d01/component_validation/OEM_P14_Max_points.csv",
+      "passed": true,
+      "detail": "Byte-identical"
+    },
+    {
+      "check": "packaged_source:reports/prototype_d01/component_validation/README.md",
+      "passed": true,
+      "detail": "Byte-identical"
+    },
+    {
+      "check": "packaged_source:reports/prototype_d01/electrical_package/AQI_D01_OPTA_BENCH_REVIEW.pdf",
+      "passed": true,
+      "detail": "Byte-identical"
+    },
+    {
+      "check": "packaged_source:reports/prototype_d01/electrical_package/AQI_D01_POWER_AND_WIRING_SUPPLEMENT.pdf",
+      "passed": true,
+      "detail": "Byte-identical"
+    },
+    {
+      "check": "packaged_source:reports/prototype_d01/electrical_package/BOM.csv",
+      "passed": true,
+      "detail": "Content-identical; LF/CRLF differs"
+    },
+    {
+      "check": "packaged_source:reports/prototype_d01/electrical_package/checks.json",
+      "passed": true,
+      "detail": "Content-identical; LF/CRLF differs"
+    },
+    {
+      "check": "packaged_source:reports/prototype_d01/electrical_package/E01_RATED_PARTS.csv",
+      "passed": true,
+      "detail": "Byte-identical"
+    },
+    {
+      "check": "packaged_source:reports/prototype_d01/electrical_package/INTERFACES.csv",
+      "passed": true,
+      "detail": "Content-identical; LF/CRLF differs"
+    },
+    {
+      "check": "packaged_source:reports/prototype_d01/electrical_package/OPTA_BOARD_BUILD.json",
+      "passed": true,
+      "detail": "Byte-identical"
+    },
+    {
+      "check": "packaged_source:reports/prototype_d01/electrical_package/OPTA_HOST_CHECKS.json",
+      "passed": true,
+      "detail": "Byte-identical"
+    },
+    {
+      "check": "packaged_source:reports/prototype_d01/electrical_package/OPTA_INTEGRATION_SCREEN.json",
+      "passed": true,
+      "detail": "Byte-identical"
+    },
+    {
+      "check": "packaged_source:reports/prototype_d01/electrical_package/power_budget.json",
+      "passed": true,
+      "detail": "Content-identical; LF/CRLF differs"
+    },
+    {
+      "check": "packaged_source:reports/prototype_d01/electrical_package/POWER_COORDINATION.json",
+      "passed": true,
+      "detail": "Byte-identical"
+    },
+    {
+      "check": "packaged_source:reports/prototype_d01/electrical_package/PROTECTIVE_CANDIDATE_SCREEN.json",
+      "passed": true,
+      "detail": "Content-identical; LF/CRLF differs"
+    },
+    {
+      "check": "packaged_source:reports/prototype_d01/electrical_package/PROTECTIVE_SELECTION_DECISION.md",
+      "passed": true,
+      "detail": "Byte-identical"
+    },
+    {
+      "check": "packaged_source:reports/prototype_d01/electrical_package/sources.json",
+      "passed": true,
+      "detail": "Content-identical; LF/CRLF differs"
+    },
+    {
+      "check": "packaged_source:reports/prototype_d01/mechanical_package/assembly_audit.json",
+      "passed": true,
+      "detail": "Content-identical; LF/CRLF differs"
+    },
+    {
+      "check": "packaged_source:reports/prototype_d01/mechanical_package/ASSUMED_PARTIAL_MASS.csv",
+      "passed": true,
+      "detail": "Content-identical; LF/CRLF differs"
+    },
+    {
+      "check": "packaged_source:reports/prototype_d01/mechanical_package/cad_mesh.json",
+      "passed": true,
+      "detail": "Byte-identical"
+    },
+    {
+      "check": "packaged_source:reports/prototype_d01/mechanical_package/CAD_PART_INVENTORY.csv",
+      "passed": true,
+      "detail": "Content-identical; LF/CRLF differs"
+    },
+    {
+      "check": "packaged_source:reports/prototype_d01/mechanical_package/checks.json",
+      "passed": true,
+      "detail": "Content-identical; LF/CRLF differs"
+    },
+    {
+      "check": "packaged_source:reports/prototype_d01/mechanical_package/current_panels.json",
+      "passed": true,
+      "detail": "Content-identical; LF/CRLF differs"
+    },
+    {
+      "check": "packaged_source:reports/prototype_d01/mechanical_package/D01_R03M_ASSEMBLY.FCStd",
+      "passed": true,
+      "detail": "Byte-identical"
+    },
+    {
+      "check": "packaged_source:reports/prototype_d01/mechanical_package/D01_R03M_ASSEMBLY.step",
+      "passed": true,
+      "detail": "Content-identical; LF/CRLF differs"
+    },
+    {
+      "check": "packaged_source:reports/prototype_d01/mechanical_package/D01_R03M_EXPLODED.FCStd",
+      "passed": true,
+      "detail": "Byte-identical"
+    },
+    {
+      "check": "packaged_source:reports/prototype_d01/mechanical_package/fasteners.json",
+      "passed": true,
+      "detail": "Byte-identical"
+    },
+    {
+      "check": "packaged_source:reports/prototype_d01/mechanical_package/FASTENER_SCHEDULE.csv",
+      "passed": true,
+      "detail": "Content-identical; LF/CRLF differs"
+    },
+    {
+      "check": "packaged_source:reports/prototype_d01/mechanical_package/GUARD_ACCESS_AUDIT.json",
+      "passed": true,
+      "detail": "Content-identical; LF/CRLF differs"
+    },
+    {
+      "check": "packaged_source:reports/prototype_d01/mechanical_package/GUARD_ACCESS_DECISION.md",
+      "passed": true,
+      "detail": "Byte-identical"
+    },
+    {
+      "check": "packaged_source:reports/prototype_d01/mechanical_package/GUARD_BENDING_SENSITIVITY.json",
+      "passed": true,
+      "detail": "Content-identical; LF/CRLF differs"
+    },
+    {
+      "check": "packaged_source:reports/prototype_d01/mechanical_package/GUARD_BLANKS.csv",
+      "passed": true,
+      "detail": "Content-identical; LF/CRLF differs"
+    },
+    {
+      "check": "packaged_source:reports/prototype_d01/mechanical_package/guard_pattern.json",
+      "passed": true,
+      "detail": "Byte-identical"
+    },
+    {
+      "check": "packaged_source:reports/prototype_d01/mechanical_package/mass_stability_review.json",
+      "passed": true,
+      "detail": "Byte-identical"
+    },
+    {
+      "check": "packaged_source:reports/prototype_d01/mechanical_package/MASS_STABILITY_REVIEW.md",
+      "passed": true,
+      "detail": "Byte-identical"
+    },
+    {
+      "check": "packaged_source:reports/prototype_d01/mechanical_package/mechanical_screen.json",
+      "passed": true,
+      "detail": "Content-identical; LF/CRLF differs"
+    },
+    {
+      "check": "packaged_source:reports/prototype_d01/mechanical_package/part_inventory.json",
+      "passed": true,
+      "detail": "Byte-identical"
+    },
+    {
+      "check": "packaged_source:reports/prototype_d01/mechanical_package/README.md",
+      "passed": true,
+      "detail": "Byte-identical"
+    },
+    {
+      "check": "packaged_source:reports/prototype_d01/mechanical_package/service_checks.json",
+      "passed": true,
+      "detail": "Content-identical; LF/CRLF differs"
+    },
+    {
+      "check": "packaged_source:reports/prototype_d01/r02_adapter/README.md",
+      "passed": true,
+      "detail": "Byte-identical"
+    },
+    {
+      "check": "packaged_source:reports/prototype_d01/validation_package/AIRFLOW_BLANK.csv",
+      "passed": true,
+      "detail": "Content-identical; LF/CRLF differs"
+    },
+    {
+      "check": "packaged_source:reports/prototype_d01/validation_package/PARTICLE_TIMESERIES_BLANK.csv",
+      "passed": true,
+      "detail": "Content-identical; LF/CRLF differs"
+    },
+    {
+      "check": "packaged_source:reports/prototype_d01/validation_package/RUN_LOG_BLANK.csv",
+      "passed": true,
+      "detail": "Content-identical; LF/CRLF differs"
+    },
+    {
+      "check": "packaged_source:reports/prototype_d01/validation_package/sources.json",
+      "passed": true,
+      "detail": "Content-identical; LF/CRLF differs"
+    },
+    {
+      "check": "packaged_source:reports/prototype_d01/electrical_package/batch_closure/CABLE_AND_INTERFACE_SCHEDULE.csv",
+      "passed": true,
+      "detail": "Byte-identical"
+    },
+    {
+      "check": "packaged_source:reports/prototype_d01/electrical_package/batch_closure/ELECTRICAL_BATCH_SCREEN.json",
+      "passed": true,
+      "detail": "Byte-identical"
+    },
+    {
+      "check": "packaged_source:reports/prototype_d01/electrical_package/batch_closure/HAZARD_ALLOCATION.csv",
+      "passed": true,
+      "detail": "Byte-identical"
+    },
+    {
+      "check": "packaged_source:reports/prototype_d01/electrical_package/batch_closure/REVIEWER_DELTA.md",
+      "passed": true,
+      "detail": "Byte-identical"
+    },
+    {
+      "check": "packaged_source:reports/prototype_d01/electrical_package/control_module/CURRENT_CONTROL_CHECKS.json",
+      "passed": true,
+      "detail": "Byte-identical"
+    },
+    {
+      "check": "packaged_source:reports/prototype_d01/electrical_package/control_module/CURRENT_CONTROL_PLACEMENT.csv",
+      "passed": true,
+      "detail": "Byte-identical"
+    },
+    {
+      "check": "packaged_source:reports/prototype_d01/electrical_package/control_module/CURRENT_RELEASE_GATES.csv",
+      "passed": true,
+      "detail": "Byte-identical"
+    },
+    {
+      "check": "packaged_source:reports/prototype_d01/electrical_package/control_module/D01_CURRENT_BUILD_DECISION.pdf",
+      "passed": true,
+      "detail": "Byte-identical"
+    },
+    {
+      "check": "packaged_source:reports/prototype_d01/electrical_package/control_module/D01_E03_CONTROL_ENVELOPES.FCStd",
+      "passed": true,
+      "detail": "Byte-identical"
+    },
+    {
+      "check": "packaged_source:reports/prototype_d01/electrical_package/control_module/D01_E03_CONTROL_ENVELOPES.step",
+      "passed": true,
+      "detail": "Byte-identical"
+    },
+    {
+      "check": "packaged_source:reports/prototype_d01/electrical_package/control_module/D01_E03_DIMENSIONED_CONTROL_LAYOUT.pdf",
+      "passed": true,
+      "detail": "Byte-identical"
+    },
+    {
+      "check": "packaged_source:reports/prototype_d01/electrical_package/control_module/D01_E04_LID_CONTROLS_REVIEW.pdf",
+      "passed": true,
+      "detail": "Byte-identical"
+    },
+    {
+      "check": "packaged_source:reports/prototype_d01/electrical_package/control_module/D01_E04_LID_CONTROL_ENVELOPES.FCStd",
+      "passed": true,
+      "detail": "Byte-identical"
+    },
+    {
+      "check": "packaged_source:reports/prototype_d01/electrical_package/control_module/D01_E04_LID_CONTROL_ENVELOPES.step",
+      "passed": true,
+      "detail": "Byte-identical"
+    },
+    {
+      "check": "packaged_source:reports/prototype_d01/electrical_package/control_module/D01_E05_CURRENT_CONTROL_LAYOUT.FCStd",
+      "passed": true,
+      "detail": "Byte-identical"
+    },
+    {
+      "check": "packaged_source:reports/prototype_d01/electrical_package/control_module/D01_E05_CURRENT_CONTROL_LAYOUT.step",
+      "passed": true,
+      "detail": "Byte-identical"
+    },
+    {
+      "check": "packaged_source:reports/prototype_d01/electrical_package/control_module/D01_E05_LID_CONTROLS_REVIEW.pdf",
+      "passed": true,
+      "detail": "Byte-identical"
+    },
+    {
+      "check": "packaged_source:reports/prototype_d01/electrical_package/control_module/FIT_CHECKS.json",
+      "passed": true,
+      "detail": "Byte-identical"
+    },
+    {
+      "check": "packaged_source:reports/prototype_d01/electrical_package/control_module/LID_CONTROL_CHECKS.json",
+      "passed": true,
+      "detail": "Byte-identical"
+    },
+    {
+      "check": "packaged_source:reports/prototype_d01/electrical_package/control_module/LID_CONTROL_PARTS.csv",
+      "passed": true,
+      "detail": "Byte-identical"
+    },
+    {
+      "check": "packaged_source:reports/prototype_d01/electrical_package/control_module/PLACEMENT.csv",
+      "passed": true,
+      "detail": "Byte-identical"
+    },
+    {
+      "check": "packaged_source:reports/prototype_d01/electrical_package/control_module/README.md",
+      "passed": true,
+      "detail": "Byte-identical"
+    },
+    {
+      "check": "packaged_source:reports/prototype_d01/mechanical_package/batch_closure/FILTER_STACK_SECTION.svg",
+      "passed": true,
+      "detail": "Byte-identical"
+    },
+    {
+      "check": "packaged_source:reports/prototype_d01/mechanical_package/batch_closure/MECHANICAL_REQUIREMENTS.json",
+      "passed": true,
+      "detail": "Byte-identical"
+    },
+    {
+      "check": "packaged_source:reports/prototype_d01/mechanical_package/batch_closure/README.md",
+      "passed": true,
+      "detail": "Byte-identical"
+    },
+    {
+      "check": "packaged_source:reports/prototype_d01/mechanical_package/harness_detail/D01_R03M_HARNESS_REVIEW.FCStd",
+      "passed": true,
+      "detail": "Byte-identical"
+    },
+    {
+      "check": "packaged_source:reports/prototype_d01/mechanical_package/harness_detail/README.md",
+      "passed": true,
+      "detail": "Byte-identical"
+    },
+    {
+      "check": "packaged_source:reports/prototype_d01/mechanical_package/harness_detail/ROUTING_CHECKS.json",
+      "passed": true,
+      "detail": "Content-identical; LF/CRLF differs"
+    },
+    {
+      "check": "packaged_source:reports/prototype_d01/mechanical_package/panel_DXF_REVIEW_ONLY/A01_Reducer_Front.dxf",
+      "passed": true,
+      "detail": "Byte-identical"
+    },
+    {
+      "check": "packaged_source:reports/prototype_d01/mechanical_package/panel_DXF_REVIEW_ONLY/A01_Reducer_Rear.dxf",
+      "passed": true,
+      "detail": "Byte-identical"
+    },
+    {
+      "check": "packaged_source:reports/prototype_d01/mechanical_package/panel_DXF_REVIEW_ONLY/A04_Retainer_Front.dxf",
+      "passed": true,
+      "detail": "Byte-identical"
+    },
+    {
+      "check": "packaged_source:reports/prototype_d01/mechanical_package/panel_DXF_REVIEW_ONLY/A04_Retainer_Rear.dxf",
+      "passed": true,
+      "detail": "Byte-identical"
+    },
+    {
+      "check": "packaged_source:reports/prototype_d01/mechanical_package/panel_DXF_REVIEW_ONLY/G_FACE.dxf",
+      "passed": true,
+      "detail": "Byte-identical"
+    },
+    {
+      "check": "packaged_source:reports/prototype_d01/mechanical_package/panel_DXF_REVIEW_ONLY/G_INNER_END.dxf",
+      "passed": true,
+      "detail": "Byte-identical"
+    },
+    {
+      "check": "packaged_source:reports/prototype_d01/mechanical_package/panel_DXF_REVIEW_ONLY/G_INNER_SIDE.dxf",
+      "passed": true,
+      "detail": "Byte-identical"
+    },
+    {
+      "check": "packaged_source:reports/prototype_d01/mechanical_package/panel_DXF_REVIEW_ONLY/G_OUTER_END.dxf",
+      "passed": true,
+      "detail": "Byte-identical"
+    },
+    {
+      "check": "packaged_source:reports/prototype_d01/mechanical_package/panel_DXF_REVIEW_ONLY/G_OUTER_SIDE.dxf",
+      "passed": true,
+      "detail": "Byte-identical"
+    },
+    {
+      "check": "packaged_source:reports/prototype_d01/mechanical_package/panel_DXF_REVIEW_ONLY/M01_Base.dxf",
+      "passed": true,
+      "detail": "Byte-identical"
+    },
+    {
+      "check": "packaged_source:reports/prototype_d01/mechanical_package/panel_DXF_REVIEW_ONLY/M02_Left.dxf",
+      "passed": true,
+      "detail": "Byte-identical"
+    },
+    {
+      "check": "packaged_source:reports/prototype_d01/mechanical_package/panel_DXF_REVIEW_ONLY/M02_Right.dxf",
+      "passed": true,
+      "detail": "Byte-identical"
+    },
+    {
+      "check": "packaged_source:reports/prototype_d01/mechanical_package/panel_DXF_REVIEW_ONLY/M03_Seat_Front.dxf",
+      "passed": true,
+      "detail": "Byte-identical"
+    },
+    {
+      "check": "packaged_source:reports/prototype_d01/mechanical_package/panel_DXF_REVIEW_ONLY/M03_Seat_Rear.dxf",
+      "passed": true,
+      "detail": "Byte-identical"
+    },
+    {
+      "check": "packaged_source:reports/prototype_d01/mechanical_package/panel_DXF_REVIEW_ONLY/M06_Fan_plate.dxf",
+      "passed": true,
+      "detail": "Byte-identical"
+    },
+    {
+      "check": "packaged_source:scripts/analysis/compile_d01_opta.py",
+      "passed": true,
+      "detail": "Byte-identical"
+    },
+    {
+      "check": "packaged_source:scripts/analysis/d01_control_acceptance.py",
+      "passed": true,
+      "detail": "Byte-identical"
+    },
+    {
+      "check": "packaged_source:scripts/analysis/d01_current_filter_screen.py",
+      "passed": true,
+      "detail": "Byte-identical"
+    },
+    {
+      "check": "packaged_source:scripts/analysis/d01_electrical_closure.py",
+      "passed": true,
+      "detail": "Byte-identical"
+    },
+    {
+      "check": "packaged_source:scripts/analysis/d01_electrical_release_batch.py",
+      "passed": true,
+      "detail": "Byte-identical"
+    },
+    {
+      "check": "packaged_source:scripts/analysis/d01_guard_bending.py",
+      "passed": true,
+      "detail": "Byte-identical"
+    },
+    {
+      "check": "packaged_source:scripts/analysis/d01_mass_stability.py",
+      "passed": true,
+      "detail": "Byte-identical"
+    },
+    {
+      "check": "packaged_source:scripts/analysis/d01_mechanical_release_batch.py",
+      "passed": true,
+      "detail": "Byte-identical"
+    },
+    {
+      "check": "packaged_source:scripts/analysis/d01_validation.py",
+      "passed": true,
+      "detail": "Byte-identical"
+    },
+    {
+      "check": "packaged_source:scripts/analysis/indoor_decay.py",
+      "passed": true,
+      "detail": "Byte-identical"
+    },
+    {
+      "check": "packaged_source:scripts/analysis/test_d01_current_filter_screen.py",
+      "passed": true,
+      "detail": "Byte-identical"
+    },
+    {
+      "check": "packaged_source:scripts/analysis/test_d01_electrical_closure.py",
+      "passed": true,
+      "detail": "Byte-identical"
+    },
+    {
+      "check": "packaged_source:scripts/analysis/test_d01_electrical_release_batch.py",
+      "passed": true,
+      "detail": "Byte-identical"
+    },
+    {
+      "check": "packaged_source:scripts/analysis/test_d01_mass_stability.py",
+      "passed": true,
+      "detail": "Byte-identical"
+    },
+    {
+      "check": "packaged_source:scripts/analysis/test_d01_mechanical_release_batch.py",
+      "passed": true,
+      "detail": "Byte-identical"
+    },
+    {
+      "check": "packaged_source:scripts/analysis/test_d01_opta_host.py",
+      "passed": true,
+      "detail": "Byte-identical"
+    },
+    {
+      "check": "packaged_source:scripts/analysis/test_indoor_decay.py",
+      "passed": true,
+      "detail": "Byte-identical"
+    },
+    {
+      "check": "packaged_source:scripts/analysis/test_measurement_recording.py",
+      "passed": true,
+      "detail": "Byte-identical"
+    },
+    {
+      "check": "packaged_source:scripts/geometry/close_d01_control_layout.py",
+      "passed": true,
+      "detail": "Byte-identical"
+    },
+    {
+      "check": "packaged_source:scripts/geometry/layout_d01_control_module.py",
+      "passed": true,
+      "detail": "Byte-identical"
+    },
+    {
+      "check": "packaged_source:scripts/geometry/layout_d01_lid_controls.py",
+      "passed": true,
+      "detail": "Byte-identical"
+    },
+    {
+      "check": "packaged_source:scripts/maintenance/check_d01_handoff_consistency.py",
+      "passed": true,
+      "detail": "Byte-identical"
+    },
+    {
+      "check": "packaged_source:scripts/maintenance/run_d01_release_batch.py",
+      "passed": true,
+      "detail": "Byte-identical"
+    },
+    {
+      "check": "packaged_source:scripts/monitoring/record_measurements.py",
+      "passed": true,
+      "detail": "Byte-identical"
+    },
+    {
+      "check": "packaged_source:scripts/reports/build_d01_closeout.py",
+      "passed": true,
+      "detail": "Byte-identical"
+    },
+    {
+      "check": "packaged_source:scripts/reports/build_d01_control_layout.py",
+      "passed": true,
+      "detail": "Byte-identical"
+    },
+    {
+      "check": "packaged_source:scripts/reports/build_d01_lid_controls.py",
+      "passed": true,
+      "detail": "Byte-identical"
+    },
+    {
+      "check": "technical_all_payload_hashes",
+      "passed": true,
+      "detail": "[]"
+    },
+    {
+      "check": "technical_no_generated_caches_or_backups",
+      "passed": true,
+      "detail": "[]"
+    },
+    {
+      "check": "packaged_engineering_sources_resolve",
+      "passed": true,
+      "detail": "[]"
+    },
+    {
+      "check": "current_pressure_top_level_copy",
+      "passed": true,
+      "detail": "Current top-level pressure screen equals newly regenerated root evidence"
+    },
+    {
+      "check": "current_parts_register_links",
+      "passed": true,
+      "detail": "28 candidate/proposed/unselected lines; source paths resolve"
+    },
+    {
+      "check": "current_parts_register_case_sensitive_links",
+      "passed": true,
+      "detail": "[]"
+    },
+    {
+      "check": "current_parts_no_duplicate_ids",
+      "passed": true,
+      "detail": "No duplicated scheduled quantities"
+    },
+    {
+      "check": "current_parts_top_level_copy",
+      "passed": true,
+      "detail": "Current consolidated candidate register at technical entry point"
+    },
+    {
+      "check": "current_parts_packaged_evidence_paths",
+      "passed": true,
+      "detail": "[]"
+    },
+    {
+      "check": "pdf_current_prefix",
+      "passed": true,
+      "detail": "56 pages; current E05 material must precede snapshots"
+    },
+    {
+      "check": "historical_exact_fan_filter_identifiers",
+      "passed": true,
+      "detail": "Experimental IKEA reference, not manufacturer-approved custom purifier use"
+    }
+  ],
+  "findings": [
+    {
+      "id": "A02",
+      "priority": "MEDIUM",
+      "file": "reports/shareable_20261005/technical/AQI_TOWER_TECHNICAL_HANDOFF.pdf",
+      "finding": "Preserved reference pages contain superseded enclosure/build wording: [{\"page\": 15, \"text\": \"AQI TOWER | D01 R03M | 5 October 2026 | REVIEW ONLY - NOT FOR CONSTRUCTION 4 Electrical review disposition Reference chain only: OEM NV-PS1 external adapter -> supplied NA-AC10 -> \"}]",
+      "integration_action": "Keep originals unchanged; current consolidated parts/status sheet must take precedence over embedded historical snapshots."
+    },
+    {
+      "id": "A03",
+      "priority": "MEDIUM",
+      "file": "reports/prototype_d01/internal_handoff_20261005/COMBINED_PARTS_REGISTER.csv",
+      "finding": "Preserved IH02 parts register still has unselected 140x100x40 BOX and does not contain current Opta, Hammond box/panel, buttons/collars/contacts.",
+      "integration_action": "Do not rewrite IH02 snapshot. Publish CURRENT_COMBINED_PARTS_REGISTER.csv at bundle entry point with quantities/status and links to current exact evidence."
+    }
+  ],
+  "packaged_current_sources_compared": 126,
+  "source_sha256": {
+    "reports/prototype_d01/mechanical_package/D01_R03M_ASSEMBLY.FCStd": "fb28a31315968509dcdbbb2caac8c6d69c84ecb94a35ccd75937a5d9ecaa33a6",
+    "reports/prototype_d01/electrical_package/control_module/CURRENT_CONTROL_CHECKS.json": "abc419ae3bfb050e502ae9ff9c6697e04cada849a7e58e0666db69e3b9274803",
+    "reports/prototype_d01/electrical_package/control_module/D01_E05_CURRENT_CONTROL_LAYOUT.FCStd": "34f3157cefe275d85d72d7e717a547874ea7193464d6a8e0505082b6006dcf98",
+    "reports/prototype_d01/electrical_package/OPTA_BOARD_BUILD.json": "41af458be64c3eec45ea18716e5babd2ab19f6b79b16de05e63f95df9f1f792e",
+    "firmware/d01_opta_review/ControlLogic.h": "d69b065064adcdebc56e6a873bb344c3d6532b847a948232cf8239b888435921",
+    "firmware/d01_opta_review/d01_opta_review.ino": "7b8e954812872e70b5d8377a1dcc7e8ff57b5c146bd0361ce3f4de940854c7de",
+    "reports/prototype_d01/batch_summary/CURRENT_PRESSURE_BUDGET.json": "dae1622b2e1bcdd2672f9b11d4f9ea21427b507296a8f4f6c588aee0514186ba",
+    "reports/prototype_d01/component_validation/OEM_P14_Max_points.csv": "0e3f05eb99c27862599b89c638664ada5fa31dd450d6c0e786db7790a4f707d7",
+    "reports/prototype_d01/mechanical_package/guard_pattern.json": "30c054cba87939ebea023e355311aeefb9ed42202f378cb77eed9b4f1595d7bb",
+    "reports/shareable_20261005/stakeholder/MANIFEST.json": "12e001e1ee62ef91e1cec721f823bb7eb1701f3e0eeb0a2dc8bebfc2dd19dbc5",
+    "reports/shareable_20261005/technical/MANIFEST.json": "08f34d545f99e63b8f2eee09927b41aeacd46c4dcbcecf9d428c91d7df676293",
+    "data/monitoring/decay_plan_TEMPLATE.json": "acbde397b5f97b2076949fadc78a0afacdda9fdb940aeb136fb94f3147a3c47b",
+    "data/monitoring/run_metadata_TEMPLATE.json": "8aa03a6d2afc5deaa3dc98c93571e3f6b70e39c53ff75bf25b5fcb14489616d6",
+    "docs/build/NO_LAB_BUILD_ROUTE.md": "ebf2246a6710ddad06d8b7e1c56693a22cdd196da6d785653821e77fbcd290ca",
+    "firmware/d01_opta_review/README.md": "51db41a9c252f81dabea5fbb8c277f48963a0a560eee15b21bc62437ffda6de9",
+    "firmware/tests/d01_opta/Arduino.h": "209d1604ff36cac5c5950f67ead705c66ababdf85178859f754f212f6c7fd9d2",
+    "firmware/tests/d01_opta/test_control.cpp": "a1594292c5ddb9061ed08361224958c78dca5c0972e119d98c6995e680c3cd5d",
+    "reports/prototype_d01/batch_review/CURRENT_COMBINED_PARTS_REGISTER.csv": "2737a9ce7f42376de875114a9bb7c1d94e1c3c1b8049d649e00e11fa903a27bb",
+    "reports/prototype_d01/batch_review/README.md": "5e391ac19cdffa6a84ceaf0192c3bd8574bf564e0faf8398ccb662ddbbb56491",
+    "reports/prototype_d01/batch_summary/BATCH_VERIFICATION.json": "e9150cb7057569f7c64ea69fe8d53de138d0529991c31e9cefa20435a4fb14f0",
+    "reports/prototype_d01/batch_summary/README.md": "e57741f7af872d4903bb89722010b0b029590955b0c06b023084bd47e922322e",
+    "reports/prototype_d01/component_validation/README.md": "193ee06f378d0223de8d5e034839844296777cdea1174907418efecd7aaf74c3",
+    "reports/prototype_d01/electrical_package/AQI_D01_OPTA_BENCH_REVIEW.pdf": "53103e59a0ea518a56502bdb651a32900a0e9d1f5fd85f7f64fb9e75fd2e1f13",
+    "reports/prototype_d01/electrical_package/AQI_D01_POWER_AND_WIRING_SUPPLEMENT.pdf": "49ef622dade7592075c4072fed763d46914381176976efbd44b192dc483aea89",
+    "reports/prototype_d01/electrical_package/BOM.csv": "ae09b5b6b5d919284edb6d2b4a87c78ae34450f37c6fd3c370214c633e46ee26",
+    "reports/prototype_d01/electrical_package/checks.json": "18ec6a9911f9a9f2b9e8d9f55f6c7361176c71ff608b98deff4b7974fa6c5dac",
+    "reports/prototype_d01/electrical_package/E01_RATED_PARTS.csv": "1855381d4d235cf899252a0a011bf0bece276c64836ff0c2a337c2b496db6568",
+    "reports/prototype_d01/electrical_package/INTERFACES.csv": "8aa00f4a4b2cc32e6f9cba1a8e8745459d920bfd74341f3bec1e2702eccd9535",
+    "reports/prototype_d01/electrical_package/OPTA_HOST_CHECKS.json": "b21a2a4ccbb4bc1050c9c43f5541c5186a26fcd85516e4ed015e9b871b550ff9",
+    "reports/prototype_d01/electrical_package/OPTA_INTEGRATION_SCREEN.json": "8f604fa16969fbb6b551ee6e255e1ab3c23eced2f5373e638184bfb4fe6f0d0c",
+    "reports/prototype_d01/electrical_package/power_budget.json": "ff048c9842c890ef28f64d416fa0fc8cd7d67991d697872d7b908f5e704fdf6c",
+    "reports/prototype_d01/electrical_package/POWER_COORDINATION.json": "4a02cb6f059b36c67489cab0170e3797b945f748d1c3f04d74fda7cfc40b2789",
+    "reports/prototype_d01/electrical_package/PROTECTIVE_CANDIDATE_SCREEN.json": "05aadd32dc6893426667e70ff02fc6c0c8bff57821b22491df9d713c4b5774a1",
+    "reports/prototype_d01/electrical_package/PROTECTIVE_SELECTION_DECISION.md": "a3af7ff5ae86ae0b45116379f3e83f3eb4b98c81ba50db81c48153a20d9be505",
+    "reports/prototype_d01/electrical_package/sources.json": "b8ab10e4027af4b84725a582a6cad0afc5a03fa63f4e4e47dda49a94ecf79dd7",
+    "reports/prototype_d01/mechanical_package/assembly_audit.json": "f4fc54670e8e88b64d616124d5b1ba9a781bee889d1ec253729f5af5ce66a0bc",
+    "reports/prototype_d01/mechanical_package/ASSUMED_PARTIAL_MASS.csv": "255768f48bc7570574781cc36cf120ae6d6167d0c54d082b70abf0e9beee104b",
+    "reports/prototype_d01/mechanical_package/cad_mesh.json": "118f26142c8f80aaccf5ab6aea0c930cb91ac520c8ccdb531e47f49d504a8bb2",
+    "reports/prototype_d01/mechanical_package/CAD_PART_INVENTORY.csv": "5832c79c1653e7a4fd01bab6b998683375ba27941c4df9955a450666d20d3263",
+    "reports/prototype_d01/mechanical_package/checks.json": "3423f3c341e02b7d1d0f650824107adbf3b09ec0bc4b430fb01bb5537f5cc54e",
+    "reports/prototype_d01/mechanical_package/current_panels.json": "eed90aca9683d489d3299ed15e44a217bd5f7b13a4b8dcf89750844739bb3464",
+    "reports/prototype_d01/mechanical_package/D01_R03M_ASSEMBLY.step": "2d6477c960ee07d6adf5b62a0eb27e6bd7b48e0f5d31595940909470803cae1a",
+    "reports/prototype_d01/mechanical_package/D01_R03M_EXPLODED.FCStd": "64a85499192191ed05b496d858a495c52881701e86116cb49db4aa205a3e73a3",
+    "reports/prototype_d01/mechanical_package/fasteners.json": "fe603efe07b01facaf2c671d69b20854bbe8762ebca7bc5a823bb0f2f0fd6cca",
+    "reports/prototype_d01/mechanical_package/FASTENER_SCHEDULE.csv": "3baeb90c6bedb7fa80099a586f247cbeb4c5a1d2aa7cc449c41ab43cb2a1d113",
+    "reports/prototype_d01/mechanical_package/GUARD_ACCESS_AUDIT.json": "baefbff57a2d1f79b0c75ec0e20cedacd4f6a7eefc83d4564ac984248aa8bfe3",
+    "reports/prototype_d01/mechanical_package/GUARD_ACCESS_DECISION.md": "17057dcd5052bf78ee9012ae64ad391ab37d82b6e82804cfb56526d8fa3acfca",
+    "reports/prototype_d01/mechanical_package/GUARD_BENDING_SENSITIVITY.json": "0b32a9c8745cbb184576854bc1de11ba6793dba9fc2d828b6805f4c6d9d17121",
+    "reports/prototype_d01/mechanical_package/GUARD_BLANKS.csv": "bbce0bcd0b038ae90062ca45bbadc29d5be47a4ad2af18f8a6661e7c7df6fd91",
+    "reports/prototype_d01/mechanical_package/mass_stability_review.json": "dfd2f6024632ef369268794ac0de618d86ce35b098c81d34acd40a3ffc6071bd",
+    "reports/prototype_d01/mechanical_package/MASS_STABILITY_REVIEW.md": "229a03d59c9f5163d3ce4b2196d5313af57be28b654e19d6c4169c2b87aed5e4",
+    "reports/prototype_d01/mechanical_package/mechanical_screen.json": "f71a673427a5349122e20928dc29087880a86088544242dbfa3b0562ca6ecb77",
+    "reports/prototype_d01/mechanical_package/part_inventory.json": "512c4b98c1be4c2b2e93f6fb119263bad7294e27df5eea53af4bd02bfb5b1c7b",
+    "reports/prototype_d01/mechanical_package/README.md": "ccfa2065886fae05d0e31d0806aa009ccf28b9784ae9f9ef42380e84b92effed",
+    "reports/prototype_d01/mechanical_package/service_checks.json": "7b193378bbb2bdda0e3b825c8863320f3ab9af53dade33775a967ff83570e8ed",
+    "reports/prototype_d01/r02_adapter/README.md": "dd455f52cea6f8e2bd937cefabb2f3ee03dd3e040792ecb4508ffad9455bb9f7",
+    "reports/prototype_d01/validation_package/AIRFLOW_BLANK.csv": "3fbbb4141647f106f26d10d6ad761311a1dfdf9b19578b3eee93ce8eb8ebc432",
+    "reports/prototype_d01/validation_package/PARTICLE_TIMESERIES_BLANK.csv": "243123beea3a698e884935200f89560752490cd9e646ede731a2b40097241edc",
+    "reports/prototype_d01/validation_package/RUN_LOG_BLANK.csv": "a58b1f647fef8406e301bbce761a99a9c4b7fb85932a446424377b4c967979c8",
+    "reports/prototype_d01/validation_package/sources.json": "57a592cefe445a4d73b6a02090d8414f536549e5dfda4e9a221c5e8cf67379ca",
+    "reports/prototype_d01/electrical_package/batch_closure/CABLE_AND_INTERFACE_SCHEDULE.csv": "558768200c190b5c0922fae2434d34ef4adf7ea5f5b8b78ff2f29423fe29ef55",
+    "reports/prototype_d01/electrical_package/batch_closure/ELECTRICAL_BATCH_SCREEN.json": "f764ba8c0b9ae0029ca63a2b48d5c0a1d2be8075564f63bc7d4e74b4ea3996c1",
+    "reports/prototype_d01/electrical_package/batch_closure/HAZARD_ALLOCATION.csv": "6955f383643a363ca28570a992cb0228d1bb49cda3b5d08ae76a3952ccc5f224",
+    "reports/prototype_d01/electrical_package/batch_closure/REVIEWER_DELTA.md": "ed7bdcc8159102580d266695db0d9d0d95652cf0e8c7fede6318f80a4631025e",
+    "reports/prototype_d01/electrical_package/control_module/CURRENT_CONTROL_PLACEMENT.csv": "2543e3dcfccf1110ae91845979a582b3aac94301245dd1349dba4694d4598c9b",
+    "reports/prototype_d01/electrical_package/control_module/CURRENT_RELEASE_GATES.csv": "e5f491550e97ade51011a3b86d0e0fb8148e91ca6a3d46aacaf4dadc20f9c594",
+    "reports/prototype_d01/electrical_package/control_module/D01_CURRENT_BUILD_DECISION.pdf": "808af7c7ac6496fb4f73480d62ae5fa336f057cd1fcfa0f57add11aca405c412",
+    "reports/prototype_d01/electrical_package/control_module/D01_E03_CONTROL_ENVELOPES.FCStd": "480b5f12808b823ed1c42608d6bc1e12b8bca1fd74963948d2622d3e873dbda9",
+    "reports/prototype_d01/electrical_package/control_module/D01_E03_CONTROL_ENVELOPES.step": "d8f926ae2c8c78ba8c36b800fde9e2ceebe03f1e4761e186f03ff16b307b3a4a",
+    "reports/prototype_d01/electrical_package/control_module/D01_E03_DIMENSIONED_CONTROL_LAYOUT.pdf": "a04898ab0a41f27399f8fb31f2592f80f5d400031c65f9fe326bff56d5e414f3",
+    "reports/prototype_d01/electrical_package/control_module/D01_E04_LID_CONTROLS_REVIEW.pdf": "d38f5d547593653b327dbe141044d2aa231b654877da45393c1b67eaa9fc7e87",
+    "reports/prototype_d01/electrical_package/control_module/D01_E04_LID_CONTROL_ENVELOPES.FCStd": "b21d709308ddeb196e64f32f3f07a56ff525cb18da599c60f84f93ab00982790",
+    "reports/prototype_d01/electrical_package/control_module/D01_E04_LID_CONTROL_ENVELOPES.step": "3403b9262af202b33fd8f465ea81924a2183b7371680d89437294dc1d189af77",
+    "reports/prototype_d01/electrical_package/control_module/D01_E05_CURRENT_CONTROL_LAYOUT.step": "e8b5a2ae4971383af664ec3a256850687450eb1d7234d2d2df0bf9b0a540c507",
+    "reports/prototype_d01/electrical_package/control_module/D01_E05_LID_CONTROLS_REVIEW.pdf": "8cae25fda384da31ec627c143b407aa528cf36ade849ea76fda97d3004ee6f5b",
+    "reports/prototype_d01/electrical_package/control_module/FIT_CHECKS.json": "c0d782322c675f65828f6ecdb8b93a7ce394d5a4f0f1f44e0ed9fb2b63edfbeb",
+    "reports/prototype_d01/electrical_package/control_module/LID_CONTROL_CHECKS.json": "6932dbac532fa8cf166dc351c5c93b5bc0aa3f06c0612107ef1a2b2f20735da0",
+    "reports/prototype_d01/electrical_package/control_module/LID_CONTROL_PARTS.csv": "3019472473cb4d0a3ef4e77b1ebafc49dd783d1612cb58e4bea29c9323bedca9",
+    "reports/prototype_d01/electrical_package/control_module/PLACEMENT.csv": "7ae336d73027fa3ba33544a98e2b1ec08c6e1368b9c19ce063991b4f115e6f16",
+    "reports/prototype_d01/electrical_package/control_module/README.md": "9178d907c732d4613451a0f98c2444e54f45390a958ff1c5a427c0ca95f105f6",
+    "reports/prototype_d01/mechanical_package/batch_closure/FILTER_STACK_SECTION.svg": "8d9a620294f278519c4292fe0a5ff5f432b24a85d2ee656256a5979db038c573",
+    "reports/prototype_d01/mechanical_package/batch_closure/MECHANICAL_REQUIREMENTS.json": "489271eb81274c1d807095dc2ec6e6c7d11717d169be1b237bea69a7188f3e6a",
+    "reports/prototype_d01/mechanical_package/batch_closure/README.md": "6c0a5e78ddb58dc8c09176bf91ebda821218aa715f9fbbdc6d6b85618ebf20cf",
+    "reports/prototype_d01/mechanical_package/harness_detail/D01_R03M_HARNESS_REVIEW.FCStd": "662cd811b129ff3d34422a2aee0efe184552653b6f0ebc78292b228a6021a9cd",
+    "reports/prototype_d01/mechanical_package/harness_detail/README.md": "923bc4f883c02ec420098ced1390c3c2b27432c8cd1225f830e84a8dd67ecfaf",
+    "reports/prototype_d01/mechanical_package/harness_detail/ROUTING_CHECKS.json": "c365ce1bcd6b42fa010e8acc93f82d595ee730571416833e297ae0881e461b69",
+    "reports/prototype_d01/mechanical_package/panel_DXF_REVIEW_ONLY/A01_Reducer_Front.dxf": "687cf5123bad0ebbbb7d964dc36965182b36c0776608ff698004bf2e3153dff5",
+    "reports/prototype_d01/mechanical_package/panel_DXF_REVIEW_ONLY/A01_Reducer_Rear.dxf": "687cf5123bad0ebbbb7d964dc36965182b36c0776608ff698004bf2e3153dff5",
+    "reports/prototype_d01/mechanical_package/panel_DXF_REVIEW_ONLY/A04_Retainer_Front.dxf": "9dde6321601b09f3b6cf6dd3b74fb121cefcff92cfaeb87f39f1b4f4c6367683",
+    "reports/prototype_d01/mechanical_package/panel_DXF_REVIEW_ONLY/A04_Retainer_Rear.dxf": "9dde6321601b09f3b6cf6dd3b74fb121cefcff92cfaeb87f39f1b4f4c6367683",
+    "reports/prototype_d01/mechanical_package/panel_DXF_REVIEW_ONLY/G_FACE.dxf": "e11ff9523d40fac9f01c03d86d1353bae223e7db039d9f8180a999f7da27148e",
+    "reports/prototype_d01/mechanical_package/panel_DXF_REVIEW_ONLY/G_INNER_END.dxf": "26e1bcf8402602463c79a4b7ac34aa9f29914cd4978c9509f84cabca663cb7b4",
+    "reports/prototype_d01/mechanical_package/panel_DXF_REVIEW_ONLY/G_INNER_SIDE.dxf": "23b0848b0874bc2241150bc237ffc7a8ef71a0a000dd0720c475900a04867497",
+    "reports/prototype_d01/mechanical_package/panel_DXF_REVIEW_ONLY/G_OUTER_END.dxf": "74592d53d5c1a569352774ad8df2043f757c0d3ed0784f672e4c47a303ea0990",
+    "reports/prototype_d01/mechanical_package/panel_DXF_REVIEW_ONLY/G_OUTER_SIDE.dxf": "b880615a24f0f52c3ee81e5f66fc29d2482139bedc4c69de0347c5363336b6db",
+    "reports/prototype_d01/mechanical_package/panel_DXF_REVIEW_ONLY/M01_Base.dxf": "d1ffbb72d2c52c1a80fecab72d2a81627c5a86763aa4d6089d0a98b4427fd296",
+    "reports/prototype_d01/mechanical_package/panel_DXF_REVIEW_ONLY/M02_Left.dxf": "9ec58e720dfad6887deb6337b0da03aa7e9befce1c52c21bd773e3928bbfc5f8",
+    "reports/prototype_d01/mechanical_package/panel_DXF_REVIEW_ONLY/M02_Right.dxf": "9ec58e720dfad6887deb6337b0da03aa7e9befce1c52c21bd773e3928bbfc5f8",
+    "reports/prototype_d01/mechanical_package/panel_DXF_REVIEW_ONLY/M03_Seat_Front.dxf": "db08b9fb9b7072d20b46408779d635bdb098828c5dd7c2c134f7745093b972d7",
+    "reports/prototype_d01/mechanical_package/panel_DXF_REVIEW_ONLY/M03_Seat_Rear.dxf": "db08b9fb9b7072d20b46408779d635bdb098828c5dd7c2c134f7745093b972d7",
+    "reports/prototype_d01/mechanical_package/panel_DXF_REVIEW_ONLY/M06_Fan_plate.dxf": "6758b19e48ac48a9bc089f251ff218fc85737742405e322391d0206eb4dc8778",
+    "scripts/analysis/compile_d01_opta.py": "cf96d94e2e54673d86da86f269ac30781ae674a6f9b6cb74f2044e77366a1c36",
+    "scripts/analysis/d01_control_acceptance.py": "a77f1c49f4d7f29cbcbe608c8fb9c40a65b935d66a39c184005fcb5d5ef1c4fa",
+    "scripts/analysis/d01_current_filter_screen.py": "89ade9bf430058c195b5d6f528b117df25a4a0cb59ddb923c5819a07c9295804",
+    "scripts/analysis/d01_electrical_closure.py": "976d5445005c915dda6fce32fcf21618c5b8b23bc2fd99b27fdcaa32cddbd644",
+    "scripts/analysis/d01_electrical_release_batch.py": "b9eaa9aa284282b9a4944c5c025ba5e3156992f946f2a8db5921934f222cab15",
+    "scripts/analysis/d01_guard_bending.py": "87e33e6f9ebd16a247a8c9b1a01d77677aaf27a518193637041277bb95bd1686",
+    "scripts/analysis/d01_mass_stability.py": "640c49546cf5054e174affa2272bee78120304b77c9ca1c5648f7ab35a7a3e1c",
+    "scripts/analysis/d01_mechanical_release_batch.py": "17a6ab5d98540e0905ac7c9b8f61bec40ca137487857bcc62f0e24bd934f6efe",
+    "scripts/analysis/d01_validation.py": "08b2e128f5a3af075e9e553bcf34f6899e6ef0571cadc761063384104fd6c569",
+    "scripts/analysis/indoor_decay.py": "b3101d5bc76e413b03997407e7ac725dcc7de95b4ac1d11880f40111ca7f0f23",
+    "scripts/analysis/test_d01_current_filter_screen.py": "5295e74b22116ffc747b69030bc664858ad783099610a6a6f7a4a4ecdb772e3d",
+    "scripts/analysis/test_d01_electrical_closure.py": "716556781d783da687518c6d8bc10f2e63277b51f2cb648d5dc397c292cc57b4",
+    "scripts/analysis/test_d01_electrical_release_batch.py": "70ac9d2dfcb32ffd2e1be3e16f893fe2526ba0c62e0b99a8adee64a19d0cccb0",
+    "scripts/analysis/test_d01_mass_stability.py": "3b6fc88238c6c76cab4ccf485bfb8963c494a147fca001736fa6366b13e703cb",
+    "scripts/analysis/test_d01_mechanical_release_batch.py": "0eec8dfbda48c7782e9d21a3cafde67f6eb5e74f38a40b7ba6b62e6b3487a354",
+    "scripts/analysis/test_d01_opta_host.py": "81cc471f83643ed2c6d75e61265c85a20c5a6765f001a390780c13ce67168037",
+    "scripts/analysis/test_indoor_decay.py": "e669cb0d9a4f5eb74ce81bb615c8702f92072ba9d938b2c3f325e316096aaf0a",
+    "scripts/analysis/test_measurement_recording.py": "c6d857bf2675e9a5d3acb7bed21c52617080d91a5785c0c4a32fd507d6211a07",
+    "scripts/geometry/close_d01_control_layout.py": "5bfa3e5032f08579e92a50acde133cd5bc59bef506f6d59e8b0cdb30b93a1ddd",
+    "scripts/geometry/layout_d01_control_module.py": "28f57f9a5eddb3162a08e91d37d6fa3419111be4fd9ba7e42fa9fc4fba024b6a",
+    "scripts/geometry/layout_d01_lid_controls.py": "8d28858f6818503b121718bf7e0ec3a8ba2ab5e5fa9cd7e73b45035d8808875d",
+    "scripts/maintenance/check_d01_handoff_consistency.py": "168d20be73e9b9276b88862eb9eac2ca0b7011c26645b29afe3145f8994332e3",
+    "scripts/maintenance/run_d01_release_batch.py": "45626707f1f457bda4182148cead5cd810874f7cbf62f85d7cf8e3ba54053815",
+    "scripts/monitoring/record_measurements.py": "6f1c261de66fb3b1c1bfd2c9daeb7b88cb5a8800a5f1f3a22e64db5f94a4830f",
+    "scripts/reports/build_d01_closeout.py": "862b9f8d5b1d05608098cb92c03cecf6bea27d9573fa5065dcc90d1fa66d4880",
+    "scripts/reports/build_d01_control_layout.py": "70213c4c5919aa1535f05610f41f7a34729710cc3f3e7c56cb939d417a2a8869",
+    "scripts/reports/build_d01_lid_controls.py": "daf475e104aaa8f6cf0c56a6f601878aa6445dc03171db122436852f82de1048",
+    "reports/shareable_20261005/technical/AQI_TOWER_TECHNICAL_HANDOFF.pdf": "d5845f8b07ff2da87dbbea5ea526f6cbcd106b98e643c47cfb4f642a12df9775",
+    "reports/prototype_d01/internal_handoff_20261005/COMBINED_PARTS_REGISTER.csv": "1a262c384fd907626d43735d0bb30bf11181bf17524dc924a4964b6e517eab08"
+  }
+}
