@@ -1,0 +1,22 @@
+{
+  "status": "PASS - abstract software only",
+  "named_checks": [
+    "Power-on with held START inhibited",
+    "Held START remains inhibited",
+    "Fresh START accepted",
+    "STOP overrides START",
+    "Held START after STOP inhibited",
+    "Power loss clears run",
+    "Restore does not run",
+    "Unknown permissive trips",
+    "Closing access does not restart",
+    "RESET alone does not restart",
+    "START held through reset inhibited",
+    "Separate fresh START after reset accepted",
+    "Held RESET cannot clear trip on recovery",
+    "Fresh RESET clears trip but stays off"
+  ],
+  "exhaustive_one_step_cases": 1024,
+  "limitations": "No physical sensing, timing, contacts, diagnostic coverage or safety integrity modeled.",
+  "arithmetic_checks": 3
+}

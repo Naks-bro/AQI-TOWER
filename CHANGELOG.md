@@ -4,6 +4,8 @@ This file records repository-level changes. Detailed engineering evidence remain
 
 ## Unreleased
 
+- 2026-10-05: Added two shareable review bundles: 7-page plain-language stakeholder report/funding workbook and 45-page technical report/review workbook with preserved IH02 engineering payload. Imported actual R03M CAD into Blender, rendered assembly/exploded/cutaway views and two annotated GIFs, and built an offline Simple/Technical 3D viewer. Added source provenance, byte manifests and GitHub coverage exclusions. No native CAD change, new CFD, physical result or construction release.
+
 - 2026-10-05: Reorganized README around the current IH02/R03M prototype, added existing assembly and exploded-view images with limitations, corrected onboarding paths and historical revision wording, and added a local link/tracking check plus a Linux CI template for current analysis tools. Workflow activation is pending credentials with workflow write permission; the template is not an active check. No engineering result or release status changed.
 
 - 2026-10-05: Published the IH02 internal review handoff with stakeholder/engineering PDFs, current R03M CAD and15 DXFs, parts/funding/release registers and corrected analysis tools. Added the current ZIP download exception and byte-preserving handoff attributes; local inspection renders stay ignored. Five current-filter screen tests pass; airflow23, guard28 and control14/1024 checks reproduce. Engineering release and physical performance remain open.

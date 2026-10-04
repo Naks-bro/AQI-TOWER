@@ -1,0 +1,2000 @@
+[
+  {
+    "id": "M01_Base",
+    "w": 550.0,
+    "h": 360.0,
+    "t": 9.0,
+    "axes": "xy",
+    "edges": [
+      {
+        "type": "line",
+        "a": [
+          0.0,
+          0.0
+        ],
+        "b": [
+          0.0,
+          360.0
+        ]
+      },
+      {
+        "type": "line",
+        "a": [
+          0.0,
+          360.0
+        ],
+        "b": [
+          550.0,
+          360.0
+        ]
+      },
+      {
+        "type": "line",
+        "a": [
+          0.0,
+          0.0
+        ],
+        "b": [
+          550.0,
+          0.0
+        ]
+      },
+      {
+        "type": "line",
+        "a": [
+          550.0,
+          0.0
+        ],
+        "b": [
+          550.0,
+          360.0
+        ]
+      },
+      {
+        "type": "circle",
+        "center": [
+          19.0,
+          19.0
+        ],
+        "radius": 2.25
+      },
+      {
+        "type": "circle",
+        "center": [
+          40.0,
+          30.0
+        ],
+        "radius": 2.25
+      },
+      {
+        "type": "circle",
+        "center": [
+          531.0,
+          19.0
+        ],
+        "radius": 2.25
+      },
+      {
+        "type": "circle",
+        "center": [
+          510.0,
+          30.0
+        ],
+        "radius": 2.25
+      },
+      {
+        "type": "circle",
+        "center": [
+          40.0,
+          330.0
+        ],
+        "radius": 2.25
+      },
+      {
+        "type": "circle",
+        "center": [
+          19.0,
+          341.0
+        ],
+        "radius": 2.25
+      },
+      {
+        "type": "circle",
+        "center": [
+          510.0,
+          330.0
+        ],
+        "radius": 2.25
+      },
+      {
+        "type": "circle",
+        "center": [
+          531.0,
+          341.0
+        ],
+        "radius": 2.25
+      }
+    ],
+    "face_area_mm2": 197872.76549752965,
+    "thickness_area_volume_check": true
+  },
+  {
+    "id": "M02_Left",
+    "w": 360.0,
+    "h": 542.0,
+    "t": 9.0,
+    "axes": "yz",
+    "edges": [
+      {
+        "type": "line",
+        "a": [
+          0.0,
+          0.0
+        ],
+        "b": [
+          0.0,
+          542.0
+        ]
+      },
+      {
+        "type": "line",
+        "a": [
+          0.0,
+          542.0
+        ],
+        "b": [
+          360.0,
+          542.0
+        ]
+      },
+      {
+        "type": "line",
+        "a": [
+          0.0,
+          0.0
+        ],
+        "b": [
+          360.0,
+          0.0
+        ]
+      },
+      {
+        "type": "line",
+        "a": [
+          360.0,
+          0.0
+        ],
+        "b": [
+          360.0,
+          542.0
+        ]
+      },
+      {
+        "type": "circle",
+        "center": [
+          341.0,
+          76.0
+        ],
+        "radius": 2.25
+      },
+      {
+        "type": "circle",
+        "center": [
+          341.0,
+          176.0
+        ],
+        "radius": 2.25
+      },
+      {
+        "type": "circle",
+        "center": [
+          341.0,
+          376.0
+        ],
+        "radius": 2.25
+      },
+      {
+        "type": "circle",
+        "center": [
+          341.0,
+          476.0
+        ],
+        "radius": 2.25
+      },
+      {
+        "type": "circle",
+        "center": [
+          19.0,
+          76.0
+        ],
+        "radius": 2.25
+      },
+      {
+        "type": "circle",
+        "center": [
+          19.0,
+          176.0
+        ],
+        "radius": 2.25
+      },
+      {
+        "type": "circle",
+        "center": [
+          19.0,
+          376.0
+        ],
+        "radius": 2.25
+      },
+      {
+        "type": "circle",
+        "center": [
+          19.0,
+          476.0
+        ],
+        "radius": 2.25
+      }
+    ],
+    "face_area_mm2": 194992.76549752962,
+    "thickness_area_volume_check": true
+  },
+  {
+    "id": "M02_Right",
+    "w": 360.0,
+    "h": 542.0,
+    "t": 9.0,
+    "axes": "yz",
+    "edges": [
+      {
+        "type": "line",
+        "a": [
+          0.0,
+          0.0
+        ],
+        "b": [
+          0.0,
+          542.0
+        ]
+      },
+      {
+        "type": "line",
+        "a": [
+          0.0,
+          542.0
+        ],
+        "b": [
+          360.0,
+          542.0
+        ]
+      },
+      {
+        "type": "line",
+        "a": [
+          0.0,
+          0.0
+        ],
+        "b": [
+          360.0,
+          0.0
+        ]
+      },
+      {
+        "type": "line",
+        "a": [
+          360.0,
+          0.0
+        ],
+        "b": [
+          360.0,
+          542.0
+        ]
+      },
+      {
+        "type": "circle",
+        "center": [
+          341.0,
+          76.0
+        ],
+        "radius": 2.25
+      },
+      {
+        "type": "circle",
+        "center": [
+          341.0,
+          176.0
+        ],
+        "radius": 2.25
+      },
+      {
+        "type": "circle",
+        "center": [
+          341.0,
+          376.0
+        ],
+        "radius": 2.25
+      },
+      {
+        "type": "circle",
+        "center": [
+          341.0,
+          476.0
+        ],
+        "radius": 2.25
+      },
+      {
+        "type": "circle",
+        "center": [
+          19.0,
+          76.0
+        ],
+        "radius": 2.25
+      },
+      {
+        "type": "circle",
+        "center": [
+          19.0,
+          176.0
+        ],
+        "radius": 2.25
+      },
+      {
+        "type": "circle",
+        "center": [
+          19.0,
+          376.0
+        ],
+        "radius": 2.25
+      },
+      {
+        "type": "circle",
+        "center": [
+          19.0,
+          476.0
+        ],
+        "radius": 2.25
+      }
+    ],
+    "face_area_mm2": 194992.76549752962,
+    "thickness_area_volume_check": true
+  },
+  {
+    "id": "M03_Seat_Front",
+    "w": 532.0,
+    "h": 542.0,
+    "t": 9.0,
+    "axes": "xz",
+    "edges": [
+      {
+        "type": "line",
+        "a": [
+          0.0,
+          0.0
+        ],
+        "b": [
+          532.0,
+          0.0
+        ]
+      },
+      {
+        "type": "line",
+        "a": [
+          532.0,
+          0.0
+        ],
+        "b": [
+          532.0,
+          542.0
+        ]
+      },
+      {
+        "type": "line",
+        "a": [
+          0.0,
+          0.0
+        ],
+        "b": [
+          0.0,
+          542.0
+        ]
+      },
+      {
+        "type": "line",
+        "a": [
+          0.0,
+          542.0
+        ],
+        "b": [
+          532.0,
+          542.0
+        ]
+      },
+      {
+        "type": "circle",
+        "center": [
+          11.0,
+          26.0
+        ],
+        "radius": 2.75
+      },
+      {
+        "type": "circle",
+        "center": [
+          66.0,
+          8.0
+        ],
+        "radius": 2.25
+      },
+      {
+        "type": "circle",
+        "center": [
+          11.0,
+          126.0
+        ],
+        "radius": 2.25
+      },
+      {
+        "type": "circle",
+        "center": [
+          11.0,
+          226.0
+        ],
+        "radius": 2.25
+      },
+      {
+        "type": "circle",
+        "center": [
+          206.0,
+          8.0
+        ],
+        "radius": 2.25
+      },
+      {
+        "type": "circle",
+        "center": [
+          11.0,
+          276.0
+        ],
+        "radius": 2.75
+      },
+      {
+        "type": "circle",
+        "center": [
+          11.0,
+          326.0
+        ],
+        "radius": 2.25
+      },
+      {
+        "type": "circle",
+        "center": [
+          11.0,
+          426.0
+        ],
+        "radius": 2.25
+      },
+      {
+        "type": "circle",
+        "center": [
+          11.0,
+          526.0
+        ],
+        "radius": 2.75
+      },
+      {
+        "type": "circle",
+        "center": [
+          266.0,
+          21.0
+        ],
+        "radius": 2.75
+      },
+      {
+        "type": "circle",
+        "center": [
+          326.0,
+          8.0
+        ],
+        "radius": 2.25
+      },
+      {
+        "type": "circle",
+        "center": [
+          466.0,
+          8.0
+        ],
+        "radius": 2.25
+      },
+      {
+        "type": "circle",
+        "center": [
+          521.0,
+          26.0
+        ],
+        "radius": 2.75
+      },
+      {
+        "type": "circle",
+        "center": [
+          521.0,
+          126.0
+        ],
+        "radius": 2.25
+      },
+      {
+        "type": "circle",
+        "center": [
+          521.0,
+          226.0
+        ],
+        "radius": 2.25
+      },
+      {
+        "type": "line",
+        "a": [
+          31.0,
+          511.0
+        ],
+        "b": [
+          501.0,
+          511.0
+        ]
+      },
+      {
+        "type": "line",
+        "a": [
+          31.0,
+          511.0
+        ],
+        "b": [
+          31.0,
+          41.0
+        ]
+      },
+      {
+        "type": "line",
+        "a": [
+          501.0,
+          511.0
+        ],
+        "b": [
+          501.0,
+          41.0
+        ]
+      },
+      {
+        "type": "line",
+        "a": [
+          31.0,
+          41.0
+        ],
+        "b": [
+          501.0,
+          41.0
+        ]
+      },
+      {
+        "type": "circle",
+        "center": [
+          266.0,
+          531.0
+        ],
+        "radius": 2.75
+      },
+      {
+        "type": "circle",
+        "center": [
+          521.0,
+          276.0
+        ],
+        "radius": 2.75
+      },
+      {
+        "type": "circle",
+        "center": [
+          521.0,
+          326.0
+        ],
+        "radius": 2.25
+      },
+      {
+        "type": "circle",
+        "center": [
+          521.0,
+          426.0
+        ],
+        "radius": 2.25
+      },
+      {
+        "type": "circle",
+        "center": [
+          521.0,
+          526.0
+        ],
+        "radius": 2.75
+      }
+    ],
+    "face_area_mm2": 67063.08189075188,
+    "thickness_area_volume_check": true
+  },
+  {
+    "id": "M03_Seat_Rear",
+    "w": 532.0,
+    "h": 542.0,
+    "t": 9.0,
+    "axes": "xz",
+    "edges": [
+      {
+        "type": "line",
+        "a": [
+          0.0,
+          0.0
+        ],
+        "b": [
+          532.0,
+          0.0
+        ]
+      },
+      {
+        "type": "line",
+        "a": [
+          532.0,
+          0.0
+        ],
+        "b": [
+          532.0,
+          542.0
+        ]
+      },
+      {
+        "type": "line",
+        "a": [
+          0.0,
+          0.0
+        ],
+        "b": [
+          0.0,
+          542.0
+        ]
+      },
+      {
+        "type": "line",
+        "a": [
+          0.0,
+          542.0
+        ],
+        "b": [
+          532.0,
+          542.0
+        ]
+      },
+      {
+        "type": "circle",
+        "center": [
+          11.0,
+          26.0
+        ],
+        "radius": 2.75
+      },
+      {
+        "type": "circle",
+        "center": [
+          66.0,
+          8.0
+        ],
+        "radius": 2.25
+      },
+      {
+        "type": "circle",
+        "center": [
+          11.0,
+          126.0
+        ],
+        "radius": 2.25
+      },
+      {
+        "type": "circle",
+        "center": [
+          11.0,
+          226.0
+        ],
+        "radius": 2.25
+      },
+      {
+        "type": "circle",
+        "center": [
+          206.0,
+          8.0
+        ],
+        "radius": 2.25
+      },
+      {
+        "type": "circle",
+        "center": [
+          11.0,
+          276.0
+        ],
+        "radius": 2.75
+      },
+      {
+        "type": "circle",
+        "center": [
+          11.0,
+          326.0
+        ],
+        "radius": 2.25
+      },
+      {
+        "type": "circle",
+        "center": [
+          11.0,
+          426.0
+        ],
+        "radius": 2.25
+      },
+      {
+        "type": "circle",
+        "center": [
+          11.0,
+          526.0
+        ],
+        "radius": 2.75
+      },
+      {
+        "type": "circle",
+        "center": [
+          266.0,
+          21.0
+        ],
+        "radius": 2.75
+      },
+      {
+        "type": "circle",
+        "center": [
+          326.0,
+          8.0
+        ],
+        "radius": 2.25
+      },
+      {
+        "type": "circle",
+        "center": [
+          466.0,
+          8.0
+        ],
+        "radius": 2.25
+      },
+      {
+        "type": "circle",
+        "center": [
+          521.0,
+          26.0
+        ],
+        "radius": 2.75
+      },
+      {
+        "type": "circle",
+        "center": [
+          521.0,
+          126.0
+        ],
+        "radius": 2.25
+      },
+      {
+        "type": "circle",
+        "center": [
+          521.0,
+          226.0
+        ],
+        "radius": 2.25
+      },
+      {
+        "type": "line",
+        "a": [
+          31.0,
+          511.0
+        ],
+        "b": [
+          501.0,
+          511.0
+        ]
+      },
+      {
+        "type": "line",
+        "a": [
+          31.0,
+          511.0
+        ],
+        "b": [
+          31.0,
+          41.0
+        ]
+      },
+      {
+        "type": "line",
+        "a": [
+          501.0,
+          511.0
+        ],
+        "b": [
+          501.0,
+          41.0
+        ]
+      },
+      {
+        "type": "line",
+        "a": [
+          31.0,
+          41.0
+        ],
+        "b": [
+          501.0,
+          41.0
+        ]
+      },
+      {
+        "type": "circle",
+        "center": [
+          266.0,
+          531.0
+        ],
+        "radius": 2.75
+      },
+      {
+        "type": "circle",
+        "center": [
+          521.0,
+          276.0
+        ],
+        "radius": 2.75
+      },
+      {
+        "type": "circle",
+        "center": [
+          521.0,
+          326.0
+        ],
+        "radius": 2.25
+      },
+      {
+        "type": "circle",
+        "center": [
+          521.0,
+          426.0
+        ],
+        "radius": 2.25
+      },
+      {
+        "type": "circle",
+        "center": [
+          521.0,
+          526.0
+        ],
+        "radius": 2.75
+      }
+    ],
+    "face_area_mm2": 67063.08189075188,
+    "thickness_area_volume_check": true
+  },
+  {
+    "id": "M06_Fan_plate",
+    "w": 550.0,
+    "h": 360.0,
+    "t": 9.0,
+    "axes": "xy",
+    "edges": [
+      {
+        "type": "line",
+        "a": [
+          0.0,
+          0.0
+        ],
+        "b": [
+          0.0,
+          360.0
+        ]
+      },
+      {
+        "type": "line",
+        "a": [
+          0.0,
+          360.0
+        ],
+        "b": [
+          550.0,
+          360.0
+        ]
+      },
+      {
+        "type": "line",
+        "a": [
+          0.0,
+          0.0
+        ],
+        "b": [
+          550.0,
+          0.0
+        ]
+      },
+      {
+        "type": "line",
+        "a": [
+          550.0,
+          0.0
+        ],
+        "b": [
+          550.0,
+          360.0
+        ]
+      },
+      {
+        "type": "circle",
+        "center": [
+          19.0,
+          19.0
+        ],
+        "radius": 2.25
+      },
+      {
+        "type": "circle",
+        "center": [
+          137.5,
+          42.5
+        ],
+        "radius": 2.25
+      },
+      {
+        "type": "circle",
+        "center": [
+          105.0,
+          60.0
+        ],
+        "radius": 2.25
+      },
+      {
+        "type": "circle",
+        "center": [
+          262.5,
+          42.5
+        ],
+        "radius": 2.25
+      },
+      {
+        "type": "circle",
+        "center": [
+          105.0,
+          120.0
+        ],
+        "radius": 2.25
+      },
+      {
+        "type": "circle",
+        "center": [
+          137.5,
+          167.5
+        ],
+        "radius": 2.25
+      },
+      {
+        "type": "circle",
+        "center": [
+          200.0,
+          105.0
+        ],
+        "radius": 67.1
+      },
+      {
+        "type": "circle",
+        "center": [
+          262.5,
+          167.5
+        ],
+        "radius": 2.25
+      },
+      {
+        "type": "circle",
+        "center": [
+          287.5,
+          42.5
+        ],
+        "radius": 2.25
+      },
+      {
+        "type": "circle",
+        "center": [
+          412.5,
+          42.5
+        ],
+        "radius": 2.25
+      },
+      {
+        "type": "circle",
+        "center": [
+          531.0,
+          19.0
+        ],
+        "radius": 2.25
+      },
+      {
+        "type": "circle",
+        "center": [
+          445.0,
+          60.0
+        ],
+        "radius": 2.25
+      },
+      {
+        "type": "circle",
+        "center": [
+          350.0,
+          105.0
+        ],
+        "radius": 67.1
+      },
+      {
+        "type": "circle",
+        "center": [
+          287.5,
+          167.5
+        ],
+        "radius": 2.25
+      },
+      {
+        "type": "circle",
+        "center": [
+          445.0,
+          120.0
+        ],
+        "radius": 2.25
+      },
+      {
+        "type": "circle",
+        "center": [
+          412.5,
+          167.5
+        ],
+        "radius": 2.25
+      },
+      {
+        "type": "circle",
+        "center": [
+          137.5,
+          192.5
+        ],
+        "radius": 2.25
+      },
+      {
+        "type": "circle",
+        "center": [
+          105.0,
+          240.0
+        ],
+        "radius": 2.25
+      },
+      {
+        "type": "circle",
+        "center": [
+          262.5,
+          192.5
+        ],
+        "radius": 2.25
+      },
+      {
+        "type": "circle",
+        "center": [
+          200.0,
+          255.0
+        ],
+        "radius": 67.1
+      },
+      {
+        "type": "circle",
+        "center": [
+          105.0,
+          300.0
+        ],
+        "radius": 2.25
+      },
+      {
+        "type": "circle",
+        "center": [
+          19.0,
+          341.0
+        ],
+        "radius": 2.25
+      },
+      {
+        "type": "circle",
+        "center": [
+          137.5,
+          317.5
+        ],
+        "radius": 2.25
+      },
+      {
+        "type": "circle",
+        "center": [
+          262.5,
+          317.5
+        ],
+        "radius": 2.25
+      },
+      {
+        "type": "circle",
+        "center": [
+          287.5,
+          192.5
+        ],
+        "radius": 2.25
+      },
+      {
+        "type": "circle",
+        "center": [
+          350.0,
+          255.0
+        ],
+        "radius": 67.1
+      },
+      {
+        "type": "circle",
+        "center": [
+          412.5,
+          192.5
+        ],
+        "radius": 2.25
+      },
+      {
+        "type": "circle",
+        "center": [
+          445.0,
+          240.0
+        ],
+        "radius": 2.25
+      },
+      {
+        "type": "circle",
+        "center": [
+          287.5,
+          317.5
+        ],
+        "radius": 2.25
+      },
+      {
+        "type": "circle",
+        "center": [
+          445.0,
+          300.0
+        ],
+        "radius": 2.25
+      },
+      {
+        "type": "circle",
+        "center": [
+          412.5,
+          317.5
+        ],
+        "radius": 2.25
+      },
+      {
+        "type": "circle",
+        "center": [
+          531.0,
+          341.0
+        ],
+        "radius": 2.25
+      }
+    ],
+    "face_area_mm2": 140975.72652355686,
+    "thickness_area_volume_check": true
+  },
+  {
+    "id": "A01_Reducer_Front",
+    "w": 550.0,
+    "h": 550.0,
+    "t": 9.0,
+    "axes": "xz",
+    "edges": [
+      {
+        "type": "line",
+        "a": [
+          0.0,
+          0.0
+        ],
+        "b": [
+          550.0,
+          0.0
+        ]
+      },
+      {
+        "type": "line",
+        "a": [
+          550.0,
+          0.0
+        ],
+        "b": [
+          550.0,
+          550.0
+        ]
+      },
+      {
+        "type": "line",
+        "a": [
+          0.0,
+          0.0
+        ],
+        "b": [
+          0.0,
+          550.0
+        ]
+      },
+      {
+        "type": "line",
+        "a": [
+          0.0,
+          550.0
+        ],
+        "b": [
+          550.0,
+          550.0
+        ]
+      },
+      {
+        "type": "circle",
+        "center": [
+          20.0,
+          25.0
+        ],
+        "radius": 2.75
+      },
+      {
+        "type": "circle",
+        "center": [
+          20.0,
+          125.0
+        ],
+        "radius": 4.0
+      },
+      {
+        "type": "circle",
+        "center": [
+          80.0,
+          120.0
+        ],
+        "radius": 2.25
+      },
+      {
+        "type": "circle",
+        "center": [
+          145.0,
+          118.0
+        ],
+        "radius": 2.25
+      },
+      {
+        "type": "circle",
+        "center": [
+          20.0,
+          225.0
+        ],
+        "radius": 4.0
+      },
+      {
+        "type": "circle",
+        "center": [
+          20.0,
+          275.0
+        ],
+        "radius": 2.75
+      },
+      {
+        "type": "circle",
+        "center": [
+          20.0,
+          325.0
+        ],
+        "radius": 4.0
+      },
+      {
+        "type": "circle",
+        "center": [
+          20.0,
+          425.0
+        ],
+        "radius": 4.0
+      },
+      {
+        "type": "circle",
+        "center": [
+          80.0,
+          430.0
+        ],
+        "radius": 2.25
+      },
+      {
+        "type": "circle",
+        "center": [
+          20.0,
+          525.0
+        ],
+        "radius": 2.75
+      },
+      {
+        "type": "circle",
+        "center": [
+          275.0,
+          20.0
+        ],
+        "radius": 2.75
+      },
+      {
+        "type": "circle",
+        "center": [
+          405.0,
+          118.0
+        ],
+        "radius": 2.25
+      },
+      {
+        "type": "circle",
+        "center": [
+          530.0,
+          25.0
+        ],
+        "radius": 2.75
+      },
+      {
+        "type": "circle",
+        "center": [
+          470.0,
+          120.0
+        ],
+        "radius": 2.25
+      },
+      {
+        "type": "circle",
+        "center": [
+          530.0,
+          125.0
+        ],
+        "radius": 4.0
+      },
+      {
+        "type": "circle",
+        "center": [
+          530.0,
+          225.0
+        ],
+        "radius": 4.0
+      },
+      {
+        "type": "line",
+        "a": [
+          100.0,
+          410.0
+        ],
+        "b": [
+          450.0,
+          410.0
+        ]
+      },
+      {
+        "type": "line",
+        "a": [
+          100.0,
+          410.0
+        ],
+        "b": [
+          100.0,
+          140.0
+        ]
+      },
+      {
+        "type": "line",
+        "a": [
+          450.0,
+          410.0
+        ],
+        "b": [
+          450.0,
+          140.0
+        ]
+      },
+      {
+        "type": "line",
+        "a": [
+          100.0,
+          140.0
+        ],
+        "b": [
+          450.0,
+          140.0
+        ]
+      },
+      {
+        "type": "circle",
+        "center": [
+          275.0,
+          530.0
+        ],
+        "radius": 2.75
+      },
+      {
+        "type": "circle",
+        "center": [
+          530.0,
+          275.0
+        ],
+        "radius": 2.75
+      },
+      {
+        "type": "circle",
+        "center": [
+          530.0,
+          325.0
+        ],
+        "radius": 4.0
+      },
+      {
+        "type": "circle",
+        "center": [
+          470.0,
+          430.0
+        ],
+        "radius": 2.25
+      },
+      {
+        "type": "circle",
+        "center": [
+          530.0,
+          425.0
+        ],
+        "radius": 4.0
+      },
+      {
+        "type": "circle",
+        "center": [
+          530.0,
+          525.0
+        ],
+        "radius": 2.75
+      }
+    ],
+    "face_area_mm2": 207312.38390794545,
+    "thickness_area_volume_check": true
+  },
+  {
+    "id": "A04_Retainer_Front",
+    "w": 410.0,
+    "h": 330.0,
+    "t": 9.0,
+    "axes": "xz",
+    "edges": [
+      {
+        "type": "line",
+        "a": [
+          0.0,
+          0.0
+        ],
+        "b": [
+          410.0,
+          0.0
+        ]
+      },
+      {
+        "type": "line",
+        "a": [
+          410.0,
+          0.0
+        ],
+        "b": [
+          410.0,
+          330.0
+        ]
+      },
+      {
+        "type": "line",
+        "a": [
+          0.0,
+          0.0
+        ],
+        "b": [
+          0.0,
+          330.0
+        ]
+      },
+      {
+        "type": "line",
+        "a": [
+          0.0,
+          330.0
+        ],
+        "b": [
+          410.0,
+          330.0
+        ]
+      },
+      {
+        "type": "circle",
+        "center": [
+          10.0,
+          10.0
+        ],
+        "radius": 2.25
+      },
+      {
+        "type": "circle",
+        "center": [
+          10.0,
+          320.0
+        ],
+        "radius": 2.25
+      },
+      {
+        "type": "line",
+        "a": [
+          30.0,
+          300.0
+        ],
+        "b": [
+          380.0,
+          300.0
+        ]
+      },
+      {
+        "type": "line",
+        "a": [
+          30.0,
+          300.0
+        ],
+        "b": [
+          30.0,
+          30.0
+        ]
+      },
+      {
+        "type": "line",
+        "a": [
+          380.0,
+          300.0
+        ],
+        "b": [
+          380.0,
+          30.0
+        ]
+      },
+      {
+        "type": "line",
+        "a": [
+          30.0,
+          30.0
+        ],
+        "b": [
+          380.0,
+          30.0
+        ]
+      },
+      {
+        "type": "circle",
+        "center": [
+          400.0,
+          10.0
+        ],
+        "radius": 2.25
+      },
+      {
+        "type": "circle",
+        "center": [
+          400.0,
+          320.0
+        ],
+        "radius": 2.25
+      }
+    ],
+    "face_area_mm2": 40736.38274876478,
+    "thickness_area_volume_check": true
+  },
+  {
+    "id": "A01_Reducer_Rear",
+    "w": 550.0,
+    "h": 550.0,
+    "t": 9.0,
+    "axes": "xz",
+    "edges": [
+      {
+        "type": "line",
+        "a": [
+          0.0,
+          0.0
+        ],
+        "b": [
+          550.0,
+          0.0
+        ]
+      },
+      {
+        "type": "line",
+        "a": [
+          550.0,
+          0.0
+        ],
+        "b": [
+          550.0,
+          550.0
+        ]
+      },
+      {
+        "type": "line",
+        "a": [
+          0.0,
+          0.0
+        ],
+        "b": [
+          0.0,
+          550.0
+        ]
+      },
+      {
+        "type": "line",
+        "a": [
+          0.0,
+          550.0
+        ],
+        "b": [
+          550.0,
+          550.0
+        ]
+      },
+      {
+        "type": "circle",
+        "center": [
+          20.0,
+          25.0
+        ],
+        "radius": 2.75
+      },
+      {
+        "type": "circle",
+        "center": [
+          20.0,
+          125.0
+        ],
+        "radius": 4.0
+      },
+      {
+        "type": "circle",
+        "center": [
+          80.0,
+          120.0
+        ],
+        "radius": 2.25
+      },
+      {
+        "type": "circle",
+        "center": [
+          145.0,
+          118.0
+        ],
+        "radius": 2.25
+      },
+      {
+        "type": "circle",
+        "center": [
+          20.0,
+          225.0
+        ],
+        "radius": 4.0
+      },
+      {
+        "type": "circle",
+        "center": [
+          20.0,
+          275.0
+        ],
+        "radius": 2.75
+      },
+      {
+        "type": "circle",
+        "center": [
+          20.0,
+          325.0
+        ],
+        "radius": 4.0
+      },
+      {
+        "type": "circle",
+        "center": [
+          20.0,
+          425.0
+        ],
+        "radius": 4.0
+      },
+      {
+        "type": "circle",
+        "center": [
+          80.0,
+          430.0
+        ],
+        "radius": 2.25
+      },
+      {
+        "type": "circle",
+        "center": [
+          20.0,
+          525.0
+        ],
+        "radius": 2.75
+      },
+      {
+        "type": "circle",
+        "center": [
+          275.0,
+          20.0
+        ],
+        "radius": 2.75
+      },
+      {
+        "type": "circle",
+        "center": [
+          405.0,
+          118.0
+        ],
+        "radius": 2.25
+      },
+      {
+        "type": "circle",
+        "center": [
+          530.0,
+          25.0
+        ],
+        "radius": 2.75
+      },
+      {
+        "type": "circle",
+        "center": [
+          470.0,
+          120.0
+        ],
+        "radius": 2.25
+      },
+      {
+        "type": "circle",
+        "center": [
+          530.0,
+          125.0
+        ],
+        "radius": 4.0
+      },
+      {
+        "type": "circle",
+        "center": [
+          530.0,
+          225.0
+        ],
+        "radius": 4.0
+      },
+      {
+        "type": "line",
+        "a": [
+          100.0,
+          410.0
+        ],
+        "b": [
+          450.0,
+          410.0
+        ]
+      },
+      {
+        "type": "line",
+        "a": [
+          100.0,
+          410.0
+        ],
+        "b": [
+          100.0,
+          140.0
+        ]
+      },
+      {
+        "type": "line",
+        "a": [
+          450.0,
+          410.0
+        ],
+        "b": [
+          450.0,
+          140.0
+        ]
+      },
+      {
+        "type": "line",
+        "a": [
+          100.0,
+          140.0
+        ],
+        "b": [
+          450.0,
+          140.0
+        ]
+      },
+      {
+        "type": "circle",
+        "center": [
+          275.0,
+          530.0
+        ],
+        "radius": 2.75
+      },
+      {
+        "type": "circle",
+        "center": [
+          530.0,
+          275.0
+        ],
+        "radius": 2.75
+      },
+      {
+        "type": "circle",
+        "center": [
+          530.0,
+          325.0
+        ],
+        "radius": 4.0
+      },
+      {
+        "type": "circle",
+        "center": [
+          470.0,
+          430.0
+        ],
+        "radius": 2.25
+      },
+      {
+        "type": "circle",
+        "center": [
+          530.0,
+          425.0
+        ],
+        "radius": 4.0
+      },
+      {
+        "type": "circle",
+        "center": [
+          530.0,
+          525.0
+        ],
+        "radius": 2.75
+      }
+    ],
+    "face_area_mm2": 207312.38390794545,
+    "thickness_area_volume_check": true
+  },
+  {
+    "id": "A04_Retainer_Rear",
+    "w": 410.0,
+    "h": 330.0,
+    "t": 9.0,
+    "axes": "xz",
+    "edges": [
+      {
+        "type": "line",
+        "a": [
+          0.0,
+          0.0
+        ],
+        "b": [
+          410.0,
+          0.0
+        ]
+      },
+      {
+        "type": "line",
+        "a": [
+          410.0,
+          0.0
+        ],
+        "b": [
+          410.0,
+          330.0
+        ]
+      },
+      {
+        "type": "line",
+        "a": [
+          0.0,
+          0.0
+        ],
+        "b": [
+          0.0,
+          330.0
+        ]
+      },
+      {
+        "type": "line",
+        "a": [
+          0.0,
+          330.0
+        ],
+        "b": [
+          410.0,
+          330.0
+        ]
+      },
+      {
+        "type": "circle",
+        "center": [
+          10.0,
+          10.0
+        ],
+        "radius": 2.25
+      },
+      {
+        "type": "circle",
+        "center": [
+          10.0,
+          320.0
+        ],
+        "radius": 2.25
+      },
+      {
+        "type": "line",
+        "a": [
+          30.0,
+          300.0
+        ],
+        "b": [
+          380.0,
+          300.0
+        ]
+      },
+      {
+        "type": "line",
+        "a": [
+          30.0,
+          300.0
+        ],
+        "b": [
+          30.0,
+          30.0
+        ]
+      },
+      {
+        "type": "line",
+        "a": [
+          380.0,
+          300.0
+        ],
+        "b": [
+          380.0,
+          30.0
+        ]
+      },
+      {
+        "type": "line",
+        "a": [
+          30.0,
+          30.0
+        ],
+        "b": [
+          380.0,
+          30.0
+        ]
+      },
+      {
+        "type": "circle",
+        "center": [
+          400.0,
+          10.0
+        ],
+        "radius": 2.25
+      },
+      {
+        "type": "circle",
+        "center": [
+          400.0,
+          320.0
+        ],
+        "radius": 2.25
+      }
+    ],
+    "face_area_mm2": 40736.38274876478,
+    "thickness_area_volume_check": true
+  }
+]

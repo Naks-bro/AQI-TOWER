@@ -1,0 +1,114 @@
+{
+  "status": "ASSUMED MATERIALS / PARTIAL MASS / NO STRUCTURAL PASS",
+  "densities_assumed_kg_m3": {
+    "panels": 650,
+    "cleats": 600,
+    "metal": 7850
+  },
+  "partial_subtotal_kg": 12.189836490915319,
+  "partial_centroid_mm": [
+    274.99999999999994,
+    180.00000000000009,
+    356.9691826403676
+  ],
+  "omitted_objects": [
+    "S01_Filter_seal_Front",
+    "S01_Filter_seal_Rear",
+    "S02_Fan_seal_1",
+    "F02_P14_Max_1",
+    "S02_Fan_seal_2",
+    "F02_P14_Max_2",
+    "S02_Fan_seal_3",
+    "F02_P14_Max_3",
+    "S02_Fan_seal_4",
+    "F02_P14_Max_4",
+    "M08_Foot_25_15",
+    "M08_Foot_25_315",
+    "M08_Foot_495_15",
+    "M08_Foot_495_315",
+    "E01_Control_box_RESERVATION",
+    "E02_Cable_corridor_0",
+    "E02_Cable_corridor_1",
+    "A02_Filter_gasket_Front",
+    "A03_STARKVIND_envelope_Front",
+    "A06_Feedthrough_seal_0_Front",
+    "A06_Feedthrough_seal_1_Front",
+    "A06_Feedthrough_seal_2_Front",
+    "A06_Feedthrough_seal_3_Front",
+    "A09_Ledge_seal_130_Front",
+    "A09_Ledge_seal_390_Front",
+    "A02_Filter_gasket_Rear",
+    "A03_STARKVIND_envelope_Rear",
+    "A06_Feedthrough_seal_0_Rear",
+    "A06_Feedthrough_seal_1_Rear",
+    "A06_Feedthrough_seal_2_Rear",
+    "A06_Feedthrough_seal_3_Rear",
+    "A09_Ledge_seal_130_Rear",
+    "A09_Ledge_seal_390_Rear"
+  ],
+  "caveats": "No actual whole-device mass/CG. Guard perforations omitted in CAD, so full-sheet proxy overstates that part of assumed mass; threads/welds/coatings omitted. Foot, fan, filter, seals and control masses excluded. No strength allowables supplied.",
+  "hypothetical_stability": {
+    "support_polygon_mm": [
+      25,
+      525,
+      15,
+      345
+    ],
+    "force_height_mm": 631,
+    "assumed_CG_xy_mm": [
+      275,
+      180
+    ],
+    "cases": [
+      {
+        "assumed_whole_mass_kg": 10,
+        "front_back_tip_force_N": 25.652139461172744,
+        "side_tip_force_N": 38.866877971473855
+      },
+      {
+        "assumed_whole_mass_kg": 15,
+        "front_back_tip_force_N": 38.47820919175912,
+        "side_tip_force_N": 58.300316957210775
+      },
+      {
+        "assumed_whole_mass_kg": 20,
+        "front_back_tip_force_N": 51.30427892234549,
+        "side_tip_force_N": 77.73375594294771
+      },
+      {
+        "assumed_whole_mass_kg": 25,
+        "front_back_tip_force_N": 64.13034865293186,
+        "side_tip_force_N": 97.16719492868462
+      }
+    ],
+    "caveat": "Static tipping balance only; no safety factor, impact, sliding, floor unevenness or cable pull. Not public-use qualification."
+  },
+  "seal_tolerance_sensitivity": [
+    {
+      "assumed_filter_thickness_mm": 39,
+      "installed_gasket_gap_mm": 4,
+      "compression_if_free4mm_percent": 0.0
+    },
+    {
+      "assumed_filter_thickness_mm": 40,
+      "installed_gasket_gap_mm": 3,
+      "compression_if_free4mm_percent": 25.0
+    },
+    {
+      "assumed_filter_thickness_mm": 41,
+      "installed_gasket_gap_mm": 2,
+      "compression_if_free4mm_percent": 50.0
+    }
+  ],
+  "seal_note": "Filter39/40/41 and gasket4mm free are assumptions. Fixed43mm nominal gap does NOT guarantee safe compression. Verify actual material/force and thickness before cutting sleeves.",
+  "tests": {
+    "mass_positive": true,
+    "all_omitted_present": true,
+    "support_depth_smaller_than_width": true,
+    "tipping_scales_with_mass": true,
+    "tolerance_changes_compression": true,
+    "fan_nominal_stack": true,
+    "M5_side_projection": true,
+    "M5_centre_projection": true
+  }
+}

@@ -1,0 +1,9 @@
+ID,Endpoints,Connection,Release limitation
+J01,Site outlet -> NV-PS1,OEM mains plug,Site socket / upstream protection / India conformity unresolved; no bare-mains modification
+J02,NV-PS1 -> NA-AC10,OEM barrel connection,"5.5 / 2.1 mm; use supplied keyed adapter, do not infer polarity from size"
+J03,NA-AC10 -> NA-FC1 input,OEM 4-pin connection,Review reference chain; protective switching insertion not yet selected
+J04,NA-FC1 output -> NA-FH1 input,OEM 4-pin / NA-EC1,24 W path limit; no SATA supply
+J05-08,NA-FH1 ports 1-4 -> fans F1-F4,OEM keyed 4-pin,One fan per port; four independent labels; exact cable routing and extensions unresolved
+J09,Protective module -> fan power permission,UNSELECTED,"DC load breaking, latched inhibit, monitored recovery and failure response require rated design"
+J10,Logger -> instruments only,Separate domain,No USB connection to hub / fan power; no GPIO safety or fan supply
+J11,Service isolation -> all energy sources,UNSELECTED,Prevent reconnection; stopped impeller / dark lamp not proof of isolation

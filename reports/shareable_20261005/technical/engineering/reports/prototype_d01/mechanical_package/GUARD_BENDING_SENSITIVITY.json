@@ -1,0 +1,493 @@
+{
+  "status": "PARAMETRIC SENSITIVITY ONLY - NO GUARD PASS/FAIL",
+  "source_sha256": "604046f17640844a0b8f78ec4d90460956b15bd3b3d4e1a2ad7bbb4aafe5bfde",
+  "detected": {
+    "face_blank_mm": [
+      320,
+      320,
+      1
+    ],
+    "hole_count": 2822,
+    "hole_area_m2": 0.035462297873721585,
+    "net_face_material_area_m2": 0.06693770212627842
+  },
+  "assumptions": {
+    "E_MPa": 200000,
+    "density_kg_m3": 7850,
+    "force_N": [
+      10,
+      30,
+      60
+    ],
+    "span_mm": [
+      300,
+      150
+    ],
+    "load_sharing_width_mm": [
+      30,
+      300
+    ],
+    "note": "Forces are sensitivity inputs, NOT regulatory proof loads. 150 mm span assumes a new effective support that is NOT designed. No material grade selected."
+  },
+  "face_mass_scenarios": [
+    {
+      "thickness_mm": 1,
+      "mass_each_kg": 0.5254609616912856
+    },
+    {
+      "thickness_mm": 1.5,
+      "mass_each_kg": 0.7881914425369284
+    },
+    {
+      "thickness_mm": 2,
+      "mass_each_kg": 1.0509219233825713
+    }
+  ],
+  "limitations": [
+    "Actual face is a two-way perforated plate, not a one-way solid beam.",
+    "30/300 mm load-sharing widths and support spans are assumptions, not bounds.",
+    "Do not reduce modulus by open-area fraction; this does not model hole ligaments.",
+    "Large deflection, yielding, local indentation, welds, brackets and cabinet attachments omitted.",
+    "No comparison to 22/50 mm body gaps can certify blade clearance or safe reach.",
+    "A rib changes attachment loading and obstructs airflow; no rib or thicker sheet released."
+  ],
+  "source": "https://engineering.purdue.edu/~ce474/Docs/DA6-BeamFormulas.pdf",
+  "source_note": "American Wood Council beam formulas, Figure7; generic elastic beam equation only, not wood design values or guard certification. Checked2026-10-04.",
+  "equations": "I=b*t^3/12; M=P*L/4; delta=P*L^3/(48*E*I); sigma=M*t/(2*I). N,mm,MPa.",
+  "rows": [
+    {
+      "load_N": 10,
+      "span_mm": 300,
+      "width_mm": 30,
+      "thickness_mm": 1,
+      "assumed_E_MPa": 200000,
+      "I_mm4": 2.5,
+      "elastic_deflection_mm": 11.25,
+      "nominal_elastic_stress_MPa": 150.0,
+      "deflection_to_thickness": 11.25,
+      "warning": "Ideal SOLID strip, not installed perforated plate. No yield or safety assessment."
+    },
+    {
+      "load_N": 10,
+      "span_mm": 300,
+      "width_mm": 30,
+      "thickness_mm": 1.5,
+      "assumed_E_MPa": 200000,
+      "I_mm4": 8.4375,
+      "elastic_deflection_mm": 3.3333333333333335,
+      "nominal_elastic_stress_MPa": 66.66666666666667,
+      "deflection_to_thickness": 2.2222222222222223,
+      "warning": "Ideal SOLID strip, not installed perforated plate. No yield or safety assessment."
+    },
+    {
+      "load_N": 10,
+      "span_mm": 300,
+      "width_mm": 30,
+      "thickness_mm": 2,
+      "assumed_E_MPa": 200000,
+      "I_mm4": 20.0,
+      "elastic_deflection_mm": 1.40625,
+      "nominal_elastic_stress_MPa": 37.5,
+      "deflection_to_thickness": 0.703125,
+      "warning": "Ideal SOLID strip, not installed perforated plate. No yield or safety assessment."
+    },
+    {
+      "load_N": 10,
+      "span_mm": 300,
+      "width_mm": 300,
+      "thickness_mm": 1,
+      "assumed_E_MPa": 200000,
+      "I_mm4": 25.0,
+      "elastic_deflection_mm": 1.125,
+      "nominal_elastic_stress_MPa": 15.0,
+      "deflection_to_thickness": 1.125,
+      "warning": "Ideal SOLID strip, not installed perforated plate. No yield or safety assessment."
+    },
+    {
+      "load_N": 10,
+      "span_mm": 300,
+      "width_mm": 300,
+      "thickness_mm": 1.5,
+      "assumed_E_MPa": 200000,
+      "I_mm4": 84.375,
+      "elastic_deflection_mm": 0.3333333333333333,
+      "nominal_elastic_stress_MPa": 6.666666666666667,
+      "deflection_to_thickness": 0.2222222222222222,
+      "warning": "Ideal SOLID strip, not installed perforated plate. No yield or safety assessment."
+    },
+    {
+      "load_N": 10,
+      "span_mm": 300,
+      "width_mm": 300,
+      "thickness_mm": 2,
+      "assumed_E_MPa": 200000,
+      "I_mm4": 200.0,
+      "elastic_deflection_mm": 0.140625,
+      "nominal_elastic_stress_MPa": 3.75,
+      "deflection_to_thickness": 0.0703125,
+      "warning": "Ideal SOLID strip, not installed perforated plate. No yield or safety assessment."
+    },
+    {
+      "load_N": 10,
+      "span_mm": 150,
+      "width_mm": 30,
+      "thickness_mm": 1,
+      "assumed_E_MPa": 200000,
+      "I_mm4": 2.5,
+      "elastic_deflection_mm": 1.40625,
+      "nominal_elastic_stress_MPa": 75.0,
+      "deflection_to_thickness": 1.40625,
+      "warning": "Ideal SOLID strip, not installed perforated plate. No yield or safety assessment."
+    },
+    {
+      "load_N": 10,
+      "span_mm": 150,
+      "width_mm": 30,
+      "thickness_mm": 1.5,
+      "assumed_E_MPa": 200000,
+      "I_mm4": 8.4375,
+      "elastic_deflection_mm": 0.4166666666666667,
+      "nominal_elastic_stress_MPa": 33.333333333333336,
+      "deflection_to_thickness": 0.2777777777777778,
+      "warning": "Ideal SOLID strip, not installed perforated plate. No yield or safety assessment."
+    },
+    {
+      "load_N": 10,
+      "span_mm": 150,
+      "width_mm": 30,
+      "thickness_mm": 2,
+      "assumed_E_MPa": 200000,
+      "I_mm4": 20.0,
+      "elastic_deflection_mm": 0.17578125,
+      "nominal_elastic_stress_MPa": 18.75,
+      "deflection_to_thickness": 0.087890625,
+      "warning": "Ideal SOLID strip, not installed perforated plate. No yield or safety assessment."
+    },
+    {
+      "load_N": 10,
+      "span_mm": 150,
+      "width_mm": 300,
+      "thickness_mm": 1,
+      "assumed_E_MPa": 200000,
+      "I_mm4": 25.0,
+      "elastic_deflection_mm": 0.140625,
+      "nominal_elastic_stress_MPa": 7.5,
+      "deflection_to_thickness": 0.140625,
+      "warning": "Ideal SOLID strip, not installed perforated plate. No yield or safety assessment."
+    },
+    {
+      "load_N": 10,
+      "span_mm": 150,
+      "width_mm": 300,
+      "thickness_mm": 1.5,
+      "assumed_E_MPa": 200000,
+      "I_mm4": 84.375,
+      "elastic_deflection_mm": 0.041666666666666664,
+      "nominal_elastic_stress_MPa": 3.3333333333333335,
+      "deflection_to_thickness": 0.027777777777777776,
+      "warning": "Ideal SOLID strip, not installed perforated plate. No yield or safety assessment."
+    },
+    {
+      "load_N": 10,
+      "span_mm": 150,
+      "width_mm": 300,
+      "thickness_mm": 2,
+      "assumed_E_MPa": 200000,
+      "I_mm4": 200.0,
+      "elastic_deflection_mm": 0.017578125,
+      "nominal_elastic_stress_MPa": 1.875,
+      "deflection_to_thickness": 0.0087890625,
+      "warning": "Ideal SOLID strip, not installed perforated plate. No yield or safety assessment."
+    },
+    {
+      "load_N": 30,
+      "span_mm": 300,
+      "width_mm": 30,
+      "thickness_mm": 1,
+      "assumed_E_MPa": 200000,
+      "I_mm4": 2.5,
+      "elastic_deflection_mm": 33.75,
+      "nominal_elastic_stress_MPa": 450.0,
+      "deflection_to_thickness": 33.75,
+      "warning": "Ideal SOLID strip, not installed perforated plate. No yield or safety assessment."
+    },
+    {
+      "load_N": 30,
+      "span_mm": 300,
+      "width_mm": 30,
+      "thickness_mm": 1.5,
+      "assumed_E_MPa": 200000,
+      "I_mm4": 8.4375,
+      "elastic_deflection_mm": 10.0,
+      "nominal_elastic_stress_MPa": 200.0,
+      "deflection_to_thickness": 6.666666666666667,
+      "warning": "Ideal SOLID strip, not installed perforated plate. No yield or safety assessment."
+    },
+    {
+      "load_N": 30,
+      "span_mm": 300,
+      "width_mm": 30,
+      "thickness_mm": 2,
+      "assumed_E_MPa": 200000,
+      "I_mm4": 20.0,
+      "elastic_deflection_mm": 4.21875,
+      "nominal_elastic_stress_MPa": 112.5,
+      "deflection_to_thickness": 2.109375,
+      "warning": "Ideal SOLID strip, not installed perforated plate. No yield or safety assessment."
+    },
+    {
+      "load_N": 30,
+      "span_mm": 300,
+      "width_mm": 300,
+      "thickness_mm": 1,
+      "assumed_E_MPa": 200000,
+      "I_mm4": 25.0,
+      "elastic_deflection_mm": 3.375,
+      "nominal_elastic_stress_MPa": 45.0,
+      "deflection_to_thickness": 3.375,
+      "warning": "Ideal SOLID strip, not installed perforated plate. No yield or safety assessment."
+    },
+    {
+      "load_N": 30,
+      "span_mm": 300,
+      "width_mm": 300,
+      "thickness_mm": 1.5,
+      "assumed_E_MPa": 200000,
+      "I_mm4": 84.375,
+      "elastic_deflection_mm": 1.0,
+      "nominal_elastic_stress_MPa": 20.0,
+      "deflection_to_thickness": 0.6666666666666666,
+      "warning": "Ideal SOLID strip, not installed perforated plate. No yield or safety assessment."
+    },
+    {
+      "load_N": 30,
+      "span_mm": 300,
+      "width_mm": 300,
+      "thickness_mm": 2,
+      "assumed_E_MPa": 200000,
+      "I_mm4": 200.0,
+      "elastic_deflection_mm": 0.421875,
+      "nominal_elastic_stress_MPa": 11.25,
+      "deflection_to_thickness": 0.2109375,
+      "warning": "Ideal SOLID strip, not installed perforated plate. No yield or safety assessment."
+    },
+    {
+      "load_N": 30,
+      "span_mm": 150,
+      "width_mm": 30,
+      "thickness_mm": 1,
+      "assumed_E_MPa": 200000,
+      "I_mm4": 2.5,
+      "elastic_deflection_mm": 4.21875,
+      "nominal_elastic_stress_MPa": 225.0,
+      "deflection_to_thickness": 4.21875,
+      "warning": "Ideal SOLID strip, not installed perforated plate. No yield or safety assessment."
+    },
+    {
+      "load_N": 30,
+      "span_mm": 150,
+      "width_mm": 30,
+      "thickness_mm": 1.5,
+      "assumed_E_MPa": 200000,
+      "I_mm4": 8.4375,
+      "elastic_deflection_mm": 1.25,
+      "nominal_elastic_stress_MPa": 100.0,
+      "deflection_to_thickness": 0.8333333333333334,
+      "warning": "Ideal SOLID strip, not installed perforated plate. No yield or safety assessment."
+    },
+    {
+      "load_N": 30,
+      "span_mm": 150,
+      "width_mm": 30,
+      "thickness_mm": 2,
+      "assumed_E_MPa": 200000,
+      "I_mm4": 20.0,
+      "elastic_deflection_mm": 0.52734375,
+      "nominal_elastic_stress_MPa": 56.25,
+      "deflection_to_thickness": 0.263671875,
+      "warning": "Ideal SOLID strip, not installed perforated plate. No yield or safety assessment."
+    },
+    {
+      "load_N": 30,
+      "span_mm": 150,
+      "width_mm": 300,
+      "thickness_mm": 1,
+      "assumed_E_MPa": 200000,
+      "I_mm4": 25.0,
+      "elastic_deflection_mm": 0.421875,
+      "nominal_elastic_stress_MPa": 22.5,
+      "deflection_to_thickness": 0.421875,
+      "warning": "Ideal SOLID strip, not installed perforated plate. No yield or safety assessment."
+    },
+    {
+      "load_N": 30,
+      "span_mm": 150,
+      "width_mm": 300,
+      "thickness_mm": 1.5,
+      "assumed_E_MPa": 200000,
+      "I_mm4": 84.375,
+      "elastic_deflection_mm": 0.125,
+      "nominal_elastic_stress_MPa": 10.0,
+      "deflection_to_thickness": 0.08333333333333333,
+      "warning": "Ideal SOLID strip, not installed perforated plate. No yield or safety assessment."
+    },
+    {
+      "load_N": 30,
+      "span_mm": 150,
+      "width_mm": 300,
+      "thickness_mm": 2,
+      "assumed_E_MPa": 200000,
+      "I_mm4": 200.0,
+      "elastic_deflection_mm": 0.052734375,
+      "nominal_elastic_stress_MPa": 5.625,
+      "deflection_to_thickness": 0.0263671875,
+      "warning": "Ideal SOLID strip, not installed perforated plate. No yield or safety assessment."
+    },
+    {
+      "load_N": 60,
+      "span_mm": 300,
+      "width_mm": 30,
+      "thickness_mm": 1,
+      "assumed_E_MPa": 200000,
+      "I_mm4": 2.5,
+      "elastic_deflection_mm": 67.5,
+      "nominal_elastic_stress_MPa": 900.0,
+      "deflection_to_thickness": 67.5,
+      "warning": "Ideal SOLID strip, not installed perforated plate. No yield or safety assessment."
+    },
+    {
+      "load_N": 60,
+      "span_mm": 300,
+      "width_mm": 30,
+      "thickness_mm": 1.5,
+      "assumed_E_MPa": 200000,
+      "I_mm4": 8.4375,
+      "elastic_deflection_mm": 20.0,
+      "nominal_elastic_stress_MPa": 400.0,
+      "deflection_to_thickness": 13.333333333333334,
+      "warning": "Ideal SOLID strip, not installed perforated plate. No yield or safety assessment."
+    },
+    {
+      "load_N": 60,
+      "span_mm": 300,
+      "width_mm": 30,
+      "thickness_mm": 2,
+      "assumed_E_MPa": 200000,
+      "I_mm4": 20.0,
+      "elastic_deflection_mm": 8.4375,
+      "nominal_elastic_stress_MPa": 225.0,
+      "deflection_to_thickness": 4.21875,
+      "warning": "Ideal SOLID strip, not installed perforated plate. No yield or safety assessment."
+    },
+    {
+      "load_N": 60,
+      "span_mm": 300,
+      "width_mm": 300,
+      "thickness_mm": 1,
+      "assumed_E_MPa": 200000,
+      "I_mm4": 25.0,
+      "elastic_deflection_mm": 6.75,
+      "nominal_elastic_stress_MPa": 90.0,
+      "deflection_to_thickness": 6.75,
+      "warning": "Ideal SOLID strip, not installed perforated plate. No yield or safety assessment."
+    },
+    {
+      "load_N": 60,
+      "span_mm": 300,
+      "width_mm": 300,
+      "thickness_mm": 1.5,
+      "assumed_E_MPa": 200000,
+      "I_mm4": 84.375,
+      "elastic_deflection_mm": 2.0,
+      "nominal_elastic_stress_MPa": 40.0,
+      "deflection_to_thickness": 1.3333333333333333,
+      "warning": "Ideal SOLID strip, not installed perforated plate. No yield or safety assessment."
+    },
+    {
+      "load_N": 60,
+      "span_mm": 300,
+      "width_mm": 300,
+      "thickness_mm": 2,
+      "assumed_E_MPa": 200000,
+      "I_mm4": 200.0,
+      "elastic_deflection_mm": 0.84375,
+      "nominal_elastic_stress_MPa": 22.5,
+      "deflection_to_thickness": 0.421875,
+      "warning": "Ideal SOLID strip, not installed perforated plate. No yield or safety assessment."
+    },
+    {
+      "load_N": 60,
+      "span_mm": 150,
+      "width_mm": 30,
+      "thickness_mm": 1,
+      "assumed_E_MPa": 200000,
+      "I_mm4": 2.5,
+      "elastic_deflection_mm": 8.4375,
+      "nominal_elastic_stress_MPa": 450.0,
+      "deflection_to_thickness": 8.4375,
+      "warning": "Ideal SOLID strip, not installed perforated plate. No yield or safety assessment."
+    },
+    {
+      "load_N": 60,
+      "span_mm": 150,
+      "width_mm": 30,
+      "thickness_mm": 1.5,
+      "assumed_E_MPa": 200000,
+      "I_mm4": 8.4375,
+      "elastic_deflection_mm": 2.5,
+      "nominal_elastic_stress_MPa": 200.0,
+      "deflection_to_thickness": 1.6666666666666667,
+      "warning": "Ideal SOLID strip, not installed perforated plate. No yield or safety assessment."
+    },
+    {
+      "load_N": 60,
+      "span_mm": 150,
+      "width_mm": 30,
+      "thickness_mm": 2,
+      "assumed_E_MPa": 200000,
+      "I_mm4": 20.0,
+      "elastic_deflection_mm": 1.0546875,
+      "nominal_elastic_stress_MPa": 112.5,
+      "deflection_to_thickness": 0.52734375,
+      "warning": "Ideal SOLID strip, not installed perforated plate. No yield or safety assessment."
+    },
+    {
+      "load_N": 60,
+      "span_mm": 150,
+      "width_mm": 300,
+      "thickness_mm": 1,
+      "assumed_E_MPa": 200000,
+      "I_mm4": 25.0,
+      "elastic_deflection_mm": 0.84375,
+      "nominal_elastic_stress_MPa": 45.0,
+      "deflection_to_thickness": 0.84375,
+      "warning": "Ideal SOLID strip, not installed perforated plate. No yield or safety assessment."
+    },
+    {
+      "load_N": 60,
+      "span_mm": 150,
+      "width_mm": 300,
+      "thickness_mm": 1.5,
+      "assumed_E_MPa": 200000,
+      "I_mm4": 84.375,
+      "elastic_deflection_mm": 0.25,
+      "nominal_elastic_stress_MPa": 20.0,
+      "deflection_to_thickness": 0.16666666666666666,
+      "warning": "Ideal SOLID strip, not installed perforated plate. No yield or safety assessment."
+    },
+    {
+      "load_N": 60,
+      "span_mm": 150,
+      "width_mm": 300,
+      "thickness_mm": 2,
+      "assumed_E_MPa": 200000,
+      "I_mm4": 200.0,
+      "elastic_deflection_mm": 0.10546875,
+      "nominal_elastic_stress_MPa": 11.25,
+      "deflection_to_thickness": 0.052734375,
+      "warning": "Ideal SOLID strip, not installed perforated plate. No yield or safety assessment."
+    }
+  ],
+  "synthetic_checks": 28,
+  "physical_tests": 0
+}

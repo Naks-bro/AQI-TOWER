@@ -1,0 +1,38 @@
+[
+  {
+    "item": "M5 reducer studs",
+    "qty": 16,
+    "spec": "12 x60 mm;4 x40 mm;32 nuts8AFx5;32 washers15ODx1.2 (bore5.3 assumed)",
+    "status": "PROPOSED; external thread projection2.8mm; inner3.8mm"
+  },
+  {
+    "item": "Seal compression limiters",
+    "qty": 24,
+    "spec": "16 outer OD10/ID5.5 x3;8 inner OD6.5/ID4.5 x36",
+    "status": "ASSUMED nominal gaps; force/tolerance/actual filter thickness unknown"
+  },
+  {
+    "item": "Fan fastenings",
+    "qty": 16,
+    "spec": "M4x50 cap screw;32 washers12ODx1;16 nuts7AFx5",
+    "status": "PROPOSED;6mm nominal thread projection; fan corner bearing strength unknown"
+  },
+  {
+    "item": "Cabinet through joints",
+    "qty": 32,
+    "spec": "M4x40 cap screws;64 washers12ODx1;32 nuts7AFx5",
+    "status": "PROPOSED;4mm nominal thread projection; wood bearing/edge and clamp load not approved"
+  },
+  {
+    "item": "Top/base wood screws",
+    "qty": 8,
+    "spec": "4 top4x20;4 base4x25;8 washers;head7dia x4 envelope",
+    "status": "Core only; thread/pilot, wood grade and end-grain withdrawal must be verified; never lift by lid"
+  },
+  {
+    "item": "Foot retention",
+    "qty": 4,
+    "spec": "M4x30 cap screw;8 washers12ODx1;4 nuts7AFx5;4 feet with12dia x9 recess",
+    "status": "PROPOSED; head4mm above floor;3mm nominal thread projection; foot material strength unknown"
+  }
+]
