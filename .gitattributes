@@ -26,3 +26,6 @@ cfd/** text eol=lf
 
 # Curated handoff manifests hash exact bytes, including CSV line endings.
 reports/prototype_d01/internal_handoff_20261005/** -text -diff
+*.blend binary
+# Preserve generated delivery bytes so packaged manifests survive cloning.
+reports/shareable_20261005/** -text -diff

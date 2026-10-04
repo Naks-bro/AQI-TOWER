@@ -1,0 +1,14 @@
+{
+  "source_sha256": "7aae1544b405abbcf0d99f92f47b76f0f4c929cc1997d129a073691e137a343b",
+  "source_unchanged": true,
+  "objects": 493,
+  "checked_pairs": 119805,
+  "excluded_reservation_pairs": 1473,
+  "clashes_mm3": [],
+  "valid": true,
+  "guard_subassemblies_single_solid": true,
+  "exclusions": "Reservation pairs only. Welds/threads/perforations and tolerances not geometrically modeled. No strength, weld quality, finger-access, sealing or electrical release.",
+  "STEP_valid": true,
+  "STEP_volume_matches": true,
+  "native_reopen_objects": 493
+}

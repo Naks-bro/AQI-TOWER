@@ -1,5 +1,13 @@
 # AQI Tower — Engineering Viewer T3
 
+## Current prototype presentation
+
+The current D01 R03M prototype has a separate [offline dual-mode viewer](../reports/shareable_20261005/AQI_TOWER_3D_REVIEW.html). Download/open it locally, or extract either [shareable bundle](../reports/shareable_20261005/README.md). It uses the actual 493 CAD objects and provides Simple/Technical modes, cutaway, explosion, part inspection and explicitly illustrative air markers. It is not a CFD solver or manufacturing model.
+
+Sources are `src/presentation.js` and `presentation.template.html`. Build its bundled JS with the existing esbuild dependency, then run `scripts/reports/build_shareable_delivery.py` using the documented ReportLab/openpyxl/Pillow/pypdf/pypdfium2 environment. The report builder also requires the existing Blender renders and current IH02 evidence. Do not treat a presentation rebuild as an engineering release.
+
+## Historical GEO_C viewer
+
 Interactive browser-based 3D engineering viewer for the AQI Tower GEO_C concept.
 T3 adds real CFD scalar field visualization — velocity magnitude and static pressure sampled on 2-D planes from existing solved OpenFOAM cases.
 

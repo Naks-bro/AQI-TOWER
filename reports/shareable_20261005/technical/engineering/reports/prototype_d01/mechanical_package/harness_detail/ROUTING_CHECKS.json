@@ -1,0 +1,150 @@
+{
+  "source_sha256": "fb28a31315968509dcdbbb2caac8c6d69c84ecb94a35ccd75937a5d9ecaa33a6",
+  "source_unchanged": true,
+  "status": "ROUTING RESERVATION ONLY - NO FABRICATION OR WIRING RELEASE",
+  "routes": [
+    {
+      "fan": 1,
+      "proposed_points_mm": [
+        [
+          269,
+          178,
+          590
+        ],
+        [
+          427,
+          178,
+          590
+        ],
+        [
+          427,
+          180,
+          590
+        ],
+        [
+          433,
+          180,
+          590
+        ]
+      ],
+      "internal_polyline_mm": 166.0,
+      "length_to_box_reference_mm": 398.0,
+      "assumed_service_and_bend_allowance_mm": 50,
+      "screening_required_length_mm": 448.0,
+      "difference_vs_400mm_lead_mm": -48.0,
+      "clashes": []
+    },
+    {
+      "fan": 2,
+      "proposed_points_mm": [
+        [
+          419,
+          178,
+          594
+        ],
+        [
+          427,
+          178,
+          594
+        ],
+        [
+          427,
+          180,
+          594
+        ],
+        [
+          433,
+          180,
+          594
+        ]
+      ],
+      "internal_polyline_mm": 16.0,
+      "length_to_box_reference_mm": 252.0,
+      "assumed_service_and_bend_allowance_mm": 50,
+      "screening_required_length_mm": 302.0,
+      "difference_vs_400mm_lead_mm": 98.0,
+      "clashes": []
+    },
+    {
+      "fan": 3,
+      "proposed_points_mm": [
+        [
+          269,
+          182,
+          598
+        ],
+        [
+          427,
+          182,
+          598
+        ],
+        [
+          427,
+          180,
+          598
+        ],
+        [
+          433,
+          180,
+          598
+        ]
+      ],
+      "internal_polyline_mm": 166.0,
+      "length_to_box_reference_mm": 406.0,
+      "assumed_service_and_bend_allowance_mm": 50,
+      "screening_required_length_mm": 456.0,
+      "difference_vs_400mm_lead_mm": -56.0,
+      "clashes": []
+    },
+    {
+      "fan": 4,
+      "proposed_points_mm": [
+        [
+          419,
+          182,
+          602
+        ],
+        [
+          427,
+          182,
+          602
+        ],
+        [
+          427,
+          180,
+          602
+        ],
+        [
+          433,
+          180,
+          602
+        ]
+      ],
+      "internal_polyline_mm": 16.0,
+      "length_to_box_reference_mm": 260.0,
+      "assumed_service_and_bend_allowance_mm": 50,
+      "screening_required_length_mm": 310.0,
+      "difference_vs_400mm_lead_mm": 90.0,
+      "clashes": []
+    }
+  ],
+  "all_internal_envelopes_clear": true,
+  "route_pair_intersection_volumes_mm3": [
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0
+  ],
+  "assumed_cable_envelope_diameter_mm": 3,
+  "boundary": "Each tube stops atx433 INSIDE guard; guard inner face startsx434. No cutout, through-guard connector, gland, cable anchor or external bend modeled.",
+  "unknowns": [
+    "Actual OEM cable emergence/orientation",
+    "Actual lead jacket/individual-wire/sleeve section and connector envelope",
+    "Bend radius and retention",
+    "Exact split grommet/harness compatibility",
+    "Closed guard entry and side enclosure mounting"
+  ],
+  "note": "All493 source objects preserved; added4 routing reservations. Connector insertion, pullout, clamps, curved bends, per-wire separation and guard removal not validated."
+}

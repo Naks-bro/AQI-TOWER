@@ -6,25 +6,30 @@ AQI Tower is a student engineering project developing a fan-and-filter air clean
 
 ## See the current design
 
-![Current D01 R03M assembly rendering](reports/prototype_d01/mechanical_package/D01_ASSEMBLY.png)
+![Current D01 R03M assembly rendered in Blender](reports/shareable_20261005/visuals/assembly.png)
 
-*Rendering of our current CAD assembly, not a photograph of a built machine. The side control box and yellow cable route reserve space; electrical hardware and protected cable entry are unfinished. Guard holes are illustrated in the rendering but are not cut into the native CAD faces.*
+*Blender rendering imported from the actual 493-object R03M CAD assembly, not a photograph. Purple parts reserve control/cable space; electrical hardware and protected cable entry are unfinished. The guard faces are solid CAD envelopes: the proposed perforations are not meshed.*
 
-![Exploded view of the current D01 R03M assembly](reports/prototype_d01/mechanical_package/D01_EXPLODED.png)
+![Animated exploded view of the actual CAD assembly](reports/shareable_20261005/visuals/assembly_exploded.gif)
 
 *The exploded view shows how the cabinet, filters, fan plate, guards and hardware fit together. It is a design-review view; welds, threads, tolerances, strength and sealing still need assessment.*
+
+![Illustrative air paths through a cutaway of the prototype](reports/shareable_20261005/visuals/illustrative_airflow.gif)
+
+*Hand-authored air markers explain the intended path. This animation is NOT CFD, measured airflow or proof of cleaning. Existing historical CFD remains separately labelled in the technical report.*
 
 ## Start here
 
 | Reader | Open first |
 | --- | --- |
-| Stakeholder or new team member | [Three-page stakeholder brief](reports/prototype_d01/internal_handoff_20261005/01_STAKEHOLDER_BRIEF.pdf) |
-| Mechanical or electrical engineer | [Engineering review and drawings, 41 pages](reports/prototype_d01/internal_handoff_20261005/03_ENGINEERING_DRAWINGS_AND_REVIEW.pdf) |
-| Team receiving the complete package | [Download IH02 ZIP](reports/prototype_d01/internal_handoff_20261005/AQI_TOWER_INTERNAL_HANDOFF_IH02.zip) and [package instructions](reports/prototype_d01/internal_handoff_20261005/START_HERE.md) |
-| Person budgeting the build | [Parts register](reports/prototype_d01/internal_handoff_20261005/COMBINED_PARTS_REGISTER.csv) and [quote worksheet](reports/prototype_d01/internal_handoff_20261005/QUOTE_AND_FUNDING_REGISTER.csv) |
-| Engineer recording decisions | [Review and release register](reports/prototype_d01/internal_handoff_20261005/REVIEW_AND_RELEASE_REGISTER.csv) |
+| Stakeholder or new team member | [7-page Executive Summary + Comprehensive Report](reports/shareable_20261005/stakeholder/AQI_TOWER_STAKEHOLDER_REPORT.pdf) or [complete stakeholder ZIP](reports/shareable_20261005/AQI_TOWER_STAKEHOLDER_BUNDLE.zip) |
+| Mechanical or electrical engineer | [45-page technical handoff](reports/shareable_20261005/technical/AQI_TOWER_TECHNICAL_HANDOFF.pdf) or [complete technical ZIP](reports/shareable_20261005/AQI_TOWER_TECHNICAL_BUNDLE.zip) |
+| Person budgeting the build | [Funding workbook](reports/shareable_20261005/stakeholder/STAKEHOLDER_FUNDING.xlsx); prices and stock remain unknown until quoted |
+| Engineer recording decisions | [Technical review workbook](reports/shareable_20261005/technical/TECHNICAL_REVIEW.xlsx), including parts, release, pressure and hardware sheets |
+| Anyone exploring the design | [Offline 3D viewer](reports/shareable_20261005/AQI_TOWER_3D_REVIEW.html), with Simple and Technical views, cutaway, part inspection and explosion controls; download and open in a WebGL browser |
+| Blender user | [Editable CAD-derived presentation](reports/shareable_20261005/visuals/AQI_R03M_REVIEW.blend), not a manufacturing model |
 
-**IH02, dated 5 October 2026, is the current handoff.** Use mechanical revision **R03M**. Older R00/R01/R02 handoffs and full-size tower studies remain historical evidence; do not combine their filter, fan, wiring or drilling assumptions with this prototype.
+**The shareable delivery, dated 5 October 2026, uses unchanged IH02 / mechanical R03M evidence.** The technical PDF preserves the [41-page IH02 reference](reports/prototype_d01/internal_handoff_20261005/03_ENGINEERING_DRAWINGS_AND_REVIEW.pdf) after a four-page introduction. See [delivery instructions](reports/shareable_20261005/README.md). Older R00/R01/R02 handoffs and full-size tower studies remain historical evidence; do not combine their filter, fan, wiring or drilling assumptions with this prototype. This is a presentation/review update, not a new engineering release.
 
 ## How the first prototype works
 
@@ -102,11 +107,14 @@ python scripts/analysis/d01_guard_bending.py
 python scripts/analysis/d01_control_acceptance.py
 python -m unittest discover -s scripts/analysis -p test_d01_current_filter_screen.py -v
 python scripts/maintenance/check_readme_links.py
+python scripts/maintenance/check_shareable_delivery.py
 ```
 
 Read [tool usage](reports/prototype_d01/internal_handoff_20261005/TOOL_USAGE.md) before analysing measurements. Keep raw observations unchanged, identify calibration/source references, and label synthetic fixtures clearly. Rebuilding CAD or PDF reports requires additional software documented with the relevant builder; the small checks above do not.
 
-To run the existing viewer:
+For the new presentation viewer, extract either bundle and open `AQI_TOWER_3D_REVIEW.html`. No installation, server or internet is required; WebGL is required. GitHub previews do not run the HTML application. Both audiences can use the same model with different explanations.
+
+To run the historical GEO_C engineering viewer (different geometry):
 
 ```bash
 cd threejs
@@ -120,6 +128,10 @@ OpenFOAM/ParaView workflows belong to their documented historical studies. Do no
 
 Use one branch and PR for one meaningful change. Describe the problem, affected revision, checks performed and remaining limitations. Follow the [PR template](.github/pull_request_template.md), update [CHANGELOG.md](CHANGELOG.md), and update this README when the current handoff, status or onboarding workflow changes.
 
-Keep facts, assumptions, digital predictions and physical measurements distinct. Preserve historical files and raw observations. Do not commit credentials, private correspondence, generated solver time directories, `node_modules` or local inspection screenshots. The current downloadable handoff is intentionally tracked; other redundant report ZIPs remain local.
+Keep facts, assumptions, digital predictions and physical measurements distinct. Preserve historical files and raw observations. Do not commit credentials, private correspondence, generated solver time directories, `node_modules` or local inspection screenshots. Current downloadable handoff/bundle ZIPs are intentionally tracked; redundant old report ZIPs remain local.
+
+## What is on GitHub
+
+Project sources, curated engineering evidence, current CAD/drawings, results, reports, workbooks, final visuals and downloadable bundles are tracked. This is not a byte-for-byte mirror of every local file. Approximately 1.75 GB of generated raw solver fields/meshes/logs, dependencies, scratch work and old recordings remain local; nothing was deleted. The [coverage inventory](reports/shareable_20261005/GITHUB_COVERAGE.csv) records excluded categories and readable sizes, including inaccessible WSL links. Existing source cases and curated CFD results remain preserved in the repository.
 
 **AQI Tower is a working name.** The final device name has not been selected. This repository does not claim verified outdoor coverage or patentability.
