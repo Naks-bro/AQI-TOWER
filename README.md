@@ -12,6 +12,8 @@ Implemented ordinary-control candidate: [Opta bench drawing](reports/prototype_d
 
 ## See the current design
 
+Control-module packaging: [dimensioned external-box layout](reports/prototype_d01/electrical_package/control_module/D01_E03_DIMENSIONED_CONTROL_LAYOUT.pdf) with [editable CAD and source evidence](reports/prototype_d01/electrical_package/control_module/README.md). Body envelopes clear the real OEM box model; controls, protection, cables and mounting unfinished. Not a wiring/build release.
+
 ![Current D01 R03M assembly rendered in Blender](reports/shareable_20261005/visuals/assembly.png)
 
 *Blender rendering imported from the actual 493-object R03M CAD assembly, not a photograph. Purple parts reserve control/cable space; electrical hardware and protected cable entry are unfinished. The guard faces are solid CAD envelopes: the proposed perforations are not meshed.*

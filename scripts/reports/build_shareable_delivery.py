@@ -253,6 +253,12 @@ for name in ('test_d01_opta_host.py','compile_d01_opta.py'):
 for name in ('AQI_D01_OPTA_BENCH_REVIEW.pdf','OPTA_INTEGRATION_SCREEN.json','OPTA_HOST_CHECKS.json','OPTA_BOARD_BUILD.json'):
     shutil.copy2(R/'reports/prototype_d01/electrical_package'/name,T/'engineering/reports/prototype_d01/electrical_package'/name)
 shutil.copy2(R/'reports/prototype_d01/electrical_package/AQI_D01_OPTA_BENCH_REVIEW.pdf',T/'AQI_D01_OPTA_BENCH_REVIEW.pdf')
+shutil.copytree(R/'reports/prototype_d01/electrical_package/control_module',T/'engineering/reports/prototype_d01/electrical_package/control_module',dirs_exist_ok=True,ignore=shutil.ignore_patterns('previews'))
+shutil.copy2(R/'reports/prototype_d01/electrical_package/control_module/D01_E03_DIMENSIONED_CONTROL_LAYOUT.pdf',T/'D01_E03_DIMENSIONED_CONTROL_LAYOUT.pdf')
+for folder in ('geometry','reports'):
+    (T/'engineering/scripts'/folder).mkdir(parents=True,exist_ok=True)
+shutil.copy2(R/'scripts/geometry/layout_d01_control_module.py',T/'engineering/scripts/geometry/layout_d01_control_module.py')
+shutil.copy2(R/'scripts/reports/build_d01_control_layout.py',T/'engineering/scripts/reports/build_d01_control_layout.py')
 for name in ('indoor_decay.py','test_indoor_decay.py','test_measurement_recording.py'):
     shutil.copy2(R/'scripts/analysis'/name,T/'engineering/scripts/analysis'/name)
 (T/'engineering/scripts/monitoring').mkdir(parents=True,exist_ok=True)
@@ -323,6 +329,8 @@ STAKEHOLDER_FUNDING.xlsx is the quote and milestone workbook. Prices, stock and 
 Physical prototypes built: 0. Air animation is illustrative, NOT CFD. Outdoor bubbles are unproven. R03M guards remain solid CAD envelopes; purple objects reserve space. No purchase or contact is performed by this package.
 ''',encoding='utf-8')
 (T/'START_HERE.md').write_text('''# AQI Tower technical bundle
+
+New E03: D01_E03_DIMENSIONED_CONTROL_LAYOUT.pdf and engineering/reports/prototype_d01/electrical_package/control_module/ contain original editable external-module envelope CAD and placements. Three bodies and three ASSUMED service spaces clear the private exact Hammond STEP; no physical fit or release. Closed-lid NA-FC1 access, supports, protection, actual cables and heat remain unresolved. Source STEP not redistributed; download source instructions and hashes in module README/FIT_CHECKS.json. Native R03M unchanged.
 
 Read AQI_TOWER_TECHNICAL_HANDOFF.pdf: 50 pages comprising the current five-page introduction, preserved 41-page IH02 engineering reference and four-page E01 power/wiring supplement. Room-model software and existing exploratory decay tool are included; read ROOM_MODEL_BASIS.md. Record actual decisions in TECHNICAL_REVIEW.xlsx. Not for fabrication, ordering or energization.
 

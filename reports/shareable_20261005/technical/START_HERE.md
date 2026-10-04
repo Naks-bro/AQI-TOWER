@@ -1,5 +1,7 @@
 # AQI Tower technical bundle
 
+New E03: D01_E03_DIMENSIONED_CONTROL_LAYOUT.pdf and engineering/reports/prototype_d01/electrical_package/control_module/ contain original editable external-module envelope CAD and placements. Three bodies and three ASSUMED service spaces clear the private exact Hammond STEP; no physical fit or release. Closed-lid NA-FC1 access, supports, protection, actual cables and heat remain unresolved. Source STEP not redistributed; download source instructions and hashes in module README/FIT_CHECKS.json. Native R03M unchanged.
+
 Read AQI_TOWER_TECHNICAL_HANDOFF.pdf: 50 pages comprising the current five-page introduction, preserved 41-page IH02 engineering reference and four-page E01 power/wiring supplement. Room-model software and existing exploratory decay tool are included; read ROOM_MODEL_BASIS.md. Record actual decisions in TECHNICAL_REVIEW.xlsx. Not for fabrication, ordering or energization.
 
 The last four pages provide the current power path, fan pin-function reference, catalogue-load and conditional wire-drop calculation, and exact remaining protection gaps. From engineering/ run python scripts/analysis/d01_electrical_closure.py and python scripts/analysis/test_d01_electrical_closure.py. Ten synthetic tests, not physical commissioning. PR1 protection, actual wires/fuses/enclosure and manual-restart implementation are still UNSELECTED; do not bridge this open design.

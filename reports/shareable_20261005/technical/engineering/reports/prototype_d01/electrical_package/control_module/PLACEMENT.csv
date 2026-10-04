@@ -1,0 +1,10 @@
+Name,Xmin,Ymin,Zmin,Xmax,Ymax,Zmax,Evidence
+CB1_SIMPLIFIED_ENVELOPE,-150.0,-100.0,-70.08,150.0,100.0,50.0,ORIGINAL APPROXIMATE SHELL; not Hammond manufacturing geometry
+PL1_SIMPLIFIED_PANEL,-142.5,-92.5,-60.0,142.5,92.5,-58.3744,"OEM285x185 outline; simplified rectangular proxy, contour/holes omitted except2 proposed4.5mm holes"
+DIN1_ENVELOPE,-135.0,-17.5,-58.3744,-10.0,17.5,-50.8744,"OEM35x7.5 profile envelope; proposed125mm cut, not full profile or approved attachment"
+CTRL1_OPTA_LITE,-115.0,-44.4,-50.8744,-45.0,44.4,10.2256,"OEM BODY DIMENSIONS / ASSUMED POSITION, ORIENTATION AND MOUNT; no connector geometry"
+H1_NA_FH1,20.0,-65.0,-53.3744,113.0,-22.0,-40.8744,"OEM BODY DIMENSIONS / ASSUMED POSITION, ORIENTATION AND MOUNT; no connector geometry"
+SC1_NA_FC1,40.0,25.0,-53.3744,88.0,50.0,-32.3744,"OEM BODY DIMENSIONS / ASSUMED POSITION, ORIENTATION AND MOUNT; no connector geometry"
+CTRL1_WIRE_SPACE_ASSUMED,-125.0,-64.4,-50.8744,-35.0,64.4,10.2256,ASSUMED routing/service volume; actual connectors/clip release and bends unknown
+H1_CONNECTOR_SPACE_ASSUMED,10.0,-85.0,-53.3744,123.0,-2.0,-25.8744,ASSUMED routing/service volume; actual connectors/clip release and bends unknown
+SC1_CONNECTOR_SPACE_ASSUMED,30.0,5.0,-53.3744,98.0,70.0,-17.3744,ASSUMED routing/service volume; actual connectors/clip release and bends unknown
