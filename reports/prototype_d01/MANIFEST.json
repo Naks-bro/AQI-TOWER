@@ -1,0 +1,181 @@
+{
+  "revision": "D01-R00",
+  "status": "REVIEW ONLY - NOT RELEASED FOR FABRICATION OR ENERGIZING",
+  "files": [
+    {
+      "path": "reports/prototype_d01/README.md",
+      "bytes": 9511,
+      "sha256": "e64c140106bd8fd9fd40fcf4249e82b1b60847482d7c19ed4edbf429b575a927"
+    },
+    {
+      "path": "reports/prototype_d01/AQI_D01_ENGINEERING_PACKAGE.pdf",
+      "bytes": 275261,
+      "sha256": "82237b94a65719b11495afa5e2ece5ddd990de6e59c392bd01afd24e21d35159"
+    },
+    {
+      "path": "reports/prototype_d01/D01_ASSEMBLY.FCStd",
+      "bytes": 114521,
+      "sha256": "22faa71877b8fef657220976640f949a13fb6f2eb51dc3ce4034e36d606cb595"
+    },
+    {
+      "path": "reports/prototype_d01/D01_EXPLODED.FCStd",
+      "bytes": 134814,
+      "sha256": "3558e7aaa2726dbcd86b583c7f42bf07cb391bd52da6d63002dd775eba610a2a"
+    },
+    {
+      "path": "reports/prototype_d01/D01_ASSEMBLY.step",
+      "bytes": 685811,
+      "sha256": "5df85c7fa4a1b5f0fb1e54fac394ecef2f72b01a8c971c9d66b5f56e89f50813"
+    },
+    {
+      "path": "reports/prototype_d01/D01_ASSEMBLY.png",
+      "bytes": 56142,
+      "sha256": "b24d90c073688eb187e5d367c34f482dd557c1e9e370e8d4089fdc3dbef8d4aa"
+    },
+    {
+      "path": "reports/prototype_d01/D01_EXPLODED.png",
+      "bytes": 79671,
+      "sha256": "36f5cf0c9fe1f03b114592cde9105db193356116364efcef473eda16eb51060d"
+    },
+    {
+      "path": "reports/prototype_d01/D01_BOM.csv",
+      "bytes": 2426,
+      "sha256": "af75b999d7e26c83d11439d8ea237340a1e4082ac3594ed431d24dcbeaca5809"
+    },
+    {
+      "path": "reports/prototype_d01/geometry_checks.json",
+      "bytes": 5503,
+      "sha256": "25a7250088ec4c55574d2a7c24b74b9dd4280332064ba2f3075b0071282fb890"
+    },
+    {
+      "path": "reports/prototype_d01/reopen_checks.json",
+      "bytes": 556,
+      "sha256": "4f028e859363531c68a462691d34ba698b810ac2f466e805d071b29ac0f59ed6"
+    },
+    {
+      "path": "reports/prototype_d01/pressure_results.json",
+      "bytes": 2848,
+      "sha256": "8c802f2c50256f66fe61bcb5ebd99d1ff60def727f8f6dc8be82d2a2fe51fd05"
+    },
+    {
+      "path": "reports/prototype_d01/pressure_curves.csv",
+      "bytes": 10250,
+      "sha256": "9e4c8355e5d917aaef5b7ae8fe57c2e2dad3c0951622e095b144737c82264d76"
+    },
+    {
+      "path": "reports/prototype_d01/panel_geometry.json",
+      "bytes": 4587,
+      "sha256": "f64632fcb25f93de0a5e85a1374767df7cbf5b9c1ad852f4ddbf1d4cb2293187"
+    },
+    {
+      "path": "reports/prototype_d01/cad_mesh.json",
+      "bytes": 2477225,
+      "sha256": "44165a1943bc60bc2d8343564468f042a2c59e21250a12b45762ad5d0a382f29"
+    },
+    {
+      "path": "reports/prototype_d01/panel_dxf_REVIEW_ONLY/G01_INNER_FACE.dxf",
+      "bytes": 367,
+      "sha256": "7a889260557a6a37531ffb115a712742fa2e1be39b25673e508e3704316a1d8d"
+    },
+    {
+      "path": "reports/prototype_d01/panel_dxf_REVIEW_ONLY/G01_OUTER_FACE.dxf",
+      "bytes": 367,
+      "sha256": "7a889260557a6a37531ffb115a712742fa2e1be39b25673e508e3704316a1d8d"
+    },
+    {
+      "path": "reports/prototype_d01/panel_dxf_REVIEW_ONLY/M01_BASE.dxf",
+      "bytes": 367,
+      "sha256": "f74a4a3cbe84526cde2ea9fb5806c240fa7ffb5d68400076859f7317f6a305ff"
+    },
+    {
+      "path": "reports/prototype_d01/panel_dxf_REVIEW_ONLY/M02_END.dxf",
+      "bytes": 367,
+      "sha256": "12e49d3864a26fb8bc3ab8803c9e84cf1d9ed3ceedd46835bc3b943d0b9943e7"
+    },
+    {
+      "path": "reports/prototype_d01/panel_dxf_REVIEW_ONLY/M03_SEAT.dxf",
+      "bytes": 1069,
+      "sha256": "f249a0542a48189d767bae71648bace4770a9c29317a725501bb1effb0167519"
+    },
+    {
+      "path": "reports/prototype_d01/panel_dxf_REVIEW_ONLY/M04_RETAINER.dxf",
+      "bytes": 1101,
+      "sha256": "509e769b1c4743328d9be123e12f5b192ea0bcc9f5d17af899d13df994ea6b9e"
+    },
+    {
+      "path": "reports/prototype_d01/panel_dxf_REVIEW_ONLY/M05_SHELF.dxf",
+      "bytes": 375,
+      "sha256": "f782ea0fc7b9453b1001080d6dd29e4056def5b6a7aed4f49881af0033d2927c"
+    },
+    {
+      "path": "reports/prototype_d01/panel_dxf_REVIEW_ONLY/M06_FAN_PLATE.dxf",
+      "bytes": 1507,
+      "sha256": "dd919e7b115d62bd21c55ba24c76765899c4fde7c69f4e5def44cb0542d06151"
+    },
+    {
+      "path": "cad/parametric/d01_r00.json",
+      "bytes": 1795,
+      "sha256": "d69fe2bafbbdfa0dd71e1627efe9b4c9e72848b80d6157af86b4b6d0861b11fb"
+    },
+    {
+      "path": "scripts/geometry/build_d01.py",
+      "bytes": 11264,
+      "sha256": "7a0a9a8597e7b95a8d132c59830f2ebb5d28d049f21ca858e7facee210657af5"
+    },
+    {
+      "path": "scripts/geometry/verify_d01.py",
+      "bytes": 1743,
+      "sha256": "d6dd72ae47eed0fb05a1d08efa0dca2203b95e24fc681e70513b20547a062b2f"
+    },
+    {
+      "path": "scripts/analysis/d01_pressure.py",
+      "bytes": 3572,
+      "sha256": "1822075d9f1eefcaf3e2b1065df77695c8d83a974845ad85174cceb6528cab17"
+    },
+    {
+      "path": "scripts/reports/build_d01_delivery.py",
+      "bytes": 32453,
+      "sha256": "19f964b1baa9bfcd056a91246ce6eda0971c18bc25f215f4c6dd9a94da6b758c"
+    },
+    {
+      "path": "scripts/reports/package_d01.py",
+      "bytes": 1715,
+      "sha256": "b8eb10cefc59d2aeae311965541f23c75aa4acba14fb2bae44f782177eb0b72e"
+    },
+    {
+      "path": "data/prototype_d01/sources/ARCTIC_P14_Max_Spec.pdf",
+      "bytes": 939257,
+      "sha256": "aa9f228e2ebdd922ff7aeec86eb0bf0d5587cca73202e6ffba31cc0e464e8c99"
+    },
+    {
+      "path": "data/prototype_d01/sources/ARCTIC_P14_Max_2D_20250124.pdf",
+      "bytes": 142028,
+      "sha256": "f6962a9d9fb2043304d9deaa2c84f7f171d78a98d855c7f024fff3035f93852c"
+    },
+    {
+      "path": "data/prototype_d01/sources/ARCTIC_140mm_mounting_template.pdf",
+      "bytes": 48496,
+      "sha256": "0687d54c56880bdc8563b45675dd765ed55d73c8f41a09f228bc01df9d7c2ec9"
+    },
+    {
+      "path": "data/prototype_d01/sources/SP_MERV13_0303.pdf",
+      "bytes": 90845,
+      "sha256": "97977a1cf2717d749f28c340ef9ecf9e9b6a8c51fe696b888017f025ba215705"
+    },
+    {
+      "path": "data/prototype_d01/sources/Brisa_CC0_reference.dxf",
+      "bytes": 2465221,
+      "sha256": "84321364ccad0bc6d88122e2b5b6eb00a94d878c7fab7cae523d55d7128c91c7"
+    },
+    {
+      "path": "data/prototype_d01/sources/Brisa_LICENSE.txt",
+      "bytes": 7048,
+      "sha256": "a2010f343487d3f7618affe54f789f5487602331c0a8d03f49e9a7c547cf0499"
+    },
+    {
+      "path": "data/prototype_d01/sources/Brisa_repository_files.json",
+      "bytes": 16446,
+      "sha256": "875fe2f8984aa6fb7994b118c8aaf50f9abb2c5c2108279b1812f2692de9afb5"
+    }
+  ]
+}

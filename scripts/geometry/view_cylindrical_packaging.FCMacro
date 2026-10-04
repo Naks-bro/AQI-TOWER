@@ -1,0 +1,44 @@
+"""View-only macro: no save, installation, or historical document mutation."""
+from pathlib import Path
+import FreeCAD as App
+import FreeCADGui as Gui
+
+model = Path("D:/DUDE/AQI-TOWER/cad/packaging/AQI_Cylindrical_Packaging_R01.FCStd")
+active = App.ActiveDocument
+if active and active.FileName and Path(active.FileName).name in {
+    "AQI_Cylindrical_Packaging_R00.FCStd", "AQI_Cylindrical_Packaging_R01.FCStd", "AQI_Cylindrical_Packaging_R02.FCStd"
+}:
+    model = Path(active.FileName)
+doc = next((item for item in App.listDocuments().values()
+            if item.FileName and Path(item.FileName).resolve() == model.resolve()), None)
+if doc is None:
+    doc = App.openDocument(str(model))
+App.setActiveDocument(doc.Name)
+for obj in doc.Objects:
+    if hasattr(obj, "ViewObject"):
+        obj.ViewObject.Visibility = False
+styles = {
+    "Shell": ((0.75, 0.83, 0.88), 80),
+    "HEPAServiceDoor": ((0.9, 0.77, 0.45), 85),
+    "PrefilterServiceDoor": ((0.9, 0.77, 0.45), 85),
+    "PrefilterEnvelope": ((0.8, 0.69, 0.4), 15),
+    "PrefilterBulkhead": ((0.5, 0.63, 0.68), 0),
+    "HEPAEnvelope": ((0.3, 0.7, 0.58), 15),
+    "HEPABulkhead": ((0.5, 0.63, 0.68), 0),
+    "HEPAGasketEnvelope": ((0.2, 0.25, 0.27), 0),
+    "HEPARetainerEnvelope": ((0.8, 0.68, 0.35), 0),
+    "FanAllowance": ((0.8, 0.5, 0.33), 50),
+    "ElectricalAllowance": ((0.4, 0.53, 0.7), 30),
+    "BaseAllowance": ((0.5, 0.55, 0.6), 30),
+}
+for name, (color, transparency) in styles.items():
+    component = doc.getObject(name)
+    if component is None:
+        continue
+    view = component.ViewObject
+    view.Visibility = True
+    view.ShapeColor = color
+    view.Transparency = transparency
+Gui.activeDocument().activeView().viewAxonometric()
+Gui.activeDocument().activeView().fitAll()
+App.Console.PrintMessage("PRELIMINARY packaging view. Orange fan is a placeholder. Nothing saved.\n")

@@ -1,0 +1,288 @@
+{
+  "objects": 73,
+  "all_shapes_valid": true,
+  "checked_pairs": 435,
+  "positive_volume_clashes_mm3": [],
+  "hardware_pairs": 1280,
+  "hardware_clashes_mm3": [],
+  "excluded": "simplified fan internals, guard-to-guard sheet envelope intersections, reservations; nuts/washers absent; no strength/leak/guard certification",
+  "panel_dimensions_mm": [
+    {
+      "name": "M01_BASE",
+      "w": 550,
+      "h": 360,
+      "thick": 9,
+      "rects": [],
+      "circles": [],
+      "qty": 1,
+      "note": "Screw into internal cleats; drill pilots after square dry fit."
+    },
+    {
+      "name": "M02_END",
+      "w": 360,
+      "h": 542,
+      "thick": 9,
+      "rects": [],
+      "circles": [],
+      "qty": 2,
+      "note": "No cutouts; internal cleats 20x20; screw positions match-drilled."
+    },
+    {
+      "name": "M03_SEAT",
+      "w": 532,
+      "h": 542,
+      "thick": 9,
+      "rects": [
+        [
+          31,
+          41,
+          470,
+          470
+        ]
+      ],
+      "circles": [
+        [
+          11,
+          26,
+          2.75
+        ],
+        [
+          11,
+          276,
+          2.75
+        ],
+        [
+          11,
+          526,
+          2.75
+        ],
+        [
+          521,
+          26,
+          2.75
+        ],
+        [
+          521,
+          276,
+          2.75
+        ],
+        [
+          521,
+          526,
+          2.75
+        ],
+        [
+          266,
+          21,
+          2.75
+        ],
+        [
+          266,
+          531,
+          2.75
+        ]
+      ],
+      "qty": 2,
+      "note": "Datum lower left viewed from outside; mirror rear physically. Aperture NOT panel-centred vertically."
+    },
+    {
+      "name": "M04_RETAINER",
+      "w": 550,
+      "h": 550,
+      "thick": 9,
+      "rects": [
+        [
+          37.5,
+          37.5,
+          475,
+          475
+        ]
+      ],
+      "circles": [
+        [
+          20,
+          25,
+          2.75
+        ],
+        [
+          20,
+          275,
+          2.75
+        ],
+        [
+          20,
+          525,
+          2.75
+        ],
+        [
+          530,
+          25,
+          2.75
+        ],
+        [
+          530,
+          275,
+          2.75
+        ],
+        [
+          530,
+          525,
+          2.75
+        ],
+        [
+          275,
+          20,
+          2.75
+        ],
+        [
+          275,
+          530,
+          2.75
+        ]
+      ],
+      "qty": 2,
+      "note": "M5 through studs, 8 per face, minimum20mm centre-to-edge on retainer. Tighten evenly; no invented torque or seal-force rating."
+    },
+    {
+      "name": "M05_SHELF",
+      "w": 235,
+      "h": 47.45,
+      "thick": 9,
+      "rects": [],
+      "circles": [],
+      "qty": 4,
+      "note": "Two per filter; x30..265 and285..520;20mm centre gap clears lower stud. Support angle/cleat review; do not crush paper frame."
+    },
+    {
+      "name": "M06_FAN_PLATE",
+      "w": 550,
+      "h": 360,
+      "thick": 9,
+      "rects": [],
+      "circles": [
+        [
+          200,
+          105,
+          67.1
+        ],
+        [
+          137.5,
+          42.5,
+          2.25
+        ],
+        [
+          137.5,
+          167.5,
+          2.25
+        ],
+        [
+          262.5,
+          42.5,
+          2.25
+        ],
+        [
+          262.5,
+          167.5,
+          2.25
+        ],
+        [
+          350,
+          105,
+          67.1
+        ],
+        [
+          287.5,
+          42.5,
+          2.25
+        ],
+        [
+          287.5,
+          167.5,
+          2.25
+        ],
+        [
+          412.5,
+          42.5,
+          2.25
+        ],
+        [
+          412.5,
+          167.5,
+          2.25
+        ],
+        [
+          200,
+          255,
+          67.1
+        ],
+        [
+          137.5,
+          192.5,
+          2.25
+        ],
+        [
+          137.5,
+          317.5,
+          2.25
+        ],
+        [
+          262.5,
+          192.5,
+          2.25
+        ],
+        [
+          262.5,
+          317.5,
+          2.25
+        ],
+        [
+          350,
+          255,
+          67.1
+        ],
+        [
+          287.5,
+          192.5,
+          2.25
+        ],
+        [
+          287.5,
+          317.5,
+          2.25
+        ],
+        [
+          412.5,
+          192.5,
+          2.25
+        ],
+        [
+          412.5,
+          317.5,
+          2.25
+        ]
+      ],
+      "qty": 1,
+      "note": "4 apertures dia134.2; 16 clearance holes dia4.5, 125 square pitch. OEM template confirm before cut. M4 through-bolts proposed; length selected on actual guard/seal stack."
+    },
+    {
+      "name": "G01_OUTER_FACE",
+      "w": 320,
+      "h": 320,
+      "thick": 1,
+      "rects": [],
+      "circles": [],
+      "qty": 1,
+      "note": "Perforated purchased sheet; 4mm holes/6mm staggered pitch target. Hole pattern NOT in DXF. Folded/angle-fastened skirts require shop detail."
+    },
+    {
+      "name": "G01_INNER_FACE",
+      "w": 320,
+      "h": 320,
+      "thick": 1,
+      "rects": [],
+      "circles": [],
+      "qty": 1,
+      "note": "Perforated purchased sheet; 4mm holes/6mm staggered pitch target. Hole pattern NOT in DXF. Folded/angle-fastened skirts require shop detail."
+    }
+  ]
+}

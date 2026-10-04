@@ -1,0 +1,76 @@
+{
+  "status": "ASSUMED SCENARIOS, NOT PERFORMANCE CLAIMS",
+  "scenarios": [
+    {
+      "name": "low_clean",
+      "assumed_filter_Pa_at400": 5,
+      "flow_m3h": 376.70867391046863,
+      "fan_Pa": 21.587551492791267,
+      "budget_Pa": {
+        "filter_path": 4.708858423880858,
+        "intake_and_plenum": 3.078498451872736,
+        "inner_guard": 5.873931157894588,
+        "outer_guard": 5.873931157894588,
+        "installation_reserve": 2.052332301248491
+      },
+      "curve_minus2Pa_flow": 365.607162300911,
+      "curve_plus2Pa_flow": 387.65093793002563,
+      "closure_error_Pa": 7.105427357601002e-15
+    },
+    {
+      "name": "middle_clean",
+      "assumed_filter_Pa_at400": 10,
+      "flow_m3h": 352.06069861521667,
+      "fan_Pa": 23.54373001092661,
+      "budget_Pa": {
+        "filter_path": 8.801517465380416,
+        "intake_and_plenum": 2.6888265764034363,
+        "inner_guard": 5.130417459103564,
+        "outer_guard": 5.130417459103564,
+        "installation_reserve": 1.7925510509356242
+      },
+      "curve_minus2Pa_flow": 341.3563312911966,
+      "curve_plus2Pa_flow": 362.62209076017484,
+      "closure_error_Pa": 7.105427357601002e-15
+    },
+    {
+      "name": "loaded_sensitivity",
+      "assumed_filter_Pa_at400": 20,
+      "flow_m3h": 308.65488521336044,
+      "fan_Pa": 26.76389157347514,
+      "budget_Pa": {
+        "filter_path": 15.432744260668024,
+        "intake_and_plenum": 2.0666836773441277,
+        "inner_guard": 3.9433372586167796,
+        "outer_guard": 3.9433372586167796,
+        "installation_reserve": 1.3777891182294184
+      },
+      "curve_minus2Pa_flow": 298.36409214834725,
+      "curve_plus2Pa_flow": 318.8184515286505,
+      "closure_error_Pa": 1.0658141036401503e-14
+    }
+  ],
+  "tests": {
+    "conversion_mmH2O": true,
+    "zero_flow_all_losses_zero": true,
+    "parallel_fans_same_pressure": true,
+    "two_filters_NOT_added": true,
+    "filter_linear": true,
+    "guard_quadratic": true,
+    "loaded_flow_lower": true,
+    "all_intersections_close": true,
+    "nominal_electrical_budget": true
+  },
+  "nominal_fan_current_A": 1.4,
+  "nominal_fan_power_W": 16.8,
+  "supply_max_W": 24,
+  "nominal_headroom_W": 7.2,
+  "notes": [
+    "Controller overhead and startup transient not measured.",
+    "Guard geometry and K values assumed. Installation reserve is a conservative allowance, not a verified static/total pressure conversion.",
+    "No prefilter, HEPA, carbon, water, duct or cosmetic cylinder installed. Adding them invalidates this model.",
+    "Equal parallel flow and no bypass assumed; fan-curve digitization +/-2Pa is not total uncertainty.",
+    "Filter reference dimensions are OEM; resistance scenarios are not OEM data.",
+    "No CADR, efficiency, outdoor radius or noise prediction."
+  ]
+}

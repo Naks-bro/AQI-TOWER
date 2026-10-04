@@ -1,0 +1,9 @@
+fan,scenario,flow_m3h,operating_static_pressure_Pa,pressure_required_at1300_Pa,fan_pressure_at1300_Pa,margin_at1300_Pa
+historical_KVO250_variant_unresolved,clean_moderate_hardware,1246.4,173.4,182.9,136.9,-46.0
+historical_KVO250_variant_unresolved,clean_restrictive_hardware,1176.7,219.9,252.4,136.9,-115.6
+historical_KVO250_variant_unresolved,HEPA_2x_clean_prefilter,1132.4,248.3,291.5,136.9,-154.6
+historical_KVO250_variant_unresolved,HEPA_2x_prefilter80_restrictive,1047.3,302.7,395.1,136.9,-258.2
+SP_TD2000_315_SILENT_digitized_10V,clean_moderate_hardware,1364.4,194.6,182.9,230.0,47.1
+SP_TD2000_315_SILENT_digitized_10V,clean_restrictive_hardware,1274.2,245.5,252.4,230.0,-22.4
+SP_TD2000_315_SILENT_digitized_10V,HEPA_2x_clean_prefilter,1228.6,272.8,291.5,230.0,-61.5
+SP_TD2000_315_SILENT_digitized_10V,HEPA_2x_prefilter80_restrictive,1111.4,325.4,395.1,230.0,-165.1

@@ -1,0 +1,154 @@
+{
+  "revision": "D01-R01",
+  "release": "REVIEW ONLY",
+  "files": [
+    {
+      "path": "reports/prototype_d01/r01/BOM_R01.csv",
+      "sha256": "f29aa67a233f883408802fb5d24e36eb2668ac50c8ee67b3474cb54fb4282153"
+    },
+    {
+      "path": "reports/prototype_d01/r01/cad_mesh.json",
+      "sha256": "69a702ffb1aa464da39af25f713beb304ffd845414a164a11f2f32619b7e7eeb"
+    },
+    {
+      "path": "reports/prototype_d01/r01/checks.json",
+      "sha256": "baa839312b4d26d49c6e8afdf674100ccd80470d667540a8c4410c1f6e8b5f2d"
+    },
+    {
+      "path": "reports/prototype_d01/r01/D01_ASSEMBLY.png",
+      "sha256": "1e2740f4167ea8b0e22198179a11f31177f0610fb54a748c8b266bc0b1b17cc9"
+    },
+    {
+      "path": "reports/prototype_d01/r01/D01_R01_ASSEMBLY.FCStd",
+      "sha256": "064e9eaa775585d3e4915bb09bee7911b8fcfe7c3fed3eaa618c5df289bb2f5f"
+    },
+    {
+      "path": "reports/prototype_d01/r01/D01_R01_ASSEMBLY.step",
+      "sha256": "0cf26f2522e35982229670f3bfc664a6aeef2df47ed3050576b6587674a04287"
+    },
+    {
+      "path": "reports/prototype_d01/r01/D01_R01_CONSTRUCTION_DETAILS.pdf",
+      "sha256": "4424f66930506f90cd46b707d469af1308ea9415e2293e6c322c6d2bceee182f"
+    },
+    {
+      "path": "reports/prototype_d01/r01/FASTENERS_R01.csv",
+      "sha256": "ceaa1076462fe164334df3203e66663a88915da6112ff439b7fa5f30ed812e44"
+    },
+    {
+      "path": "reports/prototype_d01/r01/fastener_schedule.json",
+      "sha256": "7c36dec84c8759e23aa574e1276f48a6642c46e15c31bfb3ef436e9a3327d896"
+    },
+    {
+      "path": "reports/prototype_d01/r01/load_screening.json",
+      "sha256": "bc21fb35415e0ecb992e74feb445168a81fd8d1a5e2297250185a98494cf57b6"
+    },
+    {
+      "path": "reports/prototype_d01/r01/panel_geometry.json",
+      "sha256": "e894c1bc1c25c42f92f1f1fe8b0c39ed22866de56124b1741dbe497ff370330f"
+    },
+    {
+      "path": "reports/prototype_d01/r01/pressure_curves.csv",
+      "sha256": "f2ad17defe48640b6c84d4311b4302bcaf0c279de705b6aea23984a4be22ad59"
+    },
+    {
+      "path": "reports/prototype_d01/r01/pressure_results.json",
+      "sha256": "4ead1146e675e4e9307c07f89eb0c0af59dfcd7ad13311a62b072cbaf52d71e2"
+    },
+    {
+      "path": "reports/prototype_d01/r01/README.md",
+      "sha256": "a0e0e67b166888498c48d3f192bc15b787cf5834b5ef733902f4eed807e397a6"
+    },
+    {
+      "path": "reports/prototype_d01/r01/panel_dxf_REVIEW_ONLY/G01_INNER_FACE.dxf",
+      "sha256": "7a889260557a6a37531ffb115a712742fa2e1be39b25673e508e3704316a1d8d"
+    },
+    {
+      "path": "reports/prototype_d01/r01/panel_dxf_REVIEW_ONLY/G01_OUTER_FACE.dxf",
+      "sha256": "7a889260557a6a37531ffb115a712742fa2e1be39b25673e508e3704316a1d8d"
+    },
+    {
+      "path": "reports/prototype_d01/r01/panel_dxf_REVIEW_ONLY/M01_BASE.dxf",
+      "sha256": "013a42484f37615aee0f01c998226a31085ff09da3a9637c55b7a37cd7f6546a"
+    },
+    {
+      "path": "reports/prototype_d01/r01/panel_dxf_REVIEW_ONLY/M02_END.dxf",
+      "sha256": "f90ef3a6027075edc0b02c94282c9ac412f1b0b7cefc0b7e9e81fa7ea768a940"
+    },
+    {
+      "path": "reports/prototype_d01/r01/panel_dxf_REVIEW_ONLY/M03_SEAT.dxf",
+      "sha256": "61dcdca2e622f06898cc8278dc08ac62656c463e982da2dd417254960a35cf2b"
+    },
+    {
+      "path": "reports/prototype_d01/r01/panel_dxf_REVIEW_ONLY/M04_RETAINER.dxf",
+      "sha256": "891e21a61fa165c6bfed5a05a19b94fa584aa55893761dae9546d55608aada2c"
+    },
+    {
+      "path": "reports/prototype_d01/r01/panel_dxf_REVIEW_ONLY/M05_FRONT_LEFT.dxf",
+      "sha256": "21ab8f58e48ea8786813d35c25b4d2563a5d7f9a080d6cebf9c39ad16c586c9c"
+    },
+    {
+      "path": "reports/prototype_d01/r01/panel_dxf_REVIEW_ONLY/M05_FRONT_RIGHT.dxf",
+      "sha256": "43840b67bcdef948ba19658b58be62656102e7170686c1d9a2ecd87028f63a7f"
+    },
+    {
+      "path": "reports/prototype_d01/r01/panel_dxf_REVIEW_ONLY/M05_REAR_LEFT.dxf",
+      "sha256": "961211b315ccb05c550e22b82c713bd1b8677c6dbc3231879a0ea57093981e34"
+    },
+    {
+      "path": "reports/prototype_d01/r01/panel_dxf_REVIEW_ONLY/M05_REAR_RIGHT.dxf",
+      "sha256": "403c4ddc66166cda0a0fbc2c8430831ecd048bf2605cc580f284d4229b67159f"
+    },
+    {
+      "path": "reports/prototype_d01/r01/panel_dxf_REVIEW_ONLY/M06_FAN_PLATE.dxf",
+      "sha256": "00fd8fe392ce63a40a7ca423a9802e65caba1059eeaf7c6bd78bbfc306494de6"
+    },
+    {
+      "path": "scripts/geometry/detail_d01_r01.py",
+      "sha256": "4be2fe57e595014ccb97e3898ab283d448793814587f304431bee72998e969e7"
+    },
+    {
+      "path": "scripts/analysis/d01_r01_checks.py",
+      "sha256": "3803a9f2694e0294eac371a3e35d56c6cc9a78eae53b234e22e36490a6e68665"
+    },
+    {
+      "path": "scripts/analysis/d01_pressure.py",
+      "sha256": "1822075d9f1eefcaf3e2b1065df77695c8d83a974845ad85174cceb6528cab17"
+    },
+    {
+      "path": "scripts/reports/build_d01_r01.py",
+      "sha256": "ff6a6f73a113bffd54a22b171a97c61c31cf697494d276ebe31a26949d89f15e"
+    },
+    {
+      "path": "scripts/reports/build_d01_delivery.py",
+      "sha256": "86595b7c12a7e0b98058a3d5863db383720196ee79b91fe4126a92c9f80c3d38"
+    },
+    {
+      "path": "cad/parametric/d01_r00.json",
+      "sha256": "d69fe2bafbbdfa0dd71e1627efe9b4c9e72848b80d6157af86b4b6d0861b11fb"
+    },
+    {
+      "path": "reports/prototype_d01/D01_ASSEMBLY.FCStd",
+      "sha256": "22faa71877b8fef657220976640f949a13fb6f2eb51dc3ce4034e36d606cb595"
+    },
+    {
+      "path": "reports/prototype_d01/cad_mesh.json",
+      "sha256": "44165a1943bc60bc2d8343564468f042a2c59e21250a12b45762ad5d0a382f29"
+    },
+    {
+      "path": "reports/prototype_d01/panel_geometry.json",
+      "sha256": "f64632fcb25f93de0a5e85a1374767df7cbf5b9c1ad852f4ddbf1d4cb2293187"
+    },
+    {
+      "path": "reports/prototype_d01/D01_BOM.csv",
+      "sha256": "af75b999d7e26c83d11439d8ea237340a1e4082ac3594ed431d24dcbeaca5809"
+    },
+    {
+      "path": "reports/prototype_d01/README.md",
+      "sha256": "e6bc035734d9ec4d336649bf37b431806531a40e8184dc02ebb46f02054757d0"
+    },
+    {
+      "path": "reports/prototype_d01/AQI_D01_ENGINEERING_PACKAGE.pdf",
+      "sha256": "82237b94a65719b11495afa5e2ece5ddd990de6e59c392bd01afd24e21d35159"
+    }
+  ]
+}

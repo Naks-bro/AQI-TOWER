@@ -1,0 +1,9 @@
+id,measurement,proposed_quantity,preferred_route,actual_model,usable_range_and_units,calibration_or_reference,export_or_connection,availability,owner,status
+I01,Room PM2.5,2 matched logging units,Buy supported instruments or complete SEK-SPS30 candidate kits,UNKNOWN,UNKNOWN,UNKNOWN,UNKNOWN,UNKNOWN,Team and supplier,OPEN
+I02,Filter differential pressure,2 simultaneous channels,Buy calibrated logger or rent; SDP8xx candidate pending range,UNKNOWN,UNKNOWN,UNKNOWN,UNKNOWN,UNKNOWN,Team and supplier,OPEN
+I03,Whole-device airflow,1 measurement system,Hire equipped service or rent with qualified operator,UNKNOWN,UNKNOWN,UNKNOWN,UNKNOWN,UNKNOWN,External test service,OPEN
+I04,Electrical input power,1 suitable analyzer,Hire service or rent; qualified electrical use,UNKNOWN,UNKNOWN,UNKNOWN,UNKNOWN,UNKNOWN,External electrical/test service,OPEN
+I05,Sound level,1 instrument plus check equipment,Hire service or rent,UNKNOWN,UNKNOWN,UNKNOWN,UNKNOWN,UNKNOWN,External test service,OPEN
+I06,Room temperature and humidity,1 or more logging units based on positions,Buy suitable logger,UNKNOWN,UNKNOWN,UNKNOWN,UNKNOWN,UNKNOWN,Team and supplier,OPEN
+I07,Room dimensions,1 tape or distance instrument,Use existing or buy,UNKNOWN,UNKNOWN,UNKNOWN,Not required,UNKNOWN,Team,OPEN
+I08,Data acquisition interface,As required by actual instruments,Existing laptop; compatible bridge only if needed,UNKNOWN,Not applicable,Not applicable,UNKNOWN,UNKNOWN,Team,OPEN

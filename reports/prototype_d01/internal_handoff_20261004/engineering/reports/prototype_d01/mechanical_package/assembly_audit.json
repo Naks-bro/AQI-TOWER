@@ -1,0 +1,13 @@
+{
+  "source": "reports\\prototype_d01\\mechanical_package\\D01_R03M_ASSEMBLY.FCStd",
+  "source_sha256": "fb28a31315968509dcdbbb2caac8c6d69c84ecb94a35ccd75937a5d9ecaa33a6",
+  "objects": 493,
+  "panels": 10,
+  "full_pair_checks": 119804,
+  "excluded_pairs": 1474,
+  "clashes_mm3": [],
+  "valid": true,
+  "source_unchanged": true,
+  "exclusions": "Reservation envelopes and all guard-to-guard pairs (inherited seams). Nominal fit only; no tolerance/load/reach/leak/electrical release.",
+  "inventory_note": "CAD object count is not purchased-product count. Reserved controls are not physically modeled; missing hardware/services are separately listed."
+}

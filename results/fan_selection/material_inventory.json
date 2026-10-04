@@ -1,0 +1,124 @@
+{
+  "status": "PARTIAL GEOMETRIC MATERIAL INVENTORY, NOT WHOLE TOWER MASS",
+  "source_sha256": {
+    "cad/packaging/AQI_Cylindrical_Packaging_R02.FCStd": "5977058d385267a60b9b54e6c7ffdc6d7c9b6c5e6649195c45999c88bd0c4db2",
+    "cad/packaging/AQI_M04_Airpath_STUDY.FCStd": "25d39edc9d2f32d1128eebc669a9da464fefda6a16668f441d3e7812d4e8f320"
+  },
+  "parts": [
+    {
+      "source": "cad/packaging/AQI_Cylindrical_Packaging_R02.FCStd",
+      "part": "Shell",
+      "volume_mm3": 11376568.561427355,
+      "geometric_centroid_mm": [
+        -5.86795585927202e-13,
+        23.388774792974406,
+        1235.0150146395426
+      ],
+      "status": "CAD GEOMETRY; material and structural adequacy UNKNOWN"
+    },
+    {
+      "source": "cad/packaging/AQI_Cylindrical_Packaging_R02.FCStd",
+      "part": "HEPAServiceDoor",
+      "volume_mm3": 486524.72760875337,
+      "geometric_centroid_mm": [
+        -2.0549343518346528e-12,
+        -432.4384518626047,
+        794.9999999999969
+      ],
+      "status": "CAD GEOMETRY; material and structural adequacy UNKNOWN"
+    },
+    {
+      "source": "cad/packaging/AQI_Cylindrical_Packaging_R02.FCStd",
+      "part": "PrefilterServiceDoor",
+      "volume_mm3": 128785.95730819972,
+      "geometric_centroid_mm": [
+        -2.1519355211782156e-12,
+        -432.4384518626032,
+        474.9999999999993
+      ],
+      "status": "CAD GEOMETRY; material and structural adequacy UNKNOWN"
+    },
+    {
+      "source": "cad/packaging/AQI_Cylindrical_Packaging_R02.FCStd",
+      "part": "PrefilterBulkhead",
+      "volume_mm3": 1791789.212330985,
+      "geometric_centroid_mm": [
+        -1.6632716718349196e-14,
+        -2.6363898250526272e-14,
+        447.5
+      ],
+      "status": "CAD GEOMETRY; material and structural adequacy UNKNOWN"
+    },
+    {
+      "source": "cad/packaging/AQI_Cylindrical_Packaging_R02.FCStd",
+      "part": "HEPABulkhead",
+      "volume_mm3": 1959264.2123309858,
+      "geometric_centroid_mm": [
+        -3.802744188370432e-15,
+        -2.342082734479126e-14,
+        642.5
+      ],
+      "status": "CAD GEOMETRY; material and structural adequacy UNKNOWN"
+    },
+    {
+      "source": "cad/packaging/AQI_Cylindrical_Packaging_R02.FCStd",
+      "part": "HEPARetainerEnvelope",
+      "volume_mm3": 418600.00000000047,
+      "geometric_centroid_mm": [
+        -1.7798806968284328e-14,
+        1.2232334378837987e-15,
+        942.4999999999998
+      ],
+      "status": "CAD GEOMETRY; material and structural adequacy UNKNOWN"
+    },
+    {
+      "source": "cad/packaging/AQI_M04_Airpath_STUDY.FCStd",
+      "part": "Transition",
+      "volume_mm3": 694312.8089130651,
+      "geometric_centroid_mm": [
+        -2.242226049012382e-09,
+        -2.403714913921319e-12,
+        1058.4732479176375
+      ],
+      "status": "CAD GEOMETRY; material and structural adequacy UNKNOWN"
+    },
+    {
+      "source": "cad/packaging/AQI_M04_Airpath_STUDY.FCStd",
+      "part": "InletNeck",
+      "volume_mm3": 19917.69742375944,
+      "geometric_centroid_mm": [
+        1.6833076621679561e-12,
+        -1.628720307540885e-13,
+        1184.999999999997
+      ],
+      "status": "CAD GEOMETRY; material and structural adequacy UNKNOWN"
+    },
+    {
+      "source": "cad/packaging/AQI_M04_Airpath_STUDY.FCStd",
+      "part": "StraightOutlet",
+      "volume_mm3": 398353.9484751858,
+      "geometric_centroid_mm": [
+        -7.481367387413195e-13,
+        -3.638789670512856e-13,
+        2114.9999999999877
+      ],
+      "status": "CAD GEOMETRY; material and structural adequacy UNKNOWN"
+    }
+  ],
+  "excluded": [
+    "FanAllowance",
+    "HEPAEnvelope",
+    "PrefilterEnvelope",
+    "HEPAGasketEnvelope",
+    "ElectricalAllowance",
+    "BaseAllowance"
+  ],
+  "missing": [
+    "structural frame/base",
+    "actual filters",
+    "guards and louvres",
+    "mounts, hinges, fasteners, seals",
+    "electrical equipment and cables"
+  ],
+  "note": "M04 separate study is not verified as an integrated assembly."
+}

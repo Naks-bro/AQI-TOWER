@@ -1,0 +1,41 @@
+{
+  "date": "2026-10-03",
+  "status": "PUBLIC-SOURCE CANDIDATES, NOT PURCHASE OR CONSTRUCTION RELEASE",
+  "starkvind": {
+    "part": "104.633.30",
+    "source": "https://www.ikea.com/in/en/p/starkvind-filter-for-particle-removal-10463330/",
+    "dimensions_mm": [370, 290, 40],
+    "displayed_price_INR_each_including_tax": 1090,
+    "availability": "Delivery/store availability not established; page requires location check",
+    "restriction": "OEM says only for STARKVIND appliances. Custom use would be experimental and not OEM-endorsed.",
+    "pressure_curve": null,
+    "D01_fit": "Cannot cover 470x470 opening; needs sealed reducing cassette and its own supports. Not selected."
+  },
+  "sqair": {
+    "source": "https://smartairfilters.com/in/en/product/sqair-hepa-filter/",
+    "dimensions_mm": [264, 264, 50],
+    "price_INR": null,
+    "classification_note": "India page calls it H12; global OEM page uses E12 EPA. Do not claim H13 HEPA or transfer appliance CADR.",
+    "pressure_curve": null,
+    "D01_fit": "Cannot cover opening; deeper than44.45mm reference; needs adapter and retention redesign. Not selected."
+  },
+  "filtrete": {
+    "family": "3M Filtrete MPR1900 / MERV13",
+    "OEM_source": "https://www.filtrete.com/3M/en_US/filtrete/about-us/reliable-air-flow/",
+    "retailer_identity_claim": "UA02-4PK, ASIN B005GZ8IG2, four nominal20x20x1 filters",
+    "seller_listings": [
+      {"url": "https://www.desertcart.in/products/7470626-filtrete-20x20x1-air-filter-merv-13-mpr-1900-4-hvac", "displayed_INR": 19801},
+      {"url": "https://www.desertcart.in/products/243793347-filtrete-20x20x1-ac-furnace-air-filter-merv-13-mpr-1900", "displayed_INR": 41464}
+    ],
+    "availability": "Seller pages say in stock; import purchasing intermediary, not independently confirmed local stock or delivery",
+    "dimension_conflict": "Seller fields give both19.62 and19.69inch sides,0.78inch depth. Not authenticated manufacturer dimensional data.",
+    "pressure_curve": null,
+    "recommendation": "Retain as online alternative, not preferred at observed import prices. No purchase."
+  },
+  "CEC_research": {
+    "url": "https://efiling.energy.ca.gov/GetDocument.aspx?tn=223260",
+    "local_file": "data/prototype_d01/sources/CEC_filter_pressure_223260.pdf",
+    "date": "2018-04-12",
+    "finding": "Measured24x24 filter data and a correction to previously plotted Filtrete label data. Do not reuse as a current20x20 curve or infer pressure from MERV alone."
+  }
+}

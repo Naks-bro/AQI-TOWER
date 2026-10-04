@@ -1,0 +1,51 @@
+[
+  {
+    "group": "Guard through-bolts",
+    "quantity": 4,
+    "size": "M4x25 +8 washers +4 locknuts",
+    "locations": "x105/445; y60/300",
+    "note": "Upper and lower angles share bolts. Opening either guard requires isolation; no interlock implemented."
+  },
+  {
+    "group": "Guard angle rivets",
+    "quantity": 16,
+    "size": "3.2mm nominal, grip must cover3mm",
+    "locations": "Each angle: ylocal10/30; outer z590, inner z560",
+    "note": "Eight brackets x2; exact rivet/grip/head retention unselected. Drill dia3.5 proposal."
+  },
+  {
+    "group": "End-to-cleat through joints",
+    "quantity": 16,
+    "size": "M4x40 +washers/locknuts",
+    "locations": "Each end: y19/341; z105/205/405/505",
+    "note": "End local datum y0,z29: vertical coordinates76/176/376/476. Drill dia4.5 through panel and cleat."
+  },
+  {
+    "group": "Seat-to-cleat through joints",
+    "quantity": 16,
+    "size": "M4x40 +washers/locknuts",
+    "locations": "Each seat: x20/530; z155/255/355/455",
+    "note": "Seat local datum x9,z29: x11/521,z126/226/326/426. Avoid filter clamp holes."
+  },
+  {
+    "group": "Shelf support",
+    "quantity": 8,
+    "size": "25x25x2 angle,30 long; M4x20 to seat; M3x20 flush to ledge",
+    "locations": "x75/215/335/475; seat z37; ledge y-15/375",
+    "note": "Countersink per actual head, not before product selection. Eight ledge screws and eight seat bolts."
+  },
+  {
+    "group": "Top and base retention",
+    "quantity": 8,
+    "size": "4 top wood screws4x20;4 base4x25",
+    "locations": "x19/531; y19/341",
+    "note": "Pilot diameter per actual wood/screw. Proposed seam: external removable foil HVAC tape after dry fit; exact tape unknown. Not a lifting structure."
+  },
+  {
+    "group": "Cable route",
+    "quantity": 4,
+    "size": "4-pin fan extensions, length to be selected",
+    "locations": "Fan perimeter -> right guard side -> external control reservation",
+    "note": "External leg235mm; internal leads/connector service loops additional. OEM400mm leads may not reach. No gland cutout or connector pin orientation invented."
+  }
+]

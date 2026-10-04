@@ -1,0 +1,13 @@
+id,qty,item,evidence,release_gap
+FAN,4,ARCTIC P14 Max,OEM family reference,"Delivered revision/SKU, current/startup and compatibility not released"
+FILTER,2,IKEA STARKVIND104.633.30,OEM envelope370x290x40,"Custom use experimental, OEM STARKVIND-only; resistance/landing unknown; no HEPA/MERV claim"
+POWER,1,Noctua NV-PS1 and included NA-AC10,OEM reference12V2A,India plug/availability and installed startup/protection unverified
+SPEED,1,Noctua NA-FC1,OEM reference manual PWM,Does not implement restart inhibit
+HUB,1,Noctua NA-FH1,OEM reference4-pin input;4 outputs used,SATA unused; cable and protection review pending
+PROTECTION,TBD,"Isolation, stop/restart and protective access hardware",UNSELECTED,Safety design incomplete; no invented terminal assignment
+SEALS,TBD,"Joint sealant, perimeter/fan/penetration seals",ASSUMED envelopes only,"Products, compression, aging and leakage not selected/tested"
+GUARD_JOIN,TBD,Guard corner/face joints and bracket rivets,UNMODELED/UNRELEASED,"Rivet grip/heads, seams and capacity need completion"
+HARDWARE,TBD,"Remaining cabinet/fan/M5 nuts, washers and retained ends",PARTLY MODELED,Do not mistake all shaft envelopes for complete installed fasteners
+ENCLOSURE,1,"External control housing, glands and strain relief",RESERVATION ONLY,"Part/layout, thermal and ingress details unresolved"
+TEST,1,Airflow/pressure/power/noise and indoor particle trial equipment/service,NOT OBTAINED,Buy/rent or paid operator; no college lab assumed
+REVIEW,1,Scoped mechanical and electrical review/commissioning,NOT ENGAGED,ENTC friend not assumed; qualified physical work required

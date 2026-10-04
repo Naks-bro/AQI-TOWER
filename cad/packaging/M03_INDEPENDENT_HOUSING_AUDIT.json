@@ -1,0 +1,89 @@
+{
+  "status": "INDEPENDENT INNER HOUSING OPTION \u2014 NOT FABRICATION OR LEAKAGE APPROVAL",
+  "valid_solids": 36,
+  "positive_volume_clashes": [],
+  "assumed_service_sweep_clashes_panels_removed": {
+    "HEPA_lifted": [],
+    "prefilter_lifted": [],
+    "retainer_after_removal_of_clamps": []
+  },
+  "nominal_seat_to_side_rail_contacts": [
+    {
+      "seat": "IndependentPrefilterSeat",
+      "rail": "Rail2YNeg",
+      "ear_y_mm": -100,
+      "nominal_contact_mm2": 1225.0
+    },
+    {
+      "seat": "IndependentPrefilterSeat",
+      "rail": "Rail2YNeg",
+      "ear_y_mm": 100,
+      "nominal_contact_mm2": 1225.0
+    },
+    {
+      "seat": "IndependentPrefilterSeat",
+      "rail": "Rail2YPos",
+      "ear_y_mm": -100,
+      "nominal_contact_mm2": 1225.0
+    },
+    {
+      "seat": "IndependentPrefilterSeat",
+      "rail": "Rail2YPos",
+      "ear_y_mm": 100,
+      "nominal_contact_mm2": 1225.0
+    },
+    {
+      "seat": "IndependentHEPASeat",
+      "rail": "Rail3YNeg",
+      "ear_y_mm": -100,
+      "nominal_contact_mm2": 1225.0
+    },
+    {
+      "seat": "IndependentHEPASeat",
+      "rail": "Rail3YNeg",
+      "ear_y_mm": 100,
+      "nominal_contact_mm2": 1225.0
+    },
+    {
+      "seat": "IndependentHEPASeat",
+      "rail": "Rail3YPos",
+      "ear_y_mm": -100,
+      "nominal_contact_mm2": 1225.0
+    },
+    {
+      "seat": "IndependentHEPASeat",
+      "rail": "Rail3YPos",
+      "ear_y_mm": 100,
+      "nominal_contact_mm2": 1225.0
+    }
+  ],
+  "housing_to_post_gap_mm": 6.0,
+  "retainer_to_inner_service_opening_side_margin_mm": 1.0,
+  "inner_housing_intake_gross_area_m2": 0.17920000000000003,
+  "partial_all_assumed_material_steel_mass_kg": 191.27400040407665,
+  "mass_excludes": [
+    "fan, filters, gasket, base, all real hardware/electrics"
+  ],
+  "omitted_old_parts": [
+    "HEPABulkhead",
+    "PrefilterBulkhead",
+    "Rail2XNeg",
+    "Rail2XPos",
+    "Rail3XNeg",
+    "Rail3XPos"
+  ],
+  "source_sha256_unchanged": {
+    "cad/packaging/AQI_Cylindrical_Packaging_R02.FCStd": "5977058d385267a60b9b54e6c7ffdc6d7c9b6c5e6649195c45999c88bd0c4db2",
+    "cad/packaging/AQI_M04_Airpath_STUDY.FCStd": "25d39edc9d2f32d1128eebc669a9da464fefda6a16668f441d3e7812d4e8f320",
+    "cad/packaging/AQI_M02_Frame_Routing_STUDY.FCStd": "7005ce6a174f3197d3bf4372b6cff910bc6a976f36e595a1ccaaf5ae6d7f6770"
+  },
+  "notes": [
+    "All housing, tray, ear and opening dimensions are assumptions, not OEM interfaces",
+    "Filter-level cross rails omitted; side rails support integral seat ears",
+    "Posts continuous and outside inner pressure enclosure; no post holes through seats",
+    "Narrow side/service margins require tolerance, flange and tooling review",
+    "Intake, service doors, seat seams and gasket performance NOT tested",
+    "No selected profile, base, fasteners, mounts or structural sizing"
+  ],
+  "native_reopen_and_STEP_reimport": "PASS"
+}

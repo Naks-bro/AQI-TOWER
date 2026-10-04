@@ -1,0 +1,17 @@
+{
+  "status": "M04 AIR-PATH GEOMETRY STUDY \u2014 NOT FABRICATION OR FAN SELECTION",
+  "valid_solids": 3,
+  "STEP_reimport": "PASS",
+  "side_wall_projection_angle_deg": 29.97,
+  "inlet_neck_length_over_diameter": 0.032,
+  "outlet_length_over_diameter": 0.635,
+  "wall_note": "Profiles offset by 2mm; normal wall thickness varies; not developed sheet metal",
+  "assembly_note": "Coordinate study only; NOT integrated/fitted to OEM fan or mounting axes",
+  "source_notes": [
+    "315 is assumed internal FLOW diameter, not verified fan flow area or mating dimension",
+    "OEM drawing B=312 mm is a connection dimension; do not equate it to internal clear diameter",
+    "Straight lengths not accepted by fan OEM; system effect unknown",
+    "Actual fan inlet/outlet axes within bounding box not established",
+    "Generator creates snapshots; edit JSON and regenerate to change profiles"
+  ]
+}

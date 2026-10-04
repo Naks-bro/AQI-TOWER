@@ -1,0 +1,62 @@
+{
+  "status": "PRELIMINARY SCREENING; all scenarios unvalidated; no carbon loss included",
+  "inputs": {
+    "fan_curve": [
+      [
+        0,
+        688
+      ],
+      [
+        375,
+        640
+      ],
+      [
+        750,
+        480
+      ],
+      [
+        914,
+        388
+      ],
+      [
+        1200,
+        205
+      ],
+      [
+        1501,
+        0
+      ]
+    ],
+    "HEPA_Pa_at_1332": 111.2,
+    "historical_residual_duct_Pa_at_1332": 3.8,
+    "air_density_kg_m3_assumption": 1.2
+  },
+  "scenarios_m3_h": {
+    "historical_sealed_HEPA_only": 1332.1,
+    "clean_prefilter_25Pa_optimistic_duct": 1300.4,
+    "clean_prefilter_45Pa_optimistic_duct": 1276.1,
+    "prefilter_80Pa_optimistic_duct": 1235.7,
+    "clean_prefilter_added_50Pa_at_1300": 1242.5,
+    "HEPA_twice_clean_resistance_added_50Pa": 1129.3
+  },
+  "illustrative_1300_m3_h": {
+    "HEPA_gross_face_velocity_m_s": 1.027,
+    "250mm_duct_velocity_m_s": 7.356,
+    "250mm_duct_dynamic_pressure_Pa": 32.47,
+    "remaining_pressure_at_1300_Pa_clean25_no_carbon": 0.35,
+    "remaining_pressure_at_1200_Pa_clean25_no_carbon": 79.21,
+    "carbon_volume_L_for_assumed_0_1s_EBCT": 36.11,
+    "carbon_depth_mm_at_gross_HEPA_area_for_0_1s_EBCT": 102.69,
+    "illustrative_CADR_at_assumed_90pct_whole_device_efficiency_m3_h": 1170.0,
+    "enclosed_area_m2_at_assumed_5ACH_3m_height_90pct_efficiency": 78.0,
+    "outdoor_advective_flow_m3_h_at_1m_s_10m_width_2m_height": 72000,
+    "tower_to_example_outdoor_advective_flow_ratio": 0.01806,
+    "fan_only_energy_kWh_8h_at_historical_301W": 2.408
+  },
+  "limitations": [
+    "No outdoor radius or pollutant reduction inferred from flow ratio",
+    "Room sizing assumes mixing; not a certification or school ventilation recommendation",
+    "Carbon EBCT alone does not establish adsorption performance",
+    "Fan SKU, curves, full duct losses and filter loading require verification"
+  ]
+}

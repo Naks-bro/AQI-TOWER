@@ -1,0 +1,144 @@
+{
+  "accessed": "2026-10-04",
+  "status": "NO COMPLETE PROTECTIVE ASSEMBLY SELECTED",
+  "candidates": [
+    {
+      "part": "Pilz 774326 / PNOZ X5",
+      "voltage": 12,
+      "watts": 2.5,
+      "dimensions_mm": [
+        87,
+        22.5,
+        121
+      ],
+      "source": "https://www.pilz.com/en-INT/eshop/product/774326",
+      "limitation": "Manual start listed; monitored held-button rejection not established. Not selected.",
+      "fits_in_normal_DIN_orientation_before_clearance": false,
+      "axis_aligned_body_only_fits": [
+        {
+          "orientation_mm": [
+            121,
+            87,
+            22.5
+          ],
+          "remaining_mm": [
+            19,
+            13,
+            17.5
+          ]
+        }
+      ],
+      "fit_warning": "Reservation is not internal usable enclosure size. Body fit excludes rail, wiring, bend radius, terminals, ventilation, controller and hub.",
+      "fan_plus_relay_nominal_W": 19.3,
+      "remaining_supply_W_before_auxiliaries": 4.699999999999999,
+      "fan_plus_relay_at_assumed_1_25_fan_multiplier_W": 23.5
+    },
+    {
+      "part": "Pilz 777607 / PNOZ X9P",
+      "voltage": 12,
+      "watts": 7,
+      "dimensions_mm": [
+        94,
+        90,
+        121
+      ],
+      "source": "https://www.pilz.com/en-INT/eshop/product/777607",
+      "limitation": "Monitored start listed, but nearly consumes nominal supply margin; no suitable enclosure fit. Not selected.",
+      "fits_in_normal_DIN_orientation_before_clearance": false,
+      "axis_aligned_body_only_fits": [],
+      "fit_warning": "Reservation is not internal usable enclosure size. Body fit excludes rail, wiring, bend radius, terminals, ventilation, controller and hub.",
+      "fan_plus_relay_nominal_W": 23.8,
+      "remaining_supply_W_before_auxiliaries": 0.1999999999999993,
+      "fan_plus_relay_at_assumed_1_25_fan_multiplier_W": 28.0
+    },
+    {
+      "part": "Pilz 750104 / PNOZ s4",
+      "voltage": 24,
+      "watts": 2.5,
+      "dimensions_mm": [
+        98,
+        22.5,
+        120
+      ],
+      "source": "https://www.pilz.com/en-US/eshop/product/750104",
+      "manual": "https://www.pilz.com/download/open/PNOZ_s4_Operat_Man_21396-EN-17.pdf",
+      "limitation": "Monitored edge start documented; wrong supply voltage for existing12V rail. Additional supply, sequence and fault monitoring needed. Not selected.",
+      "fits_in_normal_DIN_orientation_before_clearance": false,
+      "axis_aligned_body_only_fits": [
+        {
+          "orientation_mm": [
+            120,
+            98,
+            22.5
+          ],
+          "remaining_mm": [
+            20,
+            2,
+            17.5
+          ]
+        }
+      ],
+      "fit_warning": "Reservation is not internal usable enclosure size. Body fit excludes rail, wiring, bend radius, terminals, ventilation, controller and hub.",
+      "direct_12V_supply_compatible": false
+    }
+  ],
+  "checks": {
+    "X9P_remaining_only_0_2W": true,
+    "X5_remaining_4_7W": true,
+    "X9P_over_24W_at_assumed_1_25": true,
+    "no_normal_DIN_depth_fit": true,
+    "rotated_s4_body_fit_not_denied": true,
+    "X9P_no_axis_aligned_fit": true,
+    "upstream_contact_does_not_prevent_recovery_restart": true,
+    "upstream_voltage_cannot_see_hub_output_loss": true
+  },
+  "counterexamples": {
+    "separate_control_supply": [
+      {
+        "event": "Running",
+        "run_contact_closed": true,
+        "fan_supply_good": true,
+        "hub_path_good": true,
+        "fan_power_available": true
+      },
+      {
+        "event": "Fan supply absent",
+        "run_contact_closed": true,
+        "fan_supply_good": false,
+        "hub_path_good": true,
+        "fan_power_available": false
+      },
+      {
+        "event": "Fan supply returns",
+        "run_contact_closed": true,
+        "fan_supply_good": true,
+        "hub_path_good": true,
+        "fan_power_available": true
+      }
+    ],
+    "downstream_recovery": [
+      {
+        "event": "Running",
+        "run_contact_closed": true,
+        "fan_supply_good": true,
+        "hub_path_good": true,
+        "fan_power_available": true
+      },
+      {
+        "event": "Hub output absent",
+        "run_contact_closed": true,
+        "fan_supply_good": true,
+        "hub_path_good": false,
+        "fan_power_available": false
+      },
+      {
+        "event": "Hub output recovers",
+        "run_contact_closed": true,
+        "fan_supply_good": true,
+        "hub_path_good": true,
+        "fan_power_available": true
+      }
+    ]
+  },
+  "limitations": "Idealized possible failure paths, not measured OEM reset behavior. Relay contact load suitability, input monitoring, power-converter requirements, protective reliability and wiring not verified."
+}

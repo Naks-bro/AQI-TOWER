@@ -1,0 +1,28 @@
+{
+  "loads": {
+    "guard": {
+      "assumed_force_N": 50,
+      "assumed_arm_mm": 10,
+      "width_mm": 40,
+      "thickness_mm": 2,
+      "nominal_bending_MPa": 18.75
+    },
+    "shelf": {
+      "assumed_filter_mass_kg": 2,
+      "assumed_handling_factor": 2,
+      "single_bracket_force_N": 39.24,
+      "assumed_arm_mm": 25,
+      "width_mm": 30,
+      "thickness_mm": 2,
+      "nominal_bending_MPa": 49.05
+    },
+    "limitations": "Illustrative load cases, NOT prescribed safety tests. Conservative single-bracket shelf share. Simple straight-strip bending ignores bend radius, holes, torsion, connections and guard-panel flexure. Material strength, fastener capacities and allowable stresses not established. No PASS."
+  },
+  "tests": {
+    "porosity_reduced": true,
+    "open_area": true,
+    "flow_order": true,
+    "guard_bending_arithmetic": true,
+    "shelf_bending_arithmetic": true
+  }
+}

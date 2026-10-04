@@ -1,0 +1,6 @@
+id,width_mm,height_mm,thickness_mm,qty,status
+G_FACE,320,320,1,2,PROPOSED steel; weld/strength/flatness not released
+G_OUTER_SIDE,320,50,1,2,PROPOSED steel; weld/strength/flatness not released
+G_OUTER_END,318,50,1,2,PROPOSED steel; weld/strength/flatness not released
+G_INNER_SIDE,320,40,1,2,PROPOSED steel; weld/strength/flatness not released
+G_INNER_END,318,40,1,2,PROPOSED steel; weld/strength/flatness not released

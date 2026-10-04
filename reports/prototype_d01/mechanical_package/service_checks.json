@@ -1,0 +1,17 @@
+{
+  "source_sha256": "fb28a31315968509dcdbbb2caac8c6d69c84ecb94a35ccd75937a5d9ecaa33a6",
+  "source_unchanged": true,
+  "filter_sweeps": [
+    {
+      "side": "Front",
+      "filter_outward_travel_mm": 200,
+      "clashes_mm3": []
+    },
+    {
+      "side": "Rear",
+      "filter_outward_travel_mm": 200,
+      "clashes_mm3": []
+    }
+  ],
+  "limits": "Retainer and service nuts/washers removed first. Hand/tool and retainer trajectories, weld beads, manufacturing variation and actual filter deformation unverified. No powered access."
+}

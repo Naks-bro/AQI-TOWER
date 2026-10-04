@@ -1,0 +1,19 @@
+{
+  "status": "M04 AIR-PATH GEOMETRY STUDY — NOT FABRICATION OR FAN SELECTION",
+  "units": "mm",
+  "assumed_square_inlet_clear_side": 563,
+  "assumed_circular_clear_diameter": 315,
+  "assumed_wall_thickness": 2,
+  "transition_base_z": 965,
+  "transition_height": 215,
+  "inlet_neck_length": 10,
+  "outlet_base_z": 2015,
+  "outlet_length": 200,
+  "notes": [
+    "315 is assumed internal FLOW diameter, not verified fan flow area or mating dimension",
+    "OEM drawing B=312 mm is a connection dimension; do not equate it to internal clear diameter",
+    "Straight lengths not accepted by fan OEM; system effect unknown",
+    "Actual fan inlet/outlet axes within bounding box not established",
+    "Generator creates snapshots; edit JSON and regenerate to change profiles"
+  ]
+}

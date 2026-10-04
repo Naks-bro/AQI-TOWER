@@ -1,0 +1,258 @@
+{
+  "status": "PARTIAL MATERIAL ABOVE PLANE, NOT ACTUAL SUPPORT LOAD",
+  "source_sha256_unchanged": {
+    "cad/packaging/AQI_M02_Segmented_Frame_STUDY.FCStd": "8bb50862e6136618fe2b9838c47f1fdda3f906709281dbeac0555cbfbef3d70f",
+    "cad/packaging/AQI_M04_Airpath_STUDY.FCStd": "25d39edc9d2f32d1128eebc669a9da464fefda6a16668f441d3e7812d4e8f320",
+    "cad/packaging/AQI_Cylindrical_Packaging_R02.FCStd": "5977058d385267a60b9b54e6c7ffdc6d7c9b6c5e6649195c45999c88bd0c4db2"
+  },
+  "plane_material_totals_kg_ASSUMED_steel": {
+    "HEPA_upper_face": 35.3288343702743,
+    "prefilter_upper_face": 59.368110837072535
+  },
+  "parts": [
+    {
+      "boundary": "prefilter_upper_face",
+      "part": "Post1Segment2",
+      "source": "cad/packaging/AQI_M02_Segmented_Frame_STUDY.FCStd",
+      "volume_above_mm3": 78006.0,
+      "mass_kg_at_ASSUMED_steel_7850": 0.6123471
+    },
+    {
+      "boundary": "HEPA_upper_face",
+      "part": "Post1Segment3",
+      "source": "cad/packaging/AQI_M02_Segmented_Frame_STUDY.FCStd",
+      "volume_above_mm3": 544566.0000000003,
+      "mass_kg_at_ASSUMED_steel_7850": 4.274843100000003
+    },
+    {
+      "boundary": "prefilter_upper_face",
+      "part": "Post1Segment3",
+      "source": "cad/packaging/AQI_M02_Segmented_Frame_STUDY.FCStd",
+      "volume_above_mm3": 544566.0000000003,
+      "mass_kg_at_ASSUMED_steel_7850": 4.274843100000003
+    },
+    {
+      "boundary": "prefilter_upper_face",
+      "part": "Post2Segment2",
+      "source": "cad/packaging/AQI_M02_Segmented_Frame_STUDY.FCStd",
+      "volume_above_mm3": 78006.0,
+      "mass_kg_at_ASSUMED_steel_7850": 0.6123471
+    },
+    {
+      "boundary": "HEPA_upper_face",
+      "part": "Post2Segment3",
+      "source": "cad/packaging/AQI_M02_Segmented_Frame_STUDY.FCStd",
+      "volume_above_mm3": 544566.0000000003,
+      "mass_kg_at_ASSUMED_steel_7850": 4.274843100000003
+    },
+    {
+      "boundary": "prefilter_upper_face",
+      "part": "Post2Segment3",
+      "source": "cad/packaging/AQI_M02_Segmented_Frame_STUDY.FCStd",
+      "volume_above_mm3": 544566.0000000003,
+      "mass_kg_at_ASSUMED_steel_7850": 4.274843100000003
+    },
+    {
+      "boundary": "prefilter_upper_face",
+      "part": "Post3Segment2",
+      "source": "cad/packaging/AQI_M02_Segmented_Frame_STUDY.FCStd",
+      "volume_above_mm3": 78006.0,
+      "mass_kg_at_ASSUMED_steel_7850": 0.6123471
+    },
+    {
+      "boundary": "HEPA_upper_face",
+      "part": "Post3Segment3",
+      "source": "cad/packaging/AQI_M02_Segmented_Frame_STUDY.FCStd",
+      "volume_above_mm3": 544566.0000000003,
+      "mass_kg_at_ASSUMED_steel_7850": 4.274843100000003
+    },
+    {
+      "boundary": "prefilter_upper_face",
+      "part": "Post3Segment3",
+      "source": "cad/packaging/AQI_M02_Segmented_Frame_STUDY.FCStd",
+      "volume_above_mm3": 544566.0000000003,
+      "mass_kg_at_ASSUMED_steel_7850": 4.274843100000003
+    },
+    {
+      "boundary": "prefilter_upper_face",
+      "part": "Post4Segment2",
+      "source": "cad/packaging/AQI_M02_Segmented_Frame_STUDY.FCStd",
+      "volume_above_mm3": 78006.0,
+      "mass_kg_at_ASSUMED_steel_7850": 0.6123471
+    },
+    {
+      "boundary": "HEPA_upper_face",
+      "part": "Post4Segment3",
+      "source": "cad/packaging/AQI_M02_Segmented_Frame_STUDY.FCStd",
+      "volume_above_mm3": 544566.0000000003,
+      "mass_kg_at_ASSUMED_steel_7850": 4.274843100000003
+    },
+    {
+      "boundary": "prefilter_upper_face",
+      "part": "Post4Segment3",
+      "source": "cad/packaging/AQI_M02_Segmented_Frame_STUDY.FCStd",
+      "volume_above_mm3": 544566.0000000003,
+      "mass_kg_at_ASSUMED_steel_7850": 4.274843100000003
+    },
+    {
+      "boundary": "prefilter_upper_face",
+      "part": "Rail3XNeg",
+      "source": "cad/packaging/AQI_M02_Segmented_Frame_STUDY.FCStd",
+      "volume_above_mm3": 255360.0,
+      "mass_kg_at_ASSUMED_steel_7850": 2.004576
+    },
+    {
+      "boundary": "prefilter_upper_face",
+      "part": "Rail3YNeg",
+      "source": "cad/packaging/AQI_M02_Segmented_Frame_STUDY.FCStd",
+      "volume_above_mm3": 140160.00000000012,
+      "mass_kg_at_ASSUMED_steel_7850": 1.100256000000001
+    },
+    {
+      "boundary": "prefilter_upper_face",
+      "part": "Rail3XPos",
+      "source": "cad/packaging/AQI_M02_Segmented_Frame_STUDY.FCStd",
+      "volume_above_mm3": 255360.0,
+      "mass_kg_at_ASSUMED_steel_7850": 2.004576
+    },
+    {
+      "boundary": "prefilter_upper_face",
+      "part": "Rail3YPos",
+      "source": "cad/packaging/AQI_M02_Segmented_Frame_STUDY.FCStd",
+      "volume_above_mm3": 140160.00000000012,
+      "mass_kg_at_ASSUMED_steel_7850": 1.100256000000001
+    },
+    {
+      "boundary": "HEPA_upper_face",
+      "part": "Rail4XNeg",
+      "source": "cad/packaging/AQI_M02_Segmented_Frame_STUDY.FCStd",
+      "volume_above_mm3": 255360.0,
+      "mass_kg_at_ASSUMED_steel_7850": 2.004576
+    },
+    {
+      "boundary": "prefilter_upper_face",
+      "part": "Rail4XNeg",
+      "source": "cad/packaging/AQI_M02_Segmented_Frame_STUDY.FCStd",
+      "volume_above_mm3": 255360.0,
+      "mass_kg_at_ASSUMED_steel_7850": 2.004576
+    },
+    {
+      "boundary": "HEPA_upper_face",
+      "part": "Rail4YNeg",
+      "source": "cad/packaging/AQI_M02_Segmented_Frame_STUDY.FCStd",
+      "volume_above_mm3": 140160.00000000012,
+      "mass_kg_at_ASSUMED_steel_7850": 1.100256000000001
+    },
+    {
+      "boundary": "prefilter_upper_face",
+      "part": "Rail4YNeg",
+      "source": "cad/packaging/AQI_M02_Segmented_Frame_STUDY.FCStd",
+      "volume_above_mm3": 140160.00000000012,
+      "mass_kg_at_ASSUMED_steel_7850": 1.100256000000001
+    },
+    {
+      "boundary": "HEPA_upper_face",
+      "part": "Rail4XPos",
+      "source": "cad/packaging/AQI_M02_Segmented_Frame_STUDY.FCStd",
+      "volume_above_mm3": 255360.0,
+      "mass_kg_at_ASSUMED_steel_7850": 2.004576
+    },
+    {
+      "boundary": "prefilter_upper_face",
+      "part": "Rail4XPos",
+      "source": "cad/packaging/AQI_M02_Segmented_Frame_STUDY.FCStd",
+      "volume_above_mm3": 255360.0,
+      "mass_kg_at_ASSUMED_steel_7850": 2.004576
+    },
+    {
+      "boundary": "HEPA_upper_face",
+      "part": "Rail4YPos",
+      "source": "cad/packaging/AQI_M02_Segmented_Frame_STUDY.FCStd",
+      "volume_above_mm3": 140160.00000000012,
+      "mass_kg_at_ASSUMED_steel_7850": 1.100256000000001
+    },
+    {
+      "boundary": "prefilter_upper_face",
+      "part": "Rail4YPos",
+      "source": "cad/packaging/AQI_M02_Segmented_Frame_STUDY.FCStd",
+      "volume_above_mm3": 140160.00000000012,
+      "mass_kg_at_ASSUMED_steel_7850": 1.100256000000001
+    },
+    {
+      "boundary": "HEPA_upper_face",
+      "part": "Transition",
+      "source": "cad/packaging/AQI_M04_Airpath_STUDY.FCStd",
+      "volume_above_mm3": 694312.8089130651,
+      "mass_kg_at_ASSUMED_steel_7850": 5.450355549967562
+    },
+    {
+      "boundary": "prefilter_upper_face",
+      "part": "Transition",
+      "source": "cad/packaging/AQI_M04_Airpath_STUDY.FCStd",
+      "volume_above_mm3": 694312.8089130651,
+      "mass_kg_at_ASSUMED_steel_7850": 5.450355549967562
+    },
+    {
+      "boundary": "HEPA_upper_face",
+      "part": "InletNeck",
+      "source": "cad/packaging/AQI_M04_Airpath_STUDY.FCStd",
+      "volume_above_mm3": 19917.69742375944,
+      "mass_kg_at_ASSUMED_steel_7850": 0.1563539247765116
+    },
+    {
+      "boundary": "prefilter_upper_face",
+      "part": "InletNeck",
+      "source": "cad/packaging/AQI_M04_Airpath_STUDY.FCStd",
+      "volume_above_mm3": 19917.69742375944,
+      "mass_kg_at_ASSUMED_steel_7850": 0.1563539247765116
+    },
+    {
+      "boundary": "HEPA_upper_face",
+      "part": "StraightOutlet",
+      "source": "cad/packaging/AQI_M04_Airpath_STUDY.FCStd",
+      "volume_above_mm3": 398353.9484751858,
+      "mass_kg_at_ASSUMED_steel_7850": 3.1270784955302084
+    },
+    {
+      "boundary": "prefilter_upper_face",
+      "part": "StraightOutlet",
+      "source": "cad/packaging/AQI_M04_Airpath_STUDY.FCStd",
+      "volume_above_mm3": 398353.9484751858,
+      "mass_kg_at_ASSUMED_steel_7850": 3.1270784955302084
+    },
+    {
+      "boundary": "prefilter_upper_face",
+      "part": "HEPABulkhead",
+      "source": "cad/packaging/AQI_Cylindrical_Packaging_R02.FCStd",
+      "volume_above_mm3": 1959264.2123309858,
+      "mass_kg_at_ASSUMED_steel_7850": 15.380224066798238
+    },
+    {
+      "boundary": "HEPA_upper_face",
+      "part": "HEPARetainerEnvelope",
+      "source": "cad/packaging/AQI_Cylindrical_Packaging_R02.FCStd",
+      "volume_above_mm3": 418600.00000000047,
+      "mass_kg_at_ASSUMED_steel_7850": 3.2860100000000037
+    },
+    {
+      "boundary": "prefilter_upper_face",
+      "part": "HEPARetainerEnvelope",
+      "source": "cad/packaging/AQI_Cylindrical_Packaging_R02.FCStd",
+      "volume_above_mm3": 418600.00000000047,
+      "mass_kg_at_ASSUMED_steel_7850": 3.2860100000000037
+    }
+  ],
+  "fan_candidate_OEM_mass_kg": 14,
+  "excluded": [
+    "shell/doors (attachment load path unknown)",
+    "actual filter masses",
+    "gasket, mounts, joints, guards, wiring and electronics",
+    "base, floor and any ballast"
+  ],
+  "notes": [
+    "Homogeneous steel and route through posts are scenario assumptions",
+    "Fan 14 kg is separate from material totals and remains unselected",
+    "Clip above upper face excludes that boundary plate itself",
+    "Loads above successive planes are NOT additive machine masses"
+  ]
+}

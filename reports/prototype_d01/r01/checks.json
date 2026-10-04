@@ -1,0 +1,14 @@
+{
+  "revision": "D01-R01",
+  "base_sha256": "22faa71877b8fef657220976640f949a13fb6f2eb51dc3ce4034e36d606cb595",
+  "base_unchanged": true,
+  "objects": 163,
+  "all_shapes_valid": true,
+  "checked_pairs": 12675,
+  "clashes_mm3": [],
+  "excluded": "Reservations and inherited guard-to-guard seams. Threads, many heads/nuts, actual perforations and bend fillets not modeled. Not a safety/strength/airflow check.",
+  "STEP_valid": true,
+  "STEP_volume_matches": true,
+  "native_reopen_count": 163,
+  "panel_DXF_count": 11
+}

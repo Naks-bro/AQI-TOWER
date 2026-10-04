@@ -1,0 +1,18 @@
+{
+  "tests": {
+    "native_73_objects": true,
+    "native_all_valid": true,
+    "step_valid": true,
+    "step_volume_matches": true,
+    "exploded_volume_matches": true,
+    "body_checks_clear": true,
+    "hardware_checks_clear": true,
+    "retainer_edge_centres_at_least20": true,
+    "fan_plate_four_apertures": true,
+    "fan_plate_16_bolt_holes": true,
+    "twelve_plywood_parts": true
+  },
+  "native_volume_mm3": 34136813.960736796,
+  "STEP_volume_mm3": 34136813.9607368,
+  "status": "DIGITAL GEOMETRY ONLY; NOT FABRICATION RELEASE"
+}

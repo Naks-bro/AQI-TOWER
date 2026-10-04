@@ -1,0 +1,21 @@
+{
+  "status": "INDEPENDENT INNER HOUSING OPTION — NOT FABRICATION OR LEAKAGE APPROVAL",
+  "units": "mm",
+  "housing_outer_side": 653,
+  "housing_wall": 2,
+  "seat_thickness": 5,
+  "prefilter_opening": 562,
+  "HEPA_opening": 563,
+  "service_opening_width": 635,
+  "bearing_ear_width": 35,
+  "bearing_ear_outer_x": 367.5,
+  "bearing_ear_centres_y": [-100, 100],
+  "notes": [
+    "All housing, tray, ear and opening dimensions are assumptions, not OEM interfaces",
+    "Filter-level cross rails omitted; side rails support integral seat ears",
+    "Posts continuous and outside inner pressure enclosure; no post holes through seats",
+    "Narrow side/service margins require tolerance, flange and tooling review",
+    "Intake, service doors, seat seams and gasket performance NOT tested",
+    "No selected profile, base, fasteners, mounts or structural sizing"
+  ]
+}

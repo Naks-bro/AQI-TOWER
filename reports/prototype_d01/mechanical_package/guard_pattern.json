@@ -1,0 +1,17 @@
+{
+  "outside_mm": [
+    320,
+    320,
+    1
+  ],
+  "qty": 2,
+  "hole_diameter_mm": 4,
+  "pitch_mm": 6,
+  "minimum_unperforated_border_mm": 10,
+  "holes": 2822,
+  "hole_area_m2": 0.035462297873721585,
+  "active_area_porosity": 0.39402553193023987,
+  "notes": "Proposed actual2D cut pattern.3D sheets remain envelopes; no reach/deflection/weld release. Pressure calculations must use this area if adopted.",
+  "loss_multiplier_vs_previous_area_at_same_flow_and_K": 1.0305551896621412,
+  "minimum_nominal_hole_ligament_mm": 2
+}

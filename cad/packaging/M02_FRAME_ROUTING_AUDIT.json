@@ -1,0 +1,80 @@
+{
+  "status": "SPATIAL ROUTING STUDY ONLY \u2014 NOT STRUCTURAL SIZING OR FABRICATION",
+  "valid_route_solids": 20,
+  "STEP_reimport": "PASS",
+  "native_reopen": "PASS",
+  "checked_reference_objects": [
+    "Shell",
+    "HEPAServiceDoor",
+    "PrefilterServiceDoor",
+    "HEPAEnvelope",
+    "PrefilterEnvelope",
+    "HEPABulkhead",
+    "PrefilterBulkhead",
+    "HEPAGasketEnvelope",
+    "HEPARetainerEnvelope",
+    "FanAllowance",
+    "Transition",
+    "InletNeck",
+    "StraightOutlet"
+  ],
+  "nominal_positive_volume_conflicts": [
+    {
+      "route": "Post1",
+      "reference": "HEPABulkhead",
+      "overlap_mm3": 1920.0
+    },
+    {
+      "route": "Post2",
+      "reference": "HEPABulkhead",
+      "overlap_mm3": 1920.0
+    },
+    {
+      "route": "Post3",
+      "reference": "HEPABulkhead",
+      "overlap_mm3": 1920.0
+    },
+    {
+      "route": "Post4",
+      "reference": "HEPABulkhead",
+      "overlap_mm3": 1920.0
+    },
+    {
+      "route": "Post1",
+      "reference": "PrefilterBulkhead",
+      "overlap_mm3": 1920.0
+    },
+    {
+      "route": "Post2",
+      "reference": "PrefilterBulkhead",
+      "overlap_mm3": 1920.0
+    },
+    {
+      "route": "Post3",
+      "reference": "PrefilterBulkhead",
+      "overlap_mm3": 1920.0
+    },
+    {
+      "route": "Post4",
+      "reference": "PrefilterBulkhead",
+      "overlap_mm3": 1920.0
+    }
+  ],
+  "assumed_HEPA_sweep_conflicts": [],
+  "route_internal_positive_volume_conflicts": [],
+  "route_volume_mm3": 6082560.000000001,
+  "assumed_steel_density_kg_m3": 7850,
+  "partial_route_steel_mass_kg": 47.74809600000001,
+  "xy_envelope_mm": [
+    735,
+    435
+  ],
+  "minimum_filter_side_to_post_clearance_mm": 36.0,
+  "notes": [
+    "All frame dimensions are assumptions for fit checks, not selected sections",
+    "Continuous posts intersect existing filter bulkheads; unresolved interface",
+    "Do not cut post holes through HEPA pressure boundary without reviewed bypass seals",
+    "Rails are preliminary support routes, not actual fan cradle or filter tray",
+    "No base/feet, anchors, gussets, joints or fasteners sized"
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "source": "reports\\prototype_d01\\r02_guards\\D01_R02G_ASSEMBLY.FCStd",
+  "source_sha256": "7aae1544b405abbcf0d99f92f47b76f0f4c929cc1997d129a073691e137a343b",
+  "objects": 245,
+  "panels": 10,
+  "full_pair_checks": 29116,
+  "excluded_pairs": 774,
+  "clashes_mm3": [],
+  "valid": true,
+  "source_unchanged": true,
+  "exclusions": "Reservation envelopes and all guard-to-guard pairs (inherited seams). Nominal fit only; no tolerance/load/reach/leak/electrical release.",
+  "inventory_note": "245 CAD objects are not245 purchased products. Reserved controls are not physically modeled; missing hardware/services are separately listed."
+}

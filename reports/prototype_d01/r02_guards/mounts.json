@@ -1,0 +1,66 @@
+[
+  {
+    "tag": "Outer",
+    "x": 105,
+    "y": 120,
+    "headbase": 583,
+    "lowerwasher": 570,
+    "prefix": "J01_Outer_105_120"
+  },
+  {
+    "tag": "Outer",
+    "x": 105,
+    "y": 240,
+    "headbase": 583,
+    "lowerwasher": 570,
+    "prefix": "J01_Outer_105_240"
+  },
+  {
+    "tag": "Outer",
+    "x": 445,
+    "y": 120,
+    "headbase": 583,
+    "lowerwasher": 570,
+    "prefix": "J01_Outer_445_120"
+  },
+  {
+    "tag": "Outer",
+    "x": 445,
+    "y": 240,
+    "headbase": 583,
+    "lowerwasher": 570,
+    "prefix": "J01_Outer_445_240"
+  },
+  {
+    "tag": "Inner",
+    "x": 105,
+    "y": 60,
+    "headbase": 581,
+    "lowerwasher": 568,
+    "prefix": "J01_Inner_105_60"
+  },
+  {
+    "tag": "Inner",
+    "x": 105,
+    "y": 300,
+    "headbase": 581,
+    "lowerwasher": 568,
+    "prefix": "J01_Inner_105_300"
+  },
+  {
+    "tag": "Inner",
+    "x": 445,
+    "y": 60,
+    "headbase": 581,
+    "lowerwasher": 568,
+    "prefix": "J01_Inner_445_60"
+  },
+  {
+    "tag": "Inner",
+    "x": 445,
+    "y": 300,
+    "headbase": 581,
+    "lowerwasher": 568,
+    "prefix": "J01_Inner_445_300"
+  }
+]

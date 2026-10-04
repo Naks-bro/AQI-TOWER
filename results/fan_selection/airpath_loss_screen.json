@@ -1,0 +1,78 @@
+{
+  "status": "COEFFICIENT SENSITIVITY ONLY \u2014 NOT MEASURED LOSS OR DESIGN BOUNDS",
+  "flow_m3h_assumed": 1300,
+  "air_density_kg_m3_assumed": 1.2,
+  "duct_clear_diameter_m_assumed": 0.315,
+  "intake_free_area_fraction_assumed": 0.7,
+  "duct_velocity_m_s": 4.634,
+  "duct_velocity_pressure_Pa": 12.883,
+  "components": [
+    {
+      "component": "intake_entry_and_guard",
+      "low_input": 3,
+      "high_input": 8,
+      "reference": "K, intake passage velocity",
+      "low_pressure_Pa": 14.917,
+      "high_pressure_Pa": 39.779
+    },
+    {
+      "component": "square_to_round_transition",
+      "low_input": 0.1,
+      "high_input": 0.5,
+      "reference": "K, 315mm throat velocity",
+      "low_pressure_Pa": 1.288,
+      "high_pressure_Pa": 6.441
+    },
+    {
+      "component": "outlet_guard",
+      "low_input": 1,
+      "high_input": 3,
+      "reference": "K, gross duct velocity; must obtain actual guard curve",
+      "low_pressure_Pa": 12.883,
+      "high_pressure_Pa": 38.648
+    },
+    {
+      "component": "joints_and_connection",
+      "low_input": 0.1,
+      "high_input": 0.5,
+      "reference": "K, duct velocity",
+      "low_pressure_Pa": 1.288,
+      "high_pressure_Pa": 6.441
+    },
+    {
+      "component": "fan_system_effect_equivalent",
+      "low_input": 0,
+      "high_input": 2,
+      "reference": "ASSUMED equivalent K, not a verified upper bound",
+      "low_pressure_Pa": 0.0,
+      "high_pressure_Pa": 25.766
+    },
+    {
+      "component": "straight_round_neck_and_outlet",
+      "low_input": 0.018,
+      "high_input": 0.035,
+      "reference": "ASSUMED Darcy f; f*L/D*velocity pressure; actual roughness/Re unknown",
+      "low_pressure_Pa": 0.155,
+      "high_pressure_Pa": 0.301
+    }
+  ],
+  "hardware_scenario_range_Pa": [
+    30.53,
+    117.38
+  ],
+  "same_area_terminal_vs_fan_outlet_static_duty_clean_Pa": [
+    163.46,
+    250.3
+  ],
+  "same_area_terminal_vs_fan_outlet_static_duty_loaded_Pa": [
+    325.67,
+    412.51
+  ],
+  "limitations": [
+    "All coefficients and friction factors are scenario inputs, not measured or cited fitting values",
+    "No bends/carbon/silencer/weather louvre in this branch; add if introduced",
+    "315mm actual fan outlet area not verified; no OEM pressure-basis match yet",
+    "Additional external backpressure and nonuniform flow not bounded",
+    "Loaded factors are assumptions; no approved maintenance threshold"
+  ]
+}

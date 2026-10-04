@@ -1,0 +1,8 @@
+﻿group,quantity,size,locations,note
+Guard through-bolts,4,M4x25 +8 washers +4 locknuts,x105/445; y60/300,Upper and lower angles share bolts. Opening either guard requires isolation; no interlock implemented.
+Guard angle rivets,16,"3.2mm nominal, grip must cover3mm","Each angle: ylocal10/30; outer z590, inner z560",Eight brackets x2; exact rivet/grip/head retention unselected. Drill dia3.5 proposal.
+End-to-cleat through joints,16,M4x40 +washers/locknuts,Each end: y19/341; z105/205/405/505,"End local datum y0,z29: vertical coordinates76/176/376/476. Drill dia4.5 through panel and cleat."
+Seat-to-cleat through joints,16,M4x40 +washers/locknuts,Each seat: x20/530; z155/255/355/455,"Seat local datum x9,z29: x11/521,z126/226/326/426. Avoid filter clamp holes."
+Shelf support,8,"25x25x2 angle,30 long; M4x20 to seat; M3x20 flush to ledge",x75/215/335/475; seat z37; ledge y-15/375,"Countersink per actual head, not before product selection. Eight ledge screws and eight seat bolts."
+Top and base retention,8,4 top wood screws4x20;4 base4x25,x19/531; y19/341,Pilot diameter per actual wood/screw. Proposed seam: external removable foil HVAC tape after dry fit; exact tape unknown. Not a lifting structure.
+Cable route,4,"4-pin fan extensions, length to be selected",Fan perimeter -> right guard side -> external control reservation,External leg235mm; internal leads/connector service loops additional. OEM400mm leads may not reach. No gland cutout or connector pin orientation invented.

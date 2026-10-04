@@ -1,0 +1,16 @@
+{
+  "run_id": "UNSET",
+  "environment": "indoor",
+  "channel": "pm25_room_a",
+  "instrument_id": "UNSET",
+  "room_volume_m3": null,
+  "volume_basis": "measured",
+  "usable_pm_floor_ug_m3": null,
+  "floor_evidence_reference": "UNKNOWN",
+  "window_selection_reason": "UNKNOWN",
+  "well_mixed_assumption": false,
+  "matched_ventilation_declared": false,
+  "stable_sources_declared": false,
+  "baseline_off": {"start": "UNSET", "end": "UNSET"},
+  "tower_on": {"start": "UNSET", "end": "UNSET"}
+}

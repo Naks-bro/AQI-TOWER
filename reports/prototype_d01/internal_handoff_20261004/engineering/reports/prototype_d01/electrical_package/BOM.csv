@@ -1,0 +1,9 @@
+ID,Quantity,Item,Status,Basis
+F1-F4,4,ARCTIC P14 Max black ACFAN00287A,REFERENCE,12 V / 0.35 A each; exact delivered revision still verify; S1
+PS1,1,Noctua NV-PS1 incl. NA-AC10,REFERENCE,12 V / 2 A / 24 W; external Class II adapter; S2/S6
+SC1,1,Noctua NA-FC1,REFERENCE,3 A / 36 W maximum; NOT protective stop; S3
+H1,1,Noctua NA-FH1 incl. NA-EC1,REFERENCE,24 W on selected input; self-resetting fuse; S4/S5
+PR1,1 assembly,Independent protective control and isolation,UNSELECTED,"Not replaced by PWM controller, hobby relay or this Python model"
+CB1,1,Insulating / protected low-voltage enclosure,UNSELECTED,140 x 100 x 40 CAD reservation only; mount and ventilation to resolve
+W1,as needed,OEM compatible extensions / strain relief,UNSELECTED,"Length, temperature, voltage drop, retention and guard entry required"
+PB,set,START / STOP / RESET and indicators,UNSELECTED,Ratings and protective architecture must be selected together

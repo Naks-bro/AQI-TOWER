@@ -1,0 +1,29 @@
+{
+  "status": "M05 REMOVABLE HATCH OPTION — NO LATCH/GASKET/STRUCTURAL RELEASE",
+  "units": "mm",
+  "casing_inner_diameter": 980,
+  "outer_access_width": 700,
+  "outer_access_z": 615,
+  "outer_access_height": 380,
+  "inner_opening_width": 645,
+  "inner_opening_z": 650,
+  "inner_opening_height": 310,
+  "flange_land": 15,
+  "flange_thickness": 3,
+  "gasket_land": 10,
+  "gasket_installed_envelope": 3,
+  "cover_thickness": 2,
+  "latch_locations_x": [-240, -80, 80, 240],
+  "latch_envelope_width": 30,
+  "latch_envelope_height": 12,
+  "latch_forward_projection": 8,
+  "handle_forward_projection": 40,
+  "notes": [
+    "All dimensions are assumptions for a new comparison branch, not approved tolerances",
+    "Eight small latch location blocks are generic envelopes, NOT OEM latch CAD or working mechanisms",
+    "3 mm gasket envelope is NOT a compression setting or selected material",
+    "Cover needs reviewed stiffness, handling retention and sealing force",
+    "Outer decorative access piece also removed during service; its attachment not designed",
+    "Prefilter inner hatch remains earlier preliminary geometry; this branch develops HEPA access only"
+  ]
+}
