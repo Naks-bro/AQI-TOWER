@@ -1,0 +1,80 @@
+{
+  "status": "ORDINARY-CONTROL BENCH CANDIDATE ONLY / NO PROTECTIVE OR WIRING RELEASE",
+  "accessed": "2026-10-05",
+  "controller": {
+    "part": "Arduino Opta Lite AFX00003",
+    "max_W_at12V": 2,
+    "envelope_screen_mm": [
+      70,
+      88.8,
+      61.1
+    ],
+    "depth_basis": "56.8mm body plus4.3mm projection from OEM drawing; orientation/rail/clearance not released"
+  },
+  "enclosure": {
+    "part": "Hammond1554XA2GY",
+    "outside_mm": [
+      300,
+      200,
+      120
+    ],
+    "OEM_max_PCB_mm": [
+      285,
+      174
+    ],
+    "warning": "Max PCB dimensions are NOT a guaranteed DIN workspace. No approved holes, rail, mount, heat or whole-box ingress qualification."
+  },
+  "power": {
+    "controller_A": 0.16666666666666666,
+    "fan_plus_controller_A": 1.5666666666666667,
+    "remaining_to_supply2A": 0.43333333333333346,
+    "remaining_to_fuse_typical40C_1_7A": 0.1333333333333334,
+    "assumptions": "Published fan current and maximum controller consumption. Hub/controller input circuits, wiring and startup remain excluded."
+  },
+  "fuse_candidate": {
+    "part": "Littelfuse0297002.WXNV",
+    "rated_A": 2,
+    "rated_DC_V": 32,
+    "interrupt_A_at32V": 1000,
+    "typical_recommended_load_A_at20C": 1.9,
+    "typical_recommended_load_A_at40C": 1.7,
+    "opening_windows_s": {
+      "110_percent": [
+        360000,
+        null
+      ],
+      "135_percent": [
+        0.75,
+        600
+      ],
+      "200_percent": [
+        0.15,
+        5
+      ]
+    },
+    "status": "SCREENED / NOT SELECTED",
+    "warning": "Actual source/hub limiting and recovery curves, weakest wiring, holder and temperature unknown. Cannot claim fuse coordination or guaranteed clearing."
+  },
+  "terminal_mapping": {
+    "I1": "A0 START_NO",
+    "I2": "A1 STOP_NC",
+    "I3": "A2 RESET_NO",
+    "I4": "A3 BENCH_PERMIT",
+    "I5": "A4 unswitched12V DIGITAL only",
+    "Output1_pair": "D0 bench lamp only; default disabled"
+  },
+  "sources": {
+    "opta_datasheet": "https://docs.arduino.cc/resources/datasheets/AFX00001-AFX00002-AFX00003-datasheet.pdf",
+    "opta_pinout": "https://docs.arduino.cc/resources/pinouts/AFX00001-AFX00002-AFX00003-full-pinout.pdf",
+    "enclosure": "https://www.hammfg.com/part/1554XA2GY",
+    "fuse": "https://www.littelfuse.com/assetdocs/littelfuse-datasheet-297-mini32v?assetguid=42c9dd21-a88e-4328-8e67-2f832444faf1"
+  },
+  "release": {
+    "board_compiled": false,
+    "physical_test": false,
+    "protective_controller": false,
+    "fuse_selected": false,
+    "enclosure_released": false,
+    "fan_output_connection_released": false
+  }
+}

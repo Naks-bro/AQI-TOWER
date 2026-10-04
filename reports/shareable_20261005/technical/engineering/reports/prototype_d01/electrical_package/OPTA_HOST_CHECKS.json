@@ -1,0 +1,15 @@
+{
+  "host_assertions": 1041,
+  "exhaustive_one_step_cases": 1024,
+  "target_board_compiled": false,
+  "physical_tests": 0,
+  "relay_output_enabled_by_default": false,
+  "status": "HOST SYNTHETIC TESTS PASS / NOT BOARD COMPILED OR SAFETY IMPLEMENTATION",
+  "compiler_version": "g++.EXE (MinGW-W64 x86_64-ucrt-posix-seh, built by Brecht Sanders) 13.2.0",
+  "source_sha256": {
+    "ControlLogic.h": "d69b065064adcdebc56e6a873bb344c3d6532b847a948232cf8239b888435921",
+    "d01_opta_review.ino": "7b8e954812872e70b5d8377a1dcc7e8ff57b5c146bd0361ce3f4de940854c7de",
+    "test_control.cpp": "36f5aac58fe17b94f0659665dcf3dad1819830beb7da2caf2e27c65911fef5d6",
+    "test_support\\Arduino.h": "ac2ad15f4d7688ea8f7a1293008c80cc443914694e0505afefc7c95d50d2b56d"
+  }
+}

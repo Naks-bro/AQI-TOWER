@@ -242,6 +242,11 @@ for name in ('d01_electrical_closure.py','test_d01_electrical_closure.py'):
 for name in ('AQI_D01_POWER_AND_WIRING_SUPPLEMENT.pdf','POWER_COORDINATION.json','E01_RATED_PARTS.csv'):
     shutil.copy2(R/'reports/prototype_d01/electrical_package'/name,T/'engineering/reports/prototype_d01/electrical_package'/name)
 shutil.copy2(R/'reports/prototype_d01/electrical_package/AQI_D01_POWER_AND_WIRING_SUPPLEMENT.pdf',T/'AQI_D01_POWER_AND_WIRING_SUPPLEMENT.pdf')
+shutil.copytree(R/'firmware/d01_opta_review',T/'engineering/firmware/d01_opta_review',dirs_exist_ok=True)
+shutil.copy2(R/'scripts/analysis/test_d01_opta_host.py',T/'engineering/scripts/analysis/test_d01_opta_host.py')
+for name in ('AQI_D01_OPTA_BENCH_REVIEW.pdf','OPTA_INTEGRATION_SCREEN.json','OPTA_HOST_CHECKS.json'):
+    shutil.copy2(R/'reports/prototype_d01/electrical_package'/name,T/'engineering/reports/prototype_d01/electrical_package'/name)
+shutil.copy2(R/'reports/prototype_d01/electrical_package/AQI_D01_OPTA_BENCH_REVIEW.pdf',T/'AQI_D01_OPTA_BENCH_REVIEW.pdf')
 for name in ('indoor_decay.py','test_indoor_decay.py','test_measurement_recording.py'):
     shutil.copy2(R/'scripts/analysis'/name,T/'engineering/scripts/analysis'/name)
 (T/'engineering/scripts/monitoring').mkdir(parents=True,exist_ok=True)
@@ -316,6 +321,8 @@ Physical prototypes built: 0. Air animation is illustrative, NOT CFD. Outdoor bu
 Read AQI_TOWER_TECHNICAL_HANDOFF.pdf: 50 pages comprising the current five-page introduction, preserved 41-page IH02 engineering reference and four-page E01 power/wiring supplement. Room-model software and existing exploratory decay tool are included; read ROOM_MODEL_BASIS.md. Record actual decisions in TECHNICAL_REVIEW.xlsx. Not for fabrication, ordering or energization.
 
 The last four pages provide the current power path, fan pin-function reference, catalogue-load and conditional wire-drop calculation, and exact remaining protection gaps. From engineering/ run python scripts/analysis/d01_electrical_closure.py and python scripts/analysis/test_d01_electrical_closure.py. Ten synthetic tests, not physical commissioning. PR1 protection, actual wires/fuses/enclosure and manual-restart implementation are still UNSELECTED; do not bridge this open design.
+
+New separate E02 candidate: AQI_D01_OPTA_BENCH_REVIEW.pdf and engineering/firmware/d01_opta_review/. Implemented ordinary C++ START/STOP/RESET logic for proposed Opta Lite; all relay outputs disabled by default.1,041 host assertions,1,024 one-step cases. Run python scripts/analysis/test_d01_opta_host.py with existing g++ from engineering/. Not target-board compiled, not safety-rated, no hardware tested, no fan connection release. External enclosure and real fuse screens do not establish coordination. Firmware README names exact OEM sources and remaining protection gaps; existing project safety requirements unchanged.
 
 Latest separate mechanical supplement: MASS_STABILITY_REVIEW.md. Corrected partial mass and directional static tipping arithmetic, NOT whole-device mass or safety approval. From engineering/ run python scripts/analysis/d01_mass_stability.py and python scripts/analysis/test_d01_mass_stability.py. Original mechanical PDFs and IH02 are preserved snapshots.
 
